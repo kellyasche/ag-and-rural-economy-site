@@ -1,5 +1,5 @@
 ---
-title: "Ag and the rural economy"
+title: "Farm earnings"
 output: 
   html_document:
     toc: true
@@ -90,20 +90,25 @@ mn_counties <- st_read("Data/Shapefiles/county shapefiles/MNCounties_MNDOT.shp",
   ms_simplify(keep = .01, keep_shapes = TRUE)
 ```
 
+<br>
+
 # Summary of farm earnings
 
-Summary of farm earnings will go here.
- <br>
+**Definition of farm earinings:** Farm labor and proprietors’ income is comprised of the net income of sole proprietors, partners, and hired laborers arising directly from the current production of agricultural commodities, either livestock or crops. It includes net farm proprietors’ income and the wages and salaries, pay-in-kind, and other labor income of hired farm laborers; but specifically excludes the income of farm corporations. (Bureau of Economic Analysis).
+
+Summary of farm earnings goes here.
+
+<br>
  
-# Definition of farm earnings
+# Analysis
 
-Farm labor and proprietors’ income is comprised of the net income of sole proprietors, partners, and hired laborers arising directly from the current production of agricultural commodities, either livestock or crops. It includes net farm proprietors’ income and the wages and salaries, pay-in-kind, and other labor income of hired farm laborers; but specifically excludes the income of farm corporations. (Bureau of Economic Analysis).
- 
-# Trends in farm earnings
+<br>
 
-## Change in farm earnings since 2001
+## Change in farm earnings vs. total earnings since 2001 {.tabset}
 
-```{r prep farm earnings, include = FALSE}
+The charts below provide the change in farm earnings and total earnings by indexing the values to their 2001 levels. The trend to look for is how the fluctuations in farm earnings "appear" in the total earnings chart. If total earnings show a similar bump to farm earnings, it's likely that farm earnings has a significant influence in that regions economy.
+
+```{r prep farm earnings and total earnings, include = FALSE}
 farm.earnings.county <- read_csv("Data/Earnings/Master-farm-total-earnings-county-2001-2018.csv") %>%
   mutate(farm.earnings = 1000 * farm.earnings,
          total.earnings = 1000 * total.earnings,
@@ -154,4 +159,127 @@ farm.earnings.pr <- farm.earnings.county %>%
 
 ```
 
-## 
+<br>
+
+### RUCA
+
+The indexed level of farm earnings across all RUCA groups shows a significant bump from 2010 - 2012 and levels dropping back down to 2001 levels or lower by 2018. Not suprisingly, the largest growth in earnings occured in counties that are entirely rural or have a town/rural mix. Interestingly, the only significant bump in *total earnings* occurs in the entirely rural county group while all the other RUCA groups keep a pretty consistent growth line.
+
+<br>
+
+```{r index farm earnings ruca}
+fe.index.ruca <- ggplot(farm.earnings.ruca, aes(year, index.farm.earnings, color = Dem_Desc)) +
+    geom_smooth(se = FALSE, size = 2) +
+    geom_point_interactive(size = 3, aes(data_id = index.farm.earnings, tooltip = paste(Dem_Desc, ", ", year, "\nTotal earnings: ", dollar(total.earnings), "\nTotal farm earnings: ", dollar(farm.earnings), "\nPercent of earnings from farm: ", percent(pct.farm.earnings), "\nFarm earnings indexed to 2001 levels: ", percent(index.farm.earnings), sep = ""))) +
+    geom_hline(yintercept = 0, color = "black") +
+    labs(x="", y = "", color="", title = "Farm earnings indexed to\n2001 levels", caption = "BEA - Local Area Employment and Wages")+
+    scale_y_continuous(labels=scales::percent)+
+    scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+    theme_line+
+    scale_color_manual(values= color.ruca,
+                       guide = guide_legend(ncol = 2)) +
+    theme(legend.position = "bottom",
+          axis.text.x = element_text(size = 10))
+  
+  te.index.ruca <- ggplot(farm.earnings.ruca, aes(year, index.total.earnings, color = Dem_Desc)) +
+    geom_smooth(se = FALSE, size = 2) +
+    geom_point_interactive(size = 3, aes(data_id = index.total.earnings, tooltip = paste(Dem_Desc, ", ", year, "\nTotal earnings: ", dollar(total.earnings), "\nTotal farm earnings: ", dollar(farm.earnings), "\nPercent of earnings from farm: ", percent(pct.farm.earnings), "\nTotal earnings indexed to 2001 levels: ", percent(index.total.earnings), sep = ""))) +
+    geom_hline(yintercept = 0, color = "black") +
+    labs(x="", y = "", color="", title = "Total earnings indexed to\n2001 levels", caption = "BEA - Local Area Employment and Wages")+
+    scale_y_continuous(labels=scales::percent)+
+    scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+    theme_line+
+    scale_color_manual(values= color.ruca,
+                       guide = guide_legend(ncol = 2)) +
+    theme(legend.position = "bottom",
+          axis.text.x = element_text(size = 10))
+  
+  girafe(ggobj = plot_grid(fe.index.ruca, te.index.ruca), width_svg = 8) %>%
+    girafe_options(opts_selection(type = "none"),
+                   opts_toolbar(saveaspng = FALSE),
+                  opts_sizing(rescale = FALSE))
+```
+
+### Planning Regions
+
+When broken down by planning regions, Southwest and Northwest Minnesota seem to be the most impacted in the downturn in farm earnings. Indexes from farm earnings shows a similar bump between 2008 - 2013 across all of the regions except for the seven county metro. When comparing *total earnings* across the planning regions, those bumps are seen in the Southwest and Northwest regions with similar declines after farm earnings peaked in 2012. The Southwest region looks to be hit the hardest.
+
+<br>
+
+```{r index farm earnings pr}
+fe.index.pr <- ggplot(farm.earnings.pr, aes(year, index.farm.earnings, color = planning.region)) +
+    geom_smooth(se = FALSE, size = 2) +
+    geom_point_interactive(size = 3, aes(data_id = index.farm.earnings, tooltip = paste(planning.region, ", ", year, "\nTotal earnings: ", dollar(total.earnings), "\nTotal farm earnings: ", dollar(farm.earnings), "\nPercent of earnings from farm: ", percent(pct.farm.earnings), "\nFarm earnings indexed to 2001 levels: ", percent(index.farm.earnings), sep = ""))) +
+    geom_hline(yintercept = 0, color = "black") +
+    labs(x="", y = "", color="", title = "Farm earnings indexed\nto 2001 levels", caption = "BEA - Local Area Employment and Wages")+
+    scale_y_continuous(labels=scales::percent)+
+    scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+    theme_line+
+    scale_color_manual(values= color.pr,
+                       guide = guide_legend(ncol = 2)) +
+    theme(legend.position = "bottom",
+          axis.text.x = element_text(size = 10))
+  
+  te.index.pr <- ggplot(farm.earnings.pr, aes(year, index.total.earnings, color = planning.region)) +
+    geom_smooth(se = FALSE, size = 2) +
+    geom_point_interactive(size = 3, aes(data_id = index.total.earnings, tooltip = paste(planning.region, ", ", year, "\nTotal earnings: ", dollar(total.earnings), "\nTotal farm earnings: ", dollar(farm.earnings), "\nPercent of earnings from farm: ", percent(pct.farm.earnings), "\nTotal earnings indexed to 2001 levels: ", percent(index.total.earnings), sep = ""))) +
+    geom_hline(yintercept = 0, color = "black") +
+    labs(x="", y = "", color="", title = "Total earnings indexed to\n2001 levels", caption = "BEA - Local Area Employment and Wages")+
+    scale_y_continuous(labels=scales::percent)+
+    scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+    theme_line+
+    scale_color_manual(values= color.pr,
+                       guide = guide_legend(ncol = 2)) +
+    theme(legend.position = "bottom",
+          axis.text.x = element_text(size = 10))
+  
+  girafe(ggobj = plot_grid(fe.index.pr, te.index.pr), width_svg = 8) %>%
+    girafe_options(opts_selection(type = "none"),
+                   opts_toolbar(saveaspng = FALSE),
+                  opts_sizing(rescale = FALSE))
+```
+
+### EDRs
+
+Breaking it down further, the EDRs in the Southwest region that seem to be most influenced by farm earnings is EDR 6W - Upper Minnesota Valley and EDR 8 - Southwest. The EDRs in the Northwest region of the state most influenced by farm earnings looks to be EDR4 - West Central, and EDR 1 - Northwest.
+
+<br>
+
+```{r index farm earnings edr, fig.height= 20}
+  fe.index.edr <- ggplot(filter(farm.earnings.edr, planning.region != "Minnesota"), aes(year, index.farm.earnings, color = edr)) +
+    facet_wrap(~planning.region, ncol = 1) +
+    geom_smooth(se = FALSE, size = 2) +
+    geom_point_interactive(size = 3, aes(data_id = index.farm.earnings, tooltip = paste(edr, ", ", year, "\nTotal earnings: ", dollar(total.earnings), "\nTotal farm earnings: ", dollar(farm.earnings), "\nPercent of earnings from farm: ", percent(pct.farm.earnings), "\nFarm earnings indexed to 2001 levels: ", percent(index.farm.earnings), sep = ""))) +
+    geom_hline(yintercept = 0, color = "black") +
+    labs(x="", y = "", color="", title = "Farm earnings indexed to\n2001 levels", caption = "BEA - Local Area Employment and Wages")+
+    scale_y_continuous(labels=scales::percent)+
+    scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+    theme_line+
+    scale_color_manual(values= color.edr,
+                       guide = guide_legend(ncol = 2)) +
+    theme(legend.position = "bottom",
+          axis.text.x = element_text(size = 6),
+          legend.text = element_text(size = 6),
+          text = element_text(size = 10))
+  
+  te.index.edr <- ggplot(filter(farm.earnings.edr, planning.region!= "Minnesota"), aes(year, index.total.earnings, color = edr)) +
+    facet_wrap(~planning.region, ncol = 1) +
+    geom_smooth(se = FALSE, size = 2) +
+    geom_point_interactive(size = 3, aes(data_id = index.total.earnings, tooltip = paste(edr, ", ", year, "\nTotal earnings: ", dollar(total.earnings), "\nTotal farm earnings: ", dollar(farm.earnings), "\nPercent of earnings from farm: ", percent(pct.farm.earnings), "\nTotal earnings indexed to 2001 levels: ", percent(index.total.earnings), sep = ""))) +
+    geom_hline(yintercept = 0, color = "black") +
+    labs(x="", y = "", color="", title = "Total earnings indexed to\n2001 levels", caption = "BEA - Local Area Employment and Wages")+
+    scale_y_continuous(labels=scales::percent)+
+    scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+    theme_line+
+    scale_color_manual(values= color.edr,
+                       guide = guide_legend(ncol = 2)) +
+    theme(legend.position = "bottom",
+          axis.text.x = element_text(size = 6),
+          legend.text = element_text(size = 6),
+          text = element_text(size = 10))
+  
+  girafe(ggobj = plot_grid(fe.index.edr, te.index.edr), height_svg = 10) %>%
+    girafe_options(opts_selection(type = "none"),
+                   opts_toolbar(saveaspng = FALSE),
+                  opts_sizing(rescale = FALSE))
+```
