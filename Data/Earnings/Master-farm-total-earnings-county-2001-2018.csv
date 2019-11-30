@@ -1,0 +1,1585 @@
+GeoFips,GeoName,countyfp,year,farm.earnings,total.earnings,Dem_RUCA,Dem_Desc,edr,planning.region
+27000,Minnesota,000,2001,1029219,131679344,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2001,1900,142953,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2001,12032,5381728,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2001,13333,461107,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2001,4610,630428,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2001,6823,567762,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2001,2736,63333,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2001,26045,1396126,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2001,23191,558386,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2001,139,543836,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2001,11403,1554956,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2001,2910,319980,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2001,18402,233404,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2001,3094,596450,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2001,22360,667341,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2001,-699,110228,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2001,0,100077,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2001,23753,190301,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2001,-1251,1062683,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2001,17848,7909569,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2001,11653,214118,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2001,8157,626444,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2001,-315,233651,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2001,8374,278406,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2001,10791,491513,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2001,22419,934488,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2001,10931,84629,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2001,15776,52768121,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2001,10745,197534,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2001,1904,254390,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2001,-980,384506,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2001,627,638168,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2001,18057,166624,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2001,-578,163759,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2001,13487,817725,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2001,-2730,52287,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2001,656,247616,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2001,14780,98216,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2001,-101,166511,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2001,236,53802,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2001,7474,341179,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2001,10685,67977,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2001,17623,578161,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2001,11168,753921,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2001,2137,76298,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2001,4257,94167,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2001,29723,378335,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2001,8274,275745,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2001,3827,337472,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2001,15979,407340,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2001,11659,660890,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2001,24960,121875,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2001,22374,568136,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2001,28171,392669,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2001,22926,95171,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2001,3671,4249090,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2001,25677,807120,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2001,2685,302512,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2001,4056,291102,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2001,20537,166504,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2001,21548,443914,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2001,9130,149541,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2001,1125,18159340,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2001,4211,47002,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2001,31142,277702,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2001,33719,245708,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2001,5775,989486,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2001,22071,156769,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2001,2897,350482,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2001,2158,3972774,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2001,5076,1810571,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2001,5403,935795,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2001,20359,157544,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2001,60743,3148716,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2001,19998,820365,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2001,18549,217797,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2001,5145,181065,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2001,6428,235841,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2001,7754,48417,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2001,16364,303249,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2001,-2451,214460,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2001,12726,328725,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2001,21034,3430362,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2001,16354,184100,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2001,15529,114356,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2001,21258,938906,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2001,5901,1328060,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2001,28892,159477,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27000,Minnesota,000,2002,1017896,135128152,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2002,3189,157037,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2002,14448,5645600,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2002,12728,488555,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2002,3710,671687,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2002,7631,595687,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2002,4941,70809,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2002,24423,1514720,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2002,15232,564156,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2002,-644,570919,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2002,10075,1613720,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2002,936,339100,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2002,24544,244702,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2002,4785,642428,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2002,16033,704738,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2002,-470,115892,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2002,0,105346,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2002,28351,205938,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2002,-1159,1125696,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2002,25269,8454369,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2002,12389,242824,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2002,8218,678519,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2002,18553,266326,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2002,-4032,288712,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2002,17079,508842,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2002,15216,953183,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2002,9482,88201,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2002,16679,52526664,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2002,9558,208142,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2002,4517,288870,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2002,-583,419478,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2002,844,664223,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2002,18499,176062,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2002,-449,168762,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2002,18511,852966,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2002,7194,66994,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2002,733,255244,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2002,15379,104970,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2002,-72,168476,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2002,-607,56484,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2002,6831,355776,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2002,4704,63674,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2002,13768,600163,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2002,10412,788300,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2002,-2409,71793,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2002,9765,105523,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2002,29722,400485,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2002,11537,297658,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2002,3521,372733,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2002,18206,432363,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2002,20699,708575,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2002,23944,125703,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2002,17364,569353,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2002,28694,416737,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2002,12494,89259,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2002,-932,4448241,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2002,26320,856482,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2002,3024,320910,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2002,1585,303515,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2002,10253,164936,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2002,13337,452218,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2002,10831,158836,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2002,919,18562872,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2002,-332,44735,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2002,33662,267810,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2002,46646,290900,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2002,4348,1046640,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2002,19099,161546,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2002,-2065,362010,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2002,2052,4160052,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2002,4286,1932377,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2002,6578,1006037,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2002,25583,174634,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2002,57008,3333256,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2002,16580,834354,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2002,19934,233303,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2002,12398,202543,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2002,7060,250740,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2002,7763,52530,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2002,13679,325911,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2002,-866,230890,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2002,13798,335432,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2002,23095,3513456,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2002,15273,187588,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2002,14009,122931,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2002,14721,973038,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2002,5112,1441190,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2002,22756,163103,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27000,Minnesota,000,2003,1847095,141146500,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2003,3723,165604,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2003,17557,5968457,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2003,23546,525766,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2003,10177,712365,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2003,17215,702421,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2003,6857,73027,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2003,31363,1562691,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2003,36079,601898,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2003,1259,565890,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2003,15518,1679584,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2003,12461,368577,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2003,30492,251901,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2003,6727,682225,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2003,50133,774990,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2003,3428,109103,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2003,0,108375,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2003,32494,228905,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2003,1200,1157433,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2003,35496,9072158,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2003,15469,249313,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2003,13078,731953,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2003,29188,275343,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2003,6200,295849,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2003,24787,530202,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2003,30238,990064,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2003,15506,96010,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2003,18758,53834290,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2003,18001,234269,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2003,7241,366411,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2003,-1199,443355,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2003,1751,685263,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2003,29208,198864,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2003,1632,171149,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2003,25057,910876,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2003,43724,104311,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2003,1565,273800,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2003,12799,105573,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2003,13,184101,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2003,8652,70371,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2003,12612,371555,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2003,11931,73035,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2003,18757,628965,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2003,16099,831789,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2003,8793,85964,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2003,55562,156087,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2003,50969,434856,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2003,10502,310626,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2003,4091,369779,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2003,30107,471171,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2003,11867,720478,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2003,31904,139407,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2003,29612,606361,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2003,42146,445920,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2003,53364,130834,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2003,5681,4804819,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2003,49838,923793,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2003,19591,353358,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2003,4945,315025,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2003,18480,183257,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2003,79023,548455,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2003,17934,176549,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2003,1188,19335568,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2003,12820,59615,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2003,46512,286335,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2003,54816,309018,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2003,12872,1077448,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2003,26638,165063,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2003,49831,427102,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2003,2447,4241987,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2003,8983,2059253,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2003,12264,1092256,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2003,31181,187228,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2003,87443,3388716,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2003,14262,854344,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2003,30891,251888,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2003,11931,189404,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2003,13756,274166,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2003,10498,55755,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2003,26276,357206,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2003,1590,243469,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2003,19599,355100,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2003,22180,3715073,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2003,22577,199079,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2003,38589,141607,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2003,22247,1002449,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2003,13397,1550437,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2003,31106,182114,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27000,Minnesota,000,2004,2470627,150987628,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2004,2601,174543,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2004,14408,6341947,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2004,17241,551138,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2004,6601,744029,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2004,29799,761636,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2004,16885,86242,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2004,72667,1681654,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2004,59056,656469,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2004,1376,590970,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2004,23410,1834613,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2004,7262,384516,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2004,32393,267159,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2004,6018,714970,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2004,30582,796372,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2004,2301,107587,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2004,0,118115,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2004,53734,267245,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2004,1556,1229148,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2004,41087,9738178,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2004,31830,294592,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2004,18283,793073,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2004,52818,321442,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2004,28048,341092,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2004,47519,564609,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2004,54211,1107438,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2004,20220,104786,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2004,17343,57823655,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2004,27052,262513,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2004,6304,562752,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2004,2236,475173,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2004,1912,710119,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2004,56776,242954,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2004,2854,186238,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2004,45546,983797,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2004,13002,76050,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2004,1379,290827,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2004,36469,135110,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2004,13,199983,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2004,4478,69953,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2004,25201,397062,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2004,18665,85501,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2004,44081,700460,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2004,21888,882309,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2004,1635,81469,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2004,8552,112255,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2004,95591,491899,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2004,26066,344431,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2004,6853,402914,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2004,56430,532138,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2004,47429,786480,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2004,49834,166618,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2004,53145,656232,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2004,71306,511002,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2004,25730,108452,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2004,20753,5034585,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2004,52338,979657,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2004,2361,359356,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2004,7360,331399,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2004,35073,216646,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2004,28916,524023,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2004,25281,190134,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2004,1077,20287767,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2004,3043,52731,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2004,72785,327342,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2004,66317,328963,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2004,30527,1096092,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2004,47331,184077,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2004,3745,428473,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2004,1935,4481450,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2004,16060,2268273,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2004,13102,1181081,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2004,49347,207778,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2004,122311,3618896,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2004,25813,937990,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2004,42342,278344,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2004,21541,217783,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2004,24540,302591,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2004,15421,62230,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2004,38112,382031,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2004,3570,258446,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2004,35632,381948,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2004,19879,3880827,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2004,53225,236865,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2004,29703,125835,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2004,40678,1081078,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2004,30233,1670474,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2004,50600,220554,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27000,Minnesota,000,2005,2941668,154969728,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2005,1052,174266,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2005,14945,6580198,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2005,22745,579999,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2005,6670,761400,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2005,32498,783647,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2005,17578,86817,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2005,81839,1774540,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2005,68819,668013,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2005,491,606452,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2005,21268,1903348,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2005,14578,382907,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2005,43045,291618,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2005,6730,736551,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2005,31506,820706,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2005,3833,107416,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2005,0,124188,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2005,57204,263046,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2005,2040,1254796,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2005,40550,10050736,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2005,38605,307687,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2005,18254,796771,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2005,59333,328864,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2005,42653,335851,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2005,60093,577923,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2005,57163,1079459,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2005,15773,99358,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2005,17627,59526256,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2005,27889,262655,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2005,9946,500197,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2005,1749,495208,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2005,1315,728497,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2005,71935,271584,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2005,2080,178966,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2005,66044,1026154,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2005,10249,72415,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2005,1052,283473,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2005,46152,147110,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2005,61,210703,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2005,2695,67557,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2005,26478,396561,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2005,27080,95545,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2005,56242,741061,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2005,27913,927332,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2005,4718,85376,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2005,16948,120307,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2005,117694,520266,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2005,28438,350740,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2005,4388,395431,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2005,68361,541667,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2005,62055,794734,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2005,65492,183427,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2005,64487,691827,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2005,89306,525458,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2005,38371,119121,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2005,29648,5111805,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2005,54891,989285,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2005,9273,390795,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2005,5751,326002,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2005,45361,230890,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2005,46961,551300,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2005,31746,196241,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2005,1137,20552949,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2005,5454,55626,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2005,91344,352044,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2005,97411,353559,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2005,38096,1093655,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2005,65543,219861,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2005,7691,463114,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2005,1410,4508694,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2005,19146,2352294,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2005,15004,1211081,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2005,55774,213238,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2005,120553,3722368,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2005,34004,971746,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2005,50371,288372,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2005,37317,230221,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2005,29880,310785,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2005,15308,63047,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2005,35689,367661,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2005,6677,256436,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2005,45119,395290,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2005,22269,3978180,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2005,56446,239739,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2005,23426,128417,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2005,39266,1116604,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2005,32674,1749120,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2005,54998,243124,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27000,Minnesota,000,2006,2553230,159588573,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2006,1544,178383,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2006,13395,6757035,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2006,27859,599736,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2006,6984,791343,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2006,33475,815214,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2006,13713,87509,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2006,68561,1930225,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2006,58534,680780,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2006,886,606085,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2006,16475,2094767,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2006,7219,374532,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2006,40065,295115,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2006,5672,761650,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2006,44809,855745,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2006,4101,105899,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2006,0,125813,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2006,41312,265898,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2006,1488,1318602,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2006,36513,10328602,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2006,26970,332318,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2006,11029,819918,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2006,42374,320034,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2006,30703,341141,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2006,45820,587149,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2006,47599,1077711,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2006,13702,98644,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2006,17915,61775141,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2006,21813,248196,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2006,7209,374351,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2006,1853,512664,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2006,1945,754127,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2006,53426,253142,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2006,2781,178183,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2006,65272,1051537,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2006,18283,80151,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2006,794,267329,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2006,36099,139956,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2006,48,211780,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2006,2367,65891,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2006,23863,398635,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2006,16702,85037,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2006,44516,740393,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2006,22079,952057,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2006,6272,87241,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2006,22858,128184,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2006,102682,505717,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2006,28309,358794,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2006,3097,402201,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2006,57451,533370,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2006,41540,818969,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2006,47559,174687,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2006,63311,716085,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2006,63152,509517,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2006,43424,126020,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2006,23384,5297549,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2006,50113,988082,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2006,6503,399704,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2006,7772,326177,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2006,36117,221965,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2006,65410,577444,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2006,17835,185354,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2006,1210,20911708,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2006,6077,57490,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2006,79439,343582,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2006,94447,362880,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2006,37489,1137714,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2006,50337,219950,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2006,15156,442102,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2006,2122,4705434,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2006,18769,2445812,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2006,24535,1258695,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2006,49520,207747,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2006,106897,3858485,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2006,27171,1046017,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2006,48435,292280,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2006,26134,241700,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2006,25657,316032,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2006,16427,65179,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2006,23194,347984,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2006,5139,250936,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2006,34643,389386,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2006,23992,4130424,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2006,46177,223300,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2006,28971,143626,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2006,26870,1125820,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2006,29999,1826276,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2006,39867,242536,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27000,Minnesota,000,2007,2631792,167175577,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2007,1177,178452,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2007,10888,6871055,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2007,28923,617362,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2007,57,798792,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2007,25250,836553,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2007,12633,88756,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2007,59854,1911775,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2007,47974,688296,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2007,1005,634282,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2007,20633,2203450,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2007,3481,377163,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2007,42794,305198,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2007,6343,766404,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2007,52100,881968,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2007,3419,106670,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2007,0,127029,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2007,46107,274808,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2007,2531,1341706,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2007,38448,10774428,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2007,32349,340539,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2007,8818,904158,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2007,67773,337383,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2007,41648,360551,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2007,46734,604745,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2007,54549,1109380,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2007,21634,108699,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2007,16845,66044709,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2007,17727,241167,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2007,5366,298414,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2007,2966,517028,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2007,2074,765290,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2007,55328,258847,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2007,-727,172954,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2007,56547,1074762,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2007,30526,92534,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2007,755,278046,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2007,32177,139982,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2007,69,214274,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2007,2021,62907,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2007,19930,397355,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2007,18017,85331,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2007,56299,748732,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2007,15100,967902,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2007,8505,90496,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2007,39644,145863,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2007,85268,508280,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2007,27787,360047,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2007,2201,413558,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2007,62559,559792,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2007,46864,860586,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2007,59400,191959,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2007,38513,718732,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2007,83869,539947,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2007,50185,132094,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2007,22935,5575832,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2007,46389,1015667,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2007,8930,420984,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2007,8200,335984,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2007,36362,230743,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2007,72366,594510,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2007,16881,195333,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2007,908,21923060,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2007,9575,60525,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2007,78921,355466,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2007,97138,377168,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2007,22305,1171381,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2007,55276,229269,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2007,17311,440553,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2007,2974,4932977,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2007,17821,2464482,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2007,19751,1277288,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2007,48749,208367,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2007,113653,4058625,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2007,29816,1062733,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2007,61337,308864,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2007,17598,227891,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2007,22192,337006,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2007,21437,69060,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2007,27996,344347,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2007,5168,255164,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2007,44538,397447,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2007,20256,4176035,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2007,39816,217365,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2007,27964,146755,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2007,35385,1169441,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2007,26510,1901490,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2007,42397,262575,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27000,Minnesota,000,2008,3970212,171922227,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2008,609,174216,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2008,12398,6773236,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2008,35870,621410,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2008,4489,826071,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2008,43577,841221,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2008,28084,107706,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2008,89767,1873204,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2008,73744,733414,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2008,-1180,650738,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2008,26962,2242579,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2008,5200,376631,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2008,50983,323085,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2008,10273,771903,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2008,75873,983488,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2008,4559,114193,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2008,0,127517,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2008,66934,297646,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2008,-678,1331044,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2008,46712,11035717,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2008,34047,354742,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2008,22677,1030041,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2008,68480,332450,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2008,50985,386262,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2008,57918,629245,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2008,62928,1187097,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2008,40445,134930,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2008,18584,67296302,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2008,24838,245280,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2008,2447,284734,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2008,1786,524668,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2008,-36,789840,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2008,77610,301931,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2008,-2170,169305,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2008,80601,1172846,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2008,71805,136218,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2008,1307,276617,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2008,44697,156613,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2008,46,223586,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2008,3044,66196,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2008,32228,420038,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2008,28220,97202,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2008,74608,802609,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2008,30036,972450,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2008,12662,94817,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2008,104535,215832,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2008,110634,565471,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2008,45544,376529,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2008,4722,405129,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2008,100715,602105,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2008,47672,886266,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2008,82767,219081,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2008,74008,775475,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2008,109197,579806,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2008,88703,170335,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2008,29053,5711404,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2008,103338,1102533,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2008,24878,449737,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2008,9720,350137,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2008,58971,275576,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2008,164594,706764,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2008,36220,215779,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2008,1326,22282169,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2008,19078,72196,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2008,108650,404330,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2008,150988,440286,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2008,31017,1221308,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2008,77827,243267,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2008,48404,493695,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2008,1947,5280073,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2008,28610,2536507,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2008,11142,1247921,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2008,69932,231799,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2008,180678,4245568,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2008,35498,1156782,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2008,77421,332103,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2008,49249,236983,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2008,37754,406438,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2008,36469,84111,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2008,40857,366613,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2008,11572,260961,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2008,73916,437545,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2008,26213,4196630,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2008,50225,228823,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2008,53908,173175,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2008,41916,1236216,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2008,36985,1927881,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2008,59390,279850,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27000,Minnesota,000,2009,2121024,162791441,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2009,-557,168276,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2009,13286,6485187,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2009,17636,606348,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2009,6324,871610,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2009,21939,794107,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2009,15955,102650,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2009,63399,1798934,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2009,49086,684654,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2009,-2207,636893,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2009,16067,2131118,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2009,-2453,372140,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2009,44285,299149,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2009,3832,749771,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2009,14593,984141,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2009,1077,110293,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2009,0,129546,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2009,43181,271733,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2009,12033,1292408,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2009,46425,10749378,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2009,19321,311676,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2009,6689,1024346,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2009,47197,292893,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2009,21023,349783,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2009,22866,595923,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2009,39121,1166787,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2009,17858,117131,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2009,19328,62487668,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2009,12921,235740,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2009,5215,262868,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2009,-861,513587,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2009,-1023,774752,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2009,65462,297742,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2009,-1799,166695,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2009,57293,1142585,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2009,4021,71491,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2009,1705,275328,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2009,56754,174911,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2009,64,210832,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2009,209,67422,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2009,16048,372640,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2009,21165,92633,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2009,43639,772718,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2009,12332,910774,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2009,-4739,78010,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2009,7064,126878,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2009,65498,503320,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2009,21506,328805,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2009,1631,390185,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2009,52185,537906,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2009,25166,891374,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2009,56279,203528,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2009,39478,707367,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2009,69569,560462,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2009,18880,104991,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2009,9486,5741569,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2009,38999,1048348,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2009,-3514,414101,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2009,5453,348935,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2009,45831,261115,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2009,52544,614972,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2009,16313,191270,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2009,1553,21545797,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2009,4945,57222,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2009,82137,403389,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2009,91335,374604,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2009,25898,1215562,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2009,45743,204884,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2009,-6319,410527,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2009,1433,5072356,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2009,16853,2377966,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2009,5874,1197682,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2009,46064,220148,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2009,89012,4110798,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2009,17183,1087302,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2009,33407,279269,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2009,24925,212516,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2009,15362,392716,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2009,22975,72442,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2009,17648,340997,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2009,7247,250541,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2009,45208,403104,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2009,30794,3957205,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2009,35410,213818,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2009,5381,133917,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2009,21949,1168012,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2009,25507,1868949,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2009,45422,239321,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27000,Minnesota,000,2010,3140158,169682909,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2010,10444,183171,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2010,15857,6566861,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2010,29686,660356,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2010,2409,880961,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2010,29440,820241,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2010,17045,107668,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2010,79030,1845060,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2010,72365,713521,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2010,-157,647946,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2010,22282,2218057,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2010,1006,398272,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2010,46022,317647,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2010,7863,769680,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2010,39400,1026989,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2010,9351,127015,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2010,0,136558,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2010,53514,296207,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2010,22674,1334034,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2010,56112,10940890,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2010,38079,355202,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2010,13294,1118175,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2010,46837,291964,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2010,43297,350871,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2010,44706,639395,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2010,53752,1225538,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2010,24940,124200,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2010,20642,64714077,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2010,20473,252463,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2010,8434,269520,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2010,490,530970,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2010,1859,809350,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2010,76803,309801,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2010,3625,179255,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2010,68358,1169995,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2010,22834,95371,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2010,2533,297221,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2010,61505,193120,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2010,47,234817,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2010,1367,73239,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2010,20491,403169,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2010,28949,105966,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2010,62231,811579,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2010,16412,921840,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2010,899,84587,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2010,22334,154941,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2010,85258,574491,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2010,36972,360151,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2010,4282,403018,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2010,83631,593463,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2010,60317,985450,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2010,69344,228335,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2010,66808,756939,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2010,94719,601932,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2010,35581,126793,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2010,22105,6166738,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2010,55003,1108955,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2010,5059,472671,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2010,9822,366875,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2010,74464,293512,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2010,71933,658408,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2010,24098,210375,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2010,1680,22257002,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2010,9402,63255,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2010,106671,435600,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2010,107904,407574,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2010,39271,1248979,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2010,75593,242542,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2010,9784,440613,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2010,3950,5533681,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2010,17688,2500137,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2010,4909,1232266,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2010,55946,245296,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2010,139738,4236512,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2010,31369,1113925,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2010,61589,312215,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2010,39404,232872,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2010,34283,424907,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2010,31853,84500,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2010,30124,372468,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2010,10790,256053,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2010,63650,453247,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2010,32311,4128267,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2010,44482,223497,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2010,31548,174642,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2010,48342,1234244,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2010,27063,1960061,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2010,61884,252688,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27000,Minnesota,000,2011,4300155,179683799,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2011,4540,181171,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2011,15921,6974252,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2011,39975,706078,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2011,3916,898455,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2011,25597,841462,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2011,14947,105964,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2011,132021,2011730,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2011,97066,769533,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2011,-784,676094,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2011,28607,2400054,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2011,2365,412723,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2011,57903,350291,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2011,9917,794768,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2011,49580,1083368,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2011,11165,142164,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2011,0,140881,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2011,90720,340053,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2011,25628,1382346,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2011,72705,11571458,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2011,62612,402048,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2011,15225,1164109,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2011,97252,354073,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2011,76083,401828,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2011,85678,698984,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2011,89083,1326515,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2011,28192,128652,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2011,22989,68703007,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2011,33955,268206,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2011,10807,274203,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2011,3645,559873,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2011,3368,847252,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2011,104208,357843,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2011,4210,188960,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2011,74612,1240701,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2011,23558,100877,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2011,2311,294831,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2011,62844,202386,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2011,71,250121,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2011,-502,69194,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2011,30479,435161,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2011,42571,123901,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2011,75000,871088,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2011,21611,957755,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2011,10350,94102,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2011,35640,181025,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2011,130935,591113,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2011,35621,373269,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2011,1194,416584,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2011,100190,637903,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2011,101163,1074095,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2011,105786,269362,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2011,89409,806346,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2011,140109,668074,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2011,44683,140108,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2011,46574,6085225,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2011,81585,1196666,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2011,14068,512512,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2011,12695,376863,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2011,98023,317161,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2011,97489,703961,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2011,29647,230956,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2011,1772,23261369,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2011,17780,73355,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2011,111429,468146,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2011,109114,419542,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2011,49474,1266978,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2011,106746,284208,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2011,25410,497561,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2011,4641,5864910,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2011,24387,2642232,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2011,8403,1350525,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2011,67141,268482,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2011,183937,4538728,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2011,52929,1154882,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2011,71939,346972,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2011,45425,265280,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2011,48395,433303,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2011,35392,87722,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2011,60010,410145,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2011,16378,267860,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2011,92079,503229,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2011,37679,4372263,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2011,75857,262471,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2011,26830,177994,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2011,84430,1335366,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2011,31178,2135690,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2011,84588,314848,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27000,Minnesota,000,2012,5977017,190181389,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2012,2199,183305,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2012,20510,7406690,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2012,65425,780448,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2012,8187,938168,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2012,43041,913588,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2012,50364,143960,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2012,158369,2184042,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2012,105075,807941,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2012,-1790,694546,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2012,41889,2596110,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2012,4481,426234,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2012,96461,397098,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2012,13389,778154,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2012,103745,1184693,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2012,8309,144167,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2012,0,140832,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2012,106077,366978,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2012,4827,1426978,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2012,79335,12190828,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2012,84100,466384,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2012,34376,1299321,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2012,117595,386123,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2012,80666,412085,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2012,113454,730939,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2012,124574,1405185,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2012,78668,185749,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2012,30306,73030610,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2012,42936,293299,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2012,15822,292637,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2012,7564,585423,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2012,1096,876348,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2012,117709,401384,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2012,4624,198895,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2012,127419,1361257,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2012,66017,148922,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2012,2357,282208,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2012,94360,247407,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2012,50,263815,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2012,5661,69927,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2012,52595,493418,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2012,47926,134556,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2012,86342,894339,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2012,57185,1008043,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2012,20703,108418,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2012,89481,242814,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2012,158526,623510,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2012,69566,421891,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2012,6995,457946,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2012,129353,668165,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2012,125206,1139475,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2012,109163,275528,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2012,103767,838194,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2012,134811,683672,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2012,71149,166842,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2012,66966,6402409,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2012,122282,1285384,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2012,30709,593695,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2012,13836,380371,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2012,105946,329463,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2012,159059,794622,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2012,67338,284781,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2012,2029,23794440,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2012,29718,86500,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2012,141167,497563,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2012,181808,499372,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2012,74060,1378426,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2012,113974,288969,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2012,61179,539877,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2012,3811,5887220,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2012,35213,2818379,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2012,11321,1437768,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2012,96195,305320,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2012,246720,4795202,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2012,84221,1220301,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2012,137174,460503,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2012,85446,318054,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2012,64817,479711,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2012,102082,155316,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2012,72252,437709,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2012,18261,286828,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2012,103382,531759,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2012,39317,4582064,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2012,75615,265218,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2012,73763,234367,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2012,94298,1409158,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2012,50556,2281510,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2012,90487,319641,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27000,Minnesota,000,2013,5613071,195260585,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2013,3605,185763,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2013,20597,7736799,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2013,68258,805187,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2013,7292,965087,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2013,17906,880643,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2013,38094,130913,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2013,155067,2242716,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2013,117576,844472,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2013,-361,741435,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2013,28991,2668781,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2013,3817,439008,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2013,109597,403203,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2013,8926,875459,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2013,99029,1207896,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2013,13706,162863,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2013,0,142931,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2013,126537,386849,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2013,5336,1479923,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2013,67999,12605289,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2013,41145,407619,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2013,20745,1265955,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2013,80293,350324,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2013,53182,394569,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2013,53272,684506,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2013,85928,1433858,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2013,66571,174334,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2013,30998,74883254,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2013,29328,280758,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2013,20600,303008,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2013,3938,608038,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2013,1669,876296,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2013,114813,410032,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2013,5220,207333,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2013,99665,1378139,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2013,81916,168898,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2013,4569,286376,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2013,127635,275726,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2013,76,262560,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2013,5346,82818,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2013,44052,486216,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2013,65228,153715,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2013,105748,960449,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2013,42607,1026042,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2013,26061,115546,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2013,76779,233654,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2013,167115,619737,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2013,54476,405136,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2013,683,462369,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2013,87847,628051,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2013,58803,1068395,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2013,167019,331626,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2013,111466,872377,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2013,152037,710203,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2013,90249,181713,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2013,37957,6584514,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2013,154401,1348293,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2013,22857,595850,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2013,11218,377507,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2013,125480,352152,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2013,240946,880392,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2013,54139,284057,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2013,2245,24804951,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2013,38403,96463,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2013,159745,538373,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2013,210333,530400,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2013,43619,1384213,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2013,132624,314866,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2013,69580,495103,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2013,5615,5861827,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2013,28978,2952166,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2013,6738,1521163,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2013,91381,294535,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2013,192790,4994634,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2013,36829,1217831,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2013,113138,421700,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2013,57725,282864,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2013,40769,444332,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2013,74501,129851,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2013,58098,420923,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2013,18790,296477,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2013,83989,517296,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2013,43037,4846853,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2013,84307,277410,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2013,56112,213996,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2013,81922,1370450,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2013,24207,2340338,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2013,141547,373958,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27000,Minnesota,000,2014,3628734,202625339,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2014,4694,193209,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2014,17193,8214850,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2014,36823,808167,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2014,6768,1020317,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2014,27119,926968,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2014,11880,111296,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2014,125209,2338400,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2014,81612,822290,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2014,215,791387,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2014,33665,2878657,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2014,7559,462380,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2014,55768,357416,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2014,6650,896011,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2014,21855,1202620,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2014,14457,167918,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2014,0,143826,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2014,73406,344079,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2014,4087,1584832,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2014,38855,13400263,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2014,25111,391916,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2014,11312,1132392,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2014,20172,272436,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2014,26156,394655,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2014,10010,669998,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2014,55289,1480263,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2014,25128,139398,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2014,27896,78365003,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2014,32714,292347,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2014,7025,300149,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2014,4097,631559,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2014,1125,936995,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2014,70271,370169,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2014,7339,230381,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2014,71601,1379134,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2014,37962,130067,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2014,4425,267571,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2014,49815,197468,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2014,26,272280,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2014,790,99667,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2014,24975,547894,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2014,36862,128509,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2014,54212,929993,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2014,44516,1088016,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2014,8920,102217,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2014,13475,181810,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2014,119905,582067,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2014,42377,418212,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2014,3851,470686,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2014,107678,652690,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2014,16268,1074572,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2014,107850,274831,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2014,90941,903243,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2014,122194,706745,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2014,23141,116298,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2014,9685,6728778,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2014,133972,1393203,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2014,11747,609813,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2014,17317,393124,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2014,115726,358618,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2014,85661,750166,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2014,23466,271645,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2014,1797,25980766,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2014,23839,83333,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2014,93410,553571,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2014,109183,438070,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2014,28063,1430806,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2014,116556,311271,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2014,37691,493751,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2014,5594,5982360,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2014,23144,3218543,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2014,5042,1594168,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2014,65277,270716,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2014,224829,5364048,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2014,6463,1208306,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2014,99935,426973,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2014,25025,285934,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2014,54838,455929,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2014,30922,89931,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2014,57851,436719,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2014,14832,304590,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2014,57497,542250,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2014,31121,5179526,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2014,40163,239021,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2014,6573,172971,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2014,90930,1432659,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2014,25298,2494372,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2014,82043,332891,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27000,Minnesota,000,2015,3180010,211003037,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2015,4752,201917,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2015,20812,8641563,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2015,21122,810992,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2015,8954,1066683,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2015,33612,978022,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2015,10684,117504,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2015,96198,2398677,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2015,49537,827281,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2015,77,781757,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2015,42472,3086259,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2015,7904,485613,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2015,42661,341420,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2015,12245,934933,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2015,1150,1220199,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2015,12133,181707,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2015,0,152361,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2015,63886,333559,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2015,2411,1650079,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2015,26772,13987565,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2015,18746,402379,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2015,18876,1243372,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2015,11799,270147,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2015,5362,412621,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2015,-6416,679021,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2015,28597,1549727,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2015,48824,166063,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2015,30069,82035088,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2015,24569,297708,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2015,3065,325432,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2015,6630,648247,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2015,1923,1013362,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2015,65583,359926,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2015,631,242995,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2015,88192,1521621,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2015,27556,120930,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2015,4989,267961,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2015,25549,170495,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2015,186,270117,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2015,1577,114887,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2015,26098,544716,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2015,37052,128224,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2015,70492,969222,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2015,75957,1160293,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2015,13260,111315,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2015,11705,176785,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2015,84706,561239,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2015,43411,438822,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2015,14681,500391,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2015,115751,681831,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2015,-2650,1143623,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2015,134202,306878,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2015,66260,915675,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2015,113966,747338,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2015,20439,115329,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2015,3370,6992750,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2015,95314,1380510,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2015,29116,633661,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2015,23043,416012,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2015,82366,346513,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2015,16481,697631,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2015,7895,276568,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2015,1780,27037204,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2015,28658,90080,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2015,76583,547972,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2015,119591,456687,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2015,24557,1501597,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2015,113982,312053,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2015,41732,519144,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2015,6985,6050218,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2015,22243,3388439,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2015,4666,1624803,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2015,73330,280762,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2015,181348,5503152,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2015,925,1208982,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2015,60224,370056,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2015,30130,312071,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2015,66145,465162,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2015,42782,109005,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2015,34371,423802,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2015,14653,318293,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2015,49655,560600,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2015,28267,5514460,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2015,21409,222390,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2015,-137,169230,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2015,51221,1425624,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2015,39061,2652720,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2015,99245,383015,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27000,Minnesota,000,2016,1335979,215200116,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2016,1131,211576,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2016,19066,8927175,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2016,24595,843886,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2016,6054,1119115,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2016,22457,1006104,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2016,3577,117838,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2016,27576,2379590,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2016,12874,796447,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2016,-780,807017,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2016,31282,3092063,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2016,-254,511864,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2016,15879,331525,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2016,5770,985521,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2016,8733,1222739,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2016,9803,183742,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2016,0,155483,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2016,19307,267969,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2016,84,1716569,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2016,15223,14311135,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2016,-11067,382570,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2016,5083,1307341,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2016,-36799,220575,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2016,-37608,357204,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2016,-41165,665912,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2016,-19067,1474934,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2016,27092,145879,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2016,24050,84910969,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2016,11607,302573,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2016,2942,342029,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2016,4409,658375,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2016,300,967614,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2016,16347,313162,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2016,10565,269845,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2016,42050,1516476,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2016,24290,114516,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2016,3259,262568,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2016,18027,148697,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2016,199,241975,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2016,-574,102613,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2016,3074,560202,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2016,13234,109880,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2016,18802,917784,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2016,44234,1132569,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2016,19190,121430,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2016,23368,186980,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2016,28185,520591,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2016,14367,423840,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2016,10225,507743,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2016,61248,653571,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2016,-45121,1129329,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2016,63413,238041,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2016,34746,914099,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2016,37149,670744,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2016,17089,113786,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2016,-22720,7327826,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2016,49332,1385982,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2016,21160,642308,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2016,16960,424456,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2016,52042,321214,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2016,29170,729707,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2016,-553,264482,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2016,1603,27523531,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2016,18833,81079,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2016,31165,456958,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2016,57796,399072,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2016,-3301,1546015,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2016,60763,264621,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2016,36087,506426,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2016,4704,6038348,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2016,10027,3627698,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2016,5485,1674940,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2016,34440,266489,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2016,110585,5581832,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2016,-23009,1238519,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2016,37346,348474,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2016,5313,267380,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2016,33289,433490,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2016,16937,87856,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2016,10072,391610,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2016,7666,320148,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2016,10512,458183,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2016,23661,5821295,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2016,-10371,207684,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2016,-4154,170671,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2016,30062,1441733,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2016,21432,2738148,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2016,54125,318167,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27000,Minnesota,000,2017,1850163,223244047,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2017,732,221595,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2017,18526,9156902,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2017,29385,875703,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2017,1233,1147010,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2017,23224,1043665,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2017,-3420,106955,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2017,84687,2494345,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2017,35628,839940,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2017,-2281,829593,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2017,37401,3334501,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2017,697,538779,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2017,13380,337103,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2017,6311,1022278,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2017,19631,1268836,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2017,9300,181297,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2017,0,156355,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2017,32134,304848,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2017,1061,1763573,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2017,17928,14722924,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2017,1320,405224,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2017,2064,1213592,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2017,-20461,232038,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2017,-14605,359391,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2017,-13171,696108,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2017,11327,1535744,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2017,15014,140305,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2017,23272,88572774,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2017,18490,319448,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2017,3599,366776,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2017,1281,671521,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2017,-8,962478,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2017,32671,330114,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2017,11707,272293,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2017,43687,1602404,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2017,21328,111652,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2017,1477,266755,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2017,7775,139735,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2017,75,267166,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2017,-1465,110734,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2017,23781,578370,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2017,7956,105463,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2017,8525,921927,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2017,59237,1140871,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2017,6542,110161,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2017,29459,187631,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2017,66673,574237,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2017,18647,445506,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2017,7373,524219,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2017,61824,672162,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2017,-20219,1092839,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2017,51100,229880,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2017,52402,982602,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2017,70055,698773,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2017,12295,111580,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2017,-5865,7665215,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2017,47116,1432039,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2017,22153,649812,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2017,21422,441130,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2017,62855,356692,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2017,57764,762289,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2017,-822,276052,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2017,1638,28218432,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2017,26125,90359,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2017,34130,428625,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2017,60783,408464,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2017,8898,1611918,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2017,69302,290285,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2017,49406,543024,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2017,3103,6196829,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2017,14201,3957106,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2017,4919,1716477,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2017,44461,279602,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2017,127290,5802267,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2017,-12694,1301087,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2017,41213,338743,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2017,-4261,249997,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2017,36753,515732,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2017,4817,82226,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2017,24949,413140,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2017,8750,319394,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2017,26907,440091,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2017,22185,6153351,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2017,17964,243946,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2017,945,174133,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2017,46874,1482788,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2017,28018,2813248,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2017,32280,290879,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27000,Minnesota,000,2018,1852217,233117230,NA,Minnesota,Minnesota,Minnesota
+27001,"Aitkin, MN",001,2018,-404,229741,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27003,"Anoka, MN",003,2018,17346,9631909,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27005,"Becker, MN",005,2018,27991,895248,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27007,"Beltrami, MN",007,2018,1683,1211278,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27009,"Benton, MN",009,2018,12896,1060786,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27011,"Big Stone, MN",011,2018,11418,124994,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27013,"Blue Earth, MN",013,2018,43968,2536429,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+27015,"Brown, MN",015,2018,43312,871798,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27017,"Carlton, MN",017,2018,-3411,841172,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27019,"Carver, MN",019,2018,5789,3445791,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27021,"Cass, MN",021,2018,-4428,566416,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27023,"Chippewa, MN",023,2018,12136,360276,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27025,"Chisago, MN",025,2018,411,1054046,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+27027,"Clay, MN",027,2018,29004,1319850,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+27029,"Clearwater, MN",029,2018,10919,181091,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27031,"Cook, MN",031,2018,0,161561,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+27033,"Cottonwood, MN",033,2018,41911,331942,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27035,"Crow Wing, MN",035,2018,358,1835092,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27037,"Dakota, MN",037,2018,35851,15643740,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27039,"Dodge, MN",039,2018,30750,457910,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27041,"Douglas, MN",041,2018,-2685,1283663,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27043,"Faribault, MN",043,2018,8752,270557,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27045,"Fillmore, MN",045,2018,1983,378168,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27047,"Freeborn, MN",047,2018,21434,750639,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27049,"Goodhue, MN",049,2018,29949,1621365,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27051,"Grant, MN",051,2018,24648,155035,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27053,"Hennepin, MN",053,2018,18312,92886168,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27055,"Houston, MN",055,2018,15658,328798,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27057,"Hubbard, MN",057,2018,4887,386407,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+27059,"Isanti, MN",059,2018,-4127,695015,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27061,"Itasca, MN",061,2018,-1083,1027032,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27063,"Jackson, MN",063,2018,27766,340011,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27065,"Kanabec, MN",065,2018,1504,272832,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27067,"Kandiyohi, MN",067,2018,40182,1643404,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27069,"Kittson, MN",069,2018,26860,119946,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27071,"Koochiching, MN",071,2018,1400,286421,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27073,"Lac qui Parle, MN",073,2018,27812,166145,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27075,"Lake, MN",075,2018,72,281381,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27077,"Lake of the Woods, MN",077,2018,-1348,117792,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27079,"Le Sueur, MN",079,2018,1892,566452,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27081,"Lincoln, MN",081,2018,17550,115945,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27083,"Lyon, MN",083,2018,19408,926986,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27085,"McLeod, MN",085,2018,19554,1125594,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27087,"Mahnomen, MN",087,2018,4252,109505,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+27089,"Marshall, MN",089,2018,25330,191291,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27091,"Martin, MN",091,2018,29644,535005,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27093,"Meeker, MN",093,2018,2952,446609,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+27095,"Mille Lacs, MN",095,2018,-4053,529820,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27097,"Morrison, MN",097,2018,56217,690747,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27099,"Mower, MN",099,2018,42338,1190732,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27101,"Murray, MN",101,2018,49815,236502,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+27103,"Nicollet, MN",103,2018,25548,1018845,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27105,"Nobles, MN",105,2018,61854,713140,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27107,"Norman, MN",107,2018,24420,127801,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27109,"Olmsted, MN",109,2018,5830,8281257,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+27111,"Otter Tail, MN",111,2018,39042,1472475,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27113,"Pennington, MN",113,2018,22331,668969,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27115,"Pine, MN",115,2018,3325,438341,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+27117,"Pipestone, MN",117,2018,57285,365835,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27119,"Polk, MN",119,2018,75394,815790,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27121,"Pope, MN",121,2018,15345,309820,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27123,"Ramsey, MN",123,2018,1671,28762099,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27125,"Red Lake, MN",125,2018,25566,91853,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+27127,"Redwood, MN",127,2018,44886,449761,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27129,"Renville, MN",129,2018,37890,396811,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+27131,"Rice, MN",131,2018,12722,1701682,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27133,"Rock, MN",133,2018,65322,282760,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+27135,"Roseau, MN",135,2018,56877,572980,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+27137,"St. Louis, MN",137,2018,2592,6520640,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+27139,"Scott, MN",139,2018,1523,4183413,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27141,"Sherburne, MN",141,2018,974,1796444,D,Entirely urban,EDR  7W- Central,Central Minnesota
+27143,"Sibley, MN",143,2018,8269,251172,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27145,"Stearns, MN",145,2018,98543,5957143,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27147,"Steele, MN",147,2018,22154,1382976,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27149,"Stevens, MN",149,2018,46584,357505,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27151,"Swift, MN",151,2018,24035,285003,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+27153,"Todd, MN",153,2018,30454,511822,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27155,"Traverse, MN",155,2018,28416,107313,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+27157,"Wabasha, MN",157,2018,18690,421767,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27159,"Wadena, MN",159,2018,4899,330803,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+27161,"Waseca, MN",161,2018,28874,433662,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27163,"Washington, MN",163,2018,26797,6477956,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+27165,"Watonwan, MN",165,2018,-3291,238895,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+27167,"Wilkin, MN",167,2018,21785,200439,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+27169,"Winona, MN",169,2018,48155,1536053,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+27171,"Wright, MN",171,2018,5285,2915023,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+27173,"Yellow Medicine, MN",173,2018,37796,301945,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota

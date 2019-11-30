@@ -1,0 +1,772 @@
+periodyear,naicstitle,areaname,wage.type,wages,agrelated.wages
+2018,Crop Production,Central,totwageYear,37675204,694050633
+2018,Animal Production and Aquaculture,Central,totwageYear,99662283,694050633
+2018,Support Activities for Crop Production,Central,totwageYear,9894125,694050633
+2018,Support Activities for Animal Production,Central,totwageYear,7356990,694050633
+2018,Food Manufacturing,Central,totwageYear,427110744,694050633
+2018,Agricultural Implement Manufacturing,Central,totwageYear,33261465,694050633
+2018,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,19785874,694050633
+2018,Farm Supplies Merchant Wholesalers,Central,totwageYear,59303948,694050633
+2017,Crop Production,Central,totwageYear,36743997,657191726
+2017,Animal Production and Aquaculture,Central,totwageYear,94657999,657191726
+2017,Support Activities for Crop Production,Central,totwageYear,8906905,657191726
+2017,Support Activities for Animal Production,Central,totwageYear,6272639,657191726
+2017,Food Manufacturing,Central,totwageYear,402026887,657191726
+2017,Agricultural Implement Manufacturing,Central,totwageYear,29965551,657191726
+2017,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,19994337,657191726
+2017,Farm Supplies Merchant Wholesalers,Central,totwageYear,58623411,657191726
+2016,Crop Production,Central,totwageYear,35476672,602547632
+2016,Animal Production and Aquaculture,Central,totwageYear,86475386,602547632
+2016,Support Activities for Crop Production,Central,totwageYear,9038437,602547632
+2016,Support Activities for Animal Production,Central,totwageYear,5763439,602547632
+2016,Food Manufacturing,Central,totwageYear,362840014,602547632
+2016,Agricultural Implement Manufacturing,Central,totwageYear,33479431,602547632
+2016,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,17724208,602547632
+2016,Farm Supplies Merchant Wholesalers,Central,totwageYear,51750045,602547632
+2015,Crop Production,Central,totwageYear,33846660,579863094
+2015,Animal Production and Aquaculture,Central,totwageYear,90361564,579863094
+2015,Support Activities for Crop Production,Central,totwageYear,7594600,579863094
+2015,Support Activities for Animal Production,Central,totwageYear,5762986,579863094
+2015,Food Manufacturing,Central,totwageYear,342010124,579863094
+2015,Agricultural Implement Manufacturing,Central,totwageYear,33636828,579863094
+2015,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,18110001,579863094
+2015,Farm Supplies Merchant Wholesalers,Central,totwageYear,48540331,579863094
+2014,Crop Production,Central,totwageYear,32513993,556591627
+2014,Animal Production and Aquaculture,Central,totwageYear,86188198,556591627
+2014,Support Activities for Crop Production,Central,totwageYear,7253779,556591627
+2014,Support Activities for Animal Production,Central,totwageYear,1220363,556591627
+2014,Food Manufacturing,Central,totwageYear,329854996,556591627
+2014,Agricultural Implement Manufacturing,Central,totwageYear,32703759,556591627
+2014,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,18564031,556591627
+2014,Farm Supplies Merchant Wholesalers,Central,totwageYear,48292508,556591627
+2013,Crop Production,Central,totwageYear,31116176,522466584
+2013,Animal Production and Aquaculture,Central,totwageYear,82978381,522466584
+2013,Support Activities for Crop Production,Central,totwageYear,6572283,522466584
+2013,Support Activities for Animal Production,Central,totwageYear,3391039,522466584
+2013,Food Manufacturing,Central,totwageYear,307600880,522466584
+2013,Agricultural Implement Manufacturing,Central,totwageYear,28053203,522466584
+2013,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,18202263,522466584
+2013,Farm Supplies Merchant Wholesalers,Central,totwageYear,44552359,522466584
+2012,Crop Production,Central,totwageYear,29505464,491086431
+2012,Animal Production and Aquaculture,Central,totwageYear,80931249,491086431
+2012,Support Activities for Crop Production,Central,totwageYear,6730420,491086431
+2012,Support Activities for Animal Production,Central,totwageYear,845391,491086431
+2012,Food Manufacturing,Central,totwageYear,288049127,491086431
+2012,Agricultural Implement Manufacturing,Central,totwageYear,26310455,491086431
+2012,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,16670882,491086431
+2012,Farm Supplies Merchant Wholesalers,Central,totwageYear,42043443,491086431
+2011,Crop Production,Central,totwageYear,27056983,461360629.6666667
+2011,Animal Production and Aquaculture,Central,totwageYear,75655070,461360629.6666667
+2011,Support Activities for Crop Production,Central,totwageYear,6845242,461360629.6666667
+2011,Support Activities for Animal Production,Central,totwageYear,810422.3333333334,461360629.6666667
+2011,Food Manufacturing,Central,totwageYear,291938888,461360629.6666667
+2011,Agricultural Implement Manufacturing,Central,totwageYear,5689945.333333333,461360629.6666667
+2011,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,14707010,461360629.6666667
+2011,Farm Supplies Merchant Wholesalers,Central,totwageYear,38657069,461360629.6666667
+2010,Crop Production,Central,totwageYear,26700931,458100246.5
+2010,Animal Production and Aquaculture,Central,totwageYear,69194760,458100246.5
+2010,Support Activities for Crop Production,Central,totwageYear,6550257,458100246.5
+2010,Support Activities for Animal Production,Central,totwageYear,747605.5,458100246.5
+2010,Food Manufacturing,Central,totwageYear,283330458,458100246.5
+2010,Agricultural Implement Manufacturing,Central,totwageYear,19035995,458100246.5
+2010,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,14948984,458100246.5
+2010,Farm Supplies Merchant Wholesalers,Central,totwageYear,37591256,458100246.5
+2009,Crop Production,Central,totwageYear,23604303,436612547
+2009,Animal Production and Aquaculture,Central,totwageYear,68127094,436612547
+2009,Support Activities for Crop Production,Central,totwageYear,6598021,436612547
+2009,Food Manufacturing,Central,totwageYear,270318451,436612547
+2009,Agricultural Implement Manufacturing,Central,totwageYear,15479388,436612547
+2009,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,14835546,436612547
+2009,Farm Supplies Merchant Wholesalers,Central,totwageYear,37649744,436612547
+2008,Crop Production,Central,totwageYear,23646497,422052325.6666667
+2008,Animal Production and Aquaculture,Central,totwageYear,63741135,422052325.6666667
+2008,Support Activities for Crop Production,Central,totwageYear,1685075.6666666667,422052325.6666667
+2008,Support Activities for Animal Production,Central,totwageYear,788837,422052325.6666667
+2008,Food Manufacturing,Central,totwageYear,266222616,422052325.6666667
+2008,Agricultural Implement Manufacturing,Central,totwageYear,13368518,422052325.6666667
+2008,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,15022786,422052325.6666667
+2008,Farm Supplies Merchant Wholesalers,Central,totwageYear,37576861,422052325.6666667
+2007,Crop Production,Central,totwageYear,23106444,401167749
+2007,Animal Production and Aquaculture,Central,totwageYear,60171879,401167749
+2007,Support Activities for Crop Production,Central,totwageYear,5029419,401167749
+2007,Food Manufacturing,Central,totwageYear,252463229,401167749
+2007,Agricultural Implement Manufacturing,Central,totwageYear,11352599,401167749
+2007,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,13948500,401167749
+2007,Farm Supplies Merchant Wholesalers,Central,totwageYear,35095679,401167749
+2006,Crop Production,Central,totwageYear,21390053,387673860.3333333
+2006,Animal Production and Aquaculture,Central,totwageYear,56713272,387673860.3333333
+2006,Support Activities for Crop Production,Central,totwageYear,5328307,387673860.3333333
+2006,Support Activities for Animal Production,Central,totwageYear,696407.3333333334,387673860.3333333
+2006,Food Manufacturing,Central,totwageYear,244769023,387673860.3333333
+2006,Agricultural Implement Manufacturing,Central,totwageYear,12432200,387673860.3333333
+2006,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,15288483,387673860.3333333
+2006,Farm Supplies Merchant Wholesalers,Central,totwageYear,31056115,387673860.3333333
+2005,Crop Production,Central,totwageYear,19124999,370738194
+2005,Animal Production and Aquaculture,Central,totwageYear,53216047,370738194
+2005,Support Activities for Crop Production,Central,totwageYear,6670550,370738194
+2005,Food Manufacturing,Central,totwageYear,237189608,370738194
+2005,Agricultural Implement Manufacturing,Central,totwageYear,12191110,370738194
+2005,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,11914685,370738194
+2005,Farm Supplies Merchant Wholesalers,Central,totwageYear,30431195,370738194
+2004,Crop Production,Central,totwageYear,19838788,370778006
+2004,Animal Production and Aquaculture,Central,totwageYear,51421550,370778006
+2004,Support Activities for Crop Production,Central,totwageYear,7350550,370778006
+2004,Food Manufacturing,Central,totwageYear,234397236,370778006
+2004,Agricultural Implement Manufacturing,Central,totwageYear,11347067,370778006
+2004,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,9634094,370778006
+2004,Farm Supplies Merchant Wholesalers,Central,totwageYear,36788721,370778006
+2003,Crop Production,Central,totwageYear,20692577,350325878
+2003,Animal Production and Aquaculture,Central,totwageYear,48663687,350325878
+2003,Support Activities for Crop Production,Central,totwageYear,6470908,350325878
+2003,Food Manufacturing,Central,totwageYear,220734138,350325878
+2003,Agricultural Implement Manufacturing,Central,totwageYear,10738126,350325878
+2003,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,9858207,350325878
+2003,Farm Supplies Merchant Wholesalers,Central,totwageYear,33168235,350325878
+2002,Crop Production,Central,totwageYear,20250299,338621031
+2002,Animal Production and Aquaculture,Central,totwageYear,50322360,338621031
+2002,Support Activities for Crop Production,Central,totwageYear,6395601,338621031
+2002,Food Manufacturing,Central,totwageYear,208242615,338621031
+2002,Agricultural Implement Manufacturing,Central,totwageYear,11152878,338621031
+2002,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,10111057,338621031
+2002,Farm Supplies Merchant Wholesalers,Central,totwageYear,32146221,338621031
+2001,Crop Production,Central,totwageYear,18909563,324063665
+2001,Animal Production and Aquaculture,Central,totwageYear,47241000,324063665
+2001,Support Activities for Crop Production,Central,totwageYear,6098106,324063665
+2001,Food Manufacturing,Central,totwageYear,194504219,324063665
+2001,Agricultural Implement Manufacturing,Central,totwageYear,17476065,324063665
+2001,Farm Product Raw Material Merchant Wholesalers,Central,totwageYear,10309467,324063665
+2001,Farm Supplies Merchant Wholesalers,Central,totwageYear,29525245,324063665
+2018,Crop Production,Northeast,totwageYear,1072778,16262603
+2018,Animal Production and Aquaculture,Northeast,totwageYear,498487,16262603
+2018,Food Manufacturing,Northeast,totwageYear,14691338,16262603
+2017,Crop Production,Northeast,totwageYear,1131766,4523080.333333334
+2017,Animal Production and Aquaculture,Northeast,totwageYear,551034,4523080.333333334
+2017,Food Manufacturing,Northeast,totwageYear,2840280.3333333335,4523080.333333334
+2016,Crop Production,Northeast,totwageYear,1309243,14414254
+2016,Animal Production and Aquaculture,Northeast,totwageYear,587556,14414254
+2016,Food Manufacturing,Northeast,totwageYear,12517455,14414254
+2015,Crop Production,Northeast,totwageYear,1474676,11799585
+2015,Animal Production and Aquaculture,Northeast,totwageYear,717421,11799585
+2015,Food Manufacturing,Northeast,totwageYear,9607488,11799585
+2014,Crop Production,Northeast,totwageYear,1117034,11869803
+2014,Animal Production and Aquaculture,Northeast,totwageYear,829060,11869803
+2014,Food Manufacturing,Northeast,totwageYear,9923709,11869803
+2013,Crop Production,Northeast,totwageYear,1124231,13630329.333333334
+2013,Animal Production and Aquaculture,Northeast,totwageYear,275781.3333333333,13630329.333333334
+2013,Food Manufacturing,Northeast,totwageYear,12230317,13630329.333333334
+2012,Crop Production,Northeast,totwageYear,1291367,15660907
+2012,Animal Production and Aquaculture,Northeast,totwageYear,938217,15660907
+2012,Food Manufacturing,Northeast,totwageYear,13431323,15660907
+2011,Crop Production,Northeast,totwageYear,1382947,30950760
+2011,Animal Production and Aquaculture,Northeast,totwageYear,827084,30950760
+2011,Support Activities for Animal Production,Northeast,totwageYear,22897,30950760
+2011,Food Manufacturing,Northeast,totwageYear,28717832,30950760
+2010,Crop Production,Northeast,totwageYear,1259744,12219426.333333334
+2010,Animal Production and Aquaculture,Northeast,totwageYear,219754.33333333334,12219426.333333334
+2010,Support Activities for Crop Production,Northeast,totwageYear,66260,12219426.333333334
+2010,Support Activities for Animal Production,Northeast,totwageYear,22838,12219426.333333334
+2010,Food Manufacturing,Northeast,totwageYear,10457736,12219426.333333334
+2010,Farm Supplies Merchant Wholesalers,Northeast,totwageYear,193094,12219426.333333334
+2009,Crop Production,Northeast,totwageYear,1365641,12475137
+2009,Animal Production and Aquaculture,Northeast,totwageYear,72546.5,12475137
+2009,Support Activities for Animal Production,Northeast,totwageYear,28000.5,12475137
+2009,Food Manufacturing,Northeast,totwageYear,10950465,12475137
+2009,Farm Supplies Merchant Wholesalers,Northeast,totwageYear,58484,12475137
+2008,Crop Production,Northeast,totwageYear,1556400,18254784
+2008,Animal Production and Aquaculture,Northeast,totwageYear,384804.3333333333,18254784
+2008,Support Activities for Animal Production,Northeast,totwageYear,17833.333333333332,18254784
+2008,Food Manufacturing,Northeast,totwageYear,15925293,18254784
+2008,Farm Product Raw Material Merchant Wholesalers,Northeast,totwageYear,370453.3333333333,18254784
+2007,Crop Production,Northeast,totwageYear,279002.5,13987109.833333334
+2007,Support Activities for Animal Production,Northeast,totwageYear,14970,13987109.833333334
+2007,Food Manufacturing,Northeast,totwageYear,13099741,13987109.833333334
+2007,Farm Product Raw Material Merchant Wholesalers,Northeast,totwageYear,535096.3333333334,13987109.833333334
+2007,Farm Supplies Merchant Wholesalers,Northeast,totwageYear,58300,13987109.833333334
+2006,Crop Production,Northeast,totwageYear,475590,15299522.333333334
+2006,Animal Production and Aquaculture,Northeast,totwageYear,589419,15299522.333333334
+2006,Support Activities for Animal Production,Northeast,totwageYear,16909.333333333332,15299522.333333334
+2006,Food Manufacturing,Northeast,totwageYear,13109285,15299522.333333334
+2006,Farm Product Raw Material Merchant Wholesalers,Northeast,totwageYear,389222,15299522.333333334
+2006,Farm Supplies Merchant Wholesalers,Northeast,totwageYear,719097,15299522.333333334
+2005,Support Activities for Animal Production,Northeast,totwageYear,15772,15510459.5
+2005,Food Manufacturing,Northeast,totwageYear,14871602,15510459.5
+2005,Farm Product Raw Material Merchant Wholesalers,Northeast,totwageYear,623085.5,15510459.5
+2004,Crop Production,Northeast,totwageYear,1843559,21146089
+2004,Support Activities for Crop Production,Northeast,totwageYear,89483,21146089
+2004,Food Manufacturing,Northeast,totwageYear,17797916,21146089
+2004,Farm Product Raw Material Merchant Wholesalers,Northeast,totwageYear,663111,21146089
+2004,Farm Supplies Merchant Wholesalers,Northeast,totwageYear,752020,21146089
+2003,Crop Production,Northeast,totwageYear,1620112,21317838.333333332
+2003,Food Manufacturing,Northeast,totwageYear,19523333,21317838.333333332
+2003,Farm Supplies Merchant Wholesalers,Northeast,totwageYear,174393.33333333334,21317838.333333332
+2002,Crop Production,Northeast,totwageYear,1526012,20811522
+2002,Animal Production and Aquaculture,Northeast,totwageYear,98738,20811522
+2002,Support Activities for Crop Production,Northeast,totwageYear,141883,20811522
+2002,Food Manufacturing,Northeast,totwageYear,18259344,20811522
+2002,Farm Supplies Merchant Wholesalers,Northeast,totwageYear,785545,20811522
+2001,Crop Production,Northeast,totwageYear,1636022,23345327.5
+2001,Animal Production and Aquaculture,Northeast,totwageYear,125858.5,23345327.5
+2001,Food Manufacturing,Northeast,totwageYear,21359641,23345327.5
+2001,Farm Supplies Merchant Wholesalers,Northeast,totwageYear,223806,23345327.5
+2018,Crop Production,Northwest,totwageYear,86182818,645177028
+2018,Animal Production and Aquaculture,Northwest,totwageYear,88820135,645177028
+2018,Support Activities for Crop Production,Northwest,totwageYear,24936498,645177028
+2018,Support Activities for Animal Production,Northwest,totwageYear,755395,645177028
+2018,Food Manufacturing,Northwest,totwageYear,300091352,645177028
+2018,Agricultural Implement Manufacturing,Northwest,totwageYear,19529596,645177028
+2018,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,72287502,645177028
+2018,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,52573732,645177028
+2017,Crop Production,Northwest,totwageYear,85862479,626763092
+2017,Animal Production and Aquaculture,Northwest,totwageYear,87313974,626763092
+2017,Support Activities for Crop Production,Northwest,totwageYear,21517093,626763092
+2017,Support Activities for Animal Production,Northwest,totwageYear,737366,626763092
+2017,Food Manufacturing,Northwest,totwageYear,289487556,626763092
+2017,Agricultural Implement Manufacturing,Northwest,totwageYear,20658898,626763092
+2017,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,69234902,626763092
+2017,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,51950824,626763092
+2016,Crop Production,Northwest,totwageYear,82077483,578482108
+2016,Animal Production and Aquaculture,Northwest,totwageYear,72940763,578482108
+2016,Support Activities for Crop Production,Northwest,totwageYear,21234054,578482108
+2016,Support Activities for Animal Production,Northwest,totwageYear,677368,578482108
+2016,Food Manufacturing,Northwest,totwageYear,272118607,578482108
+2016,Agricultural Implement Manufacturing,Northwest,totwageYear,19969776,578482108
+2016,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,76102920,578482108
+2016,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,33361137,578482108
+2015,Crop Production,Northwest,totwageYear,78116543,551341222
+2015,Animal Production and Aquaculture,Northwest,totwageYear,71828882,551341222
+2015,Support Activities for Crop Production,Northwest,totwageYear,20378746,551341222
+2015,Support Activities for Animal Production,Northwest,totwageYear,1425560,551341222
+2015,Food Manufacturing,Northwest,totwageYear,256599778,551341222
+2015,Agricultural Implement Manufacturing,Northwest,totwageYear,11214711,551341222
+2015,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,77114228,551341222
+2015,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,34662774,551341222
+2014,Crop Production,Northwest,totwageYear,73061932,527696234
+2014,Animal Production and Aquaculture,Northwest,totwageYear,65208340,527696234
+2014,Support Activities for Crop Production,Northwest,totwageYear,19674537,527696234
+2014,Support Activities for Animal Production,Northwest,totwageYear,1254844,527696234
+2014,Food Manufacturing,Northwest,totwageYear,244835416,527696234
+2014,Agricultural Implement Manufacturing,Northwest,totwageYear,10343408,527696234
+2014,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,74313610,527696234
+2014,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,39004147,527696234
+2013,Crop Production,Northwest,totwageYear,69308118,500399475
+2013,Animal Production and Aquaculture,Northwest,totwageYear,57001200,500399475
+2013,Support Activities for Crop Production,Northwest,totwageYear,19105456,500399475
+2013,Support Activities for Animal Production,Northwest,totwageYear,1034600,500399475
+2013,Food Manufacturing,Northwest,totwageYear,240612309,500399475
+2013,Agricultural Implement Manufacturing,Northwest,totwageYear,9510910,500399475
+2013,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,67776747,500399475
+2013,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,36050135,500399475
+2012,Crop Production,Northwest,totwageYear,61755054,485762476.6666667
+2012,Animal Production and Aquaculture,Northwest,totwageYear,56476116,485762476.6666667
+2012,Support Activities for Crop Production,Northwest,totwageYear,17665380,485762476.6666667
+2012,Support Activities for Animal Production,Northwest,totwageYear,306294.6666666667,485762476.6666667
+2012,Food Manufacturing,Northwest,totwageYear,241897794,485762476.6666667
+2012,Agricultural Implement Manufacturing,Northwest,totwageYear,8833807,485762476.6666667
+2012,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,64315033,485762476.6666667
+2012,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,34512998,485762476.6666667
+2011,Crop Production,Northwest,totwageYear,54265270,445443514
+2011,Animal Production and Aquaculture,Northwest,totwageYear,49395409,445443514
+2011,Support Activities for Crop Production,Northwest,totwageYear,17423450,445443514
+2011,Food Manufacturing,Northwest,totwageYear,220850162,445443514
+2011,Agricultural Implement Manufacturing,Northwest,totwageYear,7884648,445443514
+2011,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,64813879,445443514
+2011,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,30810696,445443514
+2010,Crop Production,Northwest,totwageYear,49720178,414487004
+2010,Animal Production and Aquaculture,Northwest,totwageYear,43050750,414487004
+2010,Support Activities for Crop Production,Northwest,totwageYear,16446019,414487004
+2010,Food Manufacturing,Northwest,totwageYear,206937183,414487004
+2010,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,totwageYear,1123993,414487004
+2010,Agricultural Implement Manufacturing,Northwest,totwageYear,7110622,414487004
+2010,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,61284734,414487004
+2010,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,28813525,414487004
+2009,Crop Production,Northwest,totwageYear,46043431,394218158
+2009,Animal Production and Aquaculture,Northwest,totwageYear,39598369,394218158
+2009,Support Activities for Crop Production,Northwest,totwageYear,14852405,394218158
+2009,Support Activities for Animal Production,Northwest,totwageYear,775737,394218158
+2009,Food Manufacturing,Northwest,totwageYear,198157505,394218158
+2009,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,totwageYear,2493323,394218158
+2009,Agricultural Implement Manufacturing,Northwest,totwageYear,6147147,394218158
+2009,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,56628417,394218158
+2009,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,29521824,394218158
+2008,Crop Production,Northwest,totwageYear,48158783,374518840
+2008,Animal Production and Aquaculture,Northwest,totwageYear,36535616,374518840
+2008,Support Activities for Crop Production,Northwest,totwageYear,15844245,374518840
+2008,Support Activities for Animal Production,Northwest,totwageYear,373988,374518840
+2008,Food Manufacturing,Northwest,totwageYear,182921071,374518840
+2008,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,totwageYear,2365435,374518840
+2008,Agricultural Implement Manufacturing,Northwest,totwageYear,6051061,374518840
+2008,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,53992299,374518840
+2008,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,28276342,374518840
+2007,Crop Production,Northwest,totwageYear,42151466,342195272
+2007,Animal Production and Aquaculture,Northwest,totwageYear,32902285,342195272
+2007,Support Activities for Crop Production,Northwest,totwageYear,13754770,342195272
+2007,Support Activities for Animal Production,Northwest,totwageYear,385204,342195272
+2007,Food Manufacturing,Northwest,totwageYear,171045260,342195272
+2007,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,totwageYear,1923768,342195272
+2007,Agricultural Implement Manufacturing,Northwest,totwageYear,8308405,342195272
+2007,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,45322496,342195272
+2007,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,26401618,342195272
+2006,Crop Production,Northwest,totwageYear,38936496,311859494
+2006,Animal Production and Aquaculture,Northwest,totwageYear,28395207,311859494
+2006,Support Activities for Crop Production,Northwest,totwageYear,11768604,311859494
+2006,Support Activities for Animal Production,Northwest,totwageYear,409583,311859494
+2006,Food Manufacturing,Northwest,totwageYear,157130305,311859494
+2006,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,totwageYear,1719979,311859494
+2006,Agricultural Implement Manufacturing,Northwest,totwageYear,8115959,311859494
+2006,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,44564132,311859494
+2006,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,20819229,311859494
+2005,Crop Production,Northwest,totwageYear,37720471,290798046
+2005,Animal Production and Aquaculture,Northwest,totwageYear,24502059,290798046
+2005,Support Activities for Crop Production,Northwest,totwageYear,10465404,290798046
+2005,Support Activities for Animal Production,Northwest,totwageYear,88585,290798046
+2005,Food Manufacturing,Northwest,totwageYear,151295255,290798046
+2005,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,totwageYear,2301398,290798046
+2005,Agricultural Implement Manufacturing,Northwest,totwageYear,7365979,290798046
+2005,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,37644893,290798046
+2005,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,19414002,290798046
+2004,Crop Production,Northwest,totwageYear,40116139,303664693
+2004,Animal Production and Aquaculture,Northwest,totwageYear,23863999,303664693
+2004,Support Activities for Crop Production,Northwest,totwageYear,10840233,303664693
+2004,Food Manufacturing,Northwest,totwageYear,164452738,303664693
+2004,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,totwageYear,2272818,303664693
+2004,Agricultural Implement Manufacturing,Northwest,totwageYear,7148053,303664693
+2004,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,35303764,303664693
+2004,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,19666949,303664693
+2003,Crop Production,Northwest,totwageYear,35453745,289604897
+2003,Animal Production and Aquaculture,Northwest,totwageYear,22288073,289604897
+2003,Support Activities for Crop Production,Northwest,totwageYear,9418716,289604897
+2003,Food Manufacturing,Northwest,totwageYear,162009636,289604897
+2003,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,totwageYear,1814621,289604897
+2003,Agricultural Implement Manufacturing,Northwest,totwageYear,6268830,289604897
+2003,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,31429637,289604897
+2003,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,20921639,289604897
+2002,Crop Production,Northwest,totwageYear,33790606,282333255
+2002,Animal Production and Aquaculture,Northwest,totwageYear,21855990,282333255
+2002,Support Activities for Crop Production,Northwest,totwageYear,7495470,282333255
+2002,Food Manufacturing,Northwest,totwageYear,158506370,282333255
+2002,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,totwageYear,1689390,282333255
+2002,Agricultural Implement Manufacturing,Northwest,totwageYear,6055691,282333255
+2002,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,29156029,282333255
+2002,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,23783709,282333255
+2001,Crop Production,Northwest,totwageYear,31611479,276928810
+2001,Animal Production and Aquaculture,Northwest,totwageYear,22139648,276928810
+2001,Support Activities for Crop Production,Northwest,totwageYear,7056139,276928810
+2001,Food Manufacturing,Northwest,totwageYear,155872759,276928810
+2001,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,totwageYear,1733249,276928810
+2001,Agricultural Implement Manufacturing,Northwest,totwageYear,7777753,276928810
+2001,Farm Product Raw Material Merchant Wholesalers,Northwest,totwageYear,28022887,276928810
+2001,Farm Supplies Merchant Wholesalers,Northwest,totwageYear,22714896,276928810
+2018,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,87109254,1351495359
+2018,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,8467573,1351495359
+2018,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,5380393,1351495359
+2018,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,5798184,1351495359
+2018,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,561400385,1351495359
+2018,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",totwageYear,5486992,1351495359
+2018,Agricultural Implement Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,11972167,1351495359
+2018,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,464336768,1351495359
+2018,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,201543643,1351495359
+2017,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,84599555,1348451069
+2017,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,8032783,1348451069
+2017,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,5914805,1348451069
+2017,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,5565903,1348451069
+2017,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,543308119,1348451069
+2017,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",totwageYear,5644212,1348451069
+2017,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,507730106,1348451069
+2017,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,187655586,1348451069
+2016,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,76647767,1262411841
+2016,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,7491272,1262411841
+2016,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,5767323,1262411841
+2016,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,4993939,1262411841
+2016,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,551230860,1262411841
+2016,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",totwageYear,4829898,1262411841
+2016,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,443549172,1262411841
+2016,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,167901610,1262411841
+2015,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,70308517,1265030895
+2015,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,7896087,1265030895
+2015,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,4192299,1265030895
+2015,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,4649261,1265030895
+2015,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,535049426,1265030895
+2015,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",totwageYear,4765829,1265030895
+2015,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,479234495,1265030895
+2015,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,158934981,1265030895
+2014,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,64467239,1251177909
+2014,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,7696174,1251177909
+2014,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,4648251,1251177909
+2014,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,4840674,1251177909
+2014,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,535224839,1251177909
+2014,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",totwageYear,4672483,1251177909
+2014,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,469690871,1251177909
+2014,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,159937378,1251177909
+2013,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,66465398,1279356249
+2013,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,6544693,1279356249
+2013,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,6486684,1279356249
+2013,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,5119081,1279356249
+2013,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,507795096,1279356249
+2013,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",totwageYear,4538189,1279356249
+2013,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,531704775,1279356249
+2013,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,150702333,1279356249
+2012,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,65600090,1159822715
+2012,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,4850879,1159822715
+2012,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,10401486,1159822715
+2012,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,4482879,1159822715
+2012,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,448377019,1159822715
+2012,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",totwageYear,4403053,1159822715
+2012,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,488326114,1159822715
+2012,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,133381195,1159822715
+2011,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,60388633,1183992402
+2011,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,4332797,1183992402
+2011,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,5036783,1183992402
+2011,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,4452267,1183992402
+2011,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,434598581,1183992402
+2011,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",totwageYear,3847820,1183992402
+2011,Agricultural Implement Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,10693333,1183992402
+2011,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,532814519,1183992402
+2011,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,127827669,1183992402
+2010,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,61080851,1075747467
+2010,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,4024147,1075747467
+2010,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,998797,1075747467
+2010,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,4867842,1075747467
+2010,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,452269177,1075747467
+2010,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",totwageYear,3815962,1075747467
+2010,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,428823422,1075747467
+2010,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,119867269,1075747467
+2009,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,63364918,1049766012
+2009,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,4156429,1049766012
+2009,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,939188,1049766012
+2009,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,5166325,1049766012
+2009,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,422734620,1049766012
+2009,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",totwageYear,3311260,1049766012
+2009,Agricultural Implement Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,9787330,1049766012
+2009,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,415137210,1049766012
+2009,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,125168732,1049766012
+2008,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,62984011,1004819892
+2008,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,4995423,1004819892
+2008,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,3631420,1004819892
+2008,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,3616227,1004819892
+2008,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,420821336,1004819892
+2008,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",totwageYear,3925278,1004819892
+2008,Agricultural Implement Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,11200064,1004819892
+2008,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,364156916,1004819892
+2008,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,129489217,1004819892
+2007,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,69151901,1042830175
+2007,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,4225742,1042830175
+2007,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,3246945,1042830175
+2007,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,3732733,1042830175
+2007,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,457372647,1042830175
+2007,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",totwageYear,4070768,1042830175
+2007,Agricultural Implement Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,119849875,1042830175
+2007,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,256041467,1042830175
+2007,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,125138097,1042830175
+2006,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,67824565,923354831.8333334
+2006,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,1011267.3333333334,923354831.8333334
+2006,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,3257562,923354831.8333334
+2006,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,5846105,923354831.8333334
+2006,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,438895369,923354831.8333334
+2006,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",totwageYear,3436840,923354831.8333334
+2006,Agricultural Implement Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,32023837.5,923354831.8333334
+2006,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,250168509,923354831.8333334
+2006,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,120890777,923354831.8333334
+2005,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,64227113,848541881
+2005,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,3525952,848541881
+2005,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,861662,848541881
+2005,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,3721884,848541881
+2005,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,438463693,848541881
+2005,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,230630963,848541881
+2005,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,107110614,848541881
+2004,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,66729148,818691153
+2004,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,3044858,818691153
+2004,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,3790141,818691153
+2004,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,451486285,818691153
+2004,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,174961055,818691153
+2004,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,118679666,818691153
+2003,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,57277740,816598336
+2003,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,3229703,816598336
+2003,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,3555082,816598336
+2003,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,517525329,816598336
+2003,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",totwageYear,910029,816598336
+2003,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,151418740,816598336
+2003,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,82681713,816598336
+2002,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,55131632,770644524.5
+2002,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,919828.5,770644524.5
+2002,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,4128283,770644524.5
+2002,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,500971872,770644524.5
+2002,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",totwageYear,568841,770644524.5
+2002,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,132199645,770644524.5
+2002,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,76724423,770644524.5
+2001,Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,52935238,796403543.3333334
+2001,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",totwageYear,731888,796403543.3333334
+2001,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",totwageYear,613769,796403543.3333334
+2001,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",totwageYear,898805.3333333334,796403543.3333334
+2001,Food Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,483175296,796403543.3333334
+2001,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",totwageYear,2588622,796403543.3333334
+2001,Agricultural Implement Manufacturing,"Seven County Mpls-St Paul, MN",totwageYear,88608766,796403543.3333334
+2001,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,104748103,796403543.3333334
+2001,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",totwageYear,62103056,796403543.3333334
+2018,Crop Production,Southeast,totwageYear,23522263,761011508
+2018,Animal Production and Aquaculture,Southeast,totwageYear,71708312,761011508
+2018,Support Activities for Crop Production,Southeast,totwageYear,5153038,761011508
+2018,Support Activities for Animal Production,Southeast,totwageYear,2852707,761011508
+2018,Food Manufacturing,Southeast,totwageYear,576863722,761011508
+2018,Agricultural Implement Manufacturing,Southeast,totwageYear,3360084,761011508
+2018,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,31859524,761011508
+2018,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,45691858,761011508
+2017,Crop Production,Southeast,totwageYear,22241556,744536099
+2017,Animal Production and Aquaculture,Southeast,totwageYear,71240178,744536099
+2017,Support Activities for Crop Production,Southeast,totwageYear,6277819,744536099
+2017,Support Activities for Animal Production,Southeast,totwageYear,2892570,744536099
+2017,Food Manufacturing,Southeast,totwageYear,565587315,744536099
+2017,Agricultural Implement Manufacturing,Southeast,totwageYear,3220961,744536099
+2017,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,29187944,744536099
+2017,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,43887756,744536099
+2016,Crop Production,Southeast,totwageYear,22370754,712776153
+2016,Animal Production and Aquaculture,Southeast,totwageYear,70446815,712776153
+2016,Support Activities for Crop Production,Southeast,totwageYear,6432231,712776153
+2016,Support Activities for Animal Production,Southeast,totwageYear,2798437,712776153
+2016,Food Manufacturing,Southeast,totwageYear,539280532,712776153
+2016,Agricultural Implement Manufacturing,Southeast,totwageYear,2661334,712776153
+2016,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,28842624,712776153
+2016,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,39943426,712776153
+2015,Crop Production,Southeast,totwageYear,17914930,674971916
+2015,Animal Production and Aquaculture,Southeast,totwageYear,68557910,674971916
+2015,Support Activities for Crop Production,Southeast,totwageYear,6299326,674971916
+2015,Support Activities for Animal Production,Southeast,totwageYear,2587121,674971916
+2015,Food Manufacturing,Southeast,totwageYear,512410502,674971916
+2015,Agricultural Implement Manufacturing,Southeast,totwageYear,2210638,674971916
+2015,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,29090556,674971916
+2015,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,35900933,674971916
+2014,Crop Production,Southeast,totwageYear,16257793,622629873
+2014,Animal Production and Aquaculture,Southeast,totwageYear,63130473,622629873
+2014,Support Activities for Crop Production,Southeast,totwageYear,4574572,622629873
+2014,Support Activities for Animal Production,Southeast,totwageYear,614383,622629873
+2014,Food Manufacturing,Southeast,totwageYear,475223035,622629873
+2014,Agricultural Implement Manufacturing,Southeast,totwageYear,2245263,622629873
+2014,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,28476009,622629873
+2014,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,32108345,622629873
+2013,Crop Production,Southeast,totwageYear,18887615,613847483.6666666
+2013,Animal Production and Aquaculture,Southeast,totwageYear,58984102,613847483.6666666
+2013,Support Activities for Crop Production,Southeast,totwageYear,1082331.6666666667,613847483.6666666
+2013,Support Activities for Animal Production,Southeast,totwageYear,474538,613847483.6666666
+2013,Food Manufacturing,Southeast,totwageYear,470361396,613847483.6666666
+2013,Agricultural Implement Manufacturing,Southeast,totwageYear,1631736,613847483.6666666
+2013,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,28156012,613847483.6666666
+2013,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,34269753,613847483.6666666
+2012,Crop Production,Southeast,totwageYear,18093373,590863412
+2012,Animal Production and Aquaculture,Southeast,totwageYear,53524891,590863412
+2012,Support Activities for Crop Production,Southeast,totwageYear,3659283,590863412
+2012,Food Manufacturing,Southeast,totwageYear,454491161,590863412
+2012,Agricultural Implement Manufacturing,Southeast,totwageYear,2215974,590863412
+2012,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,25562983,590863412
+2012,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,33315747,590863412
+2011,Crop Production,Southeast,totwageYear,18067366,564439132
+2011,Animal Production and Aquaculture,Southeast,totwageYear,48465614,564439132
+2011,Support Activities for Crop Production,Southeast,totwageYear,962377,564439132
+2011,Support Activities for Animal Production,Southeast,totwageYear,479028,564439132
+2011,Food Manufacturing,Southeast,totwageYear,433889270,564439132
+2011,Agricultural Implement Manufacturing,Southeast,totwageYear,2186568,564439132
+2011,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,30268622,564439132
+2011,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,30120287,564439132
+2010,Crop Production,Southeast,totwageYear,16753403,541612053
+2010,Animal Production and Aquaculture,Southeast,totwageYear,43833286,541612053
+2010,Support Activities for Crop Production,Southeast,totwageYear,779097,541612053
+2010,Support Activities for Animal Production,Southeast,totwageYear,477539,541612053
+2010,Food Manufacturing,Southeast,totwageYear,420952457,541612053
+2010,Agricultural Implement Manufacturing,Southeast,totwageYear,1860372,541612053
+2010,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,28682781,541612053
+2010,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,28273118,541612053
+2009,Crop Production,Southeast,totwageYear,15713948,530842528.3333333
+2009,Animal Production and Aquaculture,Southeast,totwageYear,42586537,530842528.3333333
+2009,Support Activities for Crop Production,Southeast,totwageYear,828237,530842528.3333333
+2009,Support Activities for Animal Production,Southeast,totwageYear,628340.3333333334,530842528.3333333
+2009,Food Manufacturing,Southeast,totwageYear,411894881,530842528.3333333
+2009,Agricultural Implement Manufacturing,Southeast,totwageYear,1819375,530842528.3333333
+2009,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,28055705,530842528.3333333
+2009,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,29315505,530842528.3333333
+2008,Crop Production,Southeast,totwageYear,13898076,519194419
+2008,Animal Production and Aquaculture,Southeast,totwageYear,42138962,519194419
+2008,Support Activities for Animal Production,Southeast,totwageYear,2849791,519194419
+2008,Food Manufacturing,Southeast,totwageYear,402709701,519194419
+2008,Agricultural Implement Manufacturing,Southeast,totwageYear,2003939,519194419
+2008,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,27478979,519194419
+2008,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,28114971,519194419
+2007,Crop Production,Southeast,totwageYear,12474872,515472407
+2007,Animal Production and Aquaculture,Southeast,totwageYear,39751051,515472407
+2007,Support Activities for Animal Production,Southeast,totwageYear,2104462,515472407
+2007,Food Manufacturing,Southeast,totwageYear,407600421,515472407
+2007,Agricultural Implement Manufacturing,Southeast,totwageYear,1589334,515472407
+2007,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,27646027,515472407
+2007,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,24306240,515472407
+2006,Crop Production,Southeast,totwageYear,12271148,505007665
+2006,Animal Production and Aquaculture,Southeast,totwageYear,36527273,505007665
+2006,Support Activities for Crop Production,Southeast,totwageYear,191415,505007665
+2006,Support Activities for Animal Production,Southeast,totwageYear,1994402,505007665
+2006,Food Manufacturing,Southeast,totwageYear,405591612,505007665
+2006,Agricultural Implement Manufacturing,Southeast,totwageYear,1505017,505007665
+2006,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,24369967,505007665
+2006,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,22556831,505007665
+2005,Crop Production,Southeast,totwageYear,10427582,509462114
+2005,Animal Production and Aquaculture,Southeast,totwageYear,33189406,509462114
+2005,Support Activities for Crop Production,Southeast,totwageYear,1046757,509462114
+2005,Support Activities for Animal Production,Southeast,totwageYear,1907938,509462114
+2005,Food Manufacturing,Southeast,totwageYear,418397029,509462114
+2005,Agricultural Implement Manufacturing,Southeast,totwageYear,1563900,509462114
+2005,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,20224272,509462114
+2005,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,22705230,509462114
+2004,Crop Production,Southeast,totwageYear,10527174,515944082
+2004,Animal Production and Aquaculture,Southeast,totwageYear,33870550,515944082
+2004,Support Activities for Crop Production,Southeast,totwageYear,900250,515944082
+2004,Support Activities for Animal Production,Southeast,totwageYear,1108477,515944082
+2004,Food Manufacturing,Southeast,totwageYear,422017152,515944082
+2004,Agricultural Implement Manufacturing,Southeast,totwageYear,1729430,515944082
+2004,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,23279859,515944082
+2004,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,22511190,515944082
+2003,Crop Production,Southeast,totwageYear,10693171,504861336
+2003,Animal Production and Aquaculture,Southeast,totwageYear,31909304,504861336
+2003,Support Activities for Crop Production,Southeast,totwageYear,1062188,504861336
+2003,Support Activities for Animal Production,Southeast,totwageYear,943600,504861336
+2003,Food Manufacturing,Southeast,totwageYear,415069011,504861336
+2003,Agricultural Implement Manufacturing,Southeast,totwageYear,1542193,504861336
+2003,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,23270641,504861336
+2003,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,20371228,504861336
+2002,Crop Production,Southeast,totwageYear,10501023,484950200
+2002,Animal Production and Aquaculture,Southeast,totwageYear,30472862,484950200
+2002,Support Activities for Animal Production,Southeast,totwageYear,998396,484950200
+2002,Food Manufacturing,Southeast,totwageYear,398768447,484950200
+2002,Agricultural Implement Manufacturing,Southeast,totwageYear,1467911,484950200
+2002,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,22826793,484950200
+2002,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,19914768,484950200
+2001,Crop Production,Southeast,totwageYear,9333329,461188607.6666667
+2001,Animal Production and Aquaculture,Southeast,totwageYear,28013572,461188607.6666667
+2001,Support Activities for Crop Production,Southeast,totwageYear,324725.6666666667,461188607.6666667
+2001,Support Activities for Animal Production,Southeast,totwageYear,204337,461188607.6666667
+2001,Food Manufacturing,Southeast,totwageYear,379853241,461188607.6666667
+2001,Agricultural Implement Manufacturing,Southeast,totwageYear,2695764,461188607.6666667
+2001,Farm Product Raw Material Merchant Wholesalers,Southeast,totwageYear,22577675,461188607.6666667
+2001,Farm Supplies Merchant Wholesalers,Southeast,totwageYear,18185964,461188607.6666667
+2018,Crop Production,Southwest,totwageYear,32531727,1006914907
+2018,Animal Production and Aquaculture,Southwest,totwageYear,167292455,1006914907
+2018,Support Activities for Crop Production,Southwest,totwageYear,17849762,1006914907
+2018,Support Activities for Animal Production,Southwest,totwageYear,10907334,1006914907
+2018,Food Manufacturing,Southwest,totwageYear,573478909,1006914907
+2018,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest,totwageYear,2089346,1006914907
+2018,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,100143623,1006914907
+2018,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,102621751,1006914907
+2017,Crop Production,Southwest,totwageYear,31236015,1010795102
+2017,Animal Production and Aquaculture,Southwest,totwageYear,181837132,1010795102
+2017,Support Activities for Crop Production,Southwest,totwageYear,19047311,1010795102
+2017,Support Activities for Animal Production,Southwest,totwageYear,11025418,1010795102
+2017,Food Manufacturing,Southwest,totwageYear,571577800,1010795102
+2017,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest,totwageYear,1686236,1010795102
+2017,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,98535462,1010795102
+2017,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,95849728,1010795102
+2016,Crop Production,Southwest,totwageYear,28113993,913025503.5
+2016,Animal Production and Aquaculture,Southwest,totwageYear,161884456,913025503.5
+2016,Support Activities for Crop Production,Southwest,totwageYear,16978882,913025503.5
+2016,Support Activities for Animal Production,Southwest,totwageYear,2734431.5,913025503.5
+2016,Food Manufacturing,Southwest,totwageYear,515807028,913025503.5
+2016,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest,totwageYear,356449,913025503.5
+2016,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,101569975,913025503.5
+2016,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,85580289,913025503.5
+2015,Crop Production,Southwest,totwageYear,29740093,902763359
+2015,Animal Production and Aquaculture,Southwest,totwageYear,151881963,902763359
+2015,Support Activities for Crop Production,Southwest,totwageYear,15789905,902763359
+2015,Support Activities for Animal Production,Southwest,totwageYear,1828572,902763359
+2015,Food Manufacturing,Southwest,totwageYear,493663440,902763359
+2015,Agricultural Implement Manufacturing,Southwest,totwageYear,28402821,902763359
+2015,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,104465819,902763359
+2015,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,76990746,902763359
+2014,Crop Production,Southwest,totwageYear,25605287,800335124.5
+2014,Animal Production and Aquaculture,Southwest,totwageYear,138269357,800335124.5
+2014,Support Activities for Crop Production,Southwest,totwageYear,14988825,800335124.5
+2014,Support Activities for Animal Production,Southwest,totwageYear,1792394.5,800335124.5
+2014,Food Manufacturing,Southwest,totwageYear,446746643,800335124.5
+2014,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,99648614,800335124.5
+2014,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,73284004,800335124.5
+2013,Crop Production,Southwest,totwageYear,21692592,854843055
+2013,Animal Production and Aquaculture,Southwest,totwageYear,123430535,854843055
+2013,Support Activities for Crop Production,Southwest,totwageYear,18467335,854843055
+2013,Food Manufacturing,Southwest,totwageYear,439021458,854843055
+2013,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,174316621,854843055
+2013,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,77914514,854843055
+2012,Crop Production,Southwest,totwageYear,19346666,752652611
+2012,Animal Production and Aquaculture,Southwest,totwageYear,113464643,752652611
+2012,Support Activities for Crop Production,Southwest,totwageYear,21143425,752652611
+2012,Support Activities for Animal Production,Southwest,totwageYear,1564105,752652611
+2012,Food Manufacturing,Southwest,totwageYear,428913567,752652611
+2012,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,93030248,752652611
+2012,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,75189957,752652611
+2011,Crop Production,Southwest,totwageYear,15054711,721137511
+2011,Animal Production and Aquaculture,Southwest,totwageYear,100014127,721137511
+2011,Support Activities for Crop Production,Southwest,totwageYear,19688370,721137511
+2011,Food Manufacturing,Southwest,totwageYear,423349499,721137511
+2011,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,92020841,721137511
+2011,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,71009963,721137511
+2010,Crop Production,Southwest,totwageYear,12735551,717677389
+2010,Animal Production and Aquaculture,Southwest,totwageYear,100098220,717677389
+2010,Support Activities for Crop Production,Southwest,totwageYear,17614742,717677389
+2010,Food Manufacturing,Southwest,totwageYear,408015387,717677389
+2010,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest,totwageYear,99790,717677389
+2010,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,88714863,717677389
+2010,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,90398836,717677389
+2009,Crop Production,Southwest,totwageYear,11713733,671321320
+2009,Animal Production and Aquaculture,Southwest,totwageYear,102554406,671321320
+2009,Support Activities for Crop Production,Southwest,totwageYear,16789767,671321320
+2009,Food Manufacturing,Southwest,totwageYear,388256251,671321320
+2009,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest,totwageYear,214622,671321320
+2009,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,82222927,671321320
+2009,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,69569614,671321320
+2008,Crop Production,Southwest,totwageYear,11444938,640321107.5
+2008,Animal Production and Aquaculture,Southwest,totwageYear,95829328,640321107.5
+2008,Support Activities for Crop Production,Southwest,totwageYear,13796793,640321107.5
+2008,Food Manufacturing,Southwest,totwageYear,367480790,640321107.5
+2008,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest,totwageYear,264061.5,640321107.5
+2008,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,76919659,640321107.5
+2008,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,74585538,640321107.5
+2007,Crop Production,Southwest,totwageYear,9952578,588232258
+2007,Animal Production and Aquaculture,Southwest,totwageYear,91629807,588232258
+2007,Support Activities for Crop Production,Southwest,totwageYear,11321709,588232258
+2007,Food Manufacturing,Southwest,totwageYear,344933240,588232258
+2007,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,69315085,588232258
+2007,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,61079839,588232258
+2006,Crop Production,Southwest,totwageYear,9234530,556878413
+2006,Animal Production and Aquaculture,Southwest,totwageYear,83434061,556878413
+2006,Support Activities for Crop Production,Southwest,totwageYear,9887376,556878413
+2006,Food Manufacturing,Southwest,totwageYear,335767457,556878413
+2006,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,63976431,556878413
+2006,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,54578558,556878413
+2005,Crop Production,Southwest,totwageYear,8264372,551381306
+2005,Animal Production and Aquaculture,Southwest,totwageYear,80657372,551381306
+2005,Support Activities for Crop Production,Southwest,totwageYear,7734698,551381306
+2005,Support Activities for Animal Production,Southwest,totwageYear,576109,551381306
+2005,Food Manufacturing,Southwest,totwageYear,338348685,551381306
+2005,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest,totwageYear,304407,551381306
+2005,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,60640278,551381306
+2005,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,54855385,551381306
+2004,Crop Production,Southwest,totwageYear,8513653,538780376
+2004,Animal Production and Aquaculture,Southwest,totwageYear,75519379,538780376
+2004,Support Activities for Crop Production,Southwest,totwageYear,7408334,538780376
+2004,Support Activities for Animal Production,Southwest,totwageYear,2595108,538780376
+2004,Food Manufacturing,Southwest,totwageYear,331223925,538780376
+2004,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest,totwageYear,255037,538780376
+2004,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,59303193,538780376
+2004,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,53961747,538780376
+2003,Crop Production,Southwest,totwageYear,8168576,531265406
+2003,Animal Production and Aquaculture,Southwest,totwageYear,67883733,531265406
+2003,Support Activities for Crop Production,Southwest,totwageYear,6415889,531265406
+2003,Support Activities for Animal Production,Southwest,totwageYear,2826457,531265406
+2003,Food Manufacturing,Southwest,totwageYear,323301634,531265406
+2003,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,54980823,531265406
+2003,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,67688294,531265406
+2002,Crop Production,Southwest,totwageYear,7915214,590001466
+2002,Animal Production and Aquaculture,Southwest,totwageYear,64553406,590001466
+2002,Support Activities for Crop Production,Southwest,totwageYear,5984557,590001466
+2002,Support Activities for Animal Production,Southwest,totwageYear,2617651,590001466
+2002,Food Manufacturing,Southwest,totwageYear,392886167,590001466
+2002,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,51734428,590001466
+2002,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,64310043,590001466
+2001,Crop Production,Southwest,totwageYear,8556861,554413075
+2001,Animal Production and Aquaculture,Southwest,totwageYear,60538521,554413075
+2001,Support Activities for Crop Production,Southwest,totwageYear,6720623,554413075
+2001,Support Activities for Animal Production,Southwest,totwageYear,2320208,554413075
+2001,Food Manufacturing,Southwest,totwageYear,366364326,554413075
+2001,Farm Product Raw Material Merchant Wholesalers,Southwest,totwageYear,51613648,554413075
+2001,Farm Supplies Merchant Wholesalers,Southwest,totwageYear,58298888,554413075

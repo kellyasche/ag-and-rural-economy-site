@@ -1,0 +1,127 @@
+planning.region,year,farm.earnings,total.earnings
+Central Minnesota,2001,154937,9846721
+Central Minnesota,2002,172294,10512910
+Central Minnesota,2003,252989,11077672
+Central Minnesota,2004,380583,11882281
+Central Minnesota,2005,441233,12256159
+Central Minnesota,2006,426188,12664813
+Central Minnesota,2007,400719,13059763
+Central Minnesota,2008,603882,13445844
+Central Minnesota,2009,333054,12897477
+Central Minnesota,2010,456878,13358438
+Central Minnesota,2011,521734,14194720
+Central Minnesota,2012,834024,15119420
+Central Minnesota,2013,678707,15607201
+Central Minnesota,2014,589219,16324749
+Central Minnesota,2015,643068,17078698
+Central Minnesota,2016,366335,17318921
+Central Minnesota,2017,413899,17904343
+Central Minnesota,2018,215336,18331868
+Minnesota,2001,1029219,131679344
+Minnesota,2002,1017896,135128152
+Minnesota,2003,1847095,141146500
+Minnesota,2004,2470627,150987628
+Minnesota,2005,2941668,154969728
+Minnesota,2006,2553230,159588573
+Minnesota,2007,2631792,167175577
+Minnesota,2008,3970212,171922227
+Minnesota,2009,2121024,162791441
+Minnesota,2010,3140158,169682909
+Minnesota,2011,4300155,179683799
+Minnesota,2012,5977017,190181389
+Minnesota,2013,5613071,195260585
+Minnesota,2014,3628734,202625339
+Minnesota,2015,3180010,211003037
+Minnesota,2016,1335979,215200116
+Minnesota,2017,1850163,223244047
+Minnesota,2018,1852217,233117230
+Northeast Minnesota,2001,5379,5811935
+Northeast Minnesota,2002,6102,6081297
+Northeast Minnesota,2003,10758,6225020
+Northeast Minnesota,2004,9216,6566007
+Northeast Minnesota,2005,5381,6636273
+Northeast Minnesota,2006,7339,6848951
+Northeast Minnesota,2007,8054,7130350
+Northeast Minnesota,2008,2693,7522587
+Northeast Minnesota,2009,-585,7267983
+Northeast Minnesota,2010,18676,7842744
+Northeast Minnesota,2011,14147,8255260
+Northeast Minnesota,2012,7723,8328274
+Northeast Minnesota,2013,15173,8357188
+Northeast Minnesota,2014,16079,8587628
+Northeast Minnesota,2015,18912,8737693
+Northeast Minnesota,2016,8813,8684581
+Northeast Minnesota,2017,3098,8900771
+Northeast Minnesota,2018,-834,9347948
+Northwest Minnesota,2001,217017,7927737
+Northwest Minnesota,2002,197653,8409259
+Northwest Minnesota,2003,661333,9317103
+Northwest Minnesota,2004,451437,9815538
+Northwest Minnesota,2005,548365,10003411
+Northwest Minnesota,2006,560778,10077856
+Northwest Minnesota,2007,629319,10363039
+Northwest Minnesota,2008,1185982,11285537
+Northwest Minnesota,2009,343932,10493308
+Northwest Minnesota,2010,663182,11274510
+Northwest Minnesota,2011,865685,11944169
+Northwest Minnesota,2012,1572586,13285067
+Northwest Minnesota,2013,1557188,13420455
+Northwest Minnesota,2014,850456,13153227
+Northwest Minnesota,2015,717590,13500557
+Northwest Minnesota,2016,473856,13656683
+Northwest Minnesota,2017,506187,13983594
+Northwest Minnesota,2018,594801,14630931
+Seven County Mpls-St Paul,2001,84294,91014647
+Seven County Mpls-St Paul,2002,94771,92249058
+Seven County Mpls-St Paul,2003,119680,95664383
+Seven County Mpls-St Paul,2004,133264,102175260
+Seven County Mpls-St Paul,2005,136942,104943961
+Seven County Mpls-St Paul,2006,128269,108443489
+Seven County Mpls-St Paul,2007,125799,114457219
+Seven County Mpls-St Paul,2008,160805,116363140
+Seven County Mpls-St Paul,2009,144306,109734319
+Seven County Mpls-St Paul,2010,166572,113325291
+Seven County Mpls-St Paul,2011,204060,119924635
+Seven County Mpls-St Paul,2012,248599,126419121
+Seven County Mpls-St Paul,2013,222845,130498093
+Seven County Mpls-St Paul,2014,173671,137237608
+Seven County Mpls-St Paul,2015,172415,143690578
+Seven County Mpls-St Paul,2016,124912,148213866
+Seven County Mpls-St Paul,2017,135151,154115990
+Seven County Mpls-St Paul,2018,107289,161031076
+Southeast Minnesota,2001,142707,10078045
+Southeast Minnesota,2002,119305,10538462
+Southeast Minnesota,2003,187900,11116441
+Southeast Minnesota,2004,391972,11888500
+Southeast Minnesota,2005,465161,12019780
+Southeast Minnesota,2006,352553,12360568
+Southeast Minnesota,2007,378308,12840702
+Southeast Minnesota,2008,456729,13381215
+Southeast Minnesota,2009,232582,13104725
+Southeast Minnesota,2010,431835,13945273
+Southeast Minnesota,2011,741991,14424272
+Southeast Minnesota,2012,962733,15295370
+Southeast Minnesota,2013,580083,15247636
+Southeast Minnesota,2014,358540,15541019
+Southeast Minnesota,2015,182652,16037834
+Southeast Minnesota,2016,-151317,16258225
+Southeast Minnesota,2017,45304,16882902
+Southeast Minnesota,2018,249663,18051347
+Southwest Minnesota,2001,424885,7000259
+Southwest Minnesota,2002,427771,7337166
+Southwest Minnesota,2003,614435,7745881
+Southwest Minnesota,2004,1104155,8660042
+Southwest Minnesota,2005,1344586,9110144
+Southwest Minnesota,2006,1078103,9192896
+Southwest Minnesota,2007,1089593,9324504
+Southwest Minnesota,2008,1560121,9923904
+Southwest Minnesota,2009,1067735,9293629
+Southwest Minnesota,2010,1403015,9936653
+Southwest Minnesota,2011,1952538,10940743
+Southwest Minnesota,2012,2351352,11734137
+Southwest Minnesota,2013,2559075,12130012
+Southwest Minnesota,2014,1640769,11781108
+Southwest Minnesota,2015,1445373,11957677
+Southwest Minnesota,2016,513380,11067840
+Southwest Minnesota,2017,746524,11456447
+Southwest Minnesota,2018,685962,11724060
