@@ -1,4 +1,5 @@
 name: "Ag-and-rural-economy-site"
+output_dir: docs
 navbar:
   title: "Ag and the rural economy"
   left:
