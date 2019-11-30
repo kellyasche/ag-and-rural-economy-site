@@ -108,6 +108,8 @@ Summary of farm earnings goes here.
 
 The charts below provide the change in farm earnings and total earnings by indexing the values to their 2001 levels. The trend to look for is how the fluctuations in farm earnings "appear" in the total earnings chart. If total earnings show a similar bump to farm earnings, it's likely that farm earnings has a significant influence in that regions economy.
 
+The overall trend is that the farm earnings "bump" only appears in a few select regions and in regions that have a lot of "entirely rural" counties in them.
+
 ```{r prep farm earnings and total earnings, include = FALSE}
 farm.earnings.county <- read_csv("Data/Earnings/Master-farm-total-earnings-county-2001-2018.csv") %>%
   mutate(farm.earnings = 1000 * farm.earnings,
@@ -245,7 +247,7 @@ Breaking it down further, the EDRs in the Southwest region that seem to be most 
 
 <br>
 
-```{r index farm earnings edr, fig.height= 20}
+```{r index farm earnings edr, fig.height= 12}
   fe.index.edr <- ggplot(filter(farm.earnings.edr, planning.region != "Minnesota"), aes(year, index.farm.earnings, color = edr)) +
     facet_wrap(~planning.region, ncol = 1) +
     geom_smooth(se = FALSE, size = 2) +
@@ -282,4 +284,91 @@ Breaking it down further, the EDRs in the Southwest region that seem to be most 
     girafe_options(opts_selection(type = "none"),
                    opts_toolbar(saveaspng = FALSE),
                   opts_sizing(rescale = FALSE))
+```
+
+## Farm earnings as a percent of total earnings {.tabset}
+
+The charts below provide farm earnings as a percentage of total earnings each year. The trend to see here is how much that percentage has changed over time.
+
+Overall, the most concerning trend is that the farm earnings as a percentage of total earnings in 2018 are at their lowest levels since 2001. This seems to be the case across nearly all regions.
+
+<br>
+
+### RUCA
+
+Not suprisingly, our most rural counties have the highest percentage of their total earnings come from farming. During peak crop prices (2010 - 2012), farm earnings made up more than 30% of total earnings in our entirely rural counties.
+
+<br>
+
+```{r farm earnings pct of total earnings ruca}
+fe.pct.te.ruca <- ggplot(farm.earnings.ruca, aes(year, pct.farm.earnings, color = Dem_Desc)) +
+          geom_smooth(se = FALSE, size = 2) +
+          geom_point_interactive(size = 3, aes(data_id = pct.farm.earnings, tooltip = paste(Dem_Desc, ", ", year, "\nTotal earnings: ", dollar(total.earnings), "\nTotal farm earnings: ", dollar(farm.earnings), "\nPercent of earnings from farm: ", percent(pct.farm.earnings), sep = ""))) +
+          geom_hline(yintercept = 0, color = "black") +
+          labs(x="", y = "", color="", title = "Farm earnings as a percent of total earnings", caption = "BEA - Local Area Employment and Wages")+
+          scale_y_continuous(labels=scales::percent)+
+          scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+          theme_line+
+          scale_color_manual(values= color.ruca,
+                             guide = guide_legend(ncol = 3)) +
+          theme(legend.position = "bottom")
+          
+girafe( ggobj = fe.pct.te.ruca, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+```
+
+### Planning regions
+
+Not surprisingly, the Southwest and Northwest regions are influenced the most from farm earnings. The Southwest in particular has 10% or more of their total earnings from farm earnings during a more typical year and increased to between 15% and 35% when crop commodity prices were booming.
+
+<br>
+
+```{r farm earnings pct of total earnings pr}
+fe.pct.te.pr <- ggplot(farm.earnings.pr, aes(year, pct.farm.earnings, color = planning.region)) +
+          geom_smooth(se = FALSE, size = 2) +
+          geom_point_interactive(size = 3, aes(data_id = pct.farm.earnings, tooltip = paste(planning.region, ", ", year, "\nTotal earnings: ", dollar(total.earnings), "\nTotal farm earnings: ", dollar(farm.earnings), "\nPercent of earnings from farm: ", percent(pct.farm.earnings), sep = ""))) +
+          geom_hline(yintercept = 0, color = "black") +
+          labs(x="", y = "", color="", title = "Farm earnings as a percent of total earnings", caption = "BEA - Local Area Employment and Wages")+
+          scale_y_continuous(labels=scales::percent)+
+          scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+          theme_line+
+          scale_color_manual(values= color.pr,
+                             guide = guide_legend(ncol = 3)) +
+          theme(legend.position = "bottom")
+          
+girafe( ggobj = fe.pct.te.pr, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+```
+
+### EDRs
+
+The Northwest is a bit less dramatic overall, likely due to sugar beets being a more stable commodity than corn and soybeans and having a more diverse economy overall. However, EDR 1 has had significant fluctuation in the percentage that farm earnings comprise of total earnings in the region. It peaked in 2013 when farm earnings were 23.4% of total earings in the region. By 2017 the earnings have dropped to 4.5%.
+
+Everywhere else, the earnings are pretty minimal except for EDR 6E in the Central planning region. Between 5% - 15% of total earnings come from farming there.
+
+<br>
+
+```{r farm earnings pct of total earnings edr, fig.height=12}
+fe.pct.te.edr <- ggplot(filter(farm.earnings.edr, planning.region != "Minnesota"), aes(year, pct.farm.earnings, color = edr)) +
+  geom_smooth(se = FALSE, size = 2) +
+  facet_wrap(~planning.region, ncol = 2) +
+  geom_point_interactive(size = 3, aes(data_id = pct.farm.earnings, tooltip = paste(edr, ", ", year, "\nTotal earnings: ", dollar(total.earnings), "\nTotal farm earnings: ", dollar(farm.earnings), "\nPercent of earnings from farm: ", percent(pct.farm.earnings), sep = ""))) +
+  geom_hline(yintercept = 0, color = "black") +
+  labs(x="", y = "", color="", title = "Farm earnings as a percent of total earnings", caption = "BEA - Local Area Employment and Wages")+
+          scale_y_continuous(labels=scales::percent)+
+          scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+          theme_line+
+          scale_color_manual(values= color.edr,
+                             guide = guide_legend(ncol = 3)) +
+          theme(legend.position = "bottom",
+                text = element_text(size = 10))
+          
+girafe( ggobj = fe.pct.te.edr, height_svg = 10) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
 ```
