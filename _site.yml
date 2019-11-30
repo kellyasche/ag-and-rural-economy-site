@@ -1,0 +1,12 @@
+name: "Ag-and-rural-economy-site"
+navbar:
+  title: "Ag and the rural economy"
+  left:
+    - text: "Summary"
+      href: index.html
+    - text: "Farm earnings and ag wages"
+      menu:
+        - text: "Farm earnings"
+          href: farm-earnings.html
+        - text: "Ag wages"
+          href: ag-wages.html
