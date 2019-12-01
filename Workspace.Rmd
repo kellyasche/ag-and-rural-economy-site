@@ -1,0 +1,244 @@
+---
+title: "Workspeace"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 3
+runtime: shiny
+resource_files:
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.cpg
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.dbf
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.prj
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.sbn
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.sbx
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.shp.xml
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.shx
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(sf)
+library(ggrepel)
+library(scales)
+library(shiny)
+library(shinycssloaders)
+library(ggiraph)
+library(kableExtra)
+library(rmapshaper)
+library(cowplot)
+library(DT)
+```
+
+```{r loading jon docs and shapefiles, cache=TRUE}
+theme_bar <- theme_bw() +
+  theme(panel.grid.major = element_line(color = "grey70", size = 0.1),
+        panel.grid.minor = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text = element_text(face = "bold"),
+        panel.border = element_blank(),
+        legend.background = element_rect(fill = "transparent", color = "transparent"),
+        legend.key = element_rect(fill = "transparent"),
+        legend.title = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+theme_line <- theme_bw() +
+  theme(legend.background = element_rect(fill = "transparent", color = "transparent"),
+        legend.key = element_rect(fill = "transparent"),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(color = "grey70", size = 0.1),
+        axis.ticks = element_blank(),
+        axis.text = element_text(face = "bold"),
+        panel.border = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+theme_sf <- theme_bw() +
+  theme(axis.text.x=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks=element_blank(),
+        panel.background = element_blank(),
+        panel.grid.major = element_line(color = "white"),
+        panel.border = element_blank(),
+        plot.title = element_text(hjust = 0.5),
+        legend.title = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+counties.regions <- read_csv("Data/Join docs/county_regions.csv") %>%
+  mutate(countyfp = formatC(countyfp, width = 3, flag = "0"),
+         Name = str_to_title(Name),
+         Name = str_replace(Name, "Q", "q"),
+         Name = str_replace(Name, "Of The", "of the"),
+         Dem_Desc = ifelse(Name == "Minnesota", "Minnesota", Dem_Desc))
+
+color.ruca <- c("Entirely rural" = "#5CA81F", "Town/rural mix" = "#C7EF99", "Urban/town/rural mix" = "#d8b365", "Entirely urban" = "#a6611a", "Minnesota" = "black")
+
+color.pr <- c("Northwest" = "#810f7c","Northeast" = "#fe9929", "Central" = "#076324", "Seven County Mpls-St Paul" = "#d8b365", "Southwest" = "#1f78b4", "Southeast" = "#d7301f", "Minnesota" = "black")
+
+color.edr <- c("EDR 1 - Northwest" = "#b3cde3", "EDR 2 - Headwaters" = "#8c96c6", "EDR 3 - Arrowhead" = "#fe9929", "EDR 4 - West Central" = "#8856a7", "EDR 5 - North Central" = "#810f7c", "EDR 6E- Southwest Central" = "#e5f5f9", "EDR 6W- Upper Minnesota Valley" = "#bdc9e1", "EDR 7E- East Central" = "#99d8c9", "EDR 7W- Central" = "#2ca25f", "EDR 8 - Southwest" = "#74a9cf", "EDR 9 - South Central" = "#0570b0", "EDR 10 - Southeast" = "#d7301f", "EDR 11 - 7 County Twin Cities" = "#d8b365", "Minnesota" = "black")
+
+color.counties <- scale_color_brewer(palette = "Dark2",
+                       guide = guide_legend(ncol = 3))
+
+mn_counties <- st_read("Data/Shapefiles/county shapefiles/MNCounties_MNDOT.shp", quiet = TRUE) %>%
+  ms_simplify(keep = .01, keep_shapes = TRUE)
+```
+
+```{r prep farm earnings and total earnings, include = FALSE, cache=TRUE}
+farm.earnings.county <- read_csv("Data/Earnings/Master-farm-total-earnings-county-2001-2018.csv") %>%
+  mutate(farm.earnings = 1000 * farm.earnings,
+         total.earnings = 1000 * total.earnings,
+         pct.farm.earnings = farm.earnings / total.earnings) %>%
+  group_by(GeoName, countyfp) %>%
+  mutate(index.farm.earnings = (farm.earnings - farm.earnings[year==2001]) / farm.earnings[year == 2001]) %>%
+  ungroup()
+
+farm.earnings.ruca <- farm.earnings.county %>%
+  group_by(Dem_Desc, year) %>%
+  summarise(total.earnings = sum(total.earnings),
+            farm.earnings = sum(farm.earnings)) %>%
+  ungroup() %>%
+  group_by(Dem_Desc) %>%
+  mutate(index.farm.earnings = (farm.earnings - farm.earnings[year==2001]) / farm.earnings[year == 2001],
+         index.total.earnings = (total.earnings - total.earnings[year == 2001]) / total.earnings[year == 2001]) %>%
+  ungroup() %>%
+  mutate(pct.farm.earnings = farm.earnings / total.earnings,
+         Dem_Desc = fct_relevel(Dem_Desc, "Entirely rural", "Town/rural mix", "Urban/town/rural mix", "Entirely urban")) 
+
+farm.earnings.edr <- farm.earnings.county %>%
+  group_by(year, edr, planning.region) %>%
+  summarise(total.earnings = sum(total.earnings),
+            farm.earnings = sum(farm.earnings)) %>%
+  ungroup() %>%
+  group_by(edr) %>%
+  mutate(index.farm.earnings = (farm.earnings - farm.earnings[year==2001]) / farm.earnings[year == 2001],
+         index.total.earnings = (total.earnings - total.earnings[year == 2001]) / total.earnings[year == 2001]) %>%
+  ungroup() %>%
+  mutate(pct.farm.earnings = farm.earnings / total.earnings,
+         edr = str_replace(edr, "  ", " "),
+         edr = fct_relevel(edr, "EDR 1 - Northwest", "EDR 2 - Headwaters", "EDR 3 - Arrowhead", "EDR 4 - West Central", "EDR 5 - North Central", "EDR 6E- Southwest Central", "EDR 6W- Upper Minnesota Valley", "EDR 7E- East Central", "EDR 7W- Central", "EDR 8 - Southwest", "EDR 9 - South Central", "EDR 10 - Southeast", "EDR 11 - 7 County Twin Cities", "Minnesota"),
+         planning.region = str_replace(planning.region, " Minnesota", ""),
+         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"))
+
+farm.earnings.pr <- farm.earnings.county %>%
+  group_by(year, planning.region) %>%
+  summarise(total.earnings = sum(total.earnings),
+            farm.earnings = sum(farm.earnings)) %>%
+  ungroup() %>%
+  group_by(planning.region) %>%
+  mutate(index.farm.earnings = (farm.earnings - farm.earnings[year==2001]) / farm.earnings[year == 2001],
+         index.total.earnings = (total.earnings - total.earnings[year == 2001]) / total.earnings[year == 2001]) %>%
+  ungroup() %>%
+  mutate(pct.farm.earnings = farm.earnings / total.earnings,
+         planning.region = str_replace(planning.region, " Minnesota", ""),
+         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"))
+
+```
+
+## Peak farm earnings vs. peak total earnings {.tabset}
+
+
+
+<br>
+
+### County maps - change in earnings<br/>from peak farm years
+
+This map helps us identify which counties have experienced the most significant decreases in total earnings along with seeing where some of the most serious decreases in farm earnings. Not suprisingly, some of the largest decreases in total earnings has occured in counties in the southwestern and western parts of the state. The percent decrease in farm earnings from the peak farm year to 2018 isn't as helpful. The map shows that the largest decreases in farm earnings has occured in north-central Minnesota. However, hovering over those counties shows that although the percentage decreases are high, the actual amount of money isn't as much since agriculture is such a small piece of the economy. For example, in 2018 Itasca County made 132% less in farm earnings than it's peak farming year of 2011. However, the actual dollar decrease is $4 million. On the flip side, Stevens County experienced only a 66% decrease in farm earnings, but the actual dollar decrease was $90 million.
+
+```{r prep county map peak year of total and farm earnings, include  = FALSE, cache=TRUE}
+total.earnings.peak.year.county <- farm.earnings.county %>%
+  group_by(GeoName, countyfp) %>%
+  top_n(wt = total.earnings, n = 1) %>%
+  ungroup() %>%
+  mutate(year.bins = cut(year,
+                         breaks = c(2001,2009, 2011, 2013, 2015, 2017, 2018),
+                         labels = c("Before 2010", "2010-2011", "2012-2013", "2014-2015", "2016-2017", "2018"))) %>%
+  rename(te.peak.year = 4) %>%
+  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE"))
+
+farm.earnings.peak.year.county <- farm.earnings.county %>%
+  group_by(GeoName, countyfp) %>%
+  top_n(wt = farm.earnings, n = 1) %>%
+  ungroup() %>%
+  distinct(countyfp, .keep_all = TRUE) %>%
+  mutate(year.bins = cut(year,
+                         breaks = c(2001,2009, 2011, 2013, 2015, 2017, 2018),
+                         labels = c("Before 2010", "2010-2011", "2012-2013", "2014-2015", "2016-2017", "2018"))) %>%
+  rename(fe.peak.year = 4) %>%
+  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE"))
+```
+
+```{r prep pct change in total earnings since peak farm, include = FALSE, cache=TRUE}
+te.2018.county <- farm.earnings.county %>%
+  filter(year == 2018) %>%
+  select(3,6) %>%
+  rename(total.earnings.2018 = 2)
+
+te.change.since.farm.peak <- farm.earnings.peak.year.county %>%
+  left_join(te.2018.county, by = "countyfp") %>%
+  select(2,3,4,5,6,11,15,14) %>%
+  mutate(te.pct.change = (total.earnings.2018 - total.earnings) / total.earnings,
+         te.pct.change.bins = cut(te.pct.change,
+                                  breaks = c(-1, -.25, -.1, 0, .1, .25, 1),
+                                  labels = c("Greater than -25%", "-25% to -10%", "-10% to 0%", "0% to 10%", "10% to 25%", "Greater than 25%")))
+names(te.change.since.farm.peak)
+```
+
+```{r maps of pct change in total earnings since peak farm}
+fe.2018 <- farm.earnings.county %>%
+  filter(year == 2018) %>%
+  select(3,5) %>%
+  rename(farm.earnings.2018 = 2)
+
+te.decrease.county <- te.change.since.farm.peak %>%
+  left_join(fe.2018, by = "countyfp") %>%
+  filter(te.pct.change < 0) %>%
+  arrange(te.pct.change) %>%
+  select(1,3,4,5,11,7,9,10) %>%
+  mutate(`Change in total earnings` = total.earnings.2018 - total.earnings,
+         `Change in farm earnings` = farm.earnings.2018 - farm.earnings,
+         `Percent change in farm earnings` = (farm.earnings.2018 - farm.earnings) / farm.earnings,
+         GeoName = str_replace(GeoName, ", MN", ""),
+         fe.pct.te.peak = farm.earnings / total.earnings,
+         fe.pct.te.2018 = farm.earnings.2018 / total.earnings.2018) %>%
+  select(1,2,3,5,10,11,4,6,9,7,12,13) %>%
+  rename(County = 1,
+         "Peak year of farm earnings" = 2,
+         "Farm earnings in peak year" = 3,
+         "Farm earnings in 2018" = 4,
+         "Change in farm earnings" = 5,
+         "% change in farm earnings" = 6,
+         "Total earnings from peak year" = 7,
+         "Total earnings in 2018" = 8,
+         "Change in total earnings" = 9,
+         "% change in total earnings" = 10,
+         "Farm earnings as % of total earnings in peak year" = 11,
+         "Farm earnings as % of total earnings in 2018" = 12) %>%
+  mutate("Change in farm earnings as % of total earnings (pct points)" = (`Farm earnings as % of total earnings in 2018` - `Farm earnings as % of total earnings in peak year`) * 100)
+```
+
+
+```{r table of decreasing counties}
+datatable(te.decrease.county, class = "cell-border stripe", filter = "top", rownames = FALSE,
+          options = list(scrollX = TRUE,
+                         pageLength = 10)) %>%
+  formatStyle(columns = c(1:10), fontSize = "90%") %>%
+  formatCurrency(3:5, "$") %>%
+  formatCurrency(7:9, "$") %>%
+  formatPercentage(6) %>%
+  formatPercentage(10) %>%
+  formatPercentage(11) %>%
+  formatPercentage(12) %>% 
+  formatCurrency(13, "", interval = 3, ",'")
+  
+
+```
+
+
+
