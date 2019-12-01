@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Workspeace</title>
+
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.10/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.19/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.19/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+<script src="site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="site_libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="site_libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#section-TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#section-TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="section-TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Ag and the rural economy</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Summary</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Farm earnings and ag wages
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="farm-earnings.html">Farm earnings</a>
+    </li>
+    <li>
+      <a href="ag-wages.html">Ag wages</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="section-header">
+
+
+
+<h1 class="title toc-ignore">Workspeace</h1>
+
+</div>
+
+
+<div id="section-peak-farm-earnings-vs.-peak-total-earnings" class="section level2 tabset">
+<h2>Peak farm earnings vs. peak total earnings</h2>
+<p><br></p>
+<div id="section-county-maps---change-in-earnings-from-peak-farm-years" class="section level3">
+<h3>County maps - change in earnings<br/>from peak farm years</h3>
+<p>This map helps us identify which counties have experienced the most significant decreases in total earnings along with seeing where some of the most serious decreases in farm earnings. Not suprisingly, some of the largest decreases in total earnings has occured in counties in the southwestern and western parts of the state. The percent decrease in farm earnings from the peak farm year to 2018 isn’t as helpful. The map shows that the largest decreases in farm earnings has occured in north-central Minnesota. However, hovering over those counties shows that although the percentage decreases are high, the actual amount of money isn’t as much since agriculture is such a small piece of the economy. For example, in 2018 Itasca County made 132% less in farm earnings than it’s peak farming year of 2011. However, the actual dollar decrease is $4 million. On the flip side, Stevens County experienced only a 66% decrease in farm earnings, but the actual dollar decrease was $90 million.</p>
+<div id="htmlwidget-a91fab8c799c149c1543" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a91fab8c799c149c1543">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"2008\" data-max=\"2015\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"26061000\" data-max=\"240946000\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"-3291000\" data-max=\"75394000\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"-172443000\" data-max=\"-12837000\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"-1.07810681871073\" data-max=\"-0.334270760096867\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"96463000\" data-max=\"1299321000\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"91853000\" data-max=\"1283663000\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"-133589000\" data-max=\"-4610000\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"-0.39742715594467\" data-max=\"-0.012050909667433\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"0.026456895563144\" data-max=\"0.657253599114065\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"-0.013775926662342\" data-max=\"0.278336036928571\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"-39.2458094375589\" data-max=\"-2.85485660405202\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["Lac qui Parle","Traverse","Faribault","Norman","Kittson","Murray","Renville","Lincoln","Stevens","Yellow Medicine","Waseca","Sibley","Grant","Redwood","Jackson","Wilkin","Cottonwood","Watonwan","Martin","Big Stone","Marshall","Chippewa","Swift","Rock","Fillmore","Polk","Mahnomen","Red Lake","Wabasha","Lyon","McLeod","Dodge","Douglas"],[2013,2012,2012,2013,2013,2013,2013,2013,2012,2013,2012,2012,2012,2013,2012,2012,2013,2013,2013,2012,2008,2013,2012,2013,2012,2013,2013,2013,2012,2013,2015,2012,2012],[127635000,102082000,117595000,90249000,81916000,167019000,210333000,65228000,137174000,141547000,103382000,96195000,78668000,159745000,117709000,73763000,126537000,84307000,167115000,50364000,104535000,109597000,85446000,132624000,80666000,240946000,26061000,38403000,72252000,105748000,75957000,84100000,34376000],[27812000,28416000,8752000,24420000,26860000,49815000,37890000,17550000,46584000,37796000,28874000,8269000,24648000,44886000,27766000,21785000,41911000,-3291000,29644000,11418000,25330000,12136000,24035000,65322000,1983000,75394000,4252000,25566000,18690000,19408000,19554000,30750000,-2685000],[-99823000,-73666000,-108843000,-65829000,-55056000,-117204000,-172443000,-47678000,-90590000,-103751000,-74508000,-87926000,-54020000,-114859000,-89943000,-51978000,-84626000,-87598000,-137471000,-38946000,-79205000,-97461000,-61411000,-67302000,-78683000,-165552000,-21809000,-12837000,-53562000,-86340000,-56403000,-53350000,-37061000],[-0.782097387080346,-0.72163554789287,-0.925575066967133,-0.729415284379882,-0.672103130035646,-0.701740520539579,-0.819857083767169,-0.730943766480653,-0.66040211701926,-0.732979151801169,-0.720705732139057,-0.914039191226155,-0.686683276554635,-0.719014679645685,-0.764113194403147,-0.704662229030815,-0.668784624260098,-1.03903590449192,-0.822613170571164,-0.77329044555635,-0.757688812359497,-0.889267041981076,-0.71871123282541,-0.507464712269272,-0.97541715220787,-0.68709171349597,-0.836844326771805,-0.334270760096867,-0.741322039528318,-0.816469342209782,-0.742564872230341,-0.63436385255648,-1.07810681871073],[275726000,155316000,386123000,181713000,168898000,331626000,530400000,153715000,460503000,373958000,531759000,305320000,185749000,538373000,401384000,234367000,386849000,277410000,619737000,143960000,215832000,403203000,318054000,314866000,412085000,880392000,115546000,96463000,437709000,960449000,1160293000,466384000,1299321000],[166145000,107313000,270557000,127801000,119946000,236502000,396811000,115945000,357505000,301945000,433662000,251172000,155035000,449761000,340011000,200439000,331942000,238895000,535005000,124994000,191291000,360276000,285003000,282760000,378168000,815790000,109505000,91853000,421767000,926986000,1125594000,457910000,1283663000],[-109581000,-48003000,-115566000,-53912000,-48952000,-95124000,-133589000,-37770000,-102998000,-72013000,-98097000,-54148000,-30714000,-88612000,-61373000,-33928000,-54907000,-38515000,-84732000,-18966000,-24541000,-42927000,-33051000,-32106000,-33917000,-64602000,-6041000,-4610000,-15942000,-33463000,-34699000,-8474000,-15658000],[-0.39742715594467,-0.309066676968245,-0.299298410092121,-0.296687633796151,-0.289831732761785,-0.286841200629625,-0.251864630467572,-0.245714471587028,-0.223664123795068,-0.192569753822622,-0.184476426351035,-0.177348355823398,-0.165352168786911,-0.164592206518529,-0.152903454048991,-0.144764407958458,-0.141933932878203,-0.138837821275369,-0.136722512936939,-0.131744929146985,-0.113704177323103,-0.106464981659363,-0.103916316097266,-0.101967186041046,-0.0823058349612337,-0.0733786767712564,-0.0522822079518114,-0.0477903444844137,-0.03642145809202,-0.0348409962423825,-0.0299053773486525,-0.0181695770009263,-0.012050909667434],[0.462905202991375,0.657253599114064,0.304553212318355,0.496656815968038,0.485002782744615,0.503636626802482,0.396555429864253,0.424343753049475,0.297878624026336,0.378510420956364,0.194415139188994,0.315062884842133,0.423517757834497,0.296718074643416,0.293257827915413,0.314732876215508,0.327096619094272,0.303907573627483,0.269654708368227,0.349847179772159,0.484335038363171,0.271815933909222,0.268652492972891,0.421207751869049,0.195750876639528,0.273680360566657,0.225546535578904,0.398111192892612,0.165068572956005,0.110102670730044,0.0654636372019826,0.180323510240489,0.0264568955631441],[0.167395949321376,0.264795504738475,0.0323480819198912,0.191078317071071,0.223934103679989,0.21063246822437,0.0954862642416667,0.151364871275174,0.130303072684298,0.125175114673202,0.066581807951815,0.0329216632427181,0.158983455348792,0.0997996713810224,0.0816620638744041,0.108686433278953,0.126260009278729,-0.0137759266623412,0.0554088279548789,0.0913483847224667,0.132416057211265,0.0336852857253883,0.0843324456233794,0.231015702362427,0.00524370121215968,0.0924183919881342,0.0388292772019542,0.278336036928571,0.044313566495245,0.0209366700252215,0.0173721608324138,0.0671529339826604,-0.00209167047737607],[-29.550925367,-39.2458094375589,-27.2205130398463,-30.5578498896966,-26.1068679064626,-29.3004158578112,-30.1069165622587,-27.2978881774301,-16.7575551342038,-25.3335306283162,-12.7833331237178,-28.2141221599415,-26.4534302485705,-19.6918403262394,-21.1595764041009,-20.6046442936555,-20.0836609815542,-31.7683500289824,-21.4245880413348,-25.8498795049692,-35.1918981151907,-23.8130648183834,-18.4320047349512,-19.0192049506622,-19.0507175427369,-18.1261968578522,-18.6717258376949,-11.9775155964041,-12.075500646076,-8.91660007048224,-4.80914763695688,-11.3170576257828,-2.85485660405202]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th>County<\/th>\n      <th>Peak year of farm earnings<\/th>\n      <th>Farm earnings in peak year<\/th>\n      <th>Farm earnings in 2018<\/th>\n      <th>Change in farm earnings<\/th>\n      <th>% change in farm earnings<\/th>\n      <th>Total earnings from peak year<\/th>\n      <th>Total earnings in 2018<\/th>\n      <th>Change in total earnings<\/th>\n      <th>% change in total earnings<\/th>\n      <th>Farm earnings as % of total earnings in peak year<\/th>\n      <th>Farm earnings as % of total earnings in 2018<\/th>\n      <th>Change in farm earnings as % of total earnings (pct points)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollX":true,"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4,5,6,7,8,9,10,11,12]}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"rowCallback":"function(row, data) {\nvar value=data[0]; $(this.api().cell(row, 0).node()).css({'font-size':'90%'});\nvar value=data[1]; $(this.api().cell(row, 1).node()).css({'font-size':'90%'});\nvar value=data[2]; $(this.api().cell(row, 2).node()).css({'font-size':'90%'});\nvar value=data[3]; $(this.api().cell(row, 3).node()).css({'font-size':'90%'});\nvar value=data[4]; $(this.api().cell(row, 4).node()).css({'font-size':'90%'});\nvar value=data[5]; $(this.api().cell(row, 5).node()).css({'font-size':'90%'});\nvar value=data[6]; $(this.api().cell(row, 6).node()).css({'font-size':'90%'});\nvar value=data[7]; $(this.api().cell(row, 7).node()).css({'font-size':'90%'});\nvar value=data[8]; $(this.api().cell(row, 8).node()).css({'font-size':'90%'});\nvar value=data[9]; $(this.api().cell(row, 9).node()).css({'font-size':'90%'});\nDTWidget.formatCurrency(this, row, data, 2, \"$\", 2, 3, \",\", \".\", true);\nDTWidget.formatCurrency(this, row, data, 3, \"$\", 2, 3, \",\", \".\", true);\nDTWidget.formatCurrency(this, row, data, 4, \"$\", 2, 3, \",\", \".\", true);\nDTWidget.formatCurrency(this, row, data, 6, \"$\", 2, 3, \",\", \".\", true);\nDTWidget.formatCurrency(this, row, data, 7, \"$\", 2, 3, \",\", \".\", true);\nDTWidget.formatCurrency(this, row, data, 8, \"$\", 2, 3, \",\", \".\", true);\nDTWidget.formatPercentage(this, row, data, 5, 0, 3, \",\", \".\");\nDTWidget.formatPercentage(this, row, data, 9, 0, 3, \",\", \".\");\nDTWidget.formatPercentage(this, row, data, 10, 0, 3, \",\", \".\");\nDTWidget.formatPercentage(this, row, data, 11, 0, 3, \",\", \".\");\nDTWidget.formatCurrency(this, row, data, 12, \"\", 2, 3, \",\\\\'\", \".\", true);\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("section-TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#section-TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
