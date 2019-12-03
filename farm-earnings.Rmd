@@ -485,58 +485,7 @@ girafe( ggobj = te.pct.change.county, width_svg = 6) %>%
 
 ## Counties most disrupted by farm earnings
 
-Below is a table list the change in farm earnings and total earnings for the 33 counties who had a lower total earnings in 2018 than in the year of their peak farm earnings. It's sorted by the percent change in total earnings since the peak farm year, with the highest percentage provided at the top (Lac qui Parle). 
 
-The counties that we should be most worried about are near the top of the table, where the 
 
 <br>
 
-```{r table of counties with decreasing total earnings}
-fe.2018 <- farm.earnings.county %>%
-  filter(year == 2018) %>%
-  select(3,5) %>%
-  rename(farm.earnings.2018 = 2)
-
-te.decrease.county <- te.change.since.farm.peak %>%
-  left_join(fe.2018, by = "countyfp") %>%
-  filter(te.pct.change < 0) %>%
-  arrange(te.pct.change) %>%
-  select(1,3,4,5,11,7,9,10) %>%
-  mutate(`Change in total earnings` = total.earnings.2018 - total.earnings,
-         `Change in farm earnings` = farm.earnings.2018 - farm.earnings,
-         `Percent change in farm earnings` = (farm.earnings.2018 - farm.earnings) / farm.earnings,
-         GeoName = str_replace(GeoName, ", MN", ""),
-         fe.pct.te.peak = farm.earnings / total.earnings,
-         fe.pct.te.2018 = farm.earnings.2018 / total.earnings.2018) %>%
-  select(1,2,3,5,10,11,4,6,9,7,12,13) %>%
-  rename(County = 1,
-         "Peak year of farm earnings" = 2,
-         "Farm earnings in peak year" = 3,
-         "Farm earnings in 2018" = 4,
-         "Change in farm earnings" = 5,
-         "% change in farm earnings" = 6,
-         "Total earnings from peak year" = 7,
-         "Total earnings in 2018" = 8,
-         "Change in total earnings" = 9,
-         "% change in total earnings" = 10,
-         "Farm earnings as % of total earnings in peak year" = 11,
-         "Farm earnings as % of total earnings in 2018" = 12) %>%
-  mutate("Change in farm earnings as % of total earnings (pct points)" = (`Farm earnings as % of total earnings in 2018` - `Farm earnings as % of total earnings in peak year`) * 100)
-```
-
-
-```{r table of decreasing counties}
-datatable(te.decrease.county, class = "cell-border stripe", filter = "top", rownames = FALSE,
-          options = list(scrollX = TRUE,
-                         pageLength = 10)) %>%
-  formatStyle(columns = c(1:10), fontSize = "90%") %>%
-  formatCurrency(3:5, "$") %>%
-  formatCurrency(7:9, "$") %>%
-  formatPercentage(6) %>%
-  formatPercentage(10) %>%
-  formatPercentage(11) %>%
-  formatPercentage(12) %>% 
-  formatCurrency(13, "", interval = 3, ",'")
-  
-
-```
