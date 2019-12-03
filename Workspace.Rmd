@@ -182,103 +182,153 @@ names(te.change.since.farm.peak)
 
 ## Counties most disrupted by farm earnings
 
-There are 33 counties in Minnesota that have total earnings in 2018 less than during the peak farm year. 
+There are 33 counties in Minnesota that have less total earnings in 2018 than during the peak farm year. The next step is to try and isolate which counties are being most influenced by farm earnings.
 
-To try and isolate the impact of farm earnings on total earnings, lets see if there are any other industries that have experienced a reduction in earnings between peak farm years and 2018. First we will compare farm and non-farm earnings.
+The charts below compare two measurements;
+
+* the drop in total earnings between the year they experienced the largest farm earnings and 2018, and
+
+* the drop in the level at which farm earnings contributes to total earnings during that same timeframe. 
+
+What we are looking for is whether the counties are in similar positions across both charts. Essentially, do counties that are experiencing high drops in their total earnings also experience a significant drop in the amount that farm earnings contributes to their total earnings. 
+
+These charts show that, yes, most counties tend to be in the same positions across each. Counties such as Lac qui Parle, Traverse, Faribault, Norman, Kittson, Renville, Murray, and Lincoln all had drops of 20% or more in their total earnings AND experienced a 20 percentage point or more drop in the amount of farm earnings contributes to their total earnings.
+
+Other counties, such as Douglas, Lyon, McLeod, Dodge, Red Lake, and Polk experienced less significant drops in their total earnings and their contributions from farm earnings was relatively minor compared to other counties.
+
+Interestingly, there are some counties that have experienced the opposite of each of these scenarios. Counties such as Marshall and Wantonwan experienced significant declines in their contributions from farm earnings, yet their drop in total earnings was relatively minor. 
+
+Other counties such as Waseca and Stevens experienced high drops in their total earnings yet the drop in their contributions from farm earnings wasn't as significant.
+
+Note: you can hover over the points to get more detailed information. In addition, not only will that particular point be highlighted, but the correspondent point will be highlighted on the other chart for you to see it's position in comparison. You can also use the tools located in the topleft position of the chart to zoom in, making it easier to hover over the points.
 
 <br>
 
-```{r prep earnings by farm and non-farm earnings for counties with lower total earnings, include = FALSE, cache = TRUE}
+```{r prep change in farm earnings as pct of total earnings, include = FALSE, cache = TRUE}
 
-fe.te.2018 <- farm.earnings.county %>%
+fe.te.2018.county <- farm.earnings.county %>%
   filter(year == 2018) %>%
-  select(3,5,6) %>%
-  rename(farm.earnings.2018 = 2,
-         total.earnings.2018 = 3)
+  rename(farm.earnings.2018 = 5,
+         total.earnings.2018 = 6) %>% 
+  select(3,5,6)
 
-farm.earnings.peak.2018 <- farm.earnings.peak.year.county %>%
-  select(2,3,4,5,6) %>%
-  rename(farm.earnings.peak = 4, 
-         total.earnings.peak = 5) %>%
-  left_join(fe.te.2018, by = "countyfp")
-
-earnings.industry <- read_csv("Data/Earnings/bea-earnings-by-industry-2001-2018.csv")
-
-nonfarm.earnings.2018 <- earnings.industry %>%
-  filter(LineCode  == 82) %>%
-  mutate(countyfp = str_sub(GeoFIPS, 3, 5)) %>%
-  select(27, 26) %>%
-  rename(nonfarm.earnings.2018 = 2) %>%
-  mutate(nonfarm.earnings.2018 = 1000 * (as.numeric(nonfarm.earnings.2018)))
-
-nonfarm.earnings.peak <- earnings.industry %>%
-  filter(LineCode == 82) %>%
-  mutate(countyfp = str_sub(GeoFIPS, 3, 5)) %>%
-  select(27, 9:26) %>%
-  gather(key = "year", value = "nonfarm.earnings.peak", 2:19) %>%
-  mutate(year = as.integer(year),
-         nonfarm.earnings.peak = 1000*(as.numeric(nonfarm.earnings.peak)))
-
-farm.nonfarm.total.earnings.peak.2018 <- farm.earnings.peak.2018 %>%
-  left_join(nonfarm.earnings.2018, by = "countyfp") %>%
-  left_join(nonfarm.earnings.peak, by = c("countyfp", "fe.peak.year" = "year")) %>%
-  mutate(change.te = total.earnings.2018 - total.earnings.peak)
-
-change.fe.nfe.negative.counties <- farm.nonfarm.total.earnings.peak.2018 %>%
-  filter(change.te < 0) %>%
-  mutate(pct.change.fe = (farm.earnings.2018 - farm.earnings.peak)/farm.earnings.peak,
-         pct.change.nfe = (nonfarm.earnings.2018 - nonfarm.earnings.peak) / nonfarm.earnings.peak)
-
-names(change.fe.nfe.negative.counties)
-head(change.fe.nfe.negative.counties)
-```
-
-
-```{r prep compare change in farm earnings as percent of total, include = FALSE, cache = TRUE}
-
-fe.te.2018 <- farm.earnings.county %>%
-  filter(year == 2018) %>%
-  select(3,5,6) %>%
-  rename(farm.earnings.2018 = 2,
-         total.earnings.2018 = 3)
-
-change.fe.pct.te <- farm.earnings.peak.year.county %>%
-  left_join(fe.te.2018, by = "countyfp") %>%
+fe.te.peak.2018.county <- farm.earnings.peak.year.county %>%
   rename(farm.earnings.peak = 5,
          total.earnings.peak = 6) %>%
-  mutate(fe.pct.te.peak = farm.earnings.peak / total.earnings.peak,
-         fe.pct.te.2018 = farm.earnings.2018 / total.earnings.2018,
-         change.fe.pct.te = (fe.pct.te.2018 - fe.pct.te.peak) * 100,
+  left_join(fe.te.2018.county, by = "countyfp") %>%
+  mutate(change.fe = farm.earnings.2018 - farm.earnings.peak,
+         pct.change.fe = change.fe / farm.earnings.peak,
          change.te = total.earnings.2018 - total.earnings.peak,
+         pct.change.te = change.te / total.earnings.peak) %>%
+  select(2,3,4,5,15,17,18,6,16,19,20,8:10)
+
+fe.te.peak.2018.negative.county <- fe.te.peak.2018.county %>%
+  filter(change.te < 0) %>%
+  mutate(pct.fe.of.te.peak = farm.earnings.peak / total.earnings.peak,
+         pct.fe.of.te.2018 = farm.earnings.2018 / total.earnings.2018,
+         change.pct.fe.of.te = 100 * (pct.fe.of.te.2018 - pct.fe.of.te.peak),
          GeoName = str_replace(GeoName, ", MN", ""))
 
-change.fe.pct.te.negative <- change.fe.pct.te %>%
-  filter(change.te < 0) %>%
-  mutate(year = 2018)
-
-names(change.fe.pct.te.negative)
+names(fe.te.peak.2018.negative.county)
 ```
 
-```{r point chart change in farm earnings as percent of total}
-change.fe.pct.te.negative.plot <- ggplot(change.fe.pct.te.negative, aes(x = as.integer(year), y = change.fe.pct.te, color = change.fe.pct.te)) +
-  geom_label_repel(aes(y = change.fe.pct.te, label = paste(GeoName, ", ", comma(change.fe.pct.te))), show.legend = FALSE) +
-  geom_point_interactive(size = 3, aes(data_id = GeoName, tooltip = paste(GeoName, "\nYear of peak farm earnings: ", fe.peak.year, "\nFarm earnings during peak year: ", dollar(farm.earnings.peak), "\nTotal earnings during peak year: ", dollar(total.earnings.peak), "\nFarm earnings as percent of total earnings during peak year: ", percent(fe.pct.te.peak), "\nFarm earnings in 2018: ", dollar(farm.earnings.2018), "\nTotal earnings in 2018: ", dollar(total.earnings.2018), "\nFarm earnings as percent of total earnings in 2018: ", percent(fe.pct.te.2018), "\nChange in farm earnings as percent of total earnings: ", comma(change.fe.pct.te), " percentage points", sep = ""))) +
-  geom_hline(yintercept = 0, color = "black") +
-  labs(x="", y = "Percentage points", color="", title = "Change in farm earnings as a percent of total earnings\nsince peak farm year")+
-  scale_y_continuous(labels=scales::comma,
-                     breaks = seq(-50, 20, 10))+
-  scale_x_continuous(breaks = seq(2018, 2018, 1)) +
+```{r point chart change in fe as pct of te, fig.width=8}
+
+change.pct.te.plot <- ggplot(fe.te.peak.2018.negative.county, aes(x = 2018, y = pct.change.te, color = pct.change.te)) +
+  geom_hline(yintercept = 0, size = 2, color = "black") +
+  geom_point_interactive(size = 3, aes(data_id = GeoName, tooltip = paste(GeoName, "\nYear farm earnings peaked: ", fe.peak.year, "\nFarm earnings during peak year: ", dollar(farm.earnings.peak), "\nTotal earnings during peak year: ", dollar(total.earnings.peak), "\nFarm earnings as percent of total\nearnings during peak year: ", percent(pct.fe.of.te.peak), "\nFarm earnings in 2018: ", dollar(farm.earnings.2018), "\nTotal earnings in 2018: ", dollar(total.earnings.2018), "\nFarm earnings as percent of total\nearnings in 2018: ", percent(pct.fe.of.te.2018), "\nChange in total earnings\nsince peak year: ", percent(pct.change.te), sep = ""))) +
+  geom_label_repel(size = 3,aes(x = 2018, y = pct.change.te, label = paste(GeoName, ", ", percent(pct.change.te), sep = ""), color = pct.change.te)) +
+  labs(x= "", y = "Percentage points", color="", title = "Change in farm earnings as a percent of\ntotal earnings from peak farm year")+
+  scale_y_continuous(labels=scales::percent)+
+  scale_x_continuous(breaks = seq(1900, 2050, 1)) +
+  theme_line+
   scale_color_gradient(low = "#de2d26",
                        high = "black") +
-  theme_line+
-  theme(legend.position = "none")
+  theme(legend.position = "none",
+        text = element_text(size = 12))
 
-girafe( ggobj = change.fe.pct.te.negative.plot, width_svg = 8) %>%
+
+change.fe.pct.te.plot <- ggplot(fe.te.peak.2018.negative.county, aes(x = 2018, y = change.pct.fe.of.te, color = change.pct.fe.of.te)) +
+    geom_hline(yintercept = 0, size = 2, color = "black") +
+  geom_point_interactive(size = 3, aes(data_id = GeoName, tooltip = paste(GeoName, "\nYear farm earnings peaked: ", fe.peak.year, "\nFarm earnings during peak year: ", dollar(farm.earnings.peak), "\nTotal earnings during peak year: ", dollar(total.earnings.peak), "\nFarm earnings as percent of total\nearnings during peak year: ", percent(pct.fe.of.te.peak), "\nFarm earnings in 2018: ", dollar(farm.earnings.2018), "\nTotal earnings in 2018: ", dollar(total.earnings.2018), "\nFarm earnings as percent of total earnings in 2018: ", percent(pct.fe.of.te.2018), "\nPercentage point change in farm earnings as percent of total earnings: ", comma(change.pct.fe.of.te), sep = ""))) +
+  geom_label_repel(size = 3, aes(x = 2018, y = change.pct.fe.of.te, label = paste(GeoName, ", ", comma(change.pct.fe.of.te), sep = ""), color = change.pct.fe.of.te)) +
+  labs(x= "", y = "Percentage change", color="", title = "Change in farm earnings as a percent of\ntotal earnings from peak farm year")+
+  scale_y_continuous(labels=scales::comma)+
+  scale_x_continuous(breaks = seq(1900, 2050, 1)) +
+  theme_line+
+  scale_color_gradient(low = "#de2d26",
+                       high = "black") +
+  theme(legend.position = "none",
+        text = element_text(size = 12))
+
+
+girafe( ggobj = plot_grid(change.pct.te.plot, change.fe.pct.te.plot), width_svg = 10) %>%
   girafe_options(opts_selection(type = "none"),
                  opts_toolbar(saveaspng = FALSE) ,
                  opts_sizing(rescale = FALSE),
                  opts_zoom(max = 5))
+```
 
+<br>
+
+Filtering counties that have a drop in total earnings by 15% or more and experienced a 15 percentage point drop in the contributions from farm earnings.
+
+Our next step is to see how much farm earnings has impacted the overall loss acoss all industries. To do that, we are going to sum the loss of all industries who has experienced a drop in earnings, and divide that by the loss in farm earnings to get a sense of the impact farm earnings.
+
+<br>
+
+```{r prep farm earnings pct industry loss, include = FALSE, cache= TRUE}
+te.fe.drop.county <- fe.te.peak.2018.negative.county %>%
+  filter(pct.change.te < -.15 & change.pct.fe.of.te < -15) %>%
+  select(1,2,3)
+
+earnings.industry <- read_csv("Data/Earnings/bea-earnings-by-industry-2001-2018.csv") %>%
+  mutate(countyfp = str_sub(GeoFIPS, 3, 5))
+
+earnings.industry.2018.county <- earnings.industry %>%
+  filter(!LineCode %in% c(35, 82)) %>%
+  select(27,7,26) %>%
+  rename(earnings.2018 = 3) %>%
+  mutate(earnings.2018 = as.numeric(earnings.2018) * 1000)
+
+earnings.industry.peak.county <- earnings.industry %>%
+  filter(!LineCode %in% c(35, 82)) %>%
+  gather(key = "year", value = "earnings.peak", 9:26) %>%
+  mutate(earnings.peak = as.numeric(earnings.peak) * 1000,
+         year = as.integer(year)) %>%
+  select(9,10,7,11)
+
+earnings.industry.peak.2018.drop.county <- te.fe.drop.county %>%
+  left_join(earnings.industry.2018.county, by = c("countyfp")) %>%
+  left_join(earnings.industry.peak.county, by = c("countyfp", "fe.peak.year" = "year", "Description")) %>%
+  mutate(change.earnings = earnings.2018 - earnings.peak) %>%
+  filter(change.earnings < 0) %>%
+  group_by(GeoName, countyfp) %>%
+  summarise(farm.earnings.change = sum(change.earnings[Description == "Farm earnings"], na.rm = TRUE),
+            industry.loss.earnings.change = sum(change.earnings, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(pct.fe.of.total.loss = farm.earnings.change / industry.loss.earnings.change)
+names(earnings.industry.peak.2018.drop.county)
+```
+
+```{r point chart farm earnings loss pct of industry loss}
+earnings.industry.peak.2018.drop.county.plot <- ggplot(earnings.industry.peak.2018.drop.county, aes(x = 2018, y = pct.fe.of.total.loss, color = pct.fe.of.total.loss)) +
+  geom_point_interactive(size = 3, aes(data_id = GeoName, tooltip = paste(GeoName, "\nChange in farm earnings since peak year: ", dollar(farm.earnings.change), "\nChange in earnings of all industries that experienced a loss: ", dollar(industry.loss.earnings.change), "\nFarm earnings loss as a percent of total loss: ", percent(pct.fe.of.total.loss), sep = ""))) +
+  geom_label_repel(size = 3, aes(x = 2018, y = pct.fe.of.total.loss, label = paste(GeoName, ", ", comma(pct.fe.of.total.loss), sep = ""), color = pct.fe.of.total.loss)) +
+  labs(x= "", y = "%", color="", title = "Farm earnings loss as a percent of the total loss in all industries")+
+  scale_y_continuous(labels=scales::percent)+
+  scale_x_continuous(breaks = seq(1900, 2050, 1)) +
+  theme_line+
+  scale_color_gradient(high = "#de2d26",
+                       low = "black") +
+  theme(legend.position = "none")
+
+
+girafe( ggobj = earnings.industry.peak.2018.drop.county.plot, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE),
+                 opts_zoom(max = 5))
 ```
 
 

@@ -116,6 +116,8 @@ The charts below provide the change in farm earnings and total earnings by index
 
 The overall trend is that the farm earnings "bump" only appears in a few select regions and in regions that have a lot of "entirely rural" counties in them.
 
+In addition, these "bumps" that do appear in total earnings has significantly impacted the earnings-performance of these groups/regions. For example, the entirely rural county group's 2018 total earnings equals the value they had in 2010. This is also true for the Southwest region. In particular, EDRs 8 and 6W have total earnings equal to 2010 values.
+
 ```{r prep farm earnings and total earnings, include = FALSE, cache=TRUE}
 farm.earnings.county <- read_csv("Data/Earnings/Master-farm-total-earnings-county-2001-2018.csv") %>%
   mutate(farm.earnings = 1000 * farm.earnings,
@@ -171,7 +173,7 @@ farm.earnings.pr <- farm.earnings.county %>%
 
 ### RUCA
 
-The indexed level of farm earnings across all RUCA groups shows a significant bump from 2010 - 2012 and levels dropping back down to 2001 levels or lower by 2018. Not suprisingly, the largest growth in earnings occured in counties that are entirely rural or have a town/rural mix. Interestingly, the only significant bump in *total earnings* occurs in the entirely rural county group while all the other RUCA groups keep a pretty consistent growth line.
+The indexed level of farm earnings across all RUCA groups shows a significant bump from 2010 - 2012 and levels dropping back down to 2001 levels or lower by 2018. Not suprisingly, the largest growth in earnings occured in counties that are entirely rural or have a town/rural mix. Interestingly, the only significant bump in *total earnings* occurs in the entirely rural county group while all the other RUCA groups keep a pretty consistent growth line. The entirely rural county group highlights the fact that farm earnings drove the high performance in total earnings while also driving it downward.
 
 <br>
 
@@ -210,7 +212,7 @@ fe.index.ruca <- ggplot(farm.earnings.ruca, aes(year, index.farm.earnings, color
 
 ### Planning Regions
 
-When broken down by planning regions, Southwest and Northwest Minnesota seem to be the most impacted in the downturn in farm earnings. Indexes from farm earnings shows a similar bump between 2008 - 2013 across all of the regions except for the seven county metro. When comparing *total earnings* across the planning regions, those bumps are seen in the Southwest and Northwest regions with similar declines after farm earnings peaked in 2012. The Southwest region looks to be hit the hardest.
+When broken down by planning regions, Southwest and Northwest Minnesota seem to be the most impacted in the downturn in farm earnings. Indexes from farm earnings shows a similar bump between 2008 - 2013 across all of the regions except for the seven county metro. When comparing *total earnings* across the planning regions, those bumps are seen in the Southwest and Northwest regions with similar declines after farm earnings peaked in 2012. The Southwest region looks to be hit the hardest with 2018 total earnings equal to that of 2010 levels.
 
 <br>
 
@@ -296,7 +298,9 @@ Breaking it down further, the EDRs in the Southwest region that seem to be most 
 
 The charts below provide farm earnings as a percentage of total earnings each year. The trend to see here is how much that percentage has changed over time.
 
-Overall, the most concerning trend is that the farm earnings as a percentage of total earnings in 2018 are at their lowest levels since 2001. This seems to be the case across nearly all regions.
+Overall, the most concerning trend is that the farm earnings as a percentage of total earnings in 2018 are at their lowest levels since 2001. Although this seems to be the case across nearly all regions, it's the regions where they typically had higher percentages of their total earnings come from farming that are now not much higher than other regions that never had higher percentages. 
+
+For example, the entirely rural county group had consistent growth in farm earnings since 2001, and typically had farm earnings make up 15% or more of their total earnings. The sudden decline in farm earnings has dropped them back down to 10% or lower. Compare that to town/rural mix county group where farm earnings peaked at 10% and is now at 3.5%. It just isn't as impactful in a positive or negative sense.
 
 <br>
 
@@ -393,7 +397,7 @@ For the most part, farm earnings peaked between 2010 - 2013 across the state wit
 
 The following map provides a comparison of trends in farm earnings and total earnings to get a better handle on the influence of farm earnings in a county's total earnings. What we expect is that total earnings will have peaked within the last few years since a counties economy should grow every year. However, since farm earnings peaked between 2010 and 2013, it's important to see which of Minnesota's counties had their total earnings peak during those years.
 
-The map on the right makes it pretty obvious that farm earnings peaked between 2012 and 2013. What's interesting is to see that many of the counties on the western border had their total earnings peak during this time while the other counties had their total earnings continue to grow despite lower farm earnings.
+The map on the right makes it pretty obvious that farm earnings peaked between 2012 and 2013. What's interesting is to see that many of the counties on the western border had their total earnings peak during this time while the other counties had their total earnings continue to grow despite lower farm earnings. Overall, 33 countes in Minnesota reported total earnings in 2018 at levels below previous years. 
 
 ```{r prep county map peak year of total and farm earnings, include  = FALSE, cache=TRUE}
 total.earnings.peak.year.county <- farm.earnings.county %>%
@@ -485,7 +489,89 @@ girafe( ggobj = te.pct.change.county, width_svg = 6) %>%
 
 ## Counties most disrupted by farm earnings
 
+There are 33 counties in Minnesota that have less total earnings in 2018 than during the peak farm year. The next step is to try and isolate which counties are being most influenced by farm earnings.
 
+The charts below compare two measurements;
+
+* the drop in total earnings between the year they experienced the largest farm earnings and 2018, and
+
+* the drop in the level at which farm earnings contributes to total earnings during that same timeframe. 
+
+What we are looking for is whether the counties are in similar positions across both charts. Essentially, do counties that are experiencing high drops in their total earnings also experience a significant drop in the amount that farm earnings contributes to their total earnings. 
+
+These charts show that, yes, most counties tend to be in the same positions across each. Counties such as Lac qui Parle, Traverse, Faribault, Norman, Kittson, Renville, Murray, and Lincoln all had drops of 20% or more in their total earnings AND experienced a 20 percentage point or more drop in the amount of farm earnings contributes to their total earnings.
+
+Other counties, such as Douglas, Lyon, McLeod, Dodge, Red Lake, and Polk experienced less significant drops in their total earnings and their contributions from farm earnings was relatively minor compared to other counties.
+
+Interestingly, there are some counties that have experienced the opposite of each of these scenarios. Counties such as Marshall and Wantonwan experienced significant declines in their contributions from farm earnings, yet their drop in total earnings was relatively minor. 
+
+Other counties such as Waseca and Stevens experienced high drops in their total earnings yet the drop in their contributions from farm earnings wasn't as significant.
+
+Note: you can hover over the points to get more detailed information. In addition, not only will that particular point be highlighted, but the correspondent point will be highlighted on the other chart for you to see it's position in comparison. You can also use the tools located in the topleft position of the chart to zoom in, making it easier to hover over the points.
 
 <br>
 
+```{r prep change in farm earnings as pct of total earnings, include = FALSE, cache = TRUE}
+
+fe.te.2018.county <- farm.earnings.county %>%
+  filter(year == 2018) %>%
+  rename(farm.earnings.2018 = 5,
+         total.earnings.2018 = 6) %>% 
+  select(3,5,6)
+
+fe.te.peak.2018.county <- farm.earnings.peak.year.county %>%
+  rename(farm.earnings.peak = 5,
+         total.earnings.peak = 6) %>%
+  left_join(fe.te.2018.county, by = "countyfp") %>%
+  mutate(change.fe = farm.earnings.2018 - farm.earnings.peak,
+         pct.change.fe = change.fe / farm.earnings.peak,
+         change.te = total.earnings.2018 - total.earnings.peak,
+         pct.change.te = change.te / total.earnings.peak) %>%
+  select(2,3,4,5,15,17,18,6,16,19,20,8:10)
+
+fe.te.peak.2018.negative.county <- fe.te.peak.2018.county %>%
+  filter(change.te < 0) %>%
+  mutate(pct.fe.of.te.peak = farm.earnings.peak / total.earnings.peak,
+         pct.fe.of.te.2018 = farm.earnings.2018 / total.earnings.2018,
+         change.pct.fe.of.te = 100 * (pct.fe.of.te.2018 - pct.fe.of.te.peak),
+         GeoName = str_replace(GeoName, ", MN", ""))
+
+names(fe.te.peak.2018.negative.county)
+```
+
+```{r point chart change in fe as pct of te, fig.width=8}
+
+change.pct.te.plot <- ggplot(fe.te.peak.2018.negative.county, aes(x = 2018, y = pct.change.te, color = pct.change.te)) +
+  geom_hline(yintercept = 0, size = 2, color = "black") +
+  geom_point_interactive(size = 3, aes(data_id = GeoName, tooltip = paste(GeoName, "\nYear farm earnings peaked: ", fe.peak.year, "\nFarm earnings during peak year: ", dollar(farm.earnings.peak), "\nTotal earnings during peak year: ", dollar(total.earnings.peak), "\nFarm earnings as percent of total\nearnings during peak year: ", percent(pct.fe.of.te.peak), "\nFarm earnings in 2018: ", dollar(farm.earnings.2018), "\nTotal earnings in 2018: ", dollar(total.earnings.2018), "\nFarm earnings as percent of total\nearnings in 2018: ", percent(pct.fe.of.te.2018), "\nChange in total earnings\nsince peak year: ", percent(pct.change.te), sep = ""))) +
+  geom_label_repel(size = 3,aes(x = 2018, y = pct.change.te, label = paste(GeoName, ", ", percent(pct.change.te), sep = ""), color = pct.change.te)) +
+  labs(x= "", y = "Percentage points", color="", title = "Change in farm earnings as a percent of\ntotal earnings from peak farm year")+
+  scale_y_continuous(labels=scales::percent)+
+  scale_x_continuous(breaks = seq(1900, 2050, 1)) +
+  theme_line+
+  scale_color_gradient(low = "#de2d26",
+                       high = "black") +
+  theme(legend.position = "none",
+        text = element_text(size = 12))
+
+
+change.fe.pct.te.plot <- ggplot(fe.te.peak.2018.negative.county, aes(x = 2018, y = change.pct.fe.of.te, color = change.pct.fe.of.te)) +
+    geom_hline(yintercept = 0, size = 2, color = "black") +
+  geom_point_interactive(size = 3, aes(data_id = GeoName, tooltip = paste(GeoName, "\nYear farm earnings peaked: ", fe.peak.year, "\nFarm earnings during peak year: ", dollar(farm.earnings.peak), "\nTotal earnings during peak year: ", dollar(total.earnings.peak), "\nFarm earnings as percent of total\nearnings during peak year: ", percent(pct.fe.of.te.peak), "\nFarm earnings in 2018: ", dollar(farm.earnings.2018), "\nTotal earnings in 2018: ", dollar(total.earnings.2018), "\nFarm earnings as percent of total earnings in 2018: ", percent(pct.fe.of.te.2018), "\nPercentage point change in farm earnings as percent of total earnings: ", comma(change.pct.fe.of.te), sep = ""))) +
+  geom_label_repel(size = 3, aes(x = 2018, y = change.pct.fe.of.te, label = paste(GeoName, ", ", comma(change.pct.fe.of.te), sep = ""), color = change.pct.fe.of.te)) +
+  labs(x= "", y = "Percentage change", color="", title = "Change in farm earnings as a percent of\ntotal earnings from peak farm year")+
+  scale_y_continuous(labels=scales::comma)+
+  scale_x_continuous(breaks = seq(1900, 2050, 1)) +
+  theme_line+
+  scale_color_gradient(low = "#de2d26",
+                       high = "black") +
+  theme(legend.position = "none",
+        text = element_text(size = 12))
+
+
+girafe( ggobj = plot_grid(change.pct.te.plot, change.fe.pct.te.plot), width_svg = 10) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE),
+                 opts_zoom(max = 5))
+```
