@@ -188,7 +188,7 @@ The charts below compare two measurements;
 
 * the drop in total earnings between the year they experienced the largest farm earnings and 2018, and
 
-* the drop in the level at which farm earnings contributes to total earnings during that same timeframe. 
+* the drop in the level at which farm earnings contributes to total earnings during that same time frame. 
 
 What we are looking for is whether the counties are in similar positions across both charts. Essentially, do counties that are experiencing high drops in their total earnings also experience a significant drop in the amount that farm earnings contributes to their total earnings. 
 
@@ -196,7 +196,7 @@ These charts show that, yes, most counties tend to be in the same positions acro
 
 Other counties, such as Douglas, Lyon, McLeod, Dodge, Red Lake, and Polk experienced less significant drops in their total earnings and their contributions from farm earnings was relatively minor compared to other counties.
 
-Interestingly, there are some counties that have experienced the opposite of each of these scenarios. Counties such as Marshall and Wantonwan experienced significant declines in their contributions from farm earnings, yet their drop in total earnings was relatively minor. This means that these counties have earnings from other industries that are growing and buffering the drop in farm earnings.
+Interestingly, there are some counties that have experienced the opposite of each of these scenarios. Counties such as Marshall and Watonwan experienced significant declines in their contributions from farm earnings, yet their drop in total earnings was relatively minor. This means that these counties have earnings from other industries that are growing and buffering the drop in farm earnings.
 
 Other counties such as Waseca and Stevens experienced high drops in their total earnings yet the drop in their contributions from farm earnings wasn't as significant. This means that there are a few counties that are having a few other industries contributing to the drop in total earnings besides just farm earnings.
 
@@ -273,7 +273,7 @@ Our next step is to look a bit deeper in the counties that are most obviously ha
 
 For the chart below we are only using counties that have experienced a drop in their total earnings of 15% or more since their peak farm year as well as a drop of 15 *percentage points* or more in their farm earnings. That leaves us with 14 counties; Faribault, Grant, Jackson, Kittson, Lac qui Parle, Lincoln, Murray, Norman, Redwood, Renville, Sibley, Stevens, Traverse, and Yellow Medicine.
 
-Farm earnings isn't the only "industry" in which earnings have decreased in each of these counties. So, our next step is to see how much farm earnings has impacted the overall loss acoss all industries. To do that, we are going to sum the loss of all industries where a loss is identified since peak farm years, and divide that by the loss in farm earnings to get a sense of the impact farm earnings has had on the overall drop in total earnings.
+Farm earnings isn't the only "industry" in which earnings have decreased in each of these counties. So, our next step is to see how much farm earnings has impacted the overall loss across all industries. To do that, we are going to sum the loss of all industries where a loss is identified since peak farm years, and divide that by the loss in farm earnings to get a sense of the impact farm earnings has had on the overall drop in total earnings.
 
 It's likely that farm earnings has impacted all of these counties to some extent. However, it's quite clear that counties such as Traverse, Murray, Norman, Renville, Yellow Medicine, Kittson, and Grant are significantly impacted by farm earnings. In fact, of all the industries that have experienced a drop in earnings, farm earnings made up 90% of more of that loss in each of these counties.
 
@@ -338,7 +338,7 @@ girafe( ggobj = earnings.industry.peak.2018.drop.county.plot, width_svg = 8) %>%
 
 This analysis provides us with the following characteristics of geographic areas that are likely most impacted by the drop in farm earnings:
 
-* is an entirely rural county;
+* is an entirely rural county or has a town/rural mix;
 * located in Southwest or Northwest Minnesota;
 * located in the following EDRs; 1 - Northwest, 4 - West Central, 6W - Upper MN Valley, and 8 - Southwest;
 * one of 33 counties who have experienced their highest levels of total earnings before 2018;
@@ -346,7 +346,16 @@ This analysis provides us with the following characteristics of geographic areas
 * have had their farm earnings as a percentage of total earnings drop by 15 points or more since farm earnings peaked; and
 * the drop in farm earnings as a percentage of the total loss across all industries is 50% or higher.
 
-This gives us the following list.
+The table below provides the 14 counties that nearly fit all of these characteristics. Of the counties that seem to most impacted by farm earnings:
+
+* all of them have had their total earnings drop by more than 15% since the peak farm years;
+* all of them have had their contributions from farm earnings to total earnings drop by more than 15 percentage points;
+* all of them have had their drop in farm earnings make up a majority of the total losses across all industries;
+* 8 of them are entirely rural, 5 are a town/rural mix and 1 has a urban/town/rural mix; 
+* 13 of them are located in the Southwest or Northwest planning regions; and,
+* 11 of them are located in EDRs 1, 4, 6W, or 8.
+
+<br>
 
 ```{r impacted counties table, cache = TRUE}
 impacted.counties.match <- earnings.industry.peak.2018.drop.county %>%
@@ -363,13 +372,23 @@ impacted.counties <- fe.te.peak.2018.negative.county %>%
   right_join(impacted.counties.match, by = "countyfp") %>%
   left_join(te.peak.year, by = "countyfp") %>%
   select(1,12,14,13,21,3,11,17,20) %>%
-  mutate(planning.region = str_replace(planning.region, " Minnesota", ""))
+  mutate(planning.region = str_replace(planning.region, " Minnesota", "")) %>%
+  rename(County = 1,
+         RUCA = 2,
+         "Planning Region" = 3,
+         EDR = 4,
+         "Total earnings - peak year" = 5,
+         "Farm earning - peak year" = 6,
+         "Total earnings - % change" = 7,
+         "Farm earnings as % of total earnings - change" = 8,
+         "Farm earnings drop as % of loss across all industries" = 9)
 
-datatable(impacted.counties, class = "cell-border stripe", filter = "top", rownames = FALSE) %>%
+datatable(impacted.counties, class = "cell-border stripe", filter = "top", rownames = FALSE,
+          options = list(scrollX = TRUE)) %>%
   formatPercentage(7) %>%
-  formatPercentage(9)
+  formatPercentage(9) %>%
+  formatCurrency(8, "")
 
-names(impacted.counties)
 ```
 
 

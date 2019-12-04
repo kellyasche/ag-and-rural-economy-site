@@ -838,7 +838,7 @@ HTMLWidgets.widget({
       if (event !== 'cell_edit' && shinyData.hasOwnProperty(id) && shinyData[id] === JSON.stringify(value))
         return;
       shinyData[id] = JSON.stringify(value);
-      if (HTMLWidgets.shinyMode && Shiny.setInputValue) {
+      if (HTMLWidgets.shinyMode) {
         Shiny.setInputValue(id, value, opts);
         if (!instance.clearInputs[id]) instance.clearInputs[id] = function() {
           Shiny.setInputValue(id, null);
