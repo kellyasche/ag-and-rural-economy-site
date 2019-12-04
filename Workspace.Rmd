@@ -77,6 +77,12 @@ counties.regions <- read_csv("Data/Join docs/county_regions.csv") %>%
          Name = str_replace(Name, "Of The", "of the"),
          Dem_Desc = ifelse(Name == "Minnesota", "Minnesota", Dem_Desc))
 
+edr.pr <- counties.regions %>%
+  distinct(edr, .keep_all = TRUE) %>%
+  select(5,6) %>%
+  mutate(edr = str_replace(edr, "  ", " "),
+         planning.region = str_replace(planning.region, " Minnesota", ""))
+
 color.ruca <- c("Entirely rural" = "#5CA81F", "Town/rural mix" = "#C7EF99", "Urban/town/rural mix" = "#d8b365", "Entirely urban" = "#a6611a", "Minnesota" = "black")
 
 color.pr <- c("Northwest" = "#810f7c","Northeast" = "#fe9929", "Central" = "#076324", "Seven County Mpls-St Paul" = "#d8b365", "Southwest" = "#1f78b4", "Southeast" = "#d7301f", "Minnesota" = "black")
@@ -96,7 +102,8 @@ ag.ind.wages.county <- read_csv("Data/Earnings/Master-ag-related-ind-wages-count
 ag.ind.wages.pr <- read_csv("Data/Earnings/Master-ag-related-ind-wages-pr.csv") %>%
   mutate(planning.region = str_replace(planning.region, " Minnesota", ""))
 
-ag.ind.wages.edr <- read_csv("Data/Earnings/Master-ag-related-ind-wages-edr.csv") 
+ag.ind.wages.edr <- read_csv("Data/Earnings/Master-ag-related-ind-wages-edr.csv") %>%
+  left_join(edr.pr, by = "edr")
 
 ```
 
@@ -104,11 +111,15 @@ ag.ind.wages.edr <- read_csv("Data/Earnings/Master-ag-related-ind-wages-edr.csv"
 
 ## Change in ag-related wages vs. total wages {.tabset}
 
-The charts below provide the change in ag-related wages and total wages by indexing the values to their 2001 levels. The trend to look for is how the fluctuations in farm earnings “appear” in the total earnings chart. If total earnings show a similar bump to farm earnings, it’s likely that farm earnings has a significant influence in that region’s economy.
+The charts below provide the change in ag-related wages and total wages by indexing the values to their 2001 levels. The trend to look for is how the fluctuations in wages earned from ag-related industries “appear” in the total wages from all industries chart. If total wages show a similar trend to ag-related wages, it’s likely that ag-related wages has a significant influence in that region’s economy.
 
-The overall trend is that the farm earnings “bump” only appears in a few select regions and in regions that have a lot of “entirely rural” counties in them.
+The overall trend is that ag-related wages are not solely focused in entirely rural counties. In fact, some of the most explosive growth in wages occured in town/rural mix, urban/town/rural mix, and entirely urban counties. Regionally, Northwest, Central and Southewest Minnesota experienced growth in ag-related industries that surpassed growth in total wages from all industries.
 
-In addition, these “bumps” that do appear in total earnings has significantly impacted the earnings-performance of these groups/regions. For example, the entirely rural county group’s 2018 total earnings equals the value they had in 2010. This is also true for the Southwest region. In particular, EDRs 8 and 6W have total earnings equal to 2010 values.
+In particular, EDRs 7W - Central, 6E - Southwest Central, 4 - West Central, 5 - North Central, and 9 - South Central all experienced growth in ag-related wages higher than total growth of all wages in their regions.
+
+Interestingly, EDR 8 - Southwest and EDR 6W - Upper MN Valley all experienced declines in their growth in ag-related wages.
+
+I am uncertain as to what is going on in Northeast Minnesota since they have experienced an overall decline in wages earned in ag-related industries since 2001. My guess is that these wages are pretty small and so any type of plant or company closure can have a big impact on the numbers. We will find out more when we look at ag-related wages as a percentage of total earnings.
 
 <br>
 
@@ -136,7 +147,7 @@ ag.total.wages.pr <- ag.ind.wages.pr %>%
   mutate(planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"))
 
 ag.total.wages.edr <- ag.ind.wages.edr %>%
-  group_by(periodyear, edr) %>%
+  group_by(periodyear, edr, planning.region) %>%
   summarise(ag.wages = sum(wages[naicstitle != "Total, All Industries"], na.rm = TRUE),
             total.wages = sum(wages[naicstitle == "Total, All Industries"], na.rm = TRUE)) %>%
   ungroup() %>%
@@ -149,8 +160,6 @@ ag.total.wages.edr <- ag.ind.wages.edr %>%
 ```
 
 ### RUCA
-
-<br>
 
 There are two distinct patterns here that are dependent on the type of RUCA group. The entirely rural group and, to lesser extent, the town/rural county group saw some rather big decreases in ag wages in the early 2000's, a recovery betweene 2006 and 2015, and a subsequent downturn since then. The other county groups, entirely urban, urban/town/rural mix, and the town/rural mix have experienced significant growth in ag-related wages. In fact, total wages earned in ag-related industries has grown by nearly 200% while total wages has grown by about 175%. 
 
@@ -205,6 +214,12 @@ girafe( ggobj = plot_grid(ag.wages.index.ruca.plot + theme(legend.position = "no
 
 ### Planning Region
 
+There has been stead growth among all of the planning regions outside of the seven county metro. Northeast and Central Minnesota have all experienced over 200% wage growth in ag-related industries and were seemingly unfazed by the Great Recession. Growth in wages earned from ag-related industries surpassed overall growth in wages in Northwest, Southwest, and Central Minnesota. The growth in the seven-county metro has stagnated over the last 5 years or so and doesn't match the trend for *total* wages earned in all industries.
+
+Interestingly, wages earned in ag-related industries in the Northeast region have declined since 2001. I'm not entirely certain why, but my suspicion is that Northeast doesn't have a huge percentage of their wages gathered from ag-related industries so one company closing can have a large impact on wages earned in that industry. 
+
+Total wages, again, follow an expected trend of continued growth with a slight plateau between 2008 - 2012. 
+
 <br>
 
 ```{r charts ag wages and total wages index pr, fig.width=8}
@@ -214,6 +229,7 @@ ag.wages.index.pr.plot <- ggplot(ag.total.wages.pr, aes(periodyear, ag.wages.ind
   geom_point_interactive(size = 3, aes(data_id = ag.wages.index, tooltip = paste(planning.region, "\nYear: ", periodyear, "\nTotal ag-related wages: ", dollar(ag.wages), "\nAg wages as a % of 2001 levels: ", percent(ag.wages.index), sep = ""))) +
   labs(x="", y = "", color="", title = "Ag-related wages indexed to 2001 levels")+
   scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.5, 2.5, .5)) +
   scale_x_continuous(breaks = seq(1900, 2050, 2)) +
   theme_line+
   scale_color_manual(values= color.pr,
@@ -228,7 +244,7 @@ total.wages.index.pr.plot <- ggplot(ag.total.wages.pr, aes(periodyear, total.wag
   geom_point_interactive(size = 3, aes(data_id = total.wages.index, tooltip = paste(planning.region, "\nYear: ", periodyear, "\nTotal wages: ", dollar(total.wages), "\nTotal wages as a % of 2001 levels: ", percent(total.wages.index), sep = ""))) +
   labs(x="", y = "", color="", title = "Total wages indexed to 2001 levels")+
   scale_y_continuous(labels=scales::percent)+
-  coord_cartesian(ylim = seq(.5, 2, .5)) +
+  coord_cartesian(ylim = seq(.5, 2.5, .5)) +
   scale_x_continuous(breaks = seq(1900, 2050, 2)) +
   theme_line+
   scale_color_manual(values= color.pr) +
@@ -247,5 +263,65 @@ girafe( ggobj = plot_grid(ag.wages.index.pr.plot + theme(legend.position = "none
                  opts_sizing(rescale = FALSE))
 
 ```
+
+### EDRs
+
+Ag-related wages across EDRs highlights similar trends to the RUCA and Planning Region charts. For some EDRS in Central, Northwest, and Southwest Minnesota, growth in wages earned in ag-related industries has grown more than *total* growth across all industries. In particular, EDRs 7W - Central, 6E - Southwest Central, 4 - West Central, 5 - North Central, and 9 - South Central all experienced growth in ag-related wages higher than total growth of all wages in their regions. 
+
+EDR 8 - Southwest and EDR 6W - Upper MN Valley all experienced declines in their growth in ag-related wages.
+
+Total wages from all industries expereinced the same trends as the other regional breakdowns - steady growth with a plateau during the Great REcession. The ag-related wages seem to have little impact on the trends of the total wages from all industries.
+
+<br>
+
+```{r charts ag wages and total wages index edr, fig.height=12}
+ag.wages.index.edr.plot <- ggplot(ag.total.wages.edr, aes(periodyear, ag.wages.index, color = edr)) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 3, aes(data_id = ag.wages.index, tooltip = paste(edr, "\nYear: ", periodyear, "\nTotal ag-related wages: ", dollar(ag.wages), "\nAg wages as a % of 2001 levels: ", percent(ag.wages.index), sep = ""))) +
+  facet_wrap(~planning.region, ncol = 1) +
+  labs(x="", y = "", color="", title = "Ag-related wages indexed to 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.5, 2.5, .5)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.edr,
+                     guide = guide_legend(ncol = 3)) +
+  theme(text = element_text(size = 10),
+        axis.text.x = element_text(size = 6),
+        legend.text = element_text(size = 6),
+        plot.margin = unit(c(0,0,0,0), "cm"),
+        plot.title = element_text(size = 9))
+
+
+total.wages.index.edr.plot <- ggplot(ag.total.wages.edr, aes(periodyear, total.wages.index, color = edr)) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_hline(yintercept = 1, color = "black") +
+  facet_wrap(~planning.region, ncol = 1) +
+  geom_point_interactive(size = 3, aes(data_id = total.wages.index, tooltip = paste(edr, "\nYear: ", periodyear, "\nTotal wages: ", dollar(total.wages), "\nTotal wages as a % of 2001 levels: ", percent(total.wages.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Total wages indexed to 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.5, 2.5, .5)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.edr) +
+  theme(legend.position = "none",
+        text = element_text(size = 10),
+        axis.text.x = element_text(size = 6),
+        plot.margin = unit(c(0,0,0,0), "cm"),
+        plot.title = element_text(size = 10))
+
+ag.wages.index.edr.legend <- get_legend(ag.wages.index.edr.plot + theme(legend.direction = "horizontal", legend.justification = "right", legend.box.just = "right"))
+
+ag.wages.index.edr.legend.bottom <- plot_grid(NULL, ag.wages.index.edr.legend, NULL)
+
+
+girafe( ggobj = plot_grid(ag.wages.index.edr.plot + theme(legend.position = "none"), total.wages.index.edr.plot+theme(legend.position = "none"),  ag.wages.index.edr.legend.bottom, nrow = 2, rel_heights = c(2,1)), height_svg = 10) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
 
 

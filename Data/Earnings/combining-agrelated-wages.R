@@ -20,7 +20,7 @@ agrelated.wages.edr <- read_csv("Data/Earnings/qcew-ag-related-industries-edr.cs
   select(1,2,5,20:23,30) %>%
 gather(key = "wage.type", value = "wages", 4:8) %>%
   group_by(periodyear, naicstitle, areaname) %>%
-  mutate(wages = ifelse(is.na(wages) & wage.type == "totwageYear", mean(wages, na.rm = TRUE), wages)) %>%
+  mutate(wages = ifelse(is.na(wages) & wage.type == "totwageYear", sum(wages, na.rm = TRUE), wages)) %>%
   ungroup() %>%
   filter(wage.type == "totwageYear") %>%
   rename(edr = areaname) %>%
@@ -33,7 +33,7 @@ agrelated.wages.pr <- read_csv("Data/Earnings/qcew-ag-related-industries-pr.csv"
   select(1,2,5,20:23,30) %>%
   gather(key = "wage.type", value = "wages", 4:8) %>%
   group_by(periodyear, naicstitle, areaname) %>%
-  mutate(wages = ifelse(is.na(wages) & wage.type == "totwageYear", mean(wages, na.rm = TRUE), wages)) %>%
+  mutate(wages = ifelse(is.na(wages) & wage.type == "totwageYear", sum(wages, na.rm = TRUE), wages)) %>%
   ungroup() %>%
   filter(wage.type == "totwageYear") %>%
   mutate(areaname = str_replace(areaname, "Seven County Mpls-St Paul, MN", "Seven County Mpls-St Paul")) %>%
@@ -45,7 +45,7 @@ agrelated.wages.county <- read_csv("Data/Earnings/qcew-ag-related-industries-cou
   select(1,2,5,20:23,30) %>%
   gather(key = "wage.type", value = "wages", 4:8) %>%
   group_by(periodyear, naicstitle, areaname) %>%
-  mutate(wages = ifelse(is.na(wages) & wage.type == "totwageYear", mean(wages, na.rm = TRUE), wages)) %>%
+  mutate(wages = ifelse(is.na(wages) & wage.type == "totwageYear", sum(wages, na.rm = TRUE), wages)) %>%
   ungroup() %>%
   filter(wage.type == "totwageYear") %>%
   mutate(areaname = str_replace(areaname, " County", "")) %>%

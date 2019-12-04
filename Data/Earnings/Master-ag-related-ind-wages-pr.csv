@@ -39,7 +39,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2014,Crop Production,Central Minnesota,totwageYear,32513993
 2014,Animal Production and Aquaculture,Central Minnesota,totwageYear,86188198
 2014,Support Activities for Crop Production,Central Minnesota,totwageYear,7253779
-2014,Support Activities for Animal Production,Central Minnesota,totwageYear,1220363
+2014,Support Activities for Animal Production,Central Minnesota,totwageYear,3661089
 2014,Food Manufacturing,Central Minnesota,totwageYear,329854996
 2014,Agricultural Implement Manufacturing,Central Minnesota,totwageYear,32703759
 2014,Farm Product Raw Material Merchant Wholesalers,Central Minnesota,totwageYear,18564031
@@ -57,7 +57,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2012,Crop Production,Central Minnesota,totwageYear,29505464
 2012,Animal Production and Aquaculture,Central Minnesota,totwageYear,80931249
 2012,Support Activities for Crop Production,Central Minnesota,totwageYear,6730420
-2012,Support Activities for Animal Production,Central Minnesota,totwageYear,845391
+2012,Support Activities for Animal Production,Central Minnesota,totwageYear,2536173
 2012,Food Manufacturing,Central Minnesota,totwageYear,288049127
 2012,Agricultural Implement Manufacturing,Central Minnesota,totwageYear,26310455
 2012,Farm Product Raw Material Merchant Wholesalers,Central Minnesota,totwageYear,16670882
@@ -66,16 +66,16 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2011,Crop Production,Central Minnesota,totwageYear,27056983
 2011,Animal Production and Aquaculture,Central Minnesota,totwageYear,75655070
 2011,Support Activities for Crop Production,Central Minnesota,totwageYear,6845242
-2011,Support Activities for Animal Production,Central Minnesota,totwageYear,810422.3333333334
+2011,Support Activities for Animal Production,Central Minnesota,totwageYear,2431267
 2011,Food Manufacturing,Central Minnesota,totwageYear,291938888
-2011,Agricultural Implement Manufacturing,Central Minnesota,totwageYear,5689945.333333333
+2011,Agricultural Implement Manufacturing,Central Minnesota,totwageYear,17069836
 2011,Farm Product Raw Material Merchant Wholesalers,Central Minnesota,totwageYear,14707010
 2011,Farm Supplies Merchant Wholesalers,Central Minnesota,totwageYear,38657069
 2010,"Total, All Industries",Central Minnesota,totwageYear,8478197639
 2010,Crop Production,Central Minnesota,totwageYear,26700931
 2010,Animal Production and Aquaculture,Central Minnesota,totwageYear,69194760
 2010,Support Activities for Crop Production,Central Minnesota,totwageYear,6550257
-2010,Support Activities for Animal Production,Central Minnesota,totwageYear,747605.5
+2010,Support Activities for Animal Production,Central Minnesota,totwageYear,1495211
 2010,Food Manufacturing,Central Minnesota,totwageYear,283330458
 2010,Agricultural Implement Manufacturing,Central Minnesota,totwageYear,19035995
 2010,Farm Product Raw Material Merchant Wholesalers,Central Minnesota,totwageYear,14948984
@@ -91,7 +91,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2008,"Total, All Industries",Central Minnesota,totwageYear,8705724661
 2008,Crop Production,Central Minnesota,totwageYear,23646497
 2008,Animal Production and Aquaculture,Central Minnesota,totwageYear,63741135
-2008,Support Activities for Crop Production,Central Minnesota,totwageYear,1685075.6666666667
+2008,Support Activities for Crop Production,Central Minnesota,totwageYear,5055227
 2008,Support Activities for Animal Production,Central Minnesota,totwageYear,788837
 2008,Food Manufacturing,Central Minnesota,totwageYear,266222616
 2008,Agricultural Implement Manufacturing,Central Minnesota,totwageYear,13368518
@@ -109,7 +109,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2006,Crop Production,Central Minnesota,totwageYear,21390053
 2006,Animal Production and Aquaculture,Central Minnesota,totwageYear,56713272
 2006,Support Activities for Crop Production,Central Minnesota,totwageYear,5328307
-2006,Support Activities for Animal Production,Central Minnesota,totwageYear,696407.3333333334
+2006,Support Activities for Animal Production,Central Minnesota,totwageYear,2089222
 2006,Food Manufacturing,Central Minnesota,totwageYear,244769023
 2006,Agricultural Implement Manufacturing,Central Minnesota,totwageYear,12432200
 2006,Farm Product Raw Material Merchant Wholesalers,Central Minnesota,totwageYear,15288483
@@ -161,7 +161,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2017,"Total, All Industries",Northeast Minnesota,totwageYear,6190440106
 2017,Crop Production,Northeast Minnesota,totwageYear,1131766
 2017,Animal Production and Aquaculture,Northeast Minnesota,totwageYear,551034
-2017,Food Manufacturing,Northeast Minnesota,totwageYear,2840280.3333333335
+2017,Food Manufacturing,Northeast Minnesota,totwageYear,8520841
 2016,"Total, All Industries",Northeast Minnesota,totwageYear,5932070230
 2016,Crop Production,Northeast Minnesota,totwageYear,1309243
 2016,Animal Production and Aquaculture,Northeast Minnesota,totwageYear,587556
@@ -176,7 +176,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2014,Food Manufacturing,Northeast Minnesota,totwageYear,9923709
 2013,"Total, All Industries",Northeast Minnesota,totwageYear,5546421775
 2013,Crop Production,Northeast Minnesota,totwageYear,1124231
-2013,Animal Production and Aquaculture,Northeast Minnesota,totwageYear,275781.3333333333
+2013,Animal Production and Aquaculture,Northeast Minnesota,totwageYear,827344
 2013,Food Manufacturing,Northeast Minnesota,totwageYear,12230317
 2012,"Total, All Industries",Northeast Minnesota,totwageYear,5328664650
 2012,Crop Production,Northeast Minnesota,totwageYear,1291367
@@ -189,40 +189,40 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2011,Food Manufacturing,Northeast Minnesota,totwageYear,28717832
 2010,"Total, All Industries",Northeast Minnesota,totwageYear,5037180762
 2010,Crop Production,Northeast Minnesota,totwageYear,1259744
-2010,Animal Production and Aquaculture,Northeast Minnesota,totwageYear,219754.33333333334
+2010,Animal Production and Aquaculture,Northeast Minnesota,totwageYear,659263
 2010,Support Activities for Crop Production,Northeast Minnesota,totwageYear,66260
 2010,Support Activities for Animal Production,Northeast Minnesota,totwageYear,22838
 2010,Food Manufacturing,Northeast Minnesota,totwageYear,10457736
 2010,Farm Supplies Merchant Wholesalers,Northeast Minnesota,totwageYear,193094
 2009,"Total, All Industries",Northeast Minnesota,totwageYear,4896224630
 2009,Crop Production,Northeast Minnesota,totwageYear,1365641
-2009,Animal Production and Aquaculture,Northeast Minnesota,totwageYear,72546.5
-2009,Support Activities for Animal Production,Northeast Minnesota,totwageYear,28000.5
+2009,Animal Production and Aquaculture,Northeast Minnesota,totwageYear,145093
+2009,Support Activities for Animal Production,Northeast Minnesota,totwageYear,56001
 2009,Food Manufacturing,Northeast Minnesota,totwageYear,10950465
-2009,Farm Supplies Merchant Wholesalers,Northeast Minnesota,totwageYear,58484
+2009,Farm Supplies Merchant Wholesalers,Northeast Minnesota,totwageYear,175452
 2008,"Total, All Industries",Northeast Minnesota,totwageYear,5123829515
 2008,Crop Production,Northeast Minnesota,totwageYear,1556400
-2008,Animal Production and Aquaculture,Northeast Minnesota,totwageYear,384804.3333333333
-2008,Support Activities for Animal Production,Northeast Minnesota,totwageYear,17833.333333333332
+2008,Animal Production and Aquaculture,Northeast Minnesota,totwageYear,1154413
+2008,Support Activities for Animal Production,Northeast Minnesota,totwageYear,53500
 2008,Food Manufacturing,Northeast Minnesota,totwageYear,15925293
-2008,Farm Product Raw Material Merchant Wholesalers,Northeast Minnesota,totwageYear,370453.3333333333
+2008,Farm Product Raw Material Merchant Wholesalers,Northeast Minnesota,totwageYear,1111360
 2007,"Total, All Industries",Northeast Minnesota,totwageYear,4967156348
-2007,Crop Production,Northeast Minnesota,totwageYear,279002.5
-2007,Support Activities for Animal Production,Northeast Minnesota,totwageYear,14970
+2007,Crop Production,Northeast Minnesota,totwageYear,558005
+2007,Support Activities for Animal Production,Northeast Minnesota,totwageYear,29940
 2007,Food Manufacturing,Northeast Minnesota,totwageYear,13099741
-2007,Farm Product Raw Material Merchant Wholesalers,Northeast Minnesota,totwageYear,535096.3333333334
-2007,Farm Supplies Merchant Wholesalers,Northeast Minnesota,totwageYear,58300
+2007,Farm Product Raw Material Merchant Wholesalers,Northeast Minnesota,totwageYear,1605289
+2007,Farm Supplies Merchant Wholesalers,Northeast Minnesota,totwageYear,174900
 2006,"Total, All Industries",Northeast Minnesota,totwageYear,4731915256
-2006,Crop Production,Northeast Minnesota,totwageYear,475590
+2006,Crop Production,Northeast Minnesota,totwageYear,951180
 2006,Animal Production and Aquaculture,Northeast Minnesota,totwageYear,589419
-2006,Support Activities for Animal Production,Northeast Minnesota,totwageYear,16909.333333333332
+2006,Support Activities for Animal Production,Northeast Minnesota,totwageYear,50728
 2006,Food Manufacturing,Northeast Minnesota,totwageYear,13109285
-2006,Farm Product Raw Material Merchant Wholesalers,Northeast Minnesota,totwageYear,389222
+2006,Farm Product Raw Material Merchant Wholesalers,Northeast Minnesota,totwageYear,778444
 2006,Farm Supplies Merchant Wholesalers,Northeast Minnesota,totwageYear,719097
 2005,"Total, All Industries",Northeast Minnesota,totwageYear,4545837481
-2005,Support Activities for Animal Production,Northeast Minnesota,totwageYear,15772
+2005,Support Activities for Animal Production,Northeast Minnesota,totwageYear,47316
 2005,Food Manufacturing,Northeast Minnesota,totwageYear,14871602
-2005,Farm Product Raw Material Merchant Wholesalers,Northeast Minnesota,totwageYear,623085.5
+2005,Farm Product Raw Material Merchant Wholesalers,Northeast Minnesota,totwageYear,1246171
 2004,"Total, All Industries",Northeast Minnesota,totwageYear,4488386712
 2004,Crop Production,Northeast Minnesota,totwageYear,1843559
 2004,Support Activities for Crop Production,Northeast Minnesota,totwageYear,89483
@@ -232,7 +232,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2003,"Total, All Industries",Northeast Minnesota,totwageYear,4264350905
 2003,Crop Production,Northeast Minnesota,totwageYear,1620112
 2003,Food Manufacturing,Northeast Minnesota,totwageYear,19523333
-2003,Farm Supplies Merchant Wholesalers,Northeast Minnesota,totwageYear,174393.33333333334
+2003,Farm Supplies Merchant Wholesalers,Northeast Minnesota,totwageYear,523180
 2002,"Total, All Industries",Northeast Minnesota,totwageYear,4208621545
 2002,Crop Production,Northeast Minnesota,totwageYear,1526012
 2002,Animal Production and Aquaculture,Northeast Minnesota,totwageYear,98738
@@ -241,7 +241,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2002,Farm Supplies Merchant Wholesalers,Northeast Minnesota,totwageYear,785545
 2001,"Total, All Industries",Northeast Minnesota,totwageYear,4065299084
 2001,Crop Production,Northeast Minnesota,totwageYear,1636022
-2001,Animal Production and Aquaculture,Northeast Minnesota,totwageYear,125858.5
+2001,Animal Production and Aquaculture,Northeast Minnesota,totwageYear,251717
 2001,Food Manufacturing,Northeast Minnesota,totwageYear,21359641
 2001,Farm Supplies Merchant Wholesalers,Northeast Minnesota,totwageYear,223806
 2018,"Total, All Industries",Northwest Minnesota,totwageYear,9084952448
@@ -302,7 +302,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2012,Crop Production,Northwest Minnesota,totwageYear,61755054
 2012,Animal Production and Aquaculture,Northwest Minnesota,totwageYear,56476116
 2012,Support Activities for Crop Production,Northwest Minnesota,totwageYear,17665380
-2012,Support Activities for Animal Production,Northwest Minnesota,totwageYear,306294.6666666667
+2012,Support Activities for Animal Production,Northwest Minnesota,totwageYear,918884
 2012,Food Manufacturing,Northwest Minnesota,totwageYear,241897794
 2012,Agricultural Implement Manufacturing,Northwest Minnesota,totwageYear,8833807
 2012,Farm Product Raw Material Merchant Wholesalers,Northwest Minnesota,totwageYear,64315033
@@ -368,7 +368,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2005,Crop Production,Northwest Minnesota,totwageYear,37720471
 2005,Animal Production and Aquaculture,Northwest Minnesota,totwageYear,24502059
 2005,Support Activities for Crop Production,Northwest Minnesota,totwageYear,10465404
-2005,Support Activities for Animal Production,Northwest Minnesota,totwageYear,88585
+2005,Support Activities for Animal Production,Northwest Minnesota,totwageYear,265755
 2005,Food Manufacturing,Northwest Minnesota,totwageYear,151295255
 2005,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest Minnesota,totwageYear,2301398
 2005,Agricultural Implement Manufacturing,Northwest Minnesota,totwageYear,7365979
@@ -487,7 +487,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2010,"Total, All Industries",Seven County Mpls-St Paul,totwageYear,81509860905
 2010,Crop Production,Seven County Mpls-St Paul,totwageYear,61080851
 2010,Animal Production and Aquaculture,Seven County Mpls-St Paul,totwageYear,4024147
-2010,Support Activities for Crop Production,Seven County Mpls-St Paul,totwageYear,998797
+2010,Support Activities for Crop Production,Seven County Mpls-St Paul,totwageYear,1997594
 2010,Support Activities for Animal Production,Seven County Mpls-St Paul,totwageYear,4867842
 2010,Food Manufacturing,Seven County Mpls-St Paul,totwageYear,452269177
 2010,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Seven County Mpls-St Paul,totwageYear,3815962
@@ -496,7 +496,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2009,"Total, All Industries",Seven County Mpls-St Paul,totwageYear,79224688986
 2009,Crop Production,Seven County Mpls-St Paul,totwageYear,63364918
 2009,Animal Production and Aquaculture,Seven County Mpls-St Paul,totwageYear,4156429
-2009,Support Activities for Crop Production,Seven County Mpls-St Paul,totwageYear,939188
+2009,Support Activities for Crop Production,Seven County Mpls-St Paul,totwageYear,1878376
 2009,Support Activities for Animal Production,Seven County Mpls-St Paul,totwageYear,5166325
 2009,Food Manufacturing,Seven County Mpls-St Paul,totwageYear,422734620
 2009,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Seven County Mpls-St Paul,totwageYear,3311260
@@ -525,12 +525,12 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2007,Farm Supplies Merchant Wholesalers,Seven County Mpls-St Paul,totwageYear,125138097
 2006,"Total, All Industries",Seven County Mpls-St Paul,totwageYear,77690747983
 2006,Crop Production,Seven County Mpls-St Paul,totwageYear,67824565
-2006,Animal Production and Aquaculture,Seven County Mpls-St Paul,totwageYear,1011267.3333333334
+2006,Animal Production and Aquaculture,Seven County Mpls-St Paul,totwageYear,3033802
 2006,Support Activities for Crop Production,Seven County Mpls-St Paul,totwageYear,3257562
 2006,Support Activities for Animal Production,Seven County Mpls-St Paul,totwageYear,5846105
 2006,Food Manufacturing,Seven County Mpls-St Paul,totwageYear,438895369
 2006,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Seven County Mpls-St Paul,totwageYear,3436840
-2006,Agricultural Implement Manufacturing,Seven County Mpls-St Paul,totwageYear,32023837.5
+2006,Agricultural Implement Manufacturing,Seven County Mpls-St Paul,totwageYear,64047675
 2006,Farm Product Raw Material Merchant Wholesalers,Seven County Mpls-St Paul,totwageYear,250168509
 2006,Farm Supplies Merchant Wholesalers,Seven County Mpls-St Paul,totwageYear,120890777
 2005,"Total, All Industries",Seven County Mpls-St Paul,totwageYear,74379206682
@@ -558,7 +558,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2003,Farm Supplies Merchant Wholesalers,Seven County Mpls-St Paul,totwageYear,82681713
 2002,"Total, All Industries",Seven County Mpls-St Paul,totwageYear,66784808586
 2002,Crop Production,Seven County Mpls-St Paul,totwageYear,55131632
-2002,Animal Production and Aquaculture,Seven County Mpls-St Paul,totwageYear,919828.5
+2002,Animal Production and Aquaculture,Seven County Mpls-St Paul,totwageYear,1839657
 2002,Support Activities for Animal Production,Seven County Mpls-St Paul,totwageYear,4128283
 2002,Food Manufacturing,Seven County Mpls-St Paul,totwageYear,500971872
 2002,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Seven County Mpls-St Paul,totwageYear,568841
@@ -566,9 +566,9 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2002,Farm Supplies Merchant Wholesalers,Seven County Mpls-St Paul,totwageYear,76724423
 2001,"Total, All Industries",Seven County Mpls-St Paul,totwageYear,66767511603
 2001,Crop Production,Seven County Mpls-St Paul,totwageYear,52935238
-2001,Animal Production and Aquaculture,Seven County Mpls-St Paul,totwageYear,731888
+2001,Animal Production and Aquaculture,Seven County Mpls-St Paul,totwageYear,2195664
 2001,Support Activities for Crop Production,Seven County Mpls-St Paul,totwageYear,613769
-2001,Support Activities for Animal Production,Seven County Mpls-St Paul,totwageYear,898805.3333333334
+2001,Support Activities for Animal Production,Seven County Mpls-St Paul,totwageYear,2696416
 2001,Food Manufacturing,Seven County Mpls-St Paul,totwageYear,483175296
 2001,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Seven County Mpls-St Paul,totwageYear,2588622
 2001,Agricultural Implement Manufacturing,Seven County Mpls-St Paul,totwageYear,88608766
@@ -614,7 +614,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2014,Crop Production,Southeast Minnesota,totwageYear,16257793
 2014,Animal Production and Aquaculture,Southeast Minnesota,totwageYear,63130473
 2014,Support Activities for Crop Production,Southeast Minnesota,totwageYear,4574572
-2014,Support Activities for Animal Production,Southeast Minnesota,totwageYear,614383
+2014,Support Activities for Animal Production,Southeast Minnesota,totwageYear,1228766
 2014,Food Manufacturing,Southeast Minnesota,totwageYear,475223035
 2014,Agricultural Implement Manufacturing,Southeast Minnesota,totwageYear,2245263
 2014,Farm Product Raw Material Merchant Wholesalers,Southeast Minnesota,totwageYear,28476009
@@ -622,7 +622,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2013,"Total, All Industries",Southeast Minnesota,totwageYear,10318075744
 2013,Crop Production,Southeast Minnesota,totwageYear,18887615
 2013,Animal Production and Aquaculture,Southeast Minnesota,totwageYear,58984102
-2013,Support Activities for Crop Production,Southeast Minnesota,totwageYear,1082331.6666666667
+2013,Support Activities for Crop Production,Southeast Minnesota,totwageYear,3246995
 2013,Support Activities for Animal Production,Southeast Minnesota,totwageYear,474538
 2013,Food Manufacturing,Southeast Minnesota,totwageYear,470361396
 2013,Agricultural Implement Manufacturing,Southeast Minnesota,totwageYear,1631736
@@ -639,7 +639,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2011,"Total, All Industries",Southeast Minnesota,totwageYear,9586008311
 2011,Crop Production,Southeast Minnesota,totwageYear,18067366
 2011,Animal Production and Aquaculture,Southeast Minnesota,totwageYear,48465614
-2011,Support Activities for Crop Production,Southeast Minnesota,totwageYear,962377
+2011,Support Activities for Crop Production,Southeast Minnesota,totwageYear,2887131
 2011,Support Activities for Animal Production,Southeast Minnesota,totwageYear,479028
 2011,Food Manufacturing,Southeast Minnesota,totwageYear,433889270
 2011,Agricultural Implement Manufacturing,Southeast Minnesota,totwageYear,2186568
@@ -648,8 +648,8 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2010,"Total, All Industries",Southeast Minnesota,totwageYear,9603872602
 2010,Crop Production,Southeast Minnesota,totwageYear,16753403
 2010,Animal Production and Aquaculture,Southeast Minnesota,totwageYear,43833286
-2010,Support Activities for Crop Production,Southeast Minnesota,totwageYear,779097
-2010,Support Activities for Animal Production,Southeast Minnesota,totwageYear,477539
+2010,Support Activities for Crop Production,Southeast Minnesota,totwageYear,2337291
+2010,Support Activities for Animal Production,Southeast Minnesota,totwageYear,955078
 2010,Food Manufacturing,Southeast Minnesota,totwageYear,420952457
 2010,Agricultural Implement Manufacturing,Southeast Minnesota,totwageYear,1860372
 2010,Farm Product Raw Material Merchant Wholesalers,Southeast Minnesota,totwageYear,28682781
@@ -658,7 +658,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2009,Crop Production,Southeast Minnesota,totwageYear,15713948
 2009,Animal Production and Aquaculture,Southeast Minnesota,totwageYear,42586537
 2009,Support Activities for Crop Production,Southeast Minnesota,totwageYear,828237
-2009,Support Activities for Animal Production,Southeast Minnesota,totwageYear,628340.3333333334
+2009,Support Activities for Animal Production,Southeast Minnesota,totwageYear,1885021
 2009,Food Manufacturing,Southeast Minnesota,totwageYear,411894881
 2009,Agricultural Implement Manufacturing,Southeast Minnesota,totwageYear,1819375
 2009,Farm Product Raw Material Merchant Wholesalers,Southeast Minnesota,totwageYear,28055705
@@ -726,7 +726,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2001,"Total, All Industries",Southeast Minnesota,totwageYear,7051762968
 2001,Crop Production,Southeast Minnesota,totwageYear,9333329
 2001,Animal Production and Aquaculture,Southeast Minnesota,totwageYear,28013572
-2001,Support Activities for Crop Production,Southeast Minnesota,totwageYear,324725.6666666667
+2001,Support Activities for Crop Production,Southeast Minnesota,totwageYear,974177
 2001,Support Activities for Animal Production,Southeast Minnesota,totwageYear,204337
 2001,Food Manufacturing,Southeast Minnesota,totwageYear,379853241
 2001,Agricultural Implement Manufacturing,Southeast Minnesota,totwageYear,2695764
@@ -754,7 +754,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2016,Crop Production,Southwest Minnesota,totwageYear,28113993
 2016,Animal Production and Aquaculture,Southwest Minnesota,totwageYear,161884456
 2016,Support Activities for Crop Production,Southwest Minnesota,totwageYear,16978882
-2016,Support Activities for Animal Production,Southwest Minnesota,totwageYear,2734431.5
+2016,Support Activities for Animal Production,Southwest Minnesota,totwageYear,5468863
 2016,Food Manufacturing,Southwest Minnesota,totwageYear,515807028
 2016,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest Minnesota,totwageYear,356449
 2016,Farm Product Raw Material Merchant Wholesalers,Southwest Minnesota,totwageYear,101569975
@@ -763,7 +763,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2015,Crop Production,Southwest Minnesota,totwageYear,29740093
 2015,Animal Production and Aquaculture,Southwest Minnesota,totwageYear,151881963
 2015,Support Activities for Crop Production,Southwest Minnesota,totwageYear,15789905
-2015,Support Activities for Animal Production,Southwest Minnesota,totwageYear,1828572
+2015,Support Activities for Animal Production,Southwest Minnesota,totwageYear,3657144
 2015,Food Manufacturing,Southwest Minnesota,totwageYear,493663440
 2015,Agricultural Implement Manufacturing,Southwest Minnesota,totwageYear,28402821
 2015,Farm Product Raw Material Merchant Wholesalers,Southwest Minnesota,totwageYear,104465819
@@ -772,7 +772,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2014,Crop Production,Southwest Minnesota,totwageYear,25605287
 2014,Animal Production and Aquaculture,Southwest Minnesota,totwageYear,138269357
 2014,Support Activities for Crop Production,Southwest Minnesota,totwageYear,14988825
-2014,Support Activities for Animal Production,Southwest Minnesota,totwageYear,1792394.5
+2014,Support Activities for Animal Production,Southwest Minnesota,totwageYear,3584789
 2014,Food Manufacturing,Southwest Minnesota,totwageYear,446746643
 2014,Farm Product Raw Material Merchant Wholesalers,Southwest Minnesota,totwageYear,99648614
 2014,Farm Supplies Merchant Wholesalers,Southwest Minnesota,totwageYear,73284004
@@ -819,7 +819,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2008,Animal Production and Aquaculture,Southwest Minnesota,totwageYear,95829328
 2008,Support Activities for Crop Production,Southwest Minnesota,totwageYear,13796793
 2008,Food Manufacturing,Southwest Minnesota,totwageYear,367480790
-2008,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest Minnesota,totwageYear,264061.5
+2008,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest Minnesota,totwageYear,528123
 2008,Farm Product Raw Material Merchant Wholesalers,Southwest Minnesota,totwageYear,76919659
 2008,Farm Supplies Merchant Wholesalers,Southwest Minnesota,totwageYear,74585538
 2007,"Total, All Industries",Southwest Minnesota,totwageYear,5348227884
@@ -840,9 +840,9 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2005,Crop Production,Southwest Minnesota,totwageYear,8264372
 2005,Animal Production and Aquaculture,Southwest Minnesota,totwageYear,80657372
 2005,Support Activities for Crop Production,Southwest Minnesota,totwageYear,7734698
-2005,Support Activities for Animal Production,Southwest Minnesota,totwageYear,576109
+2005,Support Activities for Animal Production,Southwest Minnesota,totwageYear,1152218
 2005,Food Manufacturing,Southwest Minnesota,totwageYear,338348685
-2005,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest Minnesota,totwageYear,304407
+2005,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest Minnesota,totwageYear,608814
 2005,Farm Product Raw Material Merchant Wholesalers,Southwest Minnesota,totwageYear,60640278
 2005,Farm Supplies Merchant Wholesalers,Southwest Minnesota,totwageYear,54855385
 2004,"Total, All Industries",Southwest Minnesota,totwageYear,4797101744
@@ -851,7 +851,7 @@ periodyear,naicstitle,planning.region,wage.type,wages
 2004,Support Activities for Crop Production,Southwest Minnesota,totwageYear,7408334
 2004,Support Activities for Animal Production,Southwest Minnesota,totwageYear,2595108
 2004,Food Manufacturing,Southwest Minnesota,totwageYear,331223925
-2004,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest Minnesota,totwageYear,255037
+2004,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest Minnesota,totwageYear,765111
 2004,Farm Product Raw Material Merchant Wholesalers,Southwest Minnesota,totwageYear,59303193
 2004,Farm Supplies Merchant Wholesalers,Southwest Minnesota,totwageYear,53961747
 2003,"Total, All Industries",Southwest Minnesota,totwageYear,4591449549
