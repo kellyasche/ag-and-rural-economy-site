@@ -17,8 +17,91 @@ resource_files:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(sf)
+library(ggrepel)
+library(scales)
+library(shiny)
+library(shinycssloaders)
+library(ggiraph)
+library(kableExtra)
+library(rmapshaper)
+library(cowplot)
+library(DT)
 ```
+
+```{r loading jon docs and shapefiles, cache = TRUE}
+theme_bar <- theme_bw() +
+  theme(panel.grid.major = element_line(color = "grey70", size = 0.1),
+        panel.grid.minor = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text = element_text(face = "bold"),
+        panel.border = element_blank(),
+        legend.background = element_rect(fill = "transparent", color = "transparent"),
+        legend.key = element_rect(fill = "transparent"),
+        legend.title = element_blank(),
+        text = element_text(family = "Calibri", size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+theme_line <- theme_bw() +
+  theme(legend.background = element_rect(fill = "transparent", color = "transparent"),
+        legend.key = element_rect(fill = "transparent"),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(color = "grey70", size = 0.1),
+        axis.ticks = element_blank(),
+        axis.text = element_text(face = "bold"),
+        panel.border = element_blank(),
+        text = element_text(family = "Calibri", size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+theme_sf <- theme_bw() +
+  theme(axis.text.x=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks=element_blank(),
+        panel.background = element_blank(),
+        panel.grid.major = element_line(color = "white"),
+        panel.border = element_blank(),
+        plot.title = element_text(hjust = 0.5),
+        legend.title = element_blank(),
+        text = element_text(family = "Calibri", size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+counties.regions <- read_csv("Data/Join docs/county_regions.csv") %>%
+  mutate(countyfp = formatC(countyfp, width = 3, flag = "0"),
+         Name = str_to_title(Name),
+         Name = str_replace(Name, "Q", "q"),
+         Name = str_replace(Name, "Of The", "of the"),
+         Dem_Desc = ifelse(Name == "Minnesota", "Minnesota", Dem_Desc))
+
+color.ruca <- c("Entirely rural" = "#5CA81F", "Town/rural mix" = "#C7EF99", "Urban/town/rural mix" = "#d8b365", "Entirely urban" = "#a6611a", "Minnesota" = "black")
+
+color.pr <- c("Northwest" = "#810f7c","Northeast" = "#fe9929", "Central" = "#076324", "Seven County Mpls-St Paul" = "#d8b365", "Southwest" = "#1f78b4", "Southeast" = "#d7301f", "Minnesota" = "black")
+
+color.edr <- c("EDR 1 - Northwest" = "#b3cde3", "EDR 2 - Headwaters" = "#8c96c6", "EDR 3 - Arrowhead" = "#fe9929", "EDR 4 - West Central" = "#8856a7", "EDR 5 - North Central" = "#810f7c", "EDR 6E- Southwest Central" = "#e5f5f9", "EDR 6W- Upper Minnesota Valley" = "#bdc9e1", "EDR 7E- East Central" = "#99d8c9", "EDR 7W- Central" = "#2ca25f", "EDR 8 - Southwest" = "#74a9cf", "EDR 9 - South Central" = "#0570b0", "EDR 10 - Southeast" = "#d7301f", "EDR 11 - 7 County Twin Cities" = "#d8b365", "Minnesota" = "black")
+
+color.counties <- scale_color_brewer(palette = "Dark2",
+                       guide = guide_legend(ncol = 3))
+
+mn_counties <- st_read("Data/Shapefiles/county shapefiles/MNCounties_MNDOT.shp", quiet = TRUE) %>%
+  ms_simplify(keep = .01, keep_shapes = TRUE)
+```
+
+```{r prep master wage file, include = FALSE, cache = TRUE}
+ag.wages.county <- read_csv("Data/Earnings/Master-ag-related-ind-wages-counties.csv")
+
+ag.wages.pr <- read_csv("Data/Earnings/Master-ag-related-ind-wages-pr.csv") %>%
+  rename(planning.region = areaname)
+
+ag.wages.edr <- read_csv("Data/Earnings/Master-ag-related-ind-wages-edr.csv") %>%
+  rename(edr = areaname)
+
+```
+
+<br>
 
 # Summary
 
@@ -26,4 +109,42 @@ Summary will go here.
 
 Checking out a test here.
 
+<br>
+
 # Analysis
+
+**Definition of ag-related industries**: This analysis cobbles together various NAICS codes  are directly related to "ag-related wages". This includes the following industries;
+
+```{r ag-related industry list}
+agrelated.ind.list <- read_csv("Data/Earnings/Master-ag-related-ind-wages-pr.csv") %>%
+  distinct(naicstitle) %>%
+  rename(`Ag-related NAICS categories` = 1)
+
+kable(agrelated.ind.list, format = "html", align = "c") %>%
+    kable_styling(bootstrap_options = "striped") %>%
+    column_spec(1, width = "10em")
+
+```
+
+<br>
+
+This analysis examines the impact wages earned in ag-related industries impacts the total wages across Minnesota. We do this through the following sections;
+
+**Change in ag-related wages vs. total wages**: We will examine the trends in ag-related wages and identify any regions whose total wages shows similar trends. This would mean that ag-related wages an out sized impact on the total wages for the region.
+
+**Ag-related wages as a % of total wages**: It’s unknown whether ag-related wages as a percentage of total wages increased during the crop commodity boom and similarly decreased. We want to see if this actually occured and, if so, which regions seem to have the most significant percentages.
+
+**Peak ag wages vs. peak total wages**: If an increase in ag-related wages appears during the crop commodity boom and is followed by a decrease in the subsequent years, we will want to compare the peak year of these wages with the peak year of total wages. However, the economy has been growing across the state despite the Ag economy downturn. Regions that aren’t heavily reliant on Ag should see their total wages continue to grow, thus their peak year should be the most recent data year - 2018. In cases where ag-related wages play a larger role, we would expect to see their total wages peak between 2010 - 2013. We want to begin identifying those counties.
+
+**Counties most disrupted by ag-related wages**: Through the above analysis, we should begin to get the main characteristics of a county where ag-related wages are having a larger impact on total wages - the most likely planning region and EDRs the counties are located in, as well as some measurements and thresholds of their ag-related and total wages This section will seek to identify those exact counties.
+
+<br>
+
+## Change in ag-related wages vs. total wages
+
+The charts below provide the change in ag-related wages and total wages by indexing the values to their 2001 levels. The trend to look for is how the fluctuations in farm earnings “appear” in the total earnings chart. If total earnings show a similar bump to farm earnings, it’s likely that farm earnings has a significant influence in that region’s economy.
+
+The overall trend is that the farm earnings “bump” only appears in a few select regions and in regions that have a lot of “entirely rural” counties in them.
+
+In addition, these “bumps” that do appear in total earnings has significantly impacted the earnings-performance of these groups/regions. For example, the entirely rural county group’s 2018 total earnings equals the value they had in 2010. This is also true for the Southwest region. In particular, EDRs 8 and 6W have total earnings equal to 2010 values.
+

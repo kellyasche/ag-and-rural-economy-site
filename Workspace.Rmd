@@ -90,304 +90,161 @@ mn_counties <- st_read("Data/Shapefiles/county shapefiles/MNCounties_MNDOT.shp",
   ms_simplify(keep = .01, keep_shapes = TRUE)
 ```
 
-```{r prep farm earnings and total earnings, include = FALSE, cache=TRUE}
-farm.earnings.county <- read_csv("Data/Earnings/Master-farm-total-earnings-county-2001-2018.csv") %>%
-  mutate(farm.earnings = 1000 * farm.earnings,
-         total.earnings = 1000 * total.earnings,
-         pct.farm.earnings = farm.earnings / total.earnings) %>%
-  group_by(GeoName, countyfp) %>%
-  mutate(index.farm.earnings = (farm.earnings - farm.earnings[year==2001]) / farm.earnings[year == 2001]) %>%
-  ungroup()
+```{r prep master wage file, include = FALSE, cache = TRUE}
+ag.ind.wages.county <- read_csv("Data/Earnings/Master-ag-related-ind-wages-counties.csv")
 
-farm.earnings.ruca <- farm.earnings.county %>%
-  group_by(Dem_Desc, year) %>%
-  summarise(total.earnings = sum(total.earnings),
-            farm.earnings = sum(farm.earnings)) %>%
+ag.ind.wages.pr <- read_csv("Data/Earnings/Master-ag-related-ind-wages-pr.csv") %>%
+  mutate(planning.region = str_replace(planning.region, " Minnesota", ""))
+
+ag.ind.wages.edr <- read_csv("Data/Earnings/Master-ag-related-ind-wages-edr.csv") 
+
+```
+
+<br>
+
+## Change in ag-related wages vs. total wages {.tabset}
+
+The charts below provide the change in ag-related wages and total wages by indexing the values to their 2001 levels. The trend to look for is how the fluctuations in farm earnings “appear” in the total earnings chart. If total earnings show a similar bump to farm earnings, it’s likely that farm earnings has a significant influence in that region’s economy.
+
+The overall trend is that the farm earnings “bump” only appears in a few select regions and in regions that have a lot of “entirely rural” counties in them.
+
+In addition, these “bumps” that do appear in total earnings has significantly impacted the earnings-performance of these groups/regions. For example, the entirely rural county group’s 2018 total earnings equals the value they had in 2010. This is also true for the Southwest region. In particular, EDRs 8 and 6W have total earnings equal to 2010 values.
+
+<br>
+
+```{r prep ag  wages and total wages index, include = FALSE, cache=TRUE}
+ag.total.wages.ruca <- ag.ind.wages.county %>%
+  group_by(periodyear, Dem_Desc) %>%
+  summarise(ag.wages = sum(wages[naicstitle != "Total, All Industries"], na.rm = TRUE),
+            total.wages = sum(wages[naicstitle == "Total, All Industries"], na.rm = TRUE)) %>%
   ungroup() %>%
   group_by(Dem_Desc) %>%
-  mutate(index.farm.earnings = (farm.earnings - farm.earnings[year==2001]) / farm.earnings[year == 2001],
-         index.total.earnings = (total.earnings - total.earnings[year == 2001]) / total.earnings[year == 2001]) %>%
+  mutate(ag.wages.index = ag.wages / ag.wages[periodyear == 2001],
+         total.wages.index = total.wages / total.wages[periodyear == 2001]) %>%
   ungroup() %>%
-  mutate(pct.farm.earnings = farm.earnings / total.earnings,
-         Dem_Desc = fct_relevel(Dem_Desc, "Entirely rural", "Town/rural mix", "Urban/town/rural mix", "Entirely urban")) 
+  mutate(Dem_Desc = fct_relevel(Dem_Desc, "Entirely rural", "Town/rural mix", "Urban/town/rural mix", "Entirely urban"))
 
-farm.earnings.edr <- farm.earnings.county %>%
-  group_by(year, edr, planning.region) %>%
-  summarise(total.earnings = sum(total.earnings),
-            farm.earnings = sum(farm.earnings)) %>%
-  ungroup() %>%
-  group_by(edr) %>%
-  mutate(index.farm.earnings = (farm.earnings - farm.earnings[year==2001]) / farm.earnings[year == 2001],
-         index.total.earnings = (total.earnings - total.earnings[year == 2001]) / total.earnings[year == 2001]) %>%
-  ungroup() %>%
-  mutate(pct.farm.earnings = farm.earnings / total.earnings,
-         edr = str_replace(edr, "  ", " "),
-         edr = fct_relevel(edr, "EDR 1 - Northwest", "EDR 2 - Headwaters", "EDR 3 - Arrowhead", "EDR 4 - West Central", "EDR 5 - North Central", "EDR 6E- Southwest Central", "EDR 6W- Upper Minnesota Valley", "EDR 7E- East Central", "EDR 7W- Central", "EDR 8 - Southwest", "EDR 9 - South Central", "EDR 10 - Southeast", "EDR 11 - 7 County Twin Cities", "Minnesota"),
-         planning.region = str_replace(planning.region, " Minnesota", ""),
-         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"))
-
-farm.earnings.pr <- farm.earnings.county %>%
-  group_by(year, planning.region) %>%
-  summarise(total.earnings = sum(total.earnings),
-            farm.earnings = sum(farm.earnings)) %>%
+ag.total.wages.pr <- ag.ind.wages.pr %>%
+  group_by(periodyear, planning.region) %>%
+  summarise(ag.wages = sum(wages[naicstitle != "Total, All Industries"], na.rm = TRUE),
+            total.wages = sum(wages[naicstitle == "Total, All Industries"], na.rm = TRUE)) %>%
   ungroup() %>%
   group_by(planning.region) %>%
-  mutate(index.farm.earnings = (farm.earnings - farm.earnings[year==2001]) / farm.earnings[year == 2001],
-         index.total.earnings = (total.earnings - total.earnings[year == 2001]) / total.earnings[year == 2001]) %>%
+  mutate(ag.wages.index = ag.wages / ag.wages[periodyear == 2001],
+         total.wages.index = total.wages / total.wages[periodyear == 2001]) %>%
   ungroup() %>%
-  mutate(pct.farm.earnings = farm.earnings / total.earnings,
-         planning.region = str_replace(planning.region, " Minnesota", ""),
-         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"))
+  mutate(planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"))
+
+ag.total.wages.edr <- ag.ind.wages.edr %>%
+  group_by(periodyear, edr) %>%
+  summarise(ag.wages = sum(wages[naicstitle != "Total, All Industries"], na.rm = TRUE),
+            total.wages = sum(wages[naicstitle == "Total, All Industries"], na.rm = TRUE)) %>%
+  ungroup() %>%
+  group_by(edr) %>%
+  mutate(ag.wages.index = ag.wages / ag.wages[periodyear == 2001],
+         total.wages.index = total.wages / total.wages[periodyear == 2001]) %>%
+  ungroup() %>%
+  mutate(edr = fct_relevel(edr, "EDR 1 - Northwest", "EDR 2 - Headwaters", "EDR 3 - Arrowhead", "EDR 4 - West Central", "EDR 5 - North Central", "EDR 6E- Southwest Central", "EDR 6W- Upper Minnesota Valley", "EDR 7E- East Central", "EDR 7W- Central", "EDR 8 - Southwest", "EDR 9 - South Central", "EDR 10 - Southeast", "EDR 11 - 7 County Twin Cities", "Minnesota"))
 
 ```
 
-```{r prep county map peak year of total and farm earnings, include  = FALSE, cache=TRUE}
-total.earnings.peak.year.county <- farm.earnings.county %>%
-  group_by(GeoName, countyfp) %>%
-  top_n(wt = total.earnings, n = 1) %>%
-  ungroup() %>%
-  mutate(year.bins = cut(year,
-                         breaks = c(2001,2009, 2011, 2013, 2015, 2017, 2018),
-                         labels = c("Before 2010", "2010-2011", "2012-2013", "2014-2015", "2016-2017", "2018"))) %>%
-  rename(te.peak.year = 4) %>%
-  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE"))
-
-farm.earnings.peak.year.county <- farm.earnings.county %>%
-  group_by(GeoName, countyfp) %>%
-  top_n(wt = farm.earnings, n = 1) %>%
-  ungroup() %>%
-  distinct(countyfp, .keep_all = TRUE) %>%
-  mutate(year.bins = cut(year,
-                         breaks = c(2001,2009, 2011, 2013, 2015, 2017, 2018),
-                         labels = c("Before 2010", "2010-2011", "2012-2013", "2014-2015", "2016-2017", "2018"))) %>%
-  rename(fe.peak.year = 4) %>%
-  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE"))
-```
-
-```{r prep pct change in total earnings since peak farm, include = FALSE, cache=TRUE}
-te.2018.county <- farm.earnings.county %>%
-  filter(year == 2018) %>%
-  select(3,6) %>%
-  rename(total.earnings.2018 = 2)
-
-te.change.since.farm.peak <- farm.earnings.peak.year.county %>%
-  left_join(te.2018.county, by = "countyfp") %>%
-  select(2,3,4,5,6,11,15,14) %>%
-  mutate(te.pct.change = (total.earnings.2018 - total.earnings) / total.earnings,
-         te.pct.change.bins = cut(te.pct.change,
-                                  breaks = c(-1, -.25, -.1, 0, .1, .25, 1),
-                                  labels = c("Greater than -25%", "-25% to -10%", "-10% to 0%", "0% to 10%", "10% to 25%", "Greater than 25%")))
-names(te.change.since.farm.peak)
-```
-
-## Counties most disrupted by farm earnings
-
-There are 33 counties in Minnesota that have less total earnings in 2018 than during the peak farm year. The next step is to try and isolate which counties are being most influenced by farm earnings.
-
-The charts below compare two measurements;
-
-* the drop in total earnings between the year they experienced the largest farm earnings and 2018, and
-
-* the drop in the level at which farm earnings contributes to total earnings during that same time frame. 
-
-What we are looking for is whether the counties are in similar positions across both charts. Essentially, do counties that are experiencing high drops in their total earnings also experience a significant drop in the amount that farm earnings contributes to their total earnings. 
-
-These charts show that, yes, most counties tend to be in the same positions across each. Counties such as Lac qui Parle, Traverse, Faribault, Norman, Kittson, Renville, Murray, and Lincoln all had drops of 20% or more in their total earnings AND experienced a 20 percentage point or more drop in the amount of farm earnings contributes to their total earnings.
-
-Other counties, such as Douglas, Lyon, McLeod, Dodge, Red Lake, and Polk experienced less significant drops in their total earnings and their contributions from farm earnings was relatively minor compared to other counties.
-
-Interestingly, there are some counties that have experienced the opposite of each of these scenarios. Counties such as Marshall and Watonwan experienced significant declines in their contributions from farm earnings, yet their drop in total earnings was relatively minor. This means that these counties have earnings from other industries that are growing and buffering the drop in farm earnings.
-
-Other counties such as Waseca and Stevens experienced high drops in their total earnings yet the drop in their contributions from farm earnings wasn't as significant. This means that there are a few counties that are having a few other industries contributing to the drop in total earnings besides just farm earnings.
-
-Note: you can hover over the points to get more detailed information. In addition, not only will that particular point be highlighted, but the correspondent point will be highlighted on the other chart for you to see it's position in comparison. You can also use the tools located in the topleft position of the chart to zoom in, making it easier to hover over the points.
+### RUCA
 
 <br>
 
-```{r prep change in farm earnings as pct of total earnings, include = FALSE, cache = TRUE}
+There are two distinct patterns here that are dependent on the type of RUCA group. The entirely rural group and, to lesser extent, the town/rural county group saw some rather big decreases in ag wages in the early 2000's, a recovery betweene 2006 and 2015, and a subsequent downturn since then. The other county groups, entirely urban, urban/town/rural mix, and the town/rural mix have experienced significant growth in ag-related wages. In fact, total wages earned in ag-related industries has grown by nearly 200% while total wages has grown by about 175%. 
 
-fe.te.2018.county <- farm.earnings.county %>%
-  filter(year == 2018) %>%
-  rename(farm.earnings.2018 = 5,
-         total.earnings.2018 = 6) %>% 
-  select(3,5,6)
+One other interesting element concerning the ag-related wages is that most of the growth occurred during the Great Recession. 
 
-fe.te.peak.2018.county <- farm.earnings.peak.year.county %>%
-  rename(farm.earnings.peak = 5,
-         total.earnings.peak = 6) %>%
-  left_join(fe.te.2018.county, by = "countyfp") %>%
-  mutate(change.fe = farm.earnings.2018 - farm.earnings.peak,
-         pct.change.fe = change.fe / farm.earnings.peak,
-         change.te = total.earnings.2018 - total.earnings.peak,
-         pct.change.te = change.te / total.earnings.peak) %>%
-  select(2,3,4,5,15,17,18,6,16,19,20,8:10)
+One last interesting nuance is the slight downturn in ag-related wages earned over the last few years in the entirely urban county group.
 
-fe.te.peak.2018.negative.county <- fe.te.peak.2018.county %>%
-  filter(change.te < 0) %>%
-  mutate(pct.fe.of.te.peak = farm.earnings.peak / total.earnings.peak,
-         pct.fe.of.te.2018 = farm.earnings.2018 / total.earnings.2018,
-         change.pct.fe.of.te = 100 * (pct.fe.of.te.2018 - pct.fe.of.te.peak),
-         GeoName = str_replace(GeoName, ", MN", ""))
+There isn't a lot of evidence that ag-related wages has impacted total wages in any of the RUCA groups. As expected, total wages plateaud during the Great Recession and has experienced growth since 2012. The entirely rural RUCA group does seem to be lagging behind a bit in total wage growth compared to the other regions. 
 
-names(fe.te.peak.2018.negative.county)
-```
+<br>
 
-```{r point chart change in fe as pct of te, fig.width=8}
-
-change.pct.te.plot <- ggplot(fe.te.peak.2018.negative.county, aes(x = 2018, y = pct.change.te, color = pct.change.te)) +
-  geom_hline(yintercept = 0, size = 2, color = "black") +
-  geom_point_interactive(size = 3, aes(data_id = GeoName, tooltip = paste(GeoName, "\nYear farm earnings peaked: ", fe.peak.year, "\nFarm earnings during peak year: ", dollar(farm.earnings.peak), "\nTotal earnings during peak year: ", dollar(total.earnings.peak), "\nFarm earnings as percent of total\nearnings during peak year: ", percent(pct.fe.of.te.peak), "\nFarm earnings in 2018: ", dollar(farm.earnings.2018), "\nTotal earnings in 2018: ", dollar(total.earnings.2018), "\nFarm earnings as percent of total\nearnings in 2018: ", percent(pct.fe.of.te.2018), "\nChange in total earnings\nsince peak year: ", percent(pct.change.te), sep = ""))) +
-  geom_label_repel(size = 3,aes(x = 2018, y = pct.change.te, label = paste(GeoName, ", ", percent(pct.change.te), sep = ""), color = pct.change.te)) +
-  labs(x= "", y = "Percentage points", color="", title = "Change in farm earnings as a percent of\ntotal earnings from peak farm year")+
+```{r charts ag wages and total wages index ruca, fig.width=8}
+ag.wages.index.ruca.plot <- ggplot(ag.total.wages.ruca, aes(periodyear, ag.wages.index, color = Dem_Desc)) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 3, aes(data_id = ag.wages.index, tooltip = paste(Dem_Desc, "\nYear: ", periodyear, "\nTotal ag-related wages: ", dollar(ag.wages), "\nAg wages as a % of 2001 levels: ", percent(ag.wages.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Ag-related wages indexed to 2001 levels")+
   scale_y_continuous(labels=scales::percent)+
-  scale_x_continuous(breaks = seq(1900, 2050, 1)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
   theme_line+
-  scale_color_gradient(low = "#de2d26",
-                       high = "black") +
-  theme(legend.position = "none",
-        text = element_text(size = 12))
+  scale_color_manual(values= color.ruca,
+                     guide = guide_legend(ncol = 4)) +
+  theme(text = element_text(size = 10),
+        plot.margin = unit(c(0,0,0,0), "cm"))
 
 
-change.fe.pct.te.plot <- ggplot(fe.te.peak.2018.negative.county, aes(x = 2018, y = change.pct.fe.of.te, color = change.pct.fe.of.te)) +
-    geom_hline(yintercept = 0, size = 2, color = "black") +
-  geom_point_interactive(size = 3, aes(data_id = GeoName, tooltip = paste(GeoName, "\nYear farm earnings peaked: ", fe.peak.year, "\nFarm earnings during peak year: ", dollar(farm.earnings.peak), "\nTotal earnings during peak year: ", dollar(total.earnings.peak), "\nFarm earnings as percent of total\nearnings during peak year: ", percent(pct.fe.of.te.peak), "\nFarm earnings in 2018: ", dollar(farm.earnings.2018), "\nTotal earnings in 2018: ", dollar(total.earnings.2018), "\nFarm earnings as percent of total earnings in 2018: ", percent(pct.fe.of.te.2018), "\nPercentage point change in farm earnings as percent of total earnings: ", comma(change.pct.fe.of.te), sep = ""))) +
-  geom_label_repel(size = 3, aes(x = 2018, y = change.pct.fe.of.te, label = paste(GeoName, ", ", comma(change.pct.fe.of.te), sep = ""), color = change.pct.fe.of.te)) +
-  labs(x= "", y = "Percentage change", color="", title = "Change in farm earnings as a percent of\ntotal earnings from peak farm year")+
-  scale_y_continuous(labels=scales::comma)+
-  scale_x_continuous(breaks = seq(1900, 2050, 1)) +
+total.wages.index.ruca.plot <- ggplot(ag.total.wages.ruca, aes(periodyear, total.wages.index, color = Dem_Desc)) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 3, aes(data_id = total.wages.index, tooltip = paste(Dem_Desc, "\nYear: ", periodyear, "\nTotal wages: ", dollar(total.wages), "\nTotal wages as a % of 2001 levels: ", percent(total.wages.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Total wages indexed to 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.5, 2, .5)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
   theme_line+
-  scale_color_gradient(low = "#de2d26",
-                       high = "black") +
+  scale_color_manual(values= color.ruca) +
   theme(legend.position = "none",
-        text = element_text(size = 12))
+        text = element_text(size = 10),
+        plot.margin = unit(c(0,0,0,0), "cm"))
+
+ag.wages.index.ruca.legend <- get_legend(ag.wages.index.ruca.plot + theme(legend.direction = "horizontal", legend.justification = "right", legend.box.just = "right"))
+
+ag.wages.index.ruca.legend.bottom <- plot_grid(NULL, ag.wages.index.ruca.legend, NULL)
 
 
-girafe( ggobj = plot_grid(change.pct.te.plot, change.fe.pct.te.plot), width_svg = 8) %>%
+girafe( ggobj = plot_grid(ag.wages.index.ruca.plot + theme(legend.position = "none"), total.wages.index.ruca.plot+theme(legend.position = "none"),  ag.wages.index.ruca.legend.bottom, nrow = 2, rel_heights = c(2,1)), width_svg = 8) %>%
   girafe_options(opts_selection(type = "none"),
                  opts_toolbar(saveaspng = FALSE) ,
-                 opts_sizing(rescale = FALSE),
-                 opts_zoom(max = 5))
+                 opts_sizing(rescale = FALSE))
+
 ```
 
-Our next step is to look a bit deeper in the counties that are most obviously having the total earnings impacted by farm earnings. To do this, we will filter out the counties that are either having other industries make up for the loss in farm earnings, or have other industries that are impacting total earnings more than farm earnings.
-
-For the chart below we are only using counties that have experienced a drop in their total earnings of 15% or more since their peak farm year as well as a drop of 15 *percentage points* or more in their farm earnings. That leaves us with 14 counties; Faribault, Grant, Jackson, Kittson, Lac qui Parle, Lincoln, Murray, Norman, Redwood, Renville, Sibley, Stevens, Traverse, and Yellow Medicine.
-
-Farm earnings isn't the only "industry" in which earnings have decreased in each of these counties. So, our next step is to see how much farm earnings has impacted the overall loss across all industries. To do that, we are going to sum the loss of all industries where a loss is identified since peak farm years, and divide that by the loss in farm earnings to get a sense of the impact farm earnings has had on the overall drop in total earnings.
-
-It's likely that farm earnings has impacted all of these counties to some extent. However, it's quite clear that counties such as Traverse, Murray, Norman, Renville, Yellow Medicine, Kittson, and Grant are significantly impacted by farm earnings. In fact, of all the industries that have experienced a drop in earnings, farm earnings made up 90% of more of that loss in each of these counties.
+### Planning Region
 
 <br>
 
-```{r prep farm earnings pct industry loss, include = FALSE, cache= TRUE}
-te.fe.drop.county <- fe.te.peak.2018.negative.county %>%
-  filter(pct.change.te < -.15 & change.pct.fe.of.te < -15) %>%
-  select(1,2,3)
-
-earnings.industry <- read_csv("Data/Earnings/bea-earnings-by-industry-2001-2018.csv") %>%
-  mutate(countyfp = str_sub(GeoFIPS, 3, 5))
-
-earnings.industry.2018.county <- earnings.industry %>%
-  filter(!LineCode %in% c(35, 82)) %>%
-  select(27,7,26) %>%
-  rename(earnings.2018 = 3) %>%
-  mutate(earnings.2018 = as.numeric(earnings.2018) * 1000)
-
-earnings.industry.peak.county <- earnings.industry %>%
-  filter(!LineCode %in% c(35, 82)) %>%
-  gather(key = "year", value = "earnings.peak", 9:26) %>%
-  mutate(earnings.peak = as.numeric(earnings.peak) * 1000,
-         year = as.integer(year)) %>%
-  select(9,10,7,11)
-
-earnings.industry.peak.2018.drop.county <- te.fe.drop.county %>%
-  left_join(earnings.industry.2018.county, by = c("countyfp")) %>%
-  left_join(earnings.industry.peak.county, by = c("countyfp", "fe.peak.year" = "year", "Description")) %>%
-  mutate(change.earnings = earnings.2018 - earnings.peak) %>%
-  filter(change.earnings < 0) %>%
-  group_by(GeoName, countyfp) %>%
-  summarise(farm.earnings.change = sum(change.earnings[Description == "Farm earnings"], na.rm = TRUE),
-            industry.loss.earnings.change = sum(change.earnings, na.rm = TRUE)) %>%
-  ungroup() %>%
-  mutate(pct.fe.of.total.loss = farm.earnings.change / industry.loss.earnings.change)
-names(earnings.industry.peak.2018.drop.county)
-```
-
-```{r point chart farm earnings loss pct of industry loss, fig.width=8}
-earnings.industry.peak.2018.drop.county.plot <- ggplot(earnings.industry.peak.2018.drop.county, aes(x = 2018, y = pct.fe.of.total.loss, color = pct.fe.of.total.loss)) +
-  geom_point_interactive(size = 3, aes(data_id = GeoName, tooltip = paste(GeoName, "\nChange in farm earnings since peak year: ", dollar(farm.earnings.change), "\nChange in earnings of all industries that experienced a loss: ", dollar(industry.loss.earnings.change), "\nFarm earnings loss as a percent of total loss: ", percent(pct.fe.of.total.loss), sep = ""))) +
-  geom_label_repel(aes(x = 2018, y = pct.fe.of.total.loss, label = paste(GeoName, ", ", percent(pct.fe.of.total.loss), sep = ""), color = pct.fe.of.total.loss)) +
-  labs(x= "", y = "%", color="", title = "Farm earnings loss as a percent of the total loss in all industries")+
+```{r charts ag wages and total wages index pr, fig.width=8}
+ag.wages.index.pr.plot <- ggplot(ag.total.wages.pr, aes(periodyear, ag.wages.index, color = planning.region)) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 3, aes(data_id = ag.wages.index, tooltip = paste(planning.region, "\nYear: ", periodyear, "\nTotal ag-related wages: ", dollar(ag.wages), "\nAg wages as a % of 2001 levels: ", percent(ag.wages.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Ag-related wages indexed to 2001 levels")+
   scale_y_continuous(labels=scales::percent)+
-  scale_x_continuous(breaks = seq(1900, 2050, 1)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
   theme_line+
-  scale_color_gradient(high = "#de2d26",
-                       low = "black") +
-  theme(legend.position = "none")
+  scale_color_manual(values= color.pr,
+                     guide = guide_legend(ncol = 4)) +
+  theme(text = element_text(size = 10),
+        plot.margin = unit(c(0,0,0,0), "cm"))
 
 
-girafe( ggobj = earnings.industry.peak.2018.drop.county.plot, width_svg = 8) %>%
+total.wages.index.pr.plot <- ggplot(ag.total.wages.pr, aes(periodyear, total.wages.index, color = planning.region)) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 3, aes(data_id = total.wages.index, tooltip = paste(planning.region, "\nYear: ", periodyear, "\nTotal wages: ", dollar(total.wages), "\nTotal wages as a % of 2001 levels: ", percent(total.wages.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Total wages indexed to 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.5, 2, .5)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.pr) +
+  theme(legend.position = "none",
+        text = element_text(size = 10),
+        plot.margin = unit(c(0,0,0,0), "cm"))
+
+ag.wages.index.pr.legend <- get_legend(ag.wages.index.pr.plot + theme(legend.direction = "horizontal", legend.justification = "right", legend.box.just = "right"))
+
+ag.wages.index.pr.legend.bottom <- plot_grid(NULL, ag.wages.index.pr.legend, NULL)
+
+
+girafe( ggobj = plot_grid(ag.wages.index.pr.plot + theme(legend.position = "none"), total.wages.index.pr.plot+theme(legend.position = "none"),  ag.wages.index.pr.legend.bottom, nrow = 2, rel_heights = c(2,1)), width_svg = 8) %>%
   girafe_options(opts_selection(type = "none"),
                  opts_toolbar(saveaspng = FALSE) ,
-                 opts_sizing(rescale = FALSE),
-                 opts_zoom(max = 5))
-
-```
-
-<br>
-
-This analysis provides us with the following characteristics of geographic areas that are likely most impacted by the drop in farm earnings:
-
-* is an entirely rural county or has a town/rural mix;
-* located in Southwest or Northwest Minnesota;
-* located in the following EDRs; 1 - Northwest, 4 - West Central, 6W - Upper MN Valley, and 8 - Southwest;
-* one of 33 counties who have experienced their highest levels of total earnings before 2018;
-* have had their total earnings drop by 15% or more since farm earnings peaked, likely between 2010 - 2013;
-* have had their farm earnings as a percentage of total earnings drop by 15 points or more since farm earnings peaked; and
-* the drop in farm earnings as a percentage of the total loss across all industries is 50% or higher.
-
-The table below provides the 14 counties that nearly fit all of these characteristics. Of the counties that seem to most impacted by farm earnings:
-
-* all of them have had their total earnings drop by more than 15% since the peak farm years;
-* all of them have had their contributions from farm earnings to total earnings drop by more than 15 percentage points;
-* all of them have had their drop in farm earnings make up a majority of the total losses across all industries;
-* 8 of them are entirely rural, 5 are a town/rural mix and 1 has a urban/town/rural mix; 
-* 13 of them are located in the Southwest or Northwest planning regions; and,
-* 11 of them are located in EDRs 1, 4, 6W, or 8.
-
-<br>
-
-```{r impacted counties table, cache = TRUE}
-impacted.counties.match <- earnings.industry.peak.2018.drop.county %>%
-  select(2,3,4,5)
-
-te.peak.year <- farm.earnings.county %>%
-  group_by(GeoName, countyfp) %>%
-  top_n(n = 1, total.earnings) %>%
-  ungroup() %>%
-  rename(te.peak.year = 4) %>%
-  select(3,4)
-
-impacted.counties <- fe.te.peak.2018.negative.county %>%
-  right_join(impacted.counties.match, by = "countyfp") %>%
-  left_join(te.peak.year, by = "countyfp") %>%
-  select(1,12,14,13,21,3,11,17,20) %>%
-  mutate(planning.region = str_replace(planning.region, " Minnesota", "")) %>%
-  rename(County = 1,
-         RUCA = 2,
-         "Planning Region" = 3,
-         EDR = 4,
-         "Total earnings - peak year" = 5,
-         "Farm earning - peak year" = 6,
-         "Total earnings - % change" = 7,
-         "Farm earnings as % of total earnings - change" = 8,
-         "Farm earnings drop as % of loss across all industries" = 9)
-
-datatable(impacted.counties, class = "cell-border stripe", filter = "top", rownames = FALSE,
-          options = list(scrollX = TRUE)) %>%
-  formatPercentage(7) %>%
-  formatPercentage(9) %>%
-  formatCurrency(8, "")
+                 opts_sizing(rescale = FALSE))
 
 ```
 
