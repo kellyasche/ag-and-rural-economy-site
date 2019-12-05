@@ -600,3 +600,16 @@ girafe( ggobj = aw.earned.peak.select.edrs.plot, width_svg = 6) %>%
                  opts_sizing(rescale = FALSE))
 
 ```
+
+## Counties most disrupted by ag-related wages
+
+There are only a couple of counties that have been potentially been disrupted by the decline of ag-related wages; Lac qui Parle, Faribault, and Waseca. The other counties experiencing a decline in ag-related wages did not translate into lower overall wages. For these counties, it potentially means a couple of things;
+
+* ag-related wages didn't contribute a significant amount to the total wages earned in the county; or,
+* declines in ag-related wages were made up by increases in wages in other industries.
+
+<br>
+
+```{r prep ag and total wages index of three impacted counties, include=FALSE, cache=TRUE}
+
+```

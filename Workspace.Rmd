@@ -147,23 +147,6 @@ ag.total.wages.edr <- ag.ind.wages.edr %>%
 
 ```
 
-## Peak ag-related wages vs. peak total wages{.tabset}
-
-The following maps compare the years that total wages and ag wages peaked for each county as well as the change in wages earned that has occurred since the peak year.
-
-The maps clearly indicate that there are counties in Southwest Minnesota that have experienced a decline in ag-related wages. A majority of counties in Southwest Minnesota have experienced a 10% or more drop in their wages earned in ag-related industries. 
-
-However, the maps do not show strong evidence that declines in ag-related wages have impacted overall total wages in any of the counties. The counties that show, perhaps, the biggest influence from ag wages are Lac qui Parle, Faribault, and Waseca.
-
-
-<br>
-
-### Peak year of ag-related wages vs. total wages
-
-The year that ag-related wages earned peaked varies considerably across Western Minnesota. One trend to note is that there is a lot more 2016-2018 peak years across Central and Northwest Minnesota compared to Southwest Minnesota. 
-
-When comparing across the maps, it's not very evident that the declines occurring in ag-related wages has had any impact on total wages since nearly every county has had their total wages peak in 2017 or 2018. The counties that may have been impacted the most are Lac qui Parle, Faribault, and Waseca.
-
 ```{r prep peak year of ag and total wages, include=FALSE, cache=TRUE}
 aw.peak.year <- ag.ind.wages.county %>%
   group_by(periodyear, areaname, countyfp) %>%
@@ -192,44 +175,6 @@ tw.peak.year <- ag.ind.wages.county %>%
   left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE"))
 
 ```
-
-```{r map ag wages and total wages peak year, fig.width=8}
-aw.peak.year.plot <- ggplot(aw.peak.year) +
-    geom_sf_interactive(aes(fill = peak.year.bins, tooltip = paste(areaname, "\nYear of peak ag-related wages earned: ", periodyear), data_id = areaname, geometry = geometry)) +
-    scale_fill_manual(values = c("white", "red", "red3", "red4", "grey", "black"))+
-    theme_sf+
-    labs(title="Year of peak ag-related wages earned") +
-  theme(text = element_text(size = 10))
-
-tw.peak.year.plot <- ggplot(tw.peak.year) +
-    geom_sf_interactive(aes(fill = peak.year.bins, tooltip = paste(areaname, "\nYear of peak total wages earned: ", periodyear), data_id = areaname, geometry = geometry)) +
-    scale_fill_manual(breaks = c("Before 2010", "2010-2011", "2012-2013", "2014-2015", "2016-2017", "2018"),
-                      values = c("Before 2010" = "white", "2010-2011" = "red", "2012-2013" = "red3", "2014-2015" = "red4", "2016-2017" = "grey", "2018" = "black"))+
-    theme_sf+
-    labs(title="Year of peak total wages earned") +
-  theme(text = element_text(size = 10))
-
-aw.peak.year.legend <- get_legend(aw.peak.year.plot)
-  
-girafe( ggobj = plot_grid(aw.peak.year.plot + theme(legend.position = "none"), aw.peak.year.legend, tw.peak.year.plot + theme(legend.position = "none"), rel_widths = c(1,.5,1), ncol = 3), width_svg = 8) %>%
-  girafe_options(opts_selection(type = "none"),
-                 opts_toolbar(saveaspng = FALSE) ,
-                 opts_sizing(rescale = FALSE))
-
-
-```
-
-### Change in ag wages since peak year
-
-The map below focuses on the counties within EDRs that were identified as having a sizable percentage of their total wages come from ag-related industries. The colors provide the percentage *point* change in ag wages as a percent of total wages from the year that ag wages peaked. 
-
-What becomes quickly apparent is that counties in Southwest Minnesota have been impacted the most. A majority of counties have experienced a drop of 10% or more in wages earned in ag-related industries.
-
-The counties that looked to have their total wages impacted the most by ag-related wages was Lac qui Parle, Faribault and Waseca. Sure enough, in this map those counties have experienced considerable decline in their ag wages. Lac qui Parle reported wages earned from ag industries 69% lower than in 2010, Waseca 73% lower than in 2013, and Waseca was 3% lower than in 2017. 
-
-Since the year that ag-wages peaked varies considerably, it can be a bit challenging to discern how much of an impact this is having on the overall economy since impacts can depend on the quickness of change. For example, Lyon County experienced a 32% decrease in their wages since their peak year. However, their peak year was in 2002. Compare that to Lac qui Parle where they have experienced a 69% drop in wages earned from ag-related industries since their peak year, which was in 2010. That's a much more abrupt change.
-
-<br>
 
 ```{r prep change in ag wages since peak year, include=FALSE, cache=TRUE}
 
@@ -265,17 +210,14 @@ aw.earned.peak.select.edrs <- aw.earned.peak %>%
 
 ```
 
-```{r map pct point change in ag wages since peak, fig.width=8}
-aw.earned.peak.select.edrs.plot <- ggplot(aw.earned.peak.select.edrs) +
-    geom_sf_interactive(aes(fill = change.aw.peak.2018.bins, tooltip = paste(areaname, "\nPeak year of ag wages earned: ", periodyear, "\nAg wages as % of total wages during peak year: ", percent(aw.pct.tw.peak), "\nAg wages as % of total wages in 2018: ", percent(aw.pct.tw.2018), "\nPercent change in ag wages since peak year: ", percent(change.aw.peak.2018), sep = ""), data_id = areaname)) +
-    scale_fill_manual(values = c("#a50f15", "#de2d26", "#fb6a4a", "#fcae91", "grey"))+
-    theme_sf+
-    labs(title="Change in ag wages since the peak year in\nselect EDRs") +
-  theme(text = element_text(size = 12))
-  
-girafe( ggobj = aw.earned.peak.select.edrs.plot, width_svg = 6) %>%
-  girafe_options(opts_selection(type = "none"),
-                 opts_toolbar(saveaspng = FALSE) ,
-                 opts_sizing(rescale = FALSE))
+## Counties most disrupted by ag-related wages
 
+There are only a couple of counties that have been potentially been disrupted by the decline of ag-related wages; Lac qui Parle, Faribault, and Waseca. The other counties experiencing a decline in ag-related wages did not translate into lower overall wages. For these counties, it potentially means a couple of things;
+
+* ag-related wages didn't contribute a significant amount to the total wages earned in the county; or,
+* declines in ag-related wages were made up by increases in wages in other industries.
+
+<br>
+
+```{r prep ag and total wages index of three impacted counties, include=FALSE, cache=TRUE}
 ```
