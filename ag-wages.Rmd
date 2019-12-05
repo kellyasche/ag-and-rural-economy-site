@@ -366,7 +366,7 @@ girafe( ggobj = plot_grid(ag.wages.index.edr.plot + theme(legend.position = "non
 
 ## Ag-related wages as a percent of total wages{.tabset}
 
-Overall, ag-related wages don't make up a significant percentage of the total wages across regions. In fact, contributions from ag-related wages to the total wage in most regions is near 5%. However, that isn't the case when we drill down a little deeper.
+Overall, ag-related wages don't make up a significant percentage of the total wages across regions. In fact, contributions from ag-related wages to the total wage in most regions is near 5%. However, that isn't the case when we drill down a little deeper. From here on forward, we can just ignore the Northeast and Seven County metro regions since ag-related wages make up 1% or less of the total wages earned in each region.
 
 It's not surprising that the largest percentages are in our entirely rural and town/rural mix counties. The Southwest region has, by far, the largest percentage of wages earned in ag-related industries, nearing 15% over the last few years.
 
@@ -462,6 +462,139 @@ aw.pct.tw.edr.plot <- ggplot(ag.total.wages.edr, aes(periodyear, aw.pct.tw, colo
           legend.text = element_text(size = 8))
   
 girafe( ggobj = aw.pct.tw.edr.plot, height_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+## Peak ag-related wages vs. peak total wages{.tabset}
+
+The following maps compare the years that total wages and ag wages peaked for each county as well as the change in wages earned that has occurred since the peak year.
+
+The maps clearly indicate that there are counties in Southwest Minnesota that have experienced a decline in ag-related wages. A majority of counties in Southwest Minnesota have experienced a 10% or more drop in their wages earned in ag-related industries. 
+
+However, the maps do not show strong evidence that declines in ag-related wages have impacted overall total wages in any of the counties. The counties that show, perhaps, the biggest influence from ag wages are Lac qui Parle, Faribault, and Waseca.
+
+
+<br>
+
+### Peak year of ag-related wages vs. total wages
+
+The year that ag-related wages earned peaked varies considerably across Western Minnesota. One trend to note is that there is a lot more 2016-2018 peak years across Central and Northwest Minnesota compared to Southwest Minnesota. 
+
+When comparing across the maps, it's not very evident that the declines occurring in ag-related wages has had any impact on total wages since nearly every county has had their total wages peak in 2017 or 2018. The counties that may have been impacted the most are Lac qui Parle, Faribault, and Waseca.
+
+```{r prep peak year of ag and total wages, include=FALSE, cache=TRUE}
+aw.peak.year <- ag.ind.wages.county %>%
+  group_by(periodyear, areaname, countyfp) %>%
+  summarise(ag.wages = sum(wages[naicstitle != "Total, All Industries"], na.rm = TRUE)) %>%
+  ungroup() %>%
+  group_by(areaname, countyfp) %>%
+  top_n(n=1, wt = ag.wages) %>%
+  ungroup() %>%
+  distinct(areaname, .keep_all = TRUE) %>%
+  mutate(peak.year.bins = cut(periodyear,
+                              breaks = c(2000, 2009, 2011, 2013, 2015, 2017, 2020),
+                              labels = c("Before 2010", "2010-2011", "2012-2013", "2014-2015", "2016-2017", "2018"))) %>%
+  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE"))
+
+tw.peak.year <- ag.ind.wages.county %>%
+  group_by(periodyear, areaname, countyfp) %>%
+  summarise(total.wages = sum(wages[naicstitle == "Total, All Industries"], na.rm = TRUE)) %>%
+  ungroup() %>%
+  group_by(areaname, countyfp) %>%
+  top_n(n=1, wt = total.wages) %>%
+  ungroup() %>%
+  distinct(areaname, .keep_all = TRUE) %>%
+    mutate(peak.year.bins = cut(periodyear,
+                              breaks = c(2000, 2009, 2011, 2013, 2015, 2017, 2020),
+                              labels = c("Before 2010", "2010-2011", "2012-2013", "2014-2015", "2016-2017", "2018"))) %>%
+  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE"))
+
+```
+
+```{r map ag wages and total wages peak year, fig.width=8}
+aw.peak.year.plot <- ggplot(aw.peak.year) +
+    geom_sf_interactive(aes(fill = peak.year.bins, tooltip = paste(areaname, "\nYear of peak ag-related wages earned: ", periodyear), data_id = areaname, geometry = geometry)) +
+    scale_fill_manual(values = c("white", "red", "red3", "red4", "grey", "black"))+
+    theme_sf+
+    labs(title="Year of peak ag-related wages earned") +
+  theme(text = element_text(size = 10))
+
+tw.peak.year.plot <- ggplot(tw.peak.year) +
+    geom_sf_interactive(aes(fill = peak.year.bins, tooltip = paste(areaname, "\nYear of peak total wages earned: ", periodyear), data_id = areaname, geometry = geometry)) +
+    scale_fill_manual(breaks = c("Before 2010", "2010-2011", "2012-2013", "2014-2015", "2016-2017", "2018"),
+                      values = c("Before 2010" = "white", "2010-2011" = "red", "2012-2013" = "red3", "2014-2015" = "red4", "2016-2017" = "grey", "2018" = "black"))+
+    theme_sf+
+    labs(title="Year of peak total wages earned") +
+  theme(text = element_text(size = 10))
+
+aw.peak.year.legend <- get_legend(aw.peak.year.plot)
+  
+girafe( ggobj = plot_grid(aw.peak.year.plot + theme(legend.position = "none"), aw.peak.year.legend, tw.peak.year.plot + theme(legend.position = "none"), rel_widths = c(1,.5,1), ncol = 3), width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+
+```
+
+### Change in ag wages since peak year
+
+The map below focuses on the counties within EDRs that were identified as having a sizable percentage of their total wages come from ag-related industries. The colors provide the percentage *point* change in ag wages as a percent of total wages from the year that ag wages peaked. 
+
+What becomes quickly apparent is that counties in Southwest Minnesota have been impacted the most. A majority of counties have experienced a drop of 10% or more in wages earned in ag-related industries.
+
+The counties that looked to have their total wages impacted the most by ag-related wages was Lac qui Parle, Faribault and Waseca. Sure enough, in this map those counties have experienced considerable decline in their ag wages. Lac qui Parle reported wages earned from ag industries 69% lower than in 2010, Waseca 73% lower than in 2013, and Waseca was 3% lower than in 2017. 
+
+Since the year that ag-wages peaked varies considerably, it can be a bit challenging to discern how much of an impact this is having on the overall economy since impacts can depend on the quickness of change. For example, Lyon County experienced a 32% decrease in their wages since their peak year. However, their peak year was in 2002. Compare that to Lac qui Parle where they have experienced a 69% drop in wages earned from ag-related industries since their peak year, which was in 2010. That's a much more abrupt change.
+
+<br>
+
+```{r prep change in ag wages since peak year, include=FALSE, cache=TRUE}
+
+aw.2018 <- ag.ind.wages.county %>%
+  filter(periodyear == 2018) %>%
+  group_by(periodyear, areaname, countyfp, edr) %>%
+  summarise(ag.wages = sum(wages[naicstitle != "Total, All Industries"], na.rm = TRUE),
+            total.wages = sum(wages[naicstitle == "Total, All Industries"], na.rm = TRUE)) %>%
+  ungroup() %>%
+  rename(ag.wages.2018 = ag.wages,
+         total.wages.2018 = total.wages)
+
+aw.earned.peak <- ag.ind.wages.county %>%
+  group_by(periodyear, areaname, countyfp, edr) %>%
+  summarise(ag.wages = sum(wages[naicstitle != "Total, All Industries"], na.rm = TRUE),
+            total.wages = sum(wages[naicstitle == "Total, All Industries"], na.rm = TRUE)) %>%
+  ungroup() %>%
+  right_join(aw.peak.year[,c(1,3)], by = c("countyfp", "periodyear")) %>%
+  left_join(aw.2018[,c(3,5,6)], by = "countyfp") %>%
+  mutate(aw.pct.tw.peak = ag.wages / total.wages,
+         aw.pct.tw.2018 = ag.wages.2018 / total.wages.2018,
+         change.aw.pct.tw = 100* (aw.pct.tw.2018 - aw.pct.tw.peak),
+         change.aw.peak.2018 = (ag.wages.2018 - ag.wages)/ag.wages)
+
+
+aw.earned.peak.select.edrs <- aw.earned.peak %>%
+  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE")) %>%
+  mutate(change.aw.peak.2018.bins = cut(change.aw.peak.2018,
+                                     breaks = c(-1, -.5, -.3, -.1, -.01, 1),
+                                     labels = c("-50% or less", "-50% to -30%", "-30% to -10%", "-10% to -1%", "No change"))) %>%
+  mutate(change.aw.peak.2018.bins = ifelse(edr %in% c("EDR  1 - Northwest", "EDR  4 - West Central", "EDR  6E- Southwest Central", "EDR  6W- Upper Minnesota Valley", "EDR  8 - Southwest", "EDR  9 - South Central"), as.character(change.aw.peak.2018.bins), NA),
+         change.aw.peak.2018.bins = fct_relevel(change.aw.peak.2018.bins, "-50% or less", "-50% to -30%", "-30% to -10%", "-10% to -1%", "No change"))
+
+```
+
+```{r map pct point change in ag wages since peak, fig.width=8}
+aw.earned.peak.select.edrs.plot <- ggplot(aw.earned.peak.select.edrs) +
+    geom_sf_interactive(aes(fill = change.aw.peak.2018.bins, tooltip = paste(areaname, "\nPeak year of ag wages earned: ", periodyear, "\nAg wages as % of total wages during peak year: ", percent(aw.pct.tw.peak), "\nAg wages as % of total wages in 2018: ", percent(aw.pct.tw.2018), "\nPercent change in ag wages since peak year: ", percent(change.aw.peak.2018), sep = ""), data_id = areaname)) +
+    scale_fill_manual(values = c("#a50f15", "#de2d26", "#fb6a4a", "#fcae91", "grey"))+
+    theme_sf+
+    labs(title="Change in ag wages since the peak year in\nselect EDRs") +
+  theme(text = element_text(size = 12))
+  
+girafe( ggobj = aw.earned.peak.select.edrs.plot, width_svg = 6) %>%
   girafe_options(opts_selection(type = "none"),
                  opts_toolbar(saveaspng = FALSE) ,
                  opts_sizing(rescale = FALSE))
