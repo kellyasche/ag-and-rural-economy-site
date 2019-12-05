@@ -160,10 +160,55 @@ Analysis here
 <br>
 
 ```{r prep peak year of ag and total wages, include=FALSE, cache=TRUE}
-aw.tw.peak.year <- ag.ind.wages.county
+aw.peak.year <- ag.ind.wages.county %>%
+  group_by(periodyear, areaname, countyfp) %>%
+  summarise(ag.wages = sum(wages[naicstitle != "Total, All Industries"], na.rm = TRUE)) %>%
+  ungroup() %>%
+  group_by(areaname, countyfp) %>%
+  top_n(n=1, wt = ag.wages) %>%
+  ungroup() %>%
+  distinct(areaname, .keep_all = TRUE) %>%
+  mutate(peak.year.bins = cut(periodyear,
+                              breaks = c(2000, 2009, 2011, 2013, 2015, 2017, 2020),
+                              labels = c("Before 2010", "2010-2011", "2012-2013", "2014-2015", "2016-2017", "2018"))) %>%
+  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE"))
 
-names(aw.tw.peak.year)
+tw.peak.year <- ag.ind.wages.county %>%
+  group_by(periodyear, areaname, countyfp) %>%
+  summarise(total.wages = sum(wages[naicstitle == "Total, All Industries"], na.rm = TRUE)) %>%
+  ungroup() %>%
+  group_by(areaname, countyfp) %>%
+  top_n(n=1, wt = total.wages) %>%
+  ungroup() %>%
+  distinct(areaname, .keep_all = TRUE) %>%
+    mutate(peak.year.bins = cut(periodyear,
+                              breaks = c(2000, 2009, 2011, 2013, 2015, 2017, 2020),
+                              labels = c("Before 2010", "2010-2011", "2012-2013", "2014-2015", "2016-2017", "2018"))) %>%
+  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE"))
 
 ```
 
+```{r map ag wages and total wages peak year, fig.width=8}
+aw.peak.year.plot <- ggplot(aw.peak.year) +
+    geom_sf_interactive(aes(fill = peak.year.bins, tooltip = paste(areaname, "\nYear of peak ag-related wages earned: ", periodyear), data_id = areaname, geometry = geometry)) +
+    scale_fill_manual(values = c("white", "red", "red3", "red4", "grey", "black"))+
+    theme_sf+
+    labs(title="Year of peak ag-related wages earned") +
+  theme(text = element_text(size = 10))
 
+tw.peak.year.plot <- ggplot(tw.peak.year) +
+    geom_sf_interactive(aes(fill = peak.year.bins, tooltip = paste(areaname, "\nYear of peak total wages earned: ", periodyear), data_id = areaname, geometry = geometry)) +
+    scale_fill_manual(values = c("white", "red", "red3", "red4", "grey", "black"))+
+    theme_sf+
+    labs(title="Year of peak total wages earned") +
+  theme(text = element_text(size = 10))
+
+aw.peak.year.legend <- get_legend(aw.peak.year.plot)
+  
+girafe( ggobj = plot_grid(aw.peak.year.plot + theme(legend.position = "none"), aw.peak.year.legend, tw.peak.year.plot + theme(legend.position = "none"), rel_widths = c(1,.5,1), ncol = 3), width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+
+```
