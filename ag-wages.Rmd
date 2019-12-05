@@ -41,7 +41,7 @@ theme_bar <- theme_bw() +
         legend.background = element_rect(fill = "transparent", color = "transparent"),
         legend.key = element_rect(fill = "transparent"),
         legend.title = element_blank(),
-        text = element_text(family = "Calibri", size = 15),
+        text = element_text(size = 15),
         plot.caption = element_text(hjust = 0.5, face = "italic"),
         legend.text = element_text(margin = margin(l = 2, r = 5)))
 
@@ -53,7 +53,7 @@ theme_line <- theme_bw() +
         axis.ticks = element_blank(),
         axis.text = element_text(face = "bold"),
         panel.border = element_blank(),
-        text = element_text(family = "Calibri", size = 15),
+        text = element_text(size = 15),
         plot.caption = element_text(hjust = 0.5, face = "italic"),
         legend.text = element_text(margin = margin(l = 2, r = 5)))
 
@@ -66,7 +66,7 @@ theme_sf <- theme_bw() +
         panel.border = element_blank(),
         plot.title = element_text(hjust = 0.5),
         legend.title = element_blank(),
-        text = element_text(family = "Calibri", size = 15),
+        text = element_text(size = 15),
         plot.caption = element_text(hjust = 0.5, face = "italic"),
         legend.text = element_text(margin = margin(l = 2, r = 5)))
 
@@ -103,7 +103,8 @@ ag.ind.wages.pr <- read_csv("Data/Earnings/Master-ag-related-ind-wages-pr.csv") 
   mutate(planning.region = str_replace(planning.region, " Minnesota", ""))
 
 ag.ind.wages.edr <- read_csv("Data/Earnings/Master-ag-related-ind-wages-edr.csv") %>%
-  left_join(edr.pr, by = "edr")
+  left_join(edr.pr, by = "edr") %>%
+  mutate(planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"))
 
 ```
 
@@ -150,7 +151,7 @@ This analysis examines the impact wages earned in ag-related industries impacts 
 
 The charts below provide the change in ag-related wages and total wages by indexing the values to their 2001 levels. The trend to look for is how the fluctuations in wages earned from ag-related industries “appear” in the total wages from all industries chart. If total wages show a similar trend to ag-related wages, it’s likely that ag-related wages has a significant influence in that region’s economy.
 
-The overall trend is that ag-related wages are not solely focused in entirely rural counties. In fact, some of the most explosive growth in wages occured in town/rural mix, urban/town/rural mix, and entirely urban counties. Regionally, Northwest, Central and Southewest Minnesota experienced growth in ag-related industries that surpassed growth in total wages from all industries.
+The overall trend is that the most consistent growth in wages occured in town/rural mix, urban/town/rural mix, and entirely urban counties. Regionally, Northwest, Central and Southewest Minnesota experienced growth in ag-related industries that surpassed growth in total wages from all industries.
 
 In particular, EDRs 7W - Central, 6E - Southwest Central, 4 - West Central, 5 - North Central, and 9 - South Central all experienced growth in ag-related wages higher than total growth of all wages in their regions.
 
@@ -170,7 +171,8 @@ ag.total.wages.ruca <- ag.ind.wages.county %>%
   mutate(ag.wages.index = ag.wages / ag.wages[periodyear == 2001],
          total.wages.index = total.wages / total.wages[periodyear == 2001]) %>%
   ungroup() %>%
-  mutate(Dem_Desc = fct_relevel(Dem_Desc, "Entirely rural", "Town/rural mix", "Urban/town/rural mix", "Entirely urban"))
+  mutate(aw.pct.tw = ag.wages / total.wages,
+         Dem_Desc = fct_relevel(Dem_Desc, "Entirely rural", "Town/rural mix", "Urban/town/rural mix", "Entirely urban"))
 
 ag.total.wages.pr <- ag.ind.wages.pr %>%
   group_by(periodyear, planning.region) %>%
@@ -181,7 +183,8 @@ ag.total.wages.pr <- ag.ind.wages.pr %>%
   mutate(ag.wages.index = ag.wages / ag.wages[periodyear == 2001],
          total.wages.index = total.wages / total.wages[periodyear == 2001]) %>%
   ungroup() %>%
-  mutate(planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"))
+  mutate(aw.pct.tw = ag.wages / total.wages,
+         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"))
 
 ag.total.wages.edr <- ag.ind.wages.edr %>%
   group_by(periodyear, edr, planning.region) %>%
@@ -192,13 +195,14 @@ ag.total.wages.edr <- ag.ind.wages.edr %>%
   mutate(ag.wages.index = ag.wages / ag.wages[periodyear == 2001],
          total.wages.index = total.wages / total.wages[periodyear == 2001]) %>%
   ungroup() %>%
-  mutate(edr = fct_relevel(edr, "EDR 1 - Northwest", "EDR 2 - Headwaters", "EDR 3 - Arrowhead", "EDR 4 - West Central", "EDR 5 - North Central", "EDR 6E- Southwest Central", "EDR 6W- Upper Minnesota Valley", "EDR 7E- East Central", "EDR 7W- Central", "EDR 8 - Southwest", "EDR 9 - South Central", "EDR 10 - Southeast", "EDR 11 - 7 County Twin Cities", "Minnesota"))
+  mutate(aw.pct.tw = ag.wages / total.wages,
+         edr = fct_relevel(edr, "EDR 1 - Northwest", "EDR 2 - Headwaters", "EDR 3 - Arrowhead", "EDR 4 - West Central", "EDR 5 - North Central", "EDR 6E- Southwest Central", "EDR 6W- Upper Minnesota Valley", "EDR 7E- East Central", "EDR 7W- Central", "EDR 8 - Southwest", "EDR 9 - South Central", "EDR 10 - Southeast", "EDR 11 - 7 County Twin Cities", "Minnesota"))
 
 ```
 
 ### RUCA
 
-There are two distinct patterns here that are dependent on the type of RUCA group. The entirely rural group and, to lesser extent, the town/rural county group saw some rather big decreases in ag wages in the early 2000's, a recovery betweene 2006 and 2015, and a subsequent downturn since then. The other county groups, entirely urban, urban/town/rural mix, and the town/rural mix have experienced significant growth in ag-related wages. In fact, total wages earned in ag-related industries has grown by nearly 200% while total wages has grown by about 175%. 
+There are two distinct patterns here that are dependent on the type of RUCA group. The entirely rural group and, to lesser extent, the town/rural county group saw some rather big decreases in ag wages in the early 2000's, a recovery betweene 2006 and 2015 (during the crop commodity boom), and a subsequent downturn since then. The other county groups, entirely urban, urban/town/rural mix, and the town/rural mix have experienced significant growth in ag-related wages. In fact, total wages earned in ag-related industries has grown by nearly 200% while total wages has grown by about 175%. 
 
 One other interesting element concerning the ag-related wages is that most of the growth occurred during the Great Recession. 
 
@@ -354,6 +358,110 @@ ag.wages.index.edr.legend.bottom <- plot_grid(NULL, ag.wages.index.edr.legend, N
 
 
 girafe( ggobj = plot_grid(ag.wages.index.edr.plot + theme(legend.position = "none"), total.wages.index.edr.plot+theme(legend.position = "none"),  ag.wages.index.edr.legend.bottom, nrow = 2, rel_heights = c(2,1)), height_svg = 10) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+## Ag-related wages as a percent of total wages{.tabset}
+
+Overall, ag-related wages don't make up a significant percentage of the total wages across regions. In fact, contributions from ag-related wages to the total wage in most regions is near 5%. However, that isn't the case when we drill down a little deeper.
+
+It's not surprising that the largest percentages are in our entirely rural and town/rural mix counties. The Southwest region has, by far, the largest percentage of wages earned in ag-related industries, nearing 15% over the last few years.
+
+At the EDR level, EDR 6E in Central Minnesota, EDR 9 in Southwest Minnesota, and EDRs 1 and 4 in Northwest Minnesota all have ag-related industries contributing 10% or more to the total wages in their region with steady growth.
+
+On the other hand, EDRs 6W and 8 have significant percentages but have been declining over the last few years. The counties in these EDRs are the likely culprits providing the downturn in the RUCA charts.
+
+<br>
+
+### RUCA
+
+One of the more interesting elements here is that overall, Ag-related wages don't make up a significant portion of the total wages. In fact, it only breaches 8% once even for the entirely rural county group (2013).
+
+Not surprisingly, Ag-related wages contribute to the total wages at a higher rate in more rural areas. Also, the fluctuation in the percentage within the entirely rural county group mimics the same pattern when the wages were indexed in the previous section of this page. For whatever reason Ag-related wages took a tip in the early 2000s, recovered during the peak of farm commodity prices, and is now taking another dip. 
+
+The other county groups stay relatively consistent.
+
+<br>
+
+```{r chart ag wages pct total wages ruca}
+aw.pct.tw.ruca.plot <- ggplot(ag.total.wages.ruca, aes(periodyear, aw.pct.tw, color = Dem_Desc)) +
+    geom_smooth(se = FALSE, size = 2) +
+    geom_point_interactive(size = 3, aes(data_id = aw.pct.tw, tooltip = paste(Dem_Desc, "\nYear: ", periodyear, "\nAg-related wages: ", dollar(ag.wages), "\nTotal wages: ", dollar(total.wages), "\nAg wages as a percent of total wages: ", percent(aw.pct.tw), sep = ""))) +
+    labs(x="", y = "", color="", title = "Ag-related wages earned as a % of total wages")+
+    scale_y_continuous(labels=scales::percent)+
+    scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+    theme_line+
+    scale_color_manual(values= color.ruca,
+                       guide = guide_legend(ncol = 3)) +
+    theme(legend.position = "bottom")
+  
+girafe( ggobj = aw.pct.tw.ruca.plot, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+### Planning Region
+
+Southwest Minnesota has the most significant portion of their total wages contributed by Ag-related industries. Over the last 5 years, wages earned from Ag-related industries has consistently contributed nearly 15% of the total wages in the region. 
+
+Interestingly, none of the regions highlight any sort of dip in percentages over the last few years meaning that trend is definitely concentrated in our most rural counties. That trend is then diluted by some of the other more urban counties and doesn't show up in the planning regions. The EDRs might give us a bit more insight.
+
+<br>
+
+```{r chart ag wages pct total wages pr}
+aw.pct.tw.pr.plot <- ggplot(ag.total.wages.pr, aes(periodyear, aw.pct.tw, color = planning.region)) +
+    geom_smooth(se = FALSE, size = 2) +
+    geom_point_interactive(size = 3, aes(data_id = aw.pct.tw, tooltip = paste(planning.region, "\nYear: ", periodyear, "\nAg-related wages: ", dollar(ag.wages), "\nTotal wages: ", dollar(total.wages), "\nAg wages as a percent of total wages: ", percent(aw.pct.tw), sep = ""))) +
+    labs(x="", y = "", color="", title = "Ag-related wages earned as a % of total wages")+
+    scale_y_continuous(labels=scales::percent)+
+    scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+    theme_line+
+    scale_color_manual(values= color.pr,
+                       guide = guide_legend(ncol = 3)) +
+    theme(legend.position = "bottom")
+  
+girafe( ggobj = aw.pct.tw.pr.plot, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+
+### EDRs
+
+A few things to note here. 
+
+Ag-related wages earned in EDR 6E - Southwest Central significantly contributes to total wages. By 2018, wages from these industries contributed nearly 15% to the total wages in that region.
+
+Ag-related wages in EDR 4 - West Central and EDR 1 - Northwest have similar contributions to total wages with percentages nearing 10%. In addition, for EDR 6E, EDR 4, and EDR 1, the percentage continues a slow but steady increase over the last 5 years.
+
+Southwest Minnesota is a different story. EDR 8 - Southwest and EDR 6W - Upper MN Valley have experienced a sizable drop in contributions from Ag-related wages. Interestingly, EDR 9 in that region has seen consistent growth in contributions from Ag-related wages to the total wages.
+
+<br>
+
+```{r chart ag wages pct total wages edr, fig.height=8}
+aw.pct.tw.edr.plot <- ggplot(ag.total.wages.edr, aes(periodyear, aw.pct.tw, color = edr)) +
+    geom_smooth(se = FALSE, size = 2) +
+  facet_wrap(~planning.region, ncol = 2) +
+    geom_point_interactive(size = 3, aes(data_id = aw.pct.tw, tooltip = paste(edr, "\nYear: ", periodyear, "\nAg-related wages: ", dollar(ag.wages), "\nTotal wages: ", dollar(total.wages), "\nAg wages as a percent of total wages: ", percent(aw.pct.tw), sep = ""))) +
+    labs(x="", y = "", color="", title = "Ag-related wages earned as a % of total wages")+
+    scale_y_continuous(labels=scales::percent)+
+    scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+    theme_line+
+    scale_color_manual(values= color.edr,
+                       guide = guide_legend(ncol = 3)) +
+    theme(legend.position = "bottom",
+          text = element_text(size = 12),
+          axis.text.x = element_text(size = 8),
+          legend.text = element_text(size = 8))
+  
+girafe( ggobj = aw.pct.tw.edr.plot, height_svg = 8) %>%
   girafe_options(opts_selection(type = "none"),
                  opts_toolbar(saveaspng = FALSE) ,
                  opts_sizing(rescale = FALSE))
