@@ -1,0 +1,235 @@
+---
+title: "Farm employment"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 3
+runtime: shiny
+resource_files:
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.cpg
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.dbf
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.prj
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.sbn
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.sbx
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.shp.xml
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.shx
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(sf)
+library(ggrepel)
+library(scales)
+library(shiny)
+library(shinycssloaders)
+library(ggiraph)
+library(kableExtra)
+library(rmapshaper)
+library(cowplot)
+library(DT)
+```
+
+```{r loading jon docs and shapefiles}
+theme_bar <- theme_bw() +
+  theme(panel.grid.major = element_line(color = "grey70", size = 0.1),
+        panel.grid.minor = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text = element_text(face = "bold"),
+        panel.border = element_blank(),
+        legend.background = element_rect(fill = "transparent", color = "transparent"),
+        legend.key = element_rect(fill = "transparent"),
+        legend.title = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+theme_line <- theme_bw() +
+  theme(legend.background = element_rect(fill = "transparent", color = "transparent"),
+        legend.key = element_rect(fill = "transparent"),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(color = "grey70", size = 0.1),
+        axis.ticks = element_blank(),
+        axis.text = element_text(face = "bold"),
+        panel.border = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+theme_sf <- theme_bw() +
+  theme(axis.text.x=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks=element_blank(),
+        panel.background = element_blank(),
+        panel.grid.major = element_line(color = "white"),
+        panel.border = element_blank(),
+        plot.title = element_text(hjust = 0.5),
+        legend.title = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+counties.regions <- read_csv("Data/Join docs/county_regions.csv") %>%
+  mutate(countyfp = formatC(countyfp, width = 3, flag = "0"),
+         Name = str_to_title(Name),
+         Name = str_replace(Name, "Q", "q"),
+         Name = str_replace(Name, "Of The", "of the"),
+         Dem_Desc = ifelse(Name == "Minnesota", "Minnesota", Dem_Desc),
+         planning.region = str_replace(planning.region, " Minnesota", ""),
+         edr = str_replace(edr, "  ", " "),
+         Dem_Desc = fct_relevel(Dem_Desc, "Entirely rural", "Town/rural mix", "Urban/town/rural mix", "Entirely urban"),
+         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"),
+         edr = fct_relevel(edr, "EDR 1 - Northwest", "EDR 2 - Headwaters", "EDR 3 - Arrowhead", "EDR 4 - West Central", "EDR 5 - North Central", "EDR 6E- Southwest Central", "EDR 6W- Upper Minnesota Valley", "EDR 7E- East Central", "EDR 7W- Central", "EDR 8 - Southwest", "EDR 9 - South Central", "EDR 10 - Southeast", "EDR 11 - 7 County Twin Cities", "Minnesota"))
+
+color.ruca <- c("Entirely rural" = "#5CA81F", "Town/rural mix" = "#C7EF99", "Urban/town/rural mix" = "#d8b365", "Entirely urban" = "#a6611a", "Minnesota" = "black")
+
+color.pr <- c("Northwest" = "#810f7c","Northeast" = "#fe9929", "Central" = "#076324", "Seven County Mpls-St Paul" = "#d8b365", "Southwest" = "#1f78b4", "Southeast" = "#d7301f", "Minnesota" = "black")
+
+color.edr <- c("EDR 1 - Northwest" = "#b3cde3", "EDR 2 - Headwaters" = "#8c96c6", "EDR 3 - Arrowhead" = "#fe9929", "EDR 4 - West Central" = "#8856a7", "EDR 5 - North Central" = "#810f7c", "EDR 6E- Southwest Central" = "#e5f5f9", "EDR 6W- Upper Minnesota Valley" = "#bdc9e1", "EDR 7E- East Central" = "#99d8c9", "EDR 7W- Central" = "#2ca25f", "EDR 8 - Southwest" = "#74a9cf", "EDR 9 - South Central" = "#0570b0", "EDR 10 - Southeast" = "#d7301f", "EDR 11 - 7 County Twin Cities" = "#d8b365", "Minnesota" = "black")
+
+color.counties <- scale_color_brewer(palette = "Dark2",
+                       guide = guide_legend(ncol = 3))
+
+mn_counties <- st_read("Data/Shapefiles/county shapefiles/MNCounties_MNDOT.shp", quiet = TRUE) %>%
+  ms_simplify(keep = .01, keep_shapes = TRUE)
+```
+
+```{r prep master farm employment objects, include=FALSE, cache=TRUE}
+master.farm.emp.county <- read_csv("Data/Employment/bea-farm-total-employment.csv") %>%
+  drop_na(LineCode) %>%
+  mutate(countyfp = str_sub(GeoFips, 3, 5)) %>%
+  left_join(counties.regions, by = "countyfp") %>%
+  select(23,24,3:22, 25:28) %>%
+  gather(key = "year", value = "employment", 5:22) %>%
+  select(-3) %>%
+  spread(key = Description, value = employment) %>%
+  rename(farm.emp = 8,
+         total.emp = 9) %>%
+  mutate(year = as.integer(year)) %>%
+  filter(Name != "Minnesota")
+
+master.farm.emp.ruca <- master.farm.emp.county %>%
+  group_by(Dem_Desc, year) %>%
+  summarise(farm.emp = sum(farm.emp, na.rm = TRUE),
+            total.emp = sum(total.emp, na.rm = TRUE)) %>%
+  ungroup()
+
+master.farm.emp.pr <- master.farm.emp.county %>%
+  group_by(planning.region, year) %>%
+  summarise(farm.emp = sum(farm.emp, na.rm = TRUE),
+            total.emp = sum(total.emp, na.rm = TRUE)) %>%
+  ungroup()
+
+master.farm.emp.edr <- master.farm.emp.county %>%
+  group_by(edr,planning.region, year) %>%
+  summarise(farm.emp = sum(farm.emp, na.rm = TRUE),
+            total.emp = sum(total.emp, na.rm = TRUE)) %>%
+  ungroup()
+
+```
+
+<br>
+
+# Summary of farm employment
+
+**Definition of farm employment**: Farm employment is the number of workers engaged in the direct production of agricultural commodities, either livestock or crops; whether as a sole proprietor, partner, or hired laborer. 
+
+<br>
+
+# Analysis
+
+Overview of analysis here.
+
+<br>
+
+## Change in farm employment vs. total employment {.tabset}
+
+```{r prep farm and total emp index, include=FALSE, cache=TRUE}
+farm.emp.index.ruca <- master.farm.emp.ruca %>%
+  group_by(Dem_Desc) %>%
+  mutate(farm.emp.index = farm.emp / farm.emp[year == 2001],
+         total.emp.index = total.emp / total.emp[year == 2001]) %>%
+  ungroup()
+
+farm.emp.index.pr <- master.farm.emp.pr %>%
+  group_by(planning.region) %>%
+  mutate(farm.emp.index = farm.emp / farm.emp[year == 2001],
+         total.emp.index = total.emp / total.emp[year == 2001]) %>%
+  ungroup()
+
+farm.emp.index.edr <- master.farm.emp.edr %>%
+  group_by(edr, planning.region) %>%
+  mutate(farm.emp.index = farm.emp / farm.emp[year == 2001],
+         total.emp.index = total.emp / total.emp[year == 2001]) %>%
+  ungroup()
+
+```
+
+
+Analysis here
+
+<br>
+
+### RUCA
+
+Farm employment has been decreasing all across the state, and at similar rates. The crop commodity boom staved off the decreases, indicated by the pleateur between 2008 and 2012, but has since decreased through 2018. In 2018 farm employment levels were between 70% and 76% of their 2001 levels.
+
+The non-entirely rural county groups had the opposite pattern in their total employment numbers. Growth plateued, or even decreased, during the Great Recession/crop commodity boom, and has since increased through 2018. A majority of the growth has occured in entirely urban areas while lesser in more rural counties. 
+
+On the other hand, the total employment in our entirely rural county group has been on a slow, steady decline. By 2018, the total employed was 95% of their 2001 levels. This is likely do to demographic shifts and less people in the workforce.
+
+It might be challenging to tease out if any of these decreases occured because of the decline in farm employment.
+
+<br>
+```{r charts farm and total emp index ruca, fig.width=8}
+farm.emp.index.ruca.plot <- ggplot(farm.emp.index.ruca, aes(year, farm.emp.index, color = Dem_Desc)) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 3, aes(data_id = farm.emp.index, tooltip = paste(Dem_Desc, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nFarm employment as % of 2001 levels: ", percent(farm.emp.index), "\nTotal employment: ", comma(total.emp), "\nTotal employment as a % of 2001 levels: ", percent(total.emp.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Farm employment as a % of 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.65, 1.3, .1)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.ruca,
+                     guide = guide_legend(ncol = 4)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10))
+
+total.emp.index.ruca.plot <- ggplot(farm.emp.index.ruca, aes(year, total.emp.index, color = Dem_Desc)) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 3, aes(data_id = total.emp.index, tooltip = paste(Dem_Desc, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nFarm employment as % of 2001 levels: ", percent(farm.emp.index), "\nTotal employment: ", comma(total.emp), "\nTotal employment as a % of 2001 levels: ", percent(total.emp.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Farm employment as a % of 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  coord_cartesian(ylim = seq(.65, 1.3, .1)) +
+  theme_line+
+  scale_color_manual(values= color.ruca,
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10))
+
+farm.emp.index.ruca.legend <- get_legend(farm.emp.index.ruca.plot + theme(legend.box.margin = margin(0,0,0,0)))
+
+farm.emp.index.ruca.legend.bottom <- plot_grid(NULL, farm.emp.index.ruca.legend, NULL, ncol = 3, rel_widths = c(0,1,2))
+
+girafe( ggobj =  plot_grid(farm.emp.index.ruca.plot+theme(legend.position = "none"), total.emp.index.ruca.plot + theme(legend.position = "none"), NULL, farm.emp.index.ruca.legend.bottom, ncol = 2, rel_heights = c(1,.1)), width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+```
+
+### Planning Region
+
+Analysis here
+
+<br>
+
+### EDR
+
+Analysis here
+
+<br>
+

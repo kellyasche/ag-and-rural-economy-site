@@ -11,3 +11,9 @@ navbar:
           href: farm-earnings.html
         - text: "Ag wages"
           href: ag-wages.html
+    - text: "Farm and agriculture employment"
+      menu:
+        - text: "Farm employment"
+          href: farm-employment.html
+        - text: "Ag employment"
+          href: ag-employment.html
