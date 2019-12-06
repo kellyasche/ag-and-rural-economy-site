@@ -112,9 +112,47 @@ ag.ind.wages.edr <- read_csv("Data/Earnings/Master-ag-related-ind-wages-edr.csv"
 
 # Summary
 
-Summary will go here.
+The analysis below highlights the fact that wages earned from ag-related industries play a relatively minor role in most regions across the state. A large majority of counties experiencing a decline in ag-related wages did not translate into lower total wages earned. For these counties, it potentially means a couple of things;
 
-Checking out a test here.
+* ag-related wages didn't contribute a significant amount to the total wages earned in the county; or,
+* declines in ag-related wages were made up by increases in wages in other industries.
+
+However, there were three EDRs where wages from ag-related industry contributed 10% or more to total wages in the region at some point between 2001 and 2018. Those EDRs were;
+
+* EDR 6W - Upper MN Valley,
+* EDR 8 - Southwest, and 
+* EDR 9 - South Central. 
+
+When we filter down even further we find that within those EDRs there are 14 counties where 10% of their total wages originated from ag-related industries at some point since 2003. Those 14 counties are;
+
+**6W - Upper MN Valley**
+
+* Swift
+* Lac qui Parle
+
+**8 - Southwest**
+
+* Cottonwood
+* Lyon
+* Murray
+* Pipestone
+* Redwood
+* Rock
+
+**9 - South Central**
+
+* Brown
+* Faribault
+* Le Sueur
+* Martin
+* Sibley
+* Watonwan
+
+When examining those 14 counties in more detail, a large majority of the counties have not had their total wages impacted by ag-related industries. There is plenty of fluctuation in the trends of wages earned in ag-related industries, both up and down. However, these bumps and valleys rarely show up in the total wages earned charts.
+
+There are a few counties that definitely seem to be impacted positively from ag-related industries. Both **Sibley** and **Watonwan** County have experienced significant growth in their wages from ag-related industries while also experiencing significant total wage growth. By 2018, wages from ag-related industries made up 38% of total wages in Sibley, 34% in Watowan.
+
+On the flip side, there is one county that clearly seems to be impacted negatively by downturns in the ag-related industries. **Lac qui Parle** seems the most impacted in state. By 2018, wages earned in ag-related industries have dropped to 66% of what they were in 2003 and fell from making up 20% of the total wages in the region to 6%. In addition, their growth in total wages has stagnated since 2011.  
 
 <br>
 
@@ -139,7 +177,7 @@ This analysis examines the impact wages earned in ag-related industries impacts 
 
 **Change in ag-related wages vs. total wages**: We will examine the trends in ag-related wages and identify any regions whose total wages shows similar trends. This would mean that ag-related wages an out sized impact on the total wages for the region.
 
-**Ag-related wages as a % of total wages**: It’s unknown whether ag-related wages as a percentage of total wages increased during the crop commodity boom and similarly decreased. We want to see if this actually occured and, if so, which regions seem to have the most significant percentages.
+**Ag-related wages as a % of total wages**: It’s unknown whether ag-related wages as a percentage of total wages increased during the crop commodity boom and similarly decreased. We want to see if this actually occurred and, if so, which regions seem to have the most significant percentages.
 
 **Peak ag wages vs. peak total wages**: If an increase in ag-related wages appears during the crop commodity boom and is followed by a decrease in the subsequent years, we will want to compare the peak year of these wages with the peak year of total wages. However, the economy has been growing across the state despite the Ag economy downturn. Regions that aren’t heavily reliant on Ag should see their total wages continue to grow, thus their peak year should be the most recent data year - 2018. In cases where ag-related wages play a larger role, we would expect to see their total wages peak between 2010 - 2013. We want to begin identifying those counties.
 
@@ -151,7 +189,7 @@ This analysis examines the impact wages earned in ag-related industries impacts 
 
 The charts below provide the change in ag-related wages and total wages by indexing the values to their 2001 levels. The trend to look for is how the fluctuations in wages earned from ag-related industries “appear” in the total wages from all industries chart. If total wages show a similar trend to ag-related wages, it’s likely that ag-related wages has a significant influence in that region’s economy.
 
-The overall trend is that the most consistent growth in wages occured in town/rural mix, urban/town/rural mix, and entirely urban counties. Regionally, Northwest, Central and Southewest Minnesota experienced growth in ag-related industries that surpassed growth in total wages from all industries.
+The overall trend is that the most consistent growth in wages occurred in town/rural mix, urban/town/rural mix, and entirely urban counties. Regionally, Northwest, Central and Southwest Minnesota experienced growth in ag-related industries that surpassed growth in total wages from all industries.
 
 In particular, EDRs 7W - Central, 6E - Southwest Central, 4 - West Central, 5 - North Central, and 9 - South Central all experienced growth in ag-related wages higher than total growth of all wages in their regions.
 
@@ -202,13 +240,13 @@ ag.total.wages.edr <- ag.ind.wages.edr %>%
 
 ### RUCA
 
-There are two distinct patterns here that are dependent on the type of RUCA group. The entirely rural group and, to lesser extent, the town/rural county group saw some rather big decreases in ag wages in the early 2000's, a recovery betweene 2006 and 2015 (during the crop commodity boom), and a subsequent downturn since then. The other county groups, entirely urban, urban/town/rural mix, and the town/rural mix have experienced significant growth in ag-related wages. In fact, total wages earned in ag-related industries has grown by nearly 200% while total wages has grown by about 175%. 
+There are two distinct patterns here that are dependent on the type of RUCA group. The entirely rural group and, to lesser extent, the town/rural county group saw some rather big decreases in ag wages in the early 2000's, a recovery between 2006 and 2015 (during the crop commodity boom), and a subsequent downturn since then. The other county groups, entirely urban, urban/town/rural mix, and the town/rural mix have experienced significant growth in ag-related wages. In fact, total wages earned in ag-related industries has grown by nearly 200% while total wages has grown by about 175%. 
 
 One other interesting element concerning the ag-related wages is that most of the growth occurred during the Great Recession. 
 
 One last interesting nuance is the slight downturn in ag-related wages earned over the last few years in the entirely urban county group.
 
-There isn't a lot of evidence that ag-related wages has impacted total wages in any of the RUCA groups. As expected, total wages plateaud during the Great Recession and has experienced growth since 2012. The entirely rural RUCA group does seem to be lagging behind a bit in total wage growth compared to the other regions. 
+There isn't a lot of evidence that ag-related wages has impacted total wages in any of the RUCA groups. As expected, total wages plateaued during the Great Recession and has experienced growth since 2012. The entirely rural RUCA group does seem to be lagging behind a bit in total wage growth compared to the other regions. 
 
 <br>
 
@@ -311,7 +349,7 @@ Ag-related wages across EDRs highlights similar trends to the RUCA and Planning 
 
 EDR 8 - Southwest and EDR 6W - Upper MN Valley all experienced declines in their growth in ag-related wages.
 
-Total wages from all industries expereinced the same trends as the other regional breakdowns - steady growth with a plateau during the Great REcession. The ag-related wages seem to have little impact on the trends of the total wages from all industries.
+Total wages from all industries experienced the same trends as the other regional breakdowns - steady growth with a plateau during the Great Recession. The ag-related wages seem to have little impact on the trends of the total wages from all industries.
 
 <br>
 
@@ -588,7 +626,7 @@ aw.earned.peak.select.edrs <- aw.earned.peak %>%
 
 ```{r map pct point change in ag wages since peak, fig.width=8}
 aw.earned.peak.select.edrs.plot <- ggplot(aw.earned.peak.select.edrs) +
-    geom_sf_interactive(aes(fill = change.aw.peak.2018.bins, tooltip = paste(areaname, "\nPeak year of ag wages earned: ", periodyear, "\nAg wages as % of total wages during peak year: ", percent(aw.pct.tw.peak), "\nAg wages as % of total wages in 2018: ", percent(aw.pct.tw.2018), "\nPercent change in ag wages since peak year: ", percent(change.aw.peak.2018), sep = ""), data_id = areaname)) +
+    geom_sf_interactive(aes(fill = change.aw.peak.2018.bins, tooltip = paste(areaname, "\nPeak year of ag wages earned: ", periodyear, "\nAg wages as % of total wages during peak year: ", percent(aw.pct.tw.peak), "\nAg wages as % of total wages in 2018: ", percent(aw.pct.tw.2018), "\nPercent change in ag wages since peak year: ", percent(change.aw.peak.2018), sep = ""), data_id = areaname, geometry = geometry)) +
     scale_fill_manual(values = c("#a50f15", "#de2d26", "#fb6a4a", "#fcae91", "grey"))+
     theme_sf+
     labs(title="Change in ag wages since the peak year in\nselect EDRs") +
@@ -601,15 +639,167 @@ girafe( ggobj = aw.earned.peak.select.edrs.plot, width_svg = 6) %>%
 
 ```
 
-## Counties most disrupted by ag-related wages
+<br>
 
-There are only a couple of counties that have been potentially been disrupted by the decline of ag-related wages; Lac qui Parle, Faribault, and Waseca. The other counties experiencing a decline in ag-related wages did not translate into lower overall wages. For these counties, it potentially means a couple of things;
+## Counties most disrupted by ag-related wages{.tabset}
 
-* ag-related wages didn't contribute a significant amount to the total wages earned in the county; or,
-* declines in ag-related wages were made up by increases in wages in other industries.
+The previous sections highlighted the fact that wages from ag-related industries play a relatively minor role in most regions across the state. Southwest Minnesota was the only planning region that consistently show up in previous charts showing a rather significant portion of their total wages originating from ag-related industries. Therefore, we are going to focus on counties in that region where total wages earned originating from ag-related industries were 10% or higher at some point between 2001 and 2018.
+
+**6W - Upper MN Valley**
+
+* Swift
+* Lac qui Parle
+
+**8 - Southwest**
+
+* Cottonwood
+* Lyon
+* Murray
+* Pipestone
+* Redwood
+* Rock
+
+**9 - South Central**
+
+* Brown
+* Faribault
+* Le Sueur
+* Martin
+* Sibley
+* Watonwan
+
+The charts below provide the ag-related wages and total wages indexed to 2003 levels to see if any of the trends match across the charts. This will help us identify which counties are most impacted by ag-related industries.
+
+Overall, a large majority of the counties have not had their total wages impacted by ag-related industries. There is plenty of fluctuation in the trends of wages earned in ag-related industries, both up and down. However, these bumps and valleys rarely show up in the total wages earned charts.
+
+There are a few counties that definitely seem to be impacted positively from ag-related industries. Both Sibley and Watonwan County have experienced significant growth in their wages from ag-related industries while also experiencing significant total wage growth. By 2018, wages from ag-related industries made up 38% of total wages in Sibley, 34% in Watowan.
+
+On the flip side, there is one county that clearly seems to be impacted negatively by downturns in the ag-related industries. Lac qui Parle seems the most impacted in state. By 2018, wages earned in ag-related industries have dropped to 66% of what they were in 2003 and fell from making up 20% of the total wages in the region to 6%. In addition, their growth in total wages has stagnated since 2011.  
+
+
+
 
 <br>
 
-```{r prep ag and total wages index of three impacted counties, include=FALSE, cache=TRUE}
+### EDR 6W - Upper MN Valley
 
+The impact from the drop in ag-related wages earned in Lac qui Parle may have impacted the total wages as total wages in general have plateaued around the same time that wages in ag-related industries tanked. 
+
+On the other hand, the drop in ag related wages in Swift County has not impacted the total wage growth at all since growth continued despite the drop in ag-related wages earned. 
+ 
+
+<br>
+
+```{r prep ag wage trends for counties with highest percentage, include=FALSE, cache=TRUE}
+aw.sig.counties.match <- ag.ind.wages.county %>%
+  filter(planning.region == "Southwest Minnesota") %>%
+  group_by(periodyear, areaname, countyfp, edr) %>%
+  summarise(ag.wages = sum(wages[naicstitle != "Total, All Industries"], na.rm = TRUE),
+            total.wages = sum(wages[naicstitle == "Total, All Industries"], na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(aw.pct.tw = ag.wages / total.wages) %>%
+  filter(aw.pct.tw > .099999) %>%
+  distinct(areaname, countyfp)
+
+aw.tw.index <- ag.ind.wages.county %>%
+  group_by(periodyear, areaname, countyfp, edr) %>%
+  summarise(ag.wages = sum(wages[naicstitle != "Total, All Industries"], na.rm = TRUE),
+            total.wages = sum(wages[naicstitle == "Total, All Industries"], na.rm = TRUE)) %>%
+  ungroup() %>%
+  right_join(aw.sig.counties.match, by = c("countyfp", "areaname")) %>%
+  filter(periodyear > 2002) %>%
+  group_by(areaname, countyfp) %>%
+  mutate(ag.wages.index = ag.wages / ag.wages[periodyear == 2003],
+         total.wages.index = total.wages / total.wages[periodyear == 2003]) %>%
+  ungroup() %>%
+  mutate(aw.pct.tw = ag.wages / total.wages) %>%
+  gather(key = "wage.type", value = "index", 7:8) %>%
+  mutate(wage.type = str_replace(wage.type, "ag.wages.index", "Ag wages index"),
+         wage.type = str_replace(wage.type, "total.wages.index", "Total wages index")) %>%
+  group_by(wage.type) %>%
+  mutate(data_id = seq(periodyear))
+
+```
+
+```{r charts aw tw index of edr 6w, fig.width=8}
+aw.tw.6w.index.plot <- ggplot(filter(aw.tw.index, edr == "EDR  6W- Upper Minnesota Valley"), aes(periodyear, index, color = areaname)) +
+    geom_smooth(se = FALSE, size = 2) +
+  geom_hline(yintercept = 1, color = "black") +
+  facet_wrap(~wage.type, ncol = 2, scales = "free_y") +
+    geom_point_interactive(size = 3, aes(data_id = data_id, tooltip = paste(areaname, "\nYear: ", periodyear, "\nWages earned from ag industries: ", dollar(ag.wages), "\nWages as percent of 2003 levels: ", percent(index), "\nAg wages as a % of total wages: ", percent(aw.pct.tw), sep = ""))) +
+    labs(x="", y = "", color="", title = "EDR 6W - Wages earned from ag-related industries as a percent of 2003 levels")+
+    scale_y_continuous(labels=scales::percent)+
+    scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+    theme_line+
+    scale_color_discrete(guide = guide_legend(ncol = 3)) +
+    theme(legend.position = "bottom",
+          text = element_text(size = 12),
+          axis.text.x = element_text(size = 10))
+
+girafe( ggobj = aw.tw.6w.index.plot, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+```
+
+### EDR  8 - Southwest
+
+EDR 8 really highlights how little wages from ag-related industries impacts total wages. Rock County has seen it's wages earned from ag-related industries skyrocket over 500% by 2006, making up 12% of total wages in the county. Since then, it has fluctuated around that percentage all the way until 2018. By 2018, ag-related wages are 596% what they were in 2003, yet only make up 8% of the total wages in the county. 
+
+Many of the counties follow this similar pattern. There are some small drops and big increases but nothing that really seems to appear in the trends of total wages.
+
+<br>
+
+```{r charts aw tw index of edr 6, fig.width=8}
+aw.tw.8.index.plot <- ggplot(filter(aw.tw.index, edr == "EDR  8 - Southwest"), aes(periodyear, index, color = areaname)) +
+    geom_smooth(se = FALSE, size = 2) +
+  geom_hline(yintercept = 1, color = "black") +
+  facet_wrap(~wage.type, ncol = 2, scales = "free_y") +
+    geom_point_interactive(size = 3, aes(data_id = data_id, tooltip = paste(areaname, "\nYear: ", periodyear, "\nWages earned from ag industries: ", dollar(ag.wages), "\nWages as percent of 2003 levels: ", percent(index), "\nAg wages as a % of total wages: ", percent(aw.pct.tw), sep = ""))) +
+    labs(x="", y = "", color="", title = "EDR 8 - Wages earned from ag-related industries as a percent of 2003 levels")+
+    scale_y_continuous(labels=scales::percent)+
+    scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+    theme_line+
+    scale_color_discrete(guide = guide_legend(ncol = 3)) +
+    theme(legend.position = "bottom",
+          text = element_text(size = 12),
+          axis.text.x = element_text(size = 10))
+
+girafe( ggobj = aw.tw.8.index.plot, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+```
+
+### EDR  9 - South Central
+
+There are a few counties here where wages earned from ag-related industries likely impacts the total wages of the county.
+
+Sibley is very likely to have experienced it's total wage growth because of the growth in ag-related wages. By 2018, wages earned in ag-related industries grew by 510% since 2003 and made up 38% of the total wages in the county. Total wages for Sibley grew by 179%.
+
+Another County similar to Sibley is Watonwan where they have experienced consistent growth in the wages earned from ag-related industries and their total wages have grown considerably as well. Currently, wages from ag-related industries comprises 34% of the total wages earned.
+
+There is an outlier data point for Faribault that is throwing off the numbers there and not sure what they is due to. 
+
+<br>
+
+```{r charts aw tw index of edr 9, fig.width=8}
+aw.tw.9.index.plot <- ggplot(filter(aw.tw.index, edr == "EDR  9 - South Central"), aes(periodyear, index, color = areaname)) +
+    geom_smooth(se = FALSE, size = 2) +
+  geom_hline(yintercept = 1, color = "black") +
+  facet_wrap(~wage.type, ncol = 2, scales = "free_y") +
+    geom_point_interactive(size = 3, aes(data_id = data_id, tooltip = paste(areaname, "\nYear: ", periodyear, "\nWages earned from ag industries: ", dollar(ag.wages), "\nWages as percent of 2003 levels: ", percent(index), "\nAg wages as a % of total wages: ", percent(aw.pct.tw), sep = ""))) +
+    labs(x="", y = "", color="", title = "EDR 9 - Wages earned from ag-related industries as a percent of 2003 levels")+
+    scale_y_continuous(labels=scales::percent)+
+    scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+    theme_line+
+    scale_color_discrete(guide = guide_legend(ncol = 3)) +
+    theme(legend.position = "bottom",
+          text = element_text(size = 12),
+          axis.text.x = element_text(size = 10))
+
+girafe( ggobj = aw.tw.9.index.plot, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
 ```
