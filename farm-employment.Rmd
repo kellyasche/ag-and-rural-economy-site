@@ -106,27 +106,38 @@ master.farm.emp.county <- read_csv("Data/Employment/bea-farm-total-employment.cs
   spread(key = Description, value = employment) %>%
   rename(farm.emp = 8,
          total.emp = 9) %>%
-  mutate(year = as.integer(year)) %>%
+  mutate(year = as.integer(year),
+         Dem_Desc = fct_relevel(Dem_Desc, "Entirely rural", "Town/rural mix", "Urban/town/rural mix", "Entirely urban"),
+         planning.region = str_replace(planning.region, " Minnesota", ""),
+         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"),
+         edr = str_replace(edr, "  ", " "),
+         edr = fct_relevel(edr, "EDR 1 - Northwest", "EDR 2 - Headwaters", "EDR 3 - Arrowhead", "EDR 4 - West Central", "EDR 5 - North Central", "EDR 6E- Southwest Central", "EDR 6W- Upper Minnesota Valley", "EDR 7E- East Central", "EDR 7W- Central", "EDR 8 - Southwest", "EDR 9 - South Central", "EDR 10 - Southeast", "EDR 11 - 7 County Twin Cities", "Minnesota")) %>%
   filter(Name != "Minnesota")
 
 master.farm.emp.ruca <- master.farm.emp.county %>%
   group_by(Dem_Desc, year) %>%
   summarise(farm.emp = sum(farm.emp, na.rm = TRUE),
             total.emp = sum(total.emp, na.rm = TRUE)) %>%
-  ungroup()
+  ungroup() %>%
+  mutate(Dem_Desc = fct_relevel(Dem_Desc, "Entirely rural", "Town/rural mix", "Urban/town/rural mix", "Entirely urban"))
 
 master.farm.emp.pr <- master.farm.emp.county %>%
   group_by(planning.region, year) %>%
   summarise(farm.emp = sum(farm.emp, na.rm = TRUE),
             total.emp = sum(total.emp, na.rm = TRUE)) %>%
-  ungroup()
+  ungroup() %>%
+  mutate(planning.region = str_replace(planning.region, " Minnesota", ""),
+         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"))
 
 master.farm.emp.edr <- master.farm.emp.county %>%
   group_by(edr,planning.region, year) %>%
   summarise(farm.emp = sum(farm.emp, na.rm = TRUE),
             total.emp = sum(total.emp, na.rm = TRUE)) %>%
-  ungroup()
-
+  ungroup() %>%
+  mutate(planning.region = str_replace(planning.region, " Minnesota", ""),
+         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"),
+         edr = str_replace(edr, "  ", " "),
+         edr = fct_relevel(edr, "EDR 1 - Northwest", "EDR 2 - Headwaters", "EDR 3 - Arrowhead", "EDR 4 - West Central", "EDR 5 - North Central", "EDR 6E- Southwest Central", "EDR 6W- Upper Minnesota Valley", "EDR 7E- East Central", "EDR 7W- Central", "EDR 8 - Southwest", "EDR 9 - South Central", "EDR 10 - Southeast", "EDR 11 - 7 County Twin Cities", "Minnesota"))
 ```
 
 <br>
@@ -139,11 +150,23 @@ master.farm.emp.edr <- master.farm.emp.county %>%
 
 # Analysis
 
-Overview of analysis here.
+
 
 <br>
 
 ## Change in farm employment vs. total employment {.tabset}
+
+The charts below provide the change in farm employment and total employment by indexing the values to their 2001 levels. The trend to look for is how the fluctuations in farm employment “appear” in the total employment chart. If a regions employment is impacted by the farm economy, then we should see corresponding "bumps" or trends in the total employment charts that mimic the farm employment charts.
+
+Overall, every region across Minnesota has experienced significant declines in farm employment. In addition, total employment decreases are occurring in our most rural areas of the state. However, it's a bit difficult to know if the decreases in farm and total employment are related since our most rural areas are also experiencing demographic and population shifts resulting in less people in the overall labor force.
+
+The regions that may have areas most impacted by farm employment are located in the Norwest, Central, and Southwest regions of the state. Within those, the EDRs that should be looked at in more detail are;
+
+* EDR 1 - Northwest
+* EDR 7E - East Central
+* EDR 6E - Southwest Central
+* EDR 6W - Upper Minnesota Valley
+* EDR 8 - Southwest
 
 ```{r prep farm and total emp index, include=FALSE, cache=TRUE}
 farm.emp.index.ruca <- master.farm.emp.ruca %>%
@@ -167,8 +190,6 @@ farm.emp.index.edr <- master.farm.emp.edr %>%
 ```
 
 
-Analysis here
-
 <br>
 
 ### RUCA
@@ -182,6 +203,7 @@ On the other hand, the total employment in our entirely rural county group has b
 It might be challenging to tease out if any of these decreases occured because of the decline in farm employment.
 
 <br>
+
 ```{r charts farm and total emp index ruca, fig.width=8}
 farm.emp.index.ruca.plot <- ggplot(farm.emp.index.ruca, aes(year, farm.emp.index, color = Dem_Desc)) +
   geom_smooth(se = FALSE, size = 2) +
@@ -201,7 +223,7 @@ total.emp.index.ruca.plot <- ggplot(farm.emp.index.ruca, aes(year, total.emp.ind
   geom_smooth(se = FALSE, size = 2) +
   geom_hline(yintercept = 1, color = "black") +
   geom_point_interactive(size = 3, aes(data_id = total.emp.index, tooltip = paste(Dem_Desc, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nFarm employment as % of 2001 levels: ", percent(farm.emp.index), "\nTotal employment: ", comma(total.emp), "\nTotal employment as a % of 2001 levels: ", percent(total.emp.index), sep = ""))) +
-  labs(x="", y = "", color="", title = "Farm employment as a % of 2001 levels")+
+  labs(x="", y = "", color="", title = "Total employment as a % of 2001 levels")+
   scale_y_continuous(labels=scales::percent)+
   scale_x_continuous(breaks = seq(1900, 2050, 2)) +
   coord_cartesian(ylim = seq(.65, 1.3, .1)) +
@@ -223,13 +245,272 @@ girafe( ggobj =  plot_grid(farm.emp.index.ruca.plot+theme(legend.position = "non
 
 ### Planning Region
 
-Analysis here
+Similar to the RUCA county groups, farm employment has been on a steady decline since plateuing during the Great Recession. Southwest, Southeast, Central and Northwest planning regions have all had very similar levels of decrease in farm employment.
+
+Total employment in all regions has increase between 1% and 17% since 2001 across Minnesota. Southwest has experienced barely any increases at all since 2001.
 
 <br>
+
+```{r charts farm and total emp index pr, fig.width=8}
+farm.emp.index.pr.plot <- ggplot(farm.emp.index.pr, aes(year, farm.emp.index, color = planning.region)) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 3, aes(data_id = farm.emp.index, tooltip = paste(planning.region, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nFarm employment as % of 2001 levels: ", percent(farm.emp.index), "\nTotal employment: ", comma(total.emp), "\nTotal employment as a % of 2001 levels: ", percent(total.emp.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Farm employment as a % of 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.6, 1.3, .1)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.pr,
+                     guide = guide_legend(ncol = 4)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10))
+
+total.emp.index.pr.plot <- ggplot(farm.emp.index.pr, aes(year, total.emp.index, color = planning.region)) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 3, aes(data_id = total.emp.index, tooltip = paste(planning.region, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nFarm employment as % of 2001 levels: ", percent(farm.emp.index), "\nTotal employment: ", comma(total.emp), "\nTotal employment as a % of 2001 levels: ", percent(total.emp.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Total employment as a % of 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  coord_cartesian(ylim = seq(.6, 1.3, .1)) +
+  theme_line+
+  scale_color_manual(values= color.pr,
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10))
+
+farm.emp.index.pr.legend <- get_legend(farm.emp.index.pr.plot + theme(legend.box.margin = margin(0,0,0,0)))
+
+farm.emp.index.pr.legend.bottom <- plot_grid(NULL, farm.emp.index.pr.legend, NULL, ncol = 3, rel_widths = c(0,1,2))
+
+girafe( ggobj =  plot_grid(farm.emp.index.pr.plot+theme(legend.position = "none"), total.emp.index.pr.plot + theme(legend.position = "none"), NULL, farm.emp.index.pr.legend.bottom, ncol = 2, rel_heights = c(1,.1)), width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+```
 
 ### EDR
 
-Analysis here
+In the charts below, we are looking for EDRs that have experienced significant declines in farm employment (which is basically all EDRs), and has experienced limited or no growth in their total employment. There are a few EDRs that are worth looking at in more detail as we move forward in this analysis.
+
+In the Northwest region, EDR 1 - Northwest has 68% of 2001 farm employment levels by 2018. In addition, their overall total employment has not increased and are currently at 99% of their 2001 levels.
+
+In the Central region, both EDR 7E - East Central and EDR 6E - Southwest Central, have experienced significant declines in farm employment as well as limited growth in total employment. In 2018, EDR 7E had 6% more employment compared to 2001 and EDR 6E had 4% more.
+
+In the Southwest region, all the EDRs are worth taking a closer look at, but especially 6W - Upper Minnesota Valley and EDR 8 - Southwest where their total employment is 93% and 99% of their 2001 levels, respectively.
 
 <br>
+
+```{r charts farm and total emp index edr, fig.height=12}
+farm.emp.index.edr.plot <- ggplot(farm.emp.index.edr, aes(year, farm.emp.index, color = edr)) +
+  facet_wrap(~planning.region, ncol = 1) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 3, aes(data_id = farm.emp.index, tooltip = paste(edr, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nFarm employment as % of 2001 levels: ", percent(farm.emp.index), "\nTotal employment: ", comma(total.emp), "\nTotal employment as a % of 2001 levels: ", percent(total.emp.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Farm employment as a % of 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.6, 1.3, .1)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.edr,
+                     guide = guide_legend(ncol = 4)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        axis.text.x = element_text(size = 6),
+        plot.title = element_text(size = 10),
+        legend.text = element_text(size = 6))
+
+total.emp.index.edr.plot <- ggplot(farm.emp.index.edr, aes(year, total.emp.index, color = edr)) +
+  facet_wrap(~planning.region, ncol = 1) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 3, aes(data_id = total.emp.index, tooltip = paste(edr, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nFarm employment as % of 2001 levels: ", percent(farm.emp.index), "\nTotal employment: ", comma(total.emp), "\nTotal employment as a % of 2001 levels: ", percent(total.emp.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Total employment as a % of 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  coord_cartesian(ylim = seq(.6, 1.3, .1)) +
+  theme_line+
+  scale_color_manual(values= color.edr,
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        axis.text.x = element_text(size = 6),
+        plot.title = element_text(size = 10))
+
+farm.emp.index.edr.legend <- get_legend(farm.emp.index.edr.plot + theme(legend.box.margin = margin(0,0,0,0)))
+
+farm.emp.index.edr.legend.bottom <- plot_grid(NULL, farm.emp.index.edr.legend, NULL, ncol = 3, rel_widths = c(0,1,2))
+
+girafe( ggobj =  plot_grid(farm.emp.index.edr.plot+theme(legend.position = "none"), total.emp.index.edr.plot + theme(legend.position = "none"), NULL, farm.emp.index.edr.legend.bottom, ncol = 2, rel_heights = c(1,.1)), height_svg = 10) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+```
+
+<br>
+
+## Farm employment as a % of total employment {.tabset}
+
+The charts below provide farm employment as a percentage of total employment each year. The trend to see here is how much that percentage has changed over time.
+
+The percentage of employment in farming has decreased across the state since 2001. The largest decreases have occurred in regions with the highest percentage of employment in farming. 
+
+Not surprisingly, the most significant contributions of farm employment to total employment are found in the Northwest and Southwest regions of the state. In particular, EDR 1 - Northwest, EDR 6W - Upper Minnesota Valley, and EDR 8 - Southwest have 10% or more of their employment in farming. All of these EDRs have experienced drops in their employment from farming of 3 to 5 percentage points since 2001.
+
+We will most likely be looking at counties in those three regions moving forward.
+
+<br>
+
+```{r prep farm emp as % of total emp, include=FALSE, cache=TRUE}
+farm.pct.total.emp.ruca <- master.farm.emp.ruca  %>%
+  mutate(farm.pct.total.emp = farm.emp / total.emp)
+
+farm.pct.total.emp.pr <- master.farm.emp.pr %>%
+  mutate(farm.pct.total.emp = farm.emp / total.emp)
+
+farm.pct.total.emp.edr <- master.farm.emp.edr %>%
+  mutate(farm.pct.total.emp = farm.emp / total.emp)
+
+```
+
+### RUCA
+
+Not surprisingly, our entirely rural counties have the highest percentage of total employment in farming. However, it's definitely been decreasing since 2001, especially after the farm commodity boom from 2008 - 2012. Since 2001, farm employment has dropped from 18% of total employment to 13.5%. 
+
+All other county groups have 6% or less of their employment in farming as of 2018.
+
+<br>
+
+```{r charts farm pct total emp ruca}
+farm.pct.total.emp.ruca.plot <- ggplot(farm.pct.total.emp.ruca, aes(year, farm.pct.total.emp, color = Dem_Desc)) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_point_interactive(size = 3, aes(data_id = farm.pct.total.emp, tooltip = paste(Dem_Desc, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nTotal employment: ", comma(total.emp), "\nFarm employment as % of total employment: ", percent(farm.pct.total.emp), sep = ""))) +
+  labs(x="", y = "", color="", title = "Farm employment as a % of total employment")+
+  scale_y_continuous(labels=scales::percent)+
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.ruca,
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom")
+
+girafe(ggobj = farm.pct.total.emp.ruca.plot, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+### Planning Region
+
+The Southwest and Northwest are the only regions where farm employment contributes any sort of significance to total employment. By 2018, both regions had about 7.5% of their employment in farming.
+
+<br>
+
+```{r charts farm pct total emp pr}
+farm.pct.total.emp.pr.plot <- ggplot(farm.pct.total.emp.pr, aes(year, farm.pct.total.emp, color = planning.region)) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_point_interactive(size = 3, aes(data_id = farm.pct.total.emp, tooltip = paste(planning.region, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nTotal employment: ", comma(total.emp), "\nFarm employment as % of total employment: ", percent(farm.pct.total.emp), sep = ""))) +
+  labs(x="", y = "", color="", title = "Farm employment as a % of total employment")+
+  scale_y_continuous(labels=scales::percent)+
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.pr,
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom")
+
+girafe(ggobj = farm.pct.total.emp.pr.plot, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+### EDR
+
+The EDRs with the highest percentage of employment from farming are EDR 1 - Northwest, EDR 6w - Minnesota River Valley, and EDR 8 - southwest. All of these regions have 10% or more of their employment coming from farming.
+
+<br>
+
+```{r charts farm pct total emp edr, fig.height=8}
+farm.pct.total.emp.edr.plot <- ggplot(farm.pct.total.emp.edr, aes(year, farm.pct.total.emp, color = edr)) +
+  facet_wrap(~planning.region, ncol = 2) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_point_interactive(size = 3, aes(data_id = farm.pct.total.emp, tooltip = paste(edr, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nTotal employment: ", comma(total.emp), "\nFarm employment as % of total employment: ", percent(farm.pct.total.emp), sep = ""))) +
+  labs(x="", y = "", color="", title = "Farm employment as a % of total employment")+
+  scale_y_continuous(labels=scales::percent)+
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.edr,
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        axis.text.x = element_text(size = 8),
+        text = element_text(size = 12),
+        legend.text = element_text(size = 8))
+
+girafe(ggobj = farm.pct.total.emp.edr.plot, height_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+<br>
+
+## Counties - peak year of total employment vs. percentage of employment in farming
+
+The following maps provide the year in which total employment peaked and the percentage of employment that is in farming in 2018. Since we expect employment to increase every year, most counties should have 2018 as their peak year in employment. For those that don't, we want to see whether they also have a higher percentage of their employment in farming, particularly in the Northwest and Southwest regions of the state.
+
+The maps highlight an overall trend that counties where employment has peaked in the last few years (black) typically do not have a high percentage of their employment in farming (lighter green). The seven county metro, across Central Minnesota along the I-94 corridown and a few areas where large metropolitan areas are present such as Rochester, Mankato, Duluth, and Bemidji all have had their highest employment numbers in the last few years.
+
+On the other hand, some of the counties where employment peaked before 2015 are in counties with 10% or more of their total employment in farming. Counties such as Marshall, Norman, Traverse, and Lincoln all have 20% of more of their employment in farming and have had total employment peak before 2010.
+
+<br>
+
+```{r prep peak year of total employment and % of employment in farming in 2018, include=FALSE, cache=TRUE}
+
+total.emp.peak.year.county <- master.farm.emp.county %>%
+  group_by(countyfp, Name) %>%
+  top_n(n = 1, wt = total.emp) %>%
+  ungroup() %>%
+  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE")) %>%
+  mutate(year.bins = cut(year,
+                         breaks = c(2000, 2005, 2010, 2015, 2020),
+                         labels = c("2000-2005", "2006-2010", "2011-2015", "2016-2018" )))
+
+farm.pct.total.emp.2018.county <- master.farm.emp.county %>%
+  filter(year == 2018) %>%
+  mutate(farm.pct.total.emp = farm.emp / total.emp) %>%
+  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE")) %>%
+  mutate(farm.pct.total.emp.bins = cut(farm.pct.total.emp,
+                                       breaks = c(0, .05, .10, .15, .2, .3),
+                                       labels = c("Less than 5%", "5%-10%", "10%-15%", "15%-20%", "More than 20%")))
+
+```
+
+```{r charts peak year of total employment and % of employment in farming in 2018, fig.width=8}
+
+total.emp.peak.year.county.plot <- ggplot(total.emp.peak.year.county) +
+  geom_sf_interactive(aes(fill = year.bins, tooltip = paste(Name, "\nYear of peak total employment: ", year, "\nTotal employment: ", comma(total.emp), sep = ""), data_id = Name, geometry = geometry)) +
+  scale_fill_manual(values = c("#cb181d", "#fb6a4a", "#fcae91", "black"),
+                    guide = guide_legend(nrow = 2))+
+  theme_sf+
+  labs(title="Year that total employment peaked") +
+  theme(text = element_text(size = 10),
+        legend.position = "bottom")
+
+farm.pct.total.emp.2018.county.plot <- ggplot(farm.pct.total.emp.2018.county) +
+  geom_sf_interactive(aes(fill = farm.pct.total.emp.bins, tooltip = paste(Name, "\nFarm employment in 2018: ", comma(farm.emp), "\nTotal employment in 2018: ", comma(total.emp), "\nFarm employment as % of total employment: ", percent(farm.pct.total.emp), sep = ""), data_id = Name, geometry = geometry)) +
+  scale_fill_manual(values = c("#E7F5D9", "#C7EF99", "#90E033", "#5CA81F", "#076324"))+
+  theme_sf+
+  labs(title="Farm employment as % of total employment in 2018") +
+  theme(text = element_text(size = 10),
+        legend.position = "bottom")
+
+girafe(ggobj = plot_grid(total.emp.peak.year.county.plot, farm.pct.total.emp.2018.county.plot), width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
 

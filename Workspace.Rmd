@@ -96,4 +96,161 @@ mn_counties <- st_read("Data/Shapefiles/county shapefiles/MNCounties_MNDOT.shp",
   ms_simplify(keep = .01, keep_shapes = TRUE)
 ```
 
+```{r prep master farm employment objects, include=FALSE, cache=TRUE}
+master.farm.emp.county <- read_csv("Data/Employment/bea-farm-total-employment.csv") %>%
+  drop_na(LineCode) %>%
+  mutate(countyfp = str_sub(GeoFips, 3, 5)) %>%
+  left_join(counties.regions, by = "countyfp") %>%
+  select(23,24,3:22, 25:28) %>%
+  gather(key = "year", value = "employment", 5:22) %>%
+  select(-3) %>%
+  spread(key = Description, value = employment) %>%
+  rename(farm.emp = 8,
+         total.emp = 9) %>%
+  mutate(year = as.integer(year),
+         Dem_Desc = fct_relevel(Dem_Desc, "Entirely rural", "Town/rural mix", "Urban/town/rural mix", "Entirely urban"),
+         planning.region = str_replace(planning.region, " Minnesota", ""),
+         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"),
+         edr = str_replace(edr, "  ", " "),
+         edr = fct_relevel(edr, "EDR 1 - Northwest", "EDR 2 - Headwaters", "EDR 3 - Arrowhead", "EDR 4 - West Central", "EDR 5 - North Central", "EDR 6E- Southwest Central", "EDR 6W- Upper Minnesota Valley", "EDR 7E- East Central", "EDR 7W- Central", "EDR 8 - Southwest", "EDR 9 - South Central", "EDR 10 - Southeast", "EDR 11 - 7 County Twin Cities", "Minnesota")) %>%
+  filter(Name != "Minnesota")
+
+master.farm.emp.ruca <- master.farm.emp.county %>%
+  group_by(Dem_Desc, year) %>%
+  summarise(farm.emp = sum(farm.emp, na.rm = TRUE),
+            total.emp = sum(total.emp, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(Dem_Desc = fct_relevel(Dem_Desc, "Entirely rural", "Town/rural mix", "Urban/town/rural mix", "Entirely urban"))
+
+master.farm.emp.pr <- master.farm.emp.county %>%
+  group_by(planning.region, year) %>%
+  summarise(farm.emp = sum(farm.emp, na.rm = TRUE),
+            total.emp = sum(total.emp, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(planning.region = str_replace(planning.region, " Minnesota", ""),
+         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"))
+
+master.farm.emp.edr <- master.farm.emp.county %>%
+  group_by(edr,planning.region, year) %>%
+  summarise(farm.emp = sum(farm.emp, na.rm = TRUE),
+            total.emp = sum(total.emp, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(planning.region = str_replace(planning.region, " Minnesota", ""),
+         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"),
+         edr = str_replace(edr, "  ", " "),
+         edr = fct_relevel(edr, "EDR 1 - Northwest", "EDR 2 - Headwaters", "EDR 3 - Arrowhead", "EDR 4 - West Central", "EDR 5 - North Central", "EDR 6E- Southwest Central", "EDR 6W- Upper Minnesota Valley", "EDR 7E- East Central", "EDR 7W- Central", "EDR 8 - Southwest", "EDR 9 - South Central", "EDR 10 - Southeast", "EDR 11 - 7 County Twin Cities", "Minnesota"))
+```
+
+```{r prep farm and total emp index, include=FALSE, cache=TRUE}
+farm.emp.index.ruca <- master.farm.emp.ruca %>%
+  group_by(Dem_Desc) %>%
+  mutate(farm.emp.index = farm.emp / farm.emp[year == 2001],
+         total.emp.index = total.emp / total.emp[year == 2001]) %>%
+  ungroup()
+
+farm.emp.index.pr <- master.farm.emp.pr %>%
+  group_by(planning.region) %>%
+  mutate(farm.emp.index = farm.emp / farm.emp[year == 2001],
+         total.emp.index = total.emp / total.emp[year == 2001]) %>%
+  ungroup()
+
+farm.emp.index.edr <- master.farm.emp.edr %>%
+  group_by(edr, planning.region) %>%
+  mutate(farm.emp.index = farm.emp / farm.emp[year == 2001],
+         total.emp.index = total.emp / total.emp[year == 2001]) %>%
+  ungroup()
+
+```
+
+
+```{r prep farm emp as % of total emp, include=FALSE, cache=TRUE}
+farm.pct.total.emp.ruca <- master.farm.emp.ruca  %>%
+  mutate(farm.pct.total.emp = farm.emp / total.emp)
+
+farm.pct.total.emp.pr <- master.farm.emp.pr %>%
+  mutate(farm.pct.total.emp = farm.emp / total.emp)
+
+farm.pct.total.emp.edr <- master.farm.emp.edr %>%
+  mutate(farm.pct.total.emp = farm.emp / total.emp)
+
+```
+
+```{r prep peak year of total employment and % of employment in farming in 2018, include=FALSE, cache=TRUE}
+
+total.emp.peak.year.county <- master.farm.emp.county %>%
+  group_by(countyfp, Name) %>%
+  top_n(n = 1, wt = total.emp) %>%
+  ungroup() %>%
+  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE")) %>%
+  mutate(year.bins = cut(year,
+                         breaks = c(2000, 2005, 2010, 2015, 2020),
+                         labels = c("2000-2005", "2006-2010", "2011-2015", "2016-2018" )))
+
+farm.pct.total.emp.2018.county <- master.farm.emp.county %>%
+  filter(year == 2018) %>%
+  mutate(farm.pct.total.emp = farm.emp / total.emp) %>%
+  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE")) %>%
+  mutate(farm.pct.total.emp.bins = cut(farm.pct.total.emp,
+                                       breaks = c(0, .05, .10, .15, .2, .3),
+                                       labels = c("Less than 5%", "5%-10%", "10%-15%", "15%-20%", "More than 20%")))
+
+```
+
+<br>
+
+## Counties most disrupted by declines in farm employment
+
+The previous sections have provided the following guidance on identifying which counties have been possibly impacted by declines in farm employment;
+
+* are located in the Northwest, Central, or Southwest planning regions;
+* have 10% or more of their employment in farming; and
+* have had their employment peak before 2016.
+
+<br>
+
+```{r farm and total employment index in most disrupted counties, include=FALSE, cache=TRUE}
+
+disrupted.counties <- master.farm.emp.county %>%
+  mutate(farm.pct.total.emp = farm.emp / total.emp) %>%
+  left_join(total.emp.peak.year.county[,c(1,7)], by = "countyfp") %>%
+  rename(total.emp.peak.year = 11) %>%
+  filter(planning.region %in% c("Northwest", "Central", "Southwest"),
+         total.emp.peak.year < 2016,
+         farm.pct.total.emp > .1) %>%
+  distinct(countyfp)
+
+farm.total.emp.disrupted.counties <- master.farm.emp.county %>%
+  right_join(disrupted.counties, by = "countyfp") %>%
+  group_by(countyfp, Name) %>%
+  mutate(farm.emp.index = farm.emp / farm.emp[year == 2001],
+         total.emp.index = total.emp / total.emp[year == 2001]) %>%
+  ungroup()
+
+```
+
+```{r charts farm and total employment index in most disrupted counties, fig.height=10}
+
+farm.emp.disrupted.counties.plot <- ggplot(farm.total.emp.disrupted.counties, aes(year, farm.emp.index, color = Name)) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_point_interactive(size = 3, aes(data_id = farm.pct.total.emp, tooltip = paste(Dem_Desc, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nTotal employment: ", comma(total.emp), "\nFarm employment as % of total employment: ", percent(farm.pct.total.emp), sep = ""))) +
+  labs(x="", y = "", color="", title = "Farm employment as a % of total employment")+
+  scale_y_continuous(labels=scales::percent)+
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.ruca,
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom")
+
+girafe(ggobj = farm.pct.total.emp.ruca.plot, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+
+```
+
+
+
+
+
 
