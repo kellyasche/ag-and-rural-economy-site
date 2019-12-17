@@ -146,9 +146,62 @@ master.farm.emp.edr <- master.farm.emp.county %>%
 
 **Definition of farm employment**: Farm employment is the number of workers engaged in the direct production of agricultural commodities, either livestock or crops; whether as a sole proprietor, partner, or hired laborer. 
 
+Overall, farm employment has been decreasing in every region across the state since 2001. The crop commodity boom slowed the decline between 2008 and 2012, however the declines have continued since that period. 
+
+Overall, farm employment makes up a small percentage of total employment across most of the state. Even in our most rural counties, farm employment averages 15% of total employment. 
+
+In addition, identifying any declines in total employment related to declines in farm employment are difficult to identify due to an overall shrinking workforce in rural areas. However, an examination of the data provided the following guidance on identifying which counties have been possibly impacted by declines in farm employment;
+
+* are located in the Northwest, Central, or Southwest planning regions;
+* have 10% or more of their employment in farming; and
+* have had their employment peak before 2016.
+
+These thresholds provided us with 23 counties. After examining the trends in these counties, 14 counties were identified as possibly being impacted by the decline in farm employment.
+
+Those counties are;
+
+* Norman
+* Marshall
+* Mahnoman
+* Wilkin
+* Grant
+* Renville
+* Swift
+* Yellow Medicine
+* Big Stone
+* Lac qui Parle
+* Lincoln
+* Cottonwood
+* Redwood
+* Faribault
+
+This table provides the change in farm and total employment from 2001 to 2018 as well as the percentage that total employment is comprised of farm employment in 2018. This can provide a bit more information on the counties.
+
+<br>
+
+```{r table of most disuprted counties summary}
+table.disrupted.counties.summary <- read_csv("Data/Employment/farm-emp-table-for-site-summary.csv")
+
+datatable(table.disrupted.counties.summary, class = "cell-border stripe", filter = "top", rownames = FALSE,
+          options = list(scrollX = TRUE)) %>%
+  formatPercentage(5:7)
+
+```
+
+
 <br>
 
 # Analysis
+
+This analysis examines the impact farm employment has on total employment across Minnesota. We do this through the following sections;
+
+**Change in farm employment vs. total employment since 2001**: We will examine the trends in farm employment and identify any regions whose total employment shows similar trends. This would mean that farm employment has an out sized impact on the total employment for the region.
+
+**Farm employment as a % of total employment**: If there are trends in farm employment that are concerning, it is likely going to have the most impact in counties with a higher percentage of their total employment in farming. We will seek to identify those regions.
+
+**Counties - Peak year of total employment vs. percentage of employment in farming**: Attempting to find relationships and conclusions about employment in rural Minnesota is tricky because demographic shifts resulting in retirements can look similar to declines in farm employment. We will examine counties that are currently experiencing declines in their total employment and see if these counties also have a higher percentage of their employment in farming.
+
+**Counties most disrupted by farm employment**: Through the above analysis, we should begin to get the main characteristics of a county where farm employment is having a larger impact on total employment - the most likely planning region and EDRs the counties are located in, as well as some measurements and thresholds of their farm and total employment. This section will seek to identify those exact counties.
 
 
 
@@ -782,5 +835,5 @@ farm.total.emp.index.dis.counties.table <- farm.total.emp.index.dis.counties %>%
 datatable(farm.total.emp.index.dis.counties.table, class = "cell-border stripe", filter = "top", rownames = FALSE,
           options = list(scrollX = TRUE)) %>%
   formatPercentage(5:7)
-
+```
 

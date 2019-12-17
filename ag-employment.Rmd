@@ -1,0 +1,359 @@
+---
+title: "Ag employment"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 4
+runtime: shiny
+resource_files:
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.cpg
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.dbf
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.prj
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.sbn
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.sbx
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.shp.xml
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.shx
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(sf)
+library(ggrepel)
+library(scales)
+library(shiny)
+library(shinycssloaders)
+library(ggiraph)
+library(kableExtra)
+library(rmapshaper)
+library(cowplot)
+library(DT)
+```
+
+```{r loading jon docs and shapefiles}
+theme_bar <- theme_bw() +
+  theme(panel.grid.major = element_line(color = "grey70", size = 0.1),
+        panel.grid.minor = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text = element_text(face = "bold"),
+        panel.border = element_blank(),
+        legend.background = element_rect(fill = "transparent", color = "transparent"),
+        legend.key = element_rect(fill = "transparent"),
+        legend.title = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+theme_line <- theme_bw() +
+  theme(legend.background = element_rect(fill = "transparent", color = "transparent"),
+        legend.key = element_rect(fill = "transparent"),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(color = "grey70", size = 0.1),
+        axis.ticks = element_blank(),
+        axis.text = element_text(face = "bold"),
+        panel.border = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+theme_sf <- theme_bw() +
+  theme(axis.text.x=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks=element_blank(),
+        panel.background = element_blank(),
+        panel.grid.major = element_line(color = "white"),
+        panel.border = element_blank(),
+        plot.title = element_text(hjust = 0.5),
+        legend.title = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+counties.regions <- read_csv("Data/Join docs/county_regions.csv") %>%
+  mutate(countyfp = formatC(countyfp, width = 3, flag = "0"),
+         Name = str_to_title(Name),
+         Name = str_replace(Name, "Q", "q"),
+         Name = str_replace(Name, "Of The", "of the"),
+         Dem_Desc = ifelse(Name == "Minnesota", "Minnesota", Dem_Desc))
+
+color.ruca <- c("Entirely rural" = "#5CA81F", "Town/rural mix" = "#C7EF99", "Urban/town/rural mix" = "#d8b365", "Entirely urban" = "#a6611a", "Minnesota" = "black")
+
+color.pr <- c("Northwest" = "#810f7c","Northeast" = "#fe9929", "Central" = "#076324", "Seven County Mpls-St Paul" = "#d8b365", "Southwest" = "#1f78b4", "Southeast" = "#d7301f", "Minnesota" = "black")
+
+color.edr <- c("EDR 1 - Northwest" = "#b3cde3", "EDR 2 - Headwaters" = "#8c96c6", "EDR 3 - Arrowhead" = "#fe9929", "EDR 4 - West Central" = "#8856a7", "EDR 5 - North Central" = "#810f7c", "EDR 6E- Southwest Central" = "#e5f5f9", "EDR 6W- Upper Minnesota Valley" = "#bdc9e1", "EDR 7E- East Central" = "#99d8c9", "EDR 7W- Central" = "#2ca25f", "EDR 8 - Southwest" = "#74a9cf", "EDR 9 - South Central" = "#0570b0", "EDR 10 - Southeast" = "#d7301f", "EDR 11 - 7 County Twin Cities" = "#d8b365", "Minnesota" = "black")
+
+color.counties <- scale_color_brewer(palette = "Dark2",
+                       guide = guide_legend(ncol = 3))
+
+mn_counties <- st_read("Data/Shapefiles/county shapefiles/MNCounties_MNDOT.shp", quiet = TRUE) %>%
+  ms_simplify(keep = .01, keep_shapes = TRUE)
+```
+
+```{r prep master ag employment objects, include=FALSE, cache=TRUE}
+master.ag.emp.county <- read_csv("Data/Employment/Master-agrelated-emp-county.csv")
+
+master.ag.emp.comb.county <- master.ag.emp.county %>%
+  group_by(periodyear, Name, countyfp, Dem_Desc, edr, planning.region) %>%
+  summarise(ag.emp = sum(emp[naicstitle != "Total, All Industries"]),
+            total.emp = sum(emp[naicstitle == "Total, All Industries"])) %>%
+  ungroup()
+
+master.ag.emp.ruca <- read_csv("Data/Employment/Master-agrelated-emp-ruca.csv") %>%
+  mutate(Dem_Desc = fct_relevel(Dem_Desc, "Entirely rural", "Town/rural mix", "Urban/town/rural mix", "Entirely urban"))
+
+master.ag.emp.comb.ruca <- master.ag.emp.ruca %>%
+  group_by(periodyear, Dem_Desc) %>%
+  summarise(ag.emp = sum(emp[naicstitle != "Total, All Industries"]),
+            total.emp = sum(emp[naicstitle == "Total, All Industries"])) %>%
+  ungroup()
+
+master.ag.emp.pr <- read_csv("Data/Employment/Master-agrelated-emp-pr.csv") %>%
+  mutate(planning.region = str_replace(planning.region, ", MN", ""),
+         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"))
+
+master.ag.emp.comb.pr <- master.ag.emp.pr %>%
+  group_by(periodyear, planning.region) %>%
+  summarise(ag.emp = sum(emp[naicstitle != "Total, All Industries"]),
+            total.emp = sum(emp[naicstitle == "Total, All Industries"])) %>%
+  ungroup()
+
+
+master.ag.emp.edr <- read_csv("Data/Employment/Master-agrelated-emp-edr.csv") %>%
+  mutate(planning.region = str_replace(planning.region, ", MN", ""),
+         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"),
+         edr = fct_relevel(edr, "EDR 1 - Northwest", "EDR 2 - Headwaters", "EDR 3 - Arrowhead", "EDR 4 - West Central", "EDR 5 - North Central", "EDR 6E- Southwest Central", "EDR 6W- Upper Minnesota Valley", "EDR 7E- East Central", "EDR 7W- Central", "EDR 8 - Southwest", "EDR 9 - South Central", "EDR 10 - Southeast", "EDR 11 - 7 County Twin Cities", "Minnesota"))
+
+master.ag.emp.comb.edr <- master.ag.emp.edr %>%
+  group_by(periodyear, edr, planning.region) %>%
+  summarise(ag.emp = sum(emp[naicstitle != "Total, All Industries"]),
+            total.emp = sum(emp[naicstitle == "Total, All Industries"])) %>%
+  ungroup()
+
+
+```
+
+<br>
+
+# Summary of employment in ag-related industries
+
+**Definition of ag-related industries**: This analysis cobbles together various NAICS codes that are directly related to "ag-related employment". This includes the following industries;
+
+```{r ag-related industry list}
+agrelated.ind.list <- read_csv("Data/Earnings/Master-ag-related-ind-wages-pr.csv") %>%
+  distinct(naicstitle) %>%
+  rename(`Ag-related NAICS categories` = 1)
+
+kable(agrelated.ind.list, format = "html", align = "c") %>%
+    kable_styling(bootstrap_options = "striped") %>%
+    column_spec(1, width = "10em")
+
+```
+
+[Summary here]
+
+
+<br>
+
+# Analysis
+
+[Description here]
+
+## Change in ag employment vs. total employment {.tabset}
+
+The charts below provide the change in farm employment and total employment by indexing the values to their 2001 levels. The trend to look for is how the fluctuations in farm employment “appear” in the total employment chart. If a regions employment is impacted by the farm economy, then we should see corresponding “bumps” or trends in the total employment charts that mimic the farm employment charts.
+
+Overall, every region across Minnesota has experienced significant declines in farm employment. In addition, total employment decreases are occurring in our most rural areas of the state. However, it’s a bit difficult to know if the decreases in farm and total employment are related since our most rural areas are also experiencing demographic and population shifts resulting in less people in the overall labor force.
+
+The regions that may have areas most impacted by farm employment are located in the Northwest, Central, and Southwest regions of the state. Within those, the EDRs that should be looked at in more detail are;
+
+<br>
+
+```{r prep ag and total emp index, include=FALSE, cache=TRUE}
+ag.emp.index.ruca <- master.ag.emp.comb.ruca %>%
+  mutate(ag.emp.index = ag.emp / ag.emp[periodyear==2001],
+         total.emp.index = total.emp / total.emp[periodyear==2001],
+         ag.pct.total.emp = ag.emp / total.emp) %>%
+  ungroup()
+  
+ag.emp.index.pr <- master.ag.emp.comb.pr %>%
+  mutate(ag.emp.index = ag.emp / ag.emp[periodyear==2001],
+         total.emp.index = total.emp / total.emp[periodyear==2001],
+         ag.pct.total.emp = ag.emp / total.emp) %>%
+  ungroup()
+
+ag.emp.index.edr <- master.ag.emp.comb.edr %>%
+  mutate(ag.emp.index = ag.emp / ag.emp[periodyear==2001],
+         total.emp.index = total.emp / total.emp[periodyear==2001],
+         ag.pct.total.emp = ag.emp / total.emp) %>%
+  ungroup()
+
+```
+
+### RUCA
+
+Overall, employment in ag-related industries grew during the crop commodity boom between 2008 and 2012 across all county groups, although never recovering to 2001 levels in entirely rural counties. The large variation from year to year for this county group might be due to low employment levels, making small changes show high percentages. Employment levels are less than 2,000 people in these industries in this county group. We will find out in the next chart below which will provide the percentage of total employment is in ag-related industries for this county group.
+
+Other RUCA county groups have experienced modest growth in these industries, with 2018 employment numbers being between 1% and 16% of 2001 levels. The town/rural county group in particular has seen a lot of employment growth in these industries.
+
+Total employment follows a trend which would be expected during a period of the Great Recession. Employment dropped during that timeframe and then has been slowly recorvering since 2012. However, the recovery has been slow in our entirely rural counties.  
+
+In addition, none of the total employment trendlines seem to match the trendlines of ag employment, meaning there just might not be much impact here.
+
+<br>
+
+```{r charts ag and total emp index ruca, fig.width=8}
+ag.emp.index.ruca.plot <- ggplot(ag.emp.index.ruca, aes(periodyear, ag.emp.index, color = Dem_Desc)) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_point_interactive(size = 2, aes(data_id = ag.emp.index, tooltip = paste(Dem_Desc, "\nYear: ", periodyear, "\nAg employment: ", comma(ag.emp), "\nTotal employment: ", comma(total.emp), "\nAg employment as % of total employment: ", percent(ag.pct.total.emp), "\nPercent change in ag employment since 2001: ", percent(ag.emp.index), "\nPercent change in total employment since 2001: ", percent(total.emp.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Ag employment as a % of 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.55, 1.15, .1)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.ruca,
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10),
+        legend.text = element_text(size = 10))
+
+total.emp.index.ruca.plot <- ggplot(ag.emp.index.ruca, aes(periodyear, total.emp.index, color = Dem_Desc)) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_point_interactive(size = 2, aes(data_id = ag.emp.index, tooltip = paste(Dem_Desc, "\nYear: ", periodyear, "\nAg employment: ", comma(ag.emp), "\nTotal employment: ", comma(total.emp), "\nAg employment as % of total employment: ", percent(ag.pct.total.emp), "\nPercent change in ag employment since 2001: ", percent(ag.emp.index), "\nPercent change in total employment since 2001: ", percent(total.emp.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Total employment as a % of 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.55, 1.15, .1)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.ruca,
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10))
+
+ag.emp.index.ruca.legend <- get_legend(ag.emp.index.ruca.plot + theme(legend.box.margin = margin(0,0,0,0)))
+
+ag.emp.index.ruca.legend.bottom <- plot_grid(NULL, ag.emp.index.ruca.legend, NULL, ncol = 3, rel_widths = c(0,.5,3))
+
+girafe( ggobj =  plot_grid(ag.emp.index.ruca.plot+theme(legend.position = "none"), total.emp.index.ruca.plot + theme(legend.position = "none"), NULL, ag.emp.index.ruca.legend.bottom, ncol = 2, rel_heights = c(1,.1)), width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+
+### Planning Region
+
+The Northeast region is a bit of an outlier here. Employment in ag-related industries is only a few hundred employees, therefore small changes have a big impact on percentages. In fact, employment in ag-related industires only make up .5% of total employment in that region. 
+
+All other regions outside of the seven county metro are experiencing increases in these industries. In particular, the Northwest and Central regions have experience 28% and 26% employment growth in these industries since 2001, respectively.And there is little evidence that the Great Recession had any impact on these industries. In fact, they seemed to grow a bit during that time frame.
+
+As expected, total employment follows a pattern that's been impacted by the Great Recession, with a drop between 2008 and 2012, and increases following that time. It's difficult to say if there are any similarities between these trendlines and the ag-related employment trendlines.
+
+<br>
+
+```{r charts ag and total emp index pr, fig.width=8}
+
+ag.emp.index.pr.plot <- ggplot(ag.emp.index.pr, aes(periodyear, ag.emp.index, color = planning.region)) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_point_interactive(size = 2, aes(data_id = ag.emp.index, tooltip = paste(planning.region, "\nYear: ", periodyear, "\nAg employment: ", comma(ag.emp), "\nTotal employment: ", comma(total.emp), "\nAg employment as % of total employment: ", percent(ag.pct.total.emp), "\nPercent change in ag employment since 2001: ", percent(ag.emp.index), "\nPercent change in total employment since 2001: ", percent(total.emp.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Ag employment as a % of 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.25, 1.35, .1)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.pr,
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10),
+        legend.text = element_text(size = 10))
+
+
+total.emp.index.pr.plot <- ggplot(ag.emp.index.pr, aes(periodyear, total.emp.index, color = planning.region)) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_point_interactive(size = 2, aes(data_id = ag.emp.index, tooltip = paste(planning.region, "\nYear: ", periodyear, "\nAg employment: ", comma(ag.emp), "\nTotal employment: ", comma(total.emp), "\nAg employment as % of total employment: ", percent(ag.pct.total.emp), "\nPercent change in ag employment since 2001: ", percent(ag.emp.index), "\nPercent change in total employment since 2001: ", percent(total.emp.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Total employment as a % of 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.25, 1.35, .1)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.pr,
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10))
+
+ag.emp.index.pr.legend <- get_legend(ag.emp.index.pr.plot + theme(legend.box.margin = margin(0,0,0,0)))
+
+ag.emp.index.pr.legend.bottom <- plot_grid(NULL, ag.emp.index.pr.legend, NULL, ncol = 3, rel_widths = c(0,.5,3))
+
+girafe( ggobj =  plot_grid(ag.emp.index.pr.plot+theme(legend.position = "none"), total.emp.index.pr.plot + theme(legend.position = "none"), NULL, ag.emp.index.pr.legend.bottom, ncol = 2, rel_heights = c(1,.1)), width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+
+### EDR
+
+Analysis
+
+<br>
+
+```{r charts ag and total emp index edr, fig.height=10}
+
+ag.emp.index.edr.plot <- ggplot(ag.emp.index.edr, aes(periodyear, ag.emp.index, color = edr)) +
+  geom_hline(yintercept = 1, color = "black") +
+  facet_wrap(~planning.region, ncol = 1) +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_point_interactive(size = 2, aes(data_id = ag.emp.index, tooltip = paste(edr, "\nYear: ", periodyear, "\nAg employment: ", comma(ag.emp), "\nTotal employment: ", comma(total.emp), "\nAg employment as % of total employment: ", percent(ag.pct.total.emp), "\nPercent change in ag employment since 2001: ", percent(ag.emp.index), "\nPercent change in total employment since 2001: ", percent(total.emp.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Ag employment as a % of 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.7, 1.35, .1)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.edr,
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10),
+        legend.text = element_text(size = 6),
+        axis.text.x = element_text(size = 6))
+
+
+total.emp.index.edr.plot <- ggplot(ag.emp.index.edr, aes(periodyear, total.emp.index, color = edr)) +
+  geom_hline(yintercept = 1, color = "black") +
+  facet_wrap(~planning.region, ncol = 1) +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_point_interactive(size = 2, aes(data_id = ag.emp.index, tooltip = paste(edr, "\nYear: ", periodyear, "\nAg employment: ", comma(ag.emp), "\nTotal employment: ", comma(total.emp), "\nAg employment as % of total employment: ", percent(ag.pct.total.emp), "\nPercent change in ag employment since 2001: ", percent(ag.emp.index), "\nPercent change in total employment since 2001: ", percent(total.emp.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Total employment as a % of 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.7, 1.35, .1)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.edr,
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10),
+        axis.text.x = element_text(size = 6))
+
+ag.emp.index.edr.legend <- get_legend(ag.emp.index.edr.plot + theme(legend.box.margin = margin(0,0,0,0)))
+
+ag.emp.index.edr.legend.bottom <- plot_grid(NULL, ag.emp.index.edr.legend, NULL, ncol = 3, rel_widths = c(0,.5,3))
+
+girafe( ggobj =  plot_grid(ag.emp.index.edr.plot+theme(legend.position = "none"), total.emp.index.edr.plot + theme(legend.position = "none"), NULL, ag.emp.index.edr.legend.bottom, ncol = 2, rel_heights = c(1,.1)), height_svg = 9) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
