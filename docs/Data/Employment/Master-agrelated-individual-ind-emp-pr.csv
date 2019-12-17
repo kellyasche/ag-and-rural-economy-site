@@ -1,0 +1,772 @@
+periodyear,naicstitle,areaname,emp.type,emp,agrelated.emp
+2018,Crop Production,Central,empYear,1101,14740
+2018,Animal Production and Aquaculture,Central,empYear,2669,14740
+2018,Support Activities for Crop Production,Central,empYear,245,14740
+2018,Support Activities for Animal Production,Central,empYear,225,14740
+2018,Food Manufacturing,Central,empYear,8584,14740
+2018,Agricultural Implement Manufacturing,Central,empYear,671,14740
+2018,Farm Product Raw Material Merchant Wholesalers,Central,empYear,328,14740
+2018,Farm Supplies Merchant Wholesalers,Central,empYear,917,14740
+2017,Crop Production,Central,empYear,1112,14560
+2017,Animal Production and Aquaculture,Central,empYear,2616,14560
+2017,Support Activities for Crop Production,Central,empYear,237,14560
+2017,Support Activities for Animal Production,Central,empYear,203,14560
+2017,Food Manufacturing,Central,empYear,8460,14560
+2017,Agricultural Implement Manufacturing,Central,empYear,624,14560
+2017,Farm Product Raw Material Merchant Wholesalers,Central,empYear,346,14560
+2017,Farm Supplies Merchant Wholesalers,Central,empYear,962,14560
+2016,Crop Production,Central,empYear,1108,13858
+2016,Animal Production and Aquaculture,Central,empYear,2473,13858
+2016,Support Activities for Crop Production,Central,empYear,246,13858
+2016,Support Activities for Animal Production,Central,empYear,185,13858
+2016,Food Manufacturing,Central,empYear,7754,13858
+2016,Agricultural Implement Manufacturing,Central,empYear,738,13858
+2016,Farm Product Raw Material Merchant Wholesalers,Central,empYear,352,13858
+2016,Farm Supplies Merchant Wholesalers,Central,empYear,1002,13858
+2015,Crop Production,Central,empYear,1075,14028
+2015,Animal Production and Aquaculture,Central,empYear,2737,14028
+2015,Support Activities for Crop Production,Central,empYear,210,14028
+2015,Support Activities for Animal Production,Central,empYear,189,14028
+2015,Food Manufacturing,Central,empYear,7714,14028
+2015,Agricultural Implement Manufacturing,Central,empYear,751,14028
+2015,Farm Product Raw Material Merchant Wholesalers,Central,empYear,369,14028
+2015,Farm Supplies Merchant Wholesalers,Central,empYear,983,14028
+2014,Crop Production,Central,empYear,1034,13855
+2014,Animal Production and Aquaculture,Central,empYear,2735,13855
+2014,Support Activities for Crop Production,Central,empYear,202,13855
+2014,Support Activities for Animal Production,Central,empYear,171,13855
+2014,Food Manufacturing,Central,empYear,7635,13855
+2014,Agricultural Implement Manufacturing,Central,empYear,717,13855
+2014,Farm Product Raw Material Merchant Wholesalers,Central,empYear,395,13855
+2014,Farm Supplies Merchant Wholesalers,Central,empYear,966,13855
+2013,Crop Production,Central,empYear,1095,13670
+2013,Animal Production and Aquaculture,Central,empYear,2727,13670
+2013,Support Activities for Crop Production,Central,empYear,203,13670
+2013,Support Activities for Animal Production,Central,empYear,140,13670
+2013,Food Manufacturing,Central,empYear,7518,13670
+2013,Agricultural Implement Manufacturing,Central,empYear,641,13670
+2013,Farm Product Raw Material Merchant Wholesalers,Central,empYear,384,13670
+2013,Farm Supplies Merchant Wholesalers,Central,empYear,962,13670
+2012,Crop Production,Central,empYear,1105,13207.666666666666
+2012,Animal Production and Aquaculture,Central,empYear,2692,13207.666666666666
+2012,Support Activities for Crop Production,Central,empYear,199,13207.666666666666
+2012,Support Activities for Animal Production,Central,empYear,142.66666666666666,13207.666666666666
+2012,Food Manufacturing,Central,empYear,7181,13207.666666666666
+2012,Agricultural Implement Manufacturing,Central,empYear,614,13207.666666666666
+2012,Farm Product Raw Material Merchant Wholesalers,Central,empYear,366,13207.666666666666
+2012,Farm Supplies Merchant Wholesalers,Central,empYear,908,13207.666666666666
+2011,Crop Production,Central,empYear,1063,12853
+2011,Animal Production and Aquaculture,Central,empYear,2531,12853
+2011,Support Activities for Crop Production,Central,empYear,196,12853
+2011,Support Activities for Animal Production,Central,empYear,127.66666666666667,12853
+2011,Food Manufacturing,Central,empYear,7164,12853
+2011,Agricultural Implement Manufacturing,Central,empYear,532.3333333333334,12853
+2011,Farm Product Raw Material Merchant Wholesalers,Central,empYear,356,12853
+2011,Farm Supplies Merchant Wholesalers,Central,empYear,883,12853
+2010,Crop Production,Central,empYear,1105,12777
+2010,Animal Production and Aquaculture,Central,empYear,2403,12777
+2010,Support Activities for Crop Production,Central,empYear,200,12777
+2010,Support Activities for Animal Production,Central,empYear,126,12777
+2010,Food Manufacturing,Central,empYear,7213,12777
+2010,Agricultural Implement Manufacturing,Central,empYear,458,12777
+2010,Farm Product Raw Material Merchant Wholesalers,Central,empYear,371,12777
+2010,Farm Supplies Merchant Wholesalers,Central,empYear,901,12777
+2009,Crop Production,Central,empYear,1007,12299
+2009,Animal Production and Aquaculture,Central,empYear,2291,12299
+2009,Support Activities for Crop Production,Central,empYear,209,12299
+2009,Food Manufacturing,Central,empYear,7128,12299
+2009,Agricultural Implement Manufacturing,Central,empYear,393,12299
+2009,Farm Product Raw Material Merchant Wholesalers,Central,empYear,372,12299
+2009,Farm Supplies Merchant Wholesalers,Central,empYear,899,12299
+2008,Crop Production,Central,empYear,1071,12784.333333333334
+2008,Animal Production and Aquaculture,Central,empYear,2260,12784.333333333334
+2008,Support Activities for Crop Production,Central,empYear,206.33333333333334,12784.333333333334
+2008,Support Activities for Animal Production,Central,empYear,143,12784.333333333334
+2008,Food Manufacturing,Central,empYear,7454,12784.333333333334
+2008,Agricultural Implement Manufacturing,Central,empYear,352,12784.333333333334
+2008,Farm Product Raw Material Merchant Wholesalers,Central,empYear,393,12784.333333333334
+2008,Farm Supplies Merchant Wholesalers,Central,empYear,905,12784.333333333334
+2007,Crop Production,Central,empYear,1097,12208
+2007,Animal Production and Aquaculture,Central,empYear,2149,12208
+2007,Support Activities for Crop Production,Central,empYear,175,12208
+2007,Food Manufacturing,Central,empYear,7171,12208
+2007,Agricultural Implement Manufacturing,Central,empYear,307,12208
+2007,Farm Product Raw Material Merchant Wholesalers,Central,empYear,397,12208
+2007,Farm Supplies Merchant Wholesalers,Central,empYear,912,12208
+2006,Crop Production,Central,empYear,1073,12194
+2006,Animal Production and Aquaculture,Central,empYear,2108,12194
+2006,Support Activities for Crop Production,Central,empYear,199,12194
+2006,Support Activities for Animal Production,Central,empYear,117,12194
+2006,Food Manufacturing,Central,empYear,7077,12194
+2006,Agricultural Implement Manufacturing,Central,empYear,339,12194
+2006,Farm Product Raw Material Merchant Wholesalers,Central,empYear,416,12194
+2006,Farm Supplies Merchant Wholesalers,Central,empYear,865,12194
+2005,Crop Production,Central,empYear,993,11971
+2005,Animal Production and Aquaculture,Central,empYear,2040,11971
+2005,Support Activities for Crop Production,Central,empYear,277,11971
+2005,Food Manufacturing,Central,empYear,7091,11971
+2005,Agricultural Implement Manufacturing,Central,empYear,343,11971
+2005,Farm Product Raw Material Merchant Wholesalers,Central,empYear,359,11971
+2005,Farm Supplies Merchant Wholesalers,Central,empYear,868,11971
+2004,Crop Production,Central,empYear,999,12015
+2004,Animal Production and Aquaculture,Central,empYear,1982,12015
+2004,Support Activities for Crop Production,Central,empYear,295,12015
+2004,Food Manufacturing,Central,empYear,7118,12015
+2004,Agricultural Implement Manufacturing,Central,empYear,328,12015
+2004,Farm Product Raw Material Merchant Wholesalers,Central,empYear,324,12015
+2004,Farm Supplies Merchant Wholesalers,Central,empYear,969,12015
+2003,Crop Production,Central,empYear,1050,11972
+2003,Animal Production and Aquaculture,Central,empYear,2012,11972
+2003,Support Activities for Crop Production,Central,empYear,247,11972
+2003,Food Manufacturing,Central,empYear,7098,11972
+2003,Agricultural Implement Manufacturing,Central,empYear,327,11972
+2003,Farm Product Raw Material Merchant Wholesalers,Central,empYear,350,11972
+2003,Farm Supplies Merchant Wholesalers,Central,empYear,888,11972
+2002,Crop Production,Central,empYear,1040,11693
+2002,Animal Production and Aquaculture,Central,empYear,2011,11693
+2002,Support Activities for Crop Production,Central,empYear,248,11693
+2002,Food Manufacturing,Central,empYear,6874,11693
+2002,Agricultural Implement Manufacturing,Central,empYear,333,11693
+2002,Farm Product Raw Material Merchant Wholesalers,Central,empYear,362,11693
+2002,Farm Supplies Merchant Wholesalers,Central,empYear,825,11693
+2001,Crop Production,Central,empYear,991,11699
+2001,Animal Production and Aquaculture,Central,empYear,2008,11699
+2001,Support Activities for Crop Production,Central,empYear,246,11699
+2001,Food Manufacturing,Central,empYear,6793,11699
+2001,Agricultural Implement Manufacturing,Central,empYear,494,11699
+2001,Farm Product Raw Material Merchant Wholesalers,Central,empYear,389,11699
+2001,Farm Supplies Merchant Wholesalers,Central,empYear,778,11699
+2018,Crop Production,Northeast,empYear,70,405
+2018,Animal Production and Aquaculture,Northeast,empYear,26,405
+2018,Food Manufacturing,Northeast,empYear,309,405
+2017,Crop Production,Northeast,empYear,71,382
+2017,Animal Production and Aquaculture,Northeast,empYear,32,382
+2017,Food Manufacturing,Northeast,empYear,279,382
+2016,Crop Production,Northeast,empYear,80,378
+2016,Animal Production and Aquaculture,Northeast,empYear,37,378
+2016,Food Manufacturing,Northeast,empYear,261,378
+2015,Crop Production,Northeast,empYear,83,374
+2015,Animal Production and Aquaculture,Northeast,empYear,33,374
+2015,Food Manufacturing,Northeast,empYear,258,374
+2014,Crop Production,Northeast,empYear,77,352
+2014,Animal Production and Aquaculture,Northeast,empYear,27,352
+2014,Food Manufacturing,Northeast,empYear,248,352
+2013,Crop Production,Northeast,empYear,77,420
+2013,Animal Production and Aquaculture,Northeast,empYear,30,420
+2013,Food Manufacturing,Northeast,empYear,313,420
+2012,Crop Production,Northeast,empYear,88,429
+2012,Animal Production and Aquaculture,Northeast,empYear,29,429
+2012,Food Manufacturing,Northeast,empYear,312,429
+2011,Crop Production,Northeast,empYear,105,468
+2011,Animal Production and Aquaculture,Northeast,empYear,27,468
+2011,Support Activities for Animal Production,Northeast,empYear,5,468
+2011,Food Manufacturing,Northeast,empYear,331,468
+2010,Crop Production,Northeast,empYear,94,454.3333333333333
+2010,Animal Production and Aquaculture,Northeast,empYear,24.333333333333332,454.3333333333333
+2010,Support Activities for Crop Production,Northeast,empYear,16,454.3333333333333
+2010,Support Activities for Animal Production,Northeast,empYear,4,454.3333333333333
+2010,Food Manufacturing,Northeast,empYear,309,454.3333333333333
+2010,Farm Supplies Merchant Wholesalers,Northeast,empYear,7,454.3333333333333
+2009,Crop Production,Northeast,empYear,97,461.8333333333333
+2009,Animal Production and Aquaculture,Northeast,empYear,21,461.8333333333333
+2009,Support Activities for Animal Production,Northeast,empYear,7.5,461.8333333333333
+2009,Food Manufacturing,Northeast,empYear,328,461.8333333333333
+2009,Farm Supplies Merchant Wholesalers,Northeast,empYear,8.333333333333334,461.8333333333333
+2008,Crop Production,Northeast,empYear,110,558.6666666666666
+2008,Animal Production and Aquaculture,Northeast,empYear,67.33333333333333,558.6666666666666
+2008,Support Activities for Animal Production,Northeast,empYear,7.666666666666667,558.6666666666666
+2008,Food Manufacturing,Northeast,empYear,344,558.6666666666666
+2008,Farm Product Raw Material Merchant Wholesalers,Northeast,empYear,29.666666666666668,558.6666666666666
+2007,Crop Production,Northeast,empYear,69.5,478
+2007,Support Activities for Animal Production,Northeast,empYear,6.5,478
+2007,Food Manufacturing,Northeast,empYear,352,478
+2007,Farm Product Raw Material Merchant Wholesalers,Northeast,empYear,41,478
+2007,Farm Supplies Merchant Wholesalers,Northeast,empYear,9,478
+2006,Crop Production,Northeast,empYear,123,657.5
+2006,Animal Production and Aquaculture,Northeast,empYear,61,657.5
+2006,Support Activities for Animal Production,Northeast,empYear,7,657.5
+2006,Food Manufacturing,Northeast,empYear,398,657.5
+2006,Farm Product Raw Material Merchant Wholesalers,Northeast,empYear,40.5,657.5
+2006,Farm Supplies Merchant Wholesalers,Northeast,empYear,28,657.5
+2005,Support Activities for Animal Production,Northeast,empYear,6.666666666666667,554.6666666666666
+2005,Food Manufacturing,Northeast,empYear,501,554.6666666666666
+2005,Farm Product Raw Material Merchant Wholesalers,Northeast,empYear,47,554.6666666666666
+2004,Crop Production,Northeast,empYear,117,865
+2004,Support Activities for Crop Production,Northeast,empYear,33,865
+2004,Food Manufacturing,Northeast,empYear,627,865
+2004,Farm Product Raw Material Merchant Wholesalers,Northeast,empYear,54,865
+2004,Farm Supplies Merchant Wholesalers,Northeast,empYear,34,865
+2003,Crop Production,Northeast,empYear,115,819.3333333333334
+2003,Food Manufacturing,Northeast,empYear,674,819.3333333333334
+2003,Farm Supplies Merchant Wholesalers,Northeast,empYear,30.333333333333332,819.3333333333334
+2002,Crop Production,Northeast,empYear,115,862
+2002,Animal Production and Aquaculture,Northeast,empYear,25,862
+2002,Support Activities for Crop Production,Northeast,empYear,49,862
+2002,Food Manufacturing,Northeast,empYear,638,862
+2002,Farm Supplies Merchant Wholesalers,Northeast,empYear,35,862
+2001,Crop Production,Northeast,empYear,111,949.5
+2001,Animal Production and Aquaculture,Northeast,empYear,29.5,949.5
+2001,Food Manufacturing,Northeast,empYear,771,949.5
+2001,Farm Supplies Merchant Wholesalers,Northeast,empYear,38,949.5
+2018,Crop Production,Northwest,empYear,2224,13219
+2018,Animal Production and Aquaculture,Northwest,empYear,2047,13219
+2018,Support Activities for Crop Production,Northwest,empYear,561,13219
+2018,Support Activities for Animal Production,Northwest,empYear,33,13219
+2018,Food Manufacturing,Northwest,empYear,5942,13219
+2018,Agricultural Implement Manufacturing,Northwest,empYear,362,13219
+2018,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,1158,13219
+2018,Farm Supplies Merchant Wholesalers,Northwest,empYear,892,13219
+2017,Crop Production,Northwest,empYear,2265,13452
+2017,Animal Production and Aquaculture,Northwest,empYear,2045,13452
+2017,Support Activities for Crop Production,Northwest,empYear,520,13452
+2017,Support Activities for Animal Production,Northwest,empYear,35,13452
+2017,Food Manufacturing,Northwest,empYear,6048,13452
+2017,Agricultural Implement Manufacturing,Northwest,empYear,386,13452
+2017,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,1197,13452
+2017,Farm Supplies Merchant Wholesalers,Northwest,empYear,956,13452
+2016,Crop Production,Northwest,empYear,2232,12917
+2016,Animal Production and Aquaculture,Northwest,empYear,1905,12917
+2016,Support Activities for Crop Production,Northwest,empYear,524,12917
+2016,Support Activities for Animal Production,Northwest,empYear,36,12917
+2016,Food Manufacturing,Northwest,empYear,5739,12917
+2016,Agricultural Implement Manufacturing,Northwest,empYear,383,12917
+2016,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,1363,12917
+2016,Farm Supplies Merchant Wholesalers,Northwest,empYear,735,12917
+2015,Crop Production,Northwest,empYear,2188,12727
+2015,Animal Production and Aquaculture,Northwest,empYear,1851,12727
+2015,Support Activities for Crop Production,Northwest,empYear,525,12727
+2015,Support Activities for Animal Production,Northwest,empYear,54,12727
+2015,Food Manufacturing,Northwest,empYear,5703,12727
+2015,Agricultural Implement Manufacturing,Northwest,empYear,245,12727
+2015,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,1393,12727
+2015,Farm Supplies Merchant Wholesalers,Northwest,empYear,768,12727
+2014,Crop Production,Northwest,empYear,2097,12686
+2014,Animal Production and Aquaculture,Northwest,empYear,1776,12686
+2014,Support Activities for Crop Production,Northwest,empYear,520,12686
+2014,Support Activities for Animal Production,Northwest,empYear,49,12686
+2014,Food Manufacturing,Northwest,empYear,5722,12686
+2014,Agricultural Implement Manufacturing,Northwest,empYear,221,12686
+2014,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,1371,12686
+2014,Farm Supplies Merchant Wholesalers,Northwest,empYear,930,12686
+2013,Crop Production,Northwest,empYear,2045,12532
+2013,Animal Production and Aquaculture,Northwest,empYear,1742,12532
+2013,Support Activities for Crop Production,Northwest,empYear,515,12532
+2013,Support Activities for Animal Production,Northwest,empYear,43,12532
+2013,Food Manufacturing,Northwest,empYear,5761,12532
+2013,Agricultural Implement Manufacturing,Northwest,empYear,210,12532
+2013,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,1312,12532
+2013,Farm Supplies Merchant Wholesalers,Northwest,empYear,904,12532
+2012,Crop Production,Northwest,empYear,1858,12407
+2012,Animal Production and Aquaculture,Northwest,empYear,1757,12407
+2012,Support Activities for Crop Production,Northwest,empYear,526,12407
+2012,Support Activities for Animal Production,Northwest,empYear,50,12407
+2012,Food Manufacturing,Northwest,empYear,5889,12407
+2012,Agricultural Implement Manufacturing,Northwest,empYear,198,12407
+2012,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,1253,12407
+2012,Farm Supplies Merchant Wholesalers,Northwest,empYear,876,12407
+2011,Crop Production,Northwest,empYear,1719,11556
+2011,Animal Production and Aquaculture,Northwest,empYear,1593,11556
+2011,Support Activities for Crop Production,Northwest,empYear,526,11556
+2011,Food Manufacturing,Northwest,empYear,5427,11556
+2011,Agricultural Implement Manufacturing,Northwest,empYear,177,11556
+2011,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,1296,11556
+2011,Farm Supplies Merchant Wholesalers,Northwest,empYear,818,11556
+2010,Crop Production,Northwest,empYear,1658,11342
+2010,Animal Production and Aquaculture,Northwest,empYear,1501,11342
+2010,Support Activities for Crop Production,Northwest,empYear,507,11342
+2010,Food Manufacturing,Northwest,empYear,5404,11342
+2010,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,empYear,25,11342
+2010,Agricultural Implement Manufacturing,Northwest,empYear,164,11342
+2010,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,1279,11342
+2010,Farm Supplies Merchant Wholesalers,Northwest,empYear,804,11342
+2009,Crop Production,Northwest,empYear,1597,11045
+2009,Animal Production and Aquaculture,Northwest,empYear,1453,11045
+2009,Support Activities for Crop Production,Northwest,empYear,457,11045
+2009,Support Activities for Animal Production,Northwest,empYear,49,11045
+2009,Food Manufacturing,Northwest,empYear,5193,11045
+2009,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,empYear,49,11045
+2009,Agricultural Implement Manufacturing,Northwest,empYear,159,11045
+2009,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,1276,11045
+2009,Farm Supplies Merchant Wholesalers,Northwest,empYear,812,11045
+2008,Crop Production,Northwest,empYear,1589,10787
+2008,Animal Production and Aquaculture,Northwest,empYear,1426,10787
+2008,Support Activities for Crop Production,Northwest,empYear,460,10787
+2008,Support Activities for Animal Production,Northwest,empYear,25,10787
+2008,Food Manufacturing,Northwest,empYear,5040,10787
+2008,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,empYear,47,10787
+2008,Agricultural Implement Manufacturing,Northwest,empYear,166,10787
+2008,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,1240,10787
+2008,Farm Supplies Merchant Wholesalers,Northwest,empYear,794,10787
+2007,Crop Production,Northwest,empYear,1547,10479
+2007,Animal Production and Aquaculture,Northwest,empYear,1378,10479
+2007,Support Activities for Crop Production,Northwest,empYear,425,10479
+2007,Support Activities for Animal Production,Northwest,empYear,25,10479
+2007,Food Manufacturing,Northwest,empYear,4958,10479
+2007,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,empYear,42,10479
+2007,Agricultural Implement Manufacturing,Northwest,empYear,200,10479
+2007,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,1116,10479
+2007,Farm Supplies Merchant Wholesalers,Northwest,empYear,788,10479
+2006,Crop Production,Northwest,empYear,1516,10306
+2006,Animal Production and Aquaculture,Northwest,empYear,1288,10306
+2006,Support Activities for Crop Production,Northwest,empYear,404,10306
+2006,Support Activities for Animal Production,Northwest,empYear,25,10306
+2006,Food Manufacturing,Northwest,empYear,4912,10306
+2006,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,empYear,49,10306
+2006,Agricultural Implement Manufacturing,Northwest,empYear,211,10306
+2006,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,1174,10306
+2006,Farm Supplies Merchant Wholesalers,Northwest,empYear,727,10306
+2005,Crop Production,Northwest,empYear,1505,10081.333333333334
+2005,Animal Production and Aquaculture,Northwest,empYear,1170,10081.333333333334
+2005,Support Activities for Crop Production,Northwest,empYear,384,10081.333333333334
+2005,Support Activities for Animal Production,Northwest,empYear,25.333333333333332,10081.333333333334
+2005,Food Manufacturing,Northwest,empYear,4924,10081.333333333334
+2005,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,empYear,69,10081.333333333334
+2005,Agricultural Implement Manufacturing,Northwest,empYear,203,10081.333333333334
+2005,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,1093,10081.333333333334
+2005,Farm Supplies Merchant Wholesalers,Northwest,empYear,708,10081.333333333334
+2004,Crop Production,Northwest,empYear,1598,10356
+2004,Animal Production and Aquaculture,Northwest,empYear,1147,10356
+2004,Support Activities for Crop Production,Northwest,empYear,388,10356
+2004,Food Manufacturing,Northwest,empYear,5148,10356
+2004,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,empYear,51,10356
+2004,Agricultural Implement Manufacturing,Northwest,empYear,204,10356
+2004,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,1089,10356
+2004,Farm Supplies Merchant Wholesalers,Northwest,empYear,731,10356
+2003,Crop Production,Northwest,empYear,1506,10179
+2003,Animal Production and Aquaculture,Northwest,empYear,1125,10179
+2003,Support Activities for Crop Production,Northwest,empYear,358,10179
+2003,Food Manufacturing,Northwest,empYear,5124,10179
+2003,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,empYear,42,10179
+2003,Agricultural Implement Manufacturing,Northwest,empYear,196,10179
+2003,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,1038,10179
+2003,Farm Supplies Merchant Wholesalers,Northwest,empYear,790,10179
+2002,Crop Production,Northwest,empYear,1395,10109
+2002,Animal Production and Aquaculture,Northwest,empYear,1188,10109
+2002,Support Activities for Crop Production,Northwest,empYear,286,10109
+2002,Food Manufacturing,Northwest,empYear,5177,10109
+2002,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,empYear,41,10109
+2002,Agricultural Implement Manufacturing,Northwest,empYear,191,10109
+2002,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,967,10109
+2002,Farm Supplies Merchant Wholesalers,Northwest,empYear,864,10109
+2001,Crop Production,Northwest,empYear,1327,10325
+2001,Animal Production and Aquaculture,Northwest,empYear,1264,10325
+2001,Support Activities for Crop Production,Northwest,empYear,287,10325
+2001,Food Manufacturing,Northwest,empYear,5254,10325
+2001,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Northwest,empYear,51,10325
+2001,Agricultural Implement Manufacturing,Northwest,empYear,244,10325
+2001,Farm Product Raw Material Merchant Wholesalers,Northwest,empYear,993,10325
+2001,Farm Supplies Merchant Wholesalers,Northwest,empYear,905,10325
+2018,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2428,19391
+2018,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,234,19391
+2018,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",empYear,98,19391
+2018,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,196,19391
+2018,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,10999,19391
+2018,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",empYear,68,19391
+2018,Agricultural Implement Manufacturing,"Seven County Mpls-St Paul, MN",empYear,670,19391
+2018,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,3000,19391
+2018,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1698,19391
+2017,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2420,19049
+2017,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,235,19049
+2017,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",empYear,106,19049
+2017,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,190,19049
+2017,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,10966,19049
+2017,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",empYear,66,19049
+2017,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,3471,19049
+2017,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1595,19049
+2016,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2305,19443
+2016,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,222,19443
+2016,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",empYear,101,19443
+2016,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,174,19443
+2016,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,11587,19443
+2016,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",empYear,59,19443
+2016,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,3457,19443
+2016,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1538,19443
+2015,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2207,19493
+2015,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,233,19493
+2015,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",empYear,82,19493
+2015,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,176,19493
+2015,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,11705,19493
+2015,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",empYear,60,19493
+2015,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,3560,19493
+2015,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1470,19493
+2014,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2223,19548
+2014,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,257,19548
+2014,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",empYear,82,19548
+2014,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,187,19548
+2014,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,11545,19548
+2014,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",empYear,69,19548
+2014,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,3620,19548
+2014,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1565,19548
+2013,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2450,19793
+2013,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,229,19793
+2013,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",empYear,90,19793
+2013,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,188,19793
+2013,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,11552,19793
+2013,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",empYear,70,19793
+2013,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,3774,19793
+2013,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1440,19793
+2012,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2525,18533
+2012,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,177,18533
+2012,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",empYear,105,18533
+2012,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,169,18533
+2012,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,10454,18533
+2012,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",empYear,68,18533
+2012,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,3710,18533
+2012,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1325,18533
+2011,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2481,18838
+2011,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,170,18838
+2011,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",empYear,102,18838
+2011,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,174,18838
+2011,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,10316,18838
+2011,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",empYear,63,18838
+2011,Agricultural Implement Manufacturing,"Seven County Mpls-St Paul, MN",empYear,752,18838
+2011,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,3597,18838
+2011,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1183,18838
+2010,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2507,17344
+2010,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,156,17344
+2010,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",empYear,107,17344
+2010,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,181,17344
+2010,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,10098,17344
+2010,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",empYear,64,17344
+2010,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,3033,17344
+2010,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1198,17344
+2009,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2568,17820.5
+2009,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,158,17820.5
+2009,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",empYear,101.5,17820.5
+2009,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,186,17820.5
+2009,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,10006,17820.5
+2009,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",empYear,57,17820.5
+2009,Agricultural Implement Manufacturing,"Seven County Mpls-St Paul, MN",empYear,672,17820.5
+2009,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,2837,17820.5
+2009,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1235,17820.5
+2008,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2538,17426
+2008,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,179,17426
+2008,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",empYear,100,17426
+2008,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,156,17426
+2008,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,9881,17426
+2008,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",empYear,66,17426
+2008,Agricultural Implement Manufacturing,"Seven County Mpls-St Paul, MN",empYear,743,17426
+2008,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,2473,17426
+2008,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1290,17426
+2007,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2689,19071
+2007,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,160,19071
+2007,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",empYear,92,19071
+2007,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,174,19071
+2007,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,10318,19071
+2007,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",empYear,65,19071
+2007,Agricultural Implement Manufacturing,"Seven County Mpls-St Paul, MN",empYear,1598,19071
+2007,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,2517,19071
+2007,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1458,19071
+2006,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2688,19005
+2006,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,159,19005
+2006,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",empYear,86,19005
+2006,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,247,19005
+2006,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,10353,19005
+2006,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",empYear,65,19005
+2006,Agricultural Implement Manufacturing,"Seven County Mpls-St Paul, MN",empYear,1560,19005
+2006,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,2429,19005
+2006,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1418,19005
+2005,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2714,17684
+2005,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,140,17684
+2005,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",empYear,102,17684
+2005,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,209,17684
+2005,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,10634,17684
+2005,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,2436,17684
+2005,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1449,17684
+2004,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2717,17772
+2004,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,130,17772
+2004,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,193,17772
+2004,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,11146,17772
+2004,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,2022,17772
+2004,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1564,17772
+2003,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2396,18445
+2003,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,132,18445
+2003,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,190,18445
+2003,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,12521,18445
+2003,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",empYear,34,18445
+2003,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1976,18445
+2003,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1196,18445
+2002,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2422,18022.5
+2002,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,137.5,18022.5
+2002,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,212,18022.5
+2002,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,12339,18022.5
+2002,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",empYear,64,18022.5
+2002,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1700,18022.5
+2002,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1148,18022.5
+2001,Crop Production,"Seven County Mpls-St Paul, MN",empYear,2369,19347.666666666668
+2001,Animal Production and Aquaculture,"Seven County Mpls-St Paul, MN",empYear,140.66666666666666,19347.666666666668
+2001,Support Activities for Crop Production,"Seven County Mpls-St Paul, MN",empYear,319,19347.666666666668
+2001,Support Activities for Animal Production,"Seven County Mpls-St Paul, MN",empYear,195,19347.666666666668
+2001,Food Manufacturing,"Seven County Mpls-St Paul, MN",empYear,12323,19347.666666666668
+2001,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing","Seven County Mpls-St Paul, MN",empYear,58,19347.666666666668
+2001,Agricultural Implement Manufacturing,"Seven County Mpls-St Paul, MN",empYear,1627,19347.666666666668
+2001,Farm Product Raw Material Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,1372,19347.666666666668
+2001,Farm Supplies Merchant Wholesalers,"Seven County Mpls-St Paul, MN",empYear,944,19347.666666666668
+2018,Crop Production,Southeast,empYear,668,14956
+2018,Animal Production and Aquaculture,Southeast,empYear,2106,14956
+2018,Support Activities for Crop Production,Southeast,empYear,162,14956
+2018,Support Activities for Animal Production,Southeast,empYear,103,14956
+2018,Food Manufacturing,Southeast,empYear,10594,14956
+2018,Agricultural Implement Manufacturing,Southeast,empYear,72,14956
+2018,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,599,14956
+2018,Farm Supplies Merchant Wholesalers,Southeast,empYear,652,14956
+2017,Crop Production,Southeast,empYear,658,15128
+2017,Animal Production and Aquaculture,Southeast,empYear,2162,15128
+2017,Support Activities for Crop Production,Southeast,empYear,180,15128
+2017,Support Activities for Animal Production,Southeast,empYear,109,15128
+2017,Food Manufacturing,Southeast,empYear,10726,15128
+2017,Agricultural Implement Manufacturing,Southeast,empYear,71,15128
+2017,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,569,15128
+2017,Farm Supplies Merchant Wholesalers,Southeast,empYear,653,15128
+2016,Crop Production,Southeast,empYear,657,14942
+2016,Animal Production and Aquaculture,Southeast,empYear,2179,14942
+2016,Support Activities for Crop Production,Southeast,empYear,204,14942
+2016,Support Activities for Animal Production,Southeast,empYear,107,14942
+2016,Food Manufacturing,Southeast,empYear,10497,14942
+2016,Agricultural Implement Manufacturing,Southeast,empYear,56,14942
+2016,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,596,14942
+2016,Farm Supplies Merchant Wholesalers,Southeast,empYear,646,14942
+2015,Crop Production,Southeast,empYear,589,14639
+2015,Animal Production and Aquaculture,Southeast,empYear,2182,14639
+2015,Support Activities for Crop Production,Southeast,empYear,215,14639
+2015,Support Activities for Animal Production,Southeast,empYear,111,14639
+2015,Food Manufacturing,Southeast,empYear,10279,14639
+2015,Agricultural Implement Manufacturing,Southeast,empYear,43,14639
+2015,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,595,14639
+2015,Farm Supplies Merchant Wholesalers,Southeast,empYear,625,14639
+2014,Crop Production,Southeast,empYear,558,14449.5
+2014,Animal Production and Aquaculture,Southeast,empYear,2074,14449.5
+2014,Support Activities for Crop Production,Southeast,empYear,148,14449.5
+2014,Support Activities for Animal Production,Southeast,empYear,114.5,14449.5
+2014,Food Manufacturing,Southeast,empYear,10312,14449.5
+2014,Agricultural Implement Manufacturing,Southeast,empYear,40,14449.5
+2014,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,601,14449.5
+2014,Farm Supplies Merchant Wholesalers,Southeast,empYear,602,14449.5
+2013,Crop Production,Southeast,empYear,672,14500.666666666666
+2013,Animal Production and Aquaculture,Southeast,empYear,2080,14500.666666666666
+2013,Support Activities for Crop Production,Southeast,empYear,147.66666666666666,14500.666666666666
+2013,Support Activities for Animal Production,Southeast,empYear,89,14500.666666666666
+2013,Food Manufacturing,Southeast,empYear,10209,14500.666666666666
+2013,Agricultural Implement Manufacturing,Southeast,empYear,37,14500.666666666666
+2013,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,596,14500.666666666666
+2013,Farm Supplies Merchant Wholesalers,Southeast,empYear,670,14500.666666666666
+2012,Crop Production,Southeast,empYear,651,14244
+2012,Animal Production and Aquaculture,Southeast,empYear,1980,14244
+2012,Support Activities for Crop Production,Southeast,empYear,129,14244
+2012,Food Manufacturing,Southeast,empYear,10241,14244
+2012,Agricultural Implement Manufacturing,Southeast,empYear,66,14244
+2012,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,523,14244
+2012,Farm Supplies Merchant Wholesalers,Southeast,empYear,654,14244
+2011,Crop Production,Southeast,empYear,685,14169.666666666666
+2011,Animal Production and Aquaculture,Southeast,empYear,1874,14169.666666666666
+2011,Support Activities for Crop Production,Southeast,empYear,150.66666666666666,14169.666666666666
+2011,Support Activities for Animal Production,Southeast,empYear,84,14169.666666666666
+2011,Food Manufacturing,Southeast,empYear,10034,14169.666666666666
+2011,Agricultural Implement Manufacturing,Southeast,empYear,67,14169.666666666666
+2011,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,635,14169.666666666666
+2011,Farm Supplies Merchant Wholesalers,Southeast,empYear,640,14169.666666666666
+2010,Crop Production,Southeast,empYear,634,13762.833333333334
+2010,Animal Production and Aquaculture,Southeast,empYear,1730,13762.833333333334
+2010,Support Activities for Crop Production,Southeast,empYear,117.33333333333333,13762.833333333334
+2010,Support Activities for Animal Production,Southeast,empYear,84.5,13762.833333333334
+2010,Food Manufacturing,Southeast,empYear,9894,13762.833333333334
+2010,Agricultural Implement Manufacturing,Southeast,empYear,56,13762.833333333334
+2010,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,627,13762.833333333334
+2010,Farm Supplies Merchant Wholesalers,Southeast,empYear,620,13762.833333333334
+2009,Crop Production,Southeast,empYear,609,13753.666666666666
+2009,Animal Production and Aquaculture,Southeast,empYear,1659,13753.666666666666
+2009,Support Activities for Crop Production,Southeast,empYear,130,13753.666666666666
+2009,Support Activities for Animal Production,Southeast,empYear,109.66666666666667,13753.666666666666
+2009,Food Manufacturing,Southeast,empYear,9890,13753.666666666666
+2009,Agricultural Implement Manufacturing,Southeast,empYear,57,13753.666666666666
+2009,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,645,13753.666666666666
+2009,Farm Supplies Merchant Wholesalers,Southeast,empYear,654,13753.666666666666
+2008,Crop Production,Southeast,empYear,550,13614
+2008,Animal Production and Aquaculture,Southeast,empYear,1640,13614
+2008,Support Activities for Animal Production,Southeast,empYear,120,13614
+2008,Food Manufacturing,Southeast,empYear,9978,13614
+2008,Agricultural Implement Manufacturing,Southeast,empYear,58,13614
+2008,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,651,13614
+2008,Farm Supplies Merchant Wholesalers,Southeast,empYear,617,13614
+2007,Crop Production,Southeast,empYear,517,13397
+2007,Animal Production and Aquaculture,Southeast,empYear,1581,13397
+2007,Support Activities for Animal Production,Southeast,empYear,105,13397
+2007,Food Manufacturing,Southeast,empYear,9896,13397
+2007,Agricultural Implement Manufacturing,Southeast,empYear,51,13397
+2007,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,657,13397
+2007,Farm Supplies Merchant Wholesalers,Southeast,empYear,590,13397
+2006,Crop Production,Southeast,empYear,510,13276
+2006,Animal Production and Aquaculture,Southeast,empYear,1518,13276
+2006,Support Activities for Crop Production,Southeast,empYear,32,13276
+2006,Support Activities for Animal Production,Southeast,empYear,101,13276
+2006,Food Manufacturing,Southeast,empYear,9856,13276
+2006,Agricultural Implement Manufacturing,Southeast,empYear,53,13276
+2006,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,602,13276
+2006,Farm Supplies Merchant Wholesalers,Southeast,empYear,604,13276
+2005,Crop Production,Southeast,empYear,448,13459
+2005,Animal Production and Aquaculture,Southeast,empYear,1525,13459
+2005,Support Activities for Crop Production,Southeast,empYear,47,13459
+2005,Support Activities for Animal Production,Southeast,empYear,96,13459
+2005,Food Manufacturing,Southeast,empYear,10089,13459
+2005,Agricultural Implement Manufacturing,Southeast,empYear,57,13459
+2005,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,548,13459
+2005,Farm Supplies Merchant Wholesalers,Southeast,empYear,649,13459
+2004,Crop Production,Southeast,empYear,444,13310
+2004,Animal Production and Aquaculture,Southeast,empYear,1460,13310
+2004,Support Activities for Crop Production,Southeast,empYear,41,13310
+2004,Support Activities for Animal Production,Southeast,empYear,84,13310
+2004,Food Manufacturing,Southeast,empYear,9972,13310
+2004,Agricultural Implement Manufacturing,Southeast,empYear,60,13310
+2004,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,590,13310
+2004,Farm Supplies Merchant Wholesalers,Southeast,empYear,659,13310
+2003,Crop Production,Southeast,empYear,455,13578
+2003,Animal Production and Aquaculture,Southeast,empYear,1382,13578
+2003,Support Activities for Crop Production,Southeast,empYear,52,13578
+2003,Support Activities for Animal Production,Southeast,empYear,72,13578
+2003,Food Manufacturing,Southeast,empYear,10301,13578
+2003,Agricultural Implement Manufacturing,Southeast,empYear,61,13578
+2003,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,639,13578
+2003,Farm Supplies Merchant Wholesalers,Southeast,empYear,616,13578
+2002,Crop Production,Southeast,empYear,442,13617
+2002,Animal Production and Aquaculture,Southeast,empYear,1379,13617
+2002,Support Activities for Animal Production,Southeast,empYear,76,13617
+2002,Food Manufacturing,Southeast,empYear,10378,13617
+2002,Agricultural Implement Manufacturing,Southeast,empYear,54,13617
+2002,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,688,13617
+2002,Farm Supplies Merchant Wholesalers,Southeast,empYear,600,13617
+2001,Crop Production,Southeast,empYear,442,13868.333333333334
+2001,Animal Production and Aquaculture,Southeast,empYear,1283,13868.333333333334
+2001,Support Activities for Crop Production,Southeast,empYear,61.333333333333336,13868.333333333334
+2001,Support Activities for Animal Production,Southeast,empYear,52,13868.333333333334
+2001,Food Manufacturing,Southeast,empYear,10610,13868.333333333334
+2001,Agricultural Implement Manufacturing,Southeast,empYear,96,13868.333333333334
+2001,Farm Product Raw Material Merchant Wholesalers,Southeast,empYear,720,13868.333333333334
+2001,Farm Supplies Merchant Wholesalers,Southeast,empYear,604,13868.333333333334
+2018,Crop Production,Southwest,empYear,894,19477
+2018,Animal Production and Aquaculture,Southwest,empYear,3796,19477
+2018,Support Activities for Crop Production,Southwest,empYear,372,19477
+2018,Support Activities for Animal Production,Southwest,empYear,218,19477
+2018,Food Manufacturing,Southwest,empYear,10980,19477
+2018,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest,empYear,43,19477
+2018,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1758,19477
+2018,Farm Supplies Merchant Wholesalers,Southwest,empYear,1416,19477
+2017,Crop Production,Southwest,empYear,879,19844
+2017,Animal Production and Aquaculture,Southwest,empYear,4010,19844
+2017,Support Activities for Crop Production,Southwest,empYear,399,19844
+2017,Support Activities for Animal Production,Southwest,empYear,242,19844
+2017,Food Manufacturing,Southwest,empYear,11077,19844
+2017,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest,empYear,33,19844
+2017,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1813,19844
+2017,Farm Supplies Merchant Wholesalers,Southwest,empYear,1391,19844
+2016,Crop Production,Southwest,empYear,816,19050
+2016,Animal Production and Aquaculture,Southwest,empYear,3939,19050
+2016,Support Activities for Crop Production,Southwest,empYear,355,19050
+2016,Support Activities for Animal Production,Southwest,empYear,224,19050
+2016,Food Manufacturing,Southwest,empYear,10474,19050
+2016,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest,empYear,29,19050
+2016,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1908,19050
+2016,Farm Supplies Merchant Wholesalers,Southwest,empYear,1305,19050
+2015,Crop Production,Southwest,empYear,834,21256.5
+2015,Animal Production and Aquaculture,Southwest,empYear,3832,21256.5
+2015,Support Activities for Crop Production,Southwest,empYear,340,21256.5
+2015,Support Activities for Animal Production,Southwest,empYear,170.5,21256.5
+2015,Food Manufacturing,Southwest,empYear,10242,21256.5
+2015,Agricultural Implement Manufacturing,Southwest,empYear,2576,21256.5
+2015,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1958,21256.5
+2015,Farm Supplies Merchant Wholesalers,Southwest,empYear,1304,21256.5
+2014,Crop Production,Southwest,empYear,776,18321
+2014,Animal Production and Aquaculture,Southwest,empYear,3690,18321
+2014,Support Activities for Crop Production,Southwest,empYear,336,18321
+2014,Support Activities for Animal Production,Southwest,empYear,173,18321
+2014,Food Manufacturing,Southwest,empYear,10139,18321
+2014,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1909,18321
+2014,Farm Supplies Merchant Wholesalers,Southwest,empYear,1298,18321
+2013,Crop Production,Southwest,empYear,653,17870
+2013,Animal Production and Aquaculture,Southwest,empYear,3571,17870
+2013,Support Activities for Crop Production,Southwest,empYear,389,17870
+2013,Food Manufacturing,Southwest,empYear,10031,17870
+2013,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1906,17870
+2013,Farm Supplies Merchant Wholesalers,Southwest,empYear,1320,17870
+2012,Crop Production,Southwest,empYear,604,18087
+2012,Animal Production and Aquaculture,Southwest,empYear,3444,18087
+2012,Support Activities for Crop Production,Southwest,empYear,409,18087
+2012,Support Activities for Animal Production,Southwest,empYear,161,18087
+2012,Food Manufacturing,Southwest,empYear,10276,18087
+2012,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1899,18087
+2012,Farm Supplies Merchant Wholesalers,Southwest,empYear,1294,18087
+2011,Crop Production,Southwest,empYear,522,18064
+2011,Animal Production and Aquaculture,Southwest,empYear,3310,18064
+2011,Support Activities for Crop Production,Southwest,empYear,392,18064
+2011,Food Manufacturing,Southwest,empYear,10567,18064
+2011,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1934,18064
+2011,Farm Supplies Merchant Wholesalers,Southwest,empYear,1339,18064
+2010,Crop Production,Southwest,empYear,474,17815
+2010,Animal Production and Aquaculture,Southwest,empYear,3215,17815
+2010,Support Activities for Crop Production,Southwest,empYear,376,17815
+2010,Food Manufacturing,Southwest,empYear,10437,17815
+2010,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest,empYear,14,17815
+2010,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1972,17815
+2010,Farm Supplies Merchant Wholesalers,Southwest,empYear,1327,17815
+2009,Crop Production,Southwest,empYear,457,17799
+2009,Animal Production and Aquaculture,Southwest,empYear,3298,17799
+2009,Support Activities for Crop Production,Southwest,empYear,365,17799
+2009,Food Manufacturing,Southwest,empYear,10316,17799
+2009,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest,empYear,24,17799
+2009,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1861,17799
+2009,Farm Supplies Merchant Wholesalers,Southwest,empYear,1478,17799
+2008,Crop Production,Southwest,empYear,457,17343.5
+2008,Animal Production and Aquaculture,Southwest,empYear,3173,17343.5
+2008,Support Activities for Crop Production,Southwest,empYear,365,17343.5
+2008,Food Manufacturing,Southwest,empYear,10015,17343.5
+2008,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest,empYear,24.5,17343.5
+2008,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1867,17343.5
+2008,Farm Supplies Merchant Wholesalers,Southwest,empYear,1442,17343.5
+2007,Crop Production,Southwest,empYear,429,17138
+2007,Animal Production and Aquaculture,Southwest,empYear,3159,17138
+2007,Support Activities for Crop Production,Southwest,empYear,314,17138
+2007,Food Manufacturing,Southwest,empYear,9971,17138
+2007,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1752,17138
+2007,Farm Supplies Merchant Wholesalers,Southwest,empYear,1513,17138
+2006,Crop Production,Southwest,empYear,424,16847
+2006,Animal Production and Aquaculture,Southwest,empYear,2992,16847
+2006,Support Activities for Crop Production,Southwest,empYear,294,16847
+2006,Food Manufacturing,Southwest,empYear,9915,16847
+2006,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1733,16847
+2006,Farm Supplies Merchant Wholesalers,Southwest,empYear,1489,16847
+2005,Crop Production,Southwest,empYear,403,17003
+2005,Animal Production and Aquaculture,Southwest,empYear,2922,17003
+2005,Support Activities for Crop Production,Southwest,empYear,239,17003
+2005,Support Activities for Animal Production,Southwest,empYear,111,17003
+2005,Food Manufacturing,Southwest,empYear,10017,17003
+2005,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest,empYear,45,17003
+2005,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1697,17003
+2005,Farm Supplies Merchant Wholesalers,Southwest,empYear,1569,17003
+2004,Crop Production,Southwest,empYear,403,16784
+2004,Animal Production and Aquaculture,Southwest,empYear,2878,16784
+2004,Support Activities for Crop Production,Southwest,empYear,222,16784
+2004,Support Activities for Animal Production,Southwest,empYear,121,16784
+2004,Food Manufacturing,Southwest,empYear,9928,16784
+2004,"Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing",Southwest,empYear,37,16784
+2004,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1653,16784
+2004,Farm Supplies Merchant Wholesalers,Southwest,empYear,1542,16784
+2003,Crop Production,Southwest,empYear,403,17076
+2003,Animal Production and Aquaculture,Southwest,empYear,2795,17076
+2003,Support Activities for Crop Production,Southwest,empYear,206,17076
+2003,Support Activities for Animal Production,Southwest,empYear,129,17076
+2003,Food Manufacturing,Southwest,empYear,10347,17076
+2003,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1627,17076
+2003,Farm Supplies Merchant Wholesalers,Southwest,empYear,1569,17076
+2002,Crop Production,Southwest,empYear,389,18208
+2002,Animal Production and Aquaculture,Southwest,empYear,2692,18208
+2002,Support Activities for Crop Production,Southwest,empYear,192,18208
+2002,Support Activities for Animal Production,Southwest,empYear,115,18208
+2002,Food Manufacturing,Southwest,empYear,11682,18208
+2002,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1610,18208
+2002,Farm Supplies Merchant Wholesalers,Southwest,empYear,1528,18208
+2001,Crop Production,Southwest,empYear,442,18491
+2001,Animal Production and Aquaculture,Southwest,empYear,2596,18491
+2001,Support Activities for Crop Production,Southwest,empYear,217,18491
+2001,Support Activities for Animal Production,Southwest,empYear,107,18491
+2001,Food Manufacturing,Southwest,empYear,12000,18491
+2001,Farm Product Raw Material Merchant Wholesalers,Southwest,empYear,1633,18491
+2001,Farm Supplies Merchant Wholesalers,Southwest,empYear,1496,18491

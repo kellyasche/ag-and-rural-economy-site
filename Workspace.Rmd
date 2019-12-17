@@ -198,7 +198,7 @@ farm.pct.total.emp.2018.county <- master.farm.emp.county %>%
 
 <br>
 
-## Counties most disrupted by declines in farm employment
+## Counties most disrupted by declines in farm employment {.tabset}
 
 The previous sections have provided the following guidance on identifying which counties have been possibly impacted by declines in farm employment;
 
@@ -206,9 +206,11 @@ The previous sections have provided the following guidance on identifying which 
 * have 10% or more of their employment in farming; and
 * have had their employment peak before 2016.
 
+Those counties are;
+
 <br>
 
-```{r farm and total employment index in most disrupted counties, include=FALSE, cache=TRUE}
+```{r prep identify most disrupted counties, include=FALSE, cache=TRUE}
 
 disrupted.counties <- master.farm.emp.county %>%
   mutate(farm.pct.total.emp = farm.emp / total.emp) %>%
@@ -216,41 +218,221 @@ disrupted.counties <- master.farm.emp.county %>%
   rename(total.emp.peak.year = 11) %>%
   filter(planning.region %in% c("Northwest", "Central", "Southwest"),
          total.emp.peak.year < 2016,
+         farm.pct.total.emp > .1,
+         year.x == 2018,
          farm.pct.total.emp > .1) %>%
-  distinct(countyfp)
+  distinct(countyfp, .keep_all = TRUE) 
 
-farm.total.emp.disrupted.counties <- master.farm.emp.county %>%
-  right_join(disrupted.counties, by = "countyfp") %>%
-  group_by(countyfp, Name) %>%
-  mutate(farm.emp.index = farm.emp / farm.emp[year == 2001],
-         total.emp.index = total.emp / total.emp[year == 2001]) %>%
-  ungroup()
 
 ```
 
-```{r charts farm and total employment index in most disrupted counties, fig.height=10}
+```{r table identify most disrupted counties}
+disrupted.counties.table <- disrupted.counties %>%
+  select(2,4,5,6) %>%
+  arrange(planning.region, edr)
 
-farm.emp.disrupted.counties.plot <- ggplot(farm.total.emp.disrupted.counties, aes(year, farm.emp.index, color = Name)) +
-  geom_smooth(se = FALSE, size = 2) +
-  geom_point_interactive(size = 3, aes(data_id = farm.pct.total.emp, tooltip = paste(Dem_Desc, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nTotal employment: ", comma(total.emp), "\nFarm employment as % of total employment: ", percent(farm.pct.total.emp), sep = ""))) +
-  labs(x="", y = "", color="", title = "Farm employment as a % of total employment")+
+datatable(disrupted.counties.table, class = "cell-border stripe", filter = "top", rownames = FALSE,
+          options = list(scrollX = TRUE))
+```
+
+<br>
+
+The charts below provide the index of farm and total employment of these individual counties to get a closer look any similarities between the two. What we are looking for are similarities in the trend lines. Do the decreases and plateaus in farm employment show up in the trend lines of total employment?
+
+After reviewing, the following counties seem to have the most potential in being impacted by decreases in farm employment;
+
+* Norman
+* Marshall
+* Mahnoman
+* Wilkin
+* Grant
+* Renville
+* Swift
+* Yellow Medicine
+* Big Stone
+* Lac qui Parle
+* Lincoln
+* Cottonwood
+* Redwood
+* Faribault
+
+```{r prep farm and total employment index for disrupted counties, include=FALSE, cache=TRUE}
+
+farm.total.emp.index.dis.counties <- master.farm.emp.county %>%
+  right_join(disrupted.counties[,c(1)], by = "countyfp") %>%
+  group_by(countyfp, Name) %>%
+  mutate(farm.emp.index = farm.emp / farm.emp[year == 2001],
+         total.emp.index = total.emp / total.emp[year == 2001]) %>%
+  ungroup() %>%
+  mutate(farm.pct.total.emp = farm.emp / total.emp)
+```
+
+<br>
+
+### Northwest
+
+**EDR 1**: Both Norman and Marshall Counties have over 20% of their employment in farming and their trend lines for total employment share some similarities with the farm employment trend lines.
+
+**EDR 2**: Mahnoman County has trend lines that are very similar to each other. However, the county's percentage of employment in farming has hovered between 10% and 13%, so not very significant.
+
+**EDR 4**: Wilkin and Grant County have trend lines that are similar across farm and total employment along with having a high percentage (15% - 20%) in farming. Interestingly, Traverse County have trend lines that are inverse from each other. Increases in farm employment corresponded to decreases in total employment, and vice-versa. I have no explanation for that.
+
+**EDR 5**: Not a whole lot happening here.
+
+
+
+<br>
+
+```{r chart farm and total emp index NW, fig.height=10}
+farm.emp.index.dis.counties.plot <- ggplot(filter(farm.total.emp.index.dis.counties, planning.region == "Northwest"), aes(year, farm.emp.index, color = Name)) +
+  facet_wrap(~edr, ncol = 1) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_point_interactive(size = 2, aes(data_id = farm.emp.index, tooltip = paste(Name, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nFarm employment index to 2001: ", percent(farm.emp.index), "\nTotal employment: ", comma(total.emp), "\nTotal employment index to 2001: ", percent(total.emp.index), "\nFarm employment as a % of total employment: ", percent(farm.pct.total.emp), sep = ""))) +
+  labs(x="", y = "", color="", title = "Farm employment as a % of 2001 levels")+
   scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.6, 1.1, .1)) +
   scale_x_continuous(breaks = seq(1900, 2050, 2)) +
   theme_line+
-  scale_color_manual(values= color.ruca,
-                     guide = guide_legend(ncol = 3)) +
-  theme(legend.position = "bottom")
+  scale_color_discrete(guide = guide_legend(ncol = 4)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10),
+        axis.text.x = element_text(size = 6))
 
-girafe(ggobj = farm.pct.total.emp.ruca.plot, width_svg = 8) %>%
+total.emp.index.dis.counties.plot <- ggplot(filter(farm.total.emp.index.dis.counties, planning.region == "Northwest"), aes(year, total.emp.index, color = Name)) +
+  facet_wrap(~edr, ncol = 1) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_point_interactive(size = 2, aes(data_id = farm.emp.index, tooltip = paste(Name, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nFarm employment index to 2001: ", percent(farm.emp.index), "\nTotal employment: ", comma(total.emp), "\nTotal employment index to 2001: ", percent(total.emp.index), "\nFarm employment as a % of total employment: ", percent(farm.pct.total.emp), sep = ""))) +
+  labs(x="", y = "", color="", title = "Total employment as a % of 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.6, 1.1, .1)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_discrete(guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10),
+        axis.text.x = element_text(size = 6),
+        legend.text = element_text(size = 6))
+
+farm.emp.index.dis.counties.legend <- get_legend(farm.emp.index.dis.counties.plot + theme(legend.box.margin = margin(0,0,0,0)))
+
+farm.emp.index.dis.counties.legend.bottom <- plot_grid(NULL, farm.emp.index.dis.counties.legend, NULL, ncol = 3, rel_widths = c(0,.5,3))
+
+girafe( ggobj =  plot_grid(farm.emp.index.dis.counties.plot+theme(legend.position = "none"), total.emp.index.dis.counties.plot + theme(legend.position = "none"), NULL, farm.emp.index.dis.counties.legend.bottom, ncol = 2, rel_heights = c(1,.1)), height_svg = 9) %>%
   girafe_options(opts_selection(type = "none"),
                  opts_toolbar(saveaspng = FALSE) ,
                  opts_sizing(rescale = FALSE))
 
 
+
 ```
 
+### Central
 
+Renville County has experienced a considerable decrease in farm employment and a similar decline in total employment. In addition, farm employment used to make up 17.6% of total employment in 2001 and now only makes up 13.7%.
 
+<br>
 
+```{r chart farm and total emp index C, fig.width=8}
+farm.emp.index.dis.ccounties.plot <- ggplot(filter(farm.total.emp.index.dis.counties, planning.region == "Central"), aes(year, farm.emp.index, color = Name)) +
+  facet_wrap(~edr, ncol = 1) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_point_interactive(size = 2, aes(data_id = farm.emp.index, tooltip = paste(Name, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nFarm employment index to 2001: ", percent(farm.emp.index), "\nTotal employment: ", comma(total.emp), "\nTotal employment index to 2001: ", percent(total.emp.index), "\nFarm employment as a % of total employment: ", percent(farm.pct.total.emp), sep = ""))) +
+  labs(x="", y = "", color="", title = "Farm employment as a % of 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.6, 1.1, .1)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_discrete(guide = guide_legend(ncol = 4)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10),
+        axis.text.x = element_text(size = 8))
 
+total.emp.index.dis.ccounties.plot <- ggplot(filter(farm.total.emp.index.dis.counties, planning.region == "Central"), aes(year, total.emp.index, color = Name)) +
+  facet_wrap(~edr, ncol = 1) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_point_interactive(size = 2, aes(data_id = farm.emp.index, tooltip = paste(Name, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nFarm employment index to 2001: ", percent(farm.emp.index), "\nTotal employment: ", comma(total.emp), "\nTotal employment index to 2001: ", percent(total.emp.index), "\nFarm employment as a % of total employment: ", percent(farm.pct.total.emp), sep = ""))) +
+  labs(x="", y = "", color="", title = "Total employment as a % of 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.6, 1.1, .1)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_discrete(guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10),
+        axis.text.x = element_text(size = 8),
+        legend.text = element_text(size = 8))
+
+farm.emp.index.dis.ccounties.legend <- get_legend(farm.emp.index.dis.ccounties.plot + theme(legend.box.margin = margin(0,0,0,0)))
+
+farm.emp.index.dis.ccounties.legend.bottom <- plot_grid(NULL, farm.emp.index.dis.ccounties.legend, NULL, ncol = 3, rel_widths = c(0,.5,3))
+
+girafe( ggobj =  plot_grid(farm.emp.index.dis.ccounties.plot+theme(legend.position = "none"), total.emp.index.dis.ccounties.plot + theme(legend.position = "none"), NULL, farm.emp.index.dis.ccounties.legend.bottom, ncol = 2, rel_heights = c(1,.1)), width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+### Southwest
+
+**EDR 6W**: All of the counties provided in this region may be impacted by declines in farm employment. Some of the potentially hardest hit are Lac qui Parle and Swift.
+
+**EDR 8**: Lincoln, Cottonwood, and Redwood counties all have farm and total employment trendlines that have similarities while also having a higher percentage of their employment from farming.
+
+**EDR 9**: Faribault County has farm and total employment declines that are similar. However, farm employment only makes up around 10% to 12% of total employment so it's hard to say how much of an impact it is having.
+
+<br>
+
+```{r chart farm and total emp index SW, fig.height=10}
+farm.emp.index.dis.swcounties.plot <- ggplot(filter(farm.total.emp.index.dis.counties, planning.region == "Southwest"), aes(year, farm.emp.index, color = Name)) +
+  facet_wrap(~edr, ncol = 1) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_point_interactive(size = 2, aes(data_id = farm.emp.index, tooltip = paste(Name, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nFarm employment index to 2001: ", percent(farm.emp.index), "\nTotal employment: ", comma(total.emp), "\nTotal employment index to 2001: ", percent(total.emp.index), "\nFarm employment as a % of total employment: ", percent(farm.pct.total.emp), sep = ""))) +
+  labs(x="", y = "", color="", title = "Farm employment as a % of 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.6, 1.1, .1)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_discrete(guide = guide_legend(ncol = 4)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10),
+        axis.text.x = element_text(size = 6))
+
+total.emp.index.dis.swcounties.plot <- ggplot(filter(farm.total.emp.index.dis.counties, planning.region == "Southwest"), aes(year, total.emp.index, color = Name)) +
+  facet_wrap(~edr, ncol = 1) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_point_interactive(size = 2, aes(data_id = farm.emp.index, tooltip = paste(Name, "\nYear: ", year, "\nFarm employment: ", comma(farm.emp), "\nFarm employment index to 2001: ", percent(farm.emp.index), "\nTotal employment: ", comma(total.emp), "\nTotal employment index to 2001: ", percent(total.emp.index), "\nFarm employment as a % of total employment: ", percent(farm.pct.total.emp), sep = ""))) +
+  labs(x="", y = "", color="", title = "Total employment as a % of 2001 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = seq(.6, 1.1, .1)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_discrete(guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10),
+        axis.text.x = element_text(size = 6),
+        legend.text = element_text(size = 6))
+
+farm.emp.index.dis.swcounties.legend <- get_legend(farm.emp.index.dis.swcounties.plot + theme(legend.box.margin = margin(0,0,0,0)))
+
+farm.emp.index.dis.swcounties.legend.bottom <- plot_grid(NULL, farm.emp.index.dis.swcounties.legend, NULL, ncol = 3, rel_widths = c(0,.5,3))
+
+girafe( ggobj =  plot_grid(farm.emp.index.dis.swcounties.plot+theme(legend.position = "none"), total.emp.index.dis.swcounties.plot + theme(legend.position = "none"), NULL, farm.emp.index.dis.swcounties.legend.bottom, ncol = 2, rel_heights = c(1,.1)), height_svg = 9) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
 
