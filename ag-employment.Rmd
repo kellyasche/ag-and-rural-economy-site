@@ -497,3 +497,90 @@ girafe(ggobj = ag.pct.total.emp.edr.plot, height_svg = 10) %>%
 
 ```
 
+<br>
+
+<br>
+
+## Counties employment most impacted by ag-related industries
+
+The previous charts show that we are most likely looking at counties in the following EDRs;
+
+* Northwest
+  + EDR 1 - Northwest
+  + EDR 4 - West Central
+* Central
+  + EDR 6E - South Central
+* Southwest
+  + EDR 8 - Southwest
+  + EDR 6W - Upper Minnesota Valley
+  + EDR 9 - South Central
+* Southeast
+  + EDR 10 - Southeast
+  
+We can further filter our counties that have had 10% or more of their total employment in ag-related industries at some point between 2001 and 2018. This will help us identify which counties are relying on the continued growth of the ag-related industries for employment and others who are impacted by the decline of ag-related industries.
+
+Applying these filters provides us with 25 counties. The following map provides those counties and their 2018 percentage of total employment originating from ag related industries. Counties labeled as "NA" means that at no point since 2001 has their percentage reached the 10% threshold. 
+
+The map on the left highlights a few counties where ag employment is more prominent. Three counties have 20% or more of their employment from these industries; Sibley, Todd, and Watonwan. Two counties have percentages between 15% and 20%; Stevens and Kandiyohi. The majority (12) of these counties have between 10% and 15% of the employment in ag-related industries while the remaining 8 have 10% or less.
+
+The map on the right highlights the counties where employment in ag-industries is continuing to grow. Counties in the Northeast and Central regions of the state are typically seeing growth in these industries while the Southwest are experiencing declines since ag employment peaked before 2015 in most of those counties.
+
+<br>
+
+```{r prep impacted counties and ag peak year, include = FALSE,cache=TRUE}
+impacted.counties <- master.ag.emp.comb.county %>%
+  mutate(ag.pct.total.emp = ag.emp / total.emp) %>%
+  filter(ag.pct.total.emp > .1)  %>%
+  distinct(Name, .keep_all = TRUE) %>%
+  mutate(impacted.county = "yes")
+
+impacted.counties.trends <- master.ag.emp.comb.county %>%
+  left_join(impacted.counties[,c(3,10)], by = "countyfp") %>%
+  mutate(ag.pct.total.emp = ag.emp / total.emp,
+         ag.emp.index = ag.emp / ag.emp[periodyear == 2001],
+         total.emp.index = total.emp / total.emp[periodyear == 2001],
+         ag.pct.total.emp.bins = ifelse(impacted.county == "yes", as.character(cut(ag.pct.total.emp,
+                                     breaks = c(0, .05, .1, .15, .2, 1),
+                                     labels = c("0%-5%", "5%-10%", "10%-15%", "15%-20%", "20%+")), NA)),
+         ag.pct.total.emp.bins = fct_relevel(ag.pct.total.emp.bins, "0%-5%", "5%-10%", "10%-15%", "15%-20%", "20%+")) %>%
+  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE"))
+
+ag.peak.year <- impacted.counties.trends %>%
+  group_by(Name, countyfp, Dem_Desc, edr, planning.region) %>%
+  top_n(n = 1, wt=ag.emp) %>%
+  arrange(desc(periodyear)) %>%
+  distinct(Name, .keep_all = TRUE) %>%
+  ungroup() %>%
+  mutate(peak.year.bins = ifelse(impacted.county == "yes", as.character(cut(periodyear,
+                                                               breaks = c(2000, 2005, 2010, 2015, 2016, 2020),
+                                                               labels = c("2001-2005", "2006-2010", "2011-2015", "2015-2016", "2017-2018"))), NA),
+         peak.year.bins = fct_relevel(peak.year.bins, "2001-2005", "2006-2010", "2011-2015", "2015-2016", "2017-2018"))
+
+
+```
+
+```{r map impacted counties and peak year, fig.width=8}
+impacted.counties.map <- ggplot(filter(impacted.counties.trends, periodyear == 2018)) +
+  geom_sf_interactive(aes(fill = ag.pct.total.emp.bins, tooltip = paste(Name, "\nAg employment as a % of total employment in 2018: ", percent(ag.pct.total.emp), sep = ""), data_id = Name, geometry = geometry)) +
+  scale_fill_manual(values = c("#edf8fb", "#b2e2e2", "#66c2a4", "#2ca25f", "#006d2c"), na.value = "grey")+
+  theme_sf+
+  labs(title="Ag employment as a % of total employment in 2018") +
+  theme(text = element_text(size = 10),
+        legend.position = "bottom")
+
+
+ag.peak.year.map <- ggplot(filter(ag.peak.year)) +
+  geom_sf_interactive(aes(fill = peak.year.bins, tooltip = paste(Name, "\nPeak year of ag employment: ", periodyear, "\nAg employment: ", comma(ag.emp), "\nTotal employment: ", comma(total.emp), "\nAg employment as % of total employment: ", percent(ag.pct.total.emp), sep = ""), data_id = Name, geometry = geometry)) +
+  scale_fill_manual(values = c("#edf8fb", "#b2e2e2", "#66c2a4", "#2ca25f", "#006d2c"), na.value = "grey")+
+  theme_sf+
+  labs(title="Year of peak ag employment") +
+  theme(text = element_text(size = 10),
+        legend.position = "bottom")
+
+girafe(ggobj = plot_grid(impacted.counties.map, ag.peak.year.map), width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+

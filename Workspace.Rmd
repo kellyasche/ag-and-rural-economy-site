@@ -167,9 +167,66 @@ ag.emp.index.edr <- master.ag.emp.comb.edr %>%
 
 ```
 
+```{r prep impacted counties and ag peak year, include = FALSE,cache=TRUE}
+impacted.counties <- master.ag.emp.comb.county %>%
+  mutate(ag.pct.total.emp = ag.emp / total.emp) %>%
+  filter(ag.pct.total.emp > .1)  %>%
+  distinct(Name, .keep_all = TRUE) %>%
+  mutate(impacted.county = "yes")
+
+impacted.counties.trends <- master.ag.emp.comb.county %>%
+  left_join(impacted.counties[,c(3,10)], by = "countyfp") %>%
+  mutate(ag.pct.total.emp = ag.emp / total.emp,
+         ag.emp.index = ag.emp / ag.emp[periodyear == 2001],
+         total.emp.index = total.emp / total.emp[periodyear == 2001],
+         ag.pct.total.emp.bins = ifelse(impacted.county == "yes", as.character(cut(ag.pct.total.emp,
+                                     breaks = c(0, .05, .1, .15, .2, 1),
+                                     labels = c("0%-5%", "5%-10%", "10%-15%", "15%-20%", "20%+")), NA)),
+         ag.pct.total.emp.bins = fct_relevel(ag.pct.total.emp.bins, "0%-5%", "5%-10%", "10%-15%", "15%-20%", "20%+")) %>%
+  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE"))
+
+ag.peak.year <- impacted.counties.trends %>%
+  group_by(Name, countyfp, Dem_Desc, edr, planning.region) %>%
+  top_n(n = 1, wt=ag.emp) %>%
+  arrange(desc(periodyear)) %>%
+  distinct(Name, .keep_all = TRUE) %>%
+  ungroup() %>%
+  mutate(peak.year.bins = ifelse(impacted.county == "yes", as.character(cut(periodyear,
+                                                               breaks = c(2000, 2005, 2010, 2015, 2016, 2020),
+                                                               labels = c("2001-2005", "2006-2010", "2011-2015", "2015-2016", "2017-2018"))), NA),
+         peak.year.bins = fct_relevel(peak.year.bins, "2001-2005", "2006-2010", "2011-2015", "2015-2016", "2017-2018"))
 
 
+```
 
+<br>
 
+Table of impacted counties
 
+* Counties with growing employment in ag-related industries
+  + % change since 2001 in ag-related industries
+  + % change since 2001 in total employment
+* Counties with declining employment in ag-related industries
+  + % change since ag employment peaked
+  + % change in total employment since ag employment peaked
+    + if loss in red
+    + if gain in green
+    
+<br>
 
+```{r prep impacted county table, include = FALSE, cache=TRUE}
+
+ag.up.counties <- impacted.counties.ag.peak.year %>%
+  filter(periodyear > 2016)
+
+ag.up.counties.trends <- impacted.counties.trends %>%
+  right_join(ag.up.counties[,c(3)], by = "countyfp") %>%
+  group_by(Name, countyfp, Dem_Desc, edr, planning.region) %>%
+  mutate(ag.emp.pct.change = (ag.emp - ag.emp[periodyear==2001]) / ag.emp[periodyear==2001],
+         total.emp.pct.change = (total.emp - total.emp[periodyear == 2001]) / total.emp[periodyear == 2001]) %>%
+  ungroup() %>%
+  filter(periodyear == 2018)
+
+names(ag.up.counties.trends)
+
+```
