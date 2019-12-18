@@ -13,7 +13,7 @@
 
 <title>Workspace</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
@@ -25,6 +25,18 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.10/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.19/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.19/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+<script src="site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="site_libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="site_libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -397,7 +409,38 @@ div.tocify {
 </div>
 
 
-
+<p><br></p>
+<div id="section-placeholder" class="section level2 tabset">
+<h2>Placeholder</h2>
+<p>What the previous charts highlight is that there are currently two groups of counties - counties that are experiencing growth in their ag employment and counties that are not. The tables below provide two tables, each with counties fitting into that category. Here is how they break down;</p>
+<ul>
+<li>Counties with growing employment in ag-related industries (12 counties)
+<ul>
+<li>7 (58%) of the counties are experiencing a increase in their total employment</li>
+<li>5 (42%) of the counties are experiencing a decline in their total employment</li>
+</ul></li>
+<li>Counties with declining employment in ag-related industries (13 counties)
+<ul>
+<li>5 (38%) of the counties are experiencing a increase in their total employment</li>
+<li>8 (62%) of the counties are experiencing a decline in their total employment</li>
+</ul></li>
+</ul>
+<p><br></p>
+<div id="section-counties-with-growth-in-ag-employment" class="section level3">
+<h3>Counties with growth in ag employment</h3>
+<p>The table is organized so that the counties with the highest percentage of total employment in ag-related industries is at the top. Overall, this shows a general trend that if a county has experienced significant growth in ag-related industries and currently has 15% or more of the employment in these industries, they will likely also have growth in their total enrollment.</p>
+<p><br></p>
+<div id="htmlwidget-a2ffe2b677d17a8de021" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-a2ffe2b677d17a8de021">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"0.100950118764845\" data-max=\"0.296731123388582\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"0.014073494917904\" data-max=\"2.75836431226766\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"-0.162605668821482\" data-max=\"0.198309492847855\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["Sibley","Watonwan","Todd","Stevens","Kandiyohi","Brown","Polk","Freeborn","Otter Tail","Rice","Marshall","Norman"],[0.296731123388582,0.294371311847481,0.211490683229814,0.182854042322301,0.169486652977413,0.131868131868132,0.125295894212717,0.117441570323547,0.112769485903814,0.111766802645649,0.110758057194734,0.100950118764846],[1.48841698841699,0.0140734949179046,0.482045701849837,2.75836431226766,0.489354023818116,0.123188405797101,0.189000774593338,0.0721336370539104,0.334710743801653,0.290352080475537,0.848484848484849,1.20779220779221],[0.0589956118966358,-0.0836106489184692,0.0217356814215453,0.198309492847854,0.136947284867162,-0.0108695652173913,0.0267348307073416,-0.101487183319632,0.0923392286790294,0.109358523725835,-0.092668863261944,-0.162605668821482]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th>Name<\/th>\n      <th>Ag employment as % of total employment in 2018<\/th>\n      <th>Change in ag employment since 2001<\/th>\n      <th>Change in total employment since 2001<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollX":true,"pageLength":15,"columnDefs":[{"className":"dt-right","targets":[1,2,3]}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,15,25,50,100],"rowCallback":"function(row, data) {\nvar value=data[3]; $(row).css({'background-color':isNaN(parseFloat(value)) ? '' : value <= -1 ? \"red\" : value <= 0 ? \"red\" : \"transparent\"});\nDTWidget.formatPercentage(this, row, data, 1, 0, 3, \",\", \".\");\nDTWidget.formatPercentage(this, row, data, 2, 0, 3, \",\", \".\");\nDTWidget.formatPercentage(this, row, data, 3, 0, 3, \",\", \".\");\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+<div id="section-counties-with-decreasing-ag-employment" class="section level3">
+<h3>Counties with decreasing ag employment</h3>
+<p>This table provides the 13 counties who are experiencing a decline in their ag-related employment, with rows highlighted in red if their total employment in 2018 is lower than in 2001. Not surprisingly, here the higher the percentage of a county’s workforce is in ag-related industries, the more likely they will also have less total employment in 2018 than in 2001.</p>
+<p><br></p>
+<div id="htmlwidget-3a64aaa82205796cff61" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3a64aaa82205796cff61">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"0.040528233151183\" data-max=\"0.137665198237886\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"-0.790588235294118\" data-max=\"-0.025618374558303\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"-0.237739691159003\" data-max=\"0.081256771397617\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["Wilkin","Faribault","Le Sueur","Lyon","Renville","Grant","Wabasha","Pipestone","Rock","Mower","Cottonwood","Murray","Lac qui Parle"],[0.137665198237885,0.136242208370436,0.129247715022264,0.111018189420866,0.103512642117767,0.0931449502878074,0.0904365904365904,0.0844758956214065,0.0628689492325856,0.0560605136338681,0.0528942115768463,0.0501002004008016,0.040528233151184],[-0.0272373540856031,-0.359162303664921,-0.0256183745583039,-0.510749385749386,-0.528228924980665,-0.232758620689655,-0.219230769230769,-0.169565217391304,-0.393162393162393,-0.775908315045111,-0.568403908794788,-0.694501018329939,-0.790588235294118],[-0.0739418663946966,-0.237739691159002,-0.0437023756163156,-0.0184691155345783,-0.0342510652245166,0.0219251336898396,-0.0551424161638838,0.00533570475767008,-0.00411522633744856,0.011851120301216,0.0428809325562032,0.0812567713976165,-0.138485680659082]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th>Name<\/th>\n      <th>Ag employment as % of total employment in 2018<\/th>\n      <th>Change in ag employment peak ag employment year<\/th>\n      <th>Change in total employment since peak ag employment year<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollX":true,"pageLength":15,"columnDefs":[{"className":"dt-right","targets":[1,2,3]}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"lengthMenu":[10,15,25,50,100],"rowCallback":"function(row, data) {\nvar value=data[3]; $(row).css({'background-color':isNaN(parseFloat(value)) ? '' : value <= -1 ? \"red\" : value <= 0 ? \"red\" : \"transparent\"});\nDTWidget.formatPercentage(this, row, data, 1, 0, 3, \",\", \".\");\nDTWidget.formatPercentage(this, row, data, 2, 0, 3, \",\", \".\");\nDTWidget.formatPercentage(this, row, data, 3, 0, 3, \",\", \".\");\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+</div>
+</div>
 
 
 

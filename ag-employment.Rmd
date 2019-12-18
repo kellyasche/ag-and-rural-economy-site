@@ -150,14 +150,91 @@ kable(agrelated.ind.list, format = "html", align = "c") %>%
 
 ```
 
-[Summary here]
+Overall, employment in ag-industries does seem to be impacted by the crop commodity boom, at least as a regional level. The trends show that employment in ag-related industries were decreasing during the beginning 2000s, followed by a significant increase in employment in these industries during the crop commodity boom. Since 2012, however, employment has been decreasing again for most regions, but not all.
+
+In particular, the EDRs in the Northwest and Central parts of the state are continuing to see growth in their employment by ag-related industries. The Southwest Region has been experiencing significant declines in these industries, however.
+
+Analysis provided guidance on the characteristics of a county where they might be most impacted by employment trends in ag-related industries;
+
+They are likely located in the following EDRs;
+
+* Northwest
+  + EDR 1 - Northwest
+  + EDR 4 - West Central
+* Central
+  + EDR 6E - South Central
+* Southwest
+  + EDR 8 - Southwest
+  + EDR 6W - Upper Minnesota Valley
+  + EDR 9 - South Central
+
+while also having at least 10% of their employment in ag-related industries at some point since 2001.
+
+When applying these filters, we end up 25 counties that fall into two distinct groups; 
+
+* Counties with growing employment in ag-related industries (12 counties)
+  + 7 (58%) of the counties are experiencing a increase in their total employment
+  + 5 (42%) of the counties are experiencing a decline in their total employment 
+* Counties with declining employment in ag-related industries (13 counties)
+  + 5 (38%) of the counties are experiencing a increase in their total employment
+  + 8 (62%) of the counties are experiencing a decline in their total employment
+
+The following tables provide these counties with a few more details.
+
+<br>
+
+**Counties with growing ag employment**
+
+The table is organized so that the counties with the highest percentage of total employment in ag-related industries is at the top. Overall, this shows a general trend that if a county has experienced significant growth in ag-related industries and currently has 15% or more of the employment in these industries, they will likely also have growth in their total enrollment.
+
+<br>
+
+```{r table up counties summary}
+up.counties.summary <- read_csv("Data/Employment/table-up-counties-summary.csv")
+
+datatable(up.counties.summary, class = "cell-border stripe", filter = "top", rownames = FALSE,
+          options = list(scrollX = TRUE,
+                         pageLength = 15)) %>%
+  formatStyle("Change in total employment since 2001",
+              target = "row",
+              backgroundColor = styleInterval(c(-1, 0), c("red", "red", "transparent"))) %>%
+  formatPercentage(2:4)
+
+```
+
+<br>
+
+**Counties with decreasing ag employment**
+
+This table provides the 13 counties who are experiencing a decline in their ag-related employment, with rows highlighted in red if their total employment in 2018 is lower than in 2001. Not surprisingly, here the higher the percentage of a county’s workforce is in ag-related industries, the more likely they will also have less total employment in 2018 than in 2001.
+
+<br>
+
+```{r table down counties summary}
+down.counties.summary <- read_csv("Data/Employment/table-down-counties-summary.csv")
+
+datatable(down.counties.summary, class = "cell-border stripe", filter = "top", rownames = FALSE,
+          options = list(scrollX = TRUE,
+                         pageLength = 15)) %>%
+  formatStyle("Change in total employment since peak ag employment year",
+              target = "row",
+              backgroundColor = styleInterval(c(-1, 0), c("red", "red", "transparent"))) %>%
+  formatPercentage(2:4)
+
+```
 
 
 <br>
 
 # Analysis
 
-[Description here]
+This analysis examines the impact employment in ag-related industries has on total employment across Minnesota. We will do this through the following sections;
+
+**Change in ag employment vs. total employment since 2001**: We will examine the trends in ag employment and identify any regions whose total employment shows similar trends. This would mean that ag employment has an out sized impact on the total employment for the region.
+
+**Ag employment as a % of total employment**: If there are trends in farm employment that are concerning, it is likely going to have the most impact in counties with a higher percentage of their total employment in ag-related industries. We will seek to identify those regions.
+
+**Counties most impacted by ag employment**: Through the above analysis, we should begin to get the main characteristics of a county where ag employment is having a larger impact on total employment - the most likely planning region and EDRs the counties are located in, as well as some measurements and thresholds of their ag and total employment. This section will seek to identify those exact counties
 
 ## Change in ag employment vs. total employment {.tabset}
 
@@ -211,7 +288,7 @@ Other RUCA county groups have experienced modest growth in these industries, wit
 
 Total employment follows a trend which would be expected during a period of the Great Recession. Employment dropped during that time frame and then has been slowly recovering since 2012. However, the recovery has been slow in our entirely rural counties.  
 
-In addition, none of the total employment trendlines seem to match the trendlines of ag employment, meaning there just might not be much impact here.
+In addition, none of the total employment trend lines seem to match the trend lines of ag employment, meaning there just might not be much impact here.
 
 <br>
 
@@ -265,7 +342,7 @@ The Northeast region is a bit of an outlier here. Employment in ag-related indus
 
 All other regions outside of the seven county metro are experiencing increases in these industries. In particular, the Northwest and Central regions have experience 28% and 26% employment growth in these industries since 2001, respectively.And there is little evidence that the Great Recession had any impact on these industries. In fact, they seemed to grow a bit during that time frame.
 
-As expected, total employment follows a pattern that's been impacted by the Great Recession, with a drop between 2008 and 2012, and increases following that time. It's difficult to say if there are any similarities between these trendlines and the ag-related employment trendlines.
+As expected, total employment follows a pattern that's been impacted by the Great Recession, with a drop between 2008 and 2012, and increases following that time. It's difficult to say if there are any similarities between these trend lines and the ag-related employment trend lines.
 
 <br>
 
@@ -325,11 +402,11 @@ EDR 5 - North Central has similar trends to EDR 4 and 1, however employment in a
 
 Employment in ag-related industries in EDR 2 - Headwaters only represents 3% or less of total employment and there seems to be little relation.
 
-In the Central region, EDR 6E - East Central has 10% or more of their total employment represented in ag-related industries, has experienced employment growth in these industries, and their total employment seems to have a similar trendline.
+In the Central region, EDR 6E - East Central has 10% or more of their total employment represented in ag-related industries, has experienced employment growth in these industries, and their total employment seems to have a similar trend line.
 
-Any of the EDRs in Southwest Minnesota could be impacted by ag-related industries. After peaking at 12%, employment in ag-related industries in EDR 6W - Upper Minnesota Valley has decreased significantly and now only represents 7% of total employment. In addition, total employment in that region is at 95% of their total employment in 2001. These trendlines are very similar.
+Any of the EDRs in Southwest Minnesota could be impacted by ag-related industries. After peaking at 12%, employment in ag-related industries in EDR 6W - Upper Minnesota Valley has decreased significantly and now only represents 7% of total employment. In addition, total employment in that region is at 95% of their total employment in 2001. These trend lines are very similar.
 
-EDR 8 - Southwest peaked at 16% of their total employment in ag-related industries and by 2018 dropped to 14%. It's a little hard to tell whether the total employment trendline is similar, but the fact that they haven't seen any growth is evidence that there is a tie here.
+EDR 8 - Southwest peaked at 16% of their total employment in ag-related industries and by 2018 dropped to 14%. It's a little hard to tell whether the total employment trend line is similar, but the fact that they haven't seen any growth is evidence that there is a tie here.
 
 Lastly, Southeast Minnesota has experienced modest growth in their employment in ag-related industries as well as their total employment. By 2018, ag-related industries represented 6% of total employment.
 
@@ -501,7 +578,7 @@ girafe(ggobj = ag.pct.total.emp.edr.plot, height_svg = 10) %>%
 
 <br>
 
-## Counties employment most impacted by ag-related industries
+## Counties employment most impacted by ag-related industries {.tabset}
 
 The previous charts show that we are most likely looking at counties in the following EDRs;
 
@@ -581,6 +658,100 @@ girafe(ggobj = plot_grid(impacted.counties.map, ag.peak.year.map), width_svg = 8
   girafe_options(opts_selection(type = "none"),
                  opts_toolbar(saveaspng = FALSE) ,
                  opts_sizing(rescale = FALSE))
+
+```
+
+<br>
+
+What the previous charts highlight is that there are currently two groups of counties - counties that are experiencing growth in their ag employment and counties that are not. The tables below provide two tables, each with counties fitting into that category. Here is how they break down;
+
+* Counties with growing employment in ag-related industries (12 counties)
+  + 7 (58%) of the counties are experiencing a increase in their total employment
+  + 5 (42%) of the counties are experiencing a decline in their total employment 
+* Counties with declining employment in ag-related industries (13 counties)
+  + 5 (38%) of the counties are experiencing a increase in their total employment
+  + 8 (62%) of the counties are experiencing a decline in their total employment
+  
+
+```{r prep impacted county table, include = FALSE, cache=TRUE}
+
+ag.up.counties <- ag.peak.year %>%
+  filter(periodyear > 2016,
+         impacted.county == "yes")
+
+ag.up.counties.trends <- impacted.counties.trends %>%
+  right_join(ag.up.counties[,c(3)], by = "countyfp") %>%
+  group_by(Name, countyfp, Dem_Desc, edr, planning.region) %>%
+  mutate(ag.emp.pct.change = (ag.emp - ag.emp[periodyear==2001]) / ag.emp[periodyear==2001],
+         total.emp.pct.change = (total.emp - total.emp[periodyear == 2001]) / total.emp[periodyear == 2001]) %>%
+  ungroup() %>%
+  filter(periodyear == 2018) %>%
+  select(2,10,15,16) %>% 
+  arrange(desc(ag.pct.total.emp)) %>%
+  rename("Ag employment as % of total employment in 2018" = 2,
+         "Change in ag employment since 2001" = 3,
+         "Change in total employment since 2001" = 4) 
+
+ag.down.counties <- ag.peak.year %>%
+  filter(periodyear < 2017,
+         impacted.county == "yes") %>%
+  rename(peak.year = 1,
+         ag.emp.peak = 7,
+         total.emp.peak = 8)
+
+names(ag.down.counties)
+
+ag.down.counties.trends <- impacted.counties.trends %>%
+  right_join(ag.down.counties[,c(3,7,8)], by = "countyfp") %>%
+  filter(periodyear == 2018) %>%
+  mutate(ag.pct.total.emp = ag.emp / total.emp,
+         ag.emp.pct.change.peak = (ag.emp - ag.emp.peak) / ag.emp.peak,
+         total.emp.pct.change.peak = (total.emp - total.emp.peak) / total.emp.peak) %>%
+  select(2,10,17,18) %>%
+  arrange(desc(ag.pct.total.emp)) %>%
+  rename("Ag employment as % of total employment in 2018" = 2,
+         "Change in ag employment peak ag employment year" = 3,
+         "Change in total employment since peak ag employment year" = 4)
+```
+
+
+<br>
+
+### Counties with growth in ag employment
+The table is organized so that the counties with the highest percentage of total employment in ag-related industries is at the top. Overall, this shows a general trend that if a county has experienced significant growth in ag-related industries and currently has 15% or more of the employment in these industries, they will likely also have growth in their total enrollment.
+
+<br>
+
+```{r table ag up counties}
+
+datatable(ag.up.counties.trends, class = "cell-border stripe", filter = "top", rownames = FALSE,
+          options = list(scrollX = TRUE,
+                         pageLength = 15)) %>%
+  formatStyle("Change in total employment since 2001",
+              target = "row",
+              backgroundColor = styleInterval(c(-1, 0), c("red", "red", "transparent"))) %>%
+  formatPercentage(2:4)
+
+```
+
+### Counties with decreasing ag employment
+
+This table provides the 13 counties who are experiencing a decline in their ag-related employment, with rows highlighted in red if their total employment in 2018 is lower than in 2001. Not surprisingly, here the higher the percentage of a county's workforce is in ag-related industries, the more likely they will also have less total employment in 2018 than in 2001.
+
+<br>
+
+
+
+```{r table ag down counties}
+
+datatable(ag.down.counties.trends, class = "cell-border stripe", filter = "top", rownames = FALSE,
+          options = list(scrollX = TRUE,
+                         pageLength = 15)) %>%
+  formatStyle("Change in total employment since peak ag employment year",
+              target = "row",
+              backgroundColor = styleInterval(c(-1, 0), c("red", "red", "transparent"))) %>%
+  formatPercentage(2:4)
+
 
 ```
 

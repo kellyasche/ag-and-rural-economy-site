@@ -201,23 +201,23 @@ ag.peak.year <- impacted.counties.trends %>%
 
 <br>
 
-Table of impacted counties
+## Placeholder {.tabset}
 
-* Counties with growing employment in ag-related industries
-  + % change since 2001 in ag-related industries
-  + % change since 2001 in total employment
-* Counties with declining employment in ag-related industries
-  + % change since ag employment peaked
-  + % change in total employment since ag employment peaked
-    + if loss in red
-    + if gain in green
-    
-<br>
+What the previous charts highlight is that there are currently two groups of counties - counties that are experiencing growth in their ag employment and counties that are not. The tables below provide two tables, each with counties fitting into that category. Here is how they break down;
+
+* Counties with growing employment in ag-related industries (12 counties)
+  + 7 (58%) of the counties are experiencing a increase in their total employment
+  + 5 (42%) of the counties are experiencing a decline in their total employment 
+* Counties with declining employment in ag-related industries (13 counties)
+  + 5 (38%) of the counties are experiencing a increase in their total employment
+  + 8 (62%) of the counties are experiencing a decline in their total employment
+  
 
 ```{r prep impacted county table, include = FALSE, cache=TRUE}
 
-ag.up.counties <- impacted.counties.ag.peak.year %>%
-  filter(periodyear > 2016)
+ag.up.counties <- ag.peak.year %>%
+  filter(periodyear > 2016,
+         impacted.county == "yes")
 
 ag.up.counties.trends <- impacted.counties.trends %>%
   right_join(ag.up.counties[,c(3)], by = "countyfp") %>%
@@ -225,8 +225,71 @@ ag.up.counties.trends <- impacted.counties.trends %>%
   mutate(ag.emp.pct.change = (ag.emp - ag.emp[periodyear==2001]) / ag.emp[periodyear==2001],
          total.emp.pct.change = (total.emp - total.emp[periodyear == 2001]) / total.emp[periodyear == 2001]) %>%
   ungroup() %>%
-  filter(periodyear == 2018)
+  filter(periodyear == 2018) %>%
+  select(2,10,15,16) %>% 
+  arrange(desc(ag.pct.total.emp)) %>%
+  rename("Ag employment as % of total employment in 2018" = 2,
+         "Change in ag employment since 2001" = 3,
+         "Change in total employment since 2001" = 4) 
 
-names(ag.up.counties.trends)
+ag.down.counties <- ag.peak.year %>%
+  filter(periodyear < 2017,
+         impacted.county == "yes") %>%
+  rename(peak.year = 1,
+         ag.emp.peak = 7,
+         total.emp.peak = 8)
+
+names(ag.down.counties)
+
+ag.down.counties.trends <- impacted.counties.trends %>%
+  right_join(ag.down.counties[,c(3,7,8)], by = "countyfp") %>%
+  filter(periodyear == 2018) %>%
+  mutate(ag.pct.total.emp = ag.emp / total.emp,
+         ag.emp.pct.change.peak = (ag.emp - ag.emp.peak) / ag.emp.peak,
+         total.emp.pct.change.peak = (total.emp - total.emp.peak) / total.emp.peak) %>%
+  select(2,10,17,18) %>%
+  arrange(desc(ag.pct.total.emp)) %>%
+  rename("Ag employment as % of total employment in 2018" = 2,
+         "Change in ag employment peak ag employment year" = 3,
+         "Change in total employment since peak ag employment year" = 4)
+```
+
+
+<br>
+
+### Counties with growth in ag employment
+The table is organized so that the counties with the highest percentage of total employment in ag-related industries is at the top. Overall, this shows a general trend that if a county has experienced significant growth in ag-related industries and currently has 15% or more of the employment in these industries, they will likely also have growth in their total enrollment.
+
+<br>
+
+```{r table ag up counties}
+
+datatable(ag.up.counties.trends, class = "cell-border stripe", filter = "top", rownames = FALSE,
+          options = list(scrollX = TRUE,
+                         pageLength = 15)) %>%
+  formatStyle("Change in total employment since 2001",
+              target = "row",
+              backgroundColor = styleInterval(c(-1, 0), c("red", "red", "transparent"))) %>%
+  formatPercentage(2:4)
+
+```
+
+### Counties with decreasing ag employment
+
+This table provides the 13 counties who are experiencing a decline in their ag-related employment, with rows highlighted in red if their total employment in 2018 is lower than in 2001. Not surprisingly, here the higher the percentage of a county's workforce is in ag-related industries, the more likely they will also have less total employment in 2018 than in 2001.
+
+<br>
+
+
+
+```{r table ag down counties}
+
+datatable(ag.down.counties.trends, class = "cell-border stripe", filter = "top", rownames = FALSE,
+          options = list(scrollX = TRUE,
+                         pageLength = 15)) %>%
+  formatStyle("Change in total employment since peak ag employment year",
+              target = "row",
+              backgroundColor = styleInterval(c(-1, 0), c("red", "red", "transparent"))) %>%
+  formatPercentage(2:4)
 
 ```
