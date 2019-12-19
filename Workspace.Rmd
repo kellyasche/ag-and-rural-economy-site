@@ -95,201 +95,95 @@ color.counties <- scale_color_brewer(palette = "Dark2",
 mn_counties <- st_read("Data/Shapefiles/county shapefiles/MNCounties_MNDOT.shp", quiet = TRUE) %>%
   ms_simplify(keep = .01, keep_shapes = TRUE)
 ```
-
-```{r prep master ag employment objects, include=FALSE, cache=TRUE}
-master.ag.emp.county <- read_csv("Data/Employment/Master-agrelated-emp-county.csv")
-
-master.ag.emp.comb.county <- master.ag.emp.county %>%
-  group_by(periodyear, Name, countyfp, Dem_Desc, edr, planning.region) %>%
-  summarise(ag.emp = sum(emp[naicstitle != "Total, All Industries"]),
-            total.emp = sum(emp[naicstitle == "Total, All Industries"])) %>%
-  ungroup()
-
-master.ag.emp.ruca <- read_csv("Data/Employment/Master-agrelated-emp-ruca.csv") %>%
-  mutate(Dem_Desc = fct_relevel(Dem_Desc, "Entirely rural", "Town/rural mix", "Urban/town/rural mix", "Entirely urban"))
-
-master.ag.emp.comb.ruca <- master.ag.emp.ruca %>%
-  group_by(periodyear, Dem_Desc) %>%
-  summarise(ag.emp = sum(emp[naicstitle != "Total, All Industries"]),
-            total.emp = sum(emp[naicstitle == "Total, All Industries"])) %>%
-  ungroup()
-
-master.ag.emp.pr <- read_csv("Data/Employment/Master-agrelated-emp-pr.csv") %>%
-  mutate(planning.region = str_replace(planning.region, ", MN", ""),
-         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"))
-
-master.ag.emp.comb.pr <- master.ag.emp.pr %>%
-  group_by(periodyear, planning.region) %>%
-  summarise(ag.emp = sum(emp[naicstitle != "Total, All Industries"]),
-            total.emp = sum(emp[naicstitle == "Total, All Industries"])) %>%
-  ungroup()
-
-
-master.ag.emp.edr <- read_csv("Data/Employment/Master-agrelated-emp-edr.csv") %>%
-  mutate(planning.region = str_replace(planning.region, ", MN", ""),
+```{r master land value and net income objects, include=FALSE, cache=TRUE}
+master.netinc.county <- read_csv("Data/Income and expenses/Master-farm-income-expenses.csv") %>%
+  mutate(Dem_Desc = fct_relevel(Dem_Desc, "Entirely rural", "Town/rural mix", "Urban/town/rural mix", "Entirely urban"),
+         planning.region = str_replace(planning.region, " Minnesota", ""),
          planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"),
-         edr = fct_relevel(edr, "EDR 1 - Northwest", "EDR 2 - Headwaters", "EDR 3 - Arrowhead", "EDR 4 - West Central", "EDR 5 - North Central", "EDR 6E- Southwest Central", "EDR 6W- Upper Minnesota Valley", "EDR 7E- East Central", "EDR 7W- Central", "EDR 8 - Southwest", "EDR 9 - South Central", "EDR 10 - Southeast", "EDR 11 - 7 County Twin Cities", "Minnesota"))
+         edr = str_replace(edr, "  ", " "),
+         edr = fct_relevel(edr, "EDR 1 - Northwest", "EDR 2 - Headwaters", "EDR 3 - Arrowhead", "EDR 4 - West Central", "EDR 5 - North Central", "EDR 6E- Southwest Central", "EDR 6W- Upper Minnesota Valley", "EDR 7E- East Central", "EDR 7W- Central", "EDR 8 - Southwest", "EDR 9 - South Central", "EDR 10 - Southeast", "EDR 11 - 7 County Twin Cities", "Minnesota")) %>%
+  left_join(counties.regions[,c(1,2)], by = "countyfp") %>%
+  filter(Name != "Minnesota")
 
-master.ag.emp.comb.edr <- master.ag.emp.edr %>%
-  group_by(periodyear, edr, planning.region) %>%
-  summarise(ag.emp = sum(emp[naicstitle != "Total, All Industries"]),
-            total.emp = sum(emp[naicstitle == "Total, All Industries"])) %>%
-  ungroup()
-
-
-```
-
-```{r ag-related industry list}
-agrelated.ind.list <- read_csv("Data/Earnings/Master-ag-related-ind-wages-pr.csv") %>%
-  distinct(naicstitle) %>%
-  rename(`Ag-related NAICS categories` = 1)
-
-```
-
-```{r prep ag and total emp index, include=FALSE, cache=TRUE}
-ag.emp.index.ruca <- master.ag.emp.comb.ruca %>%
-  mutate(ag.emp.index = ag.emp / ag.emp[periodyear==2001],
-         total.emp.index = total.emp / total.emp[periodyear==2001],
-         ag.pct.total.emp = ag.emp / total.emp) %>%
-  ungroup()
-  
-ag.emp.index.pr <- master.ag.emp.comb.pr %>%
-  mutate(ag.emp.index = ag.emp / ag.emp[periodyear==2001],
-         total.emp.index = total.emp / total.emp[periodyear==2001],
-         ag.pct.total.emp = ag.emp / total.emp) %>%
-  ungroup()
-
-ag.emp.index.edr <- master.ag.emp.comb.edr %>%
-  mutate(ag.emp.index = ag.emp / ag.emp[periodyear==2001],
-         total.emp.index = total.emp / total.emp[periodyear==2001],
-         ag.pct.total.emp = ag.emp / total.emp) %>%
-  ungroup()
+master.lv.county <- read_csv("Data/Land values/Master-ag-land-values.csv") %>%
+  mutate(Dem_Desc = fct_relevel(Dem_Desc, "Entirely rural", "Town/rural mix", "Urban/town/rural mix", "Entirely urban"),
+         planning.region = str_replace(planning.region, " Minnesota", ""),
+         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"),
+         edr = str_replace(edr, "  ", " "),
+         edr = fct_relevel(edr, "EDR 1 - Northwest", "EDR 2 - Headwaters", "EDR 3 - Arrowhead", "EDR 4 - West Central", "EDR 5 - North Central", "EDR 6E- Southwest Central", "EDR 6W- Upper Minnesota Valley", "EDR 7E- East Central", "EDR 7W- Central", "EDR 8 - Southwest", "EDR 9 - South Central", "EDR 10 - Southeast", "EDR 11 - 7 County Twin Cities", "Minnesota")) %>%
+  rename(year = Year) %>%
+  filter(County != "Minnesota") %>%
+  rename(Name = County)
 
 ```
 
-```{r prep impacted counties and ag peak year, include = FALSE,cache=TRUE}
-impacted.counties <- master.ag.emp.comb.county %>%
-  mutate(ag.pct.total.emp = ag.emp / total.emp) %>%
-  filter(ag.pct.total.emp > .1)  %>%
-  distinct(Name, .keep_all = TRUE) %>%
-  mutate(impacted.county = "yes")
-
-impacted.counties.trends <- master.ag.emp.comb.county %>%
-  left_join(impacted.counties[,c(3,10)], by = "countyfp") %>%
-  mutate(ag.pct.total.emp = ag.emp / total.emp,
-         ag.emp.index = ag.emp / ag.emp[periodyear == 2001],
-         total.emp.index = total.emp / total.emp[periodyear == 2001],
-         ag.pct.total.emp.bins = ifelse(impacted.county == "yes", as.character(cut(ag.pct.total.emp,
-                                     breaks = c(0, .05, .1, .15, .2, 1),
-                                     labels = c("0%-5%", "5%-10%", "10%-15%", "15%-20%", "20%+")), NA)),
-         ag.pct.total.emp.bins = fct_relevel(ag.pct.total.emp.bins, "0%-5%", "5%-10%", "10%-15%", "15%-20%", "20%+")) %>%
-  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE"))
-
-ag.peak.year <- impacted.counties.trends %>%
-  group_by(Name, countyfp, Dem_Desc, edr, planning.region) %>%
-  top_n(n = 1, wt=ag.emp) %>%
-  arrange(desc(periodyear)) %>%
-  distinct(Name, .keep_all = TRUE) %>%
+```{r prep net income and land values index, include=FALSE, cache=TRUE}
+net.income.acre.ruca <- master.netinc.county %>%
+  group_by(Dem_Desc, year) %>%
+  summarise(net.income = sum(net.income, na.rm = TRUE),
+            total.acres = sum(Total.acres, na.rm = TRUE)) %>%
   ungroup() %>%
-  mutate(peak.year.bins = ifelse(impacted.county == "yes", as.character(cut(periodyear,
-                                                               breaks = c(2000, 2005, 2010, 2015, 2016, 2020),
-                                                               labels = c("2001-2005", "2006-2010", "2011-2015", "2015-2016", "2017-2018"))), NA),
-         peak.year.bins = fct_relevel(peak.year.bins, "2001-2005", "2006-2010", "2011-2015", "2015-2016", "2017-2018"))
+  mutate(net.income.acre = net.income / total.acres) %>%
+  group_by(Dem_Desc) %>%
+  mutate(net.income.acre.index = net.income.acre / net.income.acre[year == 2001]) %>%
+  ungroup()
 
-
-```
-
-<br>
-
-## Placeholder {.tabset}
-
-What the previous charts highlight is that there are currently two groups of counties - counties that are experiencing growth in their ag employment and counties that are not. The tables below provide two tables, each with counties fitting into that category. Here is how they break down;
-
-* Counties with growing employment in ag-related industries (12 counties)
-  + 7 (58%) of the counties are experiencing a increase in their total employment
-  + 5 (42%) of the counties are experiencing a decline in their total employment 
-* Counties with declining employment in ag-related industries (13 counties)
-  + 5 (38%) of the counties are experiencing a increase in their total employment
-  + 8 (62%) of the counties are experiencing a decline in their total employment
-  
-
-```{r prep impacted county table, include = FALSE, cache=TRUE}
-
-ag.up.counties <- ag.peak.year %>%
-  filter(periodyear > 2016,
-         impacted.county == "yes")
-
-ag.up.counties.trends <- impacted.counties.trends %>%
-  right_join(ag.up.counties[,c(3)], by = "countyfp") %>%
-  group_by(Name, countyfp, Dem_Desc, edr, planning.region) %>%
-  mutate(ag.emp.pct.change = (ag.emp - ag.emp[periodyear==2001]) / ag.emp[periodyear==2001],
-         total.emp.pct.change = (total.emp - total.emp[periodyear == 2001]) / total.emp[periodyear == 2001]) %>%
+land.value.acre.ruca <- master.lv.county %>%
+  group_by(Dem_Desc, year) %>%
+  summarise(total.acres = sum(Total.acres, na.rm = TRUE),
+            total.value = sum(Total.estimated.value, na.rm = TRUE)) %>%
   ungroup() %>%
-  filter(periodyear == 2018) %>%
-  select(2,10,15,16) %>% 
-  arrange(desc(ag.pct.total.emp)) %>%
-  rename("Ag employment as % of total employment in 2018" = 2,
-         "Change in ag employment since 2001" = 3,
-         "Change in total employment since 2001" = 4) 
+  mutate(land.value.acre = total.value / total.acres) %>%
+  group_by(Dem_Desc) %>%
+  mutate(land.value.acre.index = land.value.acre / land.value.acre[year == 2001]) %>%
+  ungroup()
 
-ag.down.counties <- ag.peak.year %>%
-  filter(periodyear < 2017,
-         impacted.county == "yes") %>%
-  rename(peak.year = 1,
-         ag.emp.peak = 7,
-         total.emp.peak = 8)
+net.income.acre.pr <- master.netinc.county %>%
+  group_by(planning.region, year) %>%
+  summarise(net.income = sum(net.income, na.rm = TRUE),
+            total.acres = sum(Total.acres, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(net.income.acre = net.income / total.acres) %>%
+  group_by(planning.region) %>%
+  mutate(net.income.acre.index = net.income.acre / net.income.acre[year == 2001]) %>%
+  ungroup()
 
-names(ag.down.counties)
+land.value.acre.pr <- master.lv.county %>%
+  group_by(planning.region, year) %>%
+  summarise(total.acres = sum(Total.acres, na.rm = TRUE),
+            total.value = sum(Total.estimated.value, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(land.value.acre = total.value / total.acres) %>%
+  group_by(planning.region) %>%
+  mutate(land.value.acre.index = land.value.acre / land.value.acre[year == 2001]) %>%
+  ungroup()
 
-ag.down.counties.trends <- impacted.counties.trends %>%
-  right_join(ag.down.counties[,c(3,7,8)], by = "countyfp") %>%
-  filter(periodyear == 2018) %>%
-  mutate(ag.pct.total.emp = ag.emp / total.emp,
-         ag.emp.pct.change.peak = (ag.emp - ag.emp.peak) / ag.emp.peak,
-         total.emp.pct.change.peak = (total.emp - total.emp.peak) / total.emp.peak) %>%
-  select(2,10,17,18) %>%
-  arrange(desc(ag.pct.total.emp)) %>%
-  rename("Ag employment as % of total employment in 2018" = 2,
-         "Change in ag employment peak ag employment year" = 3,
-         "Change in total employment since peak ag employment year" = 4)
-```
+net.income.acre.edr <- master.netinc.county %>%
+  group_by(edr, planning.region, year) %>%
+  summarise(net.income = sum(net.income, na.rm = TRUE),
+            total.acres = sum(Total.acres, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(net.income.acre = net.income / total.acres) %>%
+  group_by(edr, planning.region) %>%
+  mutate(net.income.acre.index = net.income.acre / net.income.acre[year == 2001]) %>%
+  ungroup()
 
-
-<br>
-
-### Counties with growth in ag employment
-The table is organized so that the counties with the highest percentage of total employment in ag-related industries is at the top. Overall, this shows a general trend that if a county has experienced significant growth in ag-related industries and currently has 15% or more of the employment in these industries, they will likely also have growth in their total enrollment.
-
-<br>
-
-```{r table ag up counties}
-
-datatable(ag.up.counties.trends, class = "cell-border stripe", filter = "top", rownames = FALSE,
-          options = list(scrollX = TRUE,
-                         pageLength = 15)) %>%
-  formatStyle("Change in total employment since 2001",
-              target = "row",
-              backgroundColor = styleInterval(c(-1, 0), c("red", "red", "transparent"))) %>%
-  formatPercentage(2:4)
+land.value.acre.edr <- master.lv.county %>%
+  group_by(edr, planning.region, year) %>%
+  summarise(total.acres = sum(Total.acres, na.rm = TRUE),
+            total.value = sum(Total.estimated.value, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(land.value.acre = total.value / total.acres) %>%
+  group_by(planning.region) %>%
+  mutate(land.value.acre.index = land.value.acre / land.value.acre[year == 2001]) %>%
+  ungroup()
 
 ```
 
-### Counties with decreasing ag employment
+## Changes in net income vs. changes in land values since year of peak net incomes {.tabset}
 
-This table provides the 13 counties who are experiencing a decline in their ag-related employment, with rows highlighted in red if their total employment in 2018 is lower than in 2001. Not surprisingly, here the higher the percentage of a county's workforce is in ag-related industries, the more likely they will also have less total employment in 2018 than in 2001.
+Summary here
 
 <br>
 
-
-
-```{r table ag down counties}
-
-datatable(ag.down.counties.trends, class = "cell-border stripe", filter = "top", rownames = FALSE,
-          options = list(scrollX = TRUE,
-                         pageLength = 15)) %>%
-  formatStyle("Change in total employment since peak ag employment year",
-              target = "row",
-              backgroundColor = styleInterval(c(-1, 0), c("red", "red", "transparent"))) %>%
-  formatPercentage(2:4)
-
-```
+### RUCA

@@ -1,0 +1,1585 @@
+year,cash.receipts,countyfp,other.income,expenses,net.income,Total.acres,Dem_RUCA,Dem_Desc,edr,planning.region
+2001,8209998000,000,1792901000,9203398000,533132000,30134706,NA,Minnesota,Minnesota,Minnesota
+2001,11741000,001,2370000,16529000,-2998000,255677,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2001,36630000,003,5580000,38663000,3244000,69689,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2001,94120000,005,17052000,103521000,4673000,499946,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2001,20629000,007,4086000,19682000,3834000,333471,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2001,86374000,009,9041000,100538000,-4019000,219093,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2001,47366000,011,16736000,60918000,1013000,296710,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2001,206544000,013,35624000,216215000,21361000,439203,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2001,175771000,015,32613000,184941000,18804000,370856,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2001,9650000,017,1600000,11092000,-254000,162232,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2001,65183000,019,13741000,73115000,3670000,178098,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2001,19601000,021,2212000,19526000,1430000,246265,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2001,88664000,023,29346000,99265000,14923000,349726,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2001,25740000,025,6527000,32575000,-1045000,187789,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2001,119025000,027,37999000,138365000,14484000,608623,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2001,20198000,029,2584000,26608000,-2878000,300937,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2001,0,031,0,0,0,2132,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2001,143614000,033,34462000,147240000,21755000,391714,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2001,14164000,035,3038000,19276000,-2631000,167678,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2001,99413000,037,23160000,113956000,6040000,219771,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2001,103927000,039,21891000,117485000,5015000,265695,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2001,55211000,041,12683000,59689000,5972000,338172,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2001,134743000,043,36594000,175211000,-8058000,439192,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2001,145931000,045,37697000,176777000,1225000,506927,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2001,145092000,047,36874000,173813000,4012000,421286,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2001,167614000,049,34646000,183636000,13289000,427312,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2001,57658000,051,23605000,70185000,7886000,325714,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2001,47493000,053,6232000,50216000,2728000,0,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2001,75345000,055,15376000,81242000,6556000,308281,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2001,22600000,057,4178000,26729000,-1657000,156448,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2001,22212000,059,6460000,31655000,-3882000,220447,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2001,6747000,061,1346000,7167000,507000,110026,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2001,145566000,063,36902000,164451000,14024000,427168,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2001,20556000,065,3485000,24480000,-1350000,210322,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2001,203648000,067,32206000,245522000,-12105000,434718,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2001,46296000,069,24431000,77488000,-9263000,589401,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2001,4056000,071,844000,4238000,393000,132424,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2001,100339000,073,32087000,116677000,11724000,451912,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2001,291000,075,26000,471000,-160000,2115,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2001,6107000,077,3458000,9582000,-597000,137660,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2001,85201000,079,19369000,97780000,4290000,257579,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2001,77482000,081,20458000,86580000,8445000,322592,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2001,156797000,083,30667000,167291000,15196000,422011,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2001,78680000,085,19717000,87538000,7878000,287576,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2001,26016000,087,11197000,35196000,449000,240582,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2001,80488000,089,44390000,122183000,-3218000,924198,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2001,246880000,091,39711000,258985000,22426000,436671,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2001,117279000,093,23281000,137661000,-529000,348865,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2001,24918000,095,4223000,25190000,3036000,158480,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2001,167554000,097,14861000,170369000,7892000,556693,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2001,151287000,099,40784000,183508000,4066000,429901,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2001,135861000,101,30702000,140617000,21431000,432350,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2001,155546000,103,24046000,154351000,21808000,260978,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2001,182970000,105,36232000,190976000,23462000,437932,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2001,89465000,107,33100000,98360000,19534000,536310,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2001,108570000,109,23470000,134636000,-4529000,359550,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2001,221343000,111,35247000,235078000,12204000,1058307,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2001,18820000,113,14689000,30212000,1510000,368378,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2001,36899000,115,5307000,41737000,-815000,364579,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2001,122583000,117,16987000,118181000,18142000,286621,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2001,180800000,119,68367000,234421000,3024000,1176193,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2001,83891000,121,23025000,102600000,755000,382154,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2001,4109000,123,15000,4877000,-768000,445,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2001,22311000,125,12191000,30202000,2944000,261117,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2001,211631000,127,43767000,221572000,27645000,541051,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2001,279803000,129,53545000,304570000,20997000,604639,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2001,104769000,131,21109000,124344000,-1186000,278274,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2001,156328000,133,24374000,157002000,19787000,297839,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2001,52149000,135,27131000,75168000,113000,695544,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2001,11619000,137,3361000,13733000,670000,164659,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2001,52775000,139,9433000,59495000,1199000,143890,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2001,39038000,141,4953000,45677000,-1104000,178936,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2001,152222000,143,30260000,160619000,17963000,359149,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2001,366818000,145,40743000,354551000,42979000,738918,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2001,110421000,147,21102000,116500000,12024000,251869,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2001,113139000,149,27003000,118410000,17638000,335036,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2001,128495000,151,32988000,161826000,-5228000,446603,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2001,106978000,153,11736000,115685000,174000,504803,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2001,65349000,155,23911000,80925000,4994000,353297,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2001,106333000,157,17355000,107216000,12245000,296655,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2001,43213000,159,3786000,59111000,-13934000,218712,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2001,106296000,161,22583000,119016000,6771000,254632,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2001,50524000,163,8057000,66061000,-8235000,107182,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2001,120571000,165,24871000,129026000,13306000,267795,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2001,87736000,167,27201000,102315000,8778000,457056,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2001,144507000,169,20602000,150154000,10224000,319212,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2001,94295000,171,19303000,118003000,-7255000,342248,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2001,133380000,173,32899000,135151000,26269000,461815,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2002,8342846000,000,808726000,8854843000,470766000,30095364,NA,Minnesota,Minnesota,Minnesota
+2002,11566000,001,1917000,15956000,-2694000,247138,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2002,40131000,003,4746000,39831000,5427000,67975,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2002,93040000,005,7765000,96897000,2503000,491369,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2002,19041000,007,2851000,18023000,3160000,330332,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2002,84818000,009,7097000,99430000,-4588000,218167,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2002,55530000,011,5391000,58081000,3655000,296028,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2002,201084000,013,12974000,203947000,18000000,438150,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2002,161687000,015,11584000,173138000,8461000,370603,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2002,8438000,017,1583000,10736000,-970000,161396,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2002,63410000,019,6794000,70116000,1205000,175538,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2002,15511000,021,1852000,17800000,-885000,243528,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2002,97756000,023,12691000,92778000,21719000,349526,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2002,27142000,025,4161000,30984000,765000,186236,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2002,127367000,027,15414000,132953000,5570000,607315,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2002,20123000,029,1479000,25642000,-2896000,300875,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2002,0,031,0,0,0,2146,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2002,145980000,033,11688000,134755000,26360000,391534,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2002,13425000,035,2317000,18224000,-2528000,166188,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2002,106698000,037,12624000,107633000,14063000,216269,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2002,107390000,039,8624000,114765000,5022000,265188,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2002,53458000,041,6481000,54287000,6258000,336551,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2002,159378000,043,13666000,168190000,11772000,439037,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2002,143459000,045,17256000,176693000,-12464000,506196,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2002,158241000,047,13625000,168107000,10433000,420223,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2002,157372000,049,19931000,177260000,3585000,426565,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2002,66340000,051,8211000,69846000,5792000,338149,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2002,48575000,053,4157000,50552000,2823000,0,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2002,70168000,055,9615000,75625000,4870000,307321,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2002,23676000,057,3171000,25087000,2558000,153693,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2002,24926000,059,2665000,31717000,-3496000,219331,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2002,6514000,061,1137000,6702000,760000,111106,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2002,151699000,063,13136000,157275000,13430000,426788,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2002,20155000,065,2276000,23440000,-1144000,208991,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2002,212655000,067,14071000,238291000,-3236000,433413,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2002,67212000,069,13367000,72479000,3177000,587580,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2002,4069000,071,556000,3961000,495000,130006,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2002,109285000,073,11884000,113184000,12031000,451690,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2002,314000,075,17000,455000,-126000,2025,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2002,5385000,077,2300000,9012000,-1621000,134936,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2002,86632000,079,7618000,93852000,3096000,256853,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2002,73910000,081,9331000,84446000,632000,322268,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2002,156814000,083,9810000,161053000,10429000,421558,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2002,80532000,085,7558000,83539000,6800000,287279,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2002,23895000,087,5474000,33047000,-4144000,240158,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2002,102137000,089,24507000,118001000,2664000,922921,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2002,240573000,091,14872000,245793000,19762000,436516,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2002,122297000,093,10980000,133682000,2852000,347677,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2002,23097000,095,2516000,22977000,2740000,153185,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2002,160345000,097,10196000,162558000,9693000,554951,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2002,169891000,099,17089000,180134000,13369000,429696,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2002,138940000,101,10757000,134648000,19601000,432110,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2002,141825000,103,8321000,141328000,13462000,260759,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2002,188151000,105,14923000,185593000,23366000,437640,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2002,86535000,107,13117000,90621000,6505000,536033,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2002,107739000,109,12064000,135140000,-10446000,357393,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2002,218154000,111,20595000,228047000,11926000,1055727,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2002,23634000,113,7807000,28200000,1735000,368280,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2002,34493000,115,3193000,41885000,-4321000,363102,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2002,104164000,117,6594000,109679000,4211000,286511,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2002,184779000,119,35947000,225229000,-9646000,1175111,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2002,89998000,121,10666000,102001000,869000,381797,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2002,3602000,123,9000,4366000,-734000,435,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2002,22804000,125,6503000,30492000,-2515000,260190,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2002,218913000,127,14358000,210224000,30102000,540768,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2002,296041000,129,19619000,288995000,36794000,604175,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2002,97017000,131,10219000,112343000,-2424000,276902,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2002,155240000,133,9055000,152401000,15871000,297218,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2002,53544000,135,16282000,72893000,-5568000,693821,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2002,11280000,137,3144000,13789000,400000,164748,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2002,53597000,139,5009000,59813000,-202000,142365,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2002,42733000,141,2313000,45190000,531000,225677,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2002,161146000,143,11971000,153145000,24283000,358508,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2002,346821000,145,27220000,342497000,35371000,735227,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2002,119178000,147,9314000,126109000,6124000,251219,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2002,119060000,149,8672000,113162000,17970000,334857,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2002,148371000,151,12877000,162364000,4167000,446611,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2002,98875000,153,7688000,106382000,750000,504363,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2002,76938000,155,6969000,80642000,4733000,353328,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2002,98260000,157,11294000,101973000,9077000,295863,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2002,39183000,159,2884000,55453000,-12601000,218396,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2002,105609000,161,8918000,111577000,7270000,254193,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2002,52325000,163,5277000,67433000,-9150000,105689,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2002,123334000,165,8422000,125531000,10998000,267616,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2002,99551000,167,10839000,100197000,6815000,456894,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2002,130388000,169,13498000,145888000,1767000,318497,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2002,92469000,171,10806000,115704000,-10802000,339614,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2002,135014000,173,10557000,130975000,19338000,461563,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2003,9384893000,000,1317814000,9000226000,1548716000,29935999,NA,Minnesota,Minnesota,Minnesota
+2003,14028000,001,2312000,15556000,1000,243851,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2003,44352000,003,6252000,35886000,14374000,65810,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2003,107456000,005,12707000,99338000,19270000,489445,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2003,23674000,007,4643000,17727000,9930000,328359,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2003,89809000,009,15409000,94508000,10053000,216673,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2003,54993000,011,10175000,57622000,6158000,296020,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2003,223619000,013,20375000,213188000,27266000,436239,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2003,195433000,015,20496000,178096000,33996000,370438,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2003,9237000,017,1929000,9711000,976000,159162,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2003,65350000,019,11340000,66454000,8625000,174253,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2003,27308000,021,3372000,18436000,11395000,240913,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2003,111007000,023,19151000,98223000,28743000,348965,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2003,28184000,025,6259000,29535000,3884000,185379,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2003,153126000,027,23301000,129898000,48972000,606996,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2003,23705000,029,2654000,23411000,2049000,298855,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2003,0,031,0,0,0,2111,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2003,159698000,033,18611000,141560000,32152000,391134,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2003,14531000,035,3163000,17011000,208000,165080,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2003,120375000,037,21254000,112707000,26905000,214036,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2003,113135000,039,13660000,115223000,9246000,264852,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2003,55587000,041,10264000,52558000,11718000,335102,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2003,176668000,043,24443000,172939000,24241000,438677,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2003,155010000,045,25226000,177397000,-583000,505089,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2003,173089000,047,20274000,169871000,20413000,419316,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2003,173139000,049,28962000,176188000,22128000,425767,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2003,71757000,051,13382000,70133000,13303000,337952,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2003,55282000,053,7902000,50776000,11537000,0,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2003,76825000,055,12519000,72648000,14765000,306747,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2003,27930000,057,4528000,24252000,6946000,151786,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2003,23534000,059,5158000,32501000,-4585000,218366,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2003,7635000,061,1329000,7006000,1562000,110704,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2003,174967000,063,21159000,163879000,26789000,426420,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2003,19926000,065,4100000,22221000,956000,204990,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2003,225414000,067,23379000,232311000,11920000,431759,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2003,95728000,069,24489000,80297000,46799000,587321,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2003,5465000,071,971000,4764000,1440000,130093,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2003,107756000,073,16977000,110707000,9964000,451486,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2003,354000,075,45000,407000,-14000,2025,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2003,12208000,077,4047000,7819000,9086000,132056,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2003,96063000,079,12600000,95822000,10563000,256814,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2003,86406000,081,12750000,87054000,9755000,322116,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2003,177949000,083,15286000,171398000,16549000,421223,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2003,85573000,085,14325000,83924000,13783000,286960,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2003,31288000,087,8433000,30938000,7771000,239637,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2003,149096000,089,40293000,141709000,54845000,920505,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2003,283006000,091,25524000,255727000,49972000,436293,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2003,126466000,093,17814000,138033000,2685000,346659,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2003,23270000,095,4480000,23503000,3391000,148799,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2003,173085000,097,22454000,168661000,23946000,553272,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2003,168139000,099,25128000,184254000,4604000,429453,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2003,154867000,101,17151000,137173000,29038000,431210,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2003,167203000,103,14358000,150677000,29256000,260159,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2003,219138000,105,23263000,197109000,39113000,437429,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2003,126279000,107,25090000,98198000,55116000,535851,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2003,112487000,109,18860000,132464000,-2532000,351978,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2003,240913000,111,31927000,223291000,44629000,1050334,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2003,35714000,113,12912000,29600000,19281000,367584,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2003,37913000,115,5145000,41214000,393000,358651,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2003,122342000,117,10654000,114759000,14865000,286373,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2003,258455000,119,50558000,229757000,81550000,1172923,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2003,92914000,121,17761000,97162000,10859000,380353,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2003,3733000,123,65000,3386000,398000,424,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2003,32384000,125,8950000,28861000,12648000,260331,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2003,246067000,127,24590000,219253000,45437000,540559,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2003,311853000,129,32329000,288966000,49252000,603533,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2003,104286000,131,15657000,109737000,8232000,276820,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2003,178686000,133,14373000,162822000,25444000,296669,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2003,87541000,135,27567000,69484000,52192000,692633,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2003,13443000,137,3903000,15592000,1070000,164613,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2003,56334000,139,11081000,59820000,6242000,137793,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2003,47352000,141,4839000,45132000,8856000,168605,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2003,168109000,143,19572000,154430000,30247000,357894,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2003,374677000,145,54562000,349722000,72425000,729648,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2003,126269000,147,12931000,131150000,5700000,250607,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2003,145007000,149,15278000,125329000,32164000,334538,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2003,149925000,151,20147000,160190000,5412000,446050,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2003,104159000,153,15133000,108488000,8835000,504797,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2003,77679000,155,14490000,81983000,8088000,353145,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2003,108747000,157,16803000,100238000,23288000,295062,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2003,41214000,159,3903000,49072000,-4942000,216764,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2003,118889000,161,13484000,115701000,14648000,253897,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2003,62127000,163,9130000,67955000,2817000,103108,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2003,136641000,165,13201000,127116000,20255000,267595,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2003,119066000,167,18419000,104924000,34669000,456281,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2003,137980000,169,19538000,143531000,11073000,317260,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2003,97438000,171,18544000,109625000,3415000,337394,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2003,149427000,173,16342000,132528000,28831000,461176,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2004,10488407000,000,1261091000,9546918000,2377071000,29762848,NA,Minnesota,Minnesota,Minnesota
+2004,12635000,001,1629000,15163000,-545000,239324,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2004,40478000,003,5659000,35263000,11086000,62367,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2004,106863000,005,10287000,105576000,12238000,479627,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2004,21633000,007,2971000,18755000,6278000,328332,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2004,107991000,009,14929000,96624000,27010000,215768,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2004,68579000,011,9953000,62135000,19204000,295834,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2004,282614000,013,21615000,231238000,78973000,435579,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2004,227985000,015,20974000,189662000,63659000,369548,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2004,9213000,017,1133000,9505000,1124000,157114,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2004,75993000,019,9702000,69228000,17974000,173334,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2004,22915000,021,3004000,20216000,6042000,237281,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2004,116999000,023,18736000,107384000,31501000,348832,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2004,30058000,025,5425000,32616000,3476000,182796,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2004,142948000,027,21041000,137484000,27169000,602811,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2004,21947000,029,1649000,22930000,1066000,299262,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2004,0,031,0,0,0,2370,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2004,186807000,033,20434000,153325000,59019000,389644,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2004,15047000,035,2253000,16885000,587000,163638,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2004,138312000,037,21443000,127449000,34296000,212712,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2004,132286000,039,15144000,122755000,27906000,264494,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2004,61398000,041,9231000,54842000,17565000,330887,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2004,205974000,043,25835000,186838000,50597000,437950,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2004,180529000,045,24910000,185942000,23258000,503744,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2004,202419000,047,22348000,181413000,47940000,419115,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2004,208799000,049,26550000,186976000,51882000,424611,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2004,76455000,051,15003000,75027000,19124000,324753,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2004,54430000,053,8401000,52040000,11322000,0,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2004,87821000,055,10398000,74442000,25227000,305329,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2004,27592000,057,4271000,25865000,5726000,147830,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2004,26578000,059,5363000,31744000,803000,217561,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2004,7660000,061,995000,7277000,1581000,110208,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2004,215217000,063,22395000,181234000,61731000,425229,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2004,21321000,065,3227000,22890000,2204000,198210,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2004,255557000,067,23545000,234869000,48018000,430618,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2004,72763000,069,16612000,75963000,11233000,586929,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2004,5506000,071,593000,4930000,1281000,129303,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2004,129079000,073,18122000,116164000,35369000,451131,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2004,308000,075,67000,396000,-21000,2118,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2004,9751000,077,2446000,7573000,4488000,129733,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2004,114366000,079,13819000,103662000,27168000,254861,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2004,97778000,081,13077000,94969000,18713000,321909,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2004,211912000,083,18302000,188204000,47165000,420627,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2004,96577000,085,14273000,92144000,21163000,286063,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2004,26088000,087,6538000,32405000,573000,234934,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2004,103264000,089,28162000,125429000,2966000,918517,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2004,359983000,091,28560000,281917000,112852000,436169,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2004,156442000,093,18423000,153231000,24875000,345319,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2004,27342000,095,3989000,25430000,6514000,147217,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2004,210388000,097,20860000,177087000,55142000,551913,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2004,215333000,099,25650000,201593000,44787000,428670,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2004,173169000,101,19436000,148134000,49365000,429230,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2004,207502000,103,16040000,164979000,61462000,258913,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2004,256229000,105,25232000,213628000,73706000,437274,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2004,105998000,107,18436000,99659000,23591000,533713,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2004,128639000,109,17881000,134774000,14636000,346914,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2004,254129000,111,27990000,233354000,50825000,1035346,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2004,21299000,113,10018000,29339000,1432000,366973,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2004,43888000,115,3593000,44601000,3778000,354839,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2004,143911000,117,12321000,123650000,35262000,286212,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2004,210323000,119,39931000,231937000,15662000,1167967,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2004,100909000,121,18659000,101406000,20575000,371354,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2004,3383000,123,23000,2924000,482000,310,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2004,25208000,125,7421000,30469000,1889000,260158,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2004,278967000,127,26241000,234406000,77585000,540058,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2004,331612000,129,31800000,301826000,67250000,603151,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2004,127488000,131,14495000,115046000,29187000,274883,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2004,209286000,133,16014000,177481000,52091000,296245,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2004,56453000,135,18360000,71728000,1697000,691688,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2004,13565000,137,3047000,16569000,496000,164754,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2004,61112000,139,11995000,59332000,14963000,134551,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2004,52131000,141,5498000,46612000,10460000,166415,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2004,196078000,143,19053000,165304000,53401000,357255,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2004,455766000,145,47579000,391117000,116140000,725335,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2004,145516000,147,13230000,141057000,20469000,250032,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2004,171786000,149,17424000,143146000,49324000,334360,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2004,160475000,151,22506000,166493000,19816000,445262,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2004,124281000,153,11687000,115113000,21940000,503368,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2004,81611000,155,18032000,88839000,13880000,352791,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2004,127172000,157,14059000,105706000,37104000,294187,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2004,41997000,159,3941000,45811000,287000,212200,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2004,141406000,161,14501000,126182000,32988000,253496,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2004,63853000,163,9281000,69946000,3664000,100613,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2004,174879000,165,15023000,138055000,55734000,267073,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2004,115783000,167,19676000,109427000,26278000,452101,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2004,162906000,169,15634000,148317000,32119000,316733,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2004,120973000,171,16454000,112335000,27673000,334197,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2004,168791000,173,18634000,141527000,50551000,460772,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2005,10105460000,000,2039121000,9594635000,2863652000,29742031,NA,Minnesota,Minnesota,Minnesota
+2005,10957000,001,1809000,14015000,-1778000,235688,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2005,38198000,003,6561000,33173000,11462000,60028,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2005,112633000,005,14788000,107358000,19065000,477533,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2005,22204000,007,4574000,19462000,6367000,324987,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2005,101443000,009,23435000,94296000,29597000,214654,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2005,60469000,011,18518000,63974000,19335000,295820,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2005,267799000,013,37598000,229674000,88079000,527563,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2005,218961000,015,34298000,188529000,73625000,369122,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2005,8679000,017,1082000,9103000,251000,152942,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2005,69392000,019,14748000,69983000,16498000,171733,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2005,30668000,021,5308000,21294000,13853000,234904,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2005,115688000,023,31420000,113046000,42546000,348347,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2005,28970000,025,8084000,33267000,4507000,180587,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2005,142241000,027,26285000,140276000,27628000,600542,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2005,22356000,029,3126000,21790000,2868000,300112,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2005,0,031,0,0,0,2375,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2005,172258000,033,35826000,157012000,62425000,389388,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2005,14373000,035,3414000,16365000,1069000,161939,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2005,130814000,037,32359000,136389000,30922000,210901,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2005,125045000,039,26127000,123240000,34643000,264202,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2005,55474000,041,14870000,55210000,16969000,328769,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2005,189980000,043,44280000,190729000,57388000,437790,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2005,170778000,045,42329000,181787000,38672000,502206,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2005,192434000,047,39973000,182065000,61137000,418647,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2005,196868000,049,41686000,190725000,53500000,423699,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2005,63547000,051,23564000,77571000,13891000,325035,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2005,50476000,053,11261000,51572000,10630000,0,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2005,82042000,055,15139000,72793000,25823000,306019,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2005,30325000,057,6567000,26900000,10169000,144374,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2005,22860000,059,9225000,32751000,176000,216202,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2005,7401000,061,1126000,7480000,723000,108993,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2005,213033000,063,37297000,185818000,77815000,424553,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2005,18429000,065,4722000,21206000,1407000,195874,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2005,250331000,067,39774000,222037000,71448000,429405,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2005,54673000,069,24804000,69444000,7957000,586546,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2005,5250000,071,795000,4974000,831000,127733,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2005,118681000,073,32389000,115308000,45309000,450906,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2005,301000,075,80000,331000,46000,2396,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2005,6772000,077,3160000,7210000,2478000,129049,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2005,105897000,079,22792000,105725000,28085000,254677,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2005,100550000,081,21708000,99279000,28261000,321109,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2005,211289000,083,32622000,194791000,59396000,420009,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2005,92749000,085,26876000,97534000,27528000,285231,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2005,27017000,087,10317000,33396000,3907000,233672,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2005,108531000,089,39091000,132209000,12503000,916763,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2005,351173000,091,49653000,281699000,133858000,436055,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2005,146232000,093,30650000,154545000,26799000,344157,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2005,24134000,095,6253000,26650000,3778000,145029,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2005,208028000,097,36117000,173414000,67146000,544620,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2005,210426000,099,44634000,206748000,60400000,428292,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2005,169085000,101,35821000,150516000,65912000,428919,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2005,206238000,103,26808000,167301000,72036000,258444,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2005,248990000,105,44296000,213660000,92870000,436881,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2005,114932000,107,24519000,102802000,36999000,533613,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2005,121261000,109,29909000,132094000,24332000,347297,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2005,239532000,111,43710000,232697000,51016000,1027975,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2005,25223000,113,14958000,31057000,8759000,366649,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2005,40859000,115,4880000,43317000,1485000,347710,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2005,142000000,117,21160000,123168000,45389000,286087,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2005,237908000,119,49489000,242740000,37876000,1165377,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2005,99464000,121,27327000,102389000,28246000,369534,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2005,3088000,123,41000,2408000,708000,288,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2005,26623000,125,10153000,31359000,4627000,260100,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2005,270147000,127,48000000,235958000,97136000,539815,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2005,326187000,129,56107000,295317000,101965000,603044,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2005,123367000,131,24111000,114289000,37032000,273463,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2005,216864000,133,28298000,180956000,71975000,296096,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2005,51812000,135,27124000,71894000,6093000,685752,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2005,13608000,137,2979000,16131000,-158000,164816,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2005,55267000,139,17828000,56970000,17942000,131830,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2005,56224000,141,8910000,47779000,12240000,162236,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2005,184374000,143,32834000,168329000,56833000,356653,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2005,434249000,145,69801000,391937000,110704000,720826,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2005,138871000,147,24085000,139014000,30075000,249395,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2005,166846000,149,30066000,148614000,54530000,333910,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2005,154024000,151,40141000,163506000,38867000,446543,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2005,122501000,153,21649000,114926000,27449000,501368,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2005,66803000,155,31185000,89918000,13459000,352572,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2005,117978000,157,20938000,107981000,33335000,293124,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2005,40218000,159,6315000,41442000,4929000,212921,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2005,137454000,161,26979000,128665000,43426000,252680,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2005,65163000,163,13243000,68149000,11214000,99545,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2005,157904000,165,26154000,134262000,58338000,266858,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2005,100287000,167,25199000,108172000,19714000,452679,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2005,154079000,169,21826000,146946000,29994000,315854,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2005,113463000,171,24737000,110771000,30214000,329666,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2005,153738000,173,34427000,143054000,55099000,460334,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2006,11024820000,000,1417662000,9873643000,2385313000,29622479,NA,Minnesota,Minnesota,Minnesota
+2006,11435000,001,1288000,13400000,-203000,231827,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2006,35299000,003,5605000,31621000,9417000,57385,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2006,123811000,005,11635000,110811000,25354000,472753,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2006,22851000,007,3024000,20138000,6725000,319018,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2006,102793000,009,20802000,94196000,30901000,214404,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2006,71776000,011,11419000,65672000,14066000,294603,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2006,289511000,013,22801000,234883000,70704000,527563,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2006,233890000,015,22385000,190898000,60084000,366144,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2006,8161000,017,886000,8799000,657000,153388,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2006,73672000,019,10520000,70325000,12196000,169310,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2006,24184000,021,3896000,23071000,6042000,231497,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2006,143028000,023,20546000,118180000,38761000,348006,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2006,30373000,025,6865000,33518000,3438000,177257,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2006,165697000,027,20899000,144631000,43022000,596476,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2006,21650000,029,1701000,20949000,3291000,299730,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2006,0,031,0,0,0,2364,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2006,192831000,033,21986000,164021000,42922000,389104,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2006,14082000,035,2113000,16186000,431000,161200,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2006,149187000,037,24867000,146041000,24705000,208810,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2006,135742000,039,16904000,126576000,21591000,263739,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2006,54518000,041,11122000,55879000,8952000,324743,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2006,218777000,043,27686000,197320000,39332000,437627,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2006,180861000,045,28679000,178823000,25732000,501121,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2006,212945000,047,24772000,186701000,44482000,418051,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2006,211965000,049,29831000,196124000,41200000,422244,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2006,79720000,051,15347000,79332000,11562000,323270,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2006,52531000,053,10200000,51456000,11184000,0,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2006,81178000,055,11056000,72401000,19212000,304409,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2006,26649000,057,5237000,27589000,6184000,143328,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2006,25152000,059,7478000,31837000,303000,214980,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2006,7904000,061,793000,7768000,1265000,108128,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2006,226919000,063,25993000,191316000,54562000,423552,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2006,19057000,065,3944000,21440000,2092000,195759,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2006,267761000,067,28710000,223866000,65793000,428760,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2006,80516000,069,15940000,80416000,17017000,586976,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2006,4785000,071,527000,5035000,478000,126775,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2006,138487000,073,19092000,115444000,34796000,450628,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2006,292000,075,87000,360000,27000,2386,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2006,6629000,077,2095000,6719000,2172000,128340,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2006,119676000,079,16402000,108145000,24090000,253560,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2006,108671000,081,14060000,103985000,15519000,322470,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2006,237319000,083,18406000,204267000,44797000,419694,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2006,109734000,085,17849000,102041000,20532000,284659,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2006,33157000,087,6326000,33589000,5606000,237401,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2006,144974000,089,26865000,155769000,19038000,916612,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2006,379248000,091,29822000,290768000,110758000,435385,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2006,168121000,093,23072000,162550000,25475000,343391,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2006,24785000,095,5405000,28019000,2334000,143300,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2006,209329000,097,32057000,191838000,54536000,542730,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2006,231575000,099,25884000,212923000,37248000,428025,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2006,185937000,101,23240000,154443000,46990000,428619,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2006,228090000,103,18044000,174492000,67695000,258047,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2006,261955000,105,27982000,220337000,63003000,436654,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2006,139347000,107,16766000,113981000,41545000,533593,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2006,131280000,109,20377000,130786000,16998000,343664,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2006,245188000,111,34516000,236802000,44034000,1024393,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2006,28539000,113,10203000,33069000,5936000,365979,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2006,42052000,115,4012000,42989000,3974000,341142,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2006,148588000,117,14786000,127077000,34227000,285865,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2006,279793000,119,35007000,265378000,59698000,1159993,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2006,97858000,121,20119000,102931000,13370000,368735,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2006,2813000,123,43000,1947000,921000,305,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2006,29042000,125,7020000,31500000,5313000,259666,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2006,306994000,127,29021000,242697000,82584000,538999,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2006,368906000,129,35348000,298980000,95147000,602397,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2006,134814000,131,18179000,114993000,35822000,271234,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2006,225796000,133,18713000,187517000,53429000,296046,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2006,67328000,135,17491000,71609000,14159000,673130,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2006,13706000,137,2601000,16085000,728000,164363,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2006,57234000,139,15946000,54670000,17520000,130120,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2006,56821000,141,7114000,48546000,23794000,158625,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2006,205570000,143,21044000,173473000,46477000,355603,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2006,424344000,145,62777000,397117000,93734000,715881,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2006,152192000,147,14718000,139582000,22859000,249042,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2006,190653000,149,18208000,156107000,48308000,333802,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2006,169796000,151,26943000,166443000,24208000,444485,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2006,120819000,153,17594000,119103000,22248000,500032,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2006,89788000,155,22562000,92497000,14617000,352157,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2006,116033000,157,15045000,110540000,18961000,292509,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2006,35802000,159,5064000,38245000,3484000,214129,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2006,154664000,161,17068000,134304000,32289000,253082,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2006,69331000,163,11231000,64120000,16162000,95583,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2006,169329000,165,17538000,135177000,46491000,266587,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2006,118579000,167,21739000,111940000,26280000,452762,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2006,149260000,169,16629000,149307000,16182000,315500,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2006,120206000,171,18393000,110544000,26946000,326844,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2006,173165000,173,19702000,146679000,38798000,460030,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2007,13714688000,000,1138328000,12229147000,2375770000,29421057,NA,Minnesota,Minnesota,Minnesota
+2007,13933000,001,1003000,13407000,-460000,228173,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2007,33098000,003,5037000,34389000,3845000,56571,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2007,155341000,005,10623000,137080000,25466000,469404,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2007,22116000,007,3011000,24328000,-527000,317759,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2007,120453000,009,19370000,118747000,20422000,213524,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2007,88361000,011,8595000,81664000,12448000,293566,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2007,342745000,013,14828000,293099000,60507000,429657,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2007,265011000,015,15942000,229229000,46913000,365738,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2007,8802000,017,662000,8210000,707000,152790,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2007,97651000,019,7318000,86725000,15997000,167806,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2007,26295000,021,3848000,27268000,1789000,231871,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2007,177343000,023,15028000,147748000,41168000,347506,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2007,34935000,025,5849000,36409000,3650000,176346,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2007,213802000,027,19494000,176221000,51039000,598415,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2007,24016000,029,1999000,22086000,2517000,291316,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2007,0,031,0,0,0,2362,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2007,245432000,033,14589000,207396000,48838000,388025,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2007,13984000,035,1673000,14272000,1117000,158907,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2007,187030000,037,21274000,185510000,20821000,207872,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2007,180264000,039,12103000,163248000,25335000,263118,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2007,67663000,041,9216000,68791000,5685000,321021,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2007,298337000,043,19695000,245423000,65712000,437081,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2007,232610000,045,22086000,215023000,35740000,500165,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2007,264766000,047,17500000,232450000,44663000,417732,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2007,277972000,049,22025000,249614000,46447000,421311,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2007,105790000,051,14061000,97059000,19478000,322752,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2007,51962000,053,9994000,56102000,5593000,0,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2007,96713000,055,7410000,87289000,13901000,303035,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2007,33623000,057,5026000,34411000,3088000,141805,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2007,27404000,059,6609000,32306000,1164000,213918,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2007,7700000,061,702000,7106000,985000,108161,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2007,275794000,063,16713000,231434000,55477000,422427,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2007,20651000,065,3354000,25088000,-1716000,195606,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2007,316457000,067,23436000,287867000,51106000,428472,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2007,111216000,069,19192000,96081000,30552000,587564,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2007,4860000,071,483000,4616000,273000,124830,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2007,160785000,073,13278000,139617000,30402000,449597,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2007,270000,075,98000,335000,37000,2391,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2007,7703000,077,1967000,7498000,1825000,124741,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2007,144741000,079,12723000,135541000,19019000,252059,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2007,138872000,081,10110000,130301000,16437000,319892,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2007,310830000,083,12075000,260421000,57706000,421082,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2007,128804000,085,14265000,128027000,11804000,283513,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2007,44782000,087,5635000,40090000,7812000,235941,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2007,200415000,089,26722000,184201000,36401000,917488,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2007,422947000,091,21758000,350057000,88983000,432225,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2007,207401000,093,18580000,200642000,23361000,342318,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2007,28714000,095,4541000,31644000,1002000,142273,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2007,274549000,097,30225000,244747000,58913000,541732,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2007,298303000,099,18229000,268983000,41327000,423776,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2007,243149000,101,16026000,195925000,59792000,428161,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2007,249587000,103,13648000,224012000,36929000,257850,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2007,357012000,105,20692000,284226000,86974000,436163,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2007,179520000,107,15621000,142006000,47897000,532719,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2007,160155000,109,15582000,158576000,14021000,336375,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2007,312228000,111,30528000,300948000,36404000,1019483,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2007,42323000,113,11635000,42194000,8374000,365597,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2007,52666000,115,3086000,51689000,2727000,336498,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2007,185880000,117,10433000,163023000,33258000,285004,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2007,366033000,119,32943000,321998000,65444000,1156284,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2007,120426000,121,17455000,124808000,11472000,367751,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2007,2408000,123,33000,1890000,560000,275,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2007,43372000,125,6752000,38554000,8928000,259689,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2007,372433000,127,19221000,300939000,82832000,538859,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2007,440129000,129,24971000,363614000,97647000,601748,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2007,142909000,131,13745000,137528000,17652000,270072,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2007,292895000,133,12550000,241402000,60470000,296000,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2007,87268000,135,18338000,86605000,16188000,673121,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2007,14926000,137,2309000,15171000,1258000,162998,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2007,65893000,139,15288000,64151000,15886000,131139,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2007,66631000,141,6775000,55914000,16843000,156739,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2007,250365000,143,14934000,218794000,42530000,355262,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2007,553835000,145,54957000,507888000,95848000,713117,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2007,191267000,147,9752000,172600000,25091000,247975,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2007,256795000,149,13190000,204184000,61925000,333600,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2007,208638000,151,20798000,212571000,12762000,444166,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2007,157094000,153,15750000,155094000,16615000,497423,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2007,113185000,155,20476000,110289000,19648000,351674,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2007,154690000,157,10574000,139350000,22398000,291768,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2007,42213000,159,4583000,42873000,3453000,216030,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2007,211588000,161,11777000,177265000,42919000,251981,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2007,70424000,163,10594000,74289000,7456000,94534,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2007,190985000,165,11779000,159443000,39394000,265114,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2007,139971000,167,21208000,132013000,24907000,452662,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2007,202782000,169,12284000,189873000,21615000,314766,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2007,145308000,171,15356000,136667000,21716000,323141,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2007,214459000,173,12731000,180981000,41168000,459685,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2008,16450189000,000,1913881000,14042153000,4022559000,29293741,NA,Minnesota,Minnesota,Minnesota
+2008,12656000,001,3200000,17881000,-835000,226112,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2008,40447000,003,5563000,38276000,8197000,55159,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2008,175539000,005,15695000,158758000,34727000,465837,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2008,23887000,007,3987000,25574000,4049000,307281,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2008,150118000,009,12474000,121420000,42366000,213641,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2008,118182000,011,17799000,100173000,31347000,293183,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2008,412149000,013,33772000,336080000,97037000,430268,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2008,319890000,015,27666000,259601000,78830000,364685,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2008,9110000,017,980000,12457000,-1464000,149893,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2008,113230000,019,12606000,99006000,23457000,167854,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2008,29531000,021,4733000,31740000,3866000,225194,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2008,220679000,023,29834000,189542000,50412000,345953,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2008,44434000,025,8323000,43320000,8843000,173881,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2008,268144000,027,34857000,224401000,78955000,595865,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2008,23741000,029,3469000,24950000,3739000,288472,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2008,0,031,0,0,0,2405,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2008,297364000,033,29491000,241025000,73033000,387812,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2008,15210000,035,2130000,20336000,-2327000,155760,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2008,215878000,037,29267000,202982000,37035000,204842,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2008,205354000,039,20322000,189646000,28291000,261677,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2008,86418000,041,13472000,78035000,20827000,316289,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2008,349620000,043,32751000,295773000,67312000,435840,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2008,261950000,045,39327000,246931000,46849000,499671,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2008,312411000,047,37143000,278246000,57850000,417087,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2008,312004000,049,35593000,282211000,57322000,420835,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2008,139026000,051,27635000,120368000,40071000,321620,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2008,62175000,053,12713000,61921000,12966000,0,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2008,106157000,055,13368000,96486000,22380000,302046,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2008,33814000,057,3548000,36402000,-389000,141224,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2008,39170000,059,7533000,46064000,-144000,211321,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2008,9046000,061,825000,11797000,-1355000,109298,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2008,321815000,063,34657000,259169000,82812000,422124,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2008,21904000,065,3097000,28754000,-3165000,195759,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2008,378271000,067,32661000,321223000,86793000,427622,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2008,150093000,069,27196000,108504000,76992000,583136,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2008,6175000,071,923000,6456000,1098000,124660,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2008,183963000,073,46294000,176225000,43380000,449147,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2008,349000,075,91000,442000,-2000,2389,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2008,8420000,077,3185000,9249000,3031000,121608,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2008,176035000,079,24162000,160255000,34202000,251529,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2008,153201000,081,28652000,147267000,29384000,319684,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2008,349981000,083,34918000,293845000,78985000,419213,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2008,167498000,085,21585000,153825000,29290000,282557,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2008,54764000,087,10491000,51896000,12009000,235151,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2008,259171000,089,45309000,206419000,109445000,927245,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2008,504038000,091,36199000,401711000,122784000,432033,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2008,250714000,093,24793000,224544000,48088000,341468,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2008,37155000,095,5535000,39175000,3992000,142562,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2008,333088000,097,22363000,259036000,103287000,539993,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2008,339688000,099,38522000,320445000,43299000,423786,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2008,298736000,101,31665000,232629000,84936000,426681,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2008,320004000,103,20196000,253801000,80545000,254335,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2008,416497000,105,33147000,320756000,116776000,436017,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2008,238405000,107,31831000,180518000,92241000,532605,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2008,181124000,109,24690000,177177000,22708000,331493,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2008,376246000,111,64325000,332640000,108285000,1009157,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2008,61290000,113,14901000,54874000,25157000,361803,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2008,54827000,115,4218000,53946000,6571000,333026,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2008,225660000,117,20205000,183452000,58745000,284911,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2008,479633000,119,74394000,378428000,187769000,1155074,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2008,160927000,121,24499000,145553000,34663000,366677,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2008,2990000,123,81000,2011000,1085000,256,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2008,51757000,125,9289000,43514000,19732000,259699,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2008,449775000,127,40517000,354434000,118830000,537495,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2008,565374000,129,46789000,431286000,164286000,601416,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2008,167085000,131,20542000,155045000,28162000,266120,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2008,344038000,133,19458000,268567000,87780000,295613,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2008,117365000,135,23831000,98326000,49904000,672224,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2008,15901000,137,2499000,19443000,387000,161867,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2008,85421000,139,17260000,73518000,27491000,128086,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2008,75327000,141,5847000,72850000,7098000,149075,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2008,309456000,143,24597000,255289000,69330000,354544,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2008,647270000,145,54209000,530953000,178103000,709181,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2008,215282000,147,21602000,196500000,32538000,246725,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2008,304825000,149,25177000,239724000,83322000,333434,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2008,259151000,151,35031000,234775000,52920000,443180,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2008,177972000,153,18353000,162950000,36255000,498822,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2008,140399000,155,39123000,134653000,36757000,352502,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2008,173484000,157,18596000,152509000,37168000,290863,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2008,47857000,159,7077000,44064000,11068000,214843,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2008,258237000,161,23619000,198118000,75655000,251372,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2008,83883000,163,11619000,72014000,23377000,91977,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2008,230973000,165,20711000,191101000,51210000,264905,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2008,182377000,167,41164000,168759000,55548000,452187,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2008,211942000,169,18920000,198787000,31517000,314394,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2008,170329000,171,22153000,154291000,36127000,320788,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2008,244713000,173,41037000,215056000,59562000,457723,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2009,14370815000,000,1611090000,13795048000,1566441000,25180451,NA,Minnesota,Minnesota,Minnesota
+2009,11114000,001,2425000,16591000,-2939000,120808,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2009,40924000,003,3772000,40103000,4174000,34993,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2009,156901000,005,16571000,162931000,4157000,332761,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2009,26847000,007,3335000,24114000,5597000,175027,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2009,123762000,009,9021000,116296000,14492000,167681,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2009,108313000,011,13297000,98918000,14827000,286858,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2009,370504000,013,30639000,325064000,59308000,402419,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2009,284168000,015,24485000,252218000,44864000,352287,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2009,7663000,017,1220000,11644000,-2605000,103022,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2009,97108000,019,11851000,95431000,9733000,165995,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2009,22499000,021,3515000,31202000,-4976000,130380,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2009,210324000,023,31034000,194409000,38721000,334171,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2009,37476000,025,5745000,42553000,-575000,148406,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2009,218335000,027,26767000,230906000,-1009000,557545,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2009,20608000,029,3154000,23655000,-240000,274932,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2009,0,031,0,0,0,1839,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2009,267054000,033,26550000,238051000,41544000,376376,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2009,28964000,035,1841000,20095000,10698000,154514,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2009,203835000,037,21775000,190923000,29271000,175184,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2009,181962000,039,20831000,185129000,8925000,251420,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2009,72904000,041,12221000,77941000,3328000,232171,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2009,311361000,043,28972000,280450000,42216000,413731,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2009,228238000,045,34206000,242043000,11423000,494697,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2009,268779000,047,32657000,270715000,15911000,374286,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2009,278315000,049,34220000,279713000,22684000,368898,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2009,118326000,051,22115000,119068000,13601000,294931,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2009,60382000,053,10103000,60781000,8476000,56857,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2009,90475000,055,13808000,94729000,7435000,178819,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2009,33029000,057,2262000,35104000,1965000,84790,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2009,36268000,059,5519000,46215000,-6000000,105631,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2009,7472000,061,690000,11270000,-3028000,64408,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2009,299909000,063,27320000,247084000,64697000,410405,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2009,22035000,065,2174000,26965000,-3238000,119489,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2009,336092000,067,29947000,312151000,44571000,373720,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2009,95865000,069,22504000,108414000,-1383000,473033,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2009,6834000,071,866000,6464000,1250000,119108,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2009,211483000,073,35794000,180686000,54150000,432144,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2009,362000,075,60000,457000,-29000,933,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2009,7885000,077,2590000,9924000,-402000,77084,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2009,156437000,079,20027000,157750000,11218000,195579,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2009,149987000,081,20632000,144802000,18229000,316565,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2009,316095000,083,25730000,288115000,39872000,412609,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2009,149020000,085,16441000,152589000,6308000,245251,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2009,40917000,087,11462000,55417000,-6750000,167363,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2009,185990000,089,36668000,205409000,-1893000,824843,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2009,441605000,091,31700000,392774000,61015000,402277,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2009,210374000,093,20885000,211942000,11747000,301688,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2009,34850000,095,4360000,38522000,14000,110578,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2009,280163000,097,17199000,252543000,43028000,509542,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2009,307253000,099,38110000,313974000,15351000,406862,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2009,271129000,101,27323000,230245000,54398000,405201,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2009,275734000,103,18273000,252250000,32097000,253103,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2009,371042000,105,24285000,313624000,66197000,399617,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2009,179167000,107,25030000,180870000,9996000,467667,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2009,153356000,109,22288000,172065000,-2869000,299808,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2009,311829000,111,45846000,328538000,20190000,688912,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2009,39635000,113,14275000,53050000,-5339000,306811,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2009,46478000,115,3882000,52007000,-2096000,113939,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2009,215353000,117,15396000,182777000,40507000,278271,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2009,364794000,119,65405000,380826000,29922000,1032270,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2009,140405000,121,19828000,144711000,9297000,288974,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2009,3035000,123,91000,2142000,972000,597,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2009,41532000,125,8299000,42240000,3290000,229114,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2009,415964000,127,31879000,345051000,83793000,517503,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2009,489995000,129,38920000,430489000,80465000,571895,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2009,156871000,131,19014000,150216000,19341000,213629,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2009,301013000,133,15577000,261692000,44479000,283173,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2009,66936000,135,28493000,96401000,-11985000,574943,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2009,14468000,137,2015000,17829000,-1135000,67671,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2009,76082000,139,11890000,72038000,13257000,108462,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2009,65365000,141,3770000,71860000,-3855000,85296,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2009,274971000,143,22987000,250832000,36698000,308087,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2009,535655000,145,46879000,516200000,58782000,705303,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2009,188183000,147,20731000,190711000,9143000,221299,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2009,253626000,149,20951000,243343000,21716000,326254,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2009,221963000,151,30301000,223839000,19038000,418965,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2009,153162000,153,13624000,158028000,6218000,358891,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2009,140112000,155,23507000,134215000,18517000,324699,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2009,141251000,157,19881000,149705000,7805000,217099,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2009,40871000,159,5124000,40689000,5100000,102394,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2009,222309000,161,20675000,191096000,42094000,233520,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2009,85482000,163,8234000,72317000,20370000,57743,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2009,211287000,165,19398000,186474000,33815000,246917,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2009,150140000,167,29888000,172853000,-4829000,440961,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2009,176850000,169,21304000,190354000,4516000,170447,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2009,160009000,171,15992000,156069000,14386000,308591,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2009,237695000,173,30765000,213158000,42417000,437515,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2010,16179679000,000,1177927000,13654044000,2874349000,25126601,NA,Minnesota,Minnesota,Minnesota
+2010,24305000,001,1886000,15283000,10785000,100335,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2010,47070000,003,2622000,38093000,10858000,38383,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2010,178064000,005,15290000,165040000,20803000,334891,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2010,22179000,007,2938000,22948000,1626000,190243,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2010,136330000,009,4832000,112675000,24529000,166506,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2010,112285000,011,11614000,97840000,16630000,264619,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2010,397954000,013,19572000,321907000,79765000,388031,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2010,324285000,015,16087000,251234000,74911000,345835,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2010,9678000,017,943000,11118000,-499000,100253,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2010,108841000,019,7030000,91837000,17377000,164250,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2010,28589000,021,2336000,31146000,-803000,131532,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2010,233367000,023,22039000,197454000,41786000,332750,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2010,43807000,025,4443000,40942000,4855000,146017,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2010,256592000,027,24515000,234771000,29050000,558641,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2010,29094000,029,2629000,22600000,8363000,263749,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2010,0,031,0,0,0,1650,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2010,292452000,033,19059000,240545000,54369000,383071,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2010,40759000,035,1511000,19705000,22040000,67850,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2010,222445000,037,13238000,176882000,47467000,174958,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2010,213718000,039,11527000,182364000,30775000,247698,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2010,85426000,041,8853000,77616000,10853000,242034,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2010,317636000,043,20236000,270969000,43303000,413502,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2010,266422000,045,25902000,240226000,36861000,457495,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2010,302763000,047,24957000,267862000,41419000,378590,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2010,316948000,049,19219000,276930000,41651000,366664,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2010,133498000,051,17861000,116931000,21897000,300399,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2010,64389000,053,7333000,55005000,14912000,45780,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2010,106405000,055,8918000,93444000,16835000,178023,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2010,39039000,057,2707000,33036000,6793000,84811,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2010,42925000,059,3360000,45829000,-2808000,192918,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2010,10016000,061,1620000,10532000,873000,65965,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2010,318970000,063,18528000,239245000,80493000,408955,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2010,28114000,065,1508000,25634000,2746000,109430,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2010,365180000,067,20688000,306471000,64458000,376572,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2010,112003000,069,21642000,107066000,20011000,475221,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2010,8200000,071,767000,6256000,2605000,106207,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2010,228246000,073,33249000,185127000,59571000,431947,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2010,399000,075,47000,457000,-53000,1104,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2010,9723000,077,2120000,10367000,1053000,78624,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2010,170865000,079,13506000,157900000,17205000,204048,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2010,166419000,081,16008000,143841000,28690000,315031,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2010,354383000,083,16980000,290397000,62295000,409234,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2010,165019000,085,10933000,152238000,11707000,259292,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2010,53769000,087,9130000,58208000,-732000,181705,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2010,198683000,089,35198000,203713000,16515000,845179,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2010,480373000,091,22070000,393654000,89843000,430382,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2010,232466000,093,15084000,202616000,33428000,307246,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2010,40985000,095,2409000,38480000,3163000,116496,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2010,328664000,097,8619000,251857000,80587000,484471,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2010,360922000,099,27288000,312551000,54770000,405969,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2010,299552000,101,19600000,232788000,69299000,404818,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2010,317862000,103,14191000,255018000,66395000,236635,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2010,410626000,105,16829000,314210000,96988000,399515,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2010,201602000,107,20553000,179987000,30113000,477145,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2010,178952000,109,13383000,166957000,13468000,294721,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2010,354872000,111,31699000,324251000,42753000,701449,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2010,45357000,113,13897000,51330000,3972000,312800,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2010,53711000,115,2987000,49087000,6225000,121915,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2010,255957000,117,9816000,185884000,73519000,277822,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2010,401369000,119,57729000,375651000,59474000,1028980,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2010,160705000,121,13832000,143638000,19861000,287925,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2010,3205000,123,88000,2036000,1260000,597,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2010,45457000,125,7754000,40949000,8577000,230258,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2010,459505000,127,23749000,342666000,115754000,517128,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2010,535879000,129,25826000,430591000,104098000,575029,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2010,180316000,131,11743000,147311000,35383000,228765,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2010,344657000,133,11328000,262838000,81232000,288672,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2010,84603000,135,20888000,94587000,6693000,574299,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2010,16647000,137,2070000,16080000,2701000,72993,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2010,83574000,139,6806000,71476000,14545000,104155,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2010,66501000,141,3675000,69290000,-3428000,84540,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2010,300831000,143,14818000,248006000,51095000,308114,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2010,620737000,145,24991000,505753000,123772000,676849,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2010,212749000,147,13442000,187809000,26260000,220973,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2010,306658000,149,15054000,247778000,58690000,326140,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2010,249039000,151,22700000,216755000,38641000,419091,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2010,181118000,153,9100000,154867000,30024000,356469,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2010,155392000,155,24199000,134979000,29289000,337236,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2010,166313000,157,11408000,146473000,22616000,215637,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2010,46210000,159,3659000,38111000,9677000,108130,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2010,248713000,161,14177000,188681000,63352000,234938,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2010,90983000,163,6626000,66742000,28882000,58424,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2010,230237000,165,12788000,186308000,44614000,254340,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2010,186983000,167,27998000,174940000,27199000,440420,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2010,216047000,169,10913000,182142000,36982000,178862,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2010,172854000,171,9358000,155539000,18230000,256182,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2010,263242000,173,27402000,213694000,60513000,440079,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2011,18486830000,000,1551242000,15227793000,4423580000,25037515,NA,Minnesota,Minnesota,Minnesota
+2011,16813000,001,3568000,16081000,4343000,98925,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2011,51788000,003,3424000,39944000,15349000,38174,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2011,215105000,005,13324000,188540000,36514000,335006,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2011,25728000,007,3427000,24981000,3309000,192991,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2011,136689000,009,10637000,124142000,22414000,166487,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2011,108392000,011,21026000,109996000,14916000,264540,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2011,478576000,013,25348000,355098000,144921000,384915,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2011,367849000,015,23612000,278078000,109123000,345389,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2011,9879000,017,1053000,12018000,-1064000,97935,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2011,117942000,019,10797000,100144000,25601000,156408,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2011,33100000,021,2828000,35058000,1101000,131660,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2011,263831000,023,26519000,225256000,57261000,332556,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2011,48523000,025,4968000,44604000,8138000,142005,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2011,288778000,027,35900000,267590000,44014000,561055,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2011,31940000,029,3564000,24504000,10518000,244706,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2011,0,031,0,0,0,1612,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2011,348284000,033,24664000,269141000,98753000,382913,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2011,45796000,035,1506000,21705000,25330000,67732,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2011,244462000,037,16634000,181100000,75516000,177873,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2011,255144000,039,13070000,203053000,60298000,247734,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2011,91705000,041,12915000,87754000,13551000,243284,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2011,378864000,043,23149000,293586000,98610000,413522,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2011,327021000,045,24906000,270090000,74822000,445241,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2011,369305000,047,25974000,298401000,90219000,413359,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2011,379806000,049,24368000,312263000,84787000,366233,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2011,132595000,051,32257000,130811000,26728000,300065,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2011,68671000,053,10975000,55702000,23510000,46098,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2011,130832000,055,9992000,104578000,33970000,173719,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2011,44127000,057,2779000,35140000,11002000,85083,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2011,50161000,059,5003000,51522000,2313000,162015,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2011,13233000,061,806000,11101000,2862000,65712,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2011,359312000,063,22202000,258939000,116431000,408644,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2011,29464000,065,2468000,27667000,3686000,108988,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2011,400381000,067,28320000,344839000,80569000,377155,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2011,128039000,069,29539000,121161000,21877000,475274,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2011,8982000,071,803000,6928000,2709000,103875,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2011,252528000,073,28691000,212431000,61917000,431749,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2011,451000,075,56000,497000,11000,1123,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2011,10111000,077,1925000,12195000,-1362000,78241,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2011,189399000,079,20262000,176815000,30005000,215842,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2011,184964000,081,25324000,158699000,47228000,315388,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2011,371418000,083,31515000,317088000,79466000,407087,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2011,173572000,085,22397000,170863000,19082000,256354,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2011,71582000,087,10121000,68813000,9210000,182396,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2011,235153000,089,51117000,229997000,34098000,845222,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2011,577573000,091,25709000,442131000,155689000,430449,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2011,235202000,093,25580000,222140000,35306000,300809,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2011,39274000,095,5026000,43539000,76000,111448,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2011,375627000,097,15084000,289910000,103234000,457435,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2011,432548000,099,27159000,350513000,101136000,405635,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2011,349695000,101,26686000,260975000,110613000,404364,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2011,370107000,103,17950000,288169000,97706000,240659,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2011,484648000,105,21321000,350317000,152710000,399289,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2011,224120000,107,29366000,200256000,42783000,486648,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2011,217335000,109,15550000,184595000,43189000,294356,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2011,417963000,111,36319000,365199000,80829000,707187,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2011,61334000,113,14934000,57131000,13620000,312834,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2011,62249000,115,3030000,52964000,12194000,125173,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2011,300975000,117,15841000,213787000,102824000,277709,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2011,483353000,119,66075000,418842000,101444000,1023883,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2011,179086000,121,17278000,161932000,29048000,287615,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2011,3597000,123,135000,2024000,1721000,593,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2011,60188000,125,8709000,45467000,18672000,230455,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2011,465708000,127,42058000,371601000,127203000,516846,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2011,561013000,129,44590000,484133000,111684000,574955,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2011,198866000,131,16784000,163363000,48701000,218260,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2011,398261000,133,13817000,287670000,121639000,288562,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2011,119348000,135,24713000,106186000,24714000,573145,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2011,18892000,137,1697000,16524000,4185000,74454,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2011,94804000,139,8891000,79707000,22186000,100257,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2011,77353000,141,3699000,75357000,4709000,86468,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2011,324947000,143,27976000,278460000,68089000,306611,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2011,725813000,145,33104000,571576000,185292000,651262,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2011,247266000,147,18102000,209283000,51871000,221352,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2011,341608000,149,28305000,287202000,76120000,326134,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2011,269797000,151,26761000,239649000,49714000,419018,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2011,213647000,153,10990000,174014000,49696000,355242,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2011,152834000,155,43152000,152350000,35108000,337187,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2011,211550000,157,13614000,164162000,57288000,213776,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2011,54661000,159,3585000,40468000,17207000,110182,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2011,289031000,161,17556000,206825000,96295000,235425,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2011,107654000,163,7255000,67873000,46429000,59914,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2011,277272000,165,14746000,207457000,80535000,254138,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2011,206765000,167,28168000,199779000,24096000,440149,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2011,272686000,169,12274000,200223000,82485000,192937,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2011,190458000,171,14190000,175752000,26289000,252491,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2011,301427000,173,29730000,239375000,85595000,439924,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2012,21642749000,000,1723088000,17395980000,5905070000,24974729,NA,Minnesota,Minnesota,Minnesota
+2012,15797000,001,4501000,17716000,1106000,96570,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2012,59200000,003,3717000,48375000,14476000,37665,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2012,267042000,005,13775000,223751000,56601000,333999,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2012,32548000,007,3619000,27992000,7173000,194238,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2012,168476000,009,9126000,139290000,37654000,165997,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2012,165727000,011,16142000,127032000,52670000,262396,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2012,533600000,013,30050000,394293000,165643000,384907,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2012,391790000,015,30728000,309261000,111581000,349171,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2012,11205000,017,1105000,13334000,-2247000,93839,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2012,139090000,019,13140000,114351000,36551000,155265,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2012,39483000,021,3651000,40113000,2567000,135011,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2012,332804000,023,30121000,267730000,93904000,332505,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2012,57373000,025,4861000,51852000,9762000,127321,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2012,388709000,027,28318000,322509000,95092000,560228,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2012,31700000,029,3246000,27420000,6892000,245876,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2012,0,031,0,0,0,1615,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2012,383770000,033,34904000,304788000,110301000,371545,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2012,26330000,035,2132000,25078000,2812000,69203,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2012,251868000,037,22696000,200437000,73930000,177645,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2012,294934000,039,15859000,231227000,78171000,248394,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2012,122361000,041,13495000,102272000,31918000,243939,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2012,419843000,043,27642000,326107000,116593000,413288,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2012,352707000,045,34402000,309788000,74572000,439442,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2012,426016000,047,34979000,341787000,116113000,413354,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2012,442507000,049,34377000,362045000,112530000,365201,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2012,210568000,051,23477000,153538000,78886000,299669,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2012,76566000,053,14355000,63486000,26957000,45517,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2012,149734000,055,13109000,120580000,41100000,160889,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2012,51386000,057,3567000,40465000,15025000,86370,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2012,62215000,059,4558000,60579000,5587000,148953,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2012,12336000,061,841000,12716000,-161000,66024,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2012,386860000,063,25966000,281707000,126807000,408495,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2012,33117000,065,2404000,30900000,3634000,106624,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2012,489284000,067,33183000,388557000,134028000,380798,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2012,176029000,069,25294000,143679000,65025000,475649,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2012,9740000,071,1046000,8158000,2125000,102345,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2012,314862000,073,32651000,250937000,92063000,431853,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2012,456000,075,58000,590000,-90000,1251,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2012,18837000,077,2228000,14949000,6391000,77316,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2012,233173000,079,24058000,204924000,50303000,220146,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2012,202994000,081,26707000,177955000,49613000,315043,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2012,408937000,083,30363000,349916000,86827000,403197,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2012,236667000,085,19798000,199154000,55094000,256358,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2012,95124000,087,8388000,84200000,18722000,183928,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2012,314166000,089,37905000,272336000,91263000,844251,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2012,652720000,091,31432000,499959000,180213000,430217,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2012,290100000,093,27546000,246694000,69709000,300696,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2012,53024000,095,3792000,50054000,5643000,108399,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2012,434453000,097,17439000,324776000,127860000,449625,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2012,483562000,099,42866000,402174000,120868000,406102,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2012,373434000,101,38355000,297018000,110741000,404160,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2012,399821000,103,30952000,325291000,104640000,240476,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2012,495534000,105,34042000,388149000,139271000,399120,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2012,274168000,107,25878000,235508000,66895000,489478,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2012,252089000,109,20107000,211133000,60057000,293284,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2012,501576000,111,37329000,422837000,115189000,709310,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2012,81751000,113,12785000,66335000,30061000,312822,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2012,68495000,115,3157000,59419000,10682000,131448,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2012,326086000,117,22661000,242234000,105753000,277894,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2012,578405000,119,65915000,498675000,159778000,1024942,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2012,240597000,121,19459000,188772000,69751000,286894,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2012,3736000,123,207000,2620000,1341000,631,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2012,74206000,125,8117000,52969000,30931000,230430,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2012,522825000,127,48072000,409620000,156767000,517344,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2012,704214000,129,46707000,566287000,181525000,574834,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2012,237936000,131,19560000,184511000,70996000,218102,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2012,416885000,133,23706000,316571000,122867000,288494,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2012,158558000,135,20235000,123911000,61482000,572846,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2012,19200000,137,2244000,17856000,2214000,72826,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2012,114696000,139,10294000,92836000,30977000,100549,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2012,87085000,141,5148000,88715000,4547000,86945,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2012,380770000,143,33542000,318271000,94575000,306317,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2012,828094000,145,50746000,642901000,237018000,646304,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2012,302347000,147,20519000,239882000,81101000,219822,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2012,458773000,149,20297000,335454000,144014000,326477,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2012,333826000,151,28254000,267960000,93165000,419004,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2012,245747000,153,13725000,196216000,63026000,354154,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2012,260355000,155,27209000,177558000,106680000,337143,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2012,235451000,157,19149000,189654000,64364000,212862,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2012,56914000,159,5161000,44517000,17780000,111905,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2012,314398000,161,19710000,227027000,105120000,238879,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2012,106845000,163,9457000,80629000,35157000,60107,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2012,290643000,165,18425000,228772000,78153000,254208,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2012,294046000,167,19420000,240483000,73925000,440329,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2012,292306000,169,18617000,224893000,85617000,196454,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2012,232796000,171,16621000,206761000,40466000,249590,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2012,326351000,173,37689000,272204000,88587000,440016,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2013,22275899000,000,2544347000,18407568000,5505843000,24871045,NA,Minnesota,Minnesota,Minnesota
+2013,16389000,001,5871000,18603000,2932000,97033,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2013,59100000,003,5101000,47433000,16260000,37578,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2013,286126000,005,19709000,234756000,61763000,333501,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2013,29131000,007,8196000,29272000,6496000,195051,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2013,144504000,009,19743000,147300000,11443000,180165,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2013,165712000,011,17061000,132734000,38572000,262992,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2013,566944000,013,34821000,425479000,159408000,384555,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2013,435887000,015,32328000,330029000,123245000,348863,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2013,12150000,017,2063000,14382000,-706000,74862,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2013,134383000,019,16913000,119534000,24322000,152772,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2013,39072000,021,7772000,43389000,2334000,134892,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2013,367681000,023,33752000,277765000,108297000,332415,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2013,52709000,025,9253000,53214000,5778000,107390,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2013,420065000,027,23264000,330935000,91555000,557699,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2013,37848000,029,5393000,29153000,12750000,245811,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2013,0,031,0,0,0,1610,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2013,434563000,033,39429000,325379000,130920000,370879,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2013,27218000,035,3860000,26380000,3816000,70710,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2013,245574000,037,31700000,204782000,61846000,180254,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2013,246154000,039,44450000,244668000,33676000,248408,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2013,115362000,041,19016000,106918000,18718000,243854,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2013,397363000,043,48121000,343702000,77893000,413047,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2013,326641000,045,64682000,327189000,46922000,428677,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2013,344603000,047,86646000,362721000,49699000,412635,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2013,419384000,049,55745000,381625000,74112000,360599,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2013,201964000,051,34247000,157332000,65634000,299625,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2013,77597000,053,17148000,63881000,28507000,43390,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2013,145051000,055,15029000,126901000,26444000,160879,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2013,56449000,057,4412000,41157000,20726000,85942,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2013,61860000,059,7349000,63067000,1960000,123941,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2013,12258000,061,2222000,13175000,781000,65440,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2013,406697000,063,31905000,298956000,120578000,408547,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2013,34608000,065,4460000,32544000,4507000,107347,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2013,489632000,067,40077000,418801000,98062000,383906,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2013,213290000,069,23877000,146651000,81990000,475850,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2013,9590000,071,4228000,8391000,5091000,94702,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2013,381168000,073,28809000,263057000,126597000,431823,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2013,497000,075,123000,604000,-5000,1251,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2013,13623000,077,8692000,15372000,5746000,74914,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2013,240489000,079,28969000,217541000,41447000,220441,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2013,236750000,081,31022000,187520000,68395000,315170,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2013,448609000,083,52161000,373174000,107436000,403025,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2013,230473000,085,30884000,207571000,39493000,255808,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2013,106510000,087,14199000,89464000,24618000,183330,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2013,335482000,089,33414000,278611000,76248000,844436,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2013,711340000,091,29670000,539020000,182790000,430417,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2013,293869000,093,34007000,263797000,51743000,300598,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2013,46182000,095,8454000,53177000,-815000,106783,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2013,392761000,097,52900000,358745000,82886000,430796,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2013,397569000,099,100891000,424182000,52336000,405991,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2013,448880000,101,56706000,314866000,171142000,404148,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2013,443874000,103,29488000,350305000,112395000,239984,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2013,553886000,105,40053000,419062000,156255000,399072,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2013,318089000,107,24787000,240960000,88285000,489365,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2013,208279000,109,55552000,220609000,30774000,292634,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2013,521847000,111,96790000,444664000,152598000,715992,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2013,78974000,113,17522000,68257000,22119000,312831,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2013,68708000,115,4951000,63248000,8347000,149213,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2013,379608000,117,18002000,262983000,126420000,277917,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2013,704576000,119,101131000,535830000,254486000,1015059,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2013,234883000,121,29306000,198206000,53718000,281809,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2013,3963000,123,276000,2430000,1825000,645,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2013,86757000,125,11794000,54313000,39931000,230440,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2013,578658000,127,53899000,433482000,172627000,516282,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2013,771238000,129,57747000,590434000,212174000,574732,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2013,215783000,131,28911000,194595000,39053000,221900,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2013,475250000,133,21853000,342268000,140626000,288599,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2013,171121000,135,36208000,128043000,70187000,569260,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2013,20740000,137,3048000,18670000,4697000,73318,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2013,113120000,139,15800000,97277000,25596000,100366,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2013,88159000,141,5632000,90339000,648000,89288,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2013,393388000,143,49219000,338753000,89250000,305998,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2013,806478000,145,89883000,695895000,179354000,615811,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2013,250927000,147,46240000,253717000,31712000,229561,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2013,460425000,149,25974000,357668000,113983000,326418,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2013,328623000,151,28349000,283537000,58172000,418654,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2013,224337000,153,30450000,211153000,36323000,350787,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2013,239067000,155,41001000,185050000,74641000,337104,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2013,228859000,157,31680000,199088000,51229000,211406,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2013,58330000,159,8744000,46956000,18401000,113161,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2013,297266000,161,42163000,243773000,83912000,239008,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2013,108177000,163,14358000,79460000,40815000,61179,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2013,323421000,165,20482000,245051000,86516000,254235,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2013,291650000,167,24141000,245615000,53499000,441007,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2013,293120000,169,28942000,239044000,74034000,211720,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2013,217814000,171,21700000,215459000,13238000,241667,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2013,398743000,173,57527000,296475000,141615000,439871,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2014,20199467000,000,2986044000,19011685000,3271494000,24818366,NA,Minnesota,Minnesota,Minnesota
+2014,17373000,001,5346000,19354000,4064000,97461,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2014,49644000,003,6811000,44991000,10888000,37364,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2014,249517000,005,22677000,240746000,25943000,333937,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2014,29646000,007,7110000,31210000,5940000,195696,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2014,154409000,009,25050000,155843000,21201000,179905,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2014,134487000,011,20563000,133283000,10044000,262562,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2014,534547000,013,56022000,445730000,124957000,383754,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2014,405939000,015,43518000,349593000,81157000,348747,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2014,12821000,017,1477000,15031000,-123000,73045,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2014,123263000,019,31907000,122713000,28997000,152403,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2014,47594000,021,6723000,48262000,6230000,133843,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2014,302971000,023,49185000,282925000,49811000,332450,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2014,46533000,025,13212000,54859000,3258000,107366,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2014,319968000,027,34368000,335014000,6571000,556645,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2014,38293000,029,5616000,30837000,13473000,242717,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2014,0,031,0,0,0,823,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2014,392162000,033,48234000,346641000,72481000,370830,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2014,26967000,035,3641000,27706000,2527000,71111,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2014,215934000,037,37581000,213889000,27907000,179842,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2014,235369000,039,30866000,231207000,16481000,248317,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2014,102585000,041,21984000,110467000,9165000,243744,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2014,331200000,043,62689000,353231000,15434000,412800,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2014,326714000,045,55943000,342959000,18301000,428281,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2014,323979000,047,66502000,363383000,2784000,412250,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2014,397087000,049,58455000,394793000,41235000,359449,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2014,149059000,051,44739000,159011000,21177000,299094,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2014,64598000,053,25240000,65280000,23597000,43015,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2014,151029000,055,17785000,134962000,29701000,160715,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2014,44402000,057,5388000,41961000,4651000,86237,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2014,53433000,059,15479000,64989000,2096000,122479,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2014,12649000,061,1547000,14229000,191000,63827,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2014,356127000,063,47360000,311510000,70181000,408019,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2014,33113000,065,7728000,33957000,6697000,107445,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2014,447708000,067,59004000,425143000,62996000,384560,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2014,161591000,069,27879000,148935000,34799000,476294,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2014,9833000,071,3588000,8772000,4669000,92645,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2014,300389000,073,38465000,270544000,46666000,431823,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2014,416000,075,94000,626000,-109000,1225,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2014,10422000,077,5982000,15660000,302000,72459,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2014,219954000,079,38220000,228305000,20581000,220322,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2014,207416000,081,37886000,197357000,35637000,315159,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2014,421063000,083,53908000,404783000,50695000,398480,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2014,199586000,085,59272000,209814000,41018000,250945,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2014,78380000,087,15186000,82730000,7181000,183198,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2014,243684000,089,47281000,271867000,6206000,842268,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2014,661386000,091,54710000,566672000,124218000,430336,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2014,269541000,093,50228000,270908000,36969000,300453,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2014,47602000,095,11918000,56431000,2602000,105694,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2014,443301000,097,38964000,374363000,102996000,429376,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2014,378348000,099,67432000,410071000,7888000,406161,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2014,404383000,101,62015000,339270000,107712000,403685,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2014,424622000,103,41514000,366362000,87577000,238583,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2014,540105000,105,52587000,448614000,122146000,398850,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2014,238120000,107,33996000,244662000,15754000,489315,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2014,215005000,109,28878000,226689000,755000,293598,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2014,472325000,111,126707000,455789000,126958000,716166,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2014,61483000,113,21613000,70334000,10675000,312778,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2014,71244000,115,8517000,65141000,15154000,149796,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2014,384430000,117,24460000,284722000,114548000,278050,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2014,509879000,119,112982000,525829000,69841000,1015009,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2014,202557000,121,32143000,203484000,18652000,281871,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2014,3314000,123,316000,2463000,1156000,647,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2014,71388000,125,12237000,55584000,23774000,230556,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2014,504629000,127,75548000,455859000,95944000,516301,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2014,651766000,129,84865000,607992000,98622000,574883,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2014,198810000,131,33640000,201185000,22229000,221355,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2014,482697000,133,40971000,390526000,120572000,288569,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2014,133658000,135,35536000,130495000,35609000,569257,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2014,20268000,137,3375000,19588000,4567000,72221,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2014,107886000,139,18061000,103328000,19588000,100441,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2014,80631000,141,8587000,90029000,-3464000,89743,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2014,354375000,143,67171000,347544000,59777000,305852,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2014,885570000,145,75909000,736947000,211182000,600094,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2014,234409000,147,37058000,256626000,-315000,228289,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2014,452676000,149,35703000,374574000,97055000,326433,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2014,282816000,151,50365000,290368000,19752000,418541,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2014,242714000,153,29031000,218158000,51082000,348536,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2014,175923000,155,49343000,184430000,26351000,337244,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2014,235442000,157,30303000,204375000,50545000,209545,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2014,57044000,159,6904000,48651000,13683000,116162,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2014,280722000,161,42508000,255215000,55441000,238340,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2014,89204000,163,17104000,80572000,23411000,61102,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2014,284501000,165,28211000,255348000,39178000,254205,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2014,213413000,167,35466000,239818000,-3070000,440953,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2014,313545000,169,24302000,246460000,82712000,212154,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2014,202420000,171,38774000,221621000,14225000,241620,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2014,331461000,173,68581000,299486000,79785000,440051,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2015,16968223000,000,2871368000,17983264000,2562445000,24758839,NA,Minnesota,Minnesota,Minnesota
+2015,14573000,001,6958000,18193000,3870000,96973,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2015,47912000,003,4280000,40285000,12433000,37290,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2015,202334000,005,28459000,230354000,6907000,333134,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2015,25365000,007,10252000,29262000,8012000,196745,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2015,152864000,009,13281000,144331000,26356000,179529,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2015,102371000,011,24294000,126422000,8201000,262680,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2015,436815000,013,53610000,416331000,89056000,383405,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2015,322339000,015,33509000,326062000,42525000,348509,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2015,10693000,017,2777000,14193000,-295000,71385,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2015,137492000,019,15725000,121065000,36877000,151848,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2015,39282000,021,9992000,44517000,6283000,134150,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2015,248382000,023,48824000,273570000,33753000,332270,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2015,50269000,025,6906000,50755000,8557000,106370,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2015,260815000,027,27543000,324551000,-24148000,548522,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2015,30981000,029,7325000,28915000,10854000,240741,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2015,0,031,0,0,0,813,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2015,314056000,033,55135000,323490000,59530000,370150,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2015,22789000,035,3536000,26359000,700000,71251,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2015,183846000,037,27392000,204371000,12086000,179389,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2015,186494000,039,31215000,218279000,8538000,248465,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2015,90281000,041,25586000,105086000,16528000,243286,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2015,280898000,043,51039000,340442000,6165000,412767,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2015,255702000,045,51844000,323338000,-4973000,427539,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2015,261082000,047,48509000,342845000,-20011000,412071,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2015,313536000,049,60179000,373969000,11187000,358142,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2015,132167000,051,56753000,153661000,44324000,299016,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2015,67519000,053,17305000,63533000,22816000,41987,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2015,121810000,055,19429000,126129000,19537000,160569,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2015,32130000,057,6097000,40512000,-379000,86652,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2015,56027000,059,8646000,62393000,4427000,120608,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2015,11305000,061,2828000,13413000,923000,61674,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2015,286765000,063,53854000,292565000,61579000,407081,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2015,26041000,065,4482000,32215000,-588000,107151,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2015,405116000,067,63047000,405610000,74208000,371126,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2015,130184000,069,26393000,142941000,22617000,477356,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2015,8216000,071,4455000,8178000,4632000,90686,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2015,226062000,073,44119000,261858000,21245000,431819,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2015,384000,075,334000,594000,108000,849,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2015,5844000,077,9081000,14914000,1063000,72303,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2015,195290000,079,32093000,214999000,20465000,219660,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2015,161085000,081,50577000,186222000,33463000,315176,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2015,357199000,083,70504000,377978000,64929000,398216,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2015,228830000,085,40062000,205509000,71292000,249984,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2015,63736000,087,23089000,79700000,11306000,183229,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2015,206509000,089,37792000,261309000,3248000,842166,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2015,527600000,091,56139000,521925000,77053000,424136,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2015,242601000,093,41101000,257690000,34744000,299544,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2015,57691000,095,6267000,52053000,13507000,105768,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2015,400691000,097,48727000,350790000,106716000,428000,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2015,299887000,099,56321000,385308000,-14247000,406013,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2015,339301000,101,93429000,316691000,131515000,403572,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2015,357089000,103,34161000,344474000,55896000,240267,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2015,439629000,105,65348000,415504000,108232000,398256,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2015,199444000,107,34066000,235889000,11589000,488823,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2015,165731000,109,33411000,215664000,-8122000,292780,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2015,417563000,111,79014000,434986000,77664000,715910,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2015,60582000,113,26508000,66824000,27970000,313937,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2015,76317000,115,5134000,63512000,19691000,149812,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2015,298083000,117,30993000,262453000,75550000,278016,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2015,392779000,119,64761000,506900000,-22904000,1014892,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2015,156237000,121,30060000,193528000,644000,281728,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2015,3074000,123,253000,2446000,888000,604,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2015,59714000,125,15515000,53305000,27696000,230491,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2015,412443000,127,72197000,429987000,72619000,515805,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2015,580306000,129,83345000,580223000,103068000,574673,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2015,169512000,131,31445000,190558000,17325000,221622,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2015,406895000,133,45389000,354698000,111406000,288583,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2015,111189000,135,41676000,124796000,38244000,569998,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2015,17893000,137,5700000,18371000,5603000,71564,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2015,95712000,139,16046000,96931000,18142000,100438,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2015,70426000,141,5463000,86090000,-8934000,89179,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2015,321356000,143,63959000,330251000,64672000,305839,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2015,757870000,145,68247000,691602000,154887000,598520,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2015,191544000,147,30648000,237382000,-7837000,227810,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2015,354386000,149,30664000,349327000,48718000,325958,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2015,243415000,151,45278000,277376000,23089000,418233,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2015,233647000,153,28505000,209891000,59604000,345542,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2015,147322000,155,55829000,176777000,36853000,336943,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2015,177738000,157,34471000,194000000,24511000,208383,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2015,46959000,159,10094000,46188000,12585000,116497,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2015,230658000,161,43964000,237242000,45633000,238679,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2015,80979000,163,12400000,79297000,15574000,61206,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2015,217650000,165,30128000,238176000,18598000,254195,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2015,177316000,167,27541000,231092000,-15862000,439785,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2015,238913000,169,23337000,231796000,37411000,212041,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2015,205816000,171,20371000,206281000,26600000,240141,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2015,270875000,173,104353000,293772000,95648000,439924,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2016,17563635000,000,1863187000,18063830000,625882000,24755457,NA,Minnesota,Minnesota,Minnesota
+2016,13696000,001,4491000,18286000,-11000,96566,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2016,49200000,003,3855000,40491000,12367000,37002,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2016,223653000,005,25270000,233303000,9666000,332262,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2016,24272000,007,10970000,29302000,5051000,197796,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2016,152761000,009,8275000,142907000,14890000,179426,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2016,122556000,011,15020000,126613000,585000,262553,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2016,426650000,013,25176000,419093000,18155000,383252,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2016,314962000,015,25744000,325818000,3429000,348251,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2016,9969000,017,3033000,14398000,-1199000,71084,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2016,143155000,019,9529000,122236000,25642000,150879,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2016,36368000,021,5153000,44323000,-2596000,134740,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2016,261249000,023,31683000,275451000,5359000,332299,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2016,49260000,025,5401000,51370000,1496000,105279,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2016,306192000,027,22285000,326586000,-14312000,547066,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2016,32653000,029,6000000,29086000,8508000,239462,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2016,0,031,0,0,0,768,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2016,315884000,033,37020000,323215000,13722000,370046,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2016,22007000,035,2892000,26622000,-1933000,71929,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2016,186302000,037,21412000,204780000,-2777000,178658,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2016,184426000,039,12969000,215359000,-27078000,248300,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2016,97365000,041,14389000,102690000,2411000,242779,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2016,293751000,043,19133000,341834000,-47893000,412911,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2016,255033000,045,24708000,324754000,-55828000,423540,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2016,257147000,047,28319000,334500000,-63590000,411703,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2016,309861000,049,29906000,375396000,-46008000,357306,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2016,156652000,051,33095000,154596000,22570000,298974,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2016,68780000,053,15905000,65020000,18454000,41258,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2016,123913000,055,12465000,127097000,5854000,160169,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2016,36595000,057,4110000,40926000,-1141000,86395,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2016,61464000,059,5306000,62644000,2003000,113681,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2016,10816000,061,1681000,13554000,-1017000,62363,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2016,289269000,063,31222000,293656000,10517000,406674,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2016,40828000,065,2883000,32444000,10128000,105707,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2016,408121000,067,39203000,409897000,26324000,385957,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2016,147754000,069,27077000,144534000,19634000,485378,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2016,7877000,071,3904000,8433000,3357000,90620,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2016,259026000,073,30275000,258373000,13390000,431594,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2016,384000,075,325000,616000,129000,859,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2016,5633000,077,7961000,14953000,-2180000,72932,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2016,198185000,079,18914000,213496000,-4866000,220150,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2016,174273000,081,32011000,186716000,8757000,314747,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2016,362793000,083,40667000,375651000,11409000,397864,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2016,236937000,085,19385000,206907000,40465000,255129,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2016,79402000,087,23765000,79912000,17272000,173699,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2016,238606000,089,66647000,265724000,15596000,842888,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2016,531832000,091,26186000,525686000,17878000,421192,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2016,241328000,093,30623000,260017000,3210000,299080,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2016,59026000,095,3774000,52039000,9203000,106789,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2016,378942000,097,31756000,355325000,52375000,426114,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2016,306785000,099,31053000,385452000,-62880000,405624,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2016,339517000,101,53777000,315051000,61276000,403295,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2016,360566000,103,18855000,347929000,23638000,240042,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2016,427097000,105,34627000,415627000,29837000,397721,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2016,224653000,107,36463000,235755000,7504000,488811,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2016,168747000,109,17448000,217122000,-40003000,292282,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2016,438860000,111,43564000,438884000,29859000,714833,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2016,73361000,113,24400000,66620000,20190000,326305,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2016,77230000,115,3240000,64680000,14679000,148562,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2016,310784000,117,15860000,272403000,46056000,277817,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2016,466008000,119,77719000,511726000,-2027000,1015205,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2016,170755000,121,20621000,195251000,-12650000,281527,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2016,3073000,123,247000,2586000,740000,604,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2016,70560000,125,9477000,53153000,18583000,230469,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2016,422872000,127,53775000,428950000,26792000,515270,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2016,598961000,129,44955000,582649000,39617000,574845,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2016,166863000,131,17647000,192035000,-14270000,221188,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2016,400823000,133,21761000,351152000,60357000,288498,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2016,130654000,135,39377000,124840000,33803000,568895,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2016,17114000,137,4658000,18657000,3368000,70019,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2016,95531000,139,10279000,97397000,5420000,100085,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2016,76929000,141,4459000,85983000,-5109000,88916,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2016,337426000,143,32040000,332644000,24931000,305811,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2016,744500000,145,50325000,701281000,83910000,597345,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2016,193727000,147,16104000,237912000,-36227000,226957,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2016,370116000,149,19954000,352858000,25641000,325791,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2016,258232000,151,23655000,277966000,-6286000,418347,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2016,225965000,153,16806000,212121000,26596000,349220,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2016,170895000,155,36148000,182810000,9950000,336969,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2016,180610000,157,20216000,197100000,-1719000,208102,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2016,45871000,159,6823000,46736000,5471000,116537,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2016,233806000,161,18006000,238093000,5296000,238686,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2016,83651000,163,10538000,81420000,11323000,60253,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2016,212810000,165,19432000,239022000,-16702000,254191,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2016,206373000,167,19978000,231885000,-21119000,439275,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2016,238840000,169,15593000,235966000,14750000,212035,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2016,211213000,171,12842000,210099000,7200000,239310,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2016,295049000,173,58692000,285386000,50710000,439745,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2017,17733659000,000,1623248000,17051365000,1247759000,24900148,NA,Minnesota,Minnesota,Minnesota
+2017,14510000,001,3084000,17252000,-429000,94806,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2017,46830000,003,3758000,37982000,11651000,36644,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2017,225378000,005,15670000,217006000,16300000,332248,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2017,26000000,007,3724000,27876000,211000,201334,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2017,144840000,009,10397000,133664000,16248000,179049,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2017,109229000,011,12924000,119049000,-8030000,278154,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2017,458878000,013,39453000,393506000,80722000,381661,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2017,331715000,015,24882000,307581000,29665000,348004,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2017,10551000,017,756000,13401000,-2672000,70134,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2017,144670000,019,9972000,114358000,32335000,149898,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2017,38520000,021,3394000,41913000,-1298000,134631,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2017,246937000,023,32719000,258321000,3705000,332326,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2017,48143000,025,5265000,48375000,2483000,102136,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2017,303827000,027,22762000,306741000,2253000,546796,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2017,33563000,029,3304000,27361000,8080000,231098,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2017,0,031,0,0,0,781,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2017,328892000,033,28730000,305750000,27877000,371646,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2017,23514000,035,1906000,24981000,-737000,71746,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2017,189604000,037,19530000,194835000,2812000,177152,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2017,183871000,039,20804000,200786000,-11200000,247369,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2017,91575000,041,12218000,96920000,-410000,243018,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2017,297377000,043,22133000,321238000,-29451000,425361,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2017,269656000,045,32030000,306386000,-28521000,435384,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2017,273163000,047,37354000,313665000,-27878000,399154,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2017,326231000,049,38077000,350861000,-7885000,335136,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2017,151322000,051,20318000,145779000,9940000,300160,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2017,65255000,053,14708000,61100000,17226000,46613,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2017,129232000,055,13176000,120285000,13814000,161706,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2017,36079000,057,3710000,38596000,369000,86305,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2017,56784000,059,3533000,58860000,-1818000,109519,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2017,11388000,061,757000,12951000,-1295000,62369,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2017,303140000,063,31935000,282183000,28803000,406642,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2017,41855000,065,2215000,30561000,11252000,102571,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2017,387302000,067,36865000,374879000,29076000,373099,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2017,135775000,069,29291000,142560000,16742000,515074,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2017,8560000,071,801000,7966000,864000,84699,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2017,238143000,073,29199000,243425000,3295000,431324,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2017,380000,075,175000,582000,-23000,848,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2017,6702000,077,3770000,14197000,-4000000,72650,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2017,211050000,079,21625000,201430000,18746000,219755,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2017,161514000,081,31309000,177787000,3120000,312894,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2017,353758000,083,27546000,357670000,878000,395910,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2017,246295000,085,20077000,195590000,56422000,245921,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2017,77165000,087,8183000,75680000,4567000,186427,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2017,248996000,089,53406000,267561000,22810000,842356,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2017,559763000,091,27394000,494732000,62858000,416507,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2017,234799000,093,27841000,240235000,9195000,300164,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2017,54274000,095,3281000,49082000,6179000,109812,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2017,373552000,097,14848000,323698000,53070000,380356,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2017,316602000,099,38559000,363087000,-34129000,405527,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2017,341603000,101,30073000,300778000,47927000,415243,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2017,363836000,103,17693000,322781000,43959000,239897,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2017,453900000,105,31628000,392158000,65625000,414987,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2017,221974000,107,24214000,228158000,3243000,506022,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2017,174859000,109,26002000,203803000,-19158000,298514,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2017,427133000,111,30245000,408809000,28718000,739021,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2017,69365000,113,20469000,63469000,21203000,325005,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2017,79524000,115,2286000,59875000,19640000,148007,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2017,325276000,117,12435000,265735000,57610000,277754,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2017,481831000,119,55536000,484149000,35146000,1017324,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2017,166834000,121,16660000,182817000,-12547000,341537,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2017,3055000,123,219000,2426000,850000,609,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2017,72671000,125,8363000,50449000,26185000,230807,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2017,430519000,127,35097000,405592000,29923000,519546,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2017,589807000,129,36894000,548711000,44031000,577851,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2017,170617000,131,21016000,179723000,1203000,220289,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2017,423592000,133,15718000,351078000,68594000,288342,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2017,141227000,135,29813000,117861000,47783000,569337,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2017,17476000,137,2336000,17564000,1605000,69145,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2017,99808000,139,7381000,92652000,10085000,99473,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2017,73684000,141,5080000,82007000,-5598000,89155,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2017,336328000,143,28204000,309486000,36365000,326010,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2017,762901000,145,35173000,668053000,103152000,594857,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2017,193830000,147,20573000,223200000,-23788000,226469,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2017,379207000,149,19734000,350538000,30629000,323999,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2017,230897000,151,26818000,258021000,-21581000,421367,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2017,219871000,153,10692000,191917000,30536000,348027,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2017,161376000,155,24835000,173218000,-3401000,345325,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2017,189561000,157,22156000,184135000,15161000,219395,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2017,48583000,159,3897000,43678000,6762000,117325,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2017,242507000,161,18715000,223738000,22983000,238385,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2017,78699000,163,10084000,76500000,10287000,60037,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2017,233347000,165,23922000,224987000,15527000,254414,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2017,203617000,167,19376000,219377000,-12948000,445852,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2017,249032000,169,15413000,219327000,34146000,219158,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2017,208905000,171,12949000,196704000,15856000,237552,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2017,289248000,173,32181000,267607000,28254000,439237,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2018,17730662000,000,2220596000,17662462000,1184006000,24847445,NA,Minnesota,Minnesota,Minnesota
+2018,12526000,001,3704000,17974000,-2101000,94421,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2018,44485000,003,4062000,38602000,8769000,36129,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2018,225169000,005,21843000,224317000,13565000,329931,C,Urban/town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2018,26569000,007,4580000,29001000,610000,201319,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2018,137616000,009,11826000,138334000,4498000,178396,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2018,128524000,011,21079000,124290000,9022000,277920,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2018,420170000,013,47645000,410029000,35418000,381043,D,Entirely urban,EDR  9 - South Central,Southwest Minnesota
+2018,323129000,015,52643000,320656000,36918000,347987,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2018,10181000,017,1128000,14077000,-3833000,69508,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2018,108788000,019,16718000,118405000,-982000,148367,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2018,32786000,021,3381000,42441000,-7615000,134908,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2018,249046000,023,39002000,266378000,1714000,332147,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2018,42963000,025,5331000,49859000,-5176000,101782,D,Entirely urban,EDR  7E- East Central,Central Minnesota
+2018,316066000,027,32608000,316238000,11118000,545137,D,Entirely urban,EDR  4 - West Central,Northwest Minnesota
+2018,35310000,029,4663000,28454000,9615000,228506,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2018,0,031,0,0,0,781,A,Entirely rural,EDR  3 - Arrowhead,Northeast Minnesota
+2018,336192000,033,48233000,324454000,37503000,371603,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2018,23150000,035,2323000,25633000,-1576000,71378,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2018,207923000,037,25956000,199980000,21547000,182461,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2018,223973000,039,22199000,207716000,20549000,247195,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2018,84063000,041,18988000,99693000,-5456000,242763,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2018,304507000,043,41194000,333361000,2705000,425493,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2018,293929000,045,37417000,314783000,-9683000,434581,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2018,319846000,047,43722000,325513000,13521000,397556,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2018,359277000,049,39066000,364221000,11566000,332627,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2018,161154000,051,28506000,150673000,19598000,299344,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2018,57574000,053,17097000,62438000,10106000,44637,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2018,126613000,055,15924000,124149000,10221000,164748,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2018,39211000,057,3494000,39861000,1597000,86059,B,Town/rural mix,EDR  2 - Headwaters,Northwest Minnesota
+2018,48468000,059,5887000,60696000,-10763000,110631,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2018,9977000,061,906000,13108000,-2720000,62506,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2018,294541000,063,42509000,290033000,22645000,406407,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2018,31389000,065,3406000,31680000,350000,101838,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2018,398116000,067,40836000,392066000,23058000,373253,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2018,134369000,069,29823000,139834000,22022000,515381,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2018,8657000,071,866000,8246000,671000,81377,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2018,261979000,073,41400000,252062000,23419000,431478,A,Entirely rural,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2018,392000,075,198000,614000,-42000,581,B,Town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2018,7260000,077,3834000,14747000,-4047000,72649,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2018,180346000,079,31711000,206459000,-6258000,218732,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2018,168688000,081,35138000,176503000,13236000,312710,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2018,371639000,083,41569000,375416000,11981000,395392,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2018,205587000,085,25458000,201294000,12920000,245849,C,Urban/town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2018,73609000,087,12187000,77933000,2113000,186176,A,Entirely rural,EDR  2 - Headwaters,Northwest Minnesota
+2018,229461000,089,62436000,266017000,17423000,841925,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2018,503626000,091,54907000,518699000,18819000,416021,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2018,216791000,093,34552000,249295000,-14074000,299681,B,Town/rural mix,EDR  6E- Southwest Central,Central Minnesota
+2018,42648000,095,4414000,51169000,-6880000,111024,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2018,377388000,097,18159000,338508000,45742000,375806,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2018,392510000,099,46535000,376858000,33240000,406058,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2018,335858000,101,49255000,315510000,45841000,414596,A,Entirely rural,EDR  8 - Southwest,Southwest Minnesota
+2018,334444000,103,28750000,335269000,12936000,231353,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2018,453555000,105,42758000,414555000,55426000,414819,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2018,234747000,107,30102000,234746000,15450000,504741,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2018,194006000,109,27804000,210894000,-5748000,291526,D,Entirely urban,EDR 10 - Southeast,Southeast Minnesota
+2018,430157000,111,37255000,422712000,17956000,732431,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2018,65586000,113,24464000,65285000,21210000,324932,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2018,56914000,115,4860000,62107000,-3297000,147852,C,Urban/town/rural mix,EDR  7E- East Central,Central Minnesota
+2018,318861000,117,22390000,275488000,50457000,277609,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2018,499336000,119,65812000,499194000,52209000,1017148,C,Urban/town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2018,188676000,121,25543000,189245000,8279000,341265,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2018,3008000,123,236000,2473000,773000,608,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2018,66996000,125,13284000,51572000,25122000,230850,A,Entirely rural,EDR  1 - Northwest,Northwest Minnesota
+2018,435401000,127,72704000,435958000,40643000,519102,B,Town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2018,545825000,129,69356000,564027000,17306000,577749,A,Entirely rural,EDR  6E- Southwest Central,Central Minnesota
+2018,178823000,131,24453000,185942000,4740000,219600,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2018,430343000,133,27052000,377189000,62611000,288346,C,Urban/town/rural mix,EDR  8 - Southwest,Southwest Minnesota
+2018,144352000,135,35058000,121937000,54837000,569114,B,Town/rural mix,EDR  1 - Northwest,Northwest Minnesota
+2018,17347000,137,2859000,18389000,897000,69288,C,Urban/town/rural mix,EDR  3 - Arrowhead,Northeast Minnesota
+2018,87714000,139,8644000,94215000,-3218000,99078,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2018,62029000,141,5602000,83917000,-19836000,88630,D,Entirely urban,EDR  7W- Central,Central Minnesota
+2018,298444000,143,38821000,321456000,-4644000,326089,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2018,727624000,145,49217000,677407000,68950000,593326,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2018,235211000,147,27048000,231887000,14845000,230211,B,Town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2018,380149000,149,31813000,358907000,34986000,324123,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2018,276004000,151,40033000,271406000,16917000,421373,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota
+2018,215443000,153,16508000,199183000,22612000,346346,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2018,190801000,155,35057000,183478000,22194000,345353,A,Entirely rural,EDR  4 - West Central,Northwest Minnesota
+2018,188352000,157,22013000,190026000,7908000,217042,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2018,44384000,159,5113000,44952000,2285000,117683,B,Town/rural mix,EDR  5 - North Central,Northwest Minnesota
+2018,247362000,161,25127000,231418000,24531000,237918,C,Urban/town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2018,83944000,163,11797000,78298000,14396000,59151,D,Entirely urban,EDR 11 - 7 County Twin Cities,Seven County Mpls-St Paul
+2018,200102000,165,32544000,226567000,-8341000,254641,B,Town/rural mix,EDR  9 - South Central,Southwest Minnesota
+2018,229906000,167,28208000,226260000,12757000,445614,B,Town/rural mix,EDR  4 - West Central,Northwest Minnesota
+2018,253697000,169,20826000,227182000,34144000,218898,C,Urban/town/rural mix,EDR 10 - Southeast,Southeast Minnesota
+2018,180883000,171,19480000,202735000,-14197000,235633,C,Urban/town/rural mix,EDR  7W- Central,Central Minnesota
+2018,286197000,173,47687000,277909000,33476000,439205,B,Town/rural mix,EDR  6W- Upper Minnesota Valley,Southwest Minnesota

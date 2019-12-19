@@ -1,0 +1,367 @@
+---
+title: "Land values vs. net income"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 4
+runtime: shiny
+resource_files:
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.cpg
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.dbf
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.prj
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.sbn
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.sbx
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.shp.xml
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.shx
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(sf)
+library(ggrepel)
+library(scales)
+library(shiny)
+library(shinycssloaders)
+library(ggiraph)
+library(kableExtra)
+library(rmapshaper)
+library(cowplot)
+library(DT)
+```
+
+```{r loading jon docs and shapefiles}
+theme_bar <- theme_bw() +
+  theme(panel.grid.major = element_line(color = "grey70", size = 0.1),
+        panel.grid.minor = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text = element_text(face = "bold"),
+        panel.border = element_blank(),
+        legend.background = element_rect(fill = "transparent", color = "transparent"),
+        legend.key = element_rect(fill = "transparent"),
+        legend.title = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+theme_line <- theme_bw() +
+  theme(legend.background = element_rect(fill = "transparent", color = "transparent"),
+        legend.key = element_rect(fill = "transparent"),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(color = "grey70", size = 0.1),
+        axis.ticks = element_blank(),
+        axis.text = element_text(face = "bold"),
+        panel.border = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+theme_sf <- theme_bw() +
+  theme(axis.text.x=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks=element_blank(),
+        panel.background = element_blank(),
+        panel.grid.major = element_line(color = "white"),
+        panel.border = element_blank(),
+        plot.title = element_text(hjust = 0.5),
+        legend.title = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+counties.regions <- read_csv("Data/Join docs/county_regions.csv") %>%
+  mutate(countyfp = formatC(countyfp, width = 3, flag = "0"),
+         Name = str_to_title(Name),
+         Name = str_replace(Name, "Q", "q"),
+         Name = str_replace(Name, "Of The", "of the"),
+         Dem_Desc = ifelse(Name == "Minnesota", "Minnesota", Dem_Desc),
+         Name = str_replace(Name, "Mcleod", "McLeod"),
+         planning.region = str_replace(planning.region, " Minnesota", ""),
+         edr = str_replace(edr, "  ", " "))
+
+color.ruca <- c("Entirely rural" = "#5CA81F", "Town/rural mix" = "#C7EF99", "Urban/town/rural mix" = "#d8b365", "Entirely urban" = "#a6611a", "Minnesota" = "black")
+
+color.pr <- c("Northwest" = "#810f7c","Northeast" = "#fe9929", "Central" = "#076324", "Seven County Mpls-St Paul" = "#d8b365", "Southwest" = "#1f78b4", "Southeast" = "#d7301f", "Minnesota" = "black")
+
+color.edr <- c("EDR 1 - Northwest" = "#b3cde3", "EDR 2 - Headwaters" = "#8c96c6", "EDR 3 - Arrowhead" = "#fe9929", "EDR 4 - West Central" = "#8856a7", "EDR 5 - North Central" = "#810f7c", "EDR 6E- Southwest Central" = "#e5f5f9", "EDR 6W- Upper Minnesota Valley" = "#bdc9e1", "EDR 7E- East Central" = "#99d8c9", "EDR 7W- Central" = "#2ca25f", "EDR 8 - Southwest" = "#74a9cf", "EDR 9 - South Central" = "#0570b0", "EDR 10 - Southeast" = "#d7301f", "EDR 11 - 7 County Twin Cities" = "#d8b365", "Minnesota" = "black")
+
+color.counties <- scale_color_brewer(palette = "Dark2",
+                       guide = guide_legend(ncol = 3))
+
+mn_counties <- st_read("Data/Shapefiles/county shapefiles/MNCounties_MNDOT.shp", quiet = TRUE) %>%
+  ms_simplify(keep = .01, keep_shapes = TRUE)
+```
+
+```{r master land value and net income objects, include=FALSE, cache=TRUE}
+master.netinc.county <- read_csv("Data/Income and expenses/Master-farm-income-expenses.csv") %>%
+  mutate(Dem_Desc = fct_relevel(Dem_Desc, "Entirely rural", "Town/rural mix", "Urban/town/rural mix", "Entirely urban"),
+         planning.region = str_replace(planning.region, " Minnesota", ""),
+         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"),
+         edr = str_replace(edr, "  ", " "),
+         edr = fct_relevel(edr, "EDR 1 - Northwest", "EDR 2 - Headwaters", "EDR 3 - Arrowhead", "EDR 4 - West Central", "EDR 5 - North Central", "EDR 6E- Southwest Central", "EDR 6W- Upper Minnesota Valley", "EDR 7E- East Central", "EDR 7W- Central", "EDR 8 - Southwest", "EDR 9 - South Central", "EDR 10 - Southeast", "EDR 11 - 7 County Twin Cities", "Minnesota")) %>%
+  left_join(counties.regions[,c(1,2)], by = "countyfp") %>%
+  filter(Name != "Minnesota")
+
+master.lv.county <- read_csv("Data/Land values/Master-ag-land-values.csv") %>%
+  mutate(Dem_Desc = fct_relevel(Dem_Desc, "Entirely rural", "Town/rural mix", "Urban/town/rural mix", "Entirely urban"),
+         planning.region = str_replace(planning.region, " Minnesota", ""),
+         planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"),
+         edr = str_replace(edr, "  ", " "),
+         edr = fct_relevel(edr, "EDR 1 - Northwest", "EDR 2 - Headwaters", "EDR 3 - Arrowhead", "EDR 4 - West Central", "EDR 5 - North Central", "EDR 6E- Southwest Central", "EDR 6W- Upper Minnesota Valley", "EDR 7E- East Central", "EDR 7W- Central", "EDR 8 - Southwest", "EDR 9 - South Central", "EDR 10 - Southeast", "EDR 11 - 7 County Twin Cities", "Minnesota")) %>%
+  rename(year = Year) %>%
+  filter(County != "Minnesota") %>%
+  rename(Name = County)
+
+```
+
+<br>
+
+# Summary
+
+**Definition of net income**: Net income is calculated by adding the cash receipts from marketings to other income and subtracting the production expenses.
+
+**Definition of cash receipts from marketings**: consists of the gross revenue received by farmers from the sale of crops, livestock, and livestock products and of the value of defaulted loans made by Commodity Credit Corporation (CCC) and secured by crops.
+
+**Definition of other income**: comprised of Government Payments and Imputed and miscellaneous income received.
+
+**Definition of production expenses**: Farm production expenses consist of purchases of feed, livestock and poultry, seed, fertilizer, agricultural chemicals and lime, and petroleum products; labor expenses; machinery rental and custom work; animal health costs; and all other expenses including depreciation. BEA adjusts the USDA state estimates of production expenses to account for methodological differences in the treatment of depreciation and to conform to BEA definitions and classifications.
+
+**Definition of class 2a agricultural land**: The estimated land values are taking from the University of Minnesota - Land Economics program. The estimates used are based estimates provided by county assessors and is for Class 2a agricultural land. This is all land that can be cultivated for row crops or grains.
+
+<br>
+
+# Analysis
+
+[Analysis description here]
+
+<br>
+
+```{r prep net income and land values index, include=FALSE, cache=TRUE}
+net.income.acre.ruca <- master.netinc.county %>%
+  group_by(Dem_Desc, year) %>%
+  summarise(net.income = sum(net.income, na.rm = TRUE),
+            total.acres = sum(Total.acres, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(net.income.acre = net.income / total.acres) %>%
+  group_by(Dem_Desc) %>%
+  mutate(net.income.acre.index = net.income.acre / net.income.acre[year == 2001]) %>%
+  ungroup()
+
+land.value.acre.ruca <- master.lv.county %>%
+  group_by(Dem_Desc, year) %>%
+  summarise(total.acres = sum(Total.acres, na.rm = TRUE),
+            total.value = sum(Total.estimated.value, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(land.value.acre = total.value / total.acres) %>%
+  group_by(Dem_Desc) %>%
+  mutate(land.value.acre.index = land.value.acre / land.value.acre[year == 2001]) %>%
+  ungroup()
+
+net.income.acre.pr <- master.netinc.county %>%
+  group_by(planning.region, year) %>%
+  summarise(net.income = sum(net.income, na.rm = TRUE),
+            total.acres = sum(Total.acres, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(net.income.acre = net.income / total.acres) %>%
+  group_by(planning.region) %>%
+  mutate(net.income.acre.index = net.income.acre / net.income.acre[year == 2001]) %>%
+  ungroup()
+
+land.value.acre.pr <- master.lv.county %>%
+  group_by(planning.region, year) %>%
+  summarise(total.acres = sum(Total.acres, na.rm = TRUE),
+            total.value = sum(Total.estimated.value, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(land.value.acre = total.value / total.acres) %>%
+  group_by(planning.region) %>%
+  mutate(land.value.acre.index = land.value.acre / land.value.acre[year == 2001]) %>%
+  ungroup()
+
+net.income.acre.edr <- master.netinc.county %>%
+  group_by(edr, planning.region, year) %>%
+  summarise(net.income = sum(net.income, na.rm = TRUE),
+            total.acres = sum(Total.acres, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(net.income.acre = net.income / total.acres) %>%
+  group_by(edr, planning.region) %>%
+  mutate(net.income.acre.index = net.income.acre / net.income.acre[year == 2001]) %>%
+  ungroup()
+
+land.value.acre.edr <- master.lv.county %>%
+  group_by(edr, planning.region, year) %>%
+  summarise(total.acres = sum(Total.acres, na.rm = TRUE),
+            total.value = sum(Total.estimated.value, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(land.value.acre = total.value / total.acres) %>%
+  group_by(planning.region) %>%
+  mutate(land.value.acre.index = land.value.acre / land.value.acre[year == 2001]) %>%
+  ungroup()
+
+```
+
+## Net income from farming per acre vs. land value per acre {.tabset}
+
+When comparing the net income from farming and the land values, the most striking trend is that land values significantly increased along with net income during the late 2000’s and early 2010’s. However, now that net income is significantly lower, below breaking even in some places, land values have barely decreased. Interestingly, land values in our more metro areas of the state have stayed significantly higher than traditional agricultural regions due to residential and commercial development pressures.
+
+The highest values, outside of the seven county metro, are found in the Southwest and Southeast parts of the state. Surprisingly, land values in Northwest Minnesota have remained significantly lower than other parts of the state.
+
+<br>
+
+### RUCA
+
+The trend of net incomes for farms across the county groups is not surprising. It's pretty easy to see where the crop commodity boom began and ended. Every region across the state saw a spike in farm land values during this time frame. Land values are beginning to drop slightly across the state but nowhere near the rate of decline experienced in net incomes. In addition, the Entirely urban counties aren't really seeing much of a decline, likely due to those land values being driven by commercial and residential development pressure.
+
+<br>
+
+```{r chart net income and land value index ruca, fig.width=8}
+
+net.income.acre.ruca.plot <- ggplot(net.income.acre.ruca, aes(year, net.income.acre, color = Dem_Desc)) +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_hline(yintercept = 0, color = "black") +
+  geom_point_interactive(size = 2, aes(data_id = net.income.acre.index, tooltip = paste(Dem_Desc, "\nYear: ", year, "\nTotal farm net income: ", dollar(net.income), "\nTotal acres: ", comma(total.acres), "\nNet income per acre: ", dollar(net.income.acre), "\nNet income per acre indexed to 2001 levels: ", percent(net.income.acre.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Net income per farm acre")+
+  scale_y_continuous(labels=scales::dollar)+
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values = color.ruca,
+                     guide = guide_legend(ncol = 4)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10))
+
+land.value.acre.ruca.plot <- ggplot(land.value.acre.ruca, aes(year, land.value.acre, color = Dem_Desc)) +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_hline(yintercept = 0, color = "black") +
+  geom_point_interactive(size = 2, aes(data_id = land.value.acre, tooltip = paste(Dem_Desc, "\nYear: ", year, "\nTotal acres: ", comma(total.acres), "\nTotal estimated land value: ", dollar(total.value),  "\nLand value per acre: ", dollar(land.value.acre), "\nLand value per acre indexed to 2001 levels: ", percent(land.value.acre.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Land value per farm acre")+
+  scale_y_continuous(labels=scales::dollar)+
+  coord_cartesian(ylim = seq(-250,7000, 200)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values = color.ruca,
+                     guide = guide_legend(ncol = 4)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10))
+
+net.income.acre.ruca.plot.legend <- get_legend(net.income.acre.ruca.plot + theme(legend.box.margin = margin(0,0,0,0)))
+
+net.income.acre.ruca.plot.legend.bottom <- plot_grid(NULL, net.income.acre.ruca.plot.legend, NULL, ncol = 3, rel_widths = c(0,.5,3))
+
+girafe(ggobj = plot_grid(net.income.acre.ruca.plot + theme(legend.position = "none"), land.value.acre.ruca.plot + theme(legend.position = "none"), NULL, net.income.acre.ruca.plot.legend.bottom, ncol = 2, rel_heights = c(1, .1)), width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+### Planning Region
+
+Regions where land values seem to be reacting the most to farm net incomes are the Southwest and Southeast. Interestingly, land in the Northwest isn't as high as expected. But maybe we will see more nuance there when broken down by EDR.
+
+In the Southwest region, land values peaked in 2014 at $7,670 per acre and have dropped over $1,000 to $6,365. 
+
+The Southeast region had land values peak in 2014 as well at $6,642 and have dropped over $500 per acre to $6,091.
+
+<br>
+
+```{r chart net income and land value index pr, fig.width=8}
+
+net.income.acre.pr.plot <- ggplot(net.income.acre.pr, aes(year, net.income.acre, color = planning.region)) +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_hline(yintercept = 0, color = "black") +
+  geom_point_interactive(size = 2, aes(data_id = net.income.acre.index, tooltip = paste(planning.region, "\nYear: ", year, "\nTotal farm net income: ", dollar(net.income), "\nTotal acres: ", comma(total.acres), "\nNet income per acre: ", dollar(net.income.acre), "\nNet income per acre indexed to 2001 levels: ", percent(net.income.acre.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Net income per farm acre")+
+  scale_y_continuous(labels=scales::dollar)+
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values = color.pr,
+                     guide = guide_legend(ncol = 4)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10))
+
+land.value.acre.pr.plot <- ggplot(land.value.acre.pr, aes(year, land.value.acre, color = planning.region)) +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_hline(yintercept = 0, color = "black") +
+  geom_point_interactive(size = 2, aes(data_id = land.value.acre, tooltip = paste(planning.region, "\nYear: ", year, "\nTotal acres: ", comma(total.acres), "\nTotal estimated land value: ", dollar(total.value),  "\nLand value per acre: ", dollar(land.value.acre), "\nLand value per acre indexed to 2001 levels: ", percent(land.value.acre.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Land value per farm acre")+
+  scale_y_continuous(labels=scales::dollar)+
+  coord_cartesian(ylim = seq(-3250,13000, 2500)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values = color.pr,
+                     guide = guide_legend(ncol = 4)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10))
+
+net.income.acre.pr.plot.legend <- get_legend(net.income.acre.pr.plot + theme(legend.box.margin = margin(0,0,0,0)))
+
+net.income.acre.pr.plot.legend.bottom <- plot_grid(NULL, net.income.acre.pr.plot.legend, NULL, ncol = 3, rel_widths = c(0,.5,3))
+
+girafe(ggobj = plot_grid(net.income.acre.pr.plot + theme(legend.position = "none"), land.value.acre.pr.plot + theme(legend.position = "none"), NULL, net.income.acre.pr.plot.legend.bottom, ncol = 2, rel_heights = c(1, .1)), width_svg = 9) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+### EDR
+
+In the Northwest region, the trend line for land values in EDR 4 - West Central indicates some decline over the last few years and are likely being impacted by falling net incomes.
+
+In Central MN, land values in EDR 6E - Southwest Central have declined over the last few years indicating impacts from falling net farm incomes.
+
+All the EDRs in Southwest MN show declines in land values over the last few years. This is also where the highest land values are found among agriculture regions.
+
+
+
+<br>
+
+```{r chart net income and land value index edr, fig.height=10}
+
+net.income.acre.edr.plot <- ggplot(net.income.acre.edr, aes(year, net.income.acre, color = edr)) +
+  geom_smooth(se = FALSE, size = 1) +
+  facet_wrap(~planning.region, ncol = 1) +
+  geom_hline(yintercept = 0, color = "black") +
+  geom_point_interactive(size = 2, aes(data_id = net.income.acre.index, tooltip = paste(edr, "\nYear: ", year, "\nTotal farm net income: ", dollar(net.income), "\nTotal acres: ", comma(total.acres), "\nNet income per acre: ", dollar(net.income.acre), "\nNet income per acre indexed to 2001 levels: ", percent(net.income.acre.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Net income per farm acre")+
+  scale_y_continuous(labels=scales::dollar)+
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values = color.edr,
+                     guide = guide_legend(ncol = 4)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        legend.text = element_text(size = 6),
+        axis.text.x = element_text(size = 6))
+
+land.value.acre.edr.plot <- ggplot(land.value.acre.edr, aes(year, land.value.acre, color = edr)) +
+  geom_smooth(se = FALSE, size = 1) +
+  facet_wrap(~planning.region, ncol = 1) +
+  geom_hline(yintercept = 0, color = "black") +
+  geom_point_interactive(size = 2, aes(data_id = land.value.acre, tooltip = paste(edr, "\nYear: ", year, "\nTotal acres: ", comma(total.acres), "\nTotal estimated land value: ", dollar(total.value),  "\nLand value per acre: ", dollar(land.value.acre), "\nLand value per acre indexed to 2001 levels: ", percent(land.value.acre.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Land value per farm acre")+
+  scale_y_continuous(labels=scales::dollar)+
+  coord_cartesian(ylim = seq(-3250,13000, 2500)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values = color.edr,
+                     guide = guide_legend(ncol = 4)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        legend.text = element_text(size = 6),
+        axis.text.x = element_text(size = 6))
+
+net.income.acre.edr.plot.legend <- get_legend(net.income.acre.edr.plot + theme(legend.box.margin = margin(0,0,0,0)))
+
+net.income.acre.edr.plot.legend.bottom <- plot_grid(NULL, net.income.acre.edr.plot.legend, NULL, ncol = 3, rel_widths = c(0,.5,3))
+
+girafe(ggobj = plot_grid(net.income.acre.edr.plot + theme(legend.position = "none"), land.value.acre.edr.plot + theme(legend.position = "none"), NULL, net.income.acre.edr.plot.legend.bottom, ncol = 2, rel_heights = c(1, .1)), height_svg = 9) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+
+
+

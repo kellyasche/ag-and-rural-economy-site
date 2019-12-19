@@ -17,3 +17,5 @@ navbar:
           href: farm-employment.html
         - text: "Ag employment"
           href: ag-employment.html
+    - text: "Land values vs. Net Income"
+      href: land-vs-income.html
