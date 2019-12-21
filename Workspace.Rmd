@@ -181,12 +181,6 @@ land.value.acre.edr <- master.lv.county %>%
 
 ```
 
-## Changes in net income vs. changes in land values since year of peak net incomes {.tabset}
-
-Summary here
-
-<br>
-
 ```{r prep year of peak net income, include=FALSE, cache=TRUE}
 net.inc.peak.year.ruca <- net.income.acre.ruca %>%
   group_by(Dem_Desc) %>%
@@ -289,83 +283,37 @@ net.inc.land.value.change.peak.year.edr <- net.inc.change.peak.year.edr %>%
 
 ```
 
-### RUCA
+<br>
 
-Net farm income peaked in 2013 in entirely rural counties and since that time net income has decreased by 80%, while land values have only decreased 3.4%. 
+## Counties - land values most negatively impacted by farm incomes
 
-The rest of the county groups had their net farm income per acre peak in 2012 and since that time have had their net incomes drop a similar amount to entirely rural counties while land value per acre is 25% to 30% higher in 2018 than in 2012. 
+As the previous charts have shown, land values have remained stubbornly high despite the massive change in net farm incomes. Most of the regions in the state actually have higher land values in 2018 than when net farm incomes peaked. This could be due to a slower response by land values, and they increased for a few years after net farm incomes peaked, but have been declining over the last few years but just happen to still be above values when incomes peaked. But our concern here is identifying counties where land values have decreased enough where they are below values when incomes peaked.
+
+The previous charts have provided us charatertics to look for in counties that are likely being negatively impacted by decreasing land values;
+
+* 2018 agricultural land values that are below their values,
+* likely in our most rural counties,
+* and located in EDR 6W, EDR 8, and EDR 7E.
+
+Summary here
+
+```{r prep land value map, include = FALSE, cache=TRUE}
+
+farm.inc.peak.county <- master.netinc.county %>%
+  mutate(net.income.acre = net.income / Total.acres) %>%
+  group_by(countyfp, Name) %>%
+  top_n(n = 1, wt = net.income.acre) %>% 
+  arrange(desc(year)) %>%
+  distinct(Name, .keep_all = TRUE) %>%
+  ungroup() %>%
+  rename(peak.year = 1,
+         total.acres.peak = 7,
+         net.income.acre.peak = 13)
+
+names(farm.inc.peak.county)
+```
+
 
 <br>
 
-```{r chart change in net inc and land value since peak year rucA}
 
-net.inc.land.value.change.peak.year.ruca.plot <- ggplot(net.inc.land.value.change.peak.year.ruca, aes(x = Dem_Desc, y = pct.change, color = income.land)) +
-  geom_hline(yintercept = 0, color = "black") +
-  geom_point_interactive(size = 3,aes(data_id = Dem_Desc, tooltip = paste(Dem_Desc, "\nYear of peak net farm income: ", peak.year, "\nNet income per acre during peak year: ", dollar(net.income.acre.peak), "\nLand value per acre during peak year: ", dollar(land.value.acre.peak), "\nNet income per acre in 2018: ", dollar(net.income.acre), "\nLand value per acre in 2018: ", dollar(land.value.acre), "\n", income.land, ": ", percent(pct.change), sep = ""))) +
-  labs(x="", y = "", title = "Percent change in net farm income and land value per acre\nsince net farm income peaked")+
-        scale_y_continuous(labels=scales::percent)+
-        theme_bar+
-        theme(legend.position = "bottom",
-              legend.title = element_blank())+
-        scale_color_manual(values = c("#8c510a", "#076324"))
-
-
-girafe(ggobj = net.inc.land.value.change.peak.year.ruca.plot, width_svg = 8) %>%
-  girafe_options(opts_selection(type = "none"),
-                 opts_toolbar(saveaspng = FALSE) ,
-                 opts_sizing(rescale = FALSE))
-
-```
-
-### Planning Region
-
-Ovearll, net farm income per acre peaked between 2012 - 2014 for all planning regions and have decreased between 70% and 95%. Across most regions, land values per acre are still 2% to 40% higher than they were during the peak farm income years. Land values have decreased, however, in Southwest Minnesota where they are 8% of the value they were in 2013, the peak farm income year.
-
-
-<br>
-
-```{r chart change in net inc and land value since peak year pr}
-
-net.inc.land.value.change.peak.year.pr.plot <- ggplot(net.inc.land.value.change.peak.year.pr, aes(x = planning.region, y = pct.change, color = income.land)) +
-  geom_hline(yintercept = 0, color = "black") +
-  geom_point_interactive(size = 3,aes(data_id = planning.region, tooltip = paste(planning.region, "\nYear of peak net farm income: ", peak.year, "\nNet income per acre during peak year: ", dollar(net.income.acre.peak), "\nLand value per acre during peak year: ", dollar(land.value.acre.peak), "\nNet income per acre in 2018: ", dollar(net.income.acre), "\nLand value per acre in 2018: ", dollar(land.value.acre), "\n", income.land, ": ", percent(pct.change), sep = ""))) +
-  labs(x="", y = "", title = "Percent change in net farm income and land value per acre\nsince net farm income peaked")+
-        scale_y_continuous(labels=scales::percent)+
-        theme_bar+
-        theme(legend.position = "bottom",
-              legend.title = element_blank())+
-        scale_color_manual(values = c("#8c510a", "#076324"))
-
-
-girafe(ggobj = net.inc.land.value.change.peak.year.pr.plot, width_svg = 8) %>%
-  girafe_options(opts_selection(type = "none"),
-                 opts_toolbar(saveaspng = FALSE) ,
-                 opts_sizing(rescale = FALSE))
-
-```
-
-### EDR
-
-Analysis
-
-<br>
-
-```{r chart change in net inc and land value since peak year edr, fig.height=10}
-
-net.inc.land.value.change.peak.year.edr.plot <- ggplot(net.inc.land.value.change.peak.year.edr, aes(x = edr, y = pct.change, color = income.land)) +
-  geom_hline(yintercept = 0, color = "black") +
-  facet_wrap(~planning.region, ncol = 2, scales = "free_x") +
-  geom_point_interactive(size = 3,aes(data_id = edr, tooltip = paste(edr, "\nYear of peak net farm income: ", peak.year, "\nNet income per acre during peak year: ", dollar(net.income.acre.peak), "\nLand value per acre during peak year: ", dollar(land.value.acre.peak), "\nNet income per acre in 2018: ", dollar(net.income.acre), "\nLand value per acre in 2018: ", dollar(land.value.acre), "\n", income.land, ": ", percent(pct.change), sep = ""))) +
-  labs(x="", y = "", title = "Percent change in net farm income and land value per acre\nsince net farm income peaked")+
-        scale_y_continuous(labels=scales::percent)+
-        theme_bar+
-        theme(legend.position = "bottom",
-              legend.title = element_blank())+
-        scale_color_manual(values = c("#8c510a", "#076324"))
-
-girafe(ggobj = net.inc.land.value.change.peak.year.edr.plot, height_svg = 9) %>%
-  girafe_options(opts_selection(type = "none"),
-                 opts_toolbar(saveaspng = FALSE) ,
-                 opts_sizing(rescale = FALSE))
-
-```
