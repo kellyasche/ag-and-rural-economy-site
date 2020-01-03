@@ -11,7 +11,7 @@ navbar:
           href: farm-earnings.html
         - text: "Ag wages"
           href: ag-wages.html
-    - text: "Farm and agriculture employment"
+    - text: "Farm and ag employment"
       menu:
         - text: "Farm employment"
           href: farm-employment.html
@@ -19,3 +19,9 @@ navbar:
           href: ag-employment.html
     - text: "Land values vs. Net Income"
       href: land-vs-income.html
+    - text: "Analyzing industries in economic analysis study"
+      href: lazarus-report.html
+      
+output:
+  html_document:
+    css: "styles.css"
