@@ -96,3 +96,34 @@ color.counties <- scale_color_brewer(palette = "Dark2",
 mn_counties <- st_read("Data/Shapefiles/county shapefiles/MNCounties_MNDOT.shp", quiet = TRUE) %>%
   ms_simplify(keep = .01, keep_shapes = TRUE)
 ```
+
+<br>
+
+# Overview of the report
+
+Bill Lazarus, an Applied Economics professor at the University of Minnesota, provided a report analyzing the impacts of reduced farm spending in regions across the state. You can view the full report [here](https://www.dropbox.com/home/CRPD%20Team%20Folder/Research%202020/Ag%20and%20rural%20economy/Literature%20Review?preview=Impacts+of+Reduced+Farm+Spending+on+Rural+Minnesota+Communities103019.pdf).
+
+Due to lower crop prices, crop producers are being encouraged to "tighten their belts", resulting in less spending for various products and equipment. Therefore, this report analyzed the impacts on communities with reduced spending in four main categories;
+
+1. farm machinery,
+2. building purchases,
+3. cropland rental rates, and
+4. fertilizer.
+
+It's important to note that farm household discretionary spending on goods such as televisions and sofas might also see cutbacks with reduced incomes, but is NOT considered in this analysis. However, there are so few households farming presently that it isn't considered to be a major source of trouble.
+
+[the following is taken directly from the executive summary of Dr. Lazarus' report]
+Results show that job losses at farm machinery dealers, construction firms, fertilizer dealers, and in other sectors supplying them were 6,480 statewide, or 15,720 with secondary ripples. These job losses would be a severe economic hit to those workers and their families. In percentage terms the total impact on the state’s economy with secondary ripple effects is 0.47%.
+
+Another measure of community impact is that labor income would decline by $193/person statewide (based on 3.7 million total employment). Figure 7 shows that the industry sectors that are most affected are trade and the financial and real estate sector.
+
+Farm real estate value changes across the regions appear to be consistent with changes in land rents except that values have held up better in the southeastern region compared to rents there.
+
+# Summary
+
+Summary here
+
+
+# Analysis
+
+Description of analysis
