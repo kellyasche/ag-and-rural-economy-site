@@ -146,8 +146,45 @@ Farm real estate value changes across the regions appear to be consistent with c
 
 # Summary
 
-Summary here
+When we dig deeper into smaller geographic areas in the state we can begin to see that there is more fluctuation and likely areas being more impacted than what the Lazarus study shows. In particular, EDRs 6W - Upper Minnesota Valley and EDR 8 - Southwest in Southwest Minnesota seem to have experienced significant decreases in their employment over the last few years within the industries identified in the Lazarus study.
 
+However, the overall extent of employment in these industries even at the county level barely exceed 8% at their highest levels, and are below 2% across a large majority of counties. But, we can identify a couple of characteristics of which counties are most likely to be impacted;
+
+* have had 3% or more of their employment in industries identified in the Lazarus study at some point since 2001; and,
+* are located in Southwest Minnesota and have 3% or more of the employment in industries identified in the Lazarus study at some point since 2001.
+
+When analyzing counties that fit these characteristics, the trends show a bit of a mixed bag with some counties experiencing decreases in these industries while other counties experiencing increases.
+
+Counties experiencing a decrease in employment in these industries;
+
+* Grant
+* Stevens
+* McLeod
+* Swift
+* Chippewa
+* Pipestone
+* Rock
+* Martin
+* Faribault
+
+Counties experiencing an increase in employment in these industries;
+
+* Marshall
+* Wilkin
+* Meeker
+* Renville
+* Lac qui Parle
+* Redwood
+* Watonwan
+
+Due to such low numbers of employment, the data is a bit spotty and only a few industries actually show up at the county level when we try to examine the trends of individual industries. This, in itself, is indicative of the lack of impact these industries really have on overall employment in Minnesota.
+
+However, overall there seems to be two main industries that indicate whether a county is increasing or decreasing in employment in these ag-related industries as a whole;
+
+farm product raw material merchant wholesalers, and
+farm supplies merchant wholesalers.
+
+If these industries were increasing in the county, than it was likely that the county was experiencing an increase in the ag-related industries as a whole, and vice-versa.
 
 # Analysis
 
@@ -304,7 +341,7 @@ girafe(ggobj = emp.county.map, width_svg = 8) %>%
 The charts above identify a couple of characteristics of which counties are most likely to be impacted;
 
 * have had 3% or more of their employment in industries identified in the Lazarus study at some point since 2001; and,
-* are located in Southwest Minnesota and have 3% or more of the employment in industries identified in the Lazarus studet at some point since 2001.
+* are located in Southwest Minnesota and have 3% or more of the employment in industries identified in the Lazarus study at some point since 2001.
 
 There were 22 counties that fit one of the criteria above and the  charts below provide the employment trends within the specific industries identified in the Lazarus study.
 
@@ -352,7 +389,7 @@ Employment in the specific ag industries related to the Lazarus study in each ED
 
 Pope looks like it might be bad but it's such a small percentage of total employment that the impacts are likely very limited.
 
-On the otherhand, Marshall and Wlkin Counties have experienced some healthy growth in these industries over the last few years. 
+On the other hand, Marshall and Wilkin Counties have experienced some healthy growth in these industries over the last few years. 
 
 <br>
 
@@ -434,11 +471,21 @@ girafe(ggobj = filt.trends.counties.sw.plot, height_svg = 5) %>%
 
 ```
 
+
 <br>
 
 ## Specific ag industries driving change {.tabset}
 
-What are the industries that are driving the increases and decreases in these counties?
+The next question to ask is what industries identified in the Lazarus report are driving the increases and decreases in those ag-related employment sectors. Below are the 16 counties identified above experiencing somewhat clear trends of decreasing and increasing employment in the industries identified in the Lazarus study and the employment trends in each of those industries.
+
+Due to such low numbers of employment, the data is a bit spotty and only a few industries actually show up at the county level. This, in itself, is indicative of the lack of impact these industries really have on overall employment in Minnesota. 
+
+Overall, there are two main industries that seem to indicate whether a county is increasing or decreasing in employment in these ag-related industries as a whole;
+
+1. farm product raw material merchant wholesalers, and
+2. farm supplies merchant wholesalers.
+
+If these industries were increasing in the county, than it was likely that the county was experiencing an increase in the ag-related industries as a whole, and vice-versa.
 
 <br>
 
@@ -446,33 +493,99 @@ What are the industries that are driving the increases and decreases in these co
 impacted.counties <- master.qcew.county %>%
   filter(areaname %in% c("Grant", "Stevens", "McLeod", "Swift", "Chippewa", "Pipestone", "Rock", "Martin", "Faribault", "Marshall", "Wilkin", "Meeker", "Renville", "Lac qui Parle", "Redwood", "Watonwan"),
          naicstitle != "Total, All Industries") %>%
-  select(1,2,5,28,83)
+  select(1,2,5,28,83) %>%
+  group_by(areaname, countyfp) %>%
+  complete(periodyear, naicstitle, fill = list(c(empYear = 0))) %>%
+  mutate(empYear = ifelse(is.na(empYear), 0, empYear),
+         inc.dec = ifelse(areaname %in% c("Grant", "Stevens", "McLeod", "Swift", "Chippewa", "Pipestone", "Rock", "Martin", "Faribault"), "Decreasing", "Increasing"),
+         data_id = seq(n())) %>%
+  left_join(counties.regions[,c(1,5,6)], by = "countyfp")
 
-mean.change.impact.counties <- impacted.counties %>%
-  filter(periodyear > 2009) %>%
-  group_by(naicstitle, areaname, countyfp) %>%
-  arrange(periodyear) %>%
-  mutate(pct.change = (empYear - lag(empYear))/lag(empYear)) %>%
-  ungroup() %>%
-  group_by(naicstitle, areaname, countyfp) %>%
-  summarise(mean.change = mean(pct.change, na.rm = TRUE)) %>%
-  ungroup() %>%
-  drop_na %>%
-  arrange(areaname)
 ```
 
-### Counties with increasing employment in Lazarus industries
+### Counties with increasing employment in Lazarus industries{.tabset}
 
-Analysis here
+In counties where there is increasing employment in industries identified in the Lazarus study, there seems to be two industries within the retail and trade sector driving the increases;
+
+1. Farm product raw material merchant wholesales, and
+2. Farm supplies merchant wholesalers.
 
 <br>
 
-```{r charts lazarus industry trends increasing counties}
+```{r charts lazarus industry trends increasing counties, fig.height=9}
+
+impacted.counties.plot <- ggplot(filter(impacted.counties, inc.dec == "Increasing"), aes(periodyear, empYear, color = naicstitle)) +
+  facet_wrap(~areaname, ncol = 2) +
+  geom_point_interactive(size = 2, aes(data_id = data_id, tooltip = paste(areaname, "Year: ", periodyear, "\nNAICS title: ", naicstitle, "\nEmployment: ", comma(empYear), sep = ""))) +
+  labs(x="", y = "", color="", title = "Employment by industry and county")+
+  scale_y_continuous(labels=scales::comma)+
+    scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_discrete(guide = guide_legend(ncol = 2)) +
+  theme(legend.position = "bottom",
+        axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1),
+        legend.text = element_text(size = 8),
+        text = element_text(size = 10))
+
+girafe(ggobj = impacted.counties.plot, height_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
 
 ```
 
+
 ### Counties with decreasing employment in Lazarus industries
 
-Analysis here
+The overall industry driver of declines these counties are;
+
+* farm and garden machinery and equipment merchant wholesalers,
+* farm product raw material merchant wholesalers
+* farm supplies merchant wholesalers.
+
+Below is a list of each of the counties and the general trends of their industries.
+
+Chippewa: Decreases in farm and garden machinery and equipment merchant wholesalers and farm supplies merchant wholesalers.
+
+Faribault: Declines in Farm product raw material merchant wholesalers, and farm and garden machinery and equipment merchant wholesalers.
+
+Grant: Declines in farm product raw material merchant wholesalers and the ups and downs of farm supplies merchant wholesalers.
+
+Martin: Significant appearances and disappearances of farm supplies merchant wholesalers and farm product raw material merchant wholesalers.
+
+McLeod: Disappearance of farm and garden machinery and equipment merchant wholesalers, and ag implement manufacturing. But seeing increases in farm supplies merchant wholesalers and commercial and institutional building construction.
+
+Pipestone: Decline in farm product raw materials merchant wholesalers and disappearance of farm and garden machinery and equipment merchant wholesalers.
+
+Rock: Disappearance of farm and garden machinery and equipment merchant wholesalers and farm supplies merchant wholesaler.
+
+Stevens: Decline in farm product raw materials merchant wholesalers with some ups and downs in the farm and garden machinery and equipment merchant wholesalers. Increases in farm supplies merchant wholesalers.
+
+Swift: Decreases in farm product raw material merchant wholesalers.
+
+
+<br>
+
+```{r charts lazarus industry trends decreasing counties, fig.height=9}
+
+impacted.counties.decreasing.plot <- ggplot(filter(impacted.counties, inc.dec == "Decreasing"), aes(periodyear, empYear, color = naicstitle)) +
+  facet_wrap(~areaname, ncol = 2) +
+  geom_point_interactive(size = 2, aes(data_id = data_id, tooltip = paste(areaname, "Year: ", periodyear, "\nNAICS title: ", naicstitle, "\nEmployment: ", comma(empYear), sep = ""))) +
+  labs(x="", y = "", color="", title = "Employment by industry and county")+
+  scale_y_continuous(labels=scales::comma)+
+    scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_discrete(guide = guide_legend(ncol = 2)) +
+  theme(legend.position = "bottom",
+        axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1),
+        legend.text = element_text(size = 8),
+        text = element_text(size = 10))
+
+girafe(ggobj = impacted.counties.decreasing.plot, height_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
 
 
