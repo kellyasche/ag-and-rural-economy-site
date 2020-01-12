@@ -181,8 +181,8 @@ Due to such low numbers of employment, the data is a bit spotty and only a few i
 
 However, overall there seems to be two main industries that indicate whether a county is increasing or decreasing in employment in these ag-related industries as a whole;
 
-farm product raw material merchant wholesalers, and
-farm supplies merchant wholesalers.
+* farm product raw material merchant wholesalers, and
+* farm supplies merchant wholesalers.
 
 If these industries were increasing in the county, than it was likely that the county was experiencing an increase in the ag-related industries as a whole, and vice-versa.
 

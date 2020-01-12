@@ -141,24 +141,13 @@ master.ag.emp.comb.edr <- master.ag.emp.edr %>%
 
 # Summary of employment in ag-related industries
 
-**Definition of ag-related industries**: This analysis cobbles together various NAICS codes that are directly related to "ag-related employment". This includes the following industries;
+On average, 10% to 15% of total employment is in ag-related industries in our most rural areas of the state, particularly in the Southwest, and less than 5% everywhere else. 
 
-```{r ag-related industry list}
-agrelated.ind.list <- read_csv("Data/Earnings/Master-ag-related-ind-wages-pr.csv") %>%
-  distinct(naicstitle) %>%
-  rename(`Ag-related NAICS categories` = 1)
+Overall, the impact of the crop commodity market on employment in ag-industries is pretty fuzzy. The trends show that employment in ag-related industries were decreasing during the early 2000s, followed by a significant increase in employment in these industries during the crop commodity boom. However, since the drop in crop commodity prices employment in ag-related industries has continued to grow in some areas and has decreased in others. 
 
-kable(agrelated.ind.list, format = "html", align = "c") %>%
-    kable_styling(bootstrap_options = "striped") %>%
-    column_spec(1, width = "10em")
+In particular, the EDRs in the Northwest and Central parts of the state are continuing to see growth in their employment by ag-related industries. The Southwest Region is experiencing an increase in ag-employment as a whole, but EDR 6W - Upper Minnesota Valley has experienced declines, however.
 
-```
-
-Overall, employment in ag-industries does seem to be impacted by the crop commodity boom, at least as a regional level. The trends show that employment in ag-related industries were decreasing during the beginning 2000s, followed by a significant increase in employment in these industries during the crop commodity boom. Since 2012, however, employment has been decreasing again for most regions, but not all.
-
-In particular, the EDRs in the Northwest and Central parts of the state are continuing to see growth in their employment by ag-related industries. The Southwest Region has been experiencing significant declines in these industries, however.
-
-Analysis provided guidance on the characteristics of a county where they might be most impacted by employment trends in ag-related industries;
+Analysis provided guidance on the characteristics of a county where they might be most impacted by employment trends in ag-related industries, both positively and negatively;
 
 They are likely located in the following EDRs;
 
@@ -174,11 +163,12 @@ They are likely located in the following EDRs;
 
 while also having at least 10% of their employment in ag-related industries at some point since 2001.
 
-When applying these filters, we end up 25 counties that fall into two distinct groups; 
+When applying these filters, we end up with 25 counties that fall into two distinct groups; 
 
 * Counties with growing employment in ag-related industries (12 counties)
-  + 7 (58%) of the counties are experiencing a increase in their total employment
-  + 5 (42%) of the counties are experiencing a decline in their total employment 
+  + 7 (58%) of the counties are experiencing an increase in their total employment
+  + 5 (42%) of the counties are experiencing an decline in their total employment 
+  
 * Counties with declining employment in ag-related industries (13 counties)
   + 5 (38%) of the counties are experiencing a increase in their total employment
   + 8 (62%) of the counties are experiencing a decline in their total employment
@@ -227,6 +217,23 @@ datatable(down.counties.summary, class = "cell-border stripe", filter = "top", r
 
 ```
 
+
+<br>
+
+# Definitions
+
+**Definition of ag-related industries**: This analysis cobbles together various NAICS codes that are directly related to "ag-related employment". This includes the following industries;
+
+```{r ag-related industry list}
+agrelated.ind.list <- read_csv("Data/Earnings/Master-ag-related-ind-wages-pr.csv") %>%
+  distinct(naicstitle) %>%
+  rename(`Ag-related NAICS categories` = 1)
+
+kable(agrelated.ind.list, format = "html", align = "c") %>%
+    kable_styling(bootstrap_options = "striped") %>%
+    column_spec(1, width = "10em")
+
+```
 
 <br>
 

@@ -95,18 +95,17 @@ mn_counties <- st_read("Data/Shapefiles/county shapefiles/MNCounties_MNDOT.shp",
 
 <br>
 
-# Summary of farm earnings
 
-**Definition of farm earnings:** Farm labor and proprietors’ income is comprised of the net income of sole proprietors, partners, and hired laborers arising directly from the current production of agricultural commodities, either livestock or crops. It includes net farm proprietors’ income and the wages and salaries, pay-in-kind, and other labor income of hired farm laborers; but specifically excludes the income of farm corporations. (Bureau of Economic Analysis).
+
+# Summary of farm earnings
 
 An analysis of farm earnings highlights a couple of trends;
 
-* Farm earnings across the state peaked between 2010 - 2013. In 2018, farm earnings are lower in every single county than in previous years. In some cases, farm earnings are at levels earned in the early 2000s.
+* Farm earnings across the state peaked between 2010 - 2013. In 2018 (the most recent year of data), farm earnings are lower in every single county than in previous years. In some cases, farm earnings are at levels earned in the early 2000s.
 
-* In 2018 (most recent year of data collection), there were 33 counties that have lower total earnings than during the peak years of crop prices. All other counties are experiencing their highest earnings in history. All 33 counties are located on the western and southern sides of Minnesota where agriculture plays a larger role in the local economy.
+* Despite the lower farm earnings, there were only 33 counties that have lower *total* earnings in 2018 than during the peak years (2012-2014) of crop prices. All 33 counties are located on the western and southern sides of Minnesota where agriculture plays a larger role in the local economy. All other counties continue to see growth in their total earnings and are currently experiencing their highest earnings in history. 
 
-
-The table below provides the 14 of those 33 counties that the analysis identified as being most impacted by the downturn in farm earnings. Of the counties that seem to most impacted by farm earnings:
+Through further analysis, there are 14 of the 33 counties that are most likely havintg their total earnings impacted by farm earnings. Of the counties that seem to most impacted by farm earnings:
 
 * all of them have had their total earnings drop by more than 15% since the peak farm years;
 * all of them have had their contributions from farm earnings to total earnings drop by more than 15 percentage points;
@@ -127,6 +126,40 @@ datatable(impacted.counties.table, class = "cell-border stripe", filter = "top",
   formatCurrency(8, "")
 
 ```
+
+<br>
+
+```{r prep impacted counties map, include = FALSE, cache = TRUE}
+impacted.counties.map <- read_csv("Data/Earnings/impacted-counties-map-summary.csv") %>%
+  mutate(GeoName = str_replace(GeoName, ", MN", "")) %>%
+  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE")) %>%
+  left_join(impacted.counties.table[,c(1,5:9)], by = c("GeoName" = "County")) %>%
+  mutate(impacted.cat = ifelse(is.na(`Total earnings - peak year`), "Not likely impacted by farm earnings", "Likely impacted by farm earnings")) %>%
+  filter(GeoName != "Minnesota")
+```
+
+```{r map impacted counties}
+
+impacted.counties.map.plot <- ggplot(impacted.counties.map) +
+  geom_sf_interactive(aes(fill = impacted.cat, tooltip = paste(GeoName, "\nYear farm earnings peaked: ", fe.peak.year, "\nFarm earning during peak year: ", dollar(farm.earnings.peak), "\nTotal earnings during peak year: ", dollar(farm.earnings.peak), "\nFarm earning 2018: ", dollar(farm.earnings.2018), "\nPercent change in farm earnings since peak year: ", percent(pct.change.fe), "\nTotal earnings 2018: ", dollar(total.earnings.2018), "\nPercent change in total earnings since peak year: ", percent(pct.change.te), sep = ""), data_id = GeoName, geometry = geometry)) +
+  scale_fill_manual(values = c("#5CA81F", "white"))+
+  theme_sf+
+  labs(title="Counties most likely impacted by farm earnings") +
+  theme(text = element_text(size = 10))
+
+girafe(ggobj = impacted.counties.map.plot, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+<br>
+
+
+# Definitions
+
+**Definition of farm earnings:** Farm labor and proprietors’ income is comprised of the net income of sole proprietors, partners, and hired laborers arising directly from the current production of agricultural commodities, either livestock or crops. It includes net farm proprietors’ income and the wages and salaries, pay-in-kind, and other labor income of hired farm laborers; but specifically excludes the income of farm corporations. (Bureau of Economic Analysis).
 
 <br>
  
@@ -572,7 +605,6 @@ fe.te.peak.2018.negative.county <- fe.te.peak.2018.county %>%
          change.pct.fe.of.te = 100 * (pct.fe.of.te.2018 - pct.fe.of.te.peak),
          GeoName = str_replace(GeoName, ", MN", ""))
 
-names(fe.te.peak.2018.negative.county)
 ```
 
 ```{r point chart change in fe as pct of te, fig.width=8}
@@ -653,7 +685,6 @@ earnings.industry.peak.2018.drop.county <- te.fe.drop.county %>%
             industry.loss.earnings.change = sum(change.earnings, na.rm = TRUE)) %>%
   ungroup() %>%
   mutate(pct.fe.of.total.loss = farm.earnings.change / industry.loss.earnings.change)
-names(earnings.industry.peak.2018.drop.county)
 ```
 
 ```{r point chart farm earnings loss pct of industry loss, fig.width=8}

@@ -118,7 +118,12 @@ ag.ind.wages.edr <- read_csv("Data/Earnings/Master-ag-related-ind-wages-edr.csv"
 
 # Summary
 
-The analysis below highlights the fact that wages earned from ag-related industries play a relatively minor role in most regions across the state. A large majority of counties experiencing a decline in ag-related wages did not translate into lower total wages earned. For these counties, it potentially means a couple of things;
+The analysis below highlights two points;
+
+1. the downturn in crop commodity prices does not seem to impact ag-related industry wages, and
+2. wages earned from ag-related industries play a relatively minor role in most regions across the state. 
+
+A large majority of counties experiencing a decline in ag-related wages did not translate into lower total wages earned. For these counties, it potentially means a couple of things;
 
 * ag-related wages didn't contribute a significant amount to the total wages earned in the county; or,
 * declines in ag-related wages were made up by increases in wages in other industries.
@@ -162,7 +167,7 @@ On the flip side, there is one county that clearly seems to be impacted negative
 
 <br>
 
-# Analysis
+# Definitions
 
 **Definition of ag-related industries**: This analysis cobbles together various NAICS codes  are directly related to "ag-related wages". This includes the following industries;
 
@@ -178,6 +183,8 @@ kable(agrelated.ind.list, format = "html", align = "c") %>%
 ```
 
 <br>
+
+# Analysis
 
 This analysis examines the impact wages earned in ag-related industries impacts the total wages across Minnesota. We do this through the following sections;
 
