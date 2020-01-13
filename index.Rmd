@@ -98,7 +98,19 @@ mn_counties <- st_read("Data/Shapefiles/county shapefiles/MNCounties_MNDOT.shp",
 
 <br>
 
-# Summary - Impacts due to spending reductions by farmers in crop production
+# Summary
+
+This analysis attempts to understand how low crop prices may be impacting rural economies and to identify which areas of the state are likely feeling the affects the most. 
+
+It is well understood that the primary impact of low crop prices is declining farm earnings. Less understood is how low crop prices might be impacting ag-related industries. Below you will find summaries that help us answer these questions.
+
+1. Impacts due to spending reductions by farmers
+
+2. Impacts on ag-related industries
+
+<br>
+
+## Impacts due to spending reductions by farmers
 
 It is apparent that the downturn in the crop commodity market is having the largest impacts on farm earnings. Farm earnings across the state peaked between 2010 - 2013. In 2018 (the most recent year of data), farm earnings are lower in every single county than in previous years. In some cases, farm earnings are at levels earned in the early 2000s.
 
@@ -159,7 +171,7 @@ The industries that seem to be most impacted in these counties are farm product 
 
 <br>
 
-# Summary - Impacts of crop commodity prices on Ag-related industries
+## Impacts on ag-related industries
 
 Overall, the downturn in the crop production market has had little impact in wages earned and employment in other Ag-related industries. This is largely due to these industries making up such a small percentage of the workforce across the state.
 
@@ -208,7 +220,49 @@ Analysis revealed 25 counties that are likely having their total employment impa
   + 5 (38%) of the counties are experiencing a increase in their total employment
   + 8 (62%) of the counties are experiencing a decline in their total employment
 
-Refer to the appropriate section to see the specific counties.
+The following tables provide these counties with a few more details.
+
+<br>
+
+**Counties with growing ag employment**
+
+The table is organized so that the counties with the highest percentage of total employment in ag-related industries is at the top. Overall, this shows a general trend that if a county has experienced significant growth in ag-related industries and currently has 15% or more of the employment in these industries, they will likely also have growth in their total enrollment.
+
+<br>
+
+```{r table up counties summary}
+up.counties.summary <- read_csv("Data/Employment/table-up-counties-summary.csv")
+
+datatable(up.counties.summary, class = "cell-border stripe", filter = "top", rownames = FALSE,
+          options = list(scrollX = TRUE,
+                         pageLength = 15)) %>%
+  formatStyle("Change in total employment since 2001",
+              target = "row",
+              backgroundColor = styleInterval(c(-1, 0), c("red", "red", "transparent"))) %>%
+  formatPercentage(2:4)
+
+```
+
+<br>
+
+**Counties with decreasing ag employment**
+
+This table provides the 13 counties who are experiencing a decline in their ag-related employment, with rows highlighted in red if their total employment in 2018 is lower than in 2001. Not surprisingly, here the higher the percentage of a county’s workforce is in ag-related industries, the more likely they will also have less total employment in 2018 than in 2001.
+
+<br>
+
+```{r table down counties summary}
+down.counties.summary <- read_csv("Data/Employment/table-down-counties-summary.csv")
+
+datatable(down.counties.summary, class = "cell-border stripe", filter = "top", rownames = FALSE,
+          options = list(scrollX = TRUE,
+                         pageLength = 15)) %>%
+  formatStyle("Change in total employment since peak ag employment year",
+              target = "row",
+              backgroundColor = styleInterval(c(-1, 0), c("red", "red", "transparent"))) %>%
+  formatPercentage(2:4)
+
+```
 
 <br>
 
