@@ -1,13 +1,265 @@
 ---
-title: "Summary"
-output: html_document
+title: "Summary and introduction"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 4
+runtime: shiny
+resource_files:
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.cpg
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.dbf
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.prj
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.sbn
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.sbx
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.shp.xml
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.shx
 ---
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
 
-Summary will go here.
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(sf)
+library(ggrepel)
+library(scales)
+library(shiny)
+library(shinycssloaders)
+library(ggiraph)
+library(kableExtra)
+library(rmapshaper)
+library(cowplot)
+library(DT)
+```
+
+```{r loading jon docs and shapefiles}
+theme_bar <- theme_bw() +
+  theme(panel.grid.major = element_line(color = "grey70", size = 0.1),
+        panel.grid.minor = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text = element_text(face = "bold"),
+        panel.border = element_blank(),
+        legend.background = element_rect(fill = "transparent", color = "transparent"),
+        legend.key = element_rect(fill = "transparent"),
+        legend.title = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+theme_line <- theme_bw() +
+  theme(legend.background = element_rect(fill = "transparent", color = "transparent"),
+        legend.key = element_rect(fill = "transparent"),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(color = "grey70", size = 0.1),
+        axis.ticks = element_blank(),
+        axis.text = element_text(face = "bold"),
+        panel.border = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+theme_sf <- theme_bw() +
+  theme(axis.text.x=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks=element_blank(),
+        panel.background = element_blank(),
+        panel.grid.major = element_line(color = "white"),
+        panel.border = element_blank(),
+        plot.title = element_text(hjust = 0.5),
+        legend.title = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+counties.regions <- read_csv("Data/Join docs/county_regions.csv") %>%
+  mutate(countyfp = formatC(countyfp, width = 3, flag = "0"),
+         Name = str_to_title(Name),
+         Name = str_replace(Name, "Q", "q"),
+         Name = str_replace(Name, "Of The", "of the"),
+         Dem_Desc = ifelse(Name == "Minnesota", "Minnesota", Dem_Desc),
+         Name = str_replace(Name, "Mcleod", "McLeod"),
+         planning.region = str_replace(planning.region, " Minnesota", ""),
+         edr = str_replace(edr, "  ", " "))
+
+color.ruca <- c("Entirely rural" = "#5CA81F", "Town/rural mix" = "#C7EF99", "Urban/town/rural mix" = "#d8b365", "Entirely urban" = "#a6611a", "Minnesota" = "black")
+
+color.pr <- c("Northwest" = "#810f7c","Northeast" = "#fe9929", "Central" = "#076324", "Seven County Mpls-St Paul" = "#d8b365", "Southwest" = "#1f78b4", "Southeast" = "#d7301f", "Minnesota" = "black")
+
+color.edr <- c("EDR 1 - Northwest" = "#b3cde3", "EDR 2 - Headwaters" = "#8c96c6", "EDR 3 - Arrowhead" = "#fe9929", "EDR 4 - West Central" = "#8856a7", "EDR 5 - North Central" = "#810f7c", "EDR 6E- Southwest Central" = "#e5f5f9", "EDR 6W- Upper Minnesota Valley" = "#bdc9e1", "EDR 7E- East Central" = "#99d8c9", "EDR 7W- Central" = "#2ca25f", "EDR 8 - Southwest" = "#74a9cf", "EDR 9 - South Central" = "#0570b0", "EDR 10 - Southeast" = "#d7301f", "EDR 11 - 7 County Twin Cities" = "#d8b365", "Minnesota" = "black")
+
+color.counties <- scale_color_brewer(palette = "Dark2",
+                       guide = guide_legend(ncol = 3))
+
+mn_counties <- st_read("Data/Shapefiles/county shapefiles/MNCounties_MNDOT.shp", quiet = TRUE) %>%
+  ms_simplify(keep = .01, keep_shapes = TRUE)
+```
+
+<br>
+
+# Summary - Impacts due to spending reductions by farmers in crop production
+
+It is apparent that the downturn in the crop commodity market is having the largest impacts on farm earnings. Farm earnings across the state peaked between 2010 - 2013. In 2018 (the most recent year of data), farm earnings are lower in every single county than in previous years. In some cases, farm earnings are at levels earned in the early 2000s.
+
+Despite the lower farm earnings, there were only 33 counties that have lower total earnings in 2018 than during the peak years (2012-2014) of crop prices. All 33 of these counties are located on the western and southern sides of Minnesota where agriculture plays a larger role in the local economy. All other counties continue to see growth in their total earnings and are currently experiencing their highest earnings in history.
+
+Through further analysis, there are 14 of the 33 counties that are most likely having their total earnings impacted by farm earnings. Of the counties that seem to most impacted by farm earnings:
+
+* all of them have had their **total** earnings drop by more than 15% since the peak farm years;
+
+* all of them have had their contributions from farm earnings to total earnings drop by more than 15 percentage points;
+
+* all of them have had their drop in farm earnings make up a majority of the total losses across all industries;
+
+* 8 of them are entirely rural, 5 are a town/rural mix and 1 has a urban/town/rural mix;
+
+* 13 of them are located in the Southwest or Northwest planning regions; and,
+
+* 11 of them are located in EDRs 1, 4, 6W, or 8.
+
+<br>
+
+```{r table of counties impacted by farm earnings}
+impacted.counties.table <- read_csv("Data/Earnings/counties-most-impacted-table.csv")
+
+datatable(impacted.counties.table, class = "cell-border stripe", filter = "top", rownames = FALSE,
+          options = list(scrollX = TRUE)) %>%
+  formatPercentage(7) %>%
+  formatPercentage(9) %>%
+  formatCurrency(8, "")
+```
+
+<br>
+
+A decline in farm earnings is terrible for farmers, but its impacts on the communities are more difficult to assess. The decline in farm earnings largely translates into a reduction in spending among farmers, in particular, crop production. Bill Lazarus, an applied economics professor from the U of MN, analyzed how this reduction in spending would impact other industries across the state. He theorized that spending reductions would occur in four primary categories;
+
+1. purchases and maintenance of farm machinery,
+2. building purchases and improvements,
+3. cropland rental rates, and
+4. purchase of fertilizer.
+
+His analysis showed very limited impacts despite the significant decreases in farm earnings. Results show that job losses at farm machinery dealers, construction firms, fertilizer dealers, and in other sectors supplying them were 6,480 statewide, or 15,720 with secondary ripples. These job losses would be a severe economic hit to those workers and their families. In percentage terms the total impact on the state’s economy with secondary ripple effects is 0.47%. 
+
+This low of an impact is mostly confirmed at the county-level as well. Employment in the industries related to the four spending reduction categories is 3% or less of total employment in 71 counties in Minnesota. However, there are a few counties that are likely being impacted more severely. In particular, EDRs 6w - Upper Minnesota Valley and EDR 8 - Southwest have a higher concentration of employment in these industries and are experiencing declines the last 5 years or so.
+
+The counties that seem to be hardest hit are;
+
+* Grant,
+* Stevens,
+* McLeod,
+* Swift,
+* Chippewa,
+* Pipestone,
+* Rock,
+* Martin, and
+* Faribault.
+
+The industries that seem to be most impacted in these counties are farm product raw material merchant wholesalers, and farm supplies merchant wholesalers.
+
+<br>
+
+# Summary - Impacts of crop commodity prices on Ag-related industries
+
+Overall, the downturn in the crop production market has had little impact in wages earned and employment in other Ag-related industries. This is largely due to these industries making up such a small percentage of the workforce across the state.
+
+With that said, there are a few places where these industries are a bit more concentrated. The following sections identify where the impacts may be felt the most. Refer to the full analysis for each section to get more detailed information.
+
+<br>
+
+### Farm employment
+
+Overall, decreases in farm employment have been a trend dating back to 2001. There is evidence that the crop commodity boom slowed the decline between 2008 and 2012, however the declines have continued since that period. In addition, farm employment makes up a small percentage of total employment across most of the state. Even in our most rural counties farm employment averages 15% of total employment.
+
+An examination of the data provided 14 counties that were identified as possibly having their *total employment* impacted by the decline in farm employment.
+
+Those counties are;
+
+* Norman
+* Marshall
+* Mahnoman
+* Wilkin
+* Grant
+* Renville
+* Swift
+* Yellow Medicine
+* Big Stone
+* Lac qui Parle
+* Lincoln
+* Cottonwood
+* Redwood
+* Faribault
+
+<br>
+
+### Wages earned and employment in Ag-related industries
+
+There is some evidence that the downturn in crop commodity market has impacted wages earned in Ag-related industries (different than farm earnings). However, any declines experienced in wages in our counties resulted in very little impact on overall county wages earned due to the small percentage of wages originating from Ag-related industries. The only county that had sufficient evidence of impact on their total wages earned is **Lac qui Parle County**.
+
+The impact of the crop commodity market on employment in ag-industries is pretty fuzzy. The trends show that employment in ag-related industries were decreasing during the early 2000s, followed by a significant increase in employment in these industries during the crop commodity boom. However, since the drop in crop commodity prices employment in ag-related industries has continued to grow in some areas and has decreased in others.
+
+Analysis revealed 25 counties that are likely having their total employment impacted by trends in ag-related industries. These 25 counties fall into two distinct groups; 
+
+* Counties with growing employment in ag-related industries (12 counties)
+  + 7 (58%) of the counties are experiencing an increase in their total employment
+  + 5 (42%) of the counties are experiencing an decline in their total employment 
+  
+* Counties with declining employment in ag-related industries (13 counties)
+  + 5 (38%) of the counties are experiencing a increase in their total employment
+  + 8 (62%) of the counties are experiencing a decline in their total employment
+
+Refer to the appropriate section to see the specific counties.
+
+<br>
+
+### Land values
+
+The value of agricultural land follows the increases of net incomes from farming from the early 2000s, but does not experience significant decreases since peaking in the early 2010s. Although the increases have plateaued, only our most rural areas have experienced any sort of decrease in their ag-land values.
+
+At the EDR level, 7E - East Central, 6W - Upper Minnesota Valley, and 8 - Southwest all have lower land values in 2018 than when net farm incomes peaked (typically between 2012 and 2014). Everywhere else, agricultural land values are typically 15% to 40% higher than when net farm incomes peaked.
+
+The counties that seem to have their land values most significantly impacted by the downturn in prices of crop commodities are;
+
+<br>
+ 
+```{r most impacted counties summary table}
+most.impacted.counties.summary.table <- read_csv("Data/Land values/most-impacted-counties-table.csv") %>%
+  select(1,2,3,4,8,11)
+
+datatable(most.impacted.counties.summary.table, class = "cell-border stripe", filter = "top", rownames = FALSE,
+          options = list(scrollX = TRUE)) %>%
+  formatPercentage(5:6)
+```
+
+<br>
+
+# Introduction
+
+Narratives abound on the impacts low prices in crop commodities are having on rural areas of Minnesota. These narratives rarely contain any true facts or figures. Here's a quote from Beth Ford in [Fortune Magazine](https://fortune.com/2019/06/11/farm-crisis-midwest-floods-2019/);
+
+*...rural communities in which our farmers operate are also struggling because local businesses’ revenue and incomes are tied to farmers’ incomes and livelihoods.*
+
+There is no doubt that there is a direct link between the economies of our counties located along the "L" of Minnesota and the overall ag-economy. The problem, however, is that there is only a few parts of the ag-economy that are suffering, while the rest of the ag-economy is trucking along. 
+
+Farmers, mainly crop producers, are feeling the impacts the most. They rely on trade and global markets to keep demand relatively high for their products. In addition, they rely on unpredictable weather patterns that can make or break their fiscal year. Due to these variables, which are largely out of their control, they are now in year 6 or 7 of barely making profit, if any at all.
+
+But, much of rural Minnesota doesn't rely on agriculture. It's likely that the impacts of the crop commodity market on local economies are concentrated in certain areas.
+
+The following analysis seeks to identify which counties and regions of the state are most likely feeling the impacts of the crop commodity market and the extent there are ripple affects across other ag-related industries.
+
+The analysis is broken down into the following sections;
+
+**Farm earnings:** Farm earnings are likely taking the largest hit due to low crop production prices. This section will seek to identify which counties have the largest percentage of their total earnings from farm earnings and have experienced the most significant impacts.
+
+**Wages earned in ag-related industries:** Although we know the earnings that farmers make is likely to be impacted, there is less certainty in how the low crop prices ripple into other ag-related industries. This section will seek information to help us answer this question and identify any counties that are feeling the most significant impacts.
+
+**Farm employment:** With the reduction in farm earnings, will employment decrease as well due to cost saving measures employed by farm owners? This section will seek to answer that question and identify any counties where the impacts are most significant.
+
+**Employment in ag-related industries:** Similar to wages earned in ag-related industries, this section will seek to gather information on whether employment in ag-related industries are being impacted by crop prices. If so, where are the impacts felt the most?
+
+**Land value vs net income:** There is anecdotal evidence that land values have skyrocketed along with the crop commodity boom from 2010 - 2013. This section will examine these trends and determine where land values have continued to follow net farm income with declines over the last few years.
+
+**Analyzing industries in the Lazarus study:** We hired Professor Bill Lazarus, U of MN Applied Economics, to examine impacts the reductions farmers are spending in specific industries to produce crops. His examination is at a regional level and we will dive a bit deeper to see if there are more concentrated impacts at a county-level.
+
+
+

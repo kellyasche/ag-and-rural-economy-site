@@ -123,12 +123,14 @@ The analysis below highlights two points;
 1. the downturn in crop commodity prices does not seem to impact ag-related industry wages, and
 2. wages earned from ag-related industries play a relatively minor role in most regions across the state. 
 
+Wages in ag-related industries make up 10% or less of total wages across the state except in the Southwest region where it's between 10% and 20% of total wages.
+
 A large majority of counties experiencing a decline in ag-related wages did not translate into lower total wages earned. For these counties, it potentially means a couple of things;
 
 * ag-related wages didn't contribute a significant amount to the total wages earned in the county; or,
 * declines in ag-related wages were made up by increases in wages in other industries.
 
-However, there were three EDRs where wages from ag-related industry contributed 10% or more to total wages in the region at some point between 2001 and 2018. Those EDRs were;
+However, there were three EDRs where wages from ag-related industry contributed 10% or more to total wages in the region at some point between 2001 and 2018. All three of these EDRs are located in the Southwest region. Those EDRs were;
 
 * EDR 6W - Upper MN Valley,
 * EDR 8 - Southwest, and 
@@ -159,7 +161,7 @@ When we filter down even further we find that within those EDRs there are 14 cou
 * Sibley
 * Watonwan
 
-When examining those 14 counties in more detail, a large majority of the counties have not had their total wages impacted by ag-related industries. There is plenty of fluctuation in the trends of wages earned in ag-related industries, both up and down. However, these bumps and valleys rarely show up in the total wages earned charts.
+When examining those 14 counties in more detail, a large majority of the counties have not had their *total* wages earned impacted by trends in ag-related industries. There is plenty of fluctuation in the trends of wages earned in ag-related industries, both up and down. However, these bumps and valleys rarely show up in the total wages earned charts.
 
 There are a few counties that definitely seem to be impacted positively from ag-related industries. Both **Sibley** and **Watonwan** County have experienced significant growth in their wages from ag-related industries while also experiencing significant total wage growth. By 2018, wages from ag-related industries made up 38% of total wages in Sibley, 34% in Watowan.
 

@@ -3,7 +3,7 @@ output_dir: docs
 navbar:
   title: "Ag and the rural economy"
   left:
-    - text: "Summary"
+    - text: "Summary & introduction"
       href: index.html
     - text: "Farm earnings and ag wages"
       menu:

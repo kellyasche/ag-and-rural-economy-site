@@ -105,7 +105,7 @@ An analysis of farm earnings highlights a couple of trends;
 
 * Despite the lower farm earnings, there were only 33 counties that have lower *total* earnings in 2018 than during the peak years (2012-2014) of crop prices. All 33 counties are located on the western and southern sides of Minnesota where agriculture plays a larger role in the local economy. All other counties continue to see growth in their total earnings and are currently experiencing their highest earnings in history. 
 
-Through further analysis, there are 14 of the 33 counties that are most likely havintg their total earnings impacted by farm earnings. Of the counties that seem to most impacted by farm earnings:
+Through further analysis, there are 14 of the 33 counties that are most likely having their total earnings impacted by farm earnings. Of the counties that seem most impacted by farm earnings:
 
 * all of them have had their total earnings drop by more than 15% since the peak farm years;
 * all of them have had their contributions from farm earnings to total earnings drop by more than 15 percentage points;

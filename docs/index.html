@@ -11,17 +11,32 @@
 
 
 
-<title>Summary</title>
+<title>Summary and introduction</title>
 
-<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<script src="site_libs/jquery-1.12.4/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/bootstrap.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.10/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.19/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.19/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.19/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/nouislider-7.0.10/jquery.nouislider.min.css" rel="stylesheet" />
+<script src="site_libs/nouislider-7.0.10/jquery.nouislider.min.js"></script>
+<link href="site_libs/selectize-0.12.0/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="site_libs/selectize-0.12.0/selectize.min.js"></script>
+<link href="site_libs/crosstalk-1.0.0/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.0.0/js/crosstalk.min.js"></script>
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -249,6 +264,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#section-TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#section-TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -256,6 +334,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="section-TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -273,7 +361,7 @@ $(document).ready(function () {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="index.html">Summary</a>
+  <a href="index.html">Summary &amp; introduction</a>
 </li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
@@ -319,20 +407,138 @@ $(document).ready(function () {
   </div><!--/.container -->
 </div><!--/.navbar -->
 
-<div class="fluid-row" id="header">
+<div class="fluid-row" id="section-header">
 
 
 
-<h1 class="title toc-ignore">Summary</h1>
+<h1 class="title toc-ignore">Summary and introduction</h1>
 
 </div>
 
 
 <p><link rel="stylesheet" href="styles.css" type="text/css"></p>
-<p>Summary will go here.</p>
+<p><br></p>
+<div id="section-summary---impacts-due-to-spending-reductions-by-farmers-in-crop-production" class="section level1">
+<h1>Summary - Impacts due to spending reductions by farmers in crop production</h1>
+<p>It is apparent that the downturn in the crop commodity market is having the largest impacts on farm earnings. Farm earnings across the state peaked between 2010 - 2013. In 2018 (the most recent year of data), farm earnings are lower in every single county than in previous years. In some cases, farm earnings are at levels earned in the early 2000s.</p>
+<p>Despite the lower farm earnings, there were only 33 counties that have lower total earnings in 2018 than during the peak years (2012-2014) of crop prices. All 33 of these counties are located on the western and southern sides of Minnesota where agriculture plays a larger role in the local economy. All other counties continue to see growth in their total earnings and are currently experiencing their highest earnings in history.</p>
+<p>Through further analysis, there are 14 of the 33 counties that are most likely having their total earnings impacted by farm earnings. Of the counties that seem to most impacted by farm earnings:</p>
+<ul>
+<li><p>all of them have had their <strong>total</strong> earnings drop by more than 15% since the peak farm years;</p></li>
+<li><p>all of them have had their contributions from farm earnings to total earnings drop by more than 15 percentage points;</p></li>
+<li><p>all of them have had their drop in farm earnings make up a majority of the total losses across all industries;</p></li>
+<li><p>8 of them are entirely rural, 5 are a town/rural mix and 1 has a urban/town/rural mix;</p></li>
+<li><p>13 of them are located in the Southwest or Northwest planning regions; and,</p></li>
+<li><p>11 of them are located in EDRs 1, 4, 6W, or 8.</p></li>
+</ul>
+<p><br></p>
+<div id="htmlwidget-4d711fed62103f1aa1b6" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4d711fed62103f1aa1b6">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"2012\" data-max=\"2015\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"2012\" data-max=\"2013\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"-0.39742715594467\" data-max=\"-0.15290345404899\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"-39.2458094375589\" data-max=\"-16.7575551342038\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"0.648433662840916\" data-max=\"0.990894564638446\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["Faribault","Grant","Jackson","Kittson","Lac qui Parle","Lincoln","Murray","Norman","Redwood","Renville","Sibley","Stevens","Traverse","Yellow Medicine"],["Town/rural mix","Entirely rural","Town/rural mix","Entirely rural","Entirely rural","Entirely rural","Entirely rural","Entirely rural","Town/rural mix","Entirely rural","Urban/town/rural mix","Town/rural mix","Entirely rural","Town/rural mix"],["Southwest","Northwest","Southwest","Northwest","Southwest","Southwest","Southwest","Northwest","Southwest","Central","Southwest","Northwest","Northwest","Southwest"],["EDR  9 - South Central","EDR  4 - West Central","EDR  8 - Southwest","EDR  1 - Northwest","EDR  6W- Upper Minnesota Valley","EDR  8 - Southwest","EDR  8 - Southwest","EDR  1 - Northwest","EDR  8 - Southwest","EDR  6E- Southwest Central","EDR  9 - South Central","EDR  4 - West Central","EDR  4 - West Central","EDR  6W- Upper Minnesota Valley"],[2012,2012,2013,2013,2013,2013,2013,2013,2014,2013,2012,2012,2012,2015],[2012,2012,2012,2013,2013,2013,2013,2013,2013,2013,2012,2012,2012,2013],[-0.299298410092121,-0.165352168786911,-0.152903454048991,-0.289831732761785,-0.39742715594467,-0.245714471587028,-0.286841200629625,-0.296687633796151,-0.164592206518529,-0.251864630467572,-0.177348355823398,-0.223664123795068,-0.309066676968245,-0.192569753822622],[-27.2205130398463,-26.4534302485705,-21.1595764041009,-26.1068679064626,-29.550925367,-27.2978881774301,-29.3004158578112,-30.5578498896966,-19.6918403262394,-30.1069165622587,-28.2141221599415,-16.7575551342038,-39.2458094375589,-25.3335306283162],[0.80804008908686,0.90649751644516,0.84961695776617,0.922396461600322,0.775776180299203,0.869084943492526,0.990894564638446,0.9769957998783,0.648433662840916,0.980491715660075,0.858761366189067,0.745903664059284,0.990720318467911,0.953033142269253]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th>County<\/th>\n      <th>RUCA<\/th>\n      <th>Planning Region<\/th>\n      <th>EDR<\/th>\n      <th>Total earnings - peak year<\/th>\n      <th>Farm earning - peak year<\/th>\n      <th>Total earnings - % change<\/th>\n      <th>Farm earnings as % of total earnings - change<\/th>\n      <th>Farm earnings drop as % of loss across all industries<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollX":true,"columnDefs":[{"className":"dt-right","targets":[4,5,6,7,8]}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"rowCallback":"function(row, data) {\nDTWidget.formatPercentage(this, row, data, 6, 0, 3, \",\", \".\");\nDTWidget.formatPercentage(this, row, data, 8, 0, 3, \",\", \".\");\nDTWidget.formatCurrency(this, row, data, 7, \"\", 2, 3, \",\", \".\", true);\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+<p><br></p>
+<p>A decline in farm earnings is terrible for farmers, but its impacts on the communities are more difficult to assess. The decline in farm earnings largely translates into a reduction in spending among farmers, in particular, crop production. Bill Lazarus, an applied economics professor from the U of MN, analyzed how this reduction in spending would impact other industries across the state. He theorized that spending reductions would occur in four primary categories;</p>
+<ol style="list-style-type: decimal">
+<li>purchases and maintenance of farm machinery,</li>
+<li>building purchases and improvements,</li>
+<li>cropland rental rates, and</li>
+<li>purchase of fertilizer.</li>
+</ol>
+<p>His analysis showed very limited impacts despite the significant decreases in farm earnings. Results show that job losses at farm machinery dealers, construction firms, fertilizer dealers, and in other sectors supplying them were 6,480 statewide, or 15,720 with secondary ripples. These job losses would be a severe economic hit to those workers and their families. In percentage terms the total impact on the state’s economy with secondary ripple effects is 0.47%.</p>
+<p>This low of an impact is mostly confirmed at the county-level as well. Employment in the industries related to the four spending reduction categories is 3% or less of total employment in 71 counties in Minnesota. However, there are a few counties that are likely being impacted more severely. In particular, EDRs 6w - Upper Minnesota Valley and EDR 8 - Southwest have a higher concentration of employment in these industries and are experiencing declines the last 5 years or so.</p>
+<p>The counties that seem to be hardest hit are;</p>
+<ul>
+<li>Grant,</li>
+<li>Stevens,</li>
+<li>McLeod,</li>
+<li>Swift,</li>
+<li>Chippewa,</li>
+<li>Pipestone,</li>
+<li>Rock,</li>
+<li>Martin, and</li>
+<li>Faribault.</li>
+</ul>
+<p>The industries that seem to be most impacted in these counties are farm product raw material merchant wholesalers, and farm supplies merchant wholesalers.</p>
+<p><br></p>
+</div>
+<div id="section-summary---impacts-of-crop-commodity-prices-on-ag-related-industries" class="section level1">
+<h1>Summary - Impacts of crop commodity prices on Ag-related industries</h1>
+<p>Overall, the downturn in the crop production market has had little impact in wages earned and employment in other Ag-related industries. This is largely due to these industries making up such a small percentage of the workforce across the state.</p>
+<p>With that said, there are a few places where these industries are a bit more concentrated. The following sections identify where the impacts may be felt the most. Refer to the full analysis for each section to get more detailed information.</p>
+<p><br></p>
+<div id="section-farm-employment" class="section level3">
+<h3>Farm employment</h3>
+<p>Overall, decreases in farm employment have been a trend dating back to 2001. There is evidence that the crop commodity boom slowed the decline between 2008 and 2012, however the declines have continued since that period. In addition, farm employment makes up a small percentage of total employment across most of the state. Even in our most rural counties farm employment averages 15% of total employment.</p>
+<p>An examination of the data provided 14 counties that were identified as possibly having their <em>total employment</em> impacted by the decline in farm employment.</p>
+<p>Those counties are;</p>
+<ul>
+<li>Norman</li>
+<li>Marshall</li>
+<li>Mahnoman</li>
+<li>Wilkin</li>
+<li>Grant</li>
+<li>Renville</li>
+<li>Swift</li>
+<li>Yellow Medicine</li>
+<li>Big Stone</li>
+<li>Lac qui Parle</li>
+<li>Lincoln</li>
+<li>Cottonwood</li>
+<li>Redwood</li>
+<li>Faribault</li>
+</ul>
+<p><br></p>
+</div>
+<div id="section-wages-earned-and-employment-in-ag-related-industries" class="section level3">
+<h3>Wages earned and employment in Ag-related industries</h3>
+<p>There is some evidence that the downturn in crop commodity market has impacted wages earned in Ag-related industries (different than farm earnings). However, any declines experienced in wages in our counties resulted in very little impact on overall county wages earned due to the small percentage of wages originating from Ag-related industries. The only county that had sufficient evidence of impact on their total wages earned is <strong>Lac qui Parle County</strong>.</p>
+<p>The impact of the crop commodity market on employment in ag-industries is pretty fuzzy. The trends show that employment in ag-related industries were decreasing during the early 2000s, followed by a significant increase in employment in these industries during the crop commodity boom. However, since the drop in crop commodity prices employment in ag-related industries has continued to grow in some areas and has decreased in others.</p>
+<p>Analysis revealed 25 counties that are likely having their total employment impacted by trends in ag-related industries. These 25 counties fall into two distinct groups;</p>
+<ul>
+<li>Counties with growing employment in ag-related industries (12 counties)
+<ul>
+<li>7 (58%) of the counties are experiencing an increase in their total employment</li>
+<li>5 (42%) of the counties are experiencing an decline in their total employment</li>
+</ul></li>
+<li>Counties with declining employment in ag-related industries (13 counties)
+<ul>
+<li>5 (38%) of the counties are experiencing a increase in their total employment</li>
+<li>8 (62%) of the counties are experiencing a decline in their total employment</li>
+</ul></li>
+</ul>
+<p>Refer to the appropriate section to see the specific counties.</p>
+<p><br></p>
+</div>
+<div id="section-land-values" class="section level3">
+<h3>Land values</h3>
+<p>The value of agricultural land follows the increases of net incomes from farming from the early 2000s, but does not experience significant decreases since peaking in the early 2010s. Although the increases have plateaued, only our most rural areas have experienced any sort of decrease in their ag-land values.</p>
+<p>At the EDR level, 7E - East Central, 6W - Upper Minnesota Valley, and 8 - Southwest all have lower land values in 2018 than when net farm incomes peaked (typically between 2012 and 2014). Everywhere else, agricultural land values are typically 15% to 40% higher than when net farm incomes peaked.</p>
+<p>The counties that seem to have their land values most significantly impacted by the downturn in prices of crop commodities are;</p>
+<p><br></p>
+<div id="htmlwidget-8adf27a05f943e24aeda" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8adf27a05f943e24aeda">{"x":{"filter":"top","filterHTML":"<tr>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"character\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"-2.49202990605996\" data-max=\"-0.600435210128975\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n  <td data-type=\"number\" style=\"vertical-align: top;\">\n    <div class=\"form-group has-feedback\" style=\"margin-bottom: auto;\">\n      <input type=\"search\" placeholder=\"All\" class=\"form-control\" style=\"width: 100%;\"/>\n      <span class=\"glyphicon glyphicon-remove-circle form-control-feedback\"><\/span>\n    <\/div>\n    <div style=\"display: none; position: absolute; width: 200px;\">\n      <div data-min=\"-0.284367847044568\" data-max=\"-0.027254707631318\" data-scale=\"15\"><\/div>\n      <span style=\"float: left;\"><\/span>\n      <span style=\"float: right;\"><\/span>\n    <\/div>\n  <\/td>\n<\/tr>","data":[["Brown","Cottonwood","Crow Wing","Kanabec","Lincoln","Lyon","Mcleod","Martin","Mille Lacs","Murray","Nobles","Pipestone","Redwood","Renville","Sherburne","Watonwan","Yellow Medicine"],["Town/rural mix","Town/rural mix","Town/rural mix","Urban/town/rural mix","Entirely rural","Town/rural mix","Urban/town/rural mix","Town/rural mix","Urban/town/rural mix","Entirely rural","Town/rural mix","Town/rural mix","Town/rural mix","Entirely rural","Entirely urban","Town/rural mix","Town/rural mix"],["EDR  9 - South Central","EDR  8 - Southwest","EDR  5 - North Central","EDR  7E- East Central","EDR  8 - Southwest","EDR  8 - Southwest","EDR  6E- Southwest Central","EDR  9 - South Central","EDR  7E- East Central","EDR  8 - Southwest","EDR  8 - Southwest","EDR  8 - Southwest","EDR  8 - Southwest","EDR  6E- Southwest Central","EDR  7W- Central","EDR  9 - South Central","EDR  6W- Upper Minnesota Valley"],["Southwest","Southwest","Northwest","Central","Southwest","Southwest","Central","Southwest","Central","Southwest","Southwest","Southwest","Southwest","Central","Central","Southwest","Southwest"],[-0.699696255515836,-0.71410073088778,-1.05904057087815,-0.968670529936343,-0.804954692290483,-0.886329610974301,-0.815725397925776,-0.893483160471493,-1.48525158257279,-0.738896432147996,-0.658750336696754,-0.600435210128976,-0.765840751476637,-0.918860801860274,-2.49202990605996,-1.09625619650514,-0.763254159453509],[-0.0659184543258986,-0.112396278601961,-0.097027250206441,-0.0272547076313181,-0.0805658056580566,-0.0830155470812555,-0.284367847044567,-0.117279411764706,-0.0950959488272921,-0.111616997792494,-0.0722511819614499,-0.057799671592775,-0.187849517031012,-0.237510334238809,-0.253212669683258,-0.174980714836719,-0.131480578579555]],"container":"<table class=\"cell-border stripe\">\n  <thead>\n    <tr>\n      <th>Name<\/th>\n      <th>RUCA<\/th>\n      <th>edr<\/th>\n      <th>planning.region<\/th>\n      <th>Change in net farm income<\/th>\n      <th>Change in value of ag-land<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"scrollX":true,"columnDefs":[{"className":"dt-right","targets":[4,5]}],"order":[],"autoWidth":false,"orderClasses":false,"orderCellsTop":true,"rowCallback":"function(row, data) {\nDTWidget.formatPercentage(this, row, data, 4, 0, 3, \",\", \".\");\nDTWidget.formatPercentage(this, row, data, 5, 0, 3, \",\", \".\");\n}"}},"evals":["options.rowCallback"],"jsHooks":[]}</script>
+<p><br></p>
+</div>
+</div>
+<div id="section-introduction" class="section level1">
+<h1>Introduction</h1>
+<p>Narratives abound on the impacts low prices in crop commodities are having on rural areas of Minnesota. These narratives rarely contain any true facts or figures. Here’s a quote from Beth Ford in <a href="https://fortune.com/2019/06/11/farm-crisis-midwest-floods-2019/">Fortune Magazine</a>;</p>
+<p><em>…rural communities in which our farmers operate are also struggling because local businesses’ revenue and incomes are tied to farmers’ incomes and livelihoods.</em></p>
+<p>There is no doubt that there is a direct link between the economies of our counties located along the “L” of Minnesota and the overall ag-economy. The problem, however, is that there is only a few parts of the ag-economy that are suffering, while the rest of the ag-economy is trucking along.</p>
+<p>Farmers, mainly crop producers, are feeling the impacts the most. They rely on trade and global markets to keep demand relatively high for their products. In addition, they rely on unpredictable weather patterns that can make or break their fiscal year. Due to these variables, which are largely out of their control, they are now in year 6 or 7 of barely making profit, if any at all.</p>
+<p>But, much of rural Minnesota doesn’t rely on agriculture. It’s likely that the impacts of the crop commodity market on local economies are concentrated in certain areas.</p>
+<p>The following analysis seeks to identify which counties and regions of the state are most likely feeling the impacts of the crop commodity market and the extent there are ripple affects across other ag-related industries.</p>
+<p>The analysis is broken down into the following sections;</p>
+<p><strong>Farm earnings:</strong> Farm earnings are likely taking the largest hit due to low crop production prices. This section will seek to identify which counties have the largest percentage of their total earnings from farm earnings and have experienced the most significant impacts.</p>
+<p><strong>Wages earned in ag-related industries:</strong> Although we know the earnings that farmers make is likely to be impacted, there is less certainty in how the low crop prices ripple into other ag-related industries. This section will seek information to help us answer this question and identify any counties that are feeling the most significant impacts.</p>
+<p><strong>Farm employment:</strong> With the reduction in farm earnings, will employment decrease as well due to cost saving measures employed by farm owners? This section will seek to answer that question and identify any counties where the impacts are most significant.</p>
+<p><strong>Employment in ag-related industries:</strong> Similar to wages earned in ag-related industries, this section will seek to gather information on whether employment in ag-related industries are being impacted by crop prices. If so, where are the impacts felt the most?</p>
+<p><strong>Land value vs net income:</strong> There is anecdotal evidence that land values have skyrocketed along with the crop commodity boom from 2010 - 2013. This section will examine these trends and determine where land values have continued to follow net farm income with declines over the last few years.</p>
+<p><strong>Analyzing industries in the Lazarus study:</strong> We hired Professor Bill Lazarus, U of MN Applied Economics, to examine impacts the reductions farmers are spending in specific industries to produce crops. His examination is at a regional level and we will dive a bit deeper to see if there are more concentrated impacts at a county-level.</p>
+</div>
 
 
 
+</div>
+</div>
 
 </div>
 
@@ -353,7 +559,7 @@ $(document).ready(function () {
 
 <script>
 $(document).ready(function () {
-  window.buildTabsets("TOC");
+  window.buildTabsets("section-TOC");
 });
 
 $(document).ready(function () {
@@ -365,6 +571,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#section-TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
