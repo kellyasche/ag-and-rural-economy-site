@@ -1,10 +1,10 @@
 ---
-title: "Workspace"
-output: 
+title: "Ag wages per employment"
+output:
   html_document:
     toc: true
     toc_float: true
-    toc_depth: 3
+    toc_depth: 4
 runtime: shiny
 resource_files:
 - Data/Shapefiles/County shapefiles/MNCounties_MNDOT.cpg
@@ -34,7 +34,7 @@ library(cowplot)
 library(DT)
 ```
 
-```{r loading jon docs and shapefiles, cache=TRUE}
+```{r loading jon docs and shapefiles}
 theme_bar <- theme_bw() +
   theme(panel.grid.major = element_line(color = "grey70", size = 0.1),
         panel.grid.minor = element_blank(),
@@ -78,17 +78,17 @@ counties.regions <- read_csv("Data/Join docs/county_regions.csv") %>%
          Name = str_to_title(Name),
          Name = str_replace(Name, "Q", "q"),
          Name = str_replace(Name, "Of The", "of the"),
-         Dem_Desc = ifelse(Name == "Minnesota", "Minnesota", Dem_Desc))
-
-regions = counties.regions %>%
-  select(5,6) %>%
-  distinct(edr, .keep_all = TRUE)
+         Dem_Desc = ifelse(Name == "Minnesota", "Minnesota", Dem_Desc),
+         Name = str_replace(Name, "Mcleod", "McLeod"),
+         planning.region = str_replace(planning.region, " Minnesota", ""),
+         edr = str_replace(edr, "  ", " "))
 
 edr.pr <- counties.regions %>%
   distinct(edr, .keep_all = TRUE) %>%
   select(5,6) %>%
   mutate(edr = str_replace(edr, "  ", " "),
          planning.region = str_replace(planning.region, " Minnesota", ""))
+
 
 color.ruca <- c("Entirely rural" = "#5CA81F", "Town/rural mix" = "#C7EF99", "Urban/town/rural mix" = "#d8b365", "Entirely urban" = "#a6611a", "Minnesota" = "black")
 
@@ -180,7 +180,58 @@ ag.wages.emp.edr <- ag.ind.wages.edr %>%
   mutate(wages.emp = wages / emp,
          planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"),
          edr = fct_relevel(edr, "EDR 1 - Northwest", "EDR 2 - Headwaters", "EDR 3 - Arrowhead", "EDR 4 - West Central", "EDR 5 - North Central", "EDR 6E- Southwest Central", "EDR 6W- Upper Minnesota Valley", "EDR 7E- East Central", "EDR 7W- Central", "EDR 8 - Southwest", "EDR 9 - South Central", "EDR 10 - Southeast", "EDR 11 - 7 County Twin Cities", "Minnesota"))
+
+
+<br>
+
+# Summary
+
+Summary here
+
+<br>
+
+# Definitions
+
+**Definition of ag-related industries**: This analysis cobbles together various NAICS codes that are directly related to "ag-related employment". This includes the following industries;
+
+```{r ag-related industry list}
+agrelated.ind.list <- read_csv("Data/Earnings/Master-ag-related-ind-wages-pr.csv") %>%
+  distinct(naicstitle) %>%
+  rename(`Ag-related NAICS categories` = 1)
+
+kable(agrelated.ind.list, format = "html", align = "c") %>%
+    kable_styling(bootstrap_options = "striped") %>%
+    column_spec(1, width = "10em")
+
 ```
+
+<br>
+
+# Analysis
+
+* Wages per employment of all ag-related industries
+  + RUCA
+  + PR
+  + EDR
+  + 2018 County
+  
+* Wages per employment by each ag-related industry
+  + RUCA
+  + PR
+  + EDR
+  + 2018 County
+  
+* Where are the highest paying industries most concentrated?
+
+<br>
+
+## Wages per employment of ag-related industries combined {.tabset}
+
+It's clear that the highest wages per employment are located in our most metropolitan counties in the state. In fact, the highest wages per employment are located in Hennepin and Ramsey Counties. Wages per employment in these counties and other entirely urban counties across the state are between 30% and 50% higher than the rest of the state.
+
+In Southwest Minnesota, the highest wages are clustered in and around Blue Earth County and Lyons County. In the Northwest, the wages are typically a bit higher than Southwest. Perhaps this is due to the different crops being marketed and sold?
+
+<br>
 
 ```{r prep ag wages per emp combined, include=FALSE, cache=TRUE}
 
@@ -228,6 +279,129 @@ ag.wages.emp.comb.county <- ag.wages.emp.county %>%
 
 ```
 
+
+### RUCA
+
+It's pretty clear to see that the highest paying jobs in ag-related industries are located in our entirely urban counties. By 2018, wages in ag-related industries were $66,862 per employment. This was 32% to 45% more than the other county groups.
+
+<br>
+
+```{r chart ag wages per employment combined ruca}
+
+ag.wages.emp.comb.ruca.plot <- ggplot(ag.wages.emp.comb.ruca, aes(periodyear, ag.wages.per.emp, color = Dem_Desc)) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_point_interactive(size = 3, aes(data_id = ag.wages.per.emp, tooltip = paste(Dem_Desc, "\nYear: ", periodyear, "\nTotal wages in ag-related industries: ", dollar(ag.wages), "\nTotal employment in ag-related industries: ", comma(ag.emp), "\nAg wages per employment: ", dollar(ag.wages.per.emp), sep = ""))) +
+  labs(x="", y = "", color="", title = "Ag wages per employment")+
+  scale_y_continuous(labels=scales::dollar)+
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.ruca,
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom")
+
+girafe(ggobj = ag.wages.emp.comb.ruca.plot, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+### Planning Region
+
+When broken down by planning regions, the seven county metro has the highest paying jobs. The $71,868 earned there is about 38% to 79% higher. Interestingly, the Southwest region has the 2nd highest wages per employment even though it has a large number of entirely rural counties. What this indicates is that the more urban counties in the region are earning significantly more wages than the rural counties, which drives up the wages in that region. So the disparities are still between urban-ness and rural-ness.
+
+<br>
+
+```{r chart ag wages per employment combined pr}
+
+ag.wages.emp.comb.pr.plot <- ggplot(ag.wages.emp.comb.pr, aes(periodyear, ag.wages.per.emp, color = planning.region)) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_point_interactive(size = 3, aes(data_id = ag.wages.per.emp, tooltip = paste(planning.region, "\nYear: ", periodyear, "\nTotal wages in ag-related industries: ", dollar(ag.wages), "\nTotal employment in ag-related industries: ", comma(ag.emp), "\nAg wages per employment: ", dollar(ag.wages.per.emp), sep = ""))) +
+  labs(x="", y = "", color="", title = "Ag wages per employment")+
+  scale_y_continuous(labels=scales::dollar)+
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.pr,
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom")
+
+girafe(ggobj = ag.wages.emp.comb.pr.plot, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+
+### EDR
+
+The breakdown by EDR shows that EDRs in Southwest typically have higher wages per employment when there are larger metros within the edr. For example, EDR 9 - South Central has Blue Earth County, which is an entirely urban county. This EDR also has the highest wages per employment in that region.
+
+A similar situation is in the Central region where EDR 6E and 7W have the highest wages. These contain counties such as Stearns and Kandiyohi which are considered more urban than other counties in the planning region.
+
+The Northwest is a bit different due to the varying ecosystem in that planning region. There, we would expect EDR 2 - Headwaters to be lower since that region doesn't typically have agriculture as a primary activity nearby.
+
+<br>
+
+```{r chart ag wages per employment combined edr, fig.height=9}
+
+ag.wages.emp.comb.edr.plot <- ggplot(ag.wages.emp.comb.edr, aes(periodyear, ag.wages.per.emp, color = edr)) +
+  facet_wrap(~planning.region, ncol = 2) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_point_interactive(size = 3, aes(data_id = ag.wages.per.emp, tooltip = paste(edr, "\nYear: ", periodyear, "\nTotal wages in ag-related industries: ", dollar(ag.wages), "\nTotal employment in ag-related industries: ", comma(ag.emp), "\nAg wages per employment: ", dollar(ag.wages.per.emp), sep = ""))) +
+  labs(x="", y = "", color="", title = "Ag wages per employment")+
+  scale_y_continuous(labels=scales::dollar)+
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= color.edr,
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 12))
+
+girafe(ggobj = ag.wages.emp.comb.edr.plot, height_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+### 2018 county map
+
+This map highlights the concentration of the highest paying jobs are located in the seven-county metro, Blue Earth County and Martin County. 
+
+In the Southwest region, the highest wages per employment are clustered in and around Lyons County, including Yellow Medicine, Redwood Falls, and Lac qui Parle counties.
+ 
+Up in the Northwest region, the highest wages per employment are more spread out. It goes from Stevens and Grant Counties and then directly along the western border, skipping over Norman, and seeing high wages North of there.
+
+<br>
+
+```{r map 2018 ag wages per employment}
+ag.wages.emp.comb.county.plot <- ggplot(filter(ag.wages.emp.comb.county, periodyear == 2018)) +
+  geom_sf_interactive(aes(fill = ag.wages.per.emp, tooltip = paste(areaname, "\nYear: ", periodyear, "\nTotal wages in ag-related industries: ", dollar(ag.wages), "\nTotal employment in ag-related industries: ", comma(ag.emp), "\nWages per employment: ", dollar(ag.wages.per.emp), sep = ""), data_id = areaname, geometry = geometry)) +
+  scale_fill_gradient(low = "white",
+                      high = "#076324")+
+  theme_sf+
+  labs(title="2018 ag wages per employment") +
+  theme(text = element_text(size = 10))
+
+girafe(ggobj = ag.wages.emp.comb.county.plot, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+
+```
+
+<br>
+
+## Ag-related industry with highest wage per employment and number of employed
+
+The two merchant wholesaler industries have the highest wages per employment by far compared to the other industries while also employing a modest number. Food manufacturing is by the highest number of employed, but is also one of the lowest paying per employment.
+
+One important aspect to keep in mind that some of these industries likely employ only part-time of the year. For example, support activities for crop production likely only employ during planting and harvesting times of the year. Thus, their wages earned are going to be significantly lower.
+
+<br>
+
 ```{r prep each industry wage per employment statewide, include=FALSE, cache=TRUE}
 
 ag.wages.per.emp.ind.mn <- read_csv("Data/Employment/qcew-ag-related-industries-mn.csv") %>%
@@ -241,133 +415,24 @@ ag.wages.per.emp.ind.mn <- read_csv("Data/Employment/qcew-ag-related-industries-
   mutate(wages.per.emp = wages / emp)
 ```
 
-<br>
+```{r chart each industry wages per employment statewide}
 
-## Location of highest paying ag-related industries {.tabset}
-
-Summary here
-
-<br>
-
-```{r prep ag wages and employment by industry, include=FALSE, cache=TRUE}
-
-ag.wages.emp.pct.ruca <- ag.wages.emp.ruca %>%
-  group_by(periodyear, Dem_Desc) %>%
-  mutate(pct.emp = emp / sum(emp[naicstitle != "Total, All Industries"])) %>%
-  ungroup()
-
-ag.wages.emp.pct.pr <- ag.wages.emp.pr %>%
-  group_by(periodyear, planning.region) %>%
-  mutate(pct.emp = emp / sum(emp[naicstitle != "Total, All Industries"])) %>%
-  ungroup()
-
-ag.wages.emp.pct.edr <- ag.wages.emp.edr %>%
-  group_by(periodyear, edr, planning.region) %>%
-  mutate(pct.emp = emp / sum(emp[naicstitle != "Total, All Industries"])) %>%
-  ungroup()
-
-ag.wages.emp.pct.county <- ag.wages.emp.county %>%
-  group_by(periodyear, areaname, countyfp) %>%
-  mutate(pct.emp = emp / sum(emp[naicstitle != "Total, All Industries"])) %>%
-  ungroup() %>%
-  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE"))
-
-
-```
-
-### RUCA
-
-When comparing the wages per employment and the percentage of employment each industry comprises of ag-related industries a couple of trends become clear.
-
-The highest paying jobs tend to be in the two merchant wholesalers. Interstingly, the wages per employment in that industry are significantly higher in the entirely urban counties than everywhere else. These industries have the highest percentage of ag-related industry employment in our entirely urban and entirely rural counties (15% - 20%). 
-
-Interstingly, food manufacturing makes up the highest percentage of ag-related employment in all county groups except for our entirely rural group where it doesn't even count towards a half of a percent to employment. In the other county groups its around 60% of ag-related employment.
-
-Where entirely rural counties tend to have larger percentages is in crop production, animal production, and merchant wholesalers.
-
-<br>
-
-```{r charts ag wages and emp ruca, fig.height=8}
-
-ag.wages.emp.pct.ruca.plot <- ggplot(filter(ag.wages.emp.pct.ruca, periodyear == 2018, naicstitle != "Total, All Industries"), aes(pct.emp, wages.emp, color = Dem_Desc)) +
-  facet_wrap(~naicstitle, ncol = 2) +
-  geom_label_repel(size = 3, aes(x = pct.emp, y = wages.emp, label = Dem_Desc), show.legend = FALSE) +
-  geom_point_interactive(size = 2, aes(data_id = wages.emp, tooltip = paste("NAICS: ", naicstitle, "\nNumber employed: ", comma(emp), "\nPercent of total employment: ", percent(pct.emp), "\nWages per employed: ", dollar(wages.emp), sep = "")), show.legend = FALSE) +
+ag.wages.per.emp.ind.mn.plot <- ggplot(filter(ag.wages.per.emp.ind.mn, periodyear == 2018), aes(emp, wages.per.emp, color = naicstitle)) +
+  geom_label_repel(size = 2, aes(x = emp, y = wages.per.emp, label = naicstitle), show.legend = FALSE) +
+  geom_point_interactive(size = 2, aes(data_id = wages.per.emp, tooltip = paste("NAICS: ", naicstitle, "\nNumber employed: ", comma(emp), "\nWages per employed: ", dollar(wages.per.emp), sep = "")), show.legend = FALSE) +
   labs(x="", y = "", color="", title = "Wages per employment and number employed in ag-related industries")+
   scale_y_continuous(labels=scales::dollar)+
-  scale_x_continuous(labels=scales::percent) +
+  scale_x_continuous(labels=scales::comma) +
   theme_line+
-  scale_color_manual(values = color.ruca,
-                     guide = guide_legend(ncol = 2)) +
-  theme(legend.position = "bottom",
-        text = element_text(size = 8))
+  scale_color_discrete(guide = guide_legend(ncol = 2)) +
+  theme(legend.position = "bottom")
 
-girafe(ggobj = ag.wages.emp.pct.ruca.plot, width_svg = 8) %>%
+girafe(ggobj = ag.wages.per.emp.ind.mn.plot, width_svg = 8) %>%
   girafe_options(opts_selection(type = "none"),
                  opts_toolbar(saveaspng = FALSE) ,
                  opts_sizing(rescale = FALSE))
 
-```
-
-### Planning Region
-
-Interestingly, regions outside of the seven county metro have very similar percentags and wages per employment within each industry. This makes sense since these regions have a fairly decent distribution of entirely rural and entirely urban counties in them, thus any patterns that emergy within those categorizations even out across the region. 
-
-The only place where this is not the case is the two merchant wholesalers industries. These have significantly higher wages per employment and percentage of ag-related employment in the seven county metro compared to the other regions.
-
-<br>
-
-```{r charts ag wages and emp pr, fig.height=8}
-
-ag.wages.emp.pct.pr.plot <- ggplot(filter(ag.wages.emp.pct.pr, periodyear == 2018, naicstitle != "Total, All Industries"), aes(pct.emp, wages.emp, color = planning.region)) +
-  facet_wrap(~naicstitle, ncol = 2) +
-  geom_label_repel(size = 3, aes(x = pct.emp, y = wages.emp, label = planning.region), show.legend = FALSE) +
-  geom_point_interactive(size = 2, aes(data_id = wages.emp, tooltip = paste("NAICS: ", naicstitle, "\nNumber employed: ", comma(emp), "\nPercent of total employment: ", percent(pct.emp), "\nWages per employed: ", dollar(wages.emp), sep = "")), show.legend = FALSE) +
-  labs(x="", y = "", color="", title = "Wages per employment and number employed in ag-related industries")+
-  scale_y_continuous(labels=scales::dollar)+
-  scale_x_continuous(labels=scales::percent) +
-  theme_line+
-  scale_color_manual(values = color.pr,
-                     guide = guide_legend(ncol = 2)) +
-  theme(legend.position = "bottom",
-        text = element_text(size = 8))
-
-girafe(ggobj = ag.wages.emp.pct.pr.plot, height_svg = 7) %>%
-  girafe_options(opts_selection(type = "none"),
-                 opts_toolbar(saveaspng = FALSE) ,
-                 opts_sizing(rescale = FALSE))
 
 ```
 
-### EDR
 
-Analysis here
-
-<br>
-
-```{r charts ag wages and emp edr, fig.height=10}
-
-ag.wages.emp.pct.edr.plot <- ggplot(filter(ag.wages.emp.pct.edr, periodyear == 2018, naicstitle != "Total, All Industries"), aes(pct.emp, wages.emp, color = edr)) +
-  facet_wrap(~naicstitle, ncol = 2) +
-  geom_label_repel(size = 2, aes(x = pct.emp, y = wages.emp, label = edr), show.legend = FALSE) +
-  geom_point_interactive(size = 2, aes(data_id = wages.emp, tooltip = paste("NAICS: ", naicstitle, "\nNumber employed: ", comma(emp), "\nPercent of total employment: ", percent(pct.emp), "\nWages per employed: ", dollar(wages.emp), sep = "")), show.legend = FALSE) +
-  labs(x="", y = "", color="", title = "Wages per employment and number employed in ag-related industries")+
-  scale_y_continuous(labels=scales::dollar)+
-  scale_x_continuous(labels=scales::percent) +
-  theme_line+
-  scale_color_manual(values = color.edr,
-                     guide = guide_legend(ncol = 2)) +
-  theme(legend.position = "bottom",
-        text = element_text(size = 8))
-
-  girafe(ggobj = ag.wages.emp.pct.edr.plot, height_svg = 9) %>%
-  girafe_options(opts_selection(type = "none"),
-                 opts_toolbar(saveaspng = FALSE) ,
-                 opts_sizing(rescale = FALSE),
-                 opts_zoom(max = 5))
-
-```
-
-### County map
-
-<br>
