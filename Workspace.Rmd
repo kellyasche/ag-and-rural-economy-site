@@ -99,6 +99,8 @@ color.edr <- c("EDR 1 - Northwest" = "#b3cde3", "EDR 2 - Headwaters" = "#8c96c6"
 color.counties <- scale_color_brewer(palette = "Dark2",
                        guide = guide_legend(ncol = 3))
 
+color.ag.ind <- c("Crop Production" = "#a6cee3", "Animal Production and Aquaculture" = "#1f78b4", "Support Activities for Crop Production" = "#b2df8a", "Support Activities for Animal Production" = "#33a02c", "Food Manufacturing" = "#fb9a99", "Agricultural Implement Manufacturing" = "#e31a1c", "Farm Product Raw Material Merchant Wholesalers" = "#fdbf6f", "Farm Supplies Merchant Wholesalers" = "#ff7f00", "Pesticide, Fertilizer, and Other Agricultural Chemical Manufacturing" = "#cab2d6", "Total, All Industries" = "black", "NA" = "white")
+
 mn_counties <- st_read("Data/Shapefiles/county shapefiles/MNCounties_MNDOT.shp", quiet = TRUE) %>%
   ms_simplify(keep = .01, keep_shapes = TRUE)
 ```
@@ -243,66 +245,57 @@ ag.wages.per.emp.ind.mn <- read_csv("Data/Employment/qcew-ag-related-industries-
 
 <br>
 
-## Location of highest paying ag-related industries {.tabset}
+## Concentration of ag-related industries {.tabset}
 
 Summary here
 
 <br>
 
-```{r prep ag wages and employment by industry, include=FALSE, cache=TRUE}
+```{r prep concentration of ag-related industries, include=FALSE, cache=TRUE}
 
-ag.wages.emp.pct.ruca <- ag.wages.emp.ruca %>%
-  group_by(periodyear, Dem_Desc) %>%
-  mutate(pct.emp = emp / sum(emp[naicstitle != "Total, All Industries"])) %>%
+ag.ind.conc.ruca <- ag.wages.emp.ruca %>%
+  group_by(periodyear, naicstitle) %>%
+  mutate(pct.ind.emp = emp / sum(emp)) %>%
   ungroup()
 
-ag.wages.emp.pct.pr <- ag.wages.emp.pr %>%
-  group_by(periodyear, planning.region) %>%
-  mutate(pct.emp = emp / sum(emp[naicstitle != "Total, All Industries"])) %>%
+ag.ind.conc.pr <- ag.wages.emp.pr %>%
+  group_by(periodyear, naicstitle) %>%
+  mutate(pct.ind.emp = emp / sum(emp)) %>%
   ungroup()
 
-ag.wages.emp.pct.edr <- ag.wages.emp.edr %>%
-  group_by(periodyear, edr, planning.region) %>%
-  mutate(pct.emp = emp / sum(emp[naicstitle != "Total, All Industries"])) %>%
+ag.ind.conc.edr <- ag.wages.emp.edr %>%
+  group_by(periodyear, naicstitle) %>%
+  mutate(pct.ind.emp = emp / sum(emp)) %>%
   ungroup()
-
-ag.wages.emp.pct.county <- ag.wages.emp.county %>%
-  group_by(periodyear, areaname, countyfp) %>%
-  mutate(pct.emp = emp / sum(emp[naicstitle != "Total, All Industries"])) %>%
-  ungroup() %>%
-  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE"))
-
 
 ```
 
 ### RUCA
 
-When comparing the wages per employment and the percentage of employment each industry comprises of ag-related industries a couple of trends become clear.
+Due to the size of the shear workforce located in our entirely urban counties, they have a majority of the workforce in each of these industries except for animal production and support actitivies for crop production. 
 
-The highest paying jobs tend to be in the two merchant wholesalers. Interstingly, the wages per employment in that industry are significantly higher in the entirely urban counties than everywhere else. These industries have the highest percentage of ag-related industry employment in our entirely urban and entirely rural counties (15% - 20%). 
+For the most part, wages per employment are similar across all of the regions except for ag impement manufacturing, farm product raw material merchant wholesalers, and farm supplies merchant wholesalers where the values are significantl higher than other county group types. 
 
-Interstingly, food manufacturing makes up the highest percentage of ag-related employment in all county groups except for our entirely rural group where it doesn't even count towards a half of a percent to employment. In the other county groups its around 60% of ag-related employment.
-
-Where entirely rural counties tend to have larger percentages is in crop production, animal production, and merchant wholesalers.
+One other interesting element is that our entirely rural county group has a very low percentage of the workforce in each of these industries except for support activities for crop production where it has 40% of the total workforce in that industry.
 
 <br>
 
-```{r charts ag wages and emp ruca, fig.height=8}
-
-ag.wages.emp.pct.ruca.plot <- ggplot(filter(ag.wages.emp.pct.ruca, periodyear == 2018, naicstitle != "Total, All Industries"), aes(pct.emp, wages.emp, color = Dem_Desc)) +
+```{r chart ag ind concentration, fig.height=8}
+ag.ind.conc.ruca.plot <- ggplot(filter(ag.ind.conc.ruca, periodyear == 2018, naicstitle != "Total, All Industries"), aes(pct.ind.emp, wages.emp, color = Dem_Desc)) +
   facet_wrap(~naicstitle, ncol = 2) +
-  geom_label_repel(size = 3, aes(x = pct.emp, y = wages.emp, label = Dem_Desc), show.legend = FALSE) +
-  geom_point_interactive(size = 2, aes(data_id = wages.emp, tooltip = paste("NAICS: ", naicstitle, "\nNumber employed: ", comma(emp), "\nPercent of total employment: ", percent(pct.emp), "\nWages per employed: ", dollar(wages.emp), sep = "")), show.legend = FALSE) +
-  labs(x="", y = "", color="", title = "Wages per employment and number employed in ag-related industries")+
+  geom_smooth(se = FALSE, size = 2) +
+  geom_point_interactive(size = 3, aes(data_id = pct.ind.emp, tooltip = paste(Dem_Desc, "\nNAICS: ", naicstitle, "\nEmployment in industry: ", comma(emp), "\nTotal wages earned in industry: ", dollar(wages), "\nWages per employment: ", dollar(wages.emp), "\nPercent of industry employment located in this region: ", percent(pct.ind.emp), sep = "")), show.legend = FALSE) +
+  geom_text_repel(size = 3, aes(label = Dem_Desc), show.legend = FALSE) +
+  labs(x="", y = "", color="", title = "Percent of industry employment located in each region by wage per employment earned")+
   scale_y_continuous(labels=scales::dollar)+
   scale_x_continuous(labels=scales::percent) +
   theme_line+
-  scale_color_manual(values = color.ruca,
-                     guide = guide_legend(ncol = 2)) +
+  scale_color_manual(values= color.ruca,
+                     guide = guide_legend(ncol = 3)) +
   theme(legend.position = "bottom",
-        text = element_text(size = 8))
+        text = element_text(size = 12))
 
-girafe(ggobj = ag.wages.emp.pct.ruca.plot, width_svg = 8) %>%
+girafe(ggobj = ag.ind.conc.ruca.plot, height_svg = 8) %>%
   girafe_options(opts_selection(type = "none"),
                  opts_toolbar(saveaspng = FALSE) ,
                  opts_sizing(rescale = FALSE))
@@ -311,28 +304,28 @@ girafe(ggobj = ag.wages.emp.pct.ruca.plot, width_svg = 8) %>%
 
 ### Planning Region
 
-Interestingly, regions outside of the seven county metro have very similar percentags and wages per employment within each industry. This makes sense since these regions have a fairly decent distribution of entirely rural and entirely urban counties in them, thus any patterns that emergy within those categorizations even out across the region. 
+Breaking it down by planning region shows that it isn't, necessarily, the seven-county metro that has a higher percentage of the workforce across all these industries, but rather, there are metropolitan counties in the other regions that also share a considerable amount of the workforce.
 
-The only place where this is not the case is the two merchant wholesalers industries. These have significantly higher wages per employment and percentage of ag-related employment in the seven county metro compared to the other regions.
+
 
 <br>
 
-```{r charts ag wages and emp pr, fig.height=8}
-
-ag.wages.emp.pct.pr.plot <- ggplot(filter(ag.wages.emp.pct.pr, periodyear == 2018, naicstitle != "Total, All Industries"), aes(pct.emp, wages.emp, color = planning.region)) +
+```{r chart ag ind concentration pr, fig.height=8}
+ag.ind.conc.pr.plot <- ggplot(filter(ag.ind.conc.pr, periodyear == 2018, naicstitle != "Total, All Industries"), aes(pct.ind.emp, wages.emp, color = planning.region)) +
   facet_wrap(~naicstitle, ncol = 2) +
-  geom_label_repel(size = 3, aes(x = pct.emp, y = wages.emp, label = planning.region), show.legend = FALSE) +
-  geom_point_interactive(size = 2, aes(data_id = wages.emp, tooltip = paste("NAICS: ", naicstitle, "\nNumber employed: ", comma(emp), "\nPercent of total employment: ", percent(pct.emp), "\nWages per employed: ", dollar(wages.emp), sep = "")), show.legend = FALSE) +
-  labs(x="", y = "", color="", title = "Wages per employment and number employed in ag-related industries")+
+  geom_smooth(se = FALSE, size = 2) +
+  geom_point_interactive(size = 3, aes(data_id = pct.ind.emp, tooltip = paste(planning.region, "\nNAICS: ", naicstitle, "\nEmployment in industry: ", comma(emp), "\nTotal wages earned in industry: ", dollar(wages), "\nWages per employment: ", dollar(wages.emp), "\nPercent of industry employment located in this region: ", percent(pct.ind.emp), sep = "")), show.legend = FALSE) +
+  geom_text_repel(size = 3, aes(label = planning.region), show.legend = FALSE) +
+  labs(x="", y = "", color="", title = "Percent of industry employment located in each region by wage per employment earned")+
   scale_y_continuous(labels=scales::dollar)+
   scale_x_continuous(labels=scales::percent) +
   theme_line+
-  scale_color_manual(values = color.pr,
-                     guide = guide_legend(ncol = 2)) +
+  scale_color_manual(values= color.pr,
+                     guide = guide_legend(ncol = 3)) +
   theme(legend.position = "bottom",
-        text = element_text(size = 8))
+        text = element_text(size = 12))
 
-girafe(ggobj = ag.wages.emp.pct.pr.plot, height_svg = 7) %>%
+girafe(ggobj = ag.ind.conc.pr.plot, height_svg = 8) %>%
   girafe_options(opts_selection(type = "none"),
                  opts_toolbar(saveaspng = FALSE) ,
                  opts_sizing(rescale = FALSE))
@@ -345,29 +338,5 @@ Analysis here
 
 <br>
 
-```{r charts ag wages and emp edr, fig.height=10}
 
-ag.wages.emp.pct.edr.plot <- ggplot(filter(ag.wages.emp.pct.edr, periodyear == 2018, naicstitle != "Total, All Industries"), aes(pct.emp, wages.emp, color = edr)) +
-  facet_wrap(~naicstitle, ncol = 2) +
-  geom_label_repel(size = 2, aes(x = pct.emp, y = wages.emp, label = edr), show.legend = FALSE) +
-  geom_point_interactive(size = 2, aes(data_id = wages.emp, tooltip = paste("NAICS: ", naicstitle, "\nNumber employed: ", comma(emp), "\nPercent of total employment: ", percent(pct.emp), "\nWages per employed: ", dollar(wages.emp), sep = "")), show.legend = FALSE) +
-  labs(x="", y = "", color="", title = "Wages per employment and number employed in ag-related industries")+
-  scale_y_continuous(labels=scales::dollar)+
-  scale_x_continuous(labels=scales::percent) +
-  theme_line+
-  scale_color_manual(values = color.edr,
-                     guide = guide_legend(ncol = 2)) +
-  theme(legend.position = "bottom",
-        text = element_text(size = 8))
 
-  girafe(ggobj = ag.wages.emp.pct.edr.plot, height_svg = 9) %>%
-  girafe_options(opts_selection(type = "none"),
-                 opts_toolbar(saveaspng = FALSE) ,
-                 opts_sizing(rescale = FALSE),
-                 opts_zoom(max = 5))
-
-```
-
-### County map
-
-<br>
