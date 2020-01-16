@@ -96,6 +96,8 @@ color.pr <- c("Northwest" = "#810f7c","Northeast" = "#fe9929", "Central" = "#076
 
 color.edr <- c("EDR 1 - Northwest" = "#b3cde3", "EDR 2 - Headwaters" = "#8c96c6", "EDR 3 - Arrowhead" = "#fe9929", "EDR 4 - West Central" = "#8856a7", "EDR 5 - North Central" = "#810f7c", "EDR 6E- Southwest Central" = "#e5f5f9", "EDR 6W- Upper Minnesota Valley" = "#bdc9e1", "EDR 7E- East Central" = "#99d8c9", "EDR 7W- Central" = "#2ca25f", "EDR 8 - Southwest" = "#74a9cf", "EDR 9 - South Central" = "#0570b0", "EDR 10 - Southeast" = "#d7301f", "EDR 11 - 7 County Twin Cities" = "#d8b365", "Minnesota" = "black")
 
+color.label.edr <- c("EDR 1" = "#b3cde3", "EDR 2" = "#8c96c6", "EDR 3" = "#fe9929", "EDR 4" = "#8856a7", "EDR 5" = "#810f7c", "EDR 6E" = "#e5f5f9", "EDR 6W" = "#bdc9e1", "EDR 7E" = "#99d8c9", "EDR 7W" = "#2ca25f", "EDR 8" = "#74a9cf", "EDR 9" = "#0570b0", "EDR 10" = "#d7301f", "EDR 11" = "#d8b365", "Minnesota" = "black")
+
 color.counties <- scale_color_brewer(palette = "Dark2",
                        guide = guide_legend(ncol = 3))
 
@@ -247,7 +249,11 @@ ag.wages.per.emp.ind.mn <- read_csv("Data/Employment/qcew-ag-related-industries-
 
 ## Concentration of ag-related industries {.tabset}
 
-Summary here
+Due to the shear size of the workforce in our most urban areas, they also have the highest concentration of workforce for each of the ag-related industries. However, breaking it down by planning region shows that it isn’t necessarily the seven-county metro that has a higher percentage of the workforce across all these industries, but rather, there are metropolitan counties in the other regions that also share a considerable amount of the workforce. 
+
+Not surprisingly, the Southwest, Northwest and Central regions of the state typically have the highest shares of the workforce in each industry. However, the seven county metro has the highest share of the workforce in farm raw product material merchant wholesalers and the farm supplies merchant wholesalers by a significant margin. In addition, the wages per employment are significantly higher within this industry in the seven-county metro compared to the other regions. In fact, it's about double.
+
+The EDR-level shows that the share of each industry's workforce within each planning region is shared relatively equally across all the EDRs.
 
 <br>
 
@@ -266,15 +272,17 @@ ag.ind.conc.pr <- ag.wages.emp.pr %>%
 ag.ind.conc.edr <- ag.wages.emp.edr %>%
   group_by(periodyear, naicstitle) %>%
   mutate(pct.ind.emp = emp / sum(emp)) %>%
-  ungroup()
+  ungroup() %>%
+  mutate(label = str_sub(edr, 1,6),
+         label = str_trim(label, side = "both"))
 
 ```
 
 ### RUCA
 
-Due to the size of the shear workforce located in our entirely urban counties, they have a majority of the workforce in each of these industries except for animal production and support actitivies for crop production. 
+Due to the size of the shear workforce located in our entirely urban counties, they have a majority of the workforce in each of these industries except for animal production and support activities for crop production. 
 
-For the most part, wages per employment are similar across all of the regions except for ag impement manufacturing, farm product raw material merchant wholesalers, and farm supplies merchant wholesalers where the values are significantl higher than other county group types. 
+For the most part, wages per employment are similar across all of the regions except for ag implement manufacturing, farm product raw material merchant wholesalers, and farm supplies merchant wholesalers where the values are significantly higher than other county group types. 
 
 One other interesting element is that our entirely rural county group has a very low percentage of the workforce in each of these industries except for support activities for crop production where it has 40% of the total workforce in that industry.
 
@@ -286,7 +294,7 @@ ag.ind.conc.ruca.plot <- ggplot(filter(ag.ind.conc.ruca, periodyear == 2018, nai
   geom_smooth(se = FALSE, size = 2) +
   geom_point_interactive(size = 3, aes(data_id = pct.ind.emp, tooltip = paste(Dem_Desc, "\nNAICS: ", naicstitle, "\nEmployment in industry: ", comma(emp), "\nTotal wages earned in industry: ", dollar(wages), "\nWages per employment: ", dollar(wages.emp), "\nPercent of industry employment located in this region: ", percent(pct.ind.emp), sep = "")), show.legend = FALSE) +
   geom_text_repel(size = 3, aes(label = Dem_Desc), show.legend = FALSE) +
-  labs(x="", y = "", color="", title = "Percent of industry employment located in each region by wage per employment earned")+
+  labs(x="", y = "", color="", title = "Percent of industry employment located in each region by\nwage per employment earned")+
   scale_y_continuous(labels=scales::dollar)+
   scale_x_continuous(labels=scales::percent) +
   theme_line+
@@ -304,9 +312,27 @@ girafe(ggobj = ag.ind.conc.ruca.plot, height_svg = 8) %>%
 
 ### Planning Region
 
-Breaking it down by planning region shows that it isn't, necessarily, the seven-county metro that has a higher percentage of the workforce across all these industries, but rather, there are metropolitan counties in the other regions that also share a considerable amount of the workforce.
+Breaking it down by planning region shows that it isn't, necessarily, the seven-county metro that has a higher percentage of the workforce across all these industries, but rather, there are metropolitan counties in the other regions that also share a considerable amount of the workforce. There are many industries where the seven county metro, which is comprised of entirely urban counties, does not have the highest share of employment.
 
+Here's a breakdown of each industry and location of the most significant share of the workforce.
 
+Ag implement manufacturing: A majority of the workforce is in the Central region with 54%. Northwest also has a significant amount with 29%. The wage per employment is significantly higher in the seven-county metro.
+
+Animal production: A significant portion of the workforce is located in Southwest with 35%, followed by Central with 25%. Wages per employment are even across all regions.
+
+Crop production: Interestingly, the seven-county metro has the highest share of this industry with 33% followed closely by Northwest with 30%. Wages per employment are even across all regions.
+
+Farm product raw material merchant wholesalers: The Seven-county metro has the highest share by far with 44% of the workforce. The next closest is Southwest with 26% and Northwest with 17%. Huge disparities in wages per employment in this industry with the seven county metro having the highest value of $154,727. The next closest is in Northwest which is 50% of that value - $62,424.
+
+Farm supplies merchant wholesalers: Again, the seven-county metro has the highest share with 30% of the workforce. Southwest isn't too far behind with 26%. There are disparities in wages per employment here as well but not as much. The seven county metro has $118,694 per employment while the next closest is Southwest with $72,473 per employment.
+
+Food manufacturing: Except for the Northeast, that share of food manufacturing employment is spread pretty evenly across all the regions with shares ranging from 13% in Northwest to 23% in the Southwest. Wages per employment are even across all regions.
+
+Fertilizer and chemical manufacturing: The seven county metro leads the way with 61% of the employment in this industry followed by Southwest with 39%. This is a relatively small piece of the ag-related employment puzzle. Wages per employment are about $20,000 per employment higher in the seven-county metro than in Southwest.
+
+Support activities for animal production: The seven county metro, Southwest, and Central all have a similar share of the workforce with about 25% each. Wages are relatively similar.
+
+Support activities for crop production: Northwest has the highest share of the workforce with 39% followed by Southwest with 26%. Wages per employment are relatively even across all the regions.
 
 <br>
 
@@ -316,7 +342,7 @@ ag.ind.conc.pr.plot <- ggplot(filter(ag.ind.conc.pr, periodyear == 2018, naicsti
   geom_smooth(se = FALSE, size = 2) +
   geom_point_interactive(size = 3, aes(data_id = pct.ind.emp, tooltip = paste(planning.region, "\nNAICS: ", naicstitle, "\nEmployment in industry: ", comma(emp), "\nTotal wages earned in industry: ", dollar(wages), "\nWages per employment: ", dollar(wages.emp), "\nPercent of industry employment located in this region: ", percent(pct.ind.emp), sep = "")), show.legend = FALSE) +
   geom_text_repel(size = 3, aes(label = planning.region), show.legend = FALSE) +
-  labs(x="", y = "", color="", title = "Percent of industry employment located in each region by wage per employment earned")+
+  labs(x="", y = "", color="", title = "Percent of industry employment located in each region by\nwage per employment earned")+
   scale_y_continuous(labels=scales::dollar)+
   scale_x_continuous(labels=scales::percent) +
   theme_line+
@@ -334,9 +360,35 @@ girafe(ggobj = ag.ind.conc.pr.plot, height_svg = 8) %>%
 
 ### EDR
 
-Analysis here
+This level provides a bit more detail to help us identify which EDRs have some of the concentration of industries in each planning region.
+
+For example, we can see that animal production employment is concentrated in EDR 9, which explains why Southwest had such a high concentration in the planning region breakdown.
+
+Interestingly, we can see that when broken up by EDRs, the employment in the two merchant wholesaler industries is really spread evenly throughout the Northwest and Southwest regions. Of course, the seven county metro continues to the highest in each of those industries.
+
+For the most part, employment in the industries is spread out pretty evenly across the EDRs in each planning region, which is why they are clustered so closely together.
 
 <br>
 
+```{r chart ag ind concentration edr, fig.height=8}
+ag.ind.conc.edr.plot <- ggplot(filter(ag.ind.conc.edr, periodyear == 2018, naicstitle != "Total, All Industries"), aes(pct.ind.emp, wages.emp, color = label), show.legend = FALSE) +
+  facet_wrap(~naicstitle, ncol = 2) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_point_interactive(size = 3, aes(data_id = pct.ind.emp, tooltip = paste(edr, "\n Planning region: ", planning.region, "\nNAICS: ", naicstitle, "\nEmployment in industry: ", comma(emp), "\nTotal wages earned in industry: ", dollar(wages), "\nWages per employment: ", dollar(wages.emp), "\nPercent of industry employment located in this region: ", percent(pct.ind.emp), sep = "")), show.legend = FALSE) +
+  geom_text_repel(size = 3, aes(label = label), show.legend = FALSE) +
+  labs(x="", y = "", color="", title = "Percent of industry employment located in each region by wage per employment earned")+
+  scale_y_continuous(labels=scales::dollar)+
+  scale_x_continuous(labels=scales::percent) +
+  theme_line+
+  scale_color_manual(values= color.label.edr,
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "none",
+        text = element_text(size = 12))
+
+girafe(ggobj = ag.ind.conc.edr.plot, height_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+```
 
 
