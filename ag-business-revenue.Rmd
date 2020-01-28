@@ -1,0 +1,295 @@
+---
+title: "Ag-business revenue"
+output:
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 4
+runtime: shiny
+resource_files:
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.cpg
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.dbf
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.prj
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.sbn
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.sbx
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.shp.xml
+- Data/Shapefiles/County shapefiles/MNCounties_MNDOT.shx
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(sf)
+library(ggrepel)
+library(scales)
+library(shiny)
+library(shinycssloaders)
+library(ggiraph)
+library(kableExtra)
+library(rmapshaper)
+library(cowplot)
+library(DT)
+```
+
+```{r loading jon docs and shapefiles, cache=TRUE, include=FALSE}
+theme_bar <- theme_bw() +
+  theme(panel.grid.major = element_line(color = "grey70", size = 0.1),
+        panel.grid.minor = element_blank(),
+        axis.ticks = element_blank(),
+        axis.text = element_text(face = "bold"),
+        panel.border = element_blank(),
+        legend.background = element_rect(fill = "transparent", color = "transparent"),
+        legend.key = element_rect(fill = "transparent"),
+        legend.title = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+theme_line <- theme_bw() +
+  theme(legend.background = element_rect(fill = "transparent", color = "transparent"),
+        legend.key = element_rect(fill = "transparent"),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(color = "grey70", size = 0.1),
+        axis.ticks = element_blank(),
+        axis.text = element_text(face = "bold"),
+        panel.border = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+theme_sf <- theme_bw() +
+  theme(axis.text.x=element_blank(),
+        axis.text.y=element_blank(),
+        axis.ticks=element_blank(),
+        panel.background = element_blank(),
+        panel.grid.major = element_line(color = "white"),
+        panel.border = element_blank(),
+        plot.title = element_text(hjust = 0.5),
+        legend.title = element_blank(),
+        text = element_text(size = 15),
+        plot.caption = element_text(hjust = 0.5, face = "italic"),
+        legend.text = element_text(margin = margin(l = 2, r = 5)))
+
+counties.regions <- read_csv("Data/Join docs/county_regions.csv") %>%
+  mutate(countyfp = formatC(countyfp, width = 3, flag = "0"),
+         Name = str_to_title(Name),
+         Name = str_replace(Name, "Q", "q"),
+         Name = str_replace(Name, "Of The", "of the"),
+         Dem_Desc = ifelse(Name == "Minnesota", "Minnesota", Dem_Desc),
+         Name = str_replace(Name, "Mcleod", "McLeod"),
+         planning.region = str_replace(planning.region, " Minnesota", ""),
+         edr = str_replace(edr, "  ", " "))
+
+edr.pr <- counties.regions %>%
+  distinct(edr, .keep_all = TRUE) %>%
+  select(5,6) %>%
+  mutate(edr = str_replace(edr, "  ", " "),
+         planning.region = str_replace(planning.region, " Minnesota", ""))
+
+color.ruca <- c("Entirely rural" = "#5CA81F", "Town/rural mix" = "#C7EF99", "Urban/town/rural mix" = "#d8b365", "Entirely urban" = "#a6611a", "Minnesota" = "black")
+
+color.pr <- c("Northwest" = "#810f7c","Northeast" = "#fe9929", "Central" = "#076324", "Seven County Mpls-St Paul" = "#d8b365", "Southwest" = "#1f78b4", "Southeast" = "#d7301f", "Minnesota" = "black")
+
+color.edr <- c("EDR 1 - Northwest" = "#b3cde3", "EDR 2 - Headwaters" = "#8c96c6", "EDR 3 - Arrowhead" = "#fe9929", "EDR 4 - West Central" = "#8856a7", "EDR 5 - North Central" = "#810f7c", "EDR 6E- Southwest Central" = "#e5f5f9", "EDR 6W- Upper Minnesota Valley" = "#bdc9e1", "EDR 7E- East Central" = "#99d8c9", "EDR 7W- Central" = "#2ca25f", "EDR 8 - Southwest" = "#74a9cf", "EDR 9 - South Central" = "#0570b0", "EDR 10 - Southeast" = "#d7301f", "EDR 11 - 7 County Twin Cities" = "#d8b365", "Minnesota" = "black")
+
+color.counties <- scale_color_brewer(palette = "Dark2",
+                       guide = guide_legend(ncol = 3))
+
+mn_counties <- st_read("Data/Shapefiles/county shapefiles/MNCounties_MNDOT.shp", quiet = TRUE) %>%
+  ms_simplify(keep = .01, keep_shapes = TRUE)
+```
+
+```{r master objects, include=FALSE, cache=TRUE}
+
+master.revenue <- read_csv("Data/Business revenue/sales-use-tax-2003-2017.csv") %>%
+  mutate(description = as.factor(description),
+         naics = as.factor(naics))
+
+
+ag.revenue <- master.revenue %>%
+  mutate(ag = ifelse(description %in% c("AGRICULTURE, CONSTRUCTION, & MINING MACHINERY MANUFACTURING", "ANIMAL AQUACULTURE", "ANIMAL FOOD MANUFACTURING", "ANIMAL PRODUCTION", "ANIMAL SLAUGHTERING & PROCESSING", "CROP PRODUCTION", "DAIRY PRODUCT MANUFACTURING", "FARM PRODUCT RAW MATERIAL MERCHANT WHOLESALERS", "FOOD MANUFACTURING", "HOG & PIG FARMING", "OILSEED & GRAIN FARMING", "OTHER ANIMAL PRODUCTION", "OTHER CROP FARMING", "OTHER FOOD MANUFACTURING", "PESTICIDE, FERTILIZER, & OTHER AGRICULTURAL CHEMICAL MANUFACTURING", "POULTRY & EGG PRODUCTION", "SUPPORT ACTIVITIES FOR AGRICULTURE & FORESTRY", "SUPPORT ACTIVITIES FOR ANIMAL PRODUCTION", "SUPPORT ACTIVITIES FOR CROP PRODUCTION", "VEGETABLE & MELON FARMING", "FRUIT & TREE NUT FARMING"), "ag-related",
+                     ifelse(description == "Total", "Total", "not ag-related")))
+```
+
+<br>
+
+# Summary
+
+Ag-related businesses follow the same pattern as farm earnings; they grew significantly throughout the crop commodity boom and are now experiencing significant declines since peaking in 2013. 
+
+Out of the 21 different NAICS codes that related to agriculture, 3 of them average 50% or more of the total gross sales. Two of these three experienced the largest average annual decline in gross sales since 2013; Farm product raw material merchant wholesaler and food manufacturing. The other NAICS code, dairy product manufacturing, experienced very little change in their gross sales.
+
+* Farm product raw material merchant wholesaler
+  + Average share of total ag related gross sales: 18.6%
+  + Average annual change in gross sales: -17.9%
+
+* Food manufacturing
+  + Average share of total ag related gross sales: 18.8%
+  + Average annual change in gross sales: -17.8%
+
+* Dairy product manufacturing
+  + Average share of total ag related gross sales: 14.9%
+  + Average annual change in gross sales: 1.0%
+
+Food manufacturing experienced a drastic decline in gross sales and the number of businesses between 2014 and 2015. Gross sales in that industry declined by over $2 million between those two business while also losing 25% of the businesses.
+
+Farm product and raw material merchant wholesaler industry saw steep declines between 2015 and 2016. That industry experienced a decline in gross sales of nearly $1 million but only lost 4 businesses.
+
+<br>
+
+# Definitions
+
+The analysis below uses the gross sales of various business industries in the MN Department of Revenue's Sales and Use Tax Statistics. The industries provided are broken down the by 4-digit NAICS codes. On any given year there are between 340 and 360 different industries provided.
+
+Throughout the analysis we use the term "ag-related businesses". This means the gross sales of the following 21 NAICS industries;
+
+```{r ag business naics table}
+ag.businesses <- read_csv("Data/Business revenue/ag-business-revenue-summary.csv")
+
+kable(format = "html", ag.businesses, escape = F) %>%
+  kable_styling(bootstrap_options = "striped", full_width = FALSE)
+
+```
+
+It's worth noting that many of the ag-related industries  available to us for this analysis were not available for other parts of this full report (employment, wages, etc...). And, some of the ag-related industries available to us for those were not available here. However, the list above does provide a good representation of the ag-industry as a whole.
+<br>
+
+# Analysis
+
+The goal of the analysis is to identify if there are any ag-related industries whose gross sales are being impacted by the downturn in the ag economy. We will accomplish this through the following sections;
+
+**Ag-related business gross sales trends**: First we want to see if gross sales of the ag-related business sector, as a whole, is being negatively impacted by the downturn in the ag economy. We will explore the gross sales of ag-related businesses combined vs. all other businesses from 2003 to 2017.
+
+**Identifying the ag industry driving the decline in gross sales**: Next, we want to examine which industries within the ag-related sector makes up the largest share of gross sales and which direction they are trending.
+
+**Trends in most disrupted ag industries**: Finally, we will examine the trends of the industries identified as being most disrupted by the ag economy.
+
+<br>
+
+## Ag-related business gross sales trends
+
+There's a clear trend here. Ag-related businesses saw an increase in gross sales during the Great Recession while all other business saw a drop. Following the recession and the peak prices for crop commodities, the ag-related businesses saw a decline in their gross sales are now 133% levels of 2003 after peaking in 2013 with gross sales 183% of 2003. Meanwhile, all other businesses have continued to see increases in gross sales.
+
+<br>
+
+```{r prep non-ag business gross sales, include=FALSE, cache=TRUE}
+
+names(ag.revenue)
+total.ag.revenue <- ag.revenue %>%
+  group_by(year, ag) %>%
+  summarise(gross.sales = sum(gross.sales),
+            taxable.sales = sum(taxable.sales),
+            sales.tax = sum(sales.tax),
+            use.tax = sum(use.tax),
+            total.tax = sum(total.tax),
+            number = sum(number)) %>%
+  ungroup() %>%
+  group_by(ag) %>%
+  mutate(gross.sales.pct.2003 = gross.sales / gross.sales[year == 2003]) %>%
+  ungroup()
+
+```
+
+```{r charts index of ag and non ag gross sales}
+ag.gross.sales.index.plot <- ggplot(total.ag.revenue, aes(year, gross.sales.pct.2003, color = ag)) +
+  geom_smooth(se = FALSE, size = 2) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 3, aes(data_id = gross.sales.pct.2003, tooltip = paste(ag, "\nYear: ", year, "\nGross sales: ", dollar(gross.sales), "\nGross sales as percent of 2003 levels: ", percent(gross.sales.pct.2003), "\nNumber of businesses: ", comma(number), sep = ""))) +
+  labs(x="", y = "", color="", title = "Gross sales as a percent of 2003 levels")+
+  scale_y_continuous(labels=scales::percent)+
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values= c("#1b9e77", "#d95f02", "#7570b3"),
+                     guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom")
+
+girafe(ggobj = ag.gross.sales.index.plot, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+
+```
+
+<br>
+
+## Identifying ag businesses driving the decline in gross sales
+
+Nearly all of the industries make up 5% or less of the total gross sales in ag-related businesses. However, two (farm product raw material merchant wholesalers and food manufacturing) of the three business groups that make up half of all the gross sales had an average annual decline in their gross sales of 18% since 2013. The other one, dairy product manufacturing, had an average annual increase of only 1%. 
+
+One other trend worth mentioning is that ag-related businesses that were focused on crop productions, i.e. support activities for crops production or oil seed and grain farming, were experiencing average annual declines in their gross sales since 2013. Whereas the other businesses that were experiencing average annual increases were more focused on animal production related services.
+
+<br>
+
+```{r prep id ag business gross sales, include=FALSE, cache=TRUE}
+
+id.ag.revenue <- ag.revenue %>%
+  filter(ag == "ag-related") %>%
+  group_by(year) %>%
+  mutate(total.ag.gross.sales = sum(gross.sales)) %>%
+  ungroup() %>%
+  mutate(pct.ag.gross.sales = gross.sales / total.ag.gross.sales)
+
+ag.revenue.mean <- id.ag.revenue %>%
+  filter(year > 2012) %>%
+  group_by(description) %>%
+  arrange(year) %>%
+  mutate(gross.sales.change = (gross.sales - lag(gross.sales))/lag(gross.sales)) %>%
+  summarise(mean.change.gross.sales = mean(gross.sales.change, na.rm = TRUE),
+            mean.pct.ag.gross.sales = mean(pct.ag.gross.sales)) %>%
+  ungroup() 
+```
+
+```{r chart ag business pct total ag gross sales}
+ag.revenue.mean.plot <- ggplot(ag.revenue.mean, aes(mean.pct.ag.gross.sales, mean.change.gross.sales, color = description)) +
+  geom_hline(yintercept = 0, color = "black") +
+  geom_label_interactive(size = 3, aes(data_id = mean.pct.ag.gross.sales, tooltip = paste(description, "\nAverage change in gross sales: ", percent(mean.change.gross.sales), "\nAverage share of gross sales among ag-related businesses: ", percent(mean.pct.ag.gross.sales), sep = ""), label = description), show.legend = FALSE) +
+  labs(x="", y = "", color="", title = "Average change in gross sales and average share of gross sales among ag-related businesses")+
+  scale_y_continuous(labels=scales::percent)+
+  scale_x_continuous(labels=scales::percent) +
+  theme_line+
+  scale_color_discrete(guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom")
+
+girafe(ggobj = ag.revenue.mean.plot, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+```
+
+## Trends in most disrupted ag industries
+
+Food manufacturing has experience the most drastic decline between years 2014 and 2015. Business gross sales declined by over $2 million between those two years. In addition, the number of businesses dropped from 104 in 2014 to 88 in 2015. 
+
+Farm product raw material merchant wholesalers industry also experienced steep declines beginning in 2015. The largest decline occurred between 2015 and 2016 where gross sales declined by nearly $1 million. Interestingly, the number of businesses only declined by four.
+
+<br>
+
+```{r prep trends in disrupted ag industries, include=FALSE, cache=TRUE}
+
+disrupted.ag.ind.trends <- id.ag.revenue %>%
+  filter(description %in% c("FARM PRODUCT RAW MATERIAL MERCHANT WHOLESALERS", "FOOD MANUFACTURING"))
+
+```
+
+```{r charts trends in disrupted ag industries}
+
+disrupted.ag.ind.trends.plot <- ggplot(disrupted.ag.ind.trends, aes(year, gross.sales, color = description)) +
+  geom_smooth(size = 2, se = FALSE) +
+  geom_point_interactive(size = 3, aes(data_id = gross.sales, tooltip = paste(description, "\nYear: ", comma(year), "\nGross sales: ", dollar(gross.sales), "\nNumber of businesses: ", comma(number), sep = ""))) +
+  labs(x="", y = "", color="", title = "Gross sales of most disruptive ag industries")+
+  scale_y_continuous(labels=scales::dollar)+
+  scale_x_discrete(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values = c("#1b9e77", "#d95f02"),
+                     guide = guide_legend(ncol = 1)) +
+  theme(legend.position = "bottom")
+
+girafe(ggobj = disrupted.ag.ind.trends.plot, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+```

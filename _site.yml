@@ -5,24 +5,24 @@ navbar:
   left:
     - text: "Summary & introduction"
       href: index.html
-    - text: "Farm earnings and ag wages"
+    - text: "Farm earnings, ag wages, and employment"
       menu:
         - text: "Farm earnings"
           href: farm-earnings.html
         - text: "Ag wages"
           href: ag-wages.html
-        - text: "Ag wages per employment"
-          href: ag-wages-per-employment.html
-    - text: "Farm and ag employment"
-      menu:
         - text: "Farm employment"
           href: farm-employment.html
         - text: "Ag employment"
           href: ag-employment.html
+        - text: "Ag wages per employment"
+          href: ag-wages-per-employment.html
     - text: "Land values vs. Net Income"
       href: land-vs-income.html
     - text: "Analyzing industries in economic analysis study"
       href: lazarus-report.html
+    - text: "Gross sales of ag businesses"
+      href: ag-business-revenue.html
       
 output:
   html_document:
