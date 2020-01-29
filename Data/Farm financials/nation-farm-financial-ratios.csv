@@ -1,0 +1,372 @@
+Year,variable,VariableDescriptionPart1,VariableDescriptionPart2,Amount,unit_desc
+2019,Net farm income ratio,Efficiency,Net farm income,0.21172,Ratio   
+2019,Current ratio,Liquidity,Current ratio,1.50857,Ratio   
+2019,Debt service ratio,Liquidity,Debt service,0.27134,Ratio   
+2019,Times interest earned,Liquidity,Times interest earned,5.95461,Ratio   
+2019,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,13.41749,Percent    
+2019,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,15.49677,Percent    
+2019,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,86.58251,Percent    
+2018,Net farm income ratio,Efficiency,Net farm income,0.19634,Ratio   
+2018,Current ratio,Liquidity,Current ratio,1.64357,Ratio   
+2018,Debt service ratio,Liquidity,Debt service,0.27425,Ratio   
+2018,Times interest earned,Liquidity,Times interest earned,5.32553,Ratio   
+2018,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,13.28164,Percent    
+2018,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,15.31583,Percent    
+2018,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,86.71836,Percent    
+2017,Net farm income ratio,Efficiency,Net farm income,0.17644,Ratio   
+2017,Current ratio,Liquidity,Current ratio,1.63264,Ratio   
+2017,Debt service ratio,Liquidity,Debt service,0.26771,Ratio   
+2017,Times interest earned,Liquidity,Times interest earned,5.29518,Ratio   
+2017,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,12.99237,Percent    
+2017,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,14.93245,Percent    
+2017,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,87.00763,Percent    
+2016,Net farm income ratio,Efficiency,Net farm income,0.15097,Ratio   
+2016,Current ratio,Liquidity,Current ratio,1.59398,Ratio   
+2016,Debt service ratio,Liquidity,Debt service,0.26429,Ratio   
+2016,Times interest earned,Liquidity,Times interest earned,4.82147,Ratio   
+2016,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,12.84283,Percent    
+2016,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,14.73526,Percent    
+2016,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,87.15717,Percent    
+2015,Net farm income ratio,Efficiency,Net farm income,0.18502,Ratio   
+2015,Current ratio,Liquidity,Current ratio,1.78897,Ratio   
+2015,Debt service ratio,Liquidity,Debt service,0.2426,Ratio   
+2015,Times interest earned,Liquidity,Times interest earned,6.29794,Ratio   
+2015,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,12.39263,Percent    
+2015,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,14.14565,Percent    
+2015,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,87.60737,Percent    
+2014,Net farm income ratio,Efficiency,Net farm income,0.1908,Ratio   
+2014,Current ratio,Liquidity,Current ratio,2.15433,Ratio   
+2014,Debt service ratio,Liquidity,Debt service,0.21895,Ratio   
+2014,Times interest earned,Liquidity,Times interest earned,7.23179,Ratio   
+2014,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,11.77922,Percent    
+2014,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,13.35198,Percent    
+2014,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,88.22078,Percent    
+2013,Net farm income ratio,Efficiency,Net farm income,0.25553,Ratio   
+2013,Current ratio,Liquidity,Current ratio,2.13553,Ratio   
+2013,Debt service ratio,Liquidity,Debt service,0.19537,Ratio   
+2013,Times interest earned,Liquidity,Times interest earned,9.81286,Ratio   
+2013,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,11.39308,Percent    
+2013,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,12.858,Percent    
+2013,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,88.60692,Percent    
+2012,Net farm income ratio,Efficiency,Net farm income,0.21436,Ratio   
+2012,Current ratio,Liquidity,Current ratio,2.86869,Ratio   
+2012,Debt service ratio,Liquidity,Debt service,0.20461,Ratio   
+2012,Times interest earned,Liquidity,Times interest earned,7.10603,Ratio   
+2012,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,11.27724,Percent    
+2012,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,12.71066,Percent    
+2012,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,88.72276,Percent    
+2011,Net farm income ratio,Efficiency,Net farm income,0.27017,Ratio   
+2011,Current ratio,Liquidity,Current ratio,2.60102,Ratio   
+2011,Debt service ratio,Liquidity,Debt service,0.2195,Ratio   
+2011,Times interest earned,Liquidity,Times interest earned,8.78788,Ratio   
+2011,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,12.69977,Percent    
+2011,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,14.54724,Percent    
+2011,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,87.30023,Percent    
+2010,Net farm income ratio,Efficiency,Net farm income,0.21635,Ratio   
+2010,Current ratio,Liquidity,Current ratio,2.81923,Ratio   
+2010,Debt service ratio,Liquidity,Debt service,0.25387,Ratio   
+2010,Times interest earned,Liquidity,Times interest earned,6.10049,Ratio   
+2010,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,12.84901,Percent    
+2010,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,14.7434,Percent    
+2010,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,87.15099,Percent    
+2009,Net farm income ratio,Efficiency,Net farm income,0.18485,Ratio   
+2009,Current ratio,Liquidity,Current ratio,2.08233,Ratio   
+2009,Debt service ratio,Liquidity,Debt service,0.26438,Ratio   
+2009,Times interest earned,Liquidity,Times interest earned,4.98413,Ratio   
+2009,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,13.57402,Percent    
+2009,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,15.70595,Percent    
+2009,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,86.42598,Percent    
+2008,Net farm income ratio,Efficiency,Net farm income,0.21405,Ratio   
+2008,Debt service ratio,Liquidity,Debt service,0.22972,Ratio   
+2008,Times interest earned,Liquidity,Times interest earned,6.14066,Ratio   
+2008,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,13.01501,Percent    
+2008,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,14.96236,Percent    
+2008,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,86.98499,Percent    
+2007,Net farm income ratio,Efficiency,Net farm income,0.20619,Ratio   
+2007,Debt service ratio,Liquidity,Debt service,0.23392,Ratio   
+2007,Times interest earned,Liquidity,Times interest earned,5.987,Ratio   
+2007,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,12.27028,Percent    
+2007,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,13.98646,Percent    
+2007,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,87.72972,Percent    
+2006,Net farm income ratio,Efficiency,Net farm income,0.19794,Ratio   
+2006,Debt service ratio,Liquidity,Debt service,0.25559,Ratio   
+2006,Times interest earned,Liquidity,Times interest earned,5.27093,Ratio   
+2006,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,11.31216,Percent    
+2006,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,12.75502,Percent    
+2006,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,88.68784,Percent    
+2005,Net farm income ratio,Efficiency,Net farm income,0.26386,Ratio   
+2005,Debt service ratio,Liquidity,Debt service,0.23124,Ratio   
+2005,Times interest earned,Liquidity,Times interest earned,7.62486,Ratio   
+2005,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,12.23101,Percent    
+2005,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,13.93546,Percent    
+2005,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,87.76899,Percent    
+2004,Net farm income ratio,Efficiency,Net farm income,0.29646,Ratio   
+2004,Debt service ratio,Liquidity,Debt service,0.22331,Ratio   
+2004,Times interest earned,Liquidity,Times interest earned,9.71872,Ratio   
+2004,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,13.24288,Percent    
+2004,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,15.26432,Percent    
+2004,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,86.75712,Percent    
+2003,Net farm income ratio,Efficiency,Net farm income,0.23568,Ratio   
+2003,Debt service ratio,Liquidity,Debt service,0.23395,Ratio   
+2003,Times interest earned,Liquidity,Times interest earned,6.88381,Ratio   
+2003,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,13.69414,Percent    
+2003,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,15.86699,Percent    
+2003,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,86.30586,Percent    
+2002,Net farm income ratio,Efficiency,Net farm income,0.16978,Ratio   
+2002,Debt service ratio,Liquidity,Debt service,0.28115,Ratio   
+2002,Times interest earned,Liquidity,Times interest earned,4.20455,Ratio   
+2002,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,14.95597,Percent    
+2002,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,17.58615,Percent    
+2002,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,85.04403,Percent    
+2001,Net farm income ratio,Efficiency,Net farm income,0.2413,Ratio   
+2001,Debt service ratio,Liquidity,Debt service,0.26828,Ratio   
+2001,Times interest earned,Liquidity,Times interest earned,5.28916,Ratio   
+2001,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,13.58873,Percent    
+2001,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,15.72565,Percent    
+2001,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,86.41127,Percent    
+2000,Net farm income ratio,Efficiency,Net farm income,0.23202,Ratio   
+2000,Debt service ratio,Liquidity,Debt service,0.25085,Ratio   
+2000,Times interest earned,Liquidity,Times interest earned,4.59398,Ratio   
+2000,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,13.62432,Percent    
+2000,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,15.77333,Percent    
+2000,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,86.37568,Percent    
+1999,Net farm income ratio,Efficiency,Net farm income,0.22345,Ratio   
+1999,Debt service ratio,Liquidity,Debt service,0.25646,Ratio   
+1999,Times interest earned,Liquidity,Times interest earned,4.5723,Ratio   
+1999,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,14.72534,Percent    
+1999,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,17.26813,Percent    
+1999,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,85.27466,Percent    
+1998,Net farm income ratio,Efficiency,Net farm income,0.21397,Ratio   
+1998,Debt service ratio,Liquidity,Debt service,0.24894,Ratio   
+1998,Times interest earned,Liquidity,Times interest earned,4.61359,Ratio   
+1998,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,15.19597,Percent    
+1998,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,17.91893,Percent    
+1998,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,84.80403,Percent    
+1997,Net farm income ratio,Efficiency,Net farm income,0.22255,Ratio   
+1997,Debt service ratio,Liquidity,Debt service,0.22983,Ratio   
+1997,Times interest earned,Liquidity,Times interest earned,4.99422,Ratio   
+1997,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,14.92535,Percent    
+1997,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,17.54383,Percent    
+1997,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,85.07465,Percent    
+1996,Net farm income ratio,Efficiency,Net farm income,0.25796,Ratio   
+1996,Debt service ratio,Liquidity,Debt service,0.22189,Ratio   
+1996,Times interest earned,Liquidity,Times interest earned,5.63184,Ratio   
+1996,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,14.81407,Percent    
+1996,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,17.39028,Percent    
+1996,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,85.18593,Percent    
+1995,Net farm income ratio,Efficiency,Net farm income,0.19538,Ratio   
+1995,Debt service ratio,Liquidity,Debt service,0.2393,Ratio   
+1995,Times interest earned,Liquidity,Times interest earned,4.25618,Ratio   
+1995,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,14.80576,Percent    
+1995,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,17.37882,Percent    
+1995,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,85.19424,Percent    
+1994,Net farm income ratio,Efficiency,Net farm income,0.25245,Ratio   
+1994,Debt service ratio,Liquidity,Debt service,0.22464,Ratio   
+1994,Times interest earned,Liquidity,Times interest earned,5.60372,Ratio   
+1994,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,14.86311,Percent    
+1994,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,17.45789,Percent    
+1994,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,85.13689,Percent    
+1993,Net farm income ratio,Efficiency,Net farm income,0.24384,Ratio   
+1993,Debt service ratio,Liquidity,Debt service,0.23177,Ratio   
+1993,Times interest earned,Liquidity,Times interest earned,5.40104,Ratio   
+1993,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,14.77291,Percent    
+1993,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,17.33359,Percent    
+1993,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,85.22709,Percent    
+1992,Net farm income ratio,Efficiency,Net farm income,0.26215,Ratio   
+1992,Debt service ratio,Liquidity,Debt service,0.22968,Ratio   
+1992,Times interest earned,Liquidity,Times interest earned,5.4625,Ratio   
+1992,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,15.16149,Percent    
+1992,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,17.87101,Percent    
+1992,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,84.83851,Percent    
+1991,Net farm income ratio,Efficiency,Net farm income,0.21886,Ratio   
+1991,Debt service ratio,Liquidity,Debt service,0.24461,Ratio   
+1991,Times interest earned,Liquidity,Times interest earned,4.37956,Ratio   
+1991,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,15.62164,Percent    
+1991,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,18.51379,Percent    
+1991,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,84.37836,Percent    
+1990,Net farm income ratio,Efficiency,Net farm income,0.24542,Ratio   
+1990,Debt service ratio,Liquidity,Debt service,0.2427,Ratio   
+1990,Times interest earned,Liquidity,Times interest earned,4.52085,Ratio   
+1990,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,15.59772,Percent    
+1990,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,18.48022,Percent    
+1990,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,84.40228,Percent    
+1989,Net farm income ratio,Efficiency,Net farm income,0.25724,Ratio   
+1989,Debt service ratio,Liquidity,Debt service,0.25296,Ratio   
+1989,Times interest earned,Liquidity,Times interest earned,4.40198,Ratio   
+1989,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,16.10242,Percent    
+1989,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,19.19295,Percent    
+1989,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,83.89758,Percent    
+1988,Net farm income ratio,Efficiency,Net farm income,0.2425,Ratio   
+1988,Debt service ratio,Liquidity,Debt service,0.28158,Ratio   
+1988,Times interest earned,Liquidity,Times interest earned,3.85154,Ratio   
+1988,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,16.88447,Percent    
+1988,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,20.31445,Percent    
+1988,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,83.11553,Percent    
+1987,Net farm income ratio,Efficiency,Net farm income,0.25059,Ratio   
+1987,Debt service ratio,Liquidity,Debt service,0.30943,Ratio   
+1987,Times interest earned,Liquidity,Times interest earned,3.62293,Ratio   
+1987,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,18.30949,Percent    
+1987,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,22.41324,Percent    
+1987,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,81.69051,Percent    
+1986,Net farm income ratio,Efficiency,Net farm income,0.21562,Ratio   
+1986,Debt service ratio,Liquidity,Debt service,0.35036,Ratio   
+1986,Times interest earned,Liquidity,Times interest earned,2.98082,Ratio   
+1986,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,20.95626,Percent    
+1986,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,26.51223,Percent    
+1986,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,79.04374,Percent    
+1985,Net farm income ratio,Efficiency,Net farm income,0.18589,Ratio   
+1985,Debt service ratio,Liquidity,Debt service,0.37915,Ratio   
+1985,Times interest earned,Liquidity,Times interest earned,2.60476,Ratio   
+1985,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,22.1875,Percent    
+1985,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,28.51405,Percent    
+1985,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,77.8125,Percent    
+1984,Net farm income ratio,Efficiency,Net farm income,0.1628,Ratio   
+1984,Debt service ratio,Liquidity,Debt service,0.40987,Ratio   
+1984,Times interest earned,Liquidity,Times interest earned,2.28111,Ratio   
+1984,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,21.0304,Percent    
+1984,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,26.63101,Percent    
+1984,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,78.9696,Percent    
+1983,Net farm income ratio,Efficiency,Net farm income,0.09866,Ratio   
+1983,Debt service ratio,Liquidity,Debt service,0.45606,Ratio   
+1983,Times interest earned,Liquidity,Times interest earned,1.69362,Ratio   
+1983,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,19.4077,Percent    
+1983,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,24.08133,Percent    
+1983,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,80.5923,Percent    
+1982,Net farm income ratio,Efficiency,Net farm income,0.1484,Ratio   
+1982,Debt service ratio,Liquidity,Debt service,0.41002,Ratio   
+1982,Times interest earned,Liquidity,Times interest earned,2.13626,Ratio   
+1982,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,19.11327,Percent    
+1982,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,23.62967,Percent    
+1982,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,80.88673,Percent    
+1981,Net farm income ratio,Efficiency,Net farm income,0.16351,Ratio   
+1981,Debt service ratio,Liquidity,Debt service,0.37883,Ratio   
+1981,Times interest earned,Liquidity,Times interest earned,2.40594,Ratio   
+1981,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,17.80619,Percent    
+1981,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,21.66366,Percent    
+1981,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,82.19381,Percent    
+1980,Net farm income ratio,Efficiency,Net farm income,0.10907,Ratio   
+1980,Debt service ratio,Liquidity,Debt service,0.37401,Ratio   
+1980,Times interest earned,Liquidity,Times interest earned,2.03224,Ratio   
+1980,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,16.23634,Percent    
+1980,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,19.38352,Percent    
+1980,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,83.76366,Percent    
+1979,Net farm income ratio,Efficiency,Net farm income,0.18357,Ratio   
+1979,Debt service ratio,Liquidity,Debt service,0.33057,Ratio   
+1979,Times interest earned,Liquidity,Times interest earned,3.18736,Ratio   
+1979,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,16.12803,Percent    
+1979,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,19.22934,Percent    
+1979,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,83.87197,Percent    
+1978,Net farm income ratio,Efficiency,Net farm income,0.20091,Ratio   
+1978,Debt service ratio,Liquidity,Debt service,0.32539,Ratio   
+1978,Times interest earned,Liquidity,Times interest earned,3.57444,Ratio   
+1978,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,15.92626,Percent    
+1978,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,18.94321,Percent    
+1978,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,84.07374,Percent    
+1977,Net farm income ratio,Efficiency,Net farm income,0.1859,Ratio   
+1977,Debt service ratio,Liquidity,Debt service,0.32863,Ratio   
+1977,Times interest earned,Liquidity,Times interest earned,3.44059,Ratio   
+1977,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,16.639,Percent    
+1977,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,19.96017,Percent    
+1977,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,83.361,Percent    
+1976,Net farm income ratio,Efficiency,Net farm income,0.19744,Ratio   
+1976,Debt service ratio,Liquidity,Debt service,0.29808,Ratio   
+1976,Times interest earned,Liquidity,Times interest earned,3.8771,Ratio   
+1976,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,15.93613,Percent    
+1976,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,18.95717,Percent    
+1976,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,84.06387,Percent    
+1975,Net farm income ratio,Efficiency,Net farm income,0.25575,Ratio   
+1975,Debt service ratio,Liquidity,Debt service,0.26599,Ratio   
+1975,Times interest earned,Liquidity,Times interest earned,5.19902,Ratio   
+1975,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,16.34808,Percent    
+1975,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,19.54298,Percent    
+1975,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,83.65192,Percent    
+1974,Net farm income ratio,Efficiency,Net farm income,0.27904,Ratio   
+1974,Debt service ratio,Liquidity,Debt service,0.2407,Ratio   
+1974,Times interest earned,Liquidity,Times interest earned,6.02214,Ratio   
+1974,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,16.62416,Percent    
+1974,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,19.93882,Percent    
+1974,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,83.37584,Percent    
+1973,Net farm income ratio,Efficiency,Net farm income,0.35675,Ratio   
+1973,Debt service ratio,Liquidity,Debt service,0.21489,Ratio   
+1973,Times interest earned,Liquidity,Times interest earned,8.75,Ratio   
+1973,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,15.95451,Percent    
+1973,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,18.98318,Percent    
+1973,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,84.04549,Percent    
+1972,Net farm income ratio,Efficiency,Net farm income,0.28959,Ratio   
+1972,Debt service ratio,Liquidity,Debt service,0.26,Ratio   
+1972,Times interest earned,Liquidity,Times interest earned,6.30646,Ratio   
+1972,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,17.0915,Percent    
+1972,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,20.61489,Percent    
+1972,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,82.9085,Percent    
+1971,Net farm income ratio,Efficiency,Net farm income,0.25455,Ratio   
+1971,Debt service ratio,Liquidity,Debt service,0.26772,Ratio   
+1971,Times interest earned,Liquidity,Times interest earned,5.44556,Ratio   
+1971,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,17.50562,Percent    
+1971,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,21.22038,Percent    
+1971,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,82.49438,Percent    
+1970,Net farm income ratio,Efficiency,Net farm income,0.26072,Ratio   
+1970,Debt service ratio,Liquidity,Debt service,0.25852,Ratio   
+1970,Times interest earned,Liquidity,Times interest earned,5.48391,Ratio   
+1970,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,17.39491,Percent    
+1970,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,21.05791,Percent    
+1970,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,82.60509,Percent    
+1969,Net farm income ratio,Efficiency,Net farm income,0.27166,Ratio   
+1969,Debt service ratio,Liquidity,Debt service,0.25297,Ratio   
+1969,Times interest earned,Liquidity,Times interest earned,5.92524,Ratio   
+1969,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,17.33266,Percent    
+1969,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,20.96676,Percent    
+1969,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,82.66734,Percent    
+1968,Net farm income ratio,Efficiency,Net farm income,0.25467,Ratio   
+1968,Debt service ratio,Liquidity,Debt service,0.26066,Ratio   
+1968,Times interest earned,Liquidity,Times interest earned,5.66242,Ratio   
+1968,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,17.07943,Percent    
+1968,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,20.59734,Percent    
+1968,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,82.92057,Percent    
+1967,Net farm income ratio,Efficiency,Net farm income,0.26009,Ratio   
+1967,Debt service ratio,Liquidity,Debt service,0.26494,Ratio   
+1967,Times interest earned,Liquidity,Times interest earned,6.01634,Ratio   
+1967,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,17.15189,Percent    
+1967,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,20.70281,Percent    
+1967,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,82.84811,Percent    
+1966,Net farm income ratio,Efficiency,Net farm income,0.29582,Ratio   
+1966,Debt service ratio,Liquidity,Debt service,0.2491,Ratio   
+1966,Times interest earned,Liquidity,Times interest earned,7.30653,Ratio   
+1966,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,16.76037,Percent    
+1966,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,20.13508,Percent    
+1966,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,83.23963,Percent    
+1965,Net farm income ratio,Efficiency,Net farm income,0.29259,Ratio   
+1965,Debt service ratio,Liquidity,Debt service,0.24246,Ratio   
+1965,Times interest earned,Liquidity,Times interest earned,7.49275,Ratio   
+1965,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,16.21736,Percent    
+1965,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,19.35647,Percent    
+1965,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,83.78264,Percent    
+1964,Net farm income ratio,Efficiency,Net farm income,0.26149,Ratio   
+1964,Debt service ratio,Liquidity,Debt service,0.24125,Ratio   
+1964,Times interest earned,Liquidity,Times interest earned,6.81977,Ratio   
+1964,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,15.74496,Percent    
+1964,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,18.68727,Percent    
+1964,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,84.25504,Percent    
+1963,Net farm income ratio,Efficiency,Net farm income,0.28244,Ratio   
+1963,Debt service ratio,Liquidity,Debt service,0.21905,Ratio   
+1963,Times interest earned,Liquidity,Times interest earned,8.11765,Ratio   
+1963,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,15.0288,Percent    
+1963,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,17.68693,Percent    
+1963,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,84.9712,Percent    
+1962,Net farm income ratio,Efficiency,Net farm income,0.29717,Ratio   
+1962,Debt service ratio,Liquidity,Debt service,0.20278,Ratio   
+1962,Times interest earned,Liquidity,Times interest earned,9.16525,Ratio   
+1962,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,14.11836,Percent    
+1962,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,16.43932,Percent    
+1962,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,85.88164,Percent    
+1961,Net farm income ratio,Efficiency,Net farm income,0.30618,Ratio   
+1961,Debt service ratio,Liquidity,Debt service,0.18975,Ratio   
+1961,Times interest earned,Liquidity,Times interest earned,9.88347,Ratio   
+1961,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,13.2897,Percent    
+1961,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,15.32656,Percent    
+1961,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,86.7103,Percent    
+1960,Net farm income ratio,Efficiency,Net farm income,0.29593,Ratio   
+1960,Debt service ratio,Liquidity,Debt service,0.18407,Ratio   
+1960,Times interest earned,Liquidity,Times interest earned,9.84389,Ratio   
+1960,"Debt to asset ratio, excl. operator dwellings",Solvency,Debt to asset ratio,12.8739,Percent    
+1960,"Debt to equity ratio, excl. operator dwellings",Solvency,Debt to equity ratio,14.77617,Percent    
+1960,"Equity to asset ratio, excl. operator dwellings",Solvency,Equity to asset ratio,87.1261,Percent    

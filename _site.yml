@@ -23,6 +23,8 @@ navbar:
       href: lazarus-report.html
     - text: "Gross sales of ag businesses"
       href: ag-business-revenue.html
+    - text: "Farm solvency and liquidity"
+      href: farm-financials-analysis.html
       
 output:
   html_document:
