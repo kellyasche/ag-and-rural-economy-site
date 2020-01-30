@@ -143,7 +143,7 @@ farm.crisis.mean <- us.farm.financial.ratios %>%
 
 Overall, the solvency for Minnesota farms still looks strong. Although the measurements are beginning to worsen, they are still significantly better than the average measurements during the 1980s farm crisis.
 
-Liquidity, on the other hand, is beginning to worsen with the continued low crop commodity prices. The measurements show that current assets for farmers are less able to cover current liabilities. This is concerning since current assets are where farmers turn to cover liabilities when prices are low. 
+Liquidity, on the other hand, is beginning to show signs of strain with the continued low crop commodity prices. The measurements show that current assets for farmers are less able to cover current liabilities. This is concerning since current assets are where farmers turn to cover liabilities when prices are low. 
 
 <br>
 
@@ -172,13 +172,13 @@ Another measure of a farms ability to meet its debt obligations is it's liquidit
 
 ## Solvency
 
-Overall, these charts highlight worsening solvency measures for farms in Minnesota since the peak in the early 2010s, but nothing to be too worries about. None of these measures are coming close to the averages experienced during the farm crisis of the 1980s.
+Overall, these charts highlight worsening solvency measures for farms in Minnesota since the peak in the early 2010s. However, none of these measures are coming close to the averages experienced during the farm crisis of the 1980s.
 
 **Debt-to-asset ratio**: The debt-to-asset ratio defines the total amount of debt relative to assets. The higher the percentage means there is a higher financial risk. Over the last 4 years, this ratio has had debt of 13% relative to their assets per farm. This is well below the average during the farm crisis, and, is actually in the bottom quartile of observations of this ratio since 1960.
 
 **Debt-to-equity ratio**: The debt-to-equity ratio is calculated by dividing a farms total liabilities by its equity. It is a measure of the degree to which a company is financing its operations through debt versus wholly-owned funds. A high ratio is often associated with high risk; it means that a farm has been aggressive in financing its growth with debt. Over the last 4 years, Minnesota farms has had a debt averaging 15% of their total assets. This is well below the 23% averaged during the farm crisis.
 
-**Equity-to-asset ratio**": The Equity-To-Asset ratio specifically measures the amount of equity the business or farm has when compared to the total assets owned by the business or farm. For this measure, the higher the percentage, the less the farm is leveraged or owned by the bank through debt. Essentially, this is the opposite of the debt-to-asset ratio and these two summed together should add to 100% each year. Over the last 4 years, MN farms have had 87% equity-to-asset ratio which is significantly higher than the 81% averaged during the farm crisis.
+**Equity-to-asset ratio**: The equity-to-asset ratio specifically measures the amount of equity the business or farm has when compared to the total assets owned by the business or farm. For this measure, the higher the percentage, the less the farm is leveraged or owned by the bank through debt. Essentially, this is the opposite of the debt-to-asset ratio and these two summed together should add to 100% each year. Over the last 4 years, MN farms have had 87% equity-to-asset ratio which is significantly higher than the 81% averaged during the farm crisis.
 
 
 <br>
@@ -244,11 +244,11 @@ girafe(ggobj = plot_grid(solvency.ratios.top.plot, NULL, solvency.ratios.bottom.
 
 ## Liquidity
 
-Overall, the charts below are showing that farmers are increasingly looking deeper into their liquid assets to meet liability demands. In particular, the current ratio shows significant that current assets are becoming less able to pay for current liabilities. 
+Overall, the charts below are showing that farmers are increasingly looking deeper into their liquid assets to meet liability demands. In particular, the current ratio shows that current assets are becoming less able to pay for current liabilities and farmers are likely looking beyond cash on hand to pay portions of their debt obligations. 
 
 **Current ratio**: The Current Ratio specifically measures the extent to which current farm assets would pay a business’ or farms’ current liabilities (loans, accounts payable, etc.…) through the sales of its current assets. For example, in 2018 the average current ratio per farm in Minnesota was 170%, meaning for every dollar $1.00 a farm operation owes in current liabilities it has $1.70 in current assets to pay for those current liabilities. Over the last four years, farms have averaged 170% in current ratio. Unfortunately, we don't have historic numbers to compare against, but this is definitely the lowest value since the early 2000s by a significant margin. This means that farms are relying more and more on current assets, beyond just cash, to pay for current debts.
 
-**Times interest earned ratio**: One measure of debt relative to income generation is the times interest earned ratio. This ratio measures net farm income plus interest expenses relative to interest expenses. For instance, a value of 5 would indicate that at the sector level, net income plus interest expense is 5 times greater than interest expenses. So, larger values indicate a more comfortable financial situation. Over the last four years, Minnesota farms have averaged net income plus interest expense 6 times greater than interest expense. During the farm crisis in the 1980s it averaged 3 times greater.
+**Times interest earned ratio**: One measure of debt relative to income generation is the times interest earned ratio. This ratio measures net farm income relative to interest expenses. For instance, a value of 5 would indicate that at the sector level, net income plus interest expense is 5 times greater than interest expenses. So, larger values indicate a more comfortable financial situation. Over the last four years, Minnesota farms have averaged net income plus interest expense 6 times greater than interest expense. During the farm crisis in the 1980s it averaged 3 times greater.
 
 <br>
 
