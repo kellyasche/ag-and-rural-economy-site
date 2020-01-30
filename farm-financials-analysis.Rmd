@@ -145,7 +145,7 @@ Overall, the solvency for Minnesota farms still looks strong. Although the measu
 
 Liquidity, on the other hand, is beginning to worsen with the continued low crop commodity prices. The measurements show that current assets for farmers are less able to cover current liabilities. This is concerning since current assets are where farmers turn to cover liabilities when prices are low. 
 
-br>
+<br>
 
 # Definitions
 
