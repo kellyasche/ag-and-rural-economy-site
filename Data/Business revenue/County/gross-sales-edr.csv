@@ -1,0 +1,1051 @@
+edr,year,sales.type,dollars
+EDR 1 - Northwest,2003,gross.sales,2762143254
+EDR 1 - Northwest,2003,sales.tax,29363664
+EDR 1 - Northwest,2003,taxable.sales,441113815
+EDR 1 - Northwest,2003,total.tax,30337522
+EDR 1 - Northwest,2003,use.tax,973858
+EDR 1 - Northwest,2004,gross.sales,3346620862
+EDR 1 - Northwest,2004,sales.tax,30811899
+EDR 1 - Northwest,2004,taxable.sales,462924254
+EDR 1 - Northwest,2004,total.tax,31939600
+EDR 1 - Northwest,2004,use.tax,1127701
+EDR 1 - Northwest,2005,gross.sales,3065353592
+EDR 1 - Northwest,2005,sales.tax,29998621
+EDR 1 - Northwest,2005,taxable.sales,452020788
+EDR 1 - Northwest,2005,total.tax,30932189
+EDR 1 - Northwest,2005,use.tax,933568
+EDR 1 - Northwest,2006,gross.sales,3658506712
+EDR 1 - Northwest,2006,sales.tax,30764682
+EDR 1 - Northwest,2006,taxable.sales,461802705
+EDR 1 - Northwest,2006,total.tax,32395414
+EDR 1 - Northwest,2006,use.tax,1630732
+EDR 1 - Northwest,2007,gross.sales,3004145668
+EDR 1 - Northwest,2007,sales.tax,35008831
+EDR 1 - Northwest,2007,taxable.sales,526097465
+EDR 1 - Northwest,2007,total.tax,36605239
+EDR 1 - Northwest,2007,use.tax,1596408
+EDR 1 - Northwest,2008,gross.sales,3232498327
+EDR 1 - Northwest,2008,sales.tax,35321246
+EDR 1 - Northwest,2008,taxable.sales,530939038
+EDR 1 - Northwest,2008,total.tax,37059524
+EDR 1 - Northwest,2008,use.tax,1738278
+EDR 1 - Northwest,2009,gross.sales,2679004623
+EDR 1 - Northwest,2009,sales.tax,35881651
+EDR 1 - Northwest,2009,taxable.sales,523702035
+EDR 1 - Northwest,2009,total.tax,37481271
+EDR 1 - Northwest,2009,use.tax,1599620
+EDR 1 - Northwest,2010,gross.sales,2798540119
+EDR 1 - Northwest,2010,sales.tax,36917996
+EDR 1 - Northwest,2010,taxable.sales,525002683
+EDR 1 - Northwest,2010,total.tax,38907459
+EDR 1 - Northwest,2010,use.tax,1989463
+EDR 1 - Northwest,2011,gross.sales,3166547699
+EDR 1 - Northwest,2011,sales.tax,38969002
+EDR 1 - Northwest,2011,taxable.sales,555093787
+EDR 1 - Northwest,2011,total.tax,40731268
+EDR 1 - Northwest,2011,use.tax,1762266
+EDR 1 - Northwest,2012,gross.sales,3399689941
+EDR 1 - Northwest,2012,sales.tax,40786559
+EDR 1 - Northwest,2012,taxable.sales,581090095
+EDR 1 - Northwest,2012,total.tax,42521253
+EDR 1 - Northwest,2012,use.tax,1734694
+EDR 1 - Northwest,2013,gross.sales,3656464365
+EDR 1 - Northwest,2013,sales.tax,43093869
+EDR 1 - Northwest,2013,taxable.sales,615027364
+EDR 1 - Northwest,2013,total.tax,44986282
+EDR 1 - Northwest,2013,use.tax,1892413
+EDR 1 - Northwest,2014,gross.sales,3592613105
+EDR 1 - Northwest,2014,sales.tax,42514519
+EDR 1 - Northwest,2014,taxable.sales,605996767
+EDR 1 - Northwest,2014,total.tax,44435034
+EDR 1 - Northwest,2014,use.tax,1920515
+EDR 1 - Northwest,2015,gross.sales,3148104561
+EDR 1 - Northwest,2015,sales.tax,42356225
+EDR 1 - Northwest,2015,taxable.sales,602788815
+EDR 1 - Northwest,2015,total.tax,44332516
+EDR 1 - Northwest,2015,use.tax,1976291
+EDR 1 - Northwest,2016,gross.sales,2936797092
+EDR 1 - Northwest,2016,sales.tax,41566422
+EDR 1 - Northwest,2016,taxable.sales,592168039
+EDR 1 - Northwest,2016,total.tax,42912891
+EDR 1 - Northwest,2016,use.tax,1346469
+EDR 1 - Northwest,2017,gross.sales,2899665013
+EDR 1 - Northwest,2017,sales.tax,42200163
+EDR 1 - Northwest,2017,taxable.sales,601664229
+EDR 1 - Northwest,2017,total.tax,44106475
+EDR 1 - Northwest,2017,use.tax,1906312
+EDR 2 - Headwaters,2003,gross.sales,1484731299
+EDR 2 - Headwaters,2003,sales.tax,38933440
+EDR 2 - Headwaters,2003,taxable.sales,588388316
+EDR 2 - Headwaters,2003,total.tax,40518668
+EDR 2 - Headwaters,2003,use.tax,1585228
+EDR 2 - Headwaters,2004,gross.sales,1626898020
+EDR 2 - Headwaters,2004,sales.tax,41807797
+EDR 2 - Headwaters,2004,taxable.sales,630893562
+EDR 2 - Headwaters,2004,total.tax,43412345
+EDR 2 - Headwaters,2004,use.tax,1604548
+EDR 2 - Headwaters,2005,gross.sales,1722239238
+EDR 2 - Headwaters,2005,sales.tax,42138156
+EDR 2 - Headwaters,2005,taxable.sales,634546654
+EDR 2 - Headwaters,2005,total.tax,44422487
+EDR 2 - Headwaters,2005,use.tax,2284331
+EDR 2 - Headwaters,2006,gross.sales,1961641803
+EDR 2 - Headwaters,2006,sales.tax,42123716
+EDR 2 - Headwaters,2006,taxable.sales,633210193
+EDR 2 - Headwaters,2006,total.tax,44042083
+EDR 2 - Headwaters,2006,use.tax,1918367
+EDR 2 - Headwaters,2007,gross.sales,1964108712
+EDR 2 - Headwaters,2007,sales.tax,43702094
+EDR 2 - Headwaters,2007,taxable.sales,656680279
+EDR 2 - Headwaters,2007,total.tax,45946064
+EDR 2 - Headwaters,2007,use.tax,2243970
+EDR 2 - Headwaters,2008,gross.sales,1937646991
+EDR 2 - Headwaters,2008,sales.tax,43241163
+EDR 2 - Headwaters,2008,taxable.sales,649189232
+EDR 2 - Headwaters,2008,total.tax,45874285
+EDR 2 - Headwaters,2008,use.tax,2633122
+EDR 2 - Headwaters,2009,gross.sales,1856105559
+EDR 2 - Headwaters,2009,sales.tax,44173382
+EDR 2 - Headwaters,2009,taxable.sales,643219738
+EDR 2 - Headwaters,2009,total.tax,46162450
+EDR 2 - Headwaters,2009,use.tax,1989068
+EDR 2 - Headwaters,2010,gross.sales,2008089003
+EDR 2 - Headwaters,2010,sales.tax,45800471
+EDR 2 - Headwaters,2010,taxable.sales,650206347
+EDR 2 - Headwaters,2010,total.tax,47693150
+EDR 2 - Headwaters,2010,use.tax,1892679
+EDR 2 - Headwaters,2011,gross.sales,2168426627
+EDR 2 - Headwaters,2011,sales.tax,48014206
+EDR 2 - Headwaters,2011,taxable.sales,681790728
+EDR 2 - Headwaters,2011,total.tax,50068780
+EDR 2 - Headwaters,2011,use.tax,2054574
+EDR 2 - Headwaters,2012,gross.sales,2267012266
+EDR 2 - Headwaters,2012,sales.tax,50219931
+EDR 2 - Headwaters,2012,taxable.sales,712722444
+EDR 2 - Headwaters,2012,total.tax,52689620
+EDR 2 - Headwaters,2012,use.tax,2469689
+EDR 2 - Headwaters,2013,gross.sales,2531429869
+EDR 2 - Headwaters,2013,sales.tax,53659487
+EDR 2 - Headwaters,2013,taxable.sales,762271286
+EDR 2 - Headwaters,2013,total.tax,55896066
+EDR 2 - Headwaters,2013,use.tax,2236579
+EDR 2 - Headwaters,2014,gross.sales,2695214698
+EDR 2 - Headwaters,2014,sales.tax,56812379
+EDR 2 - Headwaters,2014,taxable.sales,806632540
+EDR 2 - Headwaters,2014,total.tax,59591684
+EDR 2 - Headwaters,2014,use.tax,2779305
+EDR 2 - Headwaters,2015,gross.sales,2652417845
+EDR 2 - Headwaters,2015,sales.tax,59281536
+EDR 2 - Headwaters,2015,taxable.sales,841774572
+EDR 2 - Headwaters,2015,total.tax,61301808
+EDR 2 - Headwaters,2015,use.tax,2020272
+EDR 2 - Headwaters,2016,gross.sales,2642383977
+EDR 2 - Headwaters,2016,sales.tax,59955123
+EDR 2 - Headwaters,2016,taxable.sales,850662104
+EDR 2 - Headwaters,2016,total.tax,61703968
+EDR 2 - Headwaters,2016,use.tax,1748845
+EDR 2 - Headwaters,2017,gross.sales,2826226739
+EDR 2 - Headwaters,2017,sales.tax,61053125
+EDR 2 - Headwaters,2017,taxable.sales,865968950
+EDR 2 - Headwaters,2017,total.tax,63151168
+EDR 2 - Headwaters,2017,use.tax,2098043
+EDR 3 - Arrowhead,2003,gross.sales,9329098034
+EDR 3 - Arrowhead,2003,sales.tax,195284380
+EDR 3 - Arrowhead,2003,taxable.sales,2951286677
+EDR 3 - Arrowhead,2003,total.tax,209232125
+EDR 3 - Arrowhead,2003,use.tax,13947745
+EDR 3 - Arrowhead,2004,gross.sales,9574727975
+EDR 3 - Arrowhead,2004,sales.tax,204968649
+EDR 3 - Arrowhead,2004,taxable.sales,3097318592
+EDR 3 - Arrowhead,2004,total.tax,221069865
+EDR 3 - Arrowhead,2004,use.tax,16101216
+EDR 3 - Arrowhead,2005,gross.sales,10883266803
+EDR 3 - Arrowhead,2005,sales.tax,211898132
+EDR 3 - Arrowhead,2005,taxable.sales,3202254290
+EDR 3 - Arrowhead,2005,total.tax,232395988
+EDR 3 - Arrowhead,2005,use.tax,20497856
+EDR 3 - Arrowhead,2006,gross.sales,12743568526
+EDR 3 - Arrowhead,2006,sales.tax,219527926
+EDR 3 - Arrowhead,2006,taxable.sales,3316358579
+EDR 3 - Arrowhead,2006,total.tax,242253346
+EDR 3 - Arrowhead,2006,use.tax,22725420
+EDR 3 - Arrowhead,2007,gross.sales,11538548042
+EDR 3 - Arrowhead,2007,sales.tax,218051213
+EDR 3 - Arrowhead,2007,taxable.sales,3288288311
+EDR 3 - Arrowhead,2007,total.tax,237551637
+EDR 3 - Arrowhead,2007,use.tax,19500424
+EDR 3 - Arrowhead,2008,gross.sales,11394947343
+EDR 3 - Arrowhead,2008,sales.tax,200589772
+EDR 3 - Arrowhead,2008,taxable.sales,3018667482
+EDR 3 - Arrowhead,2008,total.tax,221116119
+EDR 3 - Arrowhead,2008,use.tax,20526347
+EDR 3 - Arrowhead,2009,gross.sales,10264517339
+EDR 3 - Arrowhead,2009,sales.tax,198952715
+EDR 3 - Arrowhead,2009,taxable.sales,2904290797
+EDR 3 - Arrowhead,2009,total.tax,226756522
+EDR 3 - Arrowhead,2009,use.tax,27803807
+EDR 3 - Arrowhead,2010,gross.sales,10848647764
+EDR 3 - Arrowhead,2010,sales.tax,207045967
+EDR 3 - Arrowhead,2010,taxable.sales,2946466618
+EDR 3 - Arrowhead,2010,total.tax,231408739
+EDR 3 - Arrowhead,2010,use.tax,24362772
+EDR 3 - Arrowhead,2011,gross.sales,11926046990
+EDR 3 - Arrowhead,2011,sales.tax,213300015
+EDR 3 - Arrowhead,2011,taxable.sales,3033672798
+EDR 3 - Arrowhead,2011,total.tax,241988982
+EDR 3 - Arrowhead,2011,use.tax,28688967
+EDR 3 - Arrowhead,2012,gross.sales,11977179532
+EDR 3 - Arrowhead,2012,sales.tax,225592526
+EDR 3 - Arrowhead,2012,taxable.sales,3210112268
+EDR 3 - Arrowhead,2012,total.tax,258470624
+EDR 3 - Arrowhead,2012,use.tax,32878098
+EDR 3 - Arrowhead,2013,gross.sales,12493755550
+EDR 3 - Arrowhead,2013,sales.tax,228349084
+EDR 3 - Arrowhead,2013,taxable.sales,3245270435
+EDR 3 - Arrowhead,2013,total.tax,260977411
+EDR 3 - Arrowhead,2013,use.tax,32628327
+EDR 3 - Arrowhead,2014,gross.sales,13109083136
+EDR 3 - Arrowhead,2014,sales.tax,237564640
+EDR 3 - Arrowhead,2014,taxable.sales,3375279652
+EDR 3 - Arrowhead,2014,total.tax,278252256
+EDR 3 - Arrowhead,2014,use.tax,40687616
+EDR 3 - Arrowhead,2015,gross.sales,12375721372
+EDR 3 - Arrowhead,2015,sales.tax,243309266
+EDR 3 - Arrowhead,2015,taxable.sales,3455246245
+EDR 3 - Arrowhead,2015,total.tax,271460048
+EDR 3 - Arrowhead,2015,use.tax,28150782
+EDR 3 - Arrowhead,2016,gross.sales,12063557674
+EDR 3 - Arrowhead,2016,sales.tax,244303269
+EDR 3 - Arrowhead,2016,taxable.sales,3466744101
+EDR 3 - Arrowhead,2016,total.tax,259305362
+EDR 3 - Arrowhead,2016,use.tax,15002093
+EDR 3 - Arrowhead,2017,gross.sales,11533215479
+EDR 3 - Arrowhead,2017,sales.tax,246491207
+EDR 3 - Arrowhead,2017,taxable.sales,3496181158
+EDR 3 - Arrowhead,2017,total.tax,266018663
+EDR 3 - Arrowhead,2017,use.tax,19527456
+EDR 4 - West Central,2003,gross.sales,5170144614
+EDR 4 - West Central,2003,sales.tax,109093168
+EDR 4 - West Central,2003,taxable.sales,1653314483
+EDR 4 - West Central,2003,total.tax,113863395
+EDR 4 - West Central,2003,use.tax,4770227
+EDR 4 - West Central,2004,gross.sales,5642462692
+EDR 4 - West Central,2004,sales.tax,120137205
+EDR 4 - West Central,2004,taxable.sales,1820438930
+EDR 4 - West Central,2004,total.tax,124081068
+EDR 4 - West Central,2004,use.tax,3943863
+EDR 4 - West Central,2005,gross.sales,5965529512
+EDR 4 - West Central,2005,sales.tax,123647814
+EDR 4 - West Central,2005,taxable.sales,1872533561
+EDR 4 - West Central,2005,total.tax,128187933
+EDR 4 - West Central,2005,use.tax,4540119
+EDR 4 - West Central,2006,gross.sales,6557272216
+EDR 4 - West Central,2006,sales.tax,126153505
+EDR 4 - West Central,2006,taxable.sales,1909911821
+EDR 4 - West Central,2006,total.tax,130952005
+EDR 4 - West Central,2006,use.tax,4798500
+EDR 4 - West Central,2007,gross.sales,7145480055
+EDR 4 - West Central,2007,sales.tax,134386837
+EDR 4 - West Central,2007,taxable.sales,2033340907
+EDR 4 - West Central,2007,total.tax,139359578
+EDR 4 - West Central,2007,use.tax,4972741
+EDR 4 - West Central,2008,gross.sales,8065414046
+EDR 4 - West Central,2008,sales.tax,130430985
+EDR 4 - West Central,2008,taxable.sales,1972540059
+EDR 4 - West Central,2008,total.tax,135055963
+EDR 4 - West Central,2008,use.tax,4624978
+EDR 4 - West Central,2009,gross.sales,6870659362
+EDR 4 - West Central,2009,sales.tax,129256934
+EDR 4 - West Central,2009,taxable.sales,1895818129
+EDR 4 - West Central,2009,total.tax,133614596
+EDR 4 - West Central,2009,use.tax,4357662
+EDR 4 - West Central,2010,gross.sales,7515832117
+EDR 4 - West Central,2010,sales.tax,130225495
+EDR 4 - West Central,2010,taxable.sales,1859556060
+EDR 4 - West Central,2010,total.tax,135226924
+EDR 4 - West Central,2010,use.tax,5001429
+EDR 4 - West Central,2011,gross.sales,8526599487
+EDR 4 - West Central,2011,sales.tax,135175037
+EDR 4 - West Central,2011,taxable.sales,1930362049
+EDR 4 - West Central,2011,total.tax,141086710
+EDR 4 - West Central,2011,use.tax,5911673
+EDR 4 - West Central,2012,gross.sales,9210879946
+EDR 4 - West Central,2012,sales.tax,142786892
+EDR 4 - West Central,2012,taxable.sales,2039232843
+EDR 4 - West Central,2012,total.tax,149547789
+EDR 4 - West Central,2012,use.tax,6760897
+EDR 4 - West Central,2013,gross.sales,9914143157
+EDR 4 - West Central,2013,sales.tax,148495178
+EDR 4 - West Central,2013,taxable.sales,2119993158
+EDR 4 - West Central,2013,total.tax,156540788
+EDR 4 - West Central,2013,use.tax,8045610
+EDR 4 - West Central,2014,gross.sales,9708358686
+EDR 4 - West Central,2014,sales.tax,151019132
+EDR 4 - West Central,2014,taxable.sales,2154746911
+EDR 4 - West Central,2014,total.tax,159647707
+EDR 4 - West Central,2014,use.tax,8628575
+EDR 4 - West Central,2015,gross.sales,9187418948
+EDR 4 - West Central,2015,sales.tax,153489979
+EDR 4 - West Central,2015,taxable.sales,2189627627
+EDR 4 - West Central,2015,total.tax,160743156
+EDR 4 - West Central,2015,use.tax,7253177
+EDR 4 - West Central,2016,gross.sales,8812226824
+EDR 4 - West Central,2016,sales.tax,155161324
+EDR 4 - West Central,2016,taxable.sales,2213124289
+EDR 4 - West Central,2016,total.tax,161090199
+EDR 4 - West Central,2016,use.tax,5928875
+EDR 4 - West Central,2017,gross.sales,9240590026
+EDR 4 - West Central,2017,sales.tax,160898401
+EDR 4 - West Central,2017,taxable.sales,2295757920
+EDR 4 - West Central,2017,total.tax,167627561
+EDR 4 - West Central,2017,use.tax,6729160
+EDR 5 - North Central,2003,gross.sales,4118768877
+EDR 5 - North Central,2003,sales.tax,88133986
+EDR 5 - North Central,2003,taxable.sales,1332338108
+EDR 5 - North Central,2003,total.tax,90281617
+EDR 5 - North Central,2003,use.tax,2147631
+EDR 5 - North Central,2004,gross.sales,4447803273
+EDR 5 - North Central,2004,sales.tax,93575186
+EDR 5 - North Central,2004,taxable.sales,1413997476
+EDR 5 - North Central,2004,total.tax,95943217
+EDR 5 - North Central,2004,use.tax,2368031
+EDR 5 - North Central,2005,gross.sales,4649455662
+EDR 5 - North Central,2005,sales.tax,93999692
+EDR 5 - North Central,2005,taxable.sales,1417482846
+EDR 5 - North Central,2005,total.tax,96256237
+EDR 5 - North Central,2005,use.tax,2256545
+EDR 5 - North Central,2006,gross.sales,4800448712
+EDR 5 - North Central,2006,sales.tax,93729851
+EDR 5 - North Central,2006,taxable.sales,1411562987
+EDR 5 - North Central,2006,total.tax,96188515
+EDR 5 - North Central,2006,use.tax,2458664
+EDR 5 - North Central,2007,gross.sales,4798138282
+EDR 5 - North Central,2007,sales.tax,95433268
+EDR 5 - North Central,2007,taxable.sales,1434459251
+EDR 5 - North Central,2007,total.tax,98097406
+EDR 5 - North Central,2007,use.tax,2664138
+EDR 5 - North Central,2008,gross.sales,4699093642
+EDR 5 - North Central,2008,sales.tax,92623016
+EDR 5 - North Central,2008,taxable.sales,1390550158
+EDR 5 - North Central,2008,total.tax,95217099
+EDR 5 - North Central,2008,use.tax,2594083
+EDR 5 - North Central,2009,gross.sales,4335428119
+EDR 5 - North Central,2009,sales.tax,89556594
+EDR 5 - North Central,2009,taxable.sales,1302472088
+EDR 5 - North Central,2009,total.tax,91535889
+EDR 5 - North Central,2009,use.tax,1979295
+EDR 5 - North Central,2010,gross.sales,4778214233
+EDR 5 - North Central,2010,sales.tax,93310170
+EDR 5 - North Central,2010,taxable.sales,1323218936
+EDR 5 - North Central,2010,total.tax,95568567
+EDR 5 - North Central,2010,use.tax,2258397
+EDR 5 - North Central,2011,gross.sales,5086927073
+EDR 5 - North Central,2011,sales.tax,95270608
+EDR 5 - North Central,2011,taxable.sales,1351722844
+EDR 5 - North Central,2011,total.tax,97488688
+EDR 5 - North Central,2011,use.tax,2218080
+EDR 5 - North Central,2012,gross.sales,5367607176
+EDR 5 - North Central,2012,sales.tax,100448608
+EDR 5 - North Central,2012,taxable.sales,1425395178
+EDR 5 - North Central,2012,total.tax,103325452
+EDR 5 - North Central,2012,use.tax,2876844
+EDR 5 - North Central,2013,gross.sales,5482288232
+EDR 5 - North Central,2013,sales.tax,105561606
+EDR 5 - North Central,2013,taxable.sales,1498147320
+EDR 5 - North Central,2013,total.tax,108251840
+EDR 5 - North Central,2013,use.tax,2690234
+EDR 5 - North Central,2014,gross.sales,5875112440
+EDR 5 - North Central,2014,sales.tax,108601090
+EDR 5 - North Central,2014,taxable.sales,1539051810
+EDR 5 - North Central,2014,total.tax,111446270
+EDR 5 - North Central,2014,use.tax,2845180
+EDR 5 - North Central,2015,gross.sales,6030484056
+EDR 5 - North Central,2015,sales.tax,113484145
+EDR 5 - North Central,2015,taxable.sales,1608810652
+EDR 5 - North Central,2015,total.tax,116342005
+EDR 5 - North Central,2015,use.tax,2857860
+EDR 5 - North Central,2016,gross.sales,5972560697
+EDR 5 - North Central,2016,sales.tax,117521491
+EDR 5 - North Central,2016,taxable.sales,1667416900
+EDR 5 - North Central,2016,total.tax,119935460
+EDR 5 - North Central,2016,use.tax,2413969
+EDR 5 - North Central,2017,gross.sales,6107969151
+EDR 5 - North Central,2017,sales.tax,122826118
+EDR 5 - North Central,2017,taxable.sales,1743794946
+EDR 5 - North Central,2017,total.tax,125640268
+EDR 5 - North Central,2017,use.tax,2814150
+EDR 6E- Southwest Central,2003,gross.sales,3297712351
+EDR 6E- Southwest Central,2003,sales.tax,54200443
+EDR 6E- Southwest Central,2003,taxable.sales,822319793
+EDR 6E- Southwest Central,2003,total.tax,58994074
+EDR 6E- Southwest Central,2003,use.tax,4793631
+EDR 6E- Southwest Central,2004,gross.sales,3684043819
+EDR 6E- Southwest Central,2004,sales.tax,59852093
+EDR 6E- Southwest Central,2004,taxable.sales,907631850
+EDR 6E- Southwest Central,2004,total.tax,64788219
+EDR 6E- Southwest Central,2004,use.tax,4936126
+EDR 6E- Southwest Central,2005,gross.sales,3814143274
+EDR 6E- Southwest Central,2005,sales.tax,61889826
+EDR 6E- Southwest Central,2005,taxable.sales,938801107
+EDR 6E- Southwest Central,2005,total.tax,68367302
+EDR 6E- Southwest Central,2005,use.tax,6477476
+EDR 6E- Southwest Central,2006,gross.sales,3989860349
+EDR 6E- Southwest Central,2006,sales.tax,62397321
+EDR 6E- Southwest Central,2006,taxable.sales,945906875
+EDR 6E- Southwest Central,2006,total.tax,73662615
+EDR 6E- Southwest Central,2006,use.tax,11265294
+EDR 6E- Southwest Central,2007,gross.sales,4521632569
+EDR 6E- Southwest Central,2007,sales.tax,63204756
+EDR 6E- Southwest Central,2007,taxable.sales,957591442
+EDR 6E- Southwest Central,2007,total.tax,68258209
+EDR 6E- Southwest Central,2007,use.tax,5053453
+EDR 6E- Southwest Central,2008,gross.sales,4656285447
+EDR 6E- Southwest Central,2008,sales.tax,65372960
+EDR 6E- Southwest Central,2008,taxable.sales,990347264
+EDR 6E- Southwest Central,2008,total.tax,69432745
+EDR 6E- Southwest Central,2008,use.tax,4059785
+EDR 6E- Southwest Central,2009,gross.sales,4217660864
+EDR 6E- Southwest Central,2009,sales.tax,62186986
+EDR 6E- Southwest Central,2009,taxable.sales,913559538
+EDR 6E- Southwest Central,2009,total.tax,66670756
+EDR 6E- Southwest Central,2009,use.tax,4483770
+EDR 6E- Southwest Central,2010,gross.sales,4250234290
+EDR 6E- Southwest Central,2010,sales.tax,66379863
+EDR 6E- Southwest Central,2010,taxable.sales,950313740
+EDR 6E- Southwest Central,2010,total.tax,70417898
+EDR 6E- Southwest Central,2010,use.tax,4038035
+EDR 6E- Southwest Central,2011,gross.sales,4900749633
+EDR 6E- Southwest Central,2011,sales.tax,72079307
+EDR 6E- Southwest Central,2011,taxable.sales,1033006829
+EDR 6E- Southwest Central,2011,total.tax,76056070
+EDR 6E- Southwest Central,2011,use.tax,3976763
+EDR 6E- Southwest Central,2012,gross.sales,5162217979
+EDR 6E- Southwest Central,2012,sales.tax,75237686
+EDR 6E- Southwest Central,2012,taxable.sales,1078070197
+EDR 6E- Southwest Central,2012,total.tax,80191985
+EDR 6E- Southwest Central,2012,use.tax,4954299
+EDR 6E- Southwest Central,2013,gross.sales,5411444560
+EDR 6E- Southwest Central,2013,sales.tax,74949781
+EDR 6E- Southwest Central,2013,taxable.sales,1073288894
+EDR 6E- Southwest Central,2013,total.tax,80714035
+EDR 6E- Southwest Central,2013,use.tax,5764254
+EDR 6E- Southwest Central,2014,gross.sales,5591588778
+EDR 6E- Southwest Central,2014,sales.tax,77130870
+EDR 6E- Southwest Central,2014,taxable.sales,1104242735
+EDR 6E- Southwest Central,2014,total.tax,82858512
+EDR 6E- Southwest Central,2014,use.tax,5727642
+EDR 6E- Southwest Central,2015,gross.sales,5163274237
+EDR 6E- Southwest Central,2015,sales.tax,77704521
+EDR 6E- Southwest Central,2015,taxable.sales,1112459336
+EDR 6E- Southwest Central,2015,total.tax,82714710
+EDR 6E- Southwest Central,2015,use.tax,5010189
+EDR 6E- Southwest Central,2016,gross.sales,5217981070
+EDR 6E- Southwest Central,2016,sales.tax,77951176
+EDR 6E- Southwest Central,2016,taxable.sales,1116063645
+EDR 6E- Southwest Central,2016,total.tax,82095869
+EDR 6E- Southwest Central,2016,use.tax,4144693
+EDR 6E- Southwest Central,2017,gross.sales,5510039573
+EDR 6E- Southwest Central,2017,sales.tax,81965754
+EDR 6E- Southwest Central,2017,taxable.sales,1173961202
+EDR 6E- Southwest Central,2017,total.tax,86209007
+EDR 6E- Southwest Central,2017,use.tax,4243253
+EDR 6W- Upper Minnesota Valley,2003,gross.sales,969733247
+EDR 6W- Upper Minnesota Valley,2003,sales.tax,14200501
+EDR 6W- Upper Minnesota Valley,2003,taxable.sales,213368529
+EDR 6W- Upper Minnesota Valley,2003,total.tax,14838977
+EDR 6W- Upper Minnesota Valley,2003,use.tax,638476
+EDR 6W- Upper Minnesota Valley,2004,gross.sales,1134405157
+EDR 6W- Upper Minnesota Valley,2004,sales.tax,14637541
+EDR 6W- Upper Minnesota Valley,2004,taxable.sales,219855705
+EDR 6W- Upper Minnesota Valley,2004,total.tax,15618536
+EDR 6W- Upper Minnesota Valley,2004,use.tax,980995
+EDR 6W- Upper Minnesota Valley,2005,gross.sales,1158486673
+EDR 6W- Upper Minnesota Valley,2005,sales.tax,14883679
+EDR 6W- Upper Minnesota Valley,2005,taxable.sales,223554184
+EDR 6W- Upper Minnesota Valley,2005,total.tax,15854163
+EDR 6W- Upper Minnesota Valley,2005,use.tax,970484
+EDR 6W- Upper Minnesota Valley,2006,gross.sales,1301605499
+EDR 6W- Upper Minnesota Valley,2006,sales.tax,15269372
+EDR 6W- Upper Minnesota Valley,2006,taxable.sales,229351865
+EDR 6W- Upper Minnesota Valley,2006,total.tax,16512729
+EDR 6W- Upper Minnesota Valley,2006,use.tax,1300539
+EDR 6W- Upper Minnesota Valley,2007,gross.sales,1540494192
+EDR 6W- Upper Minnesota Valley,2007,sales.tax,16059891
+EDR 6W- Upper Minnesota Valley,2007,taxable.sales,241175681
+EDR 6W- Upper Minnesota Valley,2007,total.tax,17633938
+EDR 6W- Upper Minnesota Valley,2007,use.tax,1574047
+EDR 6W- Upper Minnesota Valley,2008,gross.sales,1772047559
+EDR 6W- Upper Minnesota Valley,2008,sales.tax,16708708
+EDR 6W- Upper Minnesota Valley,2008,taxable.sales,251171099
+EDR 6W- Upper Minnesota Valley,2008,total.tax,18327657
+EDR 6W- Upper Minnesota Valley,2008,use.tax,1618949
+EDR 6W- Upper Minnesota Valley,2009,gross.sales,1642536560
+EDR 6W- Upper Minnesota Valley,2009,sales.tax,16953230
+EDR 6W- Upper Minnesota Valley,2009,taxable.sales,247222809
+EDR 6W- Upper Minnesota Valley,2009,total.tax,18129555
+EDR 6W- Upper Minnesota Valley,2009,use.tax,1176325
+EDR 6W- Upper Minnesota Valley,2010,gross.sales,1868068625
+EDR 6W- Upper Minnesota Valley,2010,sales.tax,18272973
+EDR 6W- Upper Minnesota Valley,2010,taxable.sales,259864393
+EDR 6W- Upper Minnesota Valley,2010,total.tax,19561967
+EDR 6W- Upper Minnesota Valley,2010,use.tax,1288994
+EDR 6W- Upper Minnesota Valley,2011,gross.sales,2078416559
+EDR 6W- Upper Minnesota Valley,2011,sales.tax,19184854
+EDR 6W- Upper Minnesota Valley,2011,taxable.sales,273150519
+EDR 6W- Upper Minnesota Valley,2011,total.tax,21021485
+EDR 6W- Upper Minnesota Valley,2011,use.tax,1836631
+EDR 6W- Upper Minnesota Valley,2012,gross.sales,2114700999
+EDR 6W- Upper Minnesota Valley,2012,sales.tax,19180772
+EDR 6W- Upper Minnesota Valley,2012,taxable.sales,272839612
+EDR 6W- Upper Minnesota Valley,2012,total.tax,21085680
+EDR 6W- Upper Minnesota Valley,2012,use.tax,1904908
+EDR 6W- Upper Minnesota Valley,2013,gross.sales,2043624602
+EDR 6W- Upper Minnesota Valley,2013,sales.tax,19891587
+EDR 6W- Upper Minnesota Valley,2013,taxable.sales,283322808
+EDR 6W- Upper Minnesota Valley,2013,total.tax,21552430
+EDR 6W- Upper Minnesota Valley,2013,use.tax,1660843
+EDR 6W- Upper Minnesota Valley,2014,gross.sales,1865784678
+EDR 6W- Upper Minnesota Valley,2014,sales.tax,19799864
+EDR 6W- Upper Minnesota Valley,2014,taxable.sales,281885388
+EDR 6W- Upper Minnesota Valley,2014,total.tax,21446237
+EDR 6W- Upper Minnesota Valley,2014,use.tax,1646373
+EDR 6W- Upper Minnesota Valley,2015,gross.sales,1742982517
+EDR 6W- Upper Minnesota Valley,2015,sales.tax,19578660
+EDR 6W- Upper Minnesota Valley,2015,taxable.sales,278400143
+EDR 6W- Upper Minnesota Valley,2015,total.tax,21045810
+EDR 6W- Upper Minnesota Valley,2015,use.tax,1467150
+EDR 6W- Upper Minnesota Valley,2016,gross.sales,1717504952
+EDR 6W- Upper Minnesota Valley,2016,sales.tax,19131729
+EDR 6W- Upper Minnesota Valley,2016,taxable.sales,271780485
+EDR 6W- Upper Minnesota Valley,2016,total.tax,20194509
+EDR 6W- Upper Minnesota Valley,2016,use.tax,1062780
+EDR 6W- Upper Minnesota Valley,2017,gross.sales,1747432324
+EDR 6W- Upper Minnesota Valley,2017,sales.tax,19586427
+EDR 6W- Upper Minnesota Valley,2017,taxable.sales,278361845
+EDR 6W- Upper Minnesota Valley,2017,total.tax,20552674
+EDR 6W- Upper Minnesota Valley,2017,use.tax,966247
+EDR 7E- East Central,2003,gross.sales,2338162271
+EDR 7E- East Central,2003,sales.tax,55169158
+EDR 7E- East Central,2003,taxable.sales,831982966
+EDR 7E- East Central,2003,total.tax,56386956
+EDR 7E- East Central,2003,use.tax,1217798
+EDR 7E- East Central,2004,gross.sales,2623993165
+EDR 7E- East Central,2004,sales.tax,58955976
+EDR 7E- East Central,2004,taxable.sales,889746746
+EDR 7E- East Central,2004,total.tax,60432953
+EDR 7E- East Central,2004,use.tax,1476977
+EDR 7E- East Central,2005,gross.sales,2909467734
+EDR 7E- East Central,2005,sales.tax,60141029
+EDR 7E- East Central,2005,taxable.sales,906282603
+EDR 7E- East Central,2005,total.tax,61681983
+EDR 7E- East Central,2005,use.tax,1540954
+EDR 7E- East Central,2006,gross.sales,2972585489
+EDR 7E- East Central,2006,sales.tax,57985737
+EDR 7E- East Central,2006,taxable.sales,872136788
+EDR 7E- East Central,2006,total.tax,59010973
+EDR 7E- East Central,2006,use.tax,1429981
+EDR 7E- East Central,2007,gross.sales,3191155033
+EDR 7E- East Central,2007,sales.tax,57920412
+EDR 7E- East Central,2007,taxable.sales,869207493
+EDR 7E- East Central,2007,total.tax,59804562
+EDR 7E- East Central,2007,use.tax,1884150
+EDR 7E- East Central,2008,gross.sales,3232969095
+EDR 7E- East Central,2008,sales.tax,57164461
+EDR 7E- East Central,2008,taxable.sales,856184861
+EDR 7E- East Central,2008,total.tax,58798602
+EDR 7E- East Central,2008,use.tax,1634141
+EDR 7E- East Central,2009,gross.sales,2884046314
+EDR 7E- East Central,2009,sales.tax,55863197
+EDR 7E- East Central,2009,taxable.sales,812467716
+EDR 7E- East Central,2009,total.tax,57273922
+EDR 7E- East Central,2009,use.tax,1410725
+EDR 7E- East Central,2010,gross.sales,3094410460
+EDR 7E- East Central,2010,sales.tax,58812961
+EDR 7E- East Central,2010,taxable.sales,832957207
+EDR 7E- East Central,2010,total.tax,60149852
+EDR 7E- East Central,2010,use.tax,1336891
+EDR 7E- East Central,2011,gross.sales,3293271307
+EDR 7E- East Central,2011,sales.tax,60656082
+EDR 7E- East Central,2011,taxable.sales,859291350
+EDR 7E- East Central,2011,total.tax,62049272
+EDR 7E- East Central,2011,use.tax,1393190
+EDR 7E- East Central,2012,gross.sales,3448140796
+EDR 7E- East Central,2012,sales.tax,62783180
+EDR 7E- East Central,2012,taxable.sales,889500077
+EDR 7E- East Central,2012,total.tax,64351369
+EDR 7E- East Central,2012,use.tax,1568189
+EDR 7E- East Central,2013,gross.sales,3737699005
+EDR 7E- East Central,2013,sales.tax,66843428
+EDR 7E- East Central,2013,taxable.sales,948112754
+EDR 7E- East Central,2013,total.tax,68884363
+EDR 7E- East Central,2013,use.tax,2040935
+EDR 7E- East Central,2014,gross.sales,3846424122
+EDR 7E- East Central,2014,sales.tax,70246183
+EDR 7E- East Central,2014,taxable.sales,996447147
+EDR 7E- East Central,2014,total.tax,72648535
+EDR 7E- East Central,2014,use.tax,2402352
+EDR 7E- East Central,2015,gross.sales,3837008929
+EDR 7E- East Central,2015,sales.tax,75327219
+EDR 7E- East Central,2015,taxable.sales,1069281294
+EDR 7E- East Central,2015,total.tax,77458427
+EDR 7E- East Central,2015,use.tax,2131208
+EDR 7E- East Central,2016,gross.sales,3833310894
+EDR 7E- East Central,2016,sales.tax,77314429
+EDR 7E- East Central,2016,taxable.sales,1096748607
+EDR 7E- East Central,2016,total.tax,79532566
+EDR 7E- East Central,2016,use.tax,2218137
+EDR 7E- East Central,2017,gross.sales,3912598853
+EDR 7E- East Central,2017,sales.tax,78769641
+EDR 7E- East Central,2017,taxable.sales,1117039906
+EDR 7E- East Central,2017,total.tax,80917109
+EDR 7E- East Central,2017,use.tax,2147468
+EDR 7W- Central,2003,gross.sales,10971497507
+EDR 7W- Central,2003,sales.tax,197993192
+EDR 7W- Central,2003,taxable.sales,2999826322
+EDR 7W- Central,2003,total.tax,206870879
+EDR 7W- Central,2003,use.tax,8877687
+EDR 7W- Central,2004,gross.sales,12287976659
+EDR 7W- Central,2004,sales.tax,210459517
+EDR 7W- Central,2004,taxable.sales,3186097603
+EDR 7W- Central,2004,total.tax,221031727
+EDR 7W- Central,2004,use.tax,10572210
+EDR 7W- Central,2005,gross.sales,13785558763
+EDR 7W- Central,2005,sales.tax,216917981
+EDR 7W- Central,2005,taxable.sales,3280628184
+EDR 7W- Central,2005,total.tax,230348021
+EDR 7W- Central,2005,use.tax,13430040
+EDR 7W- Central,2006,gross.sales,14986828199
+EDR 7W- Central,2006,sales.tax,224976326
+EDR 7W- Central,2006,taxable.sales,3401937136
+EDR 7W- Central,2006,total.tax,240270482
+EDR 7W- Central,2006,use.tax,15294156
+EDR 7W- Central,2007,gross.sales,15603739146
+EDR 7W- Central,2007,sales.tax,223038884
+EDR 7W- Central,2007,taxable.sales,3369819165
+EDR 7W- Central,2007,total.tax,237164369
+EDR 7W- Central,2007,use.tax,14125485
+EDR 7W- Central,2008,gross.sales,14124956814
+EDR 7W- Central,2008,sales.tax,214584853
+EDR 7W- Central,2008,taxable.sales,3239970481
+EDR 7W- Central,2008,total.tax,227730883
+EDR 7W- Central,2008,use.tax,13146030
+EDR 7W- Central,2009,gross.sales,13344884539
+EDR 7W- Central,2009,sales.tax,209238807
+EDR 7W- Central,2009,taxable.sales,3064969544
+EDR 7W- Central,2009,total.tax,219352421
+EDR 7W- Central,2009,use.tax,10113614
+EDR 7W- Central,2010,gross.sales,13810774541
+EDR 7W- Central,2010,sales.tax,222341346
+EDR 7W- Central,2010,taxable.sales,3172395024
+EDR 7W- Central,2010,total.tax,233663747
+EDR 7W- Central,2010,use.tax,11322401
+EDR 7W- Central,2011,gross.sales,15486448544
+EDR 7W- Central,2011,sales.tax,236430492
+EDR 7W- Central,2011,taxable.sales,3374731089
+EDR 7W- Central,2011,total.tax,248937436
+EDR 7W- Central,2011,use.tax,12506944
+EDR 7W- Central,2012,gross.sales,15900293436
+EDR 7W- Central,2012,sales.tax,247416320
+EDR 7W- Central,2012,taxable.sales,3531375639
+EDR 7W- Central,2012,total.tax,261451581
+EDR 7W- Central,2012,use.tax,14035261
+EDR 7W- Central,2013,gross.sales,16500673211
+EDR 7W- Central,2013,sales.tax,263179377
+EDR 7W- Central,2013,taxable.sales,3756731722
+EDR 7W- Central,2013,total.tax,276900060
+EDR 7W- Central,2013,use.tax,13720683
+EDR 7W- Central,2014,gross.sales,17314449085
+EDR 7W- Central,2014,sales.tax,271443173
+EDR 7W- Central,2014,taxable.sales,3872822564
+EDR 7W- Central,2014,total.tax,287869183
+EDR 7W- Central,2014,use.tax,16426010
+EDR 7W- Central,2015,gross.sales,17337545325
+EDR 7W- Central,2015,sales.tax,282426946
+EDR 7W- Central,2015,taxable.sales,4029393389
+EDR 7W- Central,2015,total.tax,297119146
+EDR 7W- Central,2015,use.tax,14692200
+EDR 7W- Central,2016,gross.sales,17301560822
+EDR 7W- Central,2016,sales.tax,288969366
+EDR 7W- Central,2016,taxable.sales,4123279256
+EDR 7W- Central,2016,total.tax,302253636
+EDR 7W- Central,2016,use.tax,13284270
+EDR 7W- Central,2017,gross.sales,18298769107
+EDR 7W- Central,2017,sales.tax,298341243
+EDR 7W- Central,2017,taxable.sales,4258335938
+EDR 7W- Central,2017,total.tax,312402443
+EDR 7W- Central,2017,use.tax,14061200
+EDR 8 - Southwest,2003,gross.sales,3764665855
+EDR 8 - Southwest,2003,sales.tax,47597460
+EDR 8 - Southwest,2003,taxable.sales,720667882
+EDR 8 - Southwest,2003,total.tax,49327455
+EDR 8 - Southwest,2003,use.tax,1729995
+EDR 8 - Southwest,2004,gross.sales,3567582907
+EDR 8 - Southwest,2004,sales.tax,48858888
+EDR 8 - Southwest,2004,taxable.sales,739630509
+EDR 8 - Southwest,2004,total.tax,51320085
+EDR 8 - Southwest,2004,use.tax,2461197
+EDR 8 - Southwest,2005,gross.sales,3561578692
+EDR 8 - Southwest,2005,sales.tax,52958722
+EDR 8 - Southwest,2005,taxable.sales,802143927
+EDR 8 - Southwest,2005,total.tax,55768784
+EDR 8 - Southwest,2005,use.tax,2810062
+EDR 8 - Southwest,2006,gross.sales,3865253091
+EDR 8 - Southwest,2006,sales.tax,54712129
+EDR 8 - Southwest,2006,taxable.sales,829074855
+EDR 8 - Southwest,2006,total.tax,57811426
+EDR 8 - Southwest,2006,use.tax,3099297
+EDR 8 - Southwest,2007,gross.sales,4289106849
+EDR 8 - Southwest,2007,sales.tax,58607764
+EDR 8 - Southwest,2007,taxable.sales,887884201
+EDR 8 - Southwest,2007,total.tax,62680739
+EDR 8 - Southwest,2007,use.tax,4072975
+EDR 8 - Southwest,2008,gross.sales,5220250027
+EDR 8 - Southwest,2008,sales.tax,59081256
+EDR 8 - Southwest,2008,taxable.sales,894621878
+EDR 8 - Southwest,2008,total.tax,63875479
+EDR 8 - Southwest,2008,use.tax,4794223
+EDR 8 - Southwest,2009,gross.sales,5013489223
+EDR 8 - Southwest,2009,sales.tax,58673578
+EDR 8 - Southwest,2009,taxable.sales,862842478
+EDR 8 - Southwest,2009,total.tax,62807447
+EDR 8 - Southwest,2009,use.tax,4133869
+EDR 8 - Southwest,2010,gross.sales,5562396785
+EDR 8 - Southwest,2010,sales.tax,60195833
+EDR 8 - Southwest,2010,taxable.sales,861660143
+EDR 8 - Southwest,2010,total.tax,64323211
+EDR 8 - Southwest,2010,use.tax,4127378
+EDR 8 - Southwest,2011,gross.sales,7235850747
+EDR 8 - Southwest,2011,sales.tax,70885194
+EDR 8 - Southwest,2011,taxable.sales,1016661684
+EDR 8 - Southwest,2011,total.tax,75314687
+EDR 8 - Southwest,2011,use.tax,4429493
+EDR 8 - Southwest,2012,gross.sales,7420854752
+EDR 8 - Southwest,2012,sales.tax,67136715
+EDR 8 - Southwest,2012,taxable.sales,961258171
+EDR 8 - Southwest,2012,total.tax,71519956
+EDR 8 - Southwest,2012,use.tax,4383241
+EDR 8 - Southwest,2013,gross.sales,7519055689
+EDR 8 - Southwest,2013,sales.tax,68154401
+EDR 8 - Southwest,2013,taxable.sales,975799960
+EDR 8 - Southwest,2013,total.tax,72995629
+EDR 8 - Southwest,2013,use.tax,4841228
+EDR 8 - Southwest,2014,gross.sales,7415080422
+EDR 8 - Southwest,2014,sales.tax,67331077
+EDR 8 - Southwest,2014,taxable.sales,963176453
+EDR 8 - Southwest,2014,total.tax,72114930
+EDR 8 - Southwest,2014,use.tax,4783853
+EDR 8 - Southwest,2015,gross.sales,6464132657
+EDR 8 - Southwest,2015,sales.tax,67811040
+EDR 8 - Southwest,2015,taxable.sales,968910843
+EDR 8 - Southwest,2015,total.tax,71823596
+EDR 8 - Southwest,2015,use.tax,4012556
+EDR 8 - Southwest,2016,gross.sales,6287510822
+EDR 8 - Southwest,2016,sales.tax,66669013
+EDR 8 - Southwest,2016,taxable.sales,952125700
+EDR 8 - Southwest,2016,total.tax,69708166
+EDR 8 - Southwest,2016,use.tax,3039153
+EDR 8 - Southwest,2017,gross.sales,6881815802
+EDR 8 - Southwest,2017,sales.tax,68515488
+EDR 8 - Southwest,2017,taxable.sales,978756742
+EDR 8 - Southwest,2017,total.tax,71856702
+EDR 8 - Southwest,2017,use.tax,3341214
+EDR 9 - South Central,2003,gross.sales,7046843995
+EDR 9 - South Central,2003,sales.tax,106114949
+EDR 9 - South Central,2003,taxable.sales,1605844049
+EDR 9 - South Central,2003,total.tax,110934952
+EDR 9 - South Central,2003,use.tax,4820003
+EDR 9 - South Central,2004,gross.sales,7672458179
+EDR 9 - South Central,2004,sales.tax,112341860
+EDR 9 - South Central,2004,taxable.sales,1701844843
+EDR 9 - South Central,2004,total.tax,117877903
+EDR 9 - South Central,2004,use.tax,5536043
+EDR 9 - South Central,2005,gross.sales,7649107547
+EDR 9 - South Central,2005,sales.tax,116331112
+EDR 9 - South Central,2005,taxable.sales,1760836028
+EDR 9 - South Central,2005,total.tax,121835649
+EDR 9 - South Central,2005,use.tax,5504537
+EDR 9 - South Central,2006,gross.sales,7916751003
+EDR 9 - South Central,2006,sales.tax,123073982
+EDR 9 - South Central,2006,taxable.sales,1861559637
+EDR 9 - South Central,2006,total.tax,129369674
+EDR 9 - South Central,2006,use.tax,6295692
+EDR 9 - South Central,2007,gross.sales,7760889166
+EDR 9 - South Central,2007,sales.tax,127143974
+EDR 9 - South Central,2007,taxable.sales,1923628894
+EDR 9 - South Central,2007,total.tax,133696609
+EDR 9 - South Central,2007,use.tax,6552635
+EDR 9 - South Central,2008,gross.sales,8902187920
+EDR 9 - South Central,2008,sales.tax,126376969
+EDR 9 - South Central,2008,taxable.sales,1911407793
+EDR 9 - South Central,2008,total.tax,133034060
+EDR 9 - South Central,2008,use.tax,6657091
+EDR 9 - South Central,2009,gross.sales,9568719057
+EDR 9 - South Central,2009,sales.tax,125483254
+EDR 9 - South Central,2009,taxable.sales,1841003946
+EDR 9 - South Central,2009,total.tax,131690325
+EDR 9 - South Central,2009,use.tax,6207071
+EDR 9 - South Central,2010,gross.sales,10149169738
+EDR 9 - South Central,2010,sales.tax,129346873
+EDR 9 - South Central,2010,taxable.sales,1848133902
+EDR 9 - South Central,2010,total.tax,135346338
+EDR 9 - South Central,2010,use.tax,5999465
+EDR 9 - South Central,2011,gross.sales,11713945154
+EDR 9 - South Central,2011,sales.tax,136169477
+EDR 9 - South Central,2011,taxable.sales,1945912145
+EDR 9 - South Central,2011,total.tax,144053985
+EDR 9 - South Central,2011,use.tax,7884508
+EDR 9 - South Central,2012,gross.sales,12111162183
+EDR 9 - South Central,2012,sales.tax,140280741
+EDR 9 - South Central,2012,taxable.sales,2003903850
+EDR 9 - South Central,2012,total.tax,148627100
+EDR 9 - South Central,2012,use.tax,8346359
+EDR 9 - South Central,2013,gross.sales,12243939111
+EDR 9 - South Central,2013,sales.tax,144995926
+EDR 9 - South Central,2013,taxable.sales,2070875538
+EDR 9 - South Central,2013,total.tax,152965555
+EDR 9 - South Central,2013,use.tax,7969629
+EDR 9 - South Central,2014,gross.sales,12033028839
+EDR 9 - South Central,2014,sales.tax,149205739
+EDR 9 - South Central,2014,taxable.sales,2130264665
+EDR 9 - South Central,2014,total.tax,157004719
+EDR 9 - South Central,2014,use.tax,7798980
+EDR 9 - South Central,2015,gross.sales,11637093206
+EDR 9 - South Central,2015,sales.tax,142439266
+EDR 9 - South Central,2015,taxable.sales,2030293761
+EDR 9 - South Central,2015,total.tax,150233164
+EDR 9 - South Central,2015,use.tax,7793898
+EDR 9 - South Central,2016,gross.sales,11403523003
+EDR 9 - South Central,2016,sales.tax,141946854
+EDR 9 - South Central,2016,taxable.sales,2020622103
+EDR 9 - South Central,2016,total.tax,148907223
+EDR 9 - South Central,2016,use.tax,6960369
+EDR 9 - South Central,2017,gross.sales,10818681056
+EDR 9 - South Central,2017,sales.tax,142729869
+EDR 9 - South Central,2017,taxable.sales,2031019010
+EDR 9 - South Central,2017,total.tax,149552664
+EDR 9 - South Central,2017,use.tax,6822795
+EDR 10 - Southeast,2003,gross.sales,14664009459
+EDR 10 - Southeast,2003,sales.tax,230427747
+EDR 10 - Southeast,2003,taxable.sales,3488425397
+EDR 10 - Southeast,2003,total.tax,246154889
+EDR 10 - Southeast,2003,use.tax,15727142
+EDR 10 - Southeast,2004,gross.sales,15290834010
+EDR 10 - Southeast,2004,sales.tax,244188257
+EDR 10 - Southeast,2004,taxable.sales,3696169166
+EDR 10 - Southeast,2004,total.tax,259931505
+EDR 10 - Southeast,2004,use.tax,15743248
+EDR 10 - Southeast,2005,gross.sales,15535695924
+EDR 10 - Southeast,2005,sales.tax,248989057
+EDR 10 - Southeast,2005,taxable.sales,3767130102
+EDR 10 - Southeast,2005,total.tax,264181566
+EDR 10 - Southeast,2005,use.tax,15192509
+EDR 10 - Southeast,2006,gross.sales,16876212285
+EDR 10 - Southeast,2006,sales.tax,250215599
+EDR 10 - Southeast,2006,taxable.sales,3783719256
+EDR 10 - Southeast,2006,total.tax,269348918
+EDR 10 - Southeast,2006,use.tax,19133319
+EDR 10 - Southeast,2007,gross.sales,17751263227
+EDR 10 - Southeast,2007,sales.tax,256837183
+EDR 10 - Southeast,2007,taxable.sales,3878677746
+EDR 10 - Southeast,2007,total.tax,276821577
+EDR 10 - Southeast,2007,use.tax,19984394
+EDR 10 - Southeast,2008,gross.sales,18918746271
+EDR 10 - Southeast,2008,sales.tax,257345078
+EDR 10 - Southeast,2008,taxable.sales,3884919966
+EDR 10 - Southeast,2008,total.tax,277338711
+EDR 10 - Southeast,2008,use.tax,19993633
+EDR 10 - Southeast,2009,gross.sales,16829945772
+EDR 10 - Southeast,2009,sales.tax,252524711
+EDR 10 - Southeast,2009,taxable.sales,3700086720
+EDR 10 - Southeast,2009,total.tax,269413089
+EDR 10 - Southeast,2009,use.tax,16888378
+EDR 10 - Southeast,2010,gross.sales,17682949321
+EDR 10 - Southeast,2010,sales.tax,265207016
+EDR 10 - Southeast,2010,taxable.sales,3786182267
+EDR 10 - Southeast,2010,total.tax,285327666
+EDR 10 - Southeast,2010,use.tax,20120650
+EDR 10 - Southeast,2011,gross.sales,19624508578
+EDR 10 - Southeast,2011,sales.tax,273994111
+EDR 10 - Southeast,2011,taxable.sales,3911686022
+EDR 10 - Southeast,2011,total.tax,296768623
+EDR 10 - Southeast,2011,use.tax,22774512
+EDR 10 - Southeast,2012,gross.sales,20727698046
+EDR 10 - Southeast,2012,sales.tax,286434870
+EDR 10 - Southeast,2012,taxable.sales,4089099029
+EDR 10 - Southeast,2012,total.tax,310334810
+EDR 10 - Southeast,2012,use.tax,23899940
+EDR 10 - Southeast,2013,gross.sales,21373988961
+EDR 10 - Southeast,2013,sales.tax,298172516
+EDR 10 - Southeast,2013,taxable.sales,4255222651
+EDR 10 - Southeast,2013,total.tax,322382304
+EDR 10 - Southeast,2013,use.tax,24209788
+EDR 10 - Southeast,2014,gross.sales,21352339257
+EDR 10 - Southeast,2014,sales.tax,304632693
+EDR 10 - Southeast,2014,taxable.sales,4341282541
+EDR 10 - Southeast,2014,total.tax,330834169
+EDR 10 - Southeast,2014,use.tax,26201476
+EDR 10 - Southeast,2015,gross.sales,21215205665
+EDR 10 - Southeast,2015,sales.tax,316419621
+EDR 10 - Southeast,2015,taxable.sales,4509305577
+EDR 10 - Southeast,2015,total.tax,338273195
+EDR 10 - Southeast,2015,use.tax,21853574
+EDR 10 - Southeast,2016,gross.sales,20830454035
+EDR 10 - Southeast,2016,sales.tax,321534556
+EDR 10 - Southeast,2016,taxable.sales,4581831607
+EDR 10 - Southeast,2016,total.tax,342663846
+EDR 10 - Southeast,2016,use.tax,21129290
+EDR 10 - Southeast,2017,gross.sales,21882746985
+EDR 10 - Southeast,2017,sales.tax,329437189
+EDR 10 - Southeast,2017,taxable.sales,4694365056
+EDR 10 - Southeast,2017,total.tax,350134803
+EDR 10 - Southeast,2017,use.tax,20697614
+EDR 11 - 7 County Twin Cities,2003,gross.sales,116464524301
+EDR 11 - 7 County Twin Cities,2003,sales.tax,2138941664
+EDR 11 - 7 County Twin Cities,2003,taxable.sales,32258150556
+EDR 11 - 7 County Twin Cities,2003,total.tax,2272214120
+EDR 11 - 7 County Twin Cities,2003,use.tax,133272456
+EDR 11 - 7 County Twin Cities,2004,gross.sales,124925061100
+EDR 11 - 7 County Twin Cities,2004,sales.tax,2215687727
+EDR 11 - 7 County Twin Cities,2004,taxable.sales,33408182050
+EDR 11 - 7 County Twin Cities,2004,total.tax,2368737130
+EDR 11 - 7 County Twin Cities,2004,use.tax,153049403
+EDR 11 - 7 County Twin Cities,2005,gross.sales,136573475443
+EDR 11 - 7 County Twin Cities,2005,sales.tax,2296259848
+EDR 11 - 7 County Twin Cities,2005,taxable.sales,34608627761
+EDR 11 - 7 County Twin Cities,2005,total.tax,2461888288
+EDR 11 - 7 County Twin Cities,2005,use.tax,165628440
+EDR 11 - 7 County Twin Cities,2006,gross.sales,143750372985
+EDR 11 - 7 County Twin Cities,2006,sales.tax,2345026969
+EDR 11 - 7 County Twin Cities,2006,taxable.sales,35318545813
+EDR 11 - 7 County Twin Cities,2006,total.tax,2542501339
+EDR 11 - 7 County Twin Cities,2006,use.tax,197474370
+EDR 11 - 7 County Twin Cities,2007,gross.sales,145089137879
+EDR 11 - 7 County Twin Cities,2007,sales.tax,2357849970
+EDR 11 - 7 County Twin Cities,2007,taxable.sales,35475607912
+EDR 11 - 7 County Twin Cities,2007,total.tax,2557443235
+EDR 11 - 7 County Twin Cities,2007,use.tax,199593265
+EDR 11 - 7 County Twin Cities,2008,gross.sales,149749032467
+EDR 11 - 7 County Twin Cities,2008,sales.tax,2351956402
+EDR 11 - 7 County Twin Cities,2008,taxable.sales,35372405105
+EDR 11 - 7 County Twin Cities,2008,total.tax,2551040245
+EDR 11 - 7 County Twin Cities,2008,use.tax,199083843
+EDR 11 - 7 County Twin Cities,2009,gross.sales,139036578392
+EDR 11 - 7 County Twin Cities,2009,sales.tax,2222888465
+EDR 11 - 7 County Twin Cities,2009,taxable.sales,32462340921
+EDR 11 - 7 County Twin Cities,2009,total.tax,2407186218
+EDR 11 - 7 County Twin Cities,2009,use.tax,184297753
+EDR 11 - 7 County Twin Cities,2010,gross.sales,143143782636
+EDR 11 - 7 County Twin Cities,2010,sales.tax,2340460766
+EDR 11 - 7 County Twin Cities,2010,taxable.sales,33259331497
+EDR 11 - 7 County Twin Cities,2010,total.tax,2536056264
+EDR 11 - 7 County Twin Cities,2010,use.tax,195595498
+EDR 11 - 7 County Twin Cities,2011,gross.sales,150056197123
+EDR 11 - 7 County Twin Cities,2011,sales.tax,2461528651
+EDR 11 - 7 County Twin Cities,2011,taxable.sales,35000160349
+EDR 11 - 7 County Twin Cities,2011,total.tax,2670167705
+EDR 11 - 7 County Twin Cities,2011,use.tax,208639054
+EDR 11 - 7 County Twin Cities,2012,gross.sales,154237369577
+EDR 11 - 7 County Twin Cities,2012,sales.tax,2558730654
+EDR 11 - 7 County Twin Cities,2012,taxable.sales,36379968973
+EDR 11 - 7 County Twin Cities,2012,total.tax,2780877064
+EDR 11 - 7 County Twin Cities,2012,use.tax,222146410
+EDR 11 - 7 County Twin Cities,2013,gross.sales,162316320700
+EDR 11 - 7 County Twin Cities,2013,sales.tax,2732305073
+EDR 11 - 7 County Twin Cities,2013,taxable.sales,38814609098
+EDR 11 - 7 County Twin Cities,2013,total.tax,2986825860
+EDR 11 - 7 County Twin Cities,2013,use.tax,254520787
+EDR 11 - 7 County Twin Cities,2014,gross.sales,170709983018
+EDR 11 - 7 County Twin Cities,2014,sales.tax,2785533578
+EDR 11 - 7 County Twin Cities,2014,taxable.sales,39507202072
+EDR 11 - 7 County Twin Cities,2014,total.tax,3057370717
+EDR 11 - 7 County Twin Cities,2014,use.tax,271837139
+EDR 11 - 7 County Twin Cities,2015,gross.sales,171277810081
+EDR 11 - 7 County Twin Cities,2015,sales.tax,2871932444
+EDR 11 - 7 County Twin Cities,2015,taxable.sales,40719409892
+EDR 11 - 7 County Twin Cities,2015,total.tax,3122396634
+EDR 11 - 7 County Twin Cities,2015,use.tax,250464190
+EDR 11 - 7 County Twin Cities,2016,gross.sales,172413847190
+EDR 11 - 7 County Twin Cities,2016,sales.tax,2920192028
+EDR 11 - 7 County Twin Cities,2016,taxable.sales,41372499212
+EDR 11 - 7 County Twin Cities,2016,total.tax,3134695008
+EDR 11 - 7 County Twin Cities,2016,use.tax,214502980
+EDR 11 - 7 County Twin Cities,2017,gross.sales,179226131789
+EDR 11 - 7 County Twin Cities,2017,sales.tax,3008518467
+EDR 11 - 7 County Twin Cities,2017,taxable.sales,42607245076
+EDR 11 - 7 County Twin Cities,2017,total.tax,3234202939
+EDR 11 - 7 County Twin Cities,2017,use.tax,225684472
+Minnesota,2003,gross.sales,220419605242
+Minnesota,2003,sales.tax,3797866384
+Minnesota,2003,taxable.sales,57480774963
+Minnesota,2003,total.tax,4036749809
+Minnesota,2003,use.tax,238883425
+Minnesota,2004,gross.sales,241337353469
+Minnesota,2004,sales.tax,3985151015
+Minnesota,2004,taxable.sales,60309541847
+Minnesota,2004,total.tax,4256004631
+Minnesota,2004,use.tax,270853616
+Minnesota,2005,gross.sales,258605440425
+Minnesota,2005,sales.tax,4158305372
+Minnesota,2005,taxable.sales,62915197164
+Minnesota,2005,total.tax,4465076652
+Minnesota,2005,use.tax,306771280
+Minnesota,2006,gross.sales,275906239682
+Minnesota,2006,sales.tax,4279513970
+Minnesota,2006,taxable.sales,64719994813
+Minnesota,2006,total.tax,4635729737
+Minnesota,2006,use.tax,356215767
+Minnesota,2007,gross.sales,282151207921
+Minnesota,2007,sales.tax,4356893212
+Minnesota,2007,taxable.sales,65844046857
+Minnesota,2007,total.tax,4708297055
+Minnesota,2007,use.tax,351403843
+Minnesota,2008,gross.sales,291681003598
+Minnesota,2008,sales.tax,4325158105
+Minnesota,2008,taxable.sales,65335865879
+Minnesota,2008,total.tax,4674048374
+Minnesota,2008,use.tax,348890269
+Minnesota,2009,gross.sales,266666158772
+Minnesota,2009,sales.tax,4122844215
+Minnesota,2009,taxable.sales,60456206139
+Minnesota,2009,total.tax,4440519488
+Minnesota,2009,use.tax,317675273
+Minnesota,2010,gross.sales,279159186053
+Minnesota,2010,sales.tax,4334470877
+Minnesota,2010,taxable.sales,61871033079
+Minnesota,2010,total.tax,4672725109
+Minnesota,2010,use.tax,338254232
+Minnesota,2011,gross.sales,299803105999
+Minnesota,2011,sales.tax,4556451905
+Minnesota,2011,taxable.sales,65068016717
+Minnesota,2011,total.tax,4924699362
+Minnesota,2011,use.tax,368247457
+Minnesota,2012,gross.sales,312838014297
+Minnesota,2012,sales.tax,4763691241
+Minnesota,2012,taxable.sales,68027970963
+Minnesota,2012,total.tax,5160549687
+Minnesota,2012,use.tax,396858446
+Minnesota,2013,gross.sales,333549791349
+Minnesota,2013,sales.tax,5034507292
+Minnesota,2013,taxable.sales,71853922344
+Minnesota,2013,total.tax,5475407740
+Minnesota,2013,use.tax,440900448
+Minnesota,2014,gross.sales,348160806054
+Minnesota,2014,sales.tax,5180512773
+Minnesota,2014,taxable.sales,73865027871
+Minnesota,2014,total.tax,5661986114
+Minnesota,2014,use.tax,481473341
+Minnesota,2015,gross.sales,345205411840
+Minnesota,2015,sales.tax,5376833996
+Minnesota,2015,taxable.sales,76658904696
+Minnesota,2015,total.tax,5808526300
+Minnesota,2015,use.tax,431692304
+Minnesota,2016,gross.sales,344363319023
+Minnesota,2016,sales.tax,5435197561
+Minnesota,2016,taxable.sales,77445995604
+Minnesota,2016,total.tax,5788558491
+Minnesota,2016,use.tax,353360930
+Minnesota,2017,gross.sales,360407719330
+Minnesota,2017,sales.tax,5597389501
+Minnesota,2017,taxable.sales,79746166093
+Minnesota,2017,total.tax,5965172005
+Minnesota,2017,use.tax,367782504

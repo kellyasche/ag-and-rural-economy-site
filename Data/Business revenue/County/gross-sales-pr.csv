@@ -1,0 +1,526 @@
+planning.region,year,sales.type,dollars
+Northwest,2003,gross.sales,13535788044
+Northwest,2003,sales.tax,265524258
+Northwest,2003,taxable.sales,4015154722
+Northwest,2003,total.tax,275001202
+Northwest,2003,use.tax,9476944
+Northwest,2004,gross.sales,15063784847
+Northwest,2004,sales.tax,286332087
+Northwest,2004,taxable.sales,4328254222
+Northwest,2004,total.tax,295376230
+Northwest,2004,use.tax,9044143
+Northwest,2005,gross.sales,15402578004
+Northwest,2005,sales.tax,289784283
+Northwest,2005,taxable.sales,4376583849
+Northwest,2005,total.tax,299798846
+Northwest,2005,use.tax,10014563
+Northwest,2006,gross.sales,16977869443
+Northwest,2006,sales.tax,292771754
+Northwest,2006,taxable.sales,4416487706
+Northwest,2006,total.tax,303578017
+Northwest,2006,use.tax,10806263
+Northwest,2007,gross.sales,16911872717
+Northwest,2007,sales.tax,308531030
+Northwest,2007,taxable.sales,4650577902
+Northwest,2007,total.tax,320008287
+Northwest,2007,use.tax,11477257
+Northwest,2008,gross.sales,17934653006
+Northwest,2008,sales.tax,301616410
+Northwest,2008,taxable.sales,4543218487
+Northwest,2008,total.tax,313206871
+Northwest,2008,use.tax,11590461
+Northwest,2009,gross.sales,15741197663
+Northwest,2009,sales.tax,298868561
+Northwest,2009,taxable.sales,4365211990
+Northwest,2009,total.tax,308794206
+Northwest,2009,use.tax,9925645
+Northwest,2010,gross.sales,17100675472
+Northwest,2010,sales.tax,306254132
+Northwest,2010,taxable.sales,4357984026
+Northwest,2010,total.tax,317396100
+Northwest,2010,use.tax,11141968
+Northwest,2011,gross.sales,18948500886
+Northwest,2011,sales.tax,317428853
+Northwest,2011,taxable.sales,4518969408
+Northwest,2011,total.tax,329375446
+Northwest,2011,use.tax,11946593
+Northwest,2012,gross.sales,20245189329
+Northwest,2012,sales.tax,334241990
+Northwest,2012,taxable.sales,4758440560
+Northwest,2012,total.tax,348084114
+Northwest,2012,use.tax,13842124
+Northwest,2013,gross.sales,21584325623
+Northwest,2013,sales.tax,350810140
+Northwest,2013,taxable.sales,4995439128
+Northwest,2013,total.tax,365674976
+Northwest,2013,use.tax,14864836
+Northwest,2014,gross.sales,21871298929
+Northwest,2014,sales.tax,358947120
+Northwest,2014,taxable.sales,5106428028
+Northwest,2014,total.tax,375120695
+Northwest,2014,use.tax,16173575
+Northwest,2015,gross.sales,21018425410
+Northwest,2015,sales.tax,368611885
+Northwest,2015,taxable.sales,5243001666
+Northwest,2015,total.tax,382719485
+Northwest,2015,use.tax,14107600
+Northwest,2016,gross.sales,20363968590
+Northwest,2016,sales.tax,374204360
+Northwest,2016,taxable.sales,5323371332
+Northwest,2016,total.tax,385642518
+Northwest,2016,use.tax,11438158
+Northwest,2017,gross.sales,21074450929
+Northwest,2017,sales.tax,386977807
+Northwest,2017,taxable.sales,5507186045
+Northwest,2017,total.tax,400525472
+Northwest,2017,use.tax,13547665
+Northeast,2003,gross.sales,9329098034
+Northeast,2003,sales.tax,195284380
+Northeast,2003,taxable.sales,2951286677
+Northeast,2003,total.tax,209232125
+Northeast,2003,use.tax,13947745
+Northeast,2004,gross.sales,9574727975
+Northeast,2004,sales.tax,204968649
+Northeast,2004,taxable.sales,3097318592
+Northeast,2004,total.tax,221069865
+Northeast,2004,use.tax,16101216
+Northeast,2005,gross.sales,10883266803
+Northeast,2005,sales.tax,211898132
+Northeast,2005,taxable.sales,3202254290
+Northeast,2005,total.tax,232395988
+Northeast,2005,use.tax,20497856
+Northeast,2006,gross.sales,12743568526
+Northeast,2006,sales.tax,219527926
+Northeast,2006,taxable.sales,3316358579
+Northeast,2006,total.tax,242253346
+Northeast,2006,use.tax,22725420
+Northeast,2007,gross.sales,11538548042
+Northeast,2007,sales.tax,218051213
+Northeast,2007,taxable.sales,3288288311
+Northeast,2007,total.tax,237551637
+Northeast,2007,use.tax,19500424
+Northeast,2008,gross.sales,11394947343
+Northeast,2008,sales.tax,200589772
+Northeast,2008,taxable.sales,3018667482
+Northeast,2008,total.tax,221116119
+Northeast,2008,use.tax,20526347
+Northeast,2009,gross.sales,10264517339
+Northeast,2009,sales.tax,198952715
+Northeast,2009,taxable.sales,2904290797
+Northeast,2009,total.tax,226756522
+Northeast,2009,use.tax,27803807
+Northeast,2010,gross.sales,10848647764
+Northeast,2010,sales.tax,207045967
+Northeast,2010,taxable.sales,2946466618
+Northeast,2010,total.tax,231408739
+Northeast,2010,use.tax,24362772
+Northeast,2011,gross.sales,11926046990
+Northeast,2011,sales.tax,213300015
+Northeast,2011,taxable.sales,3033672798
+Northeast,2011,total.tax,241988982
+Northeast,2011,use.tax,28688967
+Northeast,2012,gross.sales,11977179532
+Northeast,2012,sales.tax,225592526
+Northeast,2012,taxable.sales,3210112268
+Northeast,2012,total.tax,258470624
+Northeast,2012,use.tax,32878098
+Northeast,2013,gross.sales,12493755550
+Northeast,2013,sales.tax,228349084
+Northeast,2013,taxable.sales,3245270435
+Northeast,2013,total.tax,260977411
+Northeast,2013,use.tax,32628327
+Northeast,2014,gross.sales,13109083136
+Northeast,2014,sales.tax,237564640
+Northeast,2014,taxable.sales,3375279652
+Northeast,2014,total.tax,278252256
+Northeast,2014,use.tax,40687616
+Northeast,2015,gross.sales,12375721372
+Northeast,2015,sales.tax,243309266
+Northeast,2015,taxable.sales,3455246245
+Northeast,2015,total.tax,271460048
+Northeast,2015,use.tax,28150782
+Northeast,2016,gross.sales,12063557674
+Northeast,2016,sales.tax,244303269
+Northeast,2016,taxable.sales,3466744101
+Northeast,2016,total.tax,259305362
+Northeast,2016,use.tax,15002093
+Northeast,2017,gross.sales,11533215479
+Northeast,2017,sales.tax,246491207
+Northeast,2017,taxable.sales,3496181158
+Northeast,2017,total.tax,266018663
+Northeast,2017,use.tax,19527456
+Central,2003,gross.sales,16607372129
+Central,2003,sales.tax,307362793
+Central,2003,taxable.sales,4654129081
+Central,2003,total.tax,322251909
+Central,2003,use.tax,14889116
+Central,2004,gross.sales,18596013643
+Central,2004,sales.tax,329267586
+Central,2004,taxable.sales,4983476199
+Central,2004,total.tax,346252899
+Central,2004,use.tax,16985313
+Central,2005,gross.sales,20509169771
+Central,2005,sales.tax,338948836
+Central,2005,taxable.sales,5125711894
+Central,2005,total.tax,360397306
+Central,2005,use.tax,21448470
+Central,2006,gross.sales,21949274037
+Central,2006,sales.tax,345359384
+Central,2006,taxable.sales,5219980799
+Central,2006,total.tax,372944070
+Central,2006,use.tax,27989431
+Central,2007,gross.sales,23316526748
+Central,2007,sales.tax,344164052
+Central,2007,taxable.sales,5196618100
+Central,2007,total.tax,365227140
+Central,2007,use.tax,21063088
+Central,2008,gross.sales,22014211356
+Central,2008,sales.tax,337122274
+Central,2008,taxable.sales,5086502606
+Central,2008,total.tax,355962230
+Central,2008,use.tax,18839956
+Central,2009,gross.sales,20446591717
+Central,2009,sales.tax,327288990
+Central,2009,taxable.sales,4790996798
+Central,2009,total.tax,343297099
+Central,2009,use.tax,16008109
+Central,2010,gross.sales,21155419291
+Central,2010,sales.tax,347534170
+Central,2010,taxable.sales,4955665971
+Central,2010,total.tax,364231497
+Central,2010,use.tax,16697327
+Central,2011,gross.sales,23680469484
+Central,2011,sales.tax,369165881
+Central,2011,taxable.sales,5267029268
+Central,2011,total.tax,387042778
+Central,2011,use.tax,17876897
+Central,2012,gross.sales,24510652211
+Central,2012,sales.tax,385437186
+Central,2012,taxable.sales,5498945913
+Central,2012,total.tax,405994935
+Central,2012,use.tax,20557749
+Central,2013,gross.sales,25649816776
+Central,2013,sales.tax,404972586
+Central,2013,taxable.sales,5778133370
+Central,2013,total.tax,426498458
+Central,2013,use.tax,21525872
+Central,2014,gross.sales,26752461985
+Central,2014,sales.tax,418820226
+Central,2014,taxable.sales,5973512446
+Central,2014,total.tax,443376230
+Central,2014,use.tax,24556004
+Central,2015,gross.sales,26337828491
+Central,2015,sales.tax,435458686
+Central,2015,taxable.sales,6211134019
+Central,2015,total.tax,457292283
+Central,2015,use.tax,21833597
+Central,2016,gross.sales,26352852786
+Central,2016,sales.tax,444234971
+Central,2016,taxable.sales,6336091508
+Central,2016,total.tax,463882071
+Central,2016,use.tax,19647100
+Central,2017,gross.sales,27721407533
+Central,2017,sales.tax,459076638
+Central,2017,taxable.sales,6549337046
+Central,2017,total.tax,479528559
+Central,2017,use.tax,20451921
+Seven County Mpls-St Paul,2003,gross.sales,116464524301
+Seven County Mpls-St Paul,2003,sales.tax,2138941664
+Seven County Mpls-St Paul,2003,taxable.sales,32258150556
+Seven County Mpls-St Paul,2003,total.tax,2272214120
+Seven County Mpls-St Paul,2003,use.tax,133272456
+Seven County Mpls-St Paul,2004,gross.sales,124925061100
+Seven County Mpls-St Paul,2004,sales.tax,2215687727
+Seven County Mpls-St Paul,2004,taxable.sales,33408182050
+Seven County Mpls-St Paul,2004,total.tax,2368737130
+Seven County Mpls-St Paul,2004,use.tax,153049403
+Seven County Mpls-St Paul,2005,gross.sales,136573475443
+Seven County Mpls-St Paul,2005,sales.tax,2296259848
+Seven County Mpls-St Paul,2005,taxable.sales,34608627761
+Seven County Mpls-St Paul,2005,total.tax,2461888288
+Seven County Mpls-St Paul,2005,use.tax,165628440
+Seven County Mpls-St Paul,2006,gross.sales,143750372985
+Seven County Mpls-St Paul,2006,sales.tax,2345026969
+Seven County Mpls-St Paul,2006,taxable.sales,35318545813
+Seven County Mpls-St Paul,2006,total.tax,2542501339
+Seven County Mpls-St Paul,2006,use.tax,197474370
+Seven County Mpls-St Paul,2007,gross.sales,145089137879
+Seven County Mpls-St Paul,2007,sales.tax,2357849970
+Seven County Mpls-St Paul,2007,taxable.sales,35475607912
+Seven County Mpls-St Paul,2007,total.tax,2557443235
+Seven County Mpls-St Paul,2007,use.tax,199593265
+Seven County Mpls-St Paul,2008,gross.sales,149749032467
+Seven County Mpls-St Paul,2008,sales.tax,2351956402
+Seven County Mpls-St Paul,2008,taxable.sales,35372405105
+Seven County Mpls-St Paul,2008,total.tax,2551040245
+Seven County Mpls-St Paul,2008,use.tax,199083843
+Seven County Mpls-St Paul,2009,gross.sales,139036578392
+Seven County Mpls-St Paul,2009,sales.tax,2222888465
+Seven County Mpls-St Paul,2009,taxable.sales,32462340921
+Seven County Mpls-St Paul,2009,total.tax,2407186218
+Seven County Mpls-St Paul,2009,use.tax,184297753
+Seven County Mpls-St Paul,2010,gross.sales,143143782636
+Seven County Mpls-St Paul,2010,sales.tax,2340460766
+Seven County Mpls-St Paul,2010,taxable.sales,33259331497
+Seven County Mpls-St Paul,2010,total.tax,2536056264
+Seven County Mpls-St Paul,2010,use.tax,195595498
+Seven County Mpls-St Paul,2011,gross.sales,150056197123
+Seven County Mpls-St Paul,2011,sales.tax,2461528651
+Seven County Mpls-St Paul,2011,taxable.sales,35000160349
+Seven County Mpls-St Paul,2011,total.tax,2670167705
+Seven County Mpls-St Paul,2011,use.tax,208639054
+Seven County Mpls-St Paul,2012,gross.sales,154237369577
+Seven County Mpls-St Paul,2012,sales.tax,2558730654
+Seven County Mpls-St Paul,2012,taxable.sales,36379968973
+Seven County Mpls-St Paul,2012,total.tax,2780877064
+Seven County Mpls-St Paul,2012,use.tax,222146410
+Seven County Mpls-St Paul,2013,gross.sales,162316320700
+Seven County Mpls-St Paul,2013,sales.tax,2732305073
+Seven County Mpls-St Paul,2013,taxable.sales,38814609098
+Seven County Mpls-St Paul,2013,total.tax,2986825860
+Seven County Mpls-St Paul,2013,use.tax,254520787
+Seven County Mpls-St Paul,2014,gross.sales,170709983018
+Seven County Mpls-St Paul,2014,sales.tax,2785533578
+Seven County Mpls-St Paul,2014,taxable.sales,39507202072
+Seven County Mpls-St Paul,2014,total.tax,3057370717
+Seven County Mpls-St Paul,2014,use.tax,271837139
+Seven County Mpls-St Paul,2015,gross.sales,171277810081
+Seven County Mpls-St Paul,2015,sales.tax,2871932444
+Seven County Mpls-St Paul,2015,taxable.sales,40719409892
+Seven County Mpls-St Paul,2015,total.tax,3122396634
+Seven County Mpls-St Paul,2015,use.tax,250464190
+Seven County Mpls-St Paul,2016,gross.sales,172413847190
+Seven County Mpls-St Paul,2016,sales.tax,2920192028
+Seven County Mpls-St Paul,2016,taxable.sales,41372499212
+Seven County Mpls-St Paul,2016,total.tax,3134695008
+Seven County Mpls-St Paul,2016,use.tax,214502980
+Seven County Mpls-St Paul,2017,gross.sales,179226131789
+Seven County Mpls-St Paul,2017,sales.tax,3008518467
+Seven County Mpls-St Paul,2017,taxable.sales,42607245076
+Seven County Mpls-St Paul,2017,total.tax,3234202939
+Seven County Mpls-St Paul,2017,use.tax,225684472
+Southwest,2003,gross.sales,11781243097
+Southwest,2003,sales.tax,167912910
+Southwest,2003,taxable.sales,2539880460
+Southwest,2003,total.tax,175101384
+Southwest,2003,use.tax,7188474
+Southwest,2004,gross.sales,12374446243
+Southwest,2004,sales.tax,175838289
+Southwest,2004,taxable.sales,2661331057
+Southwest,2004,total.tax,184816524
+Southwest,2004,use.tax,8978235
+Southwest,2005,gross.sales,12369172912
+Southwest,2005,sales.tax,184173513
+Southwest,2005,taxable.sales,2786534139
+Southwest,2005,total.tax,193458596
+Southwest,2005,use.tax,9285083
+Southwest,2006,gross.sales,13083609593
+Southwest,2006,sales.tax,193055483
+Southwest,2006,taxable.sales,2919986357
+Southwest,2006,total.tax,203693829
+Southwest,2006,use.tax,10695528
+Southwest,2007,gross.sales,13590490207
+Southwest,2007,sales.tax,201811629
+Southwest,2007,taxable.sales,3052688776
+Southwest,2007,total.tax,214011286
+Southwest,2007,use.tax,12199657
+Southwest,2008,gross.sales,15894485506
+Southwest,2008,sales.tax,202166933
+Southwest,2008,taxable.sales,3057200770
+Southwest,2008,total.tax,215237196
+Southwest,2008,use.tax,13070263
+Southwest,2009,gross.sales,16224744840
+Southwest,2009,sales.tax,201110062
+Southwest,2009,taxable.sales,2951069233
+Southwest,2009,total.tax,212627327
+Southwest,2009,use.tax,11517265
+Southwest,2010,gross.sales,17579635148
+Southwest,2010,sales.tax,207815679
+Southwest,2010,taxable.sales,2969658438
+Southwest,2010,total.tax,219231516
+Southwest,2010,use.tax,11415837
+Southwest,2011,gross.sales,21028212460
+Southwest,2011,sales.tax,226239525
+Southwest,2011,taxable.sales,3235724348
+Southwest,2011,total.tax,240390157
+Southwest,2011,use.tax,14150632
+Southwest,2012,gross.sales,21646717934
+Southwest,2012,sales.tax,226598228
+Southwest,2012,taxable.sales,3238001633
+Southwest,2012,total.tax,241232736
+Southwest,2012,use.tax,14634508
+Southwest,2013,gross.sales,21806619402
+Southwest,2013,sales.tax,233041914
+Southwest,2013,taxable.sales,3329998306
+Southwest,2013,total.tax,247513614
+Southwest,2013,use.tax,14471700
+Southwest,2014,gross.sales,21313893939
+Southwest,2014,sales.tax,236336680
+Southwest,2014,taxable.sales,3375326506
+Southwest,2014,total.tax,250565886
+Southwest,2014,use.tax,14229206
+Southwest,2015,gross.sales,19844208380
+Southwest,2015,sales.tax,229828966
+Southwest,2015,taxable.sales,3277604747
+Southwest,2015,total.tax,243102570
+Southwest,2015,use.tax,13273604
+Southwest,2016,gross.sales,19408538777
+Southwest,2016,sales.tax,227747596
+Southwest,2016,taxable.sales,3244528288
+Southwest,2016,total.tax,238809898
+Southwest,2016,use.tax,11062302
+Southwest,2017,gross.sales,19447929182
+Southwest,2017,sales.tax,230831784
+Southwest,2017,taxable.sales,3288137597
+Southwest,2017,total.tax,241962040
+Southwest,2017,use.tax,11130256
+Southeast,2003,gross.sales,14664009459
+Southeast,2003,sales.tax,230427747
+Southeast,2003,taxable.sales,3488425397
+Southeast,2003,total.tax,246154889
+Southeast,2003,use.tax,15727142
+Southeast,2004,gross.sales,15290834010
+Southeast,2004,sales.tax,244188257
+Southeast,2004,taxable.sales,3696169166
+Southeast,2004,total.tax,259931505
+Southeast,2004,use.tax,15743248
+Southeast,2005,gross.sales,15535695924
+Southeast,2005,sales.tax,248989057
+Southeast,2005,taxable.sales,3767130102
+Southeast,2005,total.tax,264181566
+Southeast,2005,use.tax,15192509
+Southeast,2006,gross.sales,16876212285
+Southeast,2006,sales.tax,250215599
+Southeast,2006,taxable.sales,3783719256
+Southeast,2006,total.tax,269348918
+Southeast,2006,use.tax,19133319
+Southeast,2007,gross.sales,17751263227
+Southeast,2007,sales.tax,256837183
+Southeast,2007,taxable.sales,3878677746
+Southeast,2007,total.tax,276821577
+Southeast,2007,use.tax,19984394
+Southeast,2008,gross.sales,18918746271
+Southeast,2008,sales.tax,257345078
+Southeast,2008,taxable.sales,3884919966
+Southeast,2008,total.tax,277338711
+Southeast,2008,use.tax,19993633
+Southeast,2009,gross.sales,16829945772
+Southeast,2009,sales.tax,252524711
+Southeast,2009,taxable.sales,3700086720
+Southeast,2009,total.tax,269413089
+Southeast,2009,use.tax,16888378
+Southeast,2010,gross.sales,17682949321
+Southeast,2010,sales.tax,265207016
+Southeast,2010,taxable.sales,3786182267
+Southeast,2010,total.tax,285327666
+Southeast,2010,use.tax,20120650
+Southeast,2011,gross.sales,19624508578
+Southeast,2011,sales.tax,273994111
+Southeast,2011,taxable.sales,3911686022
+Southeast,2011,total.tax,296768623
+Southeast,2011,use.tax,22774512
+Southeast,2012,gross.sales,20727698046
+Southeast,2012,sales.tax,286434870
+Southeast,2012,taxable.sales,4089099029
+Southeast,2012,total.tax,310334810
+Southeast,2012,use.tax,23899940
+Southeast,2013,gross.sales,21373988961
+Southeast,2013,sales.tax,298172516
+Southeast,2013,taxable.sales,4255222651
+Southeast,2013,total.tax,322382304
+Southeast,2013,use.tax,24209788
+Southeast,2014,gross.sales,21352339257
+Southeast,2014,sales.tax,304632693
+Southeast,2014,taxable.sales,4341282541
+Southeast,2014,total.tax,330834169
+Southeast,2014,use.tax,26201476
+Southeast,2015,gross.sales,21215205665
+Southeast,2015,sales.tax,316419621
+Southeast,2015,taxable.sales,4509305577
+Southeast,2015,total.tax,338273195
+Southeast,2015,use.tax,21853574
+Southeast,2016,gross.sales,20830454035
+Southeast,2016,sales.tax,321534556
+Southeast,2016,taxable.sales,4581831607
+Southeast,2016,total.tax,342663846
+Southeast,2016,use.tax,21129290
+Southeast,2017,gross.sales,21882746985
+Southeast,2017,sales.tax,329437189
+Southeast,2017,taxable.sales,4694365056
+Southeast,2017,total.tax,350134803
+Southeast,2017,use.tax,20697614
+Minnesota,2003,gross.sales,220419605242
+Minnesota,2003,sales.tax,3797866384
+Minnesota,2003,taxable.sales,57480774963
+Minnesota,2003,total.tax,4036749809
+Minnesota,2003,use.tax,238883425
+Minnesota,2004,gross.sales,241337353469
+Minnesota,2004,sales.tax,3985151015
+Minnesota,2004,taxable.sales,60309541847
+Minnesota,2004,total.tax,4256004631
+Minnesota,2004,use.tax,270853616
+Minnesota,2005,gross.sales,258605440425
+Minnesota,2005,sales.tax,4158305372
+Minnesota,2005,taxable.sales,62915197164
+Minnesota,2005,total.tax,4465076652
+Minnesota,2005,use.tax,306771280
+Minnesota,2006,gross.sales,275906239682
+Minnesota,2006,sales.tax,4279513970
+Minnesota,2006,taxable.sales,64719994813
+Minnesota,2006,total.tax,4635729737
+Minnesota,2006,use.tax,356215767
+Minnesota,2007,gross.sales,282151207921
+Minnesota,2007,sales.tax,4356893212
+Minnesota,2007,taxable.sales,65844046857
+Minnesota,2007,total.tax,4708297055
+Minnesota,2007,use.tax,351403843
+Minnesota,2008,gross.sales,291681003598
+Minnesota,2008,sales.tax,4325158105
+Minnesota,2008,taxable.sales,65335865879
+Minnesota,2008,total.tax,4674048374
+Minnesota,2008,use.tax,348890269
+Minnesota,2009,gross.sales,266666158772
+Minnesota,2009,sales.tax,4122844215
+Minnesota,2009,taxable.sales,60456206139
+Minnesota,2009,total.tax,4440519488
+Minnesota,2009,use.tax,317675273
+Minnesota,2010,gross.sales,279159186053
+Minnesota,2010,sales.tax,4334470877
+Minnesota,2010,taxable.sales,61871033079
+Minnesota,2010,total.tax,4672725109
+Minnesota,2010,use.tax,338254232
+Minnesota,2011,gross.sales,299803105999
+Minnesota,2011,sales.tax,4556451905
+Minnesota,2011,taxable.sales,65068016717
+Minnesota,2011,total.tax,4924699362
+Minnesota,2011,use.tax,368247457
+Minnesota,2012,gross.sales,312838014297
+Minnesota,2012,sales.tax,4763691241
+Minnesota,2012,taxable.sales,68027970963
+Minnesota,2012,total.tax,5160549687
+Minnesota,2012,use.tax,396858446
+Minnesota,2013,gross.sales,333549791349
+Minnesota,2013,sales.tax,5034507292
+Minnesota,2013,taxable.sales,71853922344
+Minnesota,2013,total.tax,5475407740
+Minnesota,2013,use.tax,440900448
+Minnesota,2014,gross.sales,348160806054
+Minnesota,2014,sales.tax,5180512773
+Minnesota,2014,taxable.sales,73865027871
+Minnesota,2014,total.tax,5661986114
+Minnesota,2014,use.tax,481473341
+Minnesota,2015,gross.sales,345205411840
+Minnesota,2015,sales.tax,5376833996
+Minnesota,2015,taxable.sales,76658904696
+Minnesota,2015,total.tax,5808526300
+Minnesota,2015,use.tax,431692304
+Minnesota,2016,gross.sales,344363319023
+Minnesota,2016,sales.tax,5435197561
+Minnesota,2016,taxable.sales,77445995604
+Minnesota,2016,total.tax,5788558491
+Minnesota,2016,use.tax,353360930
+Minnesota,2017,gross.sales,360407719330
+Minnesota,2017,sales.tax,5597389501
+Minnesota,2017,taxable.sales,79746166093
+Minnesota,2017,total.tax,5965172005
+Minnesota,2017,use.tax,367782504

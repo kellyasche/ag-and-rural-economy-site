@@ -111,6 +111,7 @@ master.revenue <- read_csv("Data/Business revenue/sales-use-tax-2003-2017.csv") 
 ag.revenue <- master.revenue %>%
   mutate(ag = ifelse(description %in% c("AGRICULTURE, CONSTRUCTION, & MINING MACHINERY MANUFACTURING", "ANIMAL AQUACULTURE", "ANIMAL FOOD MANUFACTURING", "ANIMAL PRODUCTION", "ANIMAL SLAUGHTERING & PROCESSING", "CROP PRODUCTION", "DAIRY PRODUCT MANUFACTURING", "FARM PRODUCT RAW MATERIAL MERCHANT WHOLESALERS", "FOOD MANUFACTURING", "HOG & PIG FARMING", "OILSEED & GRAIN FARMING", "OTHER ANIMAL PRODUCTION", "OTHER CROP FARMING", "OTHER FOOD MANUFACTURING", "PESTICIDE, FERTILIZER, & OTHER AGRICULTURAL CHEMICAL MANUFACTURING", "POULTRY & EGG PRODUCTION", "SUPPORT ACTIVITIES FOR AGRICULTURE & FORESTRY", "SUPPORT ACTIVITIES FOR ANIMAL PRODUCTION", "SUPPORT ACTIVITIES FOR CROP PRODUCTION", "VEGETABLE & MELON FARMING", "FRUIT & TREE NUT FARMING"), "ag-related",
                      ifelse(description == "Total", "Total", "not ag-related")))
+
 ```
 
 <br>
@@ -175,8 +176,6 @@ There's a clear trend here. Ag-related businesses saw an increase in gross sales
 <br>
 
 ```{r prep non-ag business gross sales, include=FALSE, cache=TRUE}
-
-names(ag.revenue)
 total.ag.revenue <- ag.revenue %>%
   group_by(year, ag) %>%
   summarise(gross.sales = sum(gross.sales),
@@ -189,7 +188,6 @@ total.ag.revenue <- ag.revenue %>%
   group_by(ag) %>%
   mutate(gross.sales.pct.2003 = gross.sales / gross.sales[year == 2003]) %>%
   ungroup()
-
 ```
 
 ```{r charts index of ag and non ag gross sales}
@@ -293,3 +291,192 @@ girafe(ggobj = disrupted.ag.ind.trends.plot, width_svg = 8) %>%
                  opts_toolbar(saveaspng = FALSE) ,
                  opts_sizing(rescale = FALSE))
 ```
+
+<br>
+
+## Comparing farm cash receipts vs. gross sales{.tabset}
+
+The following charts compare farm cash receipts from marketings to the total gross sales of all businesses in each region. Cash receipts from marketings consist of the gross revenue received by farmers from the sale of crops, livestock, and livestock products and of the value of defaulted loans made by Commodity Credit Corporation (CCC) and secured by crops.
+
+When indexed, it's easy to see the large growth in farm cash receipts during the crop commodity boom followed by significant decline. The gross sales did not have a similar trend except for our most rural counties where it is very prominent, and less so in our Southwest and Northwest regions.
+
+It's interesting to point out, however, that farm cash receipts is still at a higher level from 2003 than overall gross sales. Farm cash receipts from marketing are between 150% and 200% their values in 2003 while gross sales is just above 150% or less.
+
+<br>
+
+```{r prep farm cash and gross sales, include=FALSE, cache=TRUE}
+
+farm.cash.total.gross.sales.ruca <- read_csv("Data/Business revenue/County/farm-cash-receipts-total-gross-sales-ruca.csv") %>%
+  group_by(Dem_Desc) %>%
+  mutate(farm.cash.receipts.index = farm.cash.receipts / farm.cash.receipts[year==2003],
+         gross.sales.index = gross.sales / gross.sales[year==2003]) %>%
+  ungroup() %>%
+  mutate(Dem_Desc = fct_relevel(Dem_Desc, "Entirely rural", "Town/rural mix", "Urban/town/rural mix", "Entirely urban"))
+
+farm.cash.total.gross.sales.pr <- read_csv("Data/Business revenue/County/farm-cash-receipts-total-gross-sales-pr.csv") %>%
+  group_by(planning.region) %>%
+  mutate(farm.cash.receipts.index = farm.cash.receipts / farm.cash.receipts[year == 2003],
+         gross.sales.index = gross.sales / gross.sales[year==2003]) %>%
+  ungroup() %>%
+  mutate(planning.region = fct_relevel(planning.region, "Northwest", "Northeast", "Central", "Seven County Mpls-St Paul", "Southwest", "Southeast"))
+
+farm.cash.total.gross.sales.metro.non <- read_csv("Data/Business revenue/County/farm-cash-receipts-total-gross-sales-metro-non.csv") %>%
+  group_by(metro.non) %>%
+  mutate(farm.cash.receipts.index = farm.cash.receipts / farm.cash.receipts[year == 2003],
+         gross.sales.index = gross.sales / gross.sales[year==2003]) %>%
+  ungroup() 
+
+```
+
+### RUCA
+
+<br>
+
+```{r chart farm cash vs total gross sales ruca, fig.width=8}
+
+farm.cash.ruca.plot <- ggplot(farm.cash.total.gross.sales.ruca, aes(year, farm.cash.receipts.index, color = Dem_Desc)) +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 2, aes(data_id = farm.cash.receipts.index, tooltip = paste(Dem_Desc, "\nYear: ", year, "\nFarm cash receipts: ", dollar(farm.cash.receipts), "\nFarm cash receipts index to 2003: ", percent(farm.cash.receipts.index), "\nTotal gross sales for all industries: ", dollar(gross.sales), "\nGross sales index to 2003: ", percent(gross.sales.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Farm cash receipts index to 2003")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = c(.8, 2.5)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values = color.ruca,
+                    guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10),
+        axis.text.x = element_text(size = 6))
+
+gross.sales.ruca.plot <- ggplot(farm.cash.total.gross.sales.ruca, aes(year, gross.sales.index, color = Dem_Desc)) +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 2, aes(data_id = farm.cash.receipts.index, tooltip = paste(Dem_Desc, "\nYear: ", year, "\nFarm cash receipts: ", dollar(farm.cash.receipts), "\nFarm cash receipts index to 2003: ", percent(farm.cash.receipts.index), "\nTotal gross sales for all industries: ", dollar(gross.sales), "\nGross sales index to 2003: ", percent(gross.sales.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Gross sales of all industries index to 2003")+
+  scale_y_continuous(labels=scales::percent)+
+    coord_cartesian(ylim = c(.8, 2.5)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values = color.ruca,
+                    guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10),
+        axis.text.x = element_text(size = 6))
+
+farm.cash.ruca.plot.legend <- get_legend(farm.cash.ruca.plot + theme(legend.box.margin = margin(0,0,0,0)))
+
+farm.cash.ruca.plot.legend.bottom <- plot_grid(NULL, farm.cash.ruca.plot.legend, NULL, ncol = 3, rel_widths = c(0,.5,3))
+
+girafe( ggobj =  plot_grid(farm.cash.ruca.plot+theme(legend.position = "none"), gross.sales.ruca.plot + theme(legend.position = "none"), NULL, farm.cash.ruca.plot.legend.bottom, ncol = 2, rel_heights = c(1,.1)), width_svg = 7) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+
+```
+
+### Planning Region
+
+<br>
+
+```{r chart farm cash vs total gross sales pr, fig.width=8}
+
+farm.cash.pr.plot <- ggplot(farm.cash.total.gross.sales.pr, aes(year, farm.cash.receipts.index, color = planning.region)) +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 2, aes(data_id = farm.cash.receipts.index, tooltip = paste(planning.region, "\nYear: ", year, "\nFarm cash receipts: ", dollar(farm.cash.receipts), "\nFarm cash receipts index to 2003: ", percent(farm.cash.receipts.index), "\nTotal gross sales for all industries: ", dollar(gross.sales), "\nGross sales index to 2003: ", percent(gross.sales.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Farm cash receipts index to 2003")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = c(.8, 2.5)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values = color.pr,
+                    guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10),
+        axis.text.x = element_text(size = 6))
+
+gross.sales.pr.plot <- ggplot(farm.cash.total.gross.sales.pr, aes(year, gross.sales.index, color = planning.region)) +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 2, aes(data_id = farm.cash.receipts.index, tooltip = paste(planning.region, "\nYear: ", year, "\nFarm cash receipts: ", dollar(farm.cash.receipts), "\nFarm cash receipts index to 2003: ", percent(farm.cash.receipts.index), "\nTotal gross sales for all industries: ", dollar(gross.sales), "\nGross sales index to 2003: ", percent(gross.sales.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Gross sales of all industries index to 2003")+
+  scale_y_continuous(labels=scales::percent)+
+    coord_cartesian(ylim = c(.8, 2.5)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values = color.pr,
+                    guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10),
+        axis.text.x = element_text(size = 6))
+
+farm.cash.pr.plot.legend <- get_legend(farm.cash.pr.plot + theme(legend.box.margin = margin(0,0,0,0)))
+
+farm.cash.pr.plot.legend.bottom <- plot_grid(NULL, farm.cash.pr.plot.legend, NULL, ncol = 3, rel_widths = c(0,.5,3))
+
+girafe( ggobj =  plot_grid(farm.cash.pr.plot+theme(legend.position = "none"), gross.sales.pr.plot + theme(legend.position = "none"), NULL, farm.cash.pr.plot.legend.bottom, ncol = 2, rel_heights = c(1,.1)), width_svg = 7) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+
+```
+
+
+### Metro vs. Non-metro
+
+<br>
+
+```{r chart farm cash vs total gross sales metro.non, fig.width=8}
+
+farm.cash.metro.non.plot <- ggplot(farm.cash.total.gross.sales.metro.non, aes(year, farm.cash.receipts.index, color = metro.non)) +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 2, aes(data_id = farm.cash.receipts.index, tooltip = paste(metro.non, "\nYear: ", year, "\nFarm cash receipts: ", dollar(farm.cash.receipts), "\nFarm cash receipts index to 2003: ", percent(farm.cash.receipts.index), "\nTotal gross sales for all industries: ", dollar(gross.sales), "\nGross sales index to 2003: ", percent(gross.sales.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Farm cash receipts index to 2003")+
+  scale_y_continuous(labels=scales::percent)+
+  coord_cartesian(ylim = c(.8, 2.5)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values = c("#8c510a", "#5CA81F"),
+                    guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10),
+        axis.text.x = element_text(size = 6))
+
+gross.sales.metro.non.plot <- ggplot(farm.cash.total.gross.sales.metro.non, aes(year, gross.sales.index, color = metro.non)) +
+  geom_smooth(se = FALSE, size = 1) +
+  geom_hline(yintercept = 1, color = "black") +
+  geom_point_interactive(size = 2, aes(data_id = farm.cash.receipts.index, tooltip = paste(metro.non, "\nYear: ", year, "\nFarm cash receipts: ", dollar(farm.cash.receipts), "\nFarm cash receipts index to 2003: ", percent(farm.cash.receipts.index), "\nTotal gross sales for all industries: ", dollar(gross.sales), "\nGross sales index to 2003: ", percent(gross.sales.index), sep = ""))) +
+  labs(x="", y = "", color="", title = "Gross sales of all industries index to 2003")+
+  scale_y_continuous(labels=scales::percent)+
+    coord_cartesian(ylim = c(.8, 2.5)) +
+  scale_x_continuous(breaks = seq(1900, 2050, 2)) +
+  theme_line+
+  scale_color_manual(values = c("#8c510a", "#5CA81F"),
+                    guide = guide_legend(ncol = 3)) +
+  theme(legend.position = "bottom",
+        text = element_text(size = 10),
+        plot.title = element_text(size = 10),
+        axis.text.x = element_text(size = 6))
+
+farm.cash.metro.non.plot.legend <- get_legend(farm.cash.metro.non.plot + theme(legend.box.margin = margin(0,0,0,0)))
+
+farm.cash.metro.non.plot.legend.bottom <- plot_grid(NULL, farm.cash.metro.non.plot.legend, NULL, ncol = 3, rel_widths = c(0,.5,3))
+
+girafe( ggobj =  plot_grid(farm.cash.metro.non.plot+theme(legend.position = "none"), gross.sales.metro.non.plot + theme(legend.position = "none"), NULL, farm.cash.metro.non.plot.legend.bottom, ncol = 2, rel_heights = c(1,.1)), width_svg = 7) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+
+
+```
+
+

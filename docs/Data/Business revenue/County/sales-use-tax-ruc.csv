@@ -1,0 +1,376 @@
+Dem_Desc,year,sales.type,dollars
+Entirely rural,2003,gross.sales,2473694284
+Entirely rural,2003,sales.tax,35642097
+Entirely rural,2003,taxable.sales,534653470
+Entirely rural,2003,total.tax,36753538
+Entirely rural,2003,use.tax,1111441
+Entirely rural,2004,gross.sales,2318362326
+Entirely rural,2004,sales.tax,36985867
+Entirely rural,2004,taxable.sales,554151172
+Entirely rural,2004,total.tax,37997162
+Entirely rural,2004,use.tax,1011295
+Entirely rural,2005,gross.sales,2165316522
+Entirely rural,2005,sales.tax,36646369
+Entirely rural,2005,taxable.sales,548558863
+Entirely rural,2005,total.tax,37623119
+Entirely rural,2005,use.tax,976750
+Entirely rural,2006,gross.sales,2194618959
+Entirely rural,2006,sales.tax,36772315
+Entirely rural,2006,taxable.sales,550579777
+Entirely rural,2006,total.tax,37692020
+Entirely rural,2006,use.tax,919705
+Entirely rural,2007,gross.sales,2338376118
+Entirely rural,2007,sales.tax,38902186
+Entirely rural,2007,taxable.sales,581769617
+Entirely rural,2007,total.tax,39914000
+Entirely rural,2007,use.tax,1011814
+Entirely rural,2008,gross.sales,2849271713
+Entirely rural,2008,sales.tax,38839708
+Entirely rural,2008,taxable.sales,581265541
+Entirely rural,2008,total.tax,39920550
+Entirely rural,2008,use.tax,1080842
+Entirely rural,2009,gross.sales,2529213809
+Entirely rural,2009,sales.tax,38734295
+Entirely rural,2009,taxable.sales,562436433
+Entirely rural,2009,total.tax,40119265
+Entirely rural,2009,use.tax,1384970
+Entirely rural,2010,gross.sales,2790517482
+Entirely rural,2010,sales.tax,39868115
+Entirely rural,2010,taxable.sales,564653188
+Entirely rural,2010,total.tax,41782364
+Entirely rural,2010,use.tax,1914249
+Entirely rural,2011,gross.sales,3137560686
+Entirely rural,2011,sales.tax,43165950
+Entirely rural,2011,taxable.sales,611787838
+Entirely rural,2011,total.tax,44640718
+Entirely rural,2011,use.tax,1474768
+Entirely rural,2012,gross.sales,3390421767
+Entirely rural,2012,sales.tax,44572463
+Entirely rural,2012,taxable.sales,631799193
+Entirely rural,2012,total.tax,45916620
+Entirely rural,2012,use.tax,1344157
+Entirely rural,2013,gross.sales,3753642415
+Entirely rural,2013,sales.tax,46502761
+Entirely rural,2013,taxable.sales,659900040
+Entirely rural,2013,total.tax,48790511
+Entirely rural,2013,use.tax,2287750
+Entirely rural,2014,gross.sales,3589230172
+Entirely rural,2014,sales.tax,47079488
+Entirely rural,2014,taxable.sales,667893456
+Entirely rural,2014,total.tax,49292623
+Entirely rural,2014,use.tax,2213135
+Entirely rural,2015,gross.sales,3171709589
+Entirely rural,2015,sales.tax,46667450
+Entirely rural,2015,taxable.sales,660832400
+Entirely rural,2015,total.tax,48544189
+Entirely rural,2015,use.tax,1876739
+Entirely rural,2016,gross.sales,3103279942
+Entirely rural,2016,sales.tax,47446064
+Entirely rural,2016,taxable.sales,672127606
+Entirely rural,2016,total.tax,48817104
+Entirely rural,2016,use.tax,1371040
+Entirely rural,2017,gross.sales,3200936141
+Entirely rural,2017,sales.tax,48842262
+Entirely rural,2017,taxable.sales,692244648
+Entirely rural,2017,total.tax,50591711
+Entirely rural,2017,use.tax,1749449
+Town/rural mix,2003,gross.sales,23927113046
+Town/rural mix,2003,sales.tax,388755853
+Town/rural mix,2003,taxable.sales,5885809444
+Town/rural mix,2003,total.tax,406182690
+Town/rural mix,2003,use.tax,17426837
+Town/rural mix,2004,gross.sales,26437307681
+Town/rural mix,2004,sales.tax,419849448
+Town/rural mix,2004,taxable.sales,6356251188
+Town/rural mix,2004,total.tax,438048098
+Town/rural mix,2004,use.tax,18198650
+Town/rural mix,2005,gross.sales,27204184211
+Town/rural mix,2005,sales.tax,432521352
+Town/rural mix,2005,taxable.sales,6545676156
+Town/rural mix,2005,total.tax,455423328
+Town/rural mix,2005,use.tax,22901976
+Town/rural mix,2006,gross.sales,30521901101
+Town/rural mix,2006,sales.tax,436733164
+Town/rural mix,2006,taxable.sales,6602143204
+Town/rural mix,2006,total.tax,461665065
+Town/rural mix,2006,use.tax,24989083
+Town/rural mix,2007,gross.sales,29418839048
+Town/rural mix,2007,sales.tax,453259519
+Town/rural mix,2007,taxable.sales,6846971666
+Town/rural mix,2007,total.tax,478953993
+Town/rural mix,2007,use.tax,25694474
+Town/rural mix,2008,gross.sales,31721795590
+Town/rural mix,2008,sales.tax,447493100
+Town/rural mix,2008,taxable.sales,6755873206
+Town/rural mix,2008,total.tax,475060062
+Town/rural mix,2008,use.tax,27566962
+Town/rural mix,2009,gross.sales,28997265487
+Town/rural mix,2009,sales.tax,440909036
+Town/rural mix,2009,taxable.sales,6456231792
+Town/rural mix,2009,total.tax,465855363
+Town/rural mix,2009,use.tax,24946327
+Town/rural mix,2010,gross.sales,31462787164
+Town/rural mix,2010,sales.tax,457204126
+Town/rural mix,2010,taxable.sales,6522423855
+Town/rural mix,2010,total.tax,483656695
+Town/rural mix,2010,use.tax,26452569
+Town/rural mix,2011,gross.sales,36106414838
+Town/rural mix,2011,sales.tax,483010007
+Town/rural mix,2011,taxable.sales,6894535870
+Town/rural mix,2011,total.tax,512561904
+Town/rural mix,2011,use.tax,29551897
+Town/rural mix,2012,gross.sales,37464383533
+Town/rural mix,2012,sales.tax,498309802
+Town/rural mix,2012,taxable.sales,7110138835
+Town/rural mix,2012,total.tax,531351836
+Town/rural mix,2012,use.tax,33042034
+Town/rural mix,2013,gross.sales,38813334950
+Town/rural mix,2013,sales.tax,514187351
+Town/rural mix,2013,taxable.sales,7335904307
+Town/rural mix,2013,total.tax,545721781
+Town/rural mix,2013,use.tax,31534430
+Town/rural mix,2014,gross.sales,39223835945
+Town/rural mix,2014,sales.tax,523661762
+Town/rural mix,2014,taxable.sales,7465375127
+Town/rural mix,2014,total.tax,563701330
+Town/rural mix,2014,use.tax,40039568
+Town/rural mix,2015,gross.sales,37560440934
+Town/rural mix,2015,sales.tax,534950548
+Town/rural mix,2015,taxable.sales,7624559165
+Town/rural mix,2015,total.tax,563975838
+Town/rural mix,2015,use.tax,29025290
+Town/rural mix,2016,gross.sales,36999484974
+Town/rural mix,2016,sales.tax,538545678
+Town/rural mix,2016,taxable.sales,7675099825
+Town/rural mix,2016,total.tax,559313760
+Town/rural mix,2016,use.tax,20768082
+Town/rural mix,2017,gross.sales,38049618141
+Town/rural mix,2017,sales.tax,555165102
+Town/rural mix,2017,taxable.sales,7914176550
+Town/rural mix,2017,total.tax,577161164
+Town/rural mix,2017,use.tax,21996062
+Urban/town/rural mix,2003,gross.sales,29105185427
+Urban/town/rural mix,2003,sales.tax,517774611
+Urban/town/rural mix,2003,taxable.sales,7827510732
+Urban/town/rural mix,2003,total.tax,549037353
+Urban/town/rural mix,2003,use.tax,31262742
+Urban/town/rural mix,2004,gross.sales,30405769618
+Urban/town/rural mix,2004,sales.tax,545921753
+Urban/town/rural mix,2004,taxable.sales,8250573669
+Urban/town/rural mix,2004,total.tax,581706888
+Urban/town/rural mix,2004,use.tax,35785135
+Urban/town/rural mix,2005,gross.sales,32375215852
+Urban/town/rural mix,2005,sales.tax,559895911
+Urban/town/rural mix,2005,taxable.sales,8456708039
+Urban/town/rural mix,2005,total.tax,601043677
+Urban/town/rural mix,2005,use.tax,41147766
+Urban/town/rural mix,2006,gross.sales,34709260590
+Urban/town/rural mix,2006,sales.tax,575423896
+Urban/town/rural mix,2006,taxable.sales,8687278858
+Urban/town/rural mix,2006,total.tax,625951583
+Urban/town/rural mix,2006,use.tax,50932432
+Urban/town/rural mix,2007,gross.sales,35680879375
+Urban/town/rural mix,2007,sales.tax,581852782
+Urban/town/rural mix,2007,taxable.sales,8774674523
+Urban/town/rural mix,2007,total.tax,622837147
+Urban/town/rural mix,2007,use.tax,40984365
+Urban/town/rural mix,2008,gross.sales,36476775817
+Urban/town/rural mix,2008,sales.tax,556383653
+Urban/town/rural mix,2008,taxable.sales,8379200605
+Urban/town/rural mix,2008,total.tax,597145617
+Urban/town/rural mix,2008,use.tax,40761964
+Urban/town/rural mix,2009,gross.sales,33664961448
+Urban/town/rural mix,2009,sales.tax,548305373
+Urban/town/rural mix,2009,taxable.sales,8011638901
+Urban/town/rural mix,2009,total.tax,589744233
+Urban/town/rural mix,2009,use.tax,41438860
+Urban/town/rural mix,2010,gross.sales,35282666049
+Urban/town/rural mix,2010,sales.tax,577158622
+Urban/town/rural mix,2010,taxable.sales,8217262214
+Urban/town/rural mix,2010,total.tax,616123548
+Urban/town/rural mix,2010,use.tax,38964926
+Urban/town/rural mix,2011,gross.sales,39114650118
+Urban/town/rural mix,2011,sales.tax,601744478
+Urban/town/rural mix,2011,taxable.sales,8569461728
+Urban/town/rural mix,2011,total.tax,646738401
+Urban/town/rural mix,2011,use.tax,44993923
+Urban/town/rural mix,2012,gross.sales,40683677186
+Urban/town/rural mix,2012,sales.tax,632811298
+Urban/town/rural mix,2012,taxable.sales,9013070957
+Urban/town/rural mix,2012,total.tax,684464231
+Urban/town/rural mix,2012,use.tax,51652933
+Urban/town/rural mix,2013,gross.sales,42238016780
+Urban/town/rural mix,2013,sales.tax,658862480
+Urban/town/rural mix,2013,taxable.sales,9381587011
+Urban/town/rural mix,2013,total.tax,712104683
+Urban/town/rural mix,2013,use.tax,53242203
+Urban/town/rural mix,2014,gross.sales,43551487064
+Urban/town/rural mix,2014,sales.tax,681118328
+Urban/town/rural mix,2014,taxable.sales,9694479216
+Urban/town/rural mix,2014,total.tax,739386901
+Urban/town/rural mix,2014,use.tax,58268573
+Urban/town/rural mix,2015,gross.sales,42454737796
+Urban/town/rural mix,2015,sales.tax,700648041
+Urban/town/rural mix,2015,taxable.sales,9970003415
+Urban/town/rural mix,2015,total.tax,749780837
+Urban/town/rural mix,2015,use.tax,49132796
+Urban/town/rural mix,2016,gross.sales,41904145000
+Urban/town/rural mix,2016,sales.tax,715471960
+Urban/town/rural mix,2016,taxable.sales,10178028471
+Urban/town/rural mix,2016,total.tax,753769217
+Urban/town/rural mix,2016,use.tax,38297257
+Urban/town/rural mix,2017,gross.sales,43033952148
+Urban/town/rural mix,2017,sales.tax,731771406
+Urban/town/rural mix,2017,taxable.sales,10409914016
+Urban/town/rural mix,2017,total.tax,775145008
+Urban/town/rural mix,2017,use.tax,43373602
+Entirely urban,2003,gross.sales,1.26876E+11
+Entirely urban,2003,sales.tax,2363281191
+Entirely urban,2003,taxable.sales,35659053247
+Entirely urban,2003,total.tax,2507982048
+Entirely urban,2003,use.tax,144700857
+Entirely urban,2004,gross.sales,1.36663E+11
+Entirely urban,2004,sales.tax,2453525527
+Entirely urban,2004,taxable.sales,37013755257
+Entirely urban,2004,total.tax,2618432005
+Entirely urban,2004,use.tax,164906478
+Entirely urban,2005,gross.sales,1.49529E+11
+Entirely urban,2005,sales.tax,2540990037
+Entirely urban,2005,taxable.sales,38315898977
+Entirely urban,2005,total.tax,2718030466
+Entirely urban,2005,use.tax,177040429
+Entirely urban,2006,gross.sales,1.57955E+11
+Entirely urban,2006,sales.tax,2597027740
+Entirely urban,2006,taxable.sales,39135076671
+Entirely urban,2006,total.tax,2809010851
+Entirely urban,2006,use.tax,211983111
+Entirely urban,2007,gross.sales,1.6076E+11
+Entirely urban,2007,sales.tax,2613230590
+Entirely urban,2007,taxable.sales,39339042941
+Entirely urban,2007,total.tax,2829358022
+Entirely urban,2007,use.tax,216127432
+Entirely urban,2008,gross.sales,1.64858E+11
+Entirely urban,2008,sales.tax,2608080408
+Entirely urban,2008,taxable.sales,39246575064
+Entirely urban,2008,total.tax,2821775143
+Entirely urban,2008,use.tax,213694735
+Entirely urban,2009,gross.sales,1.53352E+11
+Entirely urban,2009,sales.tax,2473684800
+Entirely urban,2009,taxable.sales,36143689333
+Entirely urban,2009,total.tax,2672355600
+Entirely urban,2009,use.tax,198670800
+Entirely urban,2010,gross.sales,1.57975E+11
+Entirely urban,2010,sales.tax,2600086867
+Entirely urban,2010,taxable.sales,36970949560
+Entirely urban,2010,total.tax,2812089175
+Entirely urban,2010,use.tax,212002308
+Entirely urban,2011,gross.sales,1.66905E+11
+Entirely urban,2011,sales.tax,2733736601
+Entirely urban,2011,taxable.sales,38891456757
+Entirely urban,2011,total.tax,2961792668
+Entirely urban,2011,use.tax,228056067
+Entirely urban,2012,gross.sales,1.71806E+11
+Entirely urban,2012,sales.tax,2841341891
+Entirely urban,2012,taxable.sales,40419559391
+Entirely urban,2012,total.tax,3083261596
+Entirely urban,2012,use.tax,241919705
+Entirely urban,2013,gross.sales,1.8042E+11
+Entirely urban,2013,sales.tax,3028098721
+Entirely urban,2013,taxable.sales,43041281630
+Entirely urban,2013,total.tax,3303255648
+Entirely urban,2013,use.tax,275156927
+Entirely urban,2014,gross.sales,1.88745E+11
+Entirely urban,2014,sales.tax,3089975359
+Entirely urban,2014,taxable.sales,43851283446
+Entirely urban,2014,total.tax,3383139099
+Entirely urban,2014,use.tax,293163740
+Entirely urban,2015,gross.sales,1.88882E+11
+Entirely urban,2015,sales.tax,3183294829
+Entirely urban,2015,taxable.sales,45160307166
+Entirely urban,2015,total.tax,3452943351
+Entirely urban,2015,use.tax,269648522
+Entirely urban,2016,gross.sales,1.89426E+11
+Entirely urban,2016,sales.tax,3230753078
+Entirely urban,2016,taxable.sales,45799810146
+Entirely urban,2016,total.tax,3463098622
+Entirely urban,2016,use.tax,232345544
+Entirely urban,2017,gross.sales,1.96601E+11
+Entirely urban,2017,sales.tax,3325554322
+Entirely urban,2017,taxable.sales,47126116764
+Entirely urban,2017,total.tax,3569474593
+Entirely urban,2017,use.tax,243920271
+Minnesota,2003,gross.sales,2.2042E+11
+Minnesota,2003,sales.tax,3797866384
+Minnesota,2003,taxable.sales,57480774963
+Minnesota,2003,total.tax,4036749809
+Minnesota,2003,use.tax,238883425
+Minnesota,2004,gross.sales,2.41337E+11
+Minnesota,2004,sales.tax,3985151015
+Minnesota,2004,taxable.sales,60309541847
+Minnesota,2004,total.tax,4256004631
+Minnesota,2004,use.tax,270853616
+Minnesota,2005,gross.sales,2.58605E+11
+Minnesota,2005,sales.tax,4158305372
+Minnesota,2005,taxable.sales,62915197164
+Minnesota,2005,total.tax,4465076652
+Minnesota,2005,use.tax,306771280
+Minnesota,2006,gross.sales,2.75906E+11
+Minnesota,2006,sales.tax,4279513970
+Minnesota,2006,taxable.sales,64719994813
+Minnesota,2006,total.tax,4635729737
+Minnesota,2006,use.tax,356215767
+Minnesota,2007,gross.sales,2.82151E+11
+Minnesota,2007,sales.tax,4356893212
+Minnesota,2007,taxable.sales,65844046857
+Minnesota,2007,total.tax,4708297055
+Minnesota,2007,use.tax,351403843
+Minnesota,2008,gross.sales,2.91681E+11
+Minnesota,2008,sales.tax,4325158105
+Minnesota,2008,taxable.sales,65335865879
+Minnesota,2008,total.tax,4674048374
+Minnesota,2008,use.tax,348890269
+Minnesota,2009,gross.sales,2.66666E+11
+Minnesota,2009,sales.tax,4122844215
+Minnesota,2009,taxable.sales,60456206139
+Minnesota,2009,total.tax,4440519488
+Minnesota,2009,use.tax,317675273
+Minnesota,2010,gross.sales,2.79159E+11
+Minnesota,2010,sales.tax,4334470877
+Minnesota,2010,taxable.sales,61871033079
+Minnesota,2010,total.tax,4672725109
+Minnesota,2010,use.tax,338254232
+Minnesota,2011,gross.sales,2.99803E+11
+Minnesota,2011,sales.tax,4556451905
+Minnesota,2011,taxable.sales,65068016717
+Minnesota,2011,total.tax,4924699362
+Minnesota,2011,use.tax,368247457
+Minnesota,2012,gross.sales,3.12838E+11
+Minnesota,2012,sales.tax,4763691241
+Minnesota,2012,taxable.sales,68027970963
+Minnesota,2012,total.tax,5160549687
+Minnesota,2012,use.tax,396858446
+Minnesota,2013,gross.sales,3.3355E+11
+Minnesota,2013,sales.tax,5034507292
+Minnesota,2013,taxable.sales,71853922344
+Minnesota,2013,total.tax,5475407740
+Minnesota,2013,use.tax,440900448
+Minnesota,2014,gross.sales,3.48161E+11
+Minnesota,2014,sales.tax,5180512773
+Minnesota,2014,taxable.sales,73865027871
+Minnesota,2014,total.tax,5661986114
+Minnesota,2014,use.tax,481473341
+Minnesota,2015,gross.sales,3.45205E+11
+Minnesota,2015,sales.tax,5376833996
+Minnesota,2015,taxable.sales,76658904696
+Minnesota,2015,total.tax,5808526300
+Minnesota,2015,use.tax,431692304
+Minnesota,2016,gross.sales,3.44363E+11
+Minnesota,2016,sales.tax,5435197561
+Minnesota,2016,taxable.sales,77445995604
+Minnesota,2016,total.tax,5788558491
+Minnesota,2016,use.tax,353360930
+Minnesota,2017,gross.sales,3.60408E+11
+Minnesota,2017,sales.tax,5597389501
+Minnesota,2017,taxable.sales,79746166093
+Minnesota,2017,total.tax,5965172005
+Minnesota,2017,use.tax,367782504
