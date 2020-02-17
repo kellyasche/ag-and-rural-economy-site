@@ -128,7 +128,7 @@ The value of agricultural land follows the increases of net incomes from farming
 
 At the EDR level, 7E - East Central, 6W - Upper Minnesota Valley, and 8 - Southwest all have lower land values in 2018 than when net farm incomes peaked (typically between 2012 and 2014). Everywhere else, agricultural land values are typically 15% to 40% higher than when net farm incomes peaked.
 
-The counties that seem to haver their land values most significantly impacted by the downturn in prices of crop commodities are;
+The counties that seem to have their land values most significantly impacted by the downturn in prices of crop commodities are;
 
 <br>
  
@@ -397,10 +397,67 @@ girafe(ggobj = plot_grid(net.income.acre.edr.plot + theme(legend.position = "non
 
 <br>
 
+## Peak year of net income vs. peak year of land values
+
+The maps below compare peak years of net farm income per acre vs. ag land values per acre.
+
+What these maps show is that net incomes per acre peak a few years before land values. This highlights the fact that land values have taken a bit longer to react to the drop in crop commodity prices.
+
+<br>
+
+```{r prep peak year net income vs land values, include=FALSE, cache=TRUE}
+lv.acre.peak.year <- master.lv.county %>%
+  group_by(Name, countyfp) %>%
+  top_n(n = 1, wt = Estimated.value.per.acre) %>%
+  ungroup() %>%
+  mutate(year = as.integer(year)) %>%
+  mutate(year.bins = cut(year,
+                         breaks = c(0, 2009, 2013,2016,2018),
+                         labels = c("Before 2010", "2010 to 2013", "2014 to 2016", "2017 to 2018"))) %>%
+    left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE"))
+
+
+net.income.acre.peak.year <- master.netinc.county %>%
+  mutate(net.income.acre = net.income / Total.acres) %>%
+  group_by(Name, countyfp) %>%
+  top_n(n = 1, wt = net.income.acre) %>%
+  ungroup() %>%
+  mutate(year.bins = cut(year,
+                         breaks = c(0, 2009, 2013,2016,2018),
+                         labels = c("Before 2010", "2010 to 2013", "2014 to 2016", "2017 to 2018"))) %>%
+  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE"))
+
+```
+
+```{r chart peak year net income vs land value, fig.width=9}
+net.income.acre.peak.year.plot <- ggplot(net.income.acre.peak.year) +
+  geom_sf_interactive(aes(fill = year.bins, tooltip = paste(Name, "\nYear of peak net farm income per acre: ", year, "\nNet farm income per acre: ", dollar(net.income.acre), sep = ""), data_id = Name, geometry = geometry)) +
+  scale_fill_manual(values = c("#edf8fb", "#b2e2e2", "#66c2a4", "#238b45"))+
+  theme_sf+
+  labs(title="Year that net farm income peaked") +
+  theme(text = element_text(size = 10),
+        legend.position = "bottom")
+
+lv.acre.peak.year.plot <- ggplot(lv.acre.peak.year) +
+  geom_sf_interactive(aes(fill = year.bins, tooltip = paste(Name, "\nYear of peak ag land values per acre: ", year, "\nAg land values per acre: ", dollar(Estimated.value.per.acre), sep = ""), data_id = Name, geometry = geometry)) +
+  scale_fill_manual(values = c("#edf8fb", "#b2e2e2", "#66c2a4", "#238b45"))+
+  theme_sf+
+  labs(title="Year that ag land values per acre peaked") +
+  theme(text = element_text(size = 10))
+
+net.income.acre.peak.year.legend <- get_legend(net.income.acre.peak.year.plot + theme(legend.box.margin = margin(0,0,0,0)))
+
+net.income.acre.peak.year.legend.bottom <- plot_grid(NULL, net.income.acre.peak.year.legend, NULL, ncol = 3, rel_widths = c(0,.5,3))
+
+girafe( ggobj =  plot_grid(net.income.acre.peak.year.plot+theme(legend.position = "none"), lv.acre.peak.year.plot + theme(legend.position = "none"), NULL, net.income.acre.peak.year.legend.bottom, ncol = 2, rel_heights = c(1,.1)), width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
+```
+
 ## Changes in net income vs. changes in land values since year of peak net incomes {.tabset}
 
 In the charts below, land value per acre represents agricultural 2a land. 
-
 The charts provide a comparison of the change in net farm income since the year when net incomes were the highest in each region (which is typically between 2012 and 2014) and the change in agricultural land values since that same year. With the downturn in crop commodities, we would expect land values to be below what they were when net farm income peaked. However, as the previous charts have shown, that may not be the case. 
 
 Interestingly, agricultural land values are higher in 2018 then they were when net farm incomes peaked in nearly all regions across the state. The only areas where this doesn't seem to be the case are in our most rural areas of the state. At the EDR level, 7E - East Central, 6W - Upper Minnesota Valley, and 8 - Southwest all have lower land values in 2018 than when net farm incomes peaked.
@@ -509,6 +566,49 @@ net.inc.land.value.change.peak.year.edr <- net.inc.change.peak.year.edr %>%
   gather(key = "income.land", value = "pct.change", 12, 17) %>%
   mutate(income.land = ifelse(income.land == "pct.change.net.income.acre", "Change in net farm income per acre", "Change in land value per farm acre"))
 
+
+
+
+
+net.inc.peak.year.county <- master.netinc.county %>%
+  mutate(net.income.acre = net.income / Total.acres) %>%
+  group_by(countyfp, Name) %>%
+  top_n(n = 1, wt = net.income.acre) %>%
+  ungroup() %>%
+  distinct(countyfp, .keep_all = TRUE) %>%
+  select(12, 3, 1, 6,7,13) %>%
+  rename(peak.year = 3,
+         net.income.peak = 4,
+         total.acre.peak = 5,
+         net.income.acre.peak = 6)
+
+land.value.peak.year.county <- master.lv.county %>%
+  right_join(net.inc.peak.year.county[,c(2,3)], by = c("countyfp", "year" = "peak.year")) %>%
+  rename(peak.year = 2,
+         total.acres.peak = 4,
+         total.value.peak = 5,
+         land.value.acre.peak = 6)
+
+net.inc.change.peak.year.county <- master.netinc.county  %>%
+  filter(year == 2018) %>%
+  mutate(net.income.acre = net.income / Total.acres) %>%
+  left_join(net.inc.peak.year.county[,c(2,3,4,5,6)], by = c("countyfp")) %>%
+  mutate(pct.change.net.income.acre = (net.income.acre - net.income.acre.peak) / net.income.acre.peak)
+
+land.value.change.peak.year.county <- master.lv.county %>%
+  filter(year == 2018) %>%
+  left_join(land.value.peak.year.county[,c(7,2,4,5,6)], by = c("countyfp")) %>%
+  mutate(pct.change.land.value.acre = (Estimated.value.per.acre - land.value.acre.peak) / land.value.acre.peak)
+
+net.inc.land.value.change.peak.year.county <- net.inc.change.peak.year.county %>%
+  left_join(land.value.change.peak.year.county[,c(7,2,4,5,6,12,13,14,15,16)], by = c("countyfp")) %>%
+  gather(key = "income.land", value = "pct.change", 18, 27) %>%
+  mutate(income.land = ifelse(income.land == "pct.change.net.income.acre", "Change in net farm income per acre", "Change in land value per farm acre"),
+         pct.change.bins = cut(pct.change,
+                               breaks = c(-10, -1, -.5, -.25, 0, 10),
+                               labels = c("-100% or more", "-100% to -50%", "-50% to -25%", "-25% to 0%", "1% or more"))) %>%
+  left_join(mn_counties[,c(4,7)], by = c("countyfp" = "FIPS_CODE"))
+
 ```
 
 ### RUCA
@@ -592,6 +692,27 @@ girafe(ggobj = net.inc.land.value.change.peak.year.edr.plot, height_svg = 9) %>%
                  opts_toolbar(saveaspng = FALSE) ,
                  opts_sizing(rescale = FALSE))
 
+```
+
+### County map - percent change
+
+In 2018, net farm income was 50% to 100% lower than when it peaked in the early 2010s across all of Minnesota. However, land values per acre were higher in 2018 than when net farm income peaked across most of Minnesota, except in the Southwest where land values are -5% to -15% lower.
+
+<br>
+
+```{r chart change in net inc and land value since peak year county, fig.width=9}
+net.inc.land.value.change.peak.year.county.plot <- ggplot(net.inc.land.value.change.peak.year.county) +
+  facet_wrap(~income.land, ncol = 2) +
+  geom_sf_interactive(aes(fill = pct.change.bins, tooltip = paste(Name, "\nPeak year of net farm income: ", peak.year.x, "\nLand value per acre in peak year: ", dollar(land.value.acre.peak), "\nNet farm income per acre in peak year: ", dollar(net.income.acre.peak), "\n2018 land value per acre: ", dollar(Estimated.value.per.acre), "\n2018 net farm income: ", dollar(net.income.acre), "\n", income.land, ": ", percent(pct.change), sep = ""), data_id = Name, geometry = geometry)) +
+  scale_fill_manual(values = c("#b30000", "#e34a33", "#fc8d59", "#fdcc8a", "#006d2c")) +
+  theme_sf+
+  labs(title="Percent change in land values and net farm income since farm peak year") +
+  theme(text = element_text(size = 10))
+
+girafe(ggobj = net.inc.land.value.change.peak.year.county.plot, width_svg = 8) %>%
+  girafe_options(opts_selection(type = "none"),
+                 opts_toolbar(saveaspng = FALSE) ,
+                 opts_sizing(rescale = FALSE))
 ```
 
 <br>
